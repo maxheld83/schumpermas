@@ -95,3 +95,7 @@ Thumbs.db
 *.vrb
 *.xdy
 *.tdo
+
+# Ignore previews #
+######################
+*.pdf
