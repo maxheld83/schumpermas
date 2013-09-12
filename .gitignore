@@ -90,6 +90,7 @@ Thumbs.db
 *.ps
 *.snm
 *.synctex.gz
+*.syctex.gz(busy)
 *.toc
 *.vrb
 *.xdy
