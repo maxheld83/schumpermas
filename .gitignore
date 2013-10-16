@@ -101,3 +101,5 @@ Thumbs.db
 # Ignore previews #
 ######################
 *.texpadtmp
+
+*.part
