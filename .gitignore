@@ -103,3 +103,7 @@ Thumbs.db
 *.texpadtmp
 
 *.part
+
+*.bak
+
+*.pdf
