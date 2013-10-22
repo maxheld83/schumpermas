@@ -1,14 +1,14 @@
-\ProvidesPackage{mystyle}
+\ProvidesPackage{mystyle-book}
 
-	\usepackage[pdftex]{color,graphicx} %several packages
-		\definecolor{maxgreen}{RGB}{0,128,64}
-		\definecolor{maxblue}{RGB}{2,24,147}
-		\definecolor{maxgrey1}{RGB}{200,200,200}
-		\definecolor{maxgrey2}{RGB}{150,150,150}
+	\usepackage[pdftex]{graphicx} %several packages
 		\graphicspath{{img/}}
 	\usepackage{hyperref}
 	\usepackage{soul} %for strikethrough
-	\usepackage[table]{xcolor}
+	\usepackage[table,pdftex,hyperref,fixpdftex,dvipsnames]{xcolor}
+%		\definecolor{maxgreen}{RGB}{0,128,64}
+%		\definecolor{maxblue}{RGB}{2,24,147}
+%		\definecolor{lightgray}{RGB}{200,200,200}
+%		\definecolor{darkgray}{RGB}{150,150,150}
 		\def\chapterautorefname{Chapter}
 	\usepackage[all]{hypcap} %to make sure that refs hyperlink to the beginning, not end of floats
 	\usepackage{pdflscape}%Package pdﬂscape adds PDF support to the environment landscape of package lscape by setting the PDF page attribute /Rotate.

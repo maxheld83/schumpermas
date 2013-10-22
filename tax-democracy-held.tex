@@ -1,13 +1,11 @@
 %preamble
 	\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
 	\usepackage{mystyle-book}
-	
-%	\includeonly{./tex/proposal-phd}
 
 	\hypersetup
 		{pdftitle=((Mis)understanding the Fine Print of the Social Contract: The Pluralist and Deliberative Politics of Taxation),
 		pdfauthor=(Maximilian Held), pdfcreator=(Maximilian Held), pdfsubject=(PhD Thesis),
-		colorlinks=true, linkcolor=maxgreen, citecolor=maxblue, filecolor=maxgreen, urlcolor=maxgreen}%change title here, too.
+		colorlinks=true, linkcolor=ForestGreen, citecolor=blue, filecolor=ForestGreen, urlcolor=ForestGreen}%change title here, too.
 
 	\title{
 		(Mis)understanding the Fine Print of the Social Contract \\---\\ 
@@ -43,6 +41,8 @@
 %	\input{./tex/dedication-phd}
 
 	\input{./tex/abstract-phd}
+
+	\newpage
 	
 %	\input{./tex/acknowledgements-phd.tex}
 		
@@ -61,28 +61,28 @@
 		
 \mainmatter
 	
-	\include{./tex/introduction-phd}
+	\input{./tex/introduction-phd}
 	
-	\include{./tex/proposal-phd} %proposal
+	\input{./tex/proposal-phd} %proposal
 	
 	\part{The Puzzle} \label{part:puzzle} 
 			
-		\include{./tex/wanted}   
+		\input{./tex/wanted}   
 			%Epistemology, Axiology, Ontology
 		
-		\include{./tex/mixed-economy} 
+		\input{./tex/mixed-economy} 
 			%Literature Review
 			
-		\include{./tex/3-crises}
+		\input{./tex/3-crises}
 			%Background
 			
-		\include{./tex/tax-matters}
+		\input{./tex/tax-matters}
 			 %Literature Review
 			
-		\include{./tex/hypotheticals-matter}
+		\input{./tex/hypotheticals-matter}
 			%Literature Critique
 
-		\include{./tex/testing-hypotheticals}
+		\input{./tex/testing-hypotheticals}
 			%Research Design
 		
 	\part[The Crime Scene of Tax]
@@ -91,13 +91,13 @@
 	\label{part:tax} 
 		%Theory
 
-		\include{./tex/desirable-tax}
+		\input{./tex/desirable-tax}
 			%Theory (Review)
 
-		\include{./tex/doable-tax}
+		\input{./tex/doable-tax}
 			%Theory (Analysis)
  
-		\include{./tex/better-tax}
+		\input{./tex/better-tax}
 			%Theory (Synthesis)
 		
 	\part[The Crime Scene of Democracy]
@@ -106,13 +106,13 @@
 	\label{part:democracy} 	
 		%Theory
 		
-		\include{./tex/desirable-democracy} 
+		\input{./tex/desirable-democracy} 
 			%Theory (Review)
 
-		\include{./tex/doable-democracy}
+		\input{./tex/doable-democracy}
 			%Theory (Analysis)
 
-		\include{./tex/better-democracy}
+		\input{./tex/better-democracy}
 			%Theory (Synthesis)
 		
 	\part[The Investigation]
@@ -122,13 +122,13 @@
 		%TODO here used to be something about why democracy matters, or tax-n-democracy, tax and democracy are two sides of the same coin, the modern contract etc. This has been killed, moved to the earlier why-democracy-matters?
 		%this is a test written online on github
 		
-		\include{./tex/no-better-tax} 
+		\input{./tex/no-better-tax} 
 			%Theory (Research Question)
 
-		\include{./tex/tax-under-pluralism}
+		\input{./tex/tax-under-pluralism}
 			%Theory (Hypotheses)
 		
-		\include{./tex/common-grounds}
+		\input{./tex/common-grounds}
 			%Theory (Outlook)
 		
 	\part{The Test} \label{part:test}
@@ -139,7 +139,9 @@
 		
 	\part{The Hope} \label{part:hope}
 
-%		\include{./tex/conclusion-phd}
+		\chapter{Conclusion} \label{chap:conclusion-phd}
+
+		\input{./tex/conclusion-phd}
 
 \phantomsection \label{end}%this is merely to reference the end
 	
@@ -152,5 +154,5 @@
 	
 	%Bibliography
 		\bibliographystyle{cje} 			%TODO this doesn't seem to adequately report working papers.
-		\bibliography{library}	
+		\bibliography{library.bib}	
 \end{document}
