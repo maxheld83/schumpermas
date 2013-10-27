@@ -1,5 +1,5 @@
 %preamble
-	\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
+	\documentclass[11pt,a4paper]{article} %openright,oneside,titlepage
 	\usepackage{mystyle-book}
 
 	\hypersetup
@@ -9,7 +9,7 @@
 
 	\title{
 		(Mis)understanding the Fine Print of the Social Contract \\---\\ 
-		The Pluralist and Deliberative Politics of Taxation 
+		The Pluralist and Deliberative Politics of Taxation}
 		%TODO working title. Make this sexy.
 	    	%replace pluralist, deliberative
 	    	%maybe instead of pluralist: self-interest,
@@ -17,7 +17,15 @@
 	    	%the title stinks, you really don't need jargon in this
 	    	%worry about title, include method, category of findings, find a play on words? (this is all via art)
 	    	%Taxation and Democracy. The Two Sides of the Social Contract.
-	}
+	    	
+%	    	Some guidelines and suggested characteristics are:
+%should contain familiar (older) information;
+%may contain a clear statement of the main finding “Conditions where implicit and explicit cross-modal information are processed independently”
+%may contain a question that will be answered by the research, so curiosity is aroused “Can implicit and explicit cross-modal sensory information be processed independently”
+%may be a “play on words” or a metaphor, “What you hear is what you see” 
+%The title could be some reflection of the first W, third W, or fourth W (see description and examples of the four Ws in the checklist of writing a new article)
+
+%write from the general to the specific, from the familiar to the unfamiliar.
 			
 	\author{
 		\href{http://www.maxheld.de}{Maximilian Held}
@@ -28,15 +36,15 @@
 
 \input{./tex/acronyms.tex}
 
-\frontmatter
+%\frontmatter
 
-	\pagestyle{headings}
+%	\pagestyle{headings}
 
 	\maketitle
 	
 	\input{./tex/title-page-phd.tex}
 
-	\setcounter{page}{3}
+%	\setcounter{page}{3}
 	
 %	\input{./tex/dedication-phd}
 
@@ -46,113 +54,115 @@
 	
 %	\input{./tex/acknowledgements-phd.tex}
 		
-	\input{./tex/how2.tex}
+%	\input{./tex/how2.tex}
 			
-	\tableofcontents
-		\pagebreak
+	% \tableofcontents
+	% 	\pagebreak
 			
-	\input{./tex/commented-toc-phd}
+	% \input{./tex/commented-toc-phd}
 	
-	\listoffigures
+	% \listoffigures
 	
-	\listoftables 
+	% \listoftables 
 
 %	\input{./tex/preface-phd.tex}
 		
-\mainmatter
+%\mainmatter
 	
-	\input{./tex/introduction-phd}
+%	\input{./tex/introduction-phd}
 	
 	\input{./tex/proposal-phd} %proposal
 	
-	\part{The Puzzle} \label{part:puzzle} 
+%	\part{The Puzzle} \label{part:puzzle} 
 			
-		\input{./tex/wanted}   
+%		\input{./tex/wanted}   
 			%Epistemology, Axiology, Ontology
 		
-		\input{./tex/mixed-economy} 
+%		\input{./tex/mixed-economy} 
 			%Literature Review
 			
-		\input{./tex/3-crises}
+%		\input{./tex/3-crises}
 			%Background
 			
-		\input{./tex/tax-matters}
+%		\input{./tex/tax-matters}
 			 %Literature Review
 			
-		\input{./tex/hypotheticals-matter}
+%		\input{./tex/hypotheticals-matter}
 			%Literature Critique
 
-		\input{./tex/testing-hypotheticals}
+%		\input{./tex/testing-hypotheticals}
 			%Research Design
 		
-	\part[The Crime Scene of Tax]
-	{The Crime Scene of Tax: 
-	First Order Theory} 
-	\label{part:tax} 
+%	\part[The Crime Scene of Tax]
+%	{The Crime Scene of Tax: 
+%	First Order Theory} 
+%	\label{part:tax} 
 		%Theory
 
-		\input{./tex/desirable-tax}
+%		\input{./tex/desirable-tax}
 			%Theory (Review)
 
-		\input{./tex/doable-tax}
+%		\input{./tex/doable-tax}
 			%Theory (Analysis)
  
-		\input{./tex/better-tax}
+%		\input{./tex/better-tax}
 			%Theory (Synthesis)
 		
-	\part[The Crime Scene of Democracy]
-	{The Crime Scene of Democracy: 
-	First Order Theory}
-	\label{part:democracy} 	
+%	\part[The Crime Scene of Democracy]
+%	{The Crime Scene of Democracy: 
+%	First Order Theory}
+%	\label{part:democracy} 	
 		%Theory
 		
-		\input{./tex/desirable-democracy} 
+%		\input{./tex/desirable-democracy} 
 			%Theory (Review)
 
-		\input{./tex/doable-democracy}
+%		\input{./tex/doable-democracy}
 			%Theory (Analysis)
 
-		\input{./tex/better-democracy}
+%		\input{./tex/better-democracy}
 			%Theory (Synthesis)
 		
-	\part[The Investigation]
-	{The 	Investigation: 
-	The Second Order Theory of Tax and Democracy} \label{part:tax-democracy} 		%Theory (Original)
+%	\part[The Investigation]
+%	{The 	Investigation: 
+%	The Second Order Theory of Tax and Democracy} \label{part:tax-democracy} 		%Theory (Original)
 	
 		%TODO here used to be something about why democracy matters, or tax-n-democracy, tax and democracy are two sides of the same coin, the modern contract etc. This has been killed, moved to the earlier why-democracy-matters?
 		%this is a test written online on github
 		
-		\input{./tex/no-better-tax} 
+%		\input{./tex/no-better-tax} 
 			%Theory (Research Question)
 
-		\input{./tex/tax-under-pluralism}
+%		\input{./tex/tax-under-pluralism}
 			%Theory (Hypotheses)
 		
-		\input{./tex/common-grounds}
+%		\input{./tex/common-grounds}
 			%Theory (Outlook)
 		
-	\part{The Test} \label{part:test}
+%	\part{The Test} \label{part:test}
 		
 		%results?
 		
 		%interpretation
 		
-	\part{The Hope} \label{part:hope}
+%	\part{The Hope} \label{part:hope}
 
-		\chapter{Conclusion} \label{chap:conclusion-phd}
+%		\chapter{Conclusion} \label{chap:conclusion-phd}
 
-		\input{./tex/conclusion-phd}
+%		\input{./tex/conclusion-phd}
 
-\phantomsection \label{end}%this is merely to reference the end
+%\phantomsection \label{end}%this is merely to reference the end
 	
-\backmatter %!backmatter
+%\backmatter %!backmatter
 	
 	%Glossary
 		\glsaddall
 		\renewcommand*{\glspostdescription}{}
 		\printglossaries
 	
+	\newpage
+	
 	%Bibliography
 		\bibliographystyle{cje} 			%TODO this doesn't seem to adequately report working papers.
-		\bibliography{library.bib}	
+		\bibliography{library}	
 \end{document}
