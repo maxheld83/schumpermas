@@ -19,4 +19,3 @@ Der krankhafter Ehrgeiz dieser Disziplin ist klar; so unklar die Ergebnisse auch
 Haynes anschreiben ob Zitate ok sind und er kommentiere möchte.
 Endogenitätsproblem:
 - die Strafe - soll sie bei mangelnder Eigenverantwortung entfallen? Ich denke nicht! Sie ist ja sinnvolles Element!
-

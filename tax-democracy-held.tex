@@ -1,15 +1,11 @@
 %preamble
 	\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
-	\usepackage{mystyle}
-	
-%	\includeonly{./tex/proposal-phd}
+	\usepackage{mystyle-book}
 
 	\hypersetup
 		{pdftitle=((Mis)understanding the Fine Print of the Social Contract: The Pluralist and Deliberative Politics of Taxation),
 		pdfauthor=(Maximilian Held), pdfcreator=(Maximilian Held), pdfsubject=(PhD Thesis),
-		colorlinks=true, linkcolor=maxgreen, citecolor=black, filecolor=maxgreen, urlcolor=maxgreen}%change title here, too.
-		
-		%and here's another fun edit
+		colorlinks=true, linkcolor=ForestGreen, citecolor=blue, filecolor=ForestGreen, urlcolor=ForestGreen}%change title here, too.
 
 	\title{
 		(Mis)understanding the Fine Print of the Social Contract \\---\\ 
@@ -44,7 +40,9 @@
 	
 %	\input{./tex/dedication-phd}
 
-	\include{./tex/abstract-phd}
+	\input{./tex/abstract-phd}
+
+	\newpage
 	
 %	\input{./tex/acknowledgements-phd.tex}
 		
@@ -53,7 +51,7 @@
 	\tableofcontents
 		\pagebreak
 			
-	\include{./tex/commented-toc-phd}
+	\input{./tex/commented-toc-phd}
 	
 	\listoffigures
 	
@@ -63,87 +61,89 @@
 		
 \mainmatter
 	
-	\include{./tex/introduction-phd}
+	\input{./tex/introduction-phd}
 	
-	\include{./tex/proposal-phd} %proposal
+	\input{./tex/proposal-phd} %proposal
 	
-%	\part{The Puzzle} \label{part:puzzle} 
-		
-		\include{./tex/wanted}   
+	\part{The Puzzle} \label{part:puzzle} 
+			
+		\input{./tex/wanted}   
 			%Epistemology, Axiology, Ontology
 		
-		\include{./tex/mixed-economy} 
+		\input{./tex/mixed-economy} 
 			%Literature Review
 			
-		\include{./tex/3-crises}
+		\input{./tex/3-crises}
 			%Background
 			
-		\include{./tex/tax-matters}
+		\input{./tex/tax-matters}
 			 %Literature Review
 			
-		\include{./tex/hypotheticals-matter}
+		\input{./tex/hypotheticals-matter}
 			%Literature Critique
 
-		\include{./tex/testing-hypotheticals}
+		\input{./tex/testing-hypotheticals}
 			%Research Design
 		
-%	\part[The Crime Scene of Tax]
-%	{The Crime Scene of Tax: 
-%	First Order Theory} 
-%	\label{part:tax} 
+	\part[The Crime Scene of Tax]
+	{The Crime Scene of Tax: 
+	First Order Theory} 
+	\label{part:tax} 
 		%Theory
 
-		\include{./tex/desirable-tax}
+		\input{./tex/desirable-tax}
 			%Theory (Review)
 
-		\include{./tex/doable-tax}
+		\input{./tex/doable-tax}
 			%Theory (Analysis)
  
-		\include{./tex/better-tax}
+		\input{./tex/better-tax}
 			%Theory (Synthesis)
 		
-%	\part[The Crime Scene of Democracy]
-%	{The Crime Scene of Democracy: 
-%	First Order Theory}
-%	\label{part:democracy} 	
+	\part[The Crime Scene of Democracy]
+	{The Crime Scene of Democracy: 
+	First Order Theory}
+	\label{part:democracy} 	
 		%Theory
 		
-		\include{./tex/desirable-democracy} 
+		\input{./tex/desirable-democracy} 
 			%Theory (Review)
 
-		\include{./tex/doable-democracy}
+		\input{./tex/doable-democracy}
 			%Theory (Analysis)
 
-		\include{./tex/better-democracy}
+		\input{./tex/better-democracy}
 			%Theory (Synthesis)
 		
-%	\part[The Investigation]
-%	{The 	Investigation: 
-%	The Second Order Theory of Tax and Democracy} \label{part:tax-democracy} 		%Theory (Original)
+	\part[The Investigation]
+	{The 	Investigation: 
+	The Second Order Theory of Tax and Democracy} \label{part:tax-democracy} 		%Theory (Original)
 	
 		%TODO here used to be something about why democracy matters, or tax-n-democracy, tax and democracy are two sides of the same coin, the modern contract etc. This has been killed, moved to the earlier why-democracy-matters?
 		%this is a test written online on github
 		
-		\include{./tex/no-better-tax} 
+		\input{./tex/no-better-tax} 
 			%Theory (Research Question)
 
-		\include{./tex/tax-under-pluralism}
+		\input{./tex/tax-under-pluralism}
 			%Theory (Hypotheses)
 		
-		\include{./tex/common-grounds}
+		\input{./tex/common-grounds}
 			%Theory (Outlook)
 		
-%	\part{The Test} \label{part:test}
+	\part{The Test} \label{part:test}
 		
 		%results?
 		
 		%interpretation
 		
-%	\part{The Hope} \label{part:hope}
+	\part{The Hope} \label{part:hope}
 
-		\include{./tex/conclusion-phd}
+		\chapter{Conclusion} \label{chap:conclusion-phd}
 
-	%\phantomsection \label{end}%this is merely to reference the end
+		\input{./tex/conclusion-phd}
+
+\phantomsection \label{end}%this is merely to reference the end
 	
 \backmatter %!backmatter
 	
@@ -154,5 +154,5 @@
 	
 	%Bibliography
 		\bibliographystyle{cje} 			%TODO this doesn't seem to adequately report working papers.
-		\bibliography{library}	
+		\bibliography{library.bib}	
 \end{document}
