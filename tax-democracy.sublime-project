@@ -4,12 +4,14 @@
 		{
 			"follow_symlinks": true,
 			"path": "/Users/Max/Documents/github/tax-democracy"
-		}
+			"folder_exclude_patterns": ["output"],
+			"file_exclude_patterns": ["*.synctex.gz"]
+		},
 	],
 	"options":
 	[
 		{
-			"root": "tax-democracy.tex",
+			"root": "tax-democracy-held.tex",
 			"pdf": "Report Version 2"
 		}
 	]
