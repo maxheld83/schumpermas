@@ -333,7 +333,7 @@ FUNCTION {format.edition}
     { "" }
     { edition
       mid.sentence.q { "l"} { "t"} if$
-      change.case$ " ed." * 
+      change.case$ " ed." *
     }
   if$
 }
@@ -478,7 +478,7 @@ FUNCTION {format.article.crossref}
     }
     { add.period$ "In \citeasnoun{" crossref * "}" * }
   if$
- 
+
 }
 
 FUNCTION {format.book.crossref}
@@ -558,7 +558,7 @@ FUNCTION {format.lab.names.abbr}
         { name.list #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
             { name.list #1 "{vv~}{ll}" format.name$ " et al." * }
             { name.list #1 "{vv~}{ll}" format.name$ " and " *
-              name.list #2 "{vv~}{ll}" format.name$ * 
+              name.list #2 "{vv~}{ll}" format.name$ *
             }
           if$
         }
@@ -688,7 +688,7 @@ FUNCTION {output.bibitem}
 % FUNCTION {list.label.output}
 
 space make.list.label plain.space output.nonnull
-  "n.d." list.year = 
+  "n.d." list.year =
         {}
         { space "(" list.year * ")" * plain.space output.nonnull}
         if$
@@ -1152,13 +1152,13 @@ FUNCTION {initialize.longest.label}
 }
 
 FUNCTION {longest.label.pass}
-{ 
+{
 author empty$ { editor empty$ {"foo"} {editor} if$} {author} if$
                  prev.author =
     { "\bysame" 'extra.label := }
     { "" 'extra.label :=
 author empty$ { editor empty$ {"abcxyz"} {editor} if$} {author} if$
-    'prev.author := 
+    'prev.author :=
     }
   if$
 }
