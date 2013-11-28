@@ -1,6 +1,6 @@
 %preamble
 	\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
-	\usepackage{mystyle-book}
+	\usepackage{./styles/mystyle-book}
 
 	\hypersetup
 		{pdftitle=((Mis)understanding the Fine Print of the Social Contract: The Pluralist and Deliberative Politics of Taxation),
@@ -148,6 +148,8 @@
 		\printglossaries
 
 	%Bibliography
-		\bibliographystyle{cje} 	%TODO this doesn't seem to adequately report working papers.
-		\bibliography{/Users/Max/Documents/Mendeley/library.bib}
+		\bibliographystyle{apa}
+			%TODO this doesn't seem to adequately report working papers.
+			%not pretty
+		\bibliography{/Users/Max/Documents/Mendeley/library} %global file
 \end{document}
