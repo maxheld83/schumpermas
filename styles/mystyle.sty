@@ -1,8 +1,15 @@
-\ProvidesPackage{mystyle-book}
+\ProvidesPackage{mystyle}
 
 	\usepackage[pdftex]{graphicx} %several packages
 		\graphicspath{{img/}}
-	\usepackage{hyperref}
+	\usepackage[pdfusetitle]{hyperref}
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=ForestGreen,
+			citecolor=blue,
+			filecolor=ForestGreen,
+			urlcolor=ForestGreen
+		}
 	\usepackage{soul} %for strikethrough
 	\usepackage[table,pdftex,hyperref,fixpdftex,dvipsnames]{xcolor}
 %		\definecolor{maxgreen}{RGB}{0,128,64}
