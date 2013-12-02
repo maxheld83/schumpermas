@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
+\documentclass[11pt,a4paper,openright,oneside,titlepage,american]{book}
 \usepackage{./styles/mystyle}
 \title{
 	(Mis)understanding the Fine Print of the Social Contract
@@ -20,8 +20,8 @@
 \date{
 	\today
 }
-\input{./tex/acronyms.tex}
 \frontmatter
+\input{./tex/acronyms.tex}
 \begin{document}
 \maketitle
 %Title Page
@@ -32,13 +32,13 @@
 \chapter*{Abstract}
 	\label{chap:abstract}
 	\input{./tex/abstract-phd}
-\chapter*[About]{About This Document}
+\chapter*{About This Document}
 	\label{chap:how2}
 	\input{./tex/how2.tex}
 \tableofcontents
 \listoffigures
 \listoftables
-\chapter*[Contents]{Commented Table of Contents}
+\chapter*{Commented Table of Contents}
 	\label{chap:commented-toc-phd}
 	\input{./tex/commented-toc-phd}
 %\chapter*{Acknowledgements}
@@ -121,11 +121,9 @@
 \backmatter
 %Glossary
 	\glsaddall
-	\renewcommand*{\glspostdescription}{}
 	\printglossaries
 %Bibliography
-	\bibliographystyle{apa}
+	\bibliographystyle{cje}
 		%TODO this doesn't seem to adequately report working papers.
-		%not pretty
 	\bibliography{/Users/Max/Documents/Mendeley/library} %global file
 \end{document}
