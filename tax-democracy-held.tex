@@ -1,155 +1,129 @@
-%preamble
-	\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
-	\usepackage{./styles/mystyle-book}
-
-	\hypersetup
-		{pdftitle=((Mis)understanding the Fine Print of the Social Contract: The Pluralist and Deliberative Politics of Taxation),
-		pdfauthor=(Maximilian Held), pdfcreator=(Maximilian Held), pdfsubject=(PhD Thesis),
-		colorlinks=true, linkcolor=ForestGreen, citecolor=blue, filecolor=ForestGreen, urlcolor=ForestGreen}%change title here, too.
-	\title{
-		(Mis)understanding the Fine Print of the Social Contract \\---\\
-		The Pluralist and Deliberative Politics of Taxation
-		%TODO working title. Make this sexy.
-	    	%replace pluralist, deliberative
-	    	%maybe instead of pluralist: self-interest,
-	    	%Which produces a better understanding of tax: Competition of self-interest or deliberation about the common good?
-	    	%the title stinks, you really don't need jargon in this
-	    	%worry about title, include method, category of findings, find a play on words? (this is all via art)
-	    	%Taxation and Democracy. The Two Sides of the Social Contract.
+\documentclass[11pt,a4paper,openright,oneside,titlepage]{book}
+\usepackage{./styles/mystyle}
+\title{
+	(Mis)understanding the Fine Print of the Social Contract
+	\\*
+	---
+	\\*
+	The Pluralist and Deliberative Politics of Taxation
+	%working title. Make this sexy.
+	    %replace pluralist, deliberative
+	    %maybe instead of pluralist: self-interest,
+	    %Which produces a better understanding of tax: Competition of self-interest or deliberation about the common good?
+	    %the title stinks, you really don't need jargon in this
+	    %worry about title, include method, category of findings, find a play on words? (this is all via art)
+	    %Taxation and Democracy. The Two Sides of the Social Contract.
 	}
-	\author{
-		\href{http://www.maxheld.de}{Maximilian Held}
-	}
-	\date{\today}
-
-\input{./tex/acronyms.tex}
-
+\author{
+	\href{http://www.maxheld.de}{Maximilian Held}
+}
+\date{
+	\today
+}
 \frontmatter
-
+\input{./tex/acronyms.tex}
 \begin{document}
-
-	\pagestyle{headings}
-
-	\maketitle
-
+\maketitle
+%Title Page
 	\input{./tex/title-page-phd.tex}
-
-	\setcounter{page}{3}
-
-%	\input{./tex/dedication-phd}
-
+\setcounter{page}{3}
+%Dedication
+	%\input{./tex/dedication-phd}
+\chapter*{Abstract}
+	\label{chap:abstract}
 	\input{./tex/abstract-phd}
-
-	\newpage
-
-%	\input{./tex/acknowledgements-phd.tex}
-
+\chapter*{About This Document}
+	\label{chap:how2}
 	\input{./tex/how2.tex}
-
-	\tableofcontents
-		\pagebreak
-
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter*{Commented Table of Contents}
+	\label{chap:commented-toc-phd}
 	\input{./tex/commented-toc-phd}
-
-	\listoffigures
-
-	\listoftables
-
-%	\input{./tex/preface-phd.tex}
-
+%\chapter*{Acknowledgements}
+	%\label{chap:acknowledgements}
+	%\input{./tex/acknowledgements-phd.tex}
+\chapter*{Preface}
+	\label{chap:preface-phd}
+	\input{./tex/preface-phd.tex}
 \mainmatter
-
+\chapter{Introduction}
+	\label{chap:introduction-phd}
 	\input{./tex/introduction-phd}
-
-	\input{./tex/proposal-phd} %proposal
-
-	\part{The Puzzle} \label{part:puzzle}
-
+\chapter{Proposal}
+	\label{chap:proposal-phd}
+	\input{./tex/proposal-phd}
+\part{The Puzzle}
+	\label{part:puzzle}
+	\chapter[Wanted]{Wanted:\ Desirable and Doable Hypotheticals}
+		\label{chap:wanted}
 		\input{./tex/wanted}
-			%Epistemology, Axiology, Ontology
-
+	\chapter[Mixed Economy]{The Welfare State as Mixed Economy}
+		\label{chap:mixed-economy}
 		\input{./tex/mixed-economy}
-			%Literature Review
-
+	\chapter[Three Crises]{A Tale of Three Crises}
+		\label{chap:3-crises}
 		\input{./tex/3-crises}
-			%Background
-
+	\chapter[Tax Matters]{Why Tax Matters to the Welfare State}
+		\label{chap:tax-matters}
 		\input{./tex/tax-matters}
-			 %Literature Review
-
+	\chapter[Hypotheticals Matter]{Why Hypotheticals Matter}
+		\label{chap:hypotheticals-matter}
 		\input{./tex/hypotheticals-matter}
-			%Literature Critique
-
+	\chapter{Testing the Hypotheticals}
+		\label{chap:testing-hypotheticals}
 		\input{./tex/testing-hypotheticals}
-			%Research Design
-
-	\part[The Crime Scene of Tax]
-	{The Crime Scene of Tax:
-	First Order Theory}
+\part[The Crime Scene of Tax]{The Crime Scene of Tax:\ First Order Theory}
 	\label{part:tax}
-		%Theory
-
+	\chapter[Desirable Tax]{A Desirable Tax}
+		\label{chap:desirable-tax}
 		\input{./tex/desirable-tax}
-			%Theory (Review)
-
+	\chapter[Doable Tax]{A Doable Tax}
+		\label{chap:doable-tax}
 		\input{./tex/doable-tax}
-			%Theory (Analysis)
-
+	\chapter[Better Tax]{A Better Tax}
+		\label{chap:better-tax}
 		\input{./tex/better-tax}
-			%Theory (Synthesis)
-
-	\part[The Crime Scene of Democracy]
-	{The Crime Scene of Democracy:
-	First Order Theory}
+\part[The Crime Scene of Democracy]{The Crime Scene of Democracy:\ First Order Theory}
 	\label{part:democracy}
-		%Theory
-
+	\chapter[Desirable Democracy]{A Desirable Democracy}
+		\label{chap:desirable-democracy}
 		\input{./tex/desirable-democracy}
-			%Theory (Review)
-
+	\chapter[Doable Democracy]{A Doable Democracy}
+		\label{chap:doable-democracy}
 		\input{./tex/doable-democracy}
-			%Theory (Analysis)
-
+	\chapter[Better Democracy]{A Better Democracy}
+		\label{chap:better-democracy}
 		\input{./tex/better-democracy}
-			%Theory (Synthesis)
-
-	\part[The Investigation]
-	{The 	Investigation:
-	The Second Order Theory of Tax and Democracy} \label{part:tax-democracy} 		%Theory (Original)
-
-		%TODO here used to be something about why democracy matters, or tax-n-democracy, tax and democracy are two sides of the same coin, the modern contract etc. This has been killed, moved to the earlier why-democracy-matters?
-		%this is a test written online on github
-
+\part[The Investigation]{The Investigation: The Second Order Theory of Tax and Democracy}
+	\label{part:tax-democracy}
+	%TODO here used to be something about why democracy matters, or tax-n-democracy, tax and democracy are two sides of the same coin, the modern contract etc. This has been killed, moved to the earlier why-democracy-matters?
+	\chapter[Why Not?]{Why Don't We Have It?}
+		\label{chap:no-better-tax}
 		\input{./tex/no-better-tax}
-			%Theory (Research Question)
-
+	\chapter[Tax Choice Under Pluralism]{Tax Choice Under Pluralism}
+		\label{chap:tax-under-pluralism}
 		\input{./tex/tax-under-pluralism}
-			%Theory (Hypotheses)
-
+	\chapter{Common Grounds}
+		\label{chap:common-grounds}
 		\input{./tex/common-grounds}
-			%Theory (Outlook)
-
-	\part{The Test} \label{part:test}
-
-		%results?
-
-		%interpretation
-	\part{The Hope} \label{part:hope}
-
-		\chapter{Conclusion} \label{chap:conclusion-phd}
-
+\part{The Test}
+	\label{part:test}
+	\chapter{Operationalization}
+		\label{chap:operationalization}
+		\input{./tex/operationalization.tex}
+\part{The Hope}
+	\label{part:hope}
+	\chapter{Conclusion}
+		\label{chap:conclusion-phd}
 		\input{./tex/conclusion-phd}
-\phantomsection \label{end}%this is merely to reference the end
-
-\backmatter %!backmatter
-	%Glossary
-		\glsaddall
-		\renewcommand*{\glspostdescription}{}
-		\printglossaries
-
-	%Bibliography
-		\bibliographystyle{apa}
-			%TODO this doesn't seem to adequately report working papers.
-			%not pretty
-		\bibliography{/Users/Max/Documents/Mendeley/library} %global file
+\backmatter
+%Glossary
+	\glsaddall
+	\printglossaries
+%Bibliography
+	\bibliographystyle{cje}
+		%TODO this doesn't seem to adequately report working papers.
+	\bibliography{/Users/Max/Documents/Mendeley/library} %global file
 \end{document}

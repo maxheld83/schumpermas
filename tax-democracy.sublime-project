@@ -2,17 +2,18 @@
 	"folders":
 	[
 		{
+			"file_exclude_patterns":
+			[
+				"tax-democracy-held.pdf",
+				".subl66d.tmp",
+				"tax-democracy-held.synctex.gz"
+			],
+			"folder_exclude_patterns":
+			[
+				"output"
+			],
 			"follow_symlinks": true,
 			"path": "/Users/Max/Documents/github/tax-democracy"
-			"folder_exclude_patterns": ["output"],
-			"file_exclude_patterns": ["*.synctex.gz"]
-		},
-	],
-	"options":
-	[
-		{
-			"root": "tax-democracy-held.tex",
-			"pdf": "Report Version 2"
 		}
 	]
 }
