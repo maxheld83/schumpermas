@@ -1,4 +1,4 @@
-\ProvidesPackage{mystyle}
+\ProvidesPackage{./styles/mystyle}
 \usepackage[pdftex]{graphicx}
 	%several packages
 	\graphicspath{{img/}}
@@ -17,7 +17,7 @@
 \usepackage{pdflscape}
 	%Package pdﬂscape adds PDF support to the environment landscape of package lscape by setting the PDF page attribute /Rotate.
 \usepackage{dialogue}
-\usepackage[ngerman,english]{babel}
+\usepackage[ngerman,american]{babel}
 	%language support, first language can also be called
 \usepackage[utf8]{inputenc}
 \usepackage[comma,sort]{natbib}
@@ -35,7 +35,6 @@
 %Adjust toc
 	\setcounter{secnumdepth}{3}
 	\setcounter{tocdepth}{1}
-\usepackage{cleveref}
 \usepackage[pdfusetitle]{hyperref} %should be loaded last so as to overwrite other packages
 	\hypersetup{
 		colorlinks=true, %make this false for b/w
@@ -44,7 +43,9 @@
 		filecolor=ForestGreen,
 		urlcolor=ForestGreen,
 	}
-	\usepackage[all]{hypcap} %to make sure that refs hyperlink to the beginning, not end of floats
+	\usepackage[all]{hypcap} %to make sure that refs hyperlink to the beginning, not end of floats}
 \usepackage[acronym,xindy,toc]{glossaries}
 	%other options: xindy, toc, nonumberlist
+\pdfoptionpdfminorversion 6
+	%some stupid thing because otherwise, latex creates a warning about too new included pdfs created by keynote.
 	\makeglossaries
