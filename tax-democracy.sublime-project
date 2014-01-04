@@ -4,16 +4,10 @@
 		{
 			"file_exclude_patterns":
 			[
-				"tax-democracy-held.pdf",
-				".subl66d.tmp",
-				"tax-democracy-held.synctex.gz"
-			],
-			"folder_exclude_patterns":
-			[
-				"output"
+				".latexmkrc"
 			],
 			"follow_symlinks": true,
-			"path": "/Users/Max/Documents/github/tax-democracy"
+			"path": "."
 		}
 	]
 }
