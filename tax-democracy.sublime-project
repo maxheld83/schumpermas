@@ -4,7 +4,8 @@
 		{
 			"file_exclude_patterns":
 			[
-				".latexmkrc"
+				".latexmkrc",
+				"tax-democracy-held.pdf"
 			],
 			"follow_symlinks": true,
 			"path": "."
