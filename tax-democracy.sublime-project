@@ -7,6 +7,11 @@
 				".latexmkrc",
 				"tax-democracy-held.pdf"
 			],
+			"folder_exclude_patterns":
+			[
+				"tex/Output",
+				"output"
+			],
 			"follow_symlinks": true,
 			"path": "."
 		}
