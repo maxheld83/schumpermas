@@ -1,6 +1,6 @@
-## (Mis)understanding the Fine Print of the Social Contract – The Pluralist and Deliberative Politics of Taxation
+# (Mis)understanding the Fine Print of the Social Contract – The Pluralist and Deliberative Politics of Taxation
 
-### Abstract
+## Abstract
 I wonder:
 why, in the richest of countries, in the most enlightened of times (current day OECD-world), are our welfare states so constrained and inefficient, our democracies so confused and distorted?
 
@@ -13,7 +13,7 @@ if given the possibility to deliberate well-informed, fairly and thoroughly (a d
 If, in fact, they do, welfare state research will have a lot more to explain, and deliberative democracy will have shown its stripes.
 
 
-### Dissertation Committee
+## Dissertation Committee
 
 My work is advised by:
 
