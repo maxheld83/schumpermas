@@ -12,6 +12,8 @@ if given the possibility to deliberate well-informed, fairly and thoroughly (a d
 
 If, in fact, they do, welfare state research will have a lot more to explain, and deliberative democracy will have shown its stripes.
 
+<iframe width="960" height="720" src="//www.youtube.com/embed/wdbchVFcqF4" frameborder="0" allowfullscreen></iframe>
+
 
 ### Dissertation Committee
 
