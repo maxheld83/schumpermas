@@ -1,5 +1,10 @@
 ## (Mis)understanding the Fine Print of the Social Contract – The Pluralist and Deliberative Politics of Taxation
 
+> The spirit of a people, its cultural level, its social structure, the deeds its polity may prepare – all this and more is written in its fiscal history, stripped of all phrases.
+> He who knows how to listen to its message here discerns the thunder of world history more clearly than anywhere else.
+>
+> Joseph Schumpeter (1918: 6)
+
 ### Abstract
 I wonder:
 why, in the richest of countries, in the most enlightened of times (current day OECD-world), are our welfare states so constrained and inefficient, our democracies so confused and distorted?
