@@ -1,0 +1,12 @@
+[submodule "samuelson"]
+	path = samuelson
+	url = https://github.com/civicon/samuelson.git
+[submodule "civicon.github.io"]
+	path = civicon.github.io
+	url = https://github.com/civicon/civicon.github.io.git
+[submodule "civicon.github.io.wiki"]
+	path = civicon.github.io.wiki
+	url = https://github.com/civicon/civicon.github.io.wiki.git
+[submodule "latexstyles"]
+	path = latexstyles
+	url = https://github.com/maxheld83/latexstyles.git
