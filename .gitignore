@@ -218,3 +218,8 @@ _site/
 # Example code in package build process
 *-Ex.R
 tax-democracy-held-pres.pdf
+.Rproj.user
+.RData
+tex/results-concordance.tex
+tex/results.pdf
+tex/results.tex

@@ -1,0 +1,76 @@
+\documentclass{article}
+
+\begin{document}
+<<preambs>>=
+install.packages(c("qmethod"), repos = NULL, type="source")
+library(qmethod)
+@
+
+<<defining-distribution>>=
+q.distribution <- as.integer(c(
+	 1, # -7
+	 1, # -6
+	 2, # -5
+	 4, # -4
+	 6, # -3
+	 9, # -2
+	10, # -1
+	11, #  0
+	10, #  1
+	 9, #  2
+	 6, #  3
+	 4, #  4
+	 2, #  5
+	 1, #  6
+	 1 #  7
+))
+@
+
+<<getting-ready, results='asis', echo=FALSE, warning=FALSE>>=
+q.sample <- ImportQSample(dir.concourse = "keyneson-concourse/",
+									file.ids = "keyneson-concourse/ids.csv",
+									q.distribution = q.distribution,
+									file.sample = "sampling-structure.csv")
+q.sorts <- ImportQSorts("keyneson-data/qsorts", q.sample = q.sample, q.distribution = q.distribution)
+q.feedback <- ImportQFeedback(dir.feedback = "keyneson-data/feedback",
+															dir.sorts = "keyneson-data/qsorts",
+															q.sample = q.sample,
+															q.distribution <- q.distribution)
+@
+
+<<feedback>>=
+@
+
+<<descriptives>>=
+item.mean <- apply(q.sorts, c(1,3), mean, na.rm = TRUE)
+item.mean <- cbind(item.mean, item.mean[,"after"] - item.mean[,"before"])
+colnames(item.mean)[3] <- "change"
+item.mean
+item.mean[order(item.mean[,"change"]),] #  sort by change
+
+item.sd <- apply(q.sorts, c(1,3), sd, na.rm = TRUE)
+item.sd <- cbind(item.sd, item.sd[,"after"] - item.sd[,"before"])
+colnames(item.sd)[3] <- "change"
+item.sd[order(item.sd[,"change"]),] #  sort
+
+person.cor <- cor(q.sorts[,,"before"])
+person.cor[which.min(abs(person.cor))]
+str(person.cor)
+help(which.min)
+library(ggplot2)
+library(GGally)
+library(reshape2)
+library(lattice)
+splom(t(t(q.sorts[,,"before"])))
+help(splom)
+
+
+@
+
+<<analysis>>=
+item.cor <- cor(t(q.sorts[,,"before"]))
+which.min(item.cor)
+results <- qmethod(q.sorts[,,2],4)
+plot(results)
+@
+\end{document}
