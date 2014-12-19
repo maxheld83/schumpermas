@@ -67,10 +67,49 @@ help(splom)
 
 @
 
+\subsection{Factor Extraction}
+
+\cite[6]{Exel2005} recommends 4--5 people per viewpoint, which given 17 participants yields 3--4 factors, or viewpoints.
+
+\subsection{Which Data Reduction Technique?}
+
+Factor analysis (which?)
+or
+PCA (which?)
+PCA (which?)
+
+<<how many factors?>>=
+library(paran)
+hornvectors <- paran(t(q.sorts[,,"after"]),
+			iterations = 1000,
+			centile = 95,
+			quietly = FALSE,
+			status = TRUE,
+			graph = TRUE,
+			color = TRUE)
+@
+
 <<analysis>>=
 item.cor <- cor(t(q.sorts[,,"before"]))
 which.min(item.cor)
-results <- qmethod(q.sorts[,,2],4)
+results.none <- qmethod(q.sorts[,,"before"],
+									 nfactors = 3,
+									 rotation = "none")
+results.none.after <- qmethod(q.sorts[,,"after"],
+									 nfactors = 3,
+									 rotation = "none")
+results.none.before <- qmethod(q.sorts[,,"before"],
+									 nfactors = 3,
+									 rotation = "none")
+results.varimax.before <- qmethod(q.sorts[,,"before"],
+									 nfactors = 3,
+									 rotation = "varimax")
+results.varimax.after <- qmethod(q.sorts[,,"after"],
+									 nfactors = 3,
+									 rotation = "varimax")
+qmethod(q.sorts[,,2],7)
 plot(results)
+help(qmethod)
 @
 \end{document}
+results
