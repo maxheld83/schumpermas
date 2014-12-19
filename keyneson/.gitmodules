@@ -1,0 +1,9 @@
+[submodule "keyneson-concourse"]
+	path = keyneson-concourse
+	url = https://github.com/maxheld83/keyneson-concourse.git
+[submodule "keyneson.wiki"]
+	path = keyneson.wiki
+	url = https://github.com/maxheld83/keyneson.wiki.git
+[submodule "keyneson-sample"]
+	path = keyneson-sample
+	url = https://github.com/maxheld83/keyneson-sample.git
