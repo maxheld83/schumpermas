@@ -1,0 +1,301 @@
+%preamble
+	\documentclass[]{beamer}
+	%\usepackage{latexstyles/pres}
+	\usepackage{longtable}
+	\usepackage[ngerman, english]{babel}
+
+%\includeonly{./tex/proposal-phd}
+
+	\hypersetup
+		{pdftitle=(Deliberative Subjectivities on Taxation),
+		pdfauthor=(Maximilian Held), pdfcreator=(Maximilian Held), pdfsubject=(PhD Thesis)}
+		%colorlinks=true, linkcolor=green, citecolor=black, filecolor=green, urlcolor=green}%change title here, too.
+
+
+\title[CiviCon Results]{Deliberative Subjectivities on Taxation\\
+---
+\\ Results from the CiviCon Citizen Conference on Taxation}
+\subtitle[Q-Study]{A Q-Method Study}
+\author[Max Held]{Maximilian Held}
+\institute[BIGSSS]{Bremen International Graduate School of Social Sciences\\ Universität Bremen \& Jacobs University Bremen}
+\date[24.11.2014]{24. November 2014}
+%\titlegraphic{\includegraphics[width=2cm,height=2cm]{hulogo}}
+\subject{}
+\keywords{}
+
+\usetheme{PaloAlto}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}
+	\frametitle{Table of Contents}
+	\tableofcontents
+%[currentsection]
+\end{frame}
+
+\section{Background}
+
+\begin{frame}[fragile]
+\frametitle{Research Question}
+
+How would people think \emph{differently} about taxation, if they had the opportunity to deliberate it carefully?
+\end{frame}
+
+\begin{frame}
+\frametitle{Fieldwork}
+
+\includegraphics[keepaspectratio=true,width=0.7\paperwidth]{civicon-handout.jpg}
+
+\end{frame}
+
+\section{Analysis}
+
+<<loading, echo=FALSE>>=
+# Preambs
+install.packages(c("qmethod"), repos = NULL, type="source")
+library(qmethod)
+library(xtable)
+library(knitr)
+source("analysis.R")
+opts_chunk$set(size = 'scriptsize')
+
+)
+@
+
+%<<test, echo=FALSE, results="markup", strip.white=TRUE, highlight=TRUE, cache=TRUE >>=
+%plot(rnorm)
+%@
+
+\subsection{Decisions}
+
+\begin{frame}
+\frametitle{What Data?}
+\begin{enumerate}
+	\item 2x 18x Q-Sorts (before, after): cleaned
+	\item 2x 18x Item Feedback (before, after): cleaned
+	\item 17x Socio-Economic \& Demographic data: pending
+	\item 15x General written feedback: cleaned
+	\item 315x Notes, Posters, Illustrations: raw
+	\item 1601x Photos
+	\item 100hrs Audio: raw
+	\item 80hrs Video (1080p): raw
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{What Kind of Q-Methodological Analysis?}
+\begin{itemize}
+	\item{Deductive vs. inductive vs. abductive}
+	\item{Theoretical / judgmental vs. objective}
+	\item{Conservative vs. adventurous}
+	\item{Holistic vs. atomized}
+	\item{Baseline vs. treatment effect}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{What Software?}
+\begin{enumerate}
+	\item SPSS / STATA: underspecialized (item scores, flagging, datamatrix)
+	\item PQMethod: closed/obscure source (FORTRAN), unreliable?
+	\item R / qmethod: open, versatile, difficult
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{What Data Reduction Technique}
+\begin{enumerate}
+	\item \emph{Exploratory} Factor Analysis (Centroid?) (Brown's favorite)
+	\item Principal Component Analysis (available in qmethod, well documented)
+	\item \ldots ?
+\end{enumerate}
+\end{frame}
+
+
+\subsection{How Many Factors?}
+
+\begin{frame}
+\frametitle{Criteria}
+\begin{enumerate}
+	\item Experience / Common sense: 6--8 persons per ex-ante factor (Stenner \& Watts 2012: loc 2652):
+		\Sexpr{ncol(q.sorts)/8} factors
+	\item Magic Number 7 (Brown 1980: 223):
+		\Sexpr{ncol(q.sorts)/7} people per factor?!
+	\item Eigenvalue of nth factor $>$ 1 (Kaiser 1960, Guttman 1954)
+	\item Two or more loadings (Brown 1980: 222)
+	\item Humphrey's rule: Cross-Product of 2 highest loadings greater than twice the standard error
+	\item Scree plot (2nd derivative < 0)
+	\item Parallel Analysis (Horn 1965)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Eigenvalues (unrotated)}
+
+<<eigenvalues, results='asis', echo=FALSE, message=FALSE>>=
+library(knitr)
+invisible(
+	results$max <- qmethod(q.sorts[,,"before"],
+		nfactors = 9,
+		rotation = "none"
+	)
+)
+
+print(
+	xtable(
+  	x = results$max$f_char$characteristics,
+  	type = "latex",
+  	align = "ccccccc"
+	),
+	size = "footnotesize"
+)
+@
+\end{frame}
+
+
+%communality!
+
+\frametitle{Parallel Analysis}
+<<parallel-analysis, echo=FALSE, results="markup", highlight=TRUE, strip.white=TRUE>>=
+library(paran)
+parallel.anal <- paran(t(q.sorts[,,"before"]),
+	iterations = 1000,
+	centile = 95,
+	quietly = FALSE,
+	status = TRUE,
+	graph = TRUE,
+	color = TRUE,
+	height = 200
+)
+# print.xtable(
+# 	xtable(
+#       x     = hornvectors$Ev[c(1:3)], # remember to put hash here for future use
+#       type  = "latex"
+#     ), #  smaller than cards for margin
+#   latex.environment = "center",
+#   table.placement = "p",
+#   floating = FALSE,
+#   include.rownames = FALSE,
+#   include.colnames = TRUE,
+#   comment = FALSE,
+#   hline.after = NULL,
+# )
+@
+
+\begin{frame}
+\frametitle{What Rotation?}
+\begin{itemize}
+	\item Judgmental / Manual
+	\item Automatic (varimax etc.)
+\end{itemize}
+\end{frame}
+
+\subsection{Extraction}
+
+\begin{frame}[fragile]
+\frametitle{Summary}
+<<extraction, echo=FALSE, results='asis', warning=FALSE, size="footnotesize">>=
+print(
+	xtable(
+  	x = results$before$f_char$characteristics,
+  	type = "latex"
+	),
+	size = "footnotesize"
+)
+print(
+	xtable(
+  	x = results$before$f_char$cor_zsc,
+  	type = "latex"
+	),
+	size = "footnotesize"
+)
+print(
+	xtable(
+  	x = results$before$f_char$sd_dif,
+  	type = "latex"
+	),
+	size = "footnotesize"
+)
+@
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Loadings: Resentment, Critique, Moderation}
+<<loadings, echo=FALSE, results="asis">>=
+colnames(results$before$loa) <- c("Resentment", "Critique", "Moderation")
+print(
+	xtable(
+  	x = results$before$loa,
+  	type = "latex"
+	),
+	size = "footnotesize"
+)
+@
+\end{frame}
+
+\begin{frame}[t, allowframebreaks, fragile]
+\frametitle{Statement Scores}
+<<scores, echo=FALSE, results="asis">>=
+colnames(results$before$zsc) <- c("Resentment", "Critique", "Moderation")
+print.xtable(
+	xtable(
+  	x = results$before$zsc,
+  	type = "latex"
+	),
+	size = "footnotesize",
+	tabular.environment = "longtable",
+  latex.environment = "center",
+  table.placement = "p",
+  floating = FALSE,
+  hline.after = c(-1,0,1:nrow(results$before$zsc))
+)
+@
+\end{frame}
+
+\section{Results}
+
+\begin{frame}[t, allowframebreaks, fragile]
+\frametitle{Distinguishing and Consensus Statements}
+<<dcs, echo=FALSE, results="asis">>=
+colnames(results$before$qdc) <- c("dist.and.cons", "Res/Crit", "", "Res/Mod", "", "Crit/Mod", "")
+print.xtable(
+	xtable(
+  	x = results$before$qdc,
+  	type = "latex",
+  	align = "p{15mm}p{15mm}p{10mm}p{5mm}p{10mm}p{5mm}p{10mm}p{5mm}"
+	),
+	size = "scriptsize",
+	tabular.environment = "longtable",
+  latex.environment = "center",
+  table.placement = "p",
+  floating = FALSE,
+  hline.after = c(-1,0,1:nrow(results$before$qdc))
+)
+@
+\end{frame}
+
+\section{Discussion}
+
+\begin{frame}
+\frametitle{Problems to Be Solved}
+\begin{itemize}
+	\item TODOs
+		\begin{itemize}
+			\item TODO: Deeper understanding of data reduction techniques
+			\item TODO: Better visualizations
+		\end{itemize}
+	\item How many factors to extract?
+	\item Treatment Effect
+		\item Communality / nloads of factors seems to change (different people!)
+		\item Eigenvalues increase! (9 -> 9.8)
+		\item Factor of factors?
+		\item Factor of item movements?
+		\item \ldots?
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
