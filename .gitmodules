@@ -10,12 +10,12 @@
 [submodule "latexstyles"]
 	path = latexstyles
 	url = https://github.com/maxheld83/latexstyles.git
-[submodule "keyneson-concourse"]
-	path = keyneson-concourse
-	url = https://github.com/maxheld83/keyneson-concourse.git
-[submodule "keyneson-data"]
-	path = keyneson-data
-	url = https://github.com/maxheld83/keyneson-data.git
 [submodule "qmethod"]
 	path = qmethod
 	url = https://github.com/maxheld83/qmethod.git
+[submodule "schumpermas.wiki"]
+	path = schumpermas.wiki
+	url = https://github.com/maxheld83/schumpermas.wiki.git
+[submodule "samuelson.wiki"]
+	path = samuelson.wiki
+	url = https://github.com/civicon/samuelson.wiki.git
