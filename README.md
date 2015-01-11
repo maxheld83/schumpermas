@@ -5,10 +5,12 @@ This is [Maximilian Held](http://www.maxheld.de)'s dissertation at [BIGSSS](http
 > The spirit of a people, its cultural level, its social structure, the deeds its polity may prepare – all this and more is written in its fiscal history, stripped of all phrases.
 > He who knows how to listen to its message here discerns the **thunder of world history** more clearly than anywhere else.  
 > –– Joseph Schumpeter (1918: 6)
+> 
 
 > Reaching understanding, (...) **the inherent telos of human speech**.  
 > –– Jürgen Habermas (1987: 287)
 
+![Citizens preparing the press conference at the 2014 CiviCon Citizen Conference](https://dl.dropboxusercontent.com/u/5341489/images/civicon-prep-poster_small.jpg)
 
 ## Abstract
 
