@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\begin{document}
+
+\subsection{Does (the Share of) Single-Peakedness Improve?}
+
+Questions, in order of importance:
+\begin{enumerate}
+	\item How does single-peakedness of \emph{preferences} change?
+	\item Are the differences significant?
+	\item Can q-sort data be used for this purpose?
+\end{enumerate}
+
+<<prelims, results='asis', echo=FALSE, warning=FALSE, message=FALSE>>=
+# Load packages
+library(knitr) #  that's to have both latex and R code in one piece
+library(xtable) #  functions to output latex tables from R
+@
+
+<<gather.prefs, results='asis', echo=FALSE, warning=FALSE, message=FALSE>>=
+# Load packages
+library(knitr) #  that's to have both latex and R code in one piece
+library(xtable) #  functions to output latex tables from R
+tax.preferences <- q.sorts[c("corporate-income-tax","financial-transaction-tax","land-value-tax","land-value-tax-resources","payroll","personal-income-tax","pigouvian-tax","poll-tax","progressive-consumption-tax","value-added-tax","wealth-tax"),,] #  hand coded is clumsy!
+@
+
+<<descriptives, results='asis', echo=FALSE, warning=FALSE, message=FALSE>>=
+library(ggplot2)
+as.dataframe(tax.preferences[,,"before"])
+p <- ggplot(tax.preferences[,,"before"], aes(participants))
+@
+
+\end{document}
