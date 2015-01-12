@@ -1,9 +1,9 @@
 # Preambs
+setwd("/Users/Max/Github/schumpermas")
 install.packages(c("qmethod"), repos = NULL, type="source")
 library(qmethod)
 library(xtable)
 library(knitr)
-setwd("/Users/Max/Github/schumpermas")
 
 # Distribution
 q.distribution <- as.integer(c(
@@ -25,13 +25,14 @@ q.distribution <- as.integer(c(
 ))
 
 # Imports
-q.sample <- ImportQSample(dir.concourse = "keyneson-concourse/",
-									file.ids = "keyneson-concourse/ids.csv",
+q.sample <- ImportQSample(dir.concourse = "keyneson/keyneson-sample/keyneson-concourse",
+									translations = c("german","english"),
+									file.ids = "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
 									q.distribution = q.distribution,
-									file.sample = "sampling-structure.csv")
-q.sorts <- ImportQSorts("keyneson-data/qsorts", q.sample = q.sample, q.distribution = q.distribution)
-q.feedback <- ImportQFeedback(dir.feedback = "keyneson-data/feedback",
-															dir.sorts = "keyneson-data/qsorts",
+									file.sample = "keyneson/keyneson-sample/sampling-structure.csv")
+q.sorts <- ImportQSorts("keyneson/qsorts", q.sample = q.sample, q.distribution = q.distribution)
+q.feedback <- ImportQFeedback(dir.feedback = "keyneson/feedback",
+															dir.sorts = "keyneson/qsorts",
 															q.sample = q.sample,
 															q.distribution <- q.distribution)
 
