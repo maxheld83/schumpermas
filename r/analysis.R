@@ -2,11 +2,11 @@
 setwd("/Users/Max/Github/schumpermas")
 install.packages(c("qmethod"), repos = NULL, type="source")
 library(qmethod)
-library(xtable)
-library(knitr)
-
-# Distribution
-q.distribution <- as.integer(c(
+q.concourse <- import.q.concourse(  # import concourse
+  q.concourse.dir = "keyneson/keyneson-sample/keyneson-concourse/",
+  languages = c("english", "german")
+)
+q.distribution <- as.integer(c(  # set up distribution
 	 1, # -7
 	 1, # -6
 	 2, # -5
@@ -23,21 +23,51 @@ q.distribution <- as.integer(c(
 	 1, #  6
 	 1 #  7
 ))
+q.sampling.structure <- read.csv(  # read in sampling structure
+  file = "keyneson/keyneson-sample/sampling-structure.csv"
+)
+q.sample <- q.sampling.structure$handle  # exctract vector of sel. handles
+q.set <- build.q.set( #  build q.set
+  q.concourse = q.concourse,
+  q.sample = q.sample,
+  q.distribution = q.distribution
+)
+q.sorts <- import.q.sorts(  # now import the sorts
+  q.sorts.dir = "keyneson/qsorts/",
+  q.set = q.set,
+  q.distribution = q.distribution,
+  conditions = c("before","after"),
+  manual.lookup = as.matrix(
+    read.csv(
+      "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
+      row.names=2
+    )  
+  )
+)
+q.feedback <- import.q.feedback(
+  q.feedback.dir = "keyneson/feedback/",
+  q.sorts = q.sorts,
+  q.set = q.set,
+  manual.lookup = as.matrix(
+    read.csv(
+      "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
+      row.names=2
+    )  
+  )
+)
 
-# Imports
-q.sample <- ImportQSample(dir.concourse = "keyneson/keyneson-sample/keyneson-concourse",
-									translations = c("german","english"),
-									file.ids = "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
-									q.distribution = q.distribution,
-									file.sample = "keyneson/keyneson-sample/sampling-structure.csv")
-q.sorts <- ImportQSorts("keyneson/qsorts", q.sample = q.sample, q.distribution = q.distribution)
-q.feedback <- ImportQFeedback(dir.feedback = "keyneson/feedback",
-															dir.sorts = "keyneson/qsorts",
-															q.sample = q.sample,
-															q.distribution <- q.distribution)
-
-results <- NULL
-results$before <- qmethod(q.sorts[,,"before"],
-	nfactors = 3,
- 	rotation = "varimax"
+# Make some cards ===============
+make.cards(
+  q.set = q.set,
+  study.language = "german",
+  manual.lookup = na.omit(
+    as.matrix(
+      read.csv(
+        "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
+        row.names=2
+      )
+    )[,2]
+  ),
+  paper.format = "AveryZweckformC32010",
+  output.pdf = TRUE
 )
