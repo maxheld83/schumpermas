@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \begin{document}
+	
 <<preambs>>=
 install.packages(c("qmethod"), repos = NULL, type="source")
 library(qmethod)
@@ -27,7 +28,7 @@ q.distribution <- as.integer(c(
 @
 
 <<getting-ready, results='asis', echo=FALSE, warning=FALSE>>=
-q.sample <- ImportQSample(dir.concourse = "keyneson-concourse/",
+q.sample <- ImportQSample(dir.concourse = "keyneson-concourse",
 									file.ids = "keyneson-concourse/ids.csv",
 									q.distribution = q.distribution,
 									file.sample = "sampling-structure.csv")
@@ -103,6 +104,9 @@ results.none.before <- qmethod(q.sorts[,,"before"],
 									 rotation = "none")
 results.varimax.before <- qmethod(q.sorts[,,"before"],
 									 nfactors = 3,
+									 rotation = "varimax")
+results.varimax.before.four <- qmethod(q.sorts[,,"before"],
+									 nfactors = 2,
 									 rotation = "varimax")
 results.varimax.after <- qmethod(q.sorts[,,"after"],
 									 nfactors = 3,

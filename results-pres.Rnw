@@ -1,24 +1,34 @@
 %preamble
-	\documentclass[]{beamer}
-	%\usepackage{latexstyles/pres}
-	\usepackage{longtable}
-	\usepackage[ngerman, english]{babel}
+\documentclass[]{beamer}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman, english]{babel}
 
-%\includeonly{./tex/proposal-phd}
+\hypersetup{
+  pdftitle=(Deliberative Subjectivities on Taxation),
+	pdfauthor=(Maximilian Held),
+  pdfcreator=(Maximilian Held),
+  pdfsubject=(PhD Thesis)
+}
+%colorlinks=true, linkcolor=green, citecolor=black, filecolor=green, urlcolor=green}%change title here, too.
 
-	\hypersetup
-		{pdftitle=(Deliberative Subjectivities on Taxation),
-		pdfauthor=(Maximilian Held), pdfcreator=(Maximilian Held), pdfsubject=(PhD Thesis)}
-		%colorlinks=true, linkcolor=green, citecolor=black, filecolor=green, urlcolor=green}%change title here, too.
 
-
-\title[CiviCon Results]{Deliberative Subjectivities on Taxation\\
----
-\\ Results from the CiviCon Citizen Conference on Taxation}
-\subtitle[Q-Study]{A Q-Method Study}
-\author[Max Held]{Maximilian Held}
-\institute[BIGSSS]{Bremen International Graduate School of Social Sciences\\ Universität Bremen \& Jacobs University Bremen}
-\date[24.11.2014]{24. November 2014}
+\title[CiviCon Results]{
+  Deliberative Subjectivities on Taxation\\
+  ---\\
+  Results from the CiviCon Citizen Conference on Taxation
+}
+\subtitle[Q-Study]{
+  A Q-Method Study
+}
+\author[Max Held]{
+  Maximilian Held
+}
+\institute[BIGSSS]{
+  Bremen International Graduate School of Social Sciences\\
+  Universität Bremen \& Jacobs University Bremen
+}
+\date[20.01.2015]{20. Januar 2015}
 %\titlegraphic{\includegraphics[width=2cm,height=2cm]{hulogo}}
 \subject{}
 \keywords{}
@@ -43,30 +53,25 @@
 How would people think \emph{differently} about taxation, if they had the opportunity to deliberate it carefully?
 \end{frame}
 
+\section{Methods}
+
+\subsection{Fieldwork}
+
 \begin{frame}
 \frametitle{Fieldwork}
-
-\includegraphics[keepaspectratio=true,width=0.7\paperwidth]{civicon-handout.jpg}
-
+\includegraphics[keepaspectratio=true,width=0.7\paperwidth]{
+  img/civicon-handout.jpg
+}
 \end{frame}
+
+\subsection{Q-Method}
 
 \section{Analysis}
 
 <<loading, echo=FALSE>>=
 # Preambs
-install.packages(c("qmethod"), repos = NULL, type="source")
-library(qmethod)
-library(xtable)
-library(knitr)
-source("analysis.R")
-opts_chunk$set(size = 'scriptsize')
-
-)
+source("r/imports.R")
 @
-
-%<<test, echo=FALSE, results="markup", strip.white=TRUE, highlight=TRUE, cache=TRUE >>=
-%plot(rnorm)
-%@
 
 \subsection{Decisions}
 
@@ -135,7 +140,37 @@ opts_chunk$set(size = 'scriptsize')
 \frametitle{Eigenvalues (unrotated)}
 
 <<eigenvalues, results='asis', echo=FALSE, message=FALSE>>=
-library(knitr)
+results.before <- qmethod(
+  dataset = q.sorts[,,"before"],
+  nfactors = 3,
+  rotation = "varimax",
+  forced = TRUE,
+  distribution = q.distribution
+)
+results.after <- qmethod(
+  dataset = q.sorts[,,"after"],
+  nfactors = 3,
+  rotation = "varimax",
+  forced = TRUE,
+  distribution = q.distribution
+)
+results.before$f_char
+library(qmethod)
+library(ggplot2)
+
+plot(
+  x = results.before$zsc_n[1],
+  type = "o"
+)
+qplot(object = results.before$zsc_n[1],)
+
+results.before$zsc_n[1]
+
+plot(x = results.before)
+plot(x = results.before)
+results.before
+library(graphics)
+
 invisible(
 	results$max <- qmethod(q.sorts[,,"before"],
 		nfactors = 9,
@@ -241,7 +276,7 @@ print(
 colnames(results$before$zsc) <- c("Resentment", "Critique", "Moderation")
 print.xtable(
 	xtable(
-  	x = results$before$zsc,
+  	x = results$before$zsc_n,
   	type = "latex"
 	),
 	size = "footnotesize",
@@ -254,7 +289,49 @@ print.xtable(
 @
 \end{frame}
 
+
 \section{Results}
+
+\begin{frame}[plain,t, allowframebreaks, fragile]
+\frametitle{Factor Interpretation (before)}
+
+<<factor-interpretation, echo=FALSE>>=
+
+stretcher <- c(
+  0,  # -7 * 1
+  0.5,  # -6  * 1
+  0, 1,  # -5 * 2
+  0.5, 1.5, 2.5, 3.5,  # -4 *4
+  0, 1, 2, 3, 4, 5, # -3 *6
+  0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5,  # -2 *9
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, # -1 * 10
+  0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, # 0 *11
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, # 1 * 10
+  0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5,  # 2 *9
+  0, 1, 2, 3, 4, 5, # 3 *6
+  0.5, 1.5, 2.5, 3.5,  # 4 *4
+  0, 1,  # 5 * 2
+  0.5,  # 6  * 1
+  0  # -7 * 1
+)
+results.before$zsc_n <- results.before$zsc_n[order(results.before$zsc_n$fsc_f1),] # factor 1
+results.before$zsc_n$stretch_one <- stretcher
+results.before$zsc_n <- results.before$zsc_n[order(results.before$zsc_n$fsc_f2),] # factor 2
+results.before$zsc_n$stretch_two <- stretcher
+results.before$zsc_n <- results.before$zsc_n[order(results.before$zsc_n$fsc_f3),] # factor 3
+results.before$zsc_n$stretch_three <- stretcher
+
+ggplot( # try it better
+  data = results.before$zsc_n,
+  aes(
+    x=fsc_f1,
+    y=stretch_one,
+    ymax=11,
+    label=rownames(results.before$zsc_n)
+  )
+) + geom_text() + scale_y_continuous(name = "", breaks = NULL)
+@
+\end{frame}
 
 \begin{frame}[t, allowframebreaks, fragile]
 \frametitle{Distinguishing and Consensus Statements}

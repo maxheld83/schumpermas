@@ -44,6 +44,12 @@ q.sorts <- import.q.sorts(  # now import the sorts
     )  
   )
 )
+kicked.out.part <- c(
+  "Wolfgang",  # this is the researcher
+  "Uwe",  # incomplete
+  "Claus"  # incomplete
+)
+q.sorts <- q.sorts[,!colnames(q.sorts) %in% kicked.out.part,]  # delete participants
 q.feedback <- import.q.feedback(
   q.feedback.dir = "keyneson/feedback/",
   q.sorts = q.sorts,
@@ -52,22 +58,6 @@ q.feedback <- import.q.feedback(
     read.csv(
       "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
       row.names=2
-    )  
+    )
   )
-)
-
-# Make some cards ===============
-make.cards(
-  q.set = q.set,
-  study.language = "german",
-  manual.lookup = na.omit(
-    as.matrix(
-      read.csv(
-        "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
-        row.names=2
-      )
-    )[,2]
-  ),
-  paper.format = "AveryZweckformC32010",
-  output.pdf = TRUE
 )
