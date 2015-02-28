@@ -10,10 +10,17 @@
 			"folder_exclude_patterns":
 			[
 				"tex/Output",
-				"output"
+				"output",
+				".Rproj.user",
+				"figure"
 			],
 			"follow_symlinks": true,
 			"path": "."
 		}
-	]
+	],
+	"options":
+	{
+		"pdf": "schumpermas",
+		"root": "tax-democracy-held.tex"
+	}
 }

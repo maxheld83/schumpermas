@@ -6,7 +6,6 @@ This is [Maximilian Held](http://www.maxheld.de)'s dissertation at [BIGSSS](http
 > He who knows how to listen to its message here discerns the **thunder of world history** more clearly than anywhere else.  
 > –– Joseph Schumpeter (1918: 6)
 
-
 > Reaching understanding, (...) **the inherent telos of human speech**.  
 > –– Jürgen Habermas (1987: 287)
 
@@ -19,7 +18,6 @@ Why, in the most prosperous of economies, are we plagued by widening inequality,
 Why, in the most enlightened of times, are we thoroughly confused about governing our mixed economies and perilously disaffected with the results our democratic rule produces?  
 **What if** there were alternative taxes, which afforded us more attractive tradeoffs between economic efficiency, equity and sustainability or other ends?  
 **What if** we *could* agree on such alternative taxes, but *would not*, because we lacked the necessary information or suitable fora, and because our capacity for mutual reason-giving had been diminished by alienating inequality or clouded by special interest?
-
 
 ## Abstract
 

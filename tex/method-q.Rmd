@@ -1,0 +1,79 @@
+---
+title: "Q Methodology: Measuring Political Subjectivities"
+author: "Maximilian Held"
+output: pdf_document
+library: held_library.bib
+---
+
+```{r preamble }
+library(devtools)
+library(knitr)
+library(rmarkdown)
+install.packages(c("qmethod"), repos = NULL, type="source")
+library(qmethod)
+```
+
+```{r setup-knitr, cache = FALSE, include = FALSE}
+opts_knit$set(root.dir = normalizePath("../"))
+setwd("..")
+```
+
+### Q Distribution
+
+The forced distribution was defined as follows:
+
+```{r q-distribution}
+q_distribution <- as.integer(c(  # set up distribution
+  1, # -7
+  1, # -6
+  2, # -5
+  4, # -4
+  6, # -3
+  9, # -2
+  10, # -1
+  11, #  0
+  10, #  1
+  9, #  2
+  6, #  3
+  4, #  4
+  2, #  5
+  1, #  6
+  1 #  7
+))
+```
+
+This differs a little bit from what a standard normal distribution would be for the given parameters, of `r sum(q_distribution)` items and a maximum value of `7`.
+
+```{r compare-automatic}
+make.distribution(nstat=78, max.bin=7) - q_distribution
+```
+
+<!-- TODO MH: make visualization of bins -->
+
+
+### Q Concourse
+
+```{r q-concourse}
+q_concourse <- import.q.concourse(  # import concourse
+  q.concourse.dir = "keyneson/keyneson-sample/keyneson-concourse/",
+  languages = c("english", "german")
+)
+```
+
+
+### Q Sampling
+
+```{r q-sampling-structure}
+q_sampling_structure <- read.csv(  # read in sampling structure
+  file = "keyneson/keyneson-sample/sampling-structure.csv"
+)
+```
+
+```{r q-sampling}
+q_set <- build.q.set(
+  q.concourse = q_concourse,
+  q.sample = q_sampling_structure$handle,
+  q.distribution = q_distribution
+)
+```
+
