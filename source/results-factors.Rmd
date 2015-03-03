@@ -214,16 +214,9 @@ Q studies do not always display or discuss the correlation matrix but considerin
 
 `Qmethod` - as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a simple Pearson correlation coefficient.
 
-```{r cor-viz}
-corrplot(corr = cor(q_sorts[,,"before"])
-  ,method = "color"
-  ,type = "upper"
-  ,diag = FALSE
-  ,is.corr = TRUE
-  ,addCoef.col = "black"
-  ,tl.col = "black"
-)
-# TODO MCH: re-do this in ggplot2?
+```{r cor-viz-before}
+source("../ggcorr/ggcorr.R")  # FIXME update ggally from CRAN, should at some point have this function
+ggcorr(cor_matrix = cor(q_sorts[,,"before"]), label=TRUE, label_round=2)
 ```
 
 ```{r how many factors?}
@@ -265,7 +258,7 @@ keyneson$before <- qmethod(
 # )
 ```
 
-```{r call viz}
+```{r array-viz, fig.width = 20, fig.height=18}
 arrayviz <- array.viz(
   QmethodRes = keyneson$before
   ,f.names = c("resentment","critical","moderate")
