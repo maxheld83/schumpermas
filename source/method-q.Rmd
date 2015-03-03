@@ -1,0 +1,200 @@
+---
+title: "Q Methodology: Measuring Political Subjectivities"
+author: "Maximilian Held"
+output: pdf_document
+library: held_library.bib
+---
+
+# Q Methodology
+
+
+q methodology is "zwischen den stühlen"
+
+> In placing emphasis on the centrality of self-reference, as outlined in more detail elsewhere (Brown and Taylor, 1972, 1973), we run the risk of being lumped with those phenomenologists and existentialists who tend to reify the self, denuding it of all meaning in an effort to save mankind from mathe- maticians. (Conversely, in suggesting the use of factor analysis, we run the opposite risk of being accused of having made the world unsafe for humanists.) It is therefore necessary to rescue the self and subjectivity from any meta- physical smoke screen behind which others may seek to conceal it.
+Fundamentally, a person's subjectivity is merely his own point of view. It is neither a trait nor a variable, nor is it fruitful to regard it as a tributary emanating from some subterranean "stream of consciousness." It is pure behavior of the kind we encounter during the normal course of the day, as when a person prefaces his remarks with "As far as I'm concerned ... ," or "In my opinion
+... ," or whatnot.
+- brown 46
+
+brown 48 speaks in fn of converse non attitudes
+
+
+broadl q vs r
+> In R, columns are singled centered around the postulate of individual differences for objectively scorable traits; the elements of the sample (persons) do not interact. In Q, rows are single centered around the assumption of intraindividual differences in significance; the elements of the sample (statements) interact in the course of Q sorting. In R, traits are variables; in Q, persons are variables. Owing primarily to the subjectivity involved in Q technique, the results from Q method cannot be reduced to those obtained in R, each being subsumed by a different data set. Claims to the contrary notwithstanding (e.g., Burt, 1972), Q and R are not merely reciprocal ways of examining the same matrix of data.
+> brown 55
+
+
+Q method, is not, in fact a non-positivist research project per se.
+Stephenson, in the foreword to Brown 1980 boasts:
+
+> modern science has prospered by eliminating whims and arbitrary subjectivities from its fact-finding missions into the world "outside."
+> Q methodology follows the same prescriptions for what we consider "inside" us, matters of mind, consciousness, wishes and emotions, and it does so in terms of theories, universals, and laws, precisely as for modern physics.
+> Stephenson in Brown (x)
+
+
+The difference between Q methodology and survey research can hardly be overstated.
+As Brown contrasts, the R methodological or survey research view of "subjectivity"  has been to define these *operationally* –-- not *operantly* --- that is, they become measurable only by the researchers hypothesizing:
+
+> Procedurally, components x, Y, and z are declared to be properties of trait A (say, anomy); statements X, Y, and Z are constructed and subjected to tests of reliability and validity; and the scale is administered to respondents.
+> - Brown
+
+One may argue, that all empirical science proceeds like that, with say, an operational (even arbitrary) definition of what a meter unit of length is.
+
+<!-- really look at the separation of operational from operant, see brown 1980 page 3; on this page is precisely the kind of constraint and deductive hypothesizing that I cannot afford; because that would not be deliberative, and I don't have that kind of hypotheses anyway. -->
+
+Brown 1980: 13 on the trick for transposed matrix; it's gotta be the same units.
+Look at Brown 1980: 14 for the body parts analogy; putting it back together in R requires researchers' subjectivity.
+
+Notice a bit problem: Q methodology does, in fact, enforce VnM consistency, hence in future, we might not want to use it for preferences, just beliefs and values.
+
+Instead of sorting on two dimensions, it might be easier to just sort them twice – and record the result, should have the same form -7 +7. Or is there a problem?
+
+> "There never was a single matrix of scores to which *both* R and Q apply."
+> --- Stephenson 1953: 15 as cited in Brown
+
+Half of this is because the data need to be in the same measuring unit, and even standardizing masks the important mean differences (!) that is key.
+On the other hand, data gathered from q data is bad for R analyses because the scores are, by definition, *not* independent.
+
+Q method makes visible (as per Brown 21) not just how much people agree or disagree with a given item, but how important they find that item vis-a-vis other items.
+That seems to be naturally the case in deciding values and beliefs on the economy, where not only the valence, but their relative importance matter a great deal, especially values vs beliefs.
+)
+
+<!-- Great part on Brown 28 on how misleading, logicocategorical R survey research can be; says more about the hypothesizing researcher, than the subject area.
+Same may be the case in taxation, especially when you get to the meta items that problematize the relative legitimacy of explanations, something that - with disdain - Caplan called "preferences over beliefs", but that someone else might call "emancipation" -->
+
+> "Operational definitions begin with concepts in search of behavior; operant definitions begin with behavior in search of concepts.
+> The difference in temporal sequence is of the utmost importance to a behavioral science."
+> Brown 28
+
+Notice that this (the above) isn't just about deductive vs inductive; it's about the ontology and epistemology of concepts; what are they, and how could they be seen?
+Explain the "behaviorism" in here.
+
+
+Great quote on what happens during Q:
+
+> Given that the sample of statements is str~ctured (table 6), each Q sort can in itself be considered as a miniexperiment, the structure being a kind of thought maze through which the subject's attitude wanders, attaching itself to this idea, rejecting that one, ignoring others.
+> Each Qsort is therefore subject to analysis of variance, which for this subject (81) is shown in table 7 along with the analysis of the Q sorts of two other subjects (87 and 812).
+> brown 31
+
+###
+
+
+### Q Distribution
+
+Notice that the difference between the two is because I need an uneven number of columns – this may not matter much, except there being a significance to the 0, as per Brown:
+> "all meaning distends from the middle" (brown 22)
+
+The forced distribution was defined as follows:
+
+```{r q-distribution}
+q_distribution <- as.integer(c(  # set up distribution
+  1, # -7
+  1, # -6
+  2, # -5
+  4, # -4
+  6, # -3
+  9, # -2
+  10, # -1
+  11, #  0
+  10, #  1
+  9, #  2
+  6, #  3
+  4, #  4
+  2, #  5
+  1, #  6
+  1 #  7
+))
+```
+
+Brown talks about platykurvic etc. on 1980 200
+
+This differs a little bit from what a standard normal distribution would be for the given parameters, of `r sum(q_distribution)` items and a maximum value of `7`.
+
+```{r compare-automatic}
+make.distribution(nstat=78, max.bin=7) - q_distribution
+```
+
+<!-- TODO MH: make visualization of bins -->
+
+
+### Q Concourse
+
+Brown says it clearly: 28: it's easier to draw a definitive universe of people from which to sample, because there are registers, and they are also discrete.
+Statements are not discrete, and there are possible infinities.
+Loevinger is scited in brown on how it is impossible to delineate.
+<!-- TODO MCH: refer to what matthias wrote about language and the possibility to express infinite things with finite elements, chomsky or something -->
+
+> "more art than science"
+> -brown 186
+>
+>
+
+```{r q-concourse}
+q_concourse <- import.q.concourse(  # import concourse
+  q.concourse.dir = "keyneson/keyneson-sample/keyneson-concourse/",
+  languages = c("english", "german")
+)
+```
+
+Heady ideas seem to have some history in Q, as for example the items on Brown 36
+
+### Q Sampling
+
+more on the factorial design, sources for sampling structured in brown 188
+
+> "Structuring ensures balance, however, and so is recommended where practicable."
+> --- Brown 38
+
+My point exactly – you just can't do it otherwise, if you where to randomly draw statements, very few deliberative statements would show up; it would be an echo chamber, greatly influenced by the *distribution* of viewpoints, a concern anathema to q methodology.
+We don't care how many there are of soem viewpoint.
+This would also be counter to the deliberative sentiment; an argument has strength not because of its popularity, but because of inherent qualities.
+
+Also, Brown (38) suggests that as a practical matter, most people won't be able to tell the difference between a structured and random sample of statements, which, I guess is good news.
+He does not, however, provide evidence for that - and it's not obvious how that should be tested. (bit it might – gh issue)
+
+> "As should be evident, however, theoretical structure in no way obtrudes on a person's rendering of his viewpoint, any more than the theory of relativity influences the speed of light.
+>  The factorial structure is not necessarily a hypothesis for testing, although it can be used as such; it merely provides a possible, as opposed to necessary, explanation of the resulting factors
+>  --- Brown 39
+
+now that might be a bit of an overstaement; surely garbage in will dictate garbage out, and a hypothetical, baad sample may greatly constrain the expression of soem viewpoint.
+but admittedly, the factorials need not be expressed in factors, though overly "factorial" item formulations will make it hard to see what else might be at play in people's viewpoints.
+
+Still, *this* is where the sausage is made in Q.
+It's the dirty secret, and not a lot of people talk about it.
+Factor extraction, by contrast, is out in the open, and may be subjected to alternative, but conceivable standards.
+
+We need a carpet; it's just a way of looking at it, just a model, and it shouldn't be overstated – especially because the dimensions (2?) and the geography of the room to be tiled are, by definition, unknown.
+A q sample (and concourse) will always be more of *regulative* ideal – hence the github account.
+
+What we have here is a *factorial* design of statements (not of people!)
+
+```{r q-sampling-structure}
+q_sampling_structure <- read.csv(  # read in sampling structure
+  file = "keyneson/keyneson-sample/sampling-structure.csv"
+)
+```
+
+generally nice quote: q methodology lets "subjects (sic!) speak for himself (Sic)" brown 45
+
+This sampling structure is, in fact, very similar to what Brown does on page 30 – except that the other axis is, arguably, farther away from the resultant factors than in brown#s case.
+My are not actually that theory driven; they are history-of-ideas driven ("marxism", "liberalism") – they need not imply that actual people had these ideologies today, but merely that these might be some consistent and widely divergent ways of thinking about taxation.
+These are heuristics, not more.
+This works only so-so- in my case, and it's more of a guideline than an actual balanced-block sample.
+Maybe, just maybe, that's ok, as Brown ()
+
+> "In our rush to construct and test models, however, we are apt to forget a basic principle, namely, that all models ought not be obtrusive.
+> ..."
+> --- Brown 30
+
+Brown says the good thing is that through q, even from a limited number of statements, people can still give us there viewpoint.
+This is, in fact, another example of the elements of language.
+Garbage-in-garbage out, unfortunately still holds, if with qualifications.
+
+
+```{r q-sampling}
+q_set <- build.q.set(
+  q.concourse = q_concourse,
+  q.sample = q_sampling_structure$handle,
+  q.distribution = q_distribution
+)
+```
+

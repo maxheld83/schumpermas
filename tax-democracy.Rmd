@@ -1,0 +1,26 @@
+---
+title: "Taxation and Democracy"
+author: "Maximilian Held"
+output: html_document
+library: held_library.bib
+---
+
+```{r preamble }
+library(devtools)
+library(knitr)
+library(rmarkdown)
+install.packages(c("qmethod"), repos = NULL, type="source")
+library(qmethod)
+library(reshape2)
+library(corrplot)
+```
+
+
+```{r setup-knitr, cache = FALSE, include = FALSE}
+opts_knit$set(root.dir = normalizePath(getwd()))
+```
+
+```{r q-method, child="source/method-q.Rmd"}
+```
+
+```{r results-factors, child="source/results-factors.Rmd"}
