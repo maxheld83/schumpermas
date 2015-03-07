@@ -5,33 +5,20 @@ output: pdf_document
 library: held_library.bib
 ---
 
-# Administration
+# Data
+
+## Administration
 
 <!--```{r administration, child='keyneson/keyneson.wiki/q-administration.md'}```-->
 <!-- TODO MH: paste condition of instruction? -->
 <!-- TODO MH include data-gathering here, too -->
 
 <!-- COMMENT MH
-notice: there may be stuff in the data that suggests how many factors make sense (loc 2287)
-notice: I am definetely doing exploratory factor analysis; no ex-ante reason to expect one or the other result
-make a correlation matrix, just for descriptives, look at which items are most highly correlated
-same thing for q sorts
-check kline 1994 and Harman 1976 in the above on PCA vs CFA
-Harman 1976 says they will mostly be the same!
-what we're loosing when then R2 increases is, by definition, some residuals.
-interesting idea: maybe look at what kind of residuals was lost? could we tell a story about that?
--->
-
-<!-- COMMENT MH
 consider jonathan haidt, joshua greene on deep pragmatism and slow/fast morality
 -->
 
-Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
-For more on what 0 means to q, see Brown 1980 199.
 
-
-
-# Data Gathered
+## Data Gathering
 
 The first CiviCon Citizen Conference on taxation produced a wealth of data, including:
 
@@ -47,12 +34,12 @@ The first CiviCon Citizen Conference on taxation produced a wealth of data, incl
 <!-- TODO MCH: make this into a table with availability and status of processing -->
 
 
-# Data Import
+## Data Import
 
 All citizens as well as the researcher and the two moderators completed two Q sorts each, one at the beginning and one at the end of the conference.
 
 
-### Software for Open Science and Reproducible Research
+## Software for Open Science and Reproducible Research
 
 Because scientific computing can do a great deal to harm or promote reproducible research and open access, some words on the choice of software will be in order.
 <!-- TODO MCH: find some reproducible quote? what is it -->
@@ -96,7 +83,8 @@ Running inside the R command prompt, `qmethod` can be easily extended, now inclu
 Most importantly, using `R`, every step from raw data to final factor interpretation can be traced back, using publicly available and vetted code, down to base functions.
 <!-- TODO MCH find nice open source quote -->
 
-#### Literate Programming
+
+### Literate Programming
 
 Machine-readable code, its results, and human-readable explanation of *what that code does* are often written and stored separately.
 Not only does such separation invite mistakes when code, result and explanation diverge, but it also makes research harder to reproduce and is conceptually flawed.
@@ -113,8 +101,9 @@ I try to follow this approach by interweaving prose and code in one document, us
 Aside from published R packages, all code is run *inside* this document upon rendering.
 Code will usually not be reproduced in print, but can always be inspected in the [source of this document](https://github.com/maxheld83/schumpermas), "*underneath*" the respective operation or result.
 
+<!-- TODO MH: see timetable of what was done when at the conference -->
 
-<!-- TODO MH: see timetable -->
+## Import
 
 ```{r import-q-sorts}
 q_sorts <- import.q.sorts(
@@ -158,7 +147,12 @@ q_feedback <- import.q.feedback(
 )
 ```
 
+
+
 complete import of `r ncol(q_sorts)`, three participants
+
+<!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
+For more on what 0 means to q, see Brown 1980 199. -->
 
 
 ## Missing Data
@@ -194,9 +188,10 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Claus", ]  # incomplete
 # help(which.min)
 ```
 
+<!-- TODO make a correlation matrix, just for descriptives, look at which items are most highly correlated same thing for q sorts -->
+
+
 # Q Method Analysis
-
-
 
 What kind of Q Methodological Analysis should I run?
 
@@ -205,6 +200,59 @@ What kind of Q Methodological Analysis should I run?
 - Conservative vs. adventurous
 - Holistic vs. atomized
 - Baseline vs. treatment effect
+
+Factor analyses or principal components analyses are well-established procedures and will not usually receive a lot of explanation in a results section.
+In Q – almost 100 years after its foundation, still an *exotic* procedure – things are a little different.
+Because Q method transposes the correlation matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
+Both because Q method is little known, and to live up to the promise of a *constrained*, qualitative analyses, I will track each statistical procedure in the following quite narrowly.
+
+<!-- mention controversy about Q, latest piece -->
+
+
+explain the rotation business with lego; it is easier to recognize a house when the axis by which height etc. is described are, say, parallel to the ground – though they need not.
+
+the lego analogy also works for the information that this is about; relative, and operative – though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
+though with only simple bricks (say, no transparent elements, no surface, no angled bricks for roofs, you end up with pretty brutalist architecture)
+
+The problem is of course that judgmental rotation is theory laden; for example, a somewhat naive architectural theory that expects man-made objects to meaningfully exist perpendicular to earh, and what's more, perpendicular to broadly parallel lines.
+this may work for run-of-the-mill cards and single-family homes, but other classes of objects, say, a tree, a vibrator might be harder to recognize.
+This analogy - if a little forced – offers more instruction: cards and houses are easy to recognize in the same coordinate system because they are, in fact, build in much the same way, by an industrial system (compare that to natural objects, or to works of art) – and they exist under gravity, which enforces some kinds of discipline.
+the same of course, *could* be said for viewpoints.
+But then, we get into trecherous territory, assuming that kind of dimensionality.
+A mathematical criterion may, in fact serve us better.
+Or not?
+
+It is also unclear, how theoretical rotation is even supposed to work with more than 2 dimensions! (or is it, do they do that pairwise or what?)
+
+THis will be more verbose than usual.
+
+There will be some math, but limited and a lot of "impressionistic" talk, and analogies.
+This seems bad style, unscientific, just math would be better.
+It seems hard to conceive of a way to track all the steps from "deliberative subjectivites" to R2 without some appeal to intuition and analogy on the way, at least partly because human subjectivity on economic policy is not fully mathematized, not in this dissertation, hardly (or unconvincingly) in the broader field, and maybe never.
+
+For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240.
+
+Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary – it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis.
+
+
+QDCs are not calculated, as one might think, as t-tests, but using Brown 1980 244.
+
+Brown 1980: 13 on the trick for transposed matrix; it's gotta be the same units.
+Look at Brown 1980: 14 for the body parts analogy; putting it back together in R requires researchers' subjectivity.
+
+
+Notice towards the end: these are not revolutionary insights.
+In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity – missing liberals, in particular.
+Still, it is very interesting, and it would be crucial to have larger samples to extract more items.
+
+Also notice this in the number of factors discussion: on the one hand, loom non-factor factors, spurious things that I should avoid.
+On the other hand looms the danger of ignoring factors, false negatives, that area really out there and without whom the following results may turn out to be quite trivial, and not faithful to the people who volunteered these sorts.
+
+the items *together* make sense (or not) Brown 1980: 257
+
+I don't Have people in my sample who really stand out, as Brown 1980 261 hopes there would be.
+
+garbage in garbage out is in Brown 1980 262
 
 
 ## Correlations
@@ -230,17 +278,6 @@ ggcorr(cor_matrix = cor(q_sorts[,,"before"]), label=TRUE, label_round=2)
 #       color = TRUE)
 ```
 
-<!-- COMMENT MH
-read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per harman1976
--->
-<!-- COMMENT MH
-check whether the two flagging criteria make sense, aren't they too restrictive?
--->
-
-<!-- COMMENT MH
-via qlist Since Mary Furnari decided to rely on varimax rotation, Watts & Stenner (2012), for instance, would actually recommend PCA. (But note that Watts & Stenner erroneously think that varimax maximizes the amount of explained variance. To clarify: Varimax searches a simple structure solution characterized by a maximal number of either high or near zero loadings for every factor which is arrived at by maximizing the variance of the factors' loadings. The amount of explained variance is not affected by rotation.)
-In my view, the meaningfulness of certain quantitative coefficients in Q, like so-called 'significance' of factor loadings is often overrated. So as if observing coefficient based rules could provide mathematical-statistical  proof for the soundness of the researcher's decisions and conclusions. Without referring to the wisdom of inferential statistics (which is not applicable in Q, IMO), however, I would dare to bet that given 60% explained variance of the 1st factor and 4% and less for the following, that Mary Furnari won't be able to assemble groups of sorts (to be flagged on different factors) that represent distinct = uncorrelated views. But that's just a bet which I possibly can lose. So nothing is lost by just trying out varimax solutions with 2, 3, 4 ... factors. Two simple (but not 100% unambiguous) rules for accepting a factor solution: (1) At least 2, better 3, defining sorts (load strongly on the respective factor only). (2) Intercorrelations of factor scores at a moderate level (possible choice of critical level: not higher than the size of the loading accepted for a defining sort).
--->
 
 ```{r analysis}
 keyneson <- list("before"=c(), "after"=c())
@@ -258,66 +295,9 @@ keyneson$before <- qmethod(
 # )
 ```
 
-```{r array-viz, fig.width = 20, fig.height=18}
-arrayviz <- array.viz(
-  QmethodRes = keyneson$before
-  ,f.names = c("resentment","critical","moderate")
-  ,incl.qdc = TRUE
-  ,color.scheme = "Set1"
-  ,extreme.labels = c("very much disagree","very much agree")
-)
-arrayviz[3]
-```
-
-<!--
-stephenson on number of factors, via verena
-OS-9-3-Stephenson.pdf S. 89 “Second, a little simple factor analysis is
-all that the operations demand: It will be the end
-% of work in this domain if anyone thinks that its be- all and end-all is factor analysis. The less of it, the better. Three or four factors are all that most well planned studies require; there's something loose in the works if anything like ten or so factors are carved out for interpretation. The key to sound work, i.e., to make discoveries, is what one puts into Q method as abduction, not what factor analysis turns out deductively.
--->
-
-<!-- worry about bipolar factors -->
-
-<!--
-notice that I look at sd of pop, not sample, because it's not r stats
-but still, dispersion is interesting - those are the loose lego blocks
-is there maybe a need to also look at the loose lego blocks *overall*? And what are those? What are the loosest blocks?
--->
-
-<!--
-Frank destroys the SD of pro-socialism
--->
-
-```{r frank discussion pro socialism}
-# q.feedback["pro-socialism","Frank","after"]
-```
-
-```{r add-type}
-# array.viz.data <- merge(  # add type of item
-#   x = array.viz.data
-#   ,y = q.sampling.structure  # that is where the types are from
-#   ,by.x = 0  # these are rownames
-#   ,by.y = "handle"  # that is how they are called
-#   ,all = TRUE
-# )
-# rownames(array.viz.data) <- array.viz.data$Row.names  # restore rownames
-# g <- g + geom_text(
-#   aes(
-#     ,fontface=c("plain","bold","italic")[metaconsensus]
-#   )
-#   ,size = 3.5
-#)
-#g <- g + scale_family_manual(c("serif","sans","mono"))
-```
-
 ## Factor Extraction
 
-<!-- COMMENT MH
-agree that in fact, as Kampen and Tamas point out, the representativeness of the q sample to the universe of statements is a weak, weak spot.
-Important: as cuppen in  kampen and tamas writes 3112 it's not the number of supporters that count, just the perspectives.
-Consider the discussion of q methodology and validities oin kampen tamas 3112
-do cluster analysis instead of factor; according to kampen and tamas. This might be interesting.
--->
+
 
 
 ### Which Data Reduction Technique
@@ -332,12 +312,48 @@ http://cran.r-project.org/web/packages/FactoMineR/index.html
 psych also appears to do parallel analysis by fa.parallel
 -->
 
+<!-- Even Brown admits that CFA was originally developed because it was a computationally simpler, though similar in results to PAF. -->
+
+<!-- Why would we get rid of negative cors? What do the columns mean? Brown 210 odd prcedure -->
+
+<!-- funny pun from Brown: factor analysis is a complicated tautology 223 -->
+
+<!-- check kline 1994 and Harman 1976 in the above on PCA vs CF
+Harman 1976 says they will mostly be the same! -->
+
 - *Exploratory* Factor Analysis (Centroid) @Brown1980's favorite
 - Principal Components Analysis
 - ...?
 
+<!-- COMMENT MH
+read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per harman1976
+-->
+
+#### PCA
+
+<!-- Steps in a PCA
+- correlation matrix (explain detail, just the covariance, somehow standardized to the variance)
+- extract principal components by matrix multiplication (dot product) -->
+
+<!-- PCA is scale-variant, but that is not a problem for the corr matrix, nor for the original matrix -->
+
+#### PAF
+
+
+#### Cluster Analysis
+
+<!-- COMMENT MH
+agree that in fact, as Kampen and Tamas point out, the representativeness of the q sample to the universe of statements is a weak, weak spot.
+Important: as cuppen in  kampen and tamas writes 3112 it's not the number of supporters that count, just the perspectives.
+Consider the discussion of q methodology and validities oin kampen tamas 3112
+do cluster analysis instead of factor; according to kampen and tamas. This might be interesting.
+-->
+
 
 ### How many factors?
+
+<!-- notice: there may be stuff in the data that suggests how many factors make sense (loc 2287)
+notice: I am definetely doing exploratory factor analysis; no ex-ante reason to expect one or the other result -->
 
 <!-- for why validity makes no sense, see Brown 1980:4, that may (or may not) be so, but what definietely needs to be tested is whether, in fact, these tautologically valid viewpoints are also *patterned*, wheter some shared can be extracted.-->
 In this (above context) Q methodologists often advise that, occasionally, researchers would know what to look for,
@@ -346,6 +362,8 @@ and that therefore some substantive discretion would be warranted.
 In the extreme case, any number of extracted factor would be acceptable, so as long as it *made sense*.
 The problem here, oddly not obvious to many Q researchers, is that this kind of "makes-sense"-discretion comes perilously close to the imposition of deductively hypothesized meaning so criticized in survey research. (see brown 3 or so)
 
+This comes close to massaging data.
+There is something falsifiable here; are there, or are there not common factors.
 
 - Experience / Common sense: 6--8 persons per ex-ante factor (Stenner \& Watts 2012: loc 2652):
     `r ncol(q_sorts)/8` factors
@@ -357,6 +375,12 @@ The problem here, oddly not obvious to many Q researchers, is that this kind of 
 - Scree plot (2nd derivative < 0)
 - Parallel Analysis (Horn 1965)
 
+<!--
+stephenson on number of factors, via verena
+OS-9-3-Stephenson.pdf S. 89 “Second, a little simple factor analysis is
+all that the operations demand: It will be the end
+% of work in this domain if anyone thinks that its be- all and end-all is factor analysis. The less of it, the better. Three or four factors are all that most well planned studies require; there's something loose in the works if anything like ten or so factors are carved out for interpretation. The key to sound work, i.e., to make discoveries, is what one puts into Q method as abduction, not what factor analysis turns out deductively.
+-->
 
 <!-- look at communality -->
 
@@ -377,15 +401,33 @@ Also, point out that absent any kind of such a criterion, we're left in a very u
 also, in my case, arguably sampling *is* ok, because deliberative participants will always be self-selected (as argued elsewhere).
 <!-- TODO MCH: notice in the recruitment part that a) too much money may drive out other incentives, and b) already, the VHS-kind-of-orientation-what-do-i-learn was a bit of a problem, might need greater stakes, better output format, more responsibility. This is all under the heading of external validity of the conference -->
 
+
 ### What Rotation?
 
 - Judgmental / Manual
 - Automatic (varimax, equamax etc.)
+<!-- good piece on why judgemental rotation on brown 224: but it's also an invitation to reify stuff, or viewpoints the researcher has. notice that there's already place for judgment in the *interpretation* -->
 
+<!-- worry about bipolar factors -->
 
-### Factor scores
+<!-- COMMENT MH
+via qlist Since Mary Furnari decided to rely on varimax rotation, Watts & Stenner (2012), for instance, would actually recommend PCA. (But note that Watts & Stenner erroneously think that varimax maximizes the amount of explained variance. To clarify: Varimax searches a simple structure solution characterized by a maximal number of either high or near zero loadings for every factor which is arrived at by maximizing the variance of the factors' loadings. The amount of explained variance is not affected by rotation.)
+In my view, the meaningfulness of certain quantitative coefficients in Q, like so-called 'significance' of factor loadings is often overrated. So as if observing coefficient based rules could provide mathematical-statistical  proof for the soundness of the researcher's decisions and conclusions. Without referring to the wisdom of inferential statistics (which is not applicable in Q, IMO), however, I would dare to bet that given 60% explained variance of the 1st factor and 4% and less for the following, that Mary Furnari won't be able to assemble groups of sorts (to be flagged on different factors) that represent distinct = uncorrelated views. But that's just a bet which I possibly can lose. So nothing is lost by just trying out varimax solutions with 2, 3, 4 ... factors. Two simple (but not 100% unambiguous) rules for accepting a factor solution: (1) At least 2, better 3, defining sorts (load strongly on the respective factor only). (2) Intercorrelations of factor scores at a moderate level (possible choice of critical level: not higher than the size of the loading accepted for a defining sort).
+-->
+
+## Factor scores
 
 <!-- Brown 34 explains the ideal type (his choice of words) analogy -->
+
+
+### Flagging
+
+<!-- COMMENT MH
+check whether the two flagging criteria make sense, aren't they too restrictive?
+-->
+
+
+### Scoring
 
 
 ### What visualization
@@ -396,3 +438,56 @@ A neat visualization, in this case, is more than just cosmetic; easy navigation 
 Notice that "consensus statements" is something of a misnomer, because the significance cutoff point is asymmetric.
 <!-- TODO MCH: write to q list about this -->
 
+<!--
+notice that I look at sd of pop, not sample, because it's not r stats
+but still, dispersion is interesting - those are the loose lego blocks
+is there maybe a need to also look at the loose lego blocks *overall*? And what are those? What are the loosest blocks?
+-->
+
+```{r array-viz, fig.width = 20, fig.height=18}
+arrayviz <- array.viz(
+  QmethodRes = keyneson$before
+  ,f.names = c("resentment","critical","moderate")
+  ,incl.qdc = TRUE
+  ,color.scheme = "Set1"
+  ,extreme.labels = c("very much disagree","very much agree")
+)
+arrayviz[3]
+```
+
+```{r add-type}
+# array.viz.data <- merge(  # add type of item
+#   x = array.viz.data
+#   ,y = q.sampling.structure  # that is where the types are from
+#   ,by.x = 0  # these are rownames
+#   ,by.y = "handle"  # that is how they are called
+#   ,all = TRUE
+# )
+# rownames(array.viz.data) <- array.viz.data$Row.names  # restore rownames
+# g <- g + geom_text(
+#   aes(
+#     ,fontface=c("plain","bold","italic")[metaconsensus]
+#   )
+#   ,size = 3.5
+#)
+#g <- g + scale_family_manual(c("serif","sans","mono"))
+```
+
+<!-- TODO MH: per-participation visualization see new issue -->
+
+
+## Interpretation
+
+<!--
+Frank destroys the SD of pro-socialism
+-->
+
+```{r frank discussion pro socialism}
+# q.feedback["pro-socialism","Frank","after"]
+```
+
+
+## Results
+
+<!-- what we're loosing when then R2 increases is, by definition, some residuals.
+interesting idea: maybe look at what kind of residuals was lost? could we tell a story about that? -->

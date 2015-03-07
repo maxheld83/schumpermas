@@ -8,10 +8,24 @@ library: held_library.bib
 # Q Methodology
 
 
-q methodology is "zwischen den stühlen"
+<!-- q methodology is "zwischen den stühlen", and for that reason alone seems appropriate for this research project (jk).
+It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
+So the voices become more strained, more insular and isolated.
+(A prominent Q methodologists recently characterized their annual meetings as a "freak show", ) "humane and mathematical" (Brown 1980: 263) -->
+
+<!-- explain how the sorting proceeds from a zero state, distending from zero – this is where subjectivity becomes operant -->
+
+<!-- incidentally, talk and thought as action (Bentley 1908 177 in BRown 1980 331), is oddly foreshadowing ideas of perfomativity -->
+
+<!-- Notice in my prologue that the first research I did was WVS; exactly the kind of research that Q is opposed to, oddly.
+Also, I know do tax, exactly the kind of research that I was previously opposed to. -->
+
+<!-- In a word, q method is "subjective" but not "arbitrary" Brown 1980: 257 -->
+
+<!-- Saturation sampling is mentioned citing Glaser and Strauss 1967: 61-62 in Brown 1980 -->
 
 > In placing emphasis on the centrality of self-reference, as outlined in more detail elsewhere (Brown and Taylor, 1972, 1973), we run the risk of being lumped with those phenomenologists and existentialists who tend to reify the self, denuding it of all meaning in an effort to save mankind from mathe- maticians. (Conversely, in suggesting the use of factor analysis, we run the opposite risk of being accused of having made the world unsafe for humanists.) It is therefore necessary to rescue the self and subjectivity from any meta- physical smoke screen behind which others may seek to conceal it.
-Fundamentally, a person's subjectivity is merely his own point of view. It is neither a trait nor a variable, nor is it fruitful to regard it as a tributary emanating from some subterranean "stream of consciousness." It is pure behavior of the kind we encounter during the normal course of the day, as when a person prefaces his remarks with "As far as I'm concerned ... ," or "In my opinion
+Fundamentally, a person's subjectivity is merely his own point of view. It is neither a trait nor a variable, nor is it fruitful to regard it as a tributary emanating from some subterranean `stream of consciousness." It is pure behavior of the kind we encounter during the normal course of the day, as when a person prefaces his remarks with "As far as I'm concerned ... ," or "In my opinion
 ... ," or whatnot.
 - brown 46
 
@@ -31,6 +45,8 @@ Stephenson, in the foreword to Brown 1980 boasts:
 > Stephenson in Brown (x)
 
 
+In way, Q method *does* venture to test the claim of radical constructivism, that we each live in our own world, incomprehensible to others (cite Verena's story on the guy who can't read or write), it does so by exposing us to the combinatorial explosion of the Q sort and if, from that combinatorical explosion, some common factors emerge, the simplest explanation would in fact be, that people *do*, after all, understand language in some broadly congruent ways.
+
 The difference between Q methodology and survey research can hardly be overstated.
 As Brown contrasts, the R methodological or survey research view of "subjectivity"  has been to define these *operationally* –-- not *operantly* --- that is, they become measurable only by the researchers hypothesizing:
 
@@ -41,8 +57,6 @@ One may argue, that all empirical science proceeds like that, with say, an opera
 
 <!-- really look at the separation of operational from operant, see brown 1980 page 3; on this page is precisely the kind of constraint and deductive hypothesizing that I cannot afford; because that would not be deliberative, and I don't have that kind of hypotheses anyway. -->
 
-Brown 1980: 13 on the trick for transposed matrix; it's gotta be the same units.
-Look at Brown 1980: 14 for the body parts analogy; putting it back together in R requires researchers' subjectivity.
 
 Notice a bit problem: Q methodology does, in fact, enforce VnM consistency, hence in future, we might not want to use it for preferences, just beliefs and values.
 
@@ -71,7 +85,7 @@ Explain the "behaviorism" in here.
 
 Great quote on what happens during Q:
 
-> Given that the sample of statements is str~ctured (table 6), each Q sort can in itself be considered as a miniexperiment, the structure being a kind of thought maze through which the subject's attitude wanders, attaching itself to this idea, rejecting that one, ignoring others.
+> Given that the sample of statements is structured (table 6), each Q sort can in itself be considered as a miniexperiment, the structure being a kind of thought maze through which the subject's attitude wanders, attaching itself to this idea, rejecting that one, ignoring others.
 > Each Qsort is therefore subject to analysis of variance, which for this subject (81) is shown in table 7 along with the analysis of the Q sorts of two other subjects (87 and 812).
 > brown 31
 
@@ -137,6 +151,7 @@ q_concourse <- import.q.concourse(  # import concourse
 
 Heady ideas seem to have some history in Q, as for example the items on Brown 36
 
+
 ### Q Sampling
 
 more on the factorial design, sources for sampling structured in brown 188
@@ -145,7 +160,7 @@ more on the factorial design, sources for sampling structured in brown 188
 > --- Brown 38
 
 My point exactly – you just can't do it otherwise, if you where to randomly draw statements, very few deliberative statements would show up; it would be an echo chamber, greatly influenced by the *distribution* of viewpoints, a concern anathema to q methodology.
-We don't care how many there are of soem viewpoint.
+We don't care how many there are of some viewpoint.
 This would also be counter to the deliberative sentiment; an argument has strength not because of its popularity, but because of inherent qualities.
 
 Also, Brown (38) suggests that as a practical matter, most people won't be able to tell the difference between a structured and random sample of statements, which, I guess is good news.
