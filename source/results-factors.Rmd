@@ -103,6 +103,7 @@ Code will usually not be reproduced in print, but can always be inspected in the
 
 <!-- TODO MH: see timetable of what was done when at the conference -->
 
+
 ## Import
 
 ```{r import-q-sorts}
@@ -127,6 +128,8 @@ real_names <- TRUE
 if (real_names == TRUE) {
   codenames <- read.csv(file = "../Codenames.csv",header = TRUE)
   colnames(q_sorts) <- codenames$First.Name
+  # TODO make this as a reader, not replace it
+  # TODO also do this for feedback
 }
 ```
 
@@ -159,7 +162,7 @@ For more on what 0 means to q, see Brown 1980 199. -->
 
 ```{r dropped-participants}
 q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
-q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # incomplete
+q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for personal reasons
 q_sorts <- q_sorts[ , !colnames(q_sorts) == "Claus", ]  # incomplete
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
@@ -193,6 +196,88 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Claus", ]  # incomplete
 
 # Q Method Analysis
 
+Results chapters in quantitative research do not usually recount and justify every mathematical operation from raw data to final interpretation.
+In reporting mainstream statistics, say, a linear regression (OLM) much in the way of axioms and preconditions is often taken for granted, though perhaps, sometimes too much.
+Powerful computers, confirmation biases and time pressure for writers and readers alike may conspire to occasionally stretch thin the argumentative link between elementary probability theory and the results drawn from it.
+<!-- TODO kill, make easier? -->
+
+Q methodology is different, and requires a more careful, patient treatment.
+While its mathematical core – different methods of exploratory factor analysis (EFA) – are well-rehearsed in mainstream quantitative social research, its application to Q is still strange to many.
+
+1. *Transposed Data Matrix.*
+  Because Q method *transposes* the conventional data matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
+<!-- TODO add brown quote for transposed -->
+  For this reason alone, it will be worth tracking every operation and grounding it in the unfamiliar epistemology of Q.
+
+2. *Marginalization and Controversy.*
+  Almost 80 years after William @Stephenson1935 suggested this *inversion* of factor analysis in his letter to *Nature*, Q is still an exotic methodology.
+  It sometimes invites scathing critiques (@Tamas-Kampen-2014), but more often, is outright ignored in mainstream outlets.
+  <!-- TODO cite lack in textbooks etc in tamas kampen -->
+  As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular - though not into the "Church of Q" @Tamas-Kampen-2015 fear.
+  Q methodology may have sometimes shied away from exposing itself from rigorous criticism and disruptive trends in mainstream social research, though probably often out of sheer frustration with persistent misunderstandings, and because of genuine disagreement.
+  <!-- TODO add examples -->
+  In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies – or opponents, at any rate.
+  [^freakshow]:
+    A prominent researcher recently described the annual meeting of the [International Society for the Scientific Study of Subjectivity](http://qmethod.org/issss) as an endearing "freak show".
+    With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get together.
+  Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
+  Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely dissenting into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
+  <!-- TODO find precise quotes -->
+  What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown.
+  These norms become hermetically sealed ideologies ("reliability does not apply to subjectivity") only when detached from their epistemological underpinnings, as, I suspect, would be the case for other methodologies.
+  <!-- TODO find source, argue that in fact, as per Brown, factor reliability DOES matter -->
+3. *Experimental Setting.*
+  <!-- TODO fill in! -->
+4. *Literate Statistics.*
+  Not just when, or if, a method is new or controversial, as in Q, mathematical operations and argumentative prose should not be let to diverge too widely.
+  The intuition of literate programming holds for statistics, too: we do not *use* unintelligible algebra to *give* us a comprehensible result to be explained.
+  *Neither* mathematics nor prose are *primary*, algebra and language are *both* the explaining intellect at work, just in a different registrar.
+
+I suggest then, that at least in the following, initial analysis, some verbosity has its virtue.
+Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q: Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to my own work is deeply indebted.
+<!-- TODO make this better, humbler -->
+Mathematics have their place, but formulae alone, inspite of their veneer of rigor, as code comments, need analogy, intuition and impression to cover the distance to the deliberative subjectities on taxation and the economy under study here – which themselves are mathematized in this dissertation, nor much convincingly in the broader field, and maybe never will.
+<!-- TODO find better link to previous chapter -->
+One may add, that if science is also bound to a discourse ethic of reaching understanding, it, needs to relate its abstractions to the human lifeworld, from which all meaning eminates.
+<!-- TODO make this better or kill it -->
+
+The following pages will hopefully assuade the Q skeptics, and take along newcomers to the method.
+
+At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical sophistication.
+They are right: the key to understanding human subjectivity lies in iterative abduction, in the thorough going back and forth between informed hunches about *what might make sense*, and what the data will bear out.
+
+The following statistical groundwork is a worthwhile, but merely *necessary* – not *sufficient* – condition to a *scientific* study of subjectivity (emphasis added, though intended by the [ISSSS](International Society for the Scientific Study of Subjectivity)).
+
+To make sense – as we must – of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and that they are, in fact, shared.
+
+
+## Correlation
+
+
+
+
+
+ correlation matrix for factor analysis, Q is still an exotic research method.
+
+1. *Transposed Matrix*. While methods of exploratory factor analysis (EFA) are somewhat advanced, but well-established in mainstream quantitative social research, Q
+2.
+Q method requires a more careful, patient treatment, because its statistics are different on a number of counts:
+
+
+
+Both because Q method is little known, and to live up to the promise of a *constrained*, qualitative analyses, I will track each statistical procedure in the following quite narrowly.
+
+Literate statistics.
+
+This will hopefully assuade the doubts of skeptics, and take along newcomers to the methods.
+At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical flourishes.
+They are right: the key to understanding human subjectivity lies in abductive intelligence, in thoroughly going back and forth between informed hunches and what the data will bear out.
+Still, statistical rigor may be a worthwile *necessary*, though not *sufficient* condition for a good Q method.
+
+What are we here for?
+
+
+
 What kind of Q Methodological Analysis should I run?
 
 - Deductive vs. inductive vs. abductive
@@ -201,10 +286,7 @@ What kind of Q Methodological Analysis should I run?
 - Holistic vs. atomized
 - Baseline vs. treatment effect
 
-Factor analyses or principal components analyses are well-established procedures and will not usually receive a lot of explanation in a results section.
-In Q – almost 100 years after its foundation, still an *exotic* procedure – things are a little different.
-Because Q method transposes the correlation matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
-Both because Q method is little known, and to live up to the promise of a *constrained*, qualitative analyses, I will track each statistical procedure in the following quite narrowly.
+
 
 <!-- mention controversy about Q, latest piece -->
 
@@ -226,9 +308,7 @@ It is also unclear, how theoretical rotation is even supposed to work with more 
 
 THis will be more verbose than usual.
 
-There will be some math, but limited and a lot of "impressionistic" talk, and analogies.
-This seems bad style, unscientific, just math would be better.
-It seems hard to conceive of a way to track all the steps from "deliberative subjectivites" to R2 without some appeal to intuition and analogy on the way, at least partly because human subjectivity on economic policy is not fully mathematized, not in this dissertation, hardly (or unconvincingly) in the broader field, and maybe never.
+
 
 For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240.
 
