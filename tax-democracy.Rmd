@@ -1,26 +1,48 @@
 ---
 title: "Taxation and Democracy"
 author: "Maximilian Held"
-output: pdf_document
-library: held_library.bib
+output:
+  pdf_document:
+    fig_caption:
+    - yes
+    number_sections:
+    - yes
+    toc:
+    - yes
+  html_document:
+    toc:
+    - yes
+    fig_caption:
+    - yes
+    fig_retina:
+    - yes
+bibliography: ../held-library/held_library.bib
+lang: english
+documentclass: book
 ---
+
+Immer zitieren ist immer gut [@Habermas1999a].
 
 ```{r preamble }
 library(devtools)
 library(knitr)
 library(rmarkdown)
+library(corrplot)
+library(reshape2)
 install.packages(c("qmethod"), repos = NULL, type="source")
 library(qmethod)
-library(reshape2)
-library(corrplot)
 ```
-
 
 ```{r setup-knitr, cache = FALSE, include = FALSE}
 opts_knit$set(root.dir = normalizePath(getwd()))
 ```
 
+
 ```{r q-method, child="source/method-q.Rmd"}
+#knit("source/method-q.Rmd")
 ```
 
 ```{r results-factors, child="source/results-factors.Rmd"}
+```
+
+# References
