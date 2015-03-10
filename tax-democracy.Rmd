@@ -18,10 +18,7 @@ output:
     - yes
 bibliography: ../held-library/held_library.bib
 lang: english
-documentclass: book
 ---
-
-Immer zitieren ist immer gut [@Habermas1999a].
 
 ```{r preamble }
 library(devtools)
@@ -38,7 +35,7 @@ opts_knit$set(root.dir = normalizePath(getwd()))
 ```
 
 
-```{r q-method, child="source/method-q.Rmd"}
+```{r q-method, child="source/method-q.Rmd", include = FALSE, results = "hide"}
 #knit("source/method-q.Rmd")
 ```
 
