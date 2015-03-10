@@ -8,12 +8,12 @@ library: held_library.bib
 # Q Methodology
 
 
-<!-- q methodology is "zwischen den stühlen", and for that reason alone seems appropriate for this research project (jk).
+<!-- q methodology is "zwischen den stuehlen", and for that reason alone seems appropriate for this research project (jk).
 It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
 So the voices become more strained, more insular and isolated.
 (A prominent Q methodologists recently characterized their annual meetings as a "freak show", ) "humane and mathematical" (Brown 1980: 263) -->
 
-<!-- explain how the sorting proceeds from a zero state, distending from zero – this is where subjectivity becomes operant -->
+<!-- explain how the sorting proceeds from a zero state, distending from zero - this is where subjectivity becomes operant -->
 
 <!-- incidentally, talk and thought as action (Bentley 1908 177 in BRown 1980 331), is oddly foreshadowing ideas of perfomativity -->
 
@@ -48,7 +48,7 @@ Stephenson, in the foreword to Brown 1980 boasts:
 In way, Q method *does* venture to test the claim of radical constructivism, that we each live in our own world, incomprehensible to others (cite Verena's story on the guy who can't read or write), it does so by exposing us to the combinatorial explosion of the Q sort and if, from that combinatorical explosion, some common factors emerge, the simplest explanation would in fact be, that people *do*, after all, understand language in some broadly congruent ways.
 
 The difference between Q methodology and survey research can hardly be overstated.
-As Brown contrasts, the R methodological or survey research view of "subjectivity"  has been to define these *operationally* –-- not *operantly* --- that is, they become measurable only by the researchers hypothesizing:
+As Brown contrasts, the R methodological or survey research view of "subjectivity"  has been to define these *operationally* --- not *operantly* --- that is, they become measurable only by the researchers hypothesizing:
 
 > Procedurally, components x, Y, and z are declared to be properties of trait A (say, anomy); statements X, Y, and Z are constructed and subjected to tests of reliability and validity; and the scale is administered to respondents.
 > - Brown
@@ -60,7 +60,7 @@ One may argue, that all empirical science proceeds like that, with say, an opera
 
 Notice a bit problem: Q methodology does, in fact, enforce VnM consistency, hence in future, we might not want to use it for preferences, just beliefs and values.
 
-Instead of sorting on two dimensions, it might be easier to just sort them twice – and record the result, should have the same form -7 +7. Or is there a problem?
+Instead of sorting on two dimensions, it might be easier to just sort them twice --- and record the result, should have the same form -7 +7. Or is there a problem?
 
 > "There never was a single matrix of scores to which *both* R and Q apply."
 > --- Stephenson 1953: 15 as cited in Brown
@@ -94,7 +94,7 @@ Great quote on what happens during Q:
 
 ### Q Distribution
 
-Notice that the difference between the two is because I need an uneven number of columns – this may not matter much, except there being a significance to the 0, as per Brown:
+Notice that the difference between the two is because I need an uneven number of columns --- this may not matter much, except there being a significance to the 0, as per Brown:
 > "all meaning distends from the middle" (brown 22)
 
 The forced distribution was defined as follows:
@@ -159,12 +159,13 @@ more on the factorial design, sources for sampling structured in brown 188
 > "Structuring ensures balance, however, and so is recommended where practicable."
 > --- Brown 38
 
-My point exactly – you just can't do it otherwise, if you where to randomly draw statements, very few deliberative statements would show up; it would be an echo chamber, greatly influenced by the *distribution* of viewpoints, a concern anathema to q methodology.
+My point exactly --- you just can't do it otherwise, if you where to randomly draw statements, very few deliberative state
+ents would show up; it would be an echo chamber, greatly influenced by the *distribution* of viewpoints, a concern anathema to q methodology.
 We don't care how many there are of some viewpoint.
 This would also be counter to the deliberative sentiment; an argument has strength not because of its popularity, but because of inherent qualities.
 
 Also, Brown (38) suggests that as a practical matter, most people won't be able to tell the difference between a structured and random sample of statements, which, I guess is good news.
-He does not, however, provide evidence for that - and it's not obvious how that should be tested. (bit it might – gh issue)
+He does not, however, provide evidence for that - and it's not obvious how that should be tested. (bit it might --- gh issue)
 
 > "As should be evident, however, theoretical structure in no way obtrudes on a person's rendering of his viewpoint, any more than the theory of relativity influences the speed of light.
 >  The factorial structure is not necessarily a hypothesis for testing, although it can be used as such; it merely provides a possible, as opposed to necessary, explanation of the resulting factors
@@ -177,8 +178,9 @@ Still, *this* is where the sausage is made in Q.
 It's the dirty secret, and not a lot of people talk about it.
 Factor extraction, by contrast, is out in the open, and may be subjected to alternative, but conceivable standards.
 
-We need a carpet; it's just a way of looking at it, just a model, and it shouldn't be overstated – especially because the dimensions (2?) and the geography of the room to be tiled are, by definition, unknown.
-A q sample (and concourse) will always be more of *regulative* ideal – hence the github account.
+We need a carpet; it's just a way of looking at it, just a model, and it shouldn't be overstated --- especially because the dimensions (2?) and the geography of the room to be tiled are, by definitio
+, unknown.
+A q sample (and concourse) will always be more of *regulative* ideal --- hence the github account.
 
 What we have here is a *factorial* design of statements (not of people!)
 
@@ -190,8 +192,9 @@ q_sampling_structure <- read.csv(  # read in sampling structure
 
 generally nice quote: q methodology lets "subjects (sic!) speak for himself (Sic)" brown 45
 
-This sampling structure is, in fact, very similar to what Brown does on page 30 – except that the other axis is, arguably, farther away from the resultant factors than in brown#s case.
-My are not actually that theory driven; they are history-of-ideas driven ("marxism", "liberalism") – they need not imply that actual people had these ideologies today, but merely that these might be some consistent and widely divergent ways of thinking about taxation.
+This sampling structure is, in fact, very similar to what Brown does on page 30 --- except that the other axis is, arguably, farther away from the resultant factors than in brown#s case.
+My are not actually that theory driven; they are history-of-ideas driven ("marxism", "liberalism") --- they need not imply that actual people had these ideologies today, but merely that these might be some co
+sistent and widely divergent ways of thinking about taxation.
 These are heuristics, not more.
 This works only so-so- in my case, and it's more of a guideline than an actual balanced-block sample.
 Maybe, just maybe, that's ok, as Brown ()

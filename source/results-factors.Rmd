@@ -66,7 +66,7 @@ The following free / open source and closed / proprietary programs are available
 | General-Purpose | Specialized
  -|----|----
  Closed Source | [SPSS](http://www-01.ibm.com/software/analytics/spss/), [STATA](http://www.stata.com) | [PCQ](http://www.pcqsoft.com)
- Open Source | [R](http://www.r-project.org) | R: [qmethod](https://github.com/aiorazabala/qmethod) package, [PQMethod](http://schmolck.userweb.mwn.de/qmethod/)
+ Open Source | [R](http://www.r-project.org) | R: [qmethod](https://github.com/aiorazabala/qmethod) package, [PQMethod](http://schmolck.userweb.mwn.de/qmethod/)
 
 The closed-source, general-purpose programs offer some programmatic extensibility, but are poorly suited for Q methodology.
 These commercial, and often expensive offerings also make it hard reproduce and open up research.
@@ -202,7 +202,7 @@ Powerful computers, confirmation biases and time pressure for writers and reader
 <!-- TODO kill, make easier? -->
 
 Q methodology is different, and requires a more careful, patient treatment.
-While its mathematical core – different methods of exploratory factor analysis (EFA) – are well-rehearsed in mainstream quantitative social research, its application to Q is still strange to many.
+While its mathematical core --- different methods of exploratory factor analysis (EFA) --- are well-rehearsed in mainstream quantitative social research, its application to Q is still strange to many.
 
 1. *Transposed Data Matrix.*
   Because Q method *transposes* the conventional data matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
@@ -216,11 +216,13 @@ While its mathematical core – different methods of exploratory factor analysis
   As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular - though not into the "Church of Q" @Tamas-Kampen-2015 fear.
   Q methodology may have sometimes shied away from exposing itself from rigorous criticism and disruptive trends in mainstream social research, though probably often out of sheer frustration with persistent misunderstandings, and because of genuine disagreement.
   <!-- TODO add examples -->
-  In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies – or opponents, at any rate.
+  In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies --- or opponents, at any rate.
+
   [^freakshow]:
     A prominent researcher recently described the annual meeting of the [International Society for the Scientific Study of Subjectivity](http://qmethod.org/issss) as an endearing "freak show".
     With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get together.
-  Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
+
+    Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
   Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely dissenting into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
   <!-- TODO find precise quotes -->
   What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown.
@@ -236,7 +238,7 @@ While its mathematical core – different methods of exploratory factor analysis
 I suggest then, that at least in the following, initial analysis, some verbosity has its virtue.
 Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q: Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to my own work is deeply indebted.
 <!-- TODO make this better, humbler -->
-Mathematics have their place, but formulae alone, inspite of their veneer of rigor, as code comments, need analogy, intuition and impression to cover the distance to the deliberative subjectities on taxation and the economy under study here – which themselves are mathematized in this dissertation, nor much convincingly in the broader field, and maybe never will.
+Mathematics have their place, but formulae alone, inspite of their veneer of rigor, as code comments, need analogy, intuition and impression to cover the distance to the deliberative subjectities on taxation and the economy under study here --- which themselves are mathematized in this dissertation, nor much convincingly in the broader field, and maybe never will.
 <!-- TODO find better link to previous chapter -->
 One may add, that if science is also bound to a discourse ethic of reaching understanding, it, needs to relate its abstractions to the human lifeworld, from which all meaning eminates.
 <!-- TODO make this better or kill it -->
@@ -246,9 +248,9 @@ The following pages will hopefully assuade the Q skeptics, and take along newcom
 At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical sophistication.
 They are right: the key to understanding human subjectivity lies in iterative abduction, in the thorough going back and forth between informed hunches about *what might make sense*, and what the data will bear out.
 
-The following statistical groundwork is a worthwhile, but merely *necessary* – not *sufficient* – condition to a *scientific* study of subjectivity (emphasis added, though intended by the [ISSSS](International Society for the Scientific Study of Subjectivity)).
+The following statistical groundwork is a worthwhile, but merely *necessary* --- not *sufficient* --- condition to a *scientific* study of subjectivity (emphasis added, though intended by the [ISSSS](International Society for the Scientific Study of Subjectivity)).
 
-To make sense – as we must – of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and that they are, in fact, shared.
+To make sense --- as we must --- of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and that they are, in fact, shared.
 
 
 ## Correlation
@@ -291,14 +293,14 @@ What kind of Q Methodological Analysis should I run?
 <!-- mention controversy about Q, latest piece -->
 
 
-explain the rotation business with lego; it is easier to recognize a house when the axis by which height etc. is described are, say, parallel to the ground – though they need not.
+explain the rotation business with lego; it is easier to recognize a house when the axis by which height etc. is described are, say, parallel to the ground --- though they need not.
 
-the lego analogy also works for the information that this is about; relative, and operative – though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
+the lego analogy also works for the information that this is about; relative, and operative --- though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
 though with only simple bricks (say, no transparent elements, no surface, no angled bricks for roofs, you end up with pretty brutalist architecture)
 
 The problem is of course that judgmental rotation is theory laden; for example, a somewhat naive architectural theory that expects man-made objects to meaningfully exist perpendicular to earh, and what's more, perpendicular to broadly parallel lines.
 this may work for run-of-the-mill cards and single-family homes, but other classes of objects, say, a tree, a vibrator might be harder to recognize.
-This analogy - if a little forced – offers more instruction: cards and houses are easy to recognize in the same coordinate system because they are, in fact, build in much the same way, by an industrial system (compare that to natural objects, or to works of art) – and they exist under gravity, which enforces some kinds of discipline.
+This analogy --- if a little forced --- offers more instruction: cards and houses are easy to recognize in the same coordinate system because they are, in fact, build in much the same way, by an industrial system (compare that to natural objects, or to works of art) --- and they exist under gravity, which enforces some kinds of discipline.
 the same of course, *could* be said for viewpoints.
 But then, we get into trecherous territory, assuming that kind of dimensionality.
 A mathematical criterion may, in fact serve us better.
@@ -312,7 +314,7 @@ THis will be more verbose than usual.
 
 For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240.
 
-Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary – it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis.
+Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary --- it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis.
 
 
 QDCs are not calculated, as one might think, as t-tests, but using Brown 1980 244.
@@ -322,7 +324,7 @@ Look at Brown 1980: 14 for the body parts analogy; putting it back together in R
 
 
 Notice towards the end: these are not revolutionary insights.
-In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity – missing liberals, in particular.
+In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity --- missing liberals, in particular.
 Still, it is very interesting, and it would be crucial to have larger samples to extract more items.
 
 Also notice this in the number of factors discussion: on the one hand, loom non-factor factors, spurious things that I should avoid.
@@ -457,7 +459,7 @@ There is something falsifiable here; are there, or are there not common factors.
 
 <!--
 stephenson on number of factors, via verena
-OS-9-3-Stephenson.pdf S. 89 “Second, a little simple factor analysis is
+OS-9-3-Stephenson.pdf S. 89 "Second, a little simple factor analysis is
 all that the operations demand: It will be the end
 % of work in this domain if anyone thinks that its be- all and end-all is factor analysis. The less of it, the better. Three or four factors are all that most well planned studies require; there's something loose in the works if anything like ten or so factors are carved out for interpretation. The key to sound work, i.e., to make discoveries, is what one puts into Q method as abduction, not what factor analysis turns out deductively.
 -->
@@ -469,7 +471,7 @@ all that the operations demand: It will be the end
 <!-- \cite{Wittenborn} says explicitly what the problem is: 132, namely that there is no test as to whether there are other people who would sort like this. -->
 
 Brown's case (42) against statistical (as opposed to, ominously, "substantive") criteria for the number of cases seems to rest on particular people's viewpoints being important, which is not the case in my study, nor probably will it ever be in this kind of work.
-This *does* make sense because you don't want to rest on numbers game along, namely the amount of people who load on a factor, that's true – but this is still a necessary, if not a sufficient condition.
+This *does* make sense because you don't want to rest on numbers game along, namely the amount of people who load on a factor, that's true --- but this is still a necessary, if not a sufficient condition.
 Or something like that?
 
 Brown (43) seems to be aware of the problem of false positives from Eigenvalues, but doesn't seem interested in parallel analysis.
