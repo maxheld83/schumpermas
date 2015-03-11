@@ -216,3 +216,13 @@ q_set <- build.q.set(
 )
 ```
 
+
+## Lego Analogy
+
+<!-- the lego analogy also works for the information that this is about; relative, and operative --- though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
+though with only simple bricks (say, no transparent elements, no surface, no angled bricks for roofs, you end up with pretty brutalist architecture) -->
+
+<!-- Brown 1980: 13 on the trick for transposed matrix; it's gotta be the same units.
+Look at Brown 1980: 14 for the body parts analogy; putting it back together in R requires researchers' subjectivity. -->
+
+<!-- garbage in garbage out is in Brown 1980 262 -->

@@ -247,116 +247,30 @@ Mathematics have their place, but formulae alone, inspite of their veneer of rig
 One may add, that if science is also bound to a discourse ethic of reaching understanding, it, needs to relate its abstractions to the human lifeworld, from which all meaning eminates.
 <!-- TODO make this better or kill it -->
 
-The following pages will hopefully assuade the Q skeptics, and take along newcomers to the method.
+The following pages will hopefully dissuade the Q skeptics, and take along newcomers to the method.
 
 At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical sophistication.
 They are right: the key to understanding human subjectivity lies in iterative abduction, in the thorough going back and forth between informed hunches about *what might make sense*, and what the data will bear out.
 
 The following statistical groundwork is a worthwhile, but merely *necessary* --- not *sufficient* --- condition to a *scientific* study of subjectivity (emphasis added, though intended by the [ISSSS](International Society for the Scientific Study of Subjectivity)).
 
-To make sense --- as we must --- of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and that they are, in fact, shared.
+To make sense --- as we must --- of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and if they are, in fact, shared.
 
 
 ## Correlation
 
-correlation matrix for factor analysis, Q is still an exotic research method.
-
-1. *Transposed Matrix*. While methods of exploratory factor analysis (EFA) are somewhat advanced, but well-established in mainstream quantitative social research, Q
-2.
-Q method requires a more careful, patient treatment, because its statistics are different on a number of counts:
-
-
-
-Both because Q method is little known, and to live up to the promise of a *constrained*, qualitative analyses, I will track each statistical procedure in the following quite narrowly.
-
-Literate statistics.
-
-This will hopefully assuade the doubts of skeptics, and take along newcomers to the methods.
-At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical flourishes.
-They are right: the key to understanding human subjectivity lies in abductive intelligence, in thoroughly going back and forth between informed hunches and what the data will bear out.
-Still, statistical rigor may be a worthwile *necessary*, though not *sufficient* condition for a good Q method.
-
-What are we here for?
-
-
-
-What kind of Q Methodological Analysis should I run?
-
-- Deductive vs. inductive vs. abductive
-- Theoretical / judgmental vs. objective
-- Conservative vs. adventurous
-- Holistic vs. atomized
-- Baseline vs. treatment effect
-
-
-
-<!-- mention controversy about Q, latest piece -->
-
-
-explain the rotation business with lego; it is easier to recognize a house when the axis by which height etc. is described are, say, parallel to the ground --- though they need not.
-
-the lego analogy also works for the information that this is about; relative, and operative --- though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
-though with only simple bricks (say, no transparent elements, no surface, no angled bricks for roofs, you end up with pretty brutalist architecture)
-
-The problem is of course that judgmental rotation is theory laden; for example, a somewhat naive architectural theory that expects man-made objects to meaningfully exist perpendicular to earh, and what's more, perpendicular to broadly parallel lines.
-this may work for run-of-the-mill cards and single-family homes, but other classes of objects, say, a tree, a vibrator might be harder to recognize.
-This analogy --- if a little forced --- offers more instruction: cards and houses are easy to recognize in the same coordinate system because they are, in fact, build in much the same way, by an industrial system (compare that to natural objects, or to works of art) --- and they exist under gravity, which enforces some kinds of discipline.
-the same of course, *could* be said for viewpoints.
-But then, we get into trecherous territory, assuming that kind of dimensionality.
-A mathematical criterion may, in fact serve us better.
-Or not?
-
-It is also unclear, how theoretical rotation is even supposed to work with more than 2 dimensions! (or is it, do they do that pairwise or what?)
-
-THis will be more verbose than usual.
-
-
-
-For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240.
-
-Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary --- it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis.
-
-
-QDCs are not calculated, as one might think, as t-tests, but using Brown 1980 244.
-
-Brown 1980: 13 on the trick for transposed matrix; it's gotta be the same units.
-Look at Brown 1980: 14 for the body parts analogy; putting it back together in R requires researchers' subjectivity.
-
-
-Notice towards the end: these are not revolutionary insights.
-In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity --- missing liberals, in particular.
-Still, it is very interesting, and it would be crucial to have larger samples to extract more items.
-
-Also notice this in the number of factors discussion: on the one hand, loom non-factor factors, spurious things that I should avoid.
-On the other hand looms the danger of ignoring factors, false negatives, that area really out there and without whom the following results may turn out to be quite trivial, and not faithful to the people who volunteered these sorts.
-
-the items *together* make sense (or not) Brown 1980: 257
-
-I don't Have people in my sample who really stand out, as Brown 1980 261 hopes there would be.
-
-garbage in garbage out is in Brown 1980 262
-
-
 All of the following analyses exctract patterns from a transposed correlation matrix.
 Q studies do not always display or discuss the correlation matrix but considering that it is the basis for all downstream analyses, some initial comments will be in order.
 
-`Qmethod` - as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a simple Pearson correlation coefficient.
+`Qmethod` --- as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a simple Pearson correlation coefficient.
 
 ```{r cor-viz-before}
 source("../ggcorr/ggcorr.R")  # FIXME update ggally from CRAN, should at some point have this function
 ggcorr(cor_matrix = cor(q_sorts[,,"before"]), label=TRUE, label_round=2)
 ```
 
-```{r how many factors?}
-# library(paran)
-# hornvectors <- paran(t(q_sorts[,,"after"]),
-#       iterations = 1000,x
-#       centile = 95,
-#       quietly = FALSE,
-#       status = TRUE,
-#       graph = TRUE,
-#       color = TRUE)
-```
+
+## Factor Extraction
 
 ```{r analysis}
 keyneson <- list("before"=c(), "after"=c())
@@ -375,12 +289,10 @@ keyneson$before <- qmethod(
 ```
 
 
-## Factor Extraction
-
-
-
 
 ### Which Data Reduction Technique
+
+<!-- Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary --- it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis. -->
 
 <!--
 factor extraction
@@ -394,7 +306,7 @@ psych also appears to do parallel analysis by fa.parallel
 
 <!-- Even Brown admits that CFA was originally developed because it was a computationally simpler, though similar in results to PAF. -->
 
-<!-- Why would we get rid of negative cors? What do the columns mean? Brown 210 odd prcedure -->
+<!-- Why would we get rid of negative cors? What do the columns mean? Brown 210 odd procedure -->
 
 <!-- funny pun from Brown: factor analysis is a complicated tautology 223 -->
 
@@ -408,6 +320,7 @@ Harman 1976 says they will mostly be the same! -->
 <!-- COMMENT MH
 read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per harman1976
 -->
+
 
 #### PCA
 
@@ -428,7 +341,21 @@ do cluster analysis instead of factor; according to kampen and tamas. This might
 -->
 
 
-### How many factors?
+### Number of Factors {#nfactors}
+
+```{r how many factors?}
+# library(paran)
+# hornvectors <- paran(t(q_sorts[,,"after"]),
+#       iterations = 1000,x
+#       centile = 95,
+#       quietly = FALSE,
+#       status = TRUE,
+#       graph = TRUE,
+#       color = TRUE)
+```
+
+<!-- Also notice this in the number of factors discussion: on the one hand, loom non-factor factors, spurious things that I should avoid.
+On the other hand looms the danger of ignoring factors, false negatives, that area really out there and without whom the following results may turn out to be quite trivial, and not faithful to the people who volunteered these sorts. -->
 
 <!-- notice: there may be stuff in the data that suggests how many factors make sense (loc 2287)
 notice: I am definetely doing exploratory factor analysis; no ex-ante reason to expect one or the other result -->
@@ -486,12 +413,33 @@ also, in my case, arguably sampling *is* ok, because deliberative participants w
 - Automatic (varimax, equamax etc.)
 <!-- good piece on why judgemental rotation on brown 224: but it's also an invitation to reify stuff, or viewpoints the researcher has. notice that there's already place for judgment in the *interpretation* -->
 
+<!-- I don't Have people in my sample who really stand out, as Brown 1980 261 hopes there would be. -->
+
+<!-- The problem is of course that judgmental rotation is theory laden; for example, a somewhat naive architectural theory that expects man-made objects to meaningfully exist perpendicular to earh, and what's more, perpendicular to broadly parallel lines.
+this may work for run-of-the-mill cards and single-family homes, but other classes of objects, say, a tree, a vibrator might be harder to recognize.
+This analogy --- if a little forced --- offers more instruction: cards and houses are easy to recognize in the same coordinate system because they are, in fact, build in much the same way, by an industrial system (compare that to natural objects, or to works of art) --- and they exist under gravity, which enforces some kinds of discipline.
+the same of course, *could* be said for viewpoints.
+But then, we get into trecherous territory, assuming that kind of dimensionality.
+A mathematical criterion may, in fact serve us better.
+Or not? -->
+<!--
+It is also unclear, how theoretical rotation is even supposed to work with more than 2 dimensions! (or is it, do they do that pairwise or what?) -->
+
+<!--
+explain the rotation business with lego; it is easier to recognize a house when the axis by which height etc. is described are, say, parallel to the ground --- though they need not. -->
+
+
 <!-- worry about bipolar factors -->
 
 <!-- COMMENT MH
 via qlist Since Mary Furnari decided to rely on varimax rotation, Watts & Stenner (2012), for instance, would actually recommend PCA. (But note that Watts & Stenner erroneously think that varimax maximizes the amount of explained variance. To clarify: Varimax searches a simple structure solution characterized by a maximal number of either high or near zero loadings for every factor which is arrived at by maximizing the variance of the factors' loadings. The amount of explained variance is not affected by rotation.)
 In my view, the meaningfulness of certain quantitative coefficients in Q, like so-called 'significance' of factor loadings is often overrated. So as if observing coefficient based rules could provide mathematical-statistical  proof for the soundness of the researcher's decisions and conclusions. Without referring to the wisdom of inferential statistics (which is not applicable in Q, IMO), however, I would dare to bet that given 60% explained variance of the 1st factor and 4% and less for the following, that Mary Furnari won't be able to assemble groups of sorts (to be flagged on different factors) that represent distinct = uncorrelated views. But that's just a bet which I possibly can lose. So nothing is lost by just trying out varimax solutions with 2, 3, 4 ... factors. Two simple (but not 100% unambiguous) rules for accepting a factor solution: (1) At least 2, better 3, defining sorts (load strongly on the respective factor only). (2) Intercorrelations of factor scores at a moderate level (possible choice of critical level: not higher than the size of the loading accepted for a defining sort).
 -->
+
+## Loadings
+
+For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240.
+
 
 ## Factor scores
 
@@ -508,12 +456,20 @@ check whether the two flagging criteria make sense, aren't they too restrictive?
 ### Scoring
 
 
+#### QDC
+
+QDCs are not calculated, as one might think, as t-tests, but using Brown 1980 244.
+
+
 ### What visualization
 
 notice that while z-scores have more information, it makes this hard to see because of overplotting.
 A neat visualization, in this case, is more than just cosmetic; easy navigation can be considered crucial to arrive at good factor interpretations.
 
 Notice that "consensus statements" is something of a misnomer, because the significance cutoff point is asymmetric.
+
+the items *together* make sense (or not) Brown 1980: 257
+
 <!-- TODO MCH: write to q list about this -->
 
 <!--
@@ -565,7 +521,11 @@ Frank destroys the SD of pro-socialism
 ```
 
 
-## Results
+## Discussion
 
 <!-- what we're loosing when then R2 increases is, by definition, some residuals.
 interesting idea: maybe look at what kind of residuals was lost? could we tell a story about that? -->
+
+<!-- Notice towards the end: these are not revolutionary insights.
+In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity --- missing liberals, in particular.
+Still, it is very interesting, and it would be crucial to have larger samples to extract more items. -->
