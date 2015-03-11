@@ -20,7 +20,7 @@ bibliography: ../held-library/held_library.bib
 lang: english
 ---
 
-```{r preamble }
+```{r preamble, echo = FALSE}
 library(devtools)
 library(knitr)
 library(rmarkdown)
@@ -35,8 +35,8 @@ opts_knit$set(root.dir = normalizePath(getwd()))
 ```
 
 
-```{r q-method, child="source/method-q.Rmd", include = FALSE, results = "hide"}
-#knit("source/method-q.Rmd")
+```{r q-method, message = FALSE, results = "hide", echo = FALSE}
+knit("source/method-q.Rmd")
 ```
 
 ```{r results-factors, child="source/results-factors.Rmd"}

@@ -63,7 +63,7 @@ Good software for the following q methodological analyses should fulfill the fol
 
 The following free / open source and closed / proprietary programs are available:
 
-| General-Purpose | Specialized
+ | General-Purpose | Specialized
  -|----|----
  Closed Source | [SPSS](http://www-01.ibm.com/software/analytics/spss/), [STATA](http://www.stata.com) | [PCQ](http://www.pcqsoft.com)
  Open Source | [R](http://www.r-project.org) | R: [qmethod](https://github.com/aiorazabala/qmethod) package, [PQMethod](http://schmolck.userweb.mwn.de/qmethod/)
@@ -75,9 +75,9 @@ The special-purpose `PQMethod` was originally written for mainframe in 1992 by J
 While nominally free and open-source, `PQMethod` consists largely of legacy FORTRAN code, which few people can read or write today.
 `PQMethod` also offers little programmatic extensibility, because it is a standalone program running within layers of emulators.
 
-The [`qmethod`](https://github.com/aiorazabala/qmethod) package (@Zabala-2014), implementing Q methodology in the free and open source [R programming language and software environment for statistical computing](http://www.r-project.org) (@R-2014) is the best fit for the above criteria.
+The [`qmethod`](https://github.com/aiorazabala/qmethod) package [@Zabala-2014], implementing Q methodology in the free and open source [R programming language and software environment for statistical computing](http://www.r-project.org) [@R-2014] is the best fit for the above criteria.
 R is freely available for all platforms, and supported by vibrant community of developers.
-`Qmethod`, while released only recently, has been thoroughly validated (@Zabala-2014-a), leverages existing packages for extraction and rotation and conveniently wraps specialized Q functions.
+`Qmethod`, while released only recently, has been thoroughly validated [@Zabala-2014-a], leverages existing packages for extraction and rotation and conveniently wraps specialized Q functions.
 Running inside the R command prompt, `qmethod` can be easily extended, now including several functions developed for this dissertation and contributed to the open source project.
 <!-- TODO MCH add citation for my contribs -->
 Most importantly, using `R`, every step from raw data to final factor interpretation can be traced back, using publicly available and vetted code, down to base functions.
@@ -97,7 +97,7 @@ Donald Knuth has formulated this central tenet of his *Literate Programming* app
 > Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to humans what we want the computer to do.
 > --- @Knuth-1984
 
-I try to follow this approach by interweaving prose and code in one document, using the [`knitr`](http://yihui.name/knitr/) R package (@knitr).
+I try to follow this approach by interweaving prose and code in one document, using the [`knitr`](http://yihui.name/knitr/) R package [@knitr].
 Aside from published R packages, all code is run *inside* this document upon rendering.
 Code will usually not be reproduced in print, but can always be inspected in the [source of this document](https://github.com/maxheld83/schumpermas), "*underneath*" the respective operation or result.
 
@@ -106,7 +106,7 @@ Code will usually not be reproduced in print, but can always be inspected in the
 
 ## Import
 
-```{r import-q-sorts}
+```{r import-q-sorts, echo = FALSE, warning = FALSE}
 q_sorts <- import.q.sorts(
   q.sorts.dir = "keyneson/qsorts/",
   q.set = q_set,
@@ -121,22 +121,9 @@ q_sorts <- import.q.sorts(
 )
 ```
 
-## Codenames
-
-```{r real-names}
-real_names <- TRUE
-if (real_names == TRUE) {
-  codenames <- read.csv(file = "../Codenames.csv",header = TRUE)
-  colnames(q_sorts) <- codenames$First.Name
-  # TODO make this as a reader, not replace it
-  # TODO also do this for feedback
-}
-```
-
 ## Participant Feedback
 
-
-```{r import-q-feedback}
+```{r import-q-feedback, echo = FALSE}
 q_feedback <- import.q.feedback(
   q.feedback.dir = "keyneson/feedback/",
   q.sorts = q_sorts,
@@ -151,27 +138,39 @@ q_feedback <- import.q.feedback(
 ```
 
 
+## Missing Data
 
-complete import of `r ncol(q_sorts)`, three participants
+```{r dropped-participants, echo = FALSE}
+#q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
+q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for personal reasons
+#q_sorts <- q_sorts[ , !colnames(q_sorts) == "Claus", ]  # incomplete
+#q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
+q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
+#q_feedback <- q_feedback[ , !colnames(q_feedback) == "Claus", ]  # incomplete
+```
+
+<!-- complete import of `r ncol(q_sorts)`, three participants -->
 
 <!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
 For more on what 0 means to q, see Brown 1980 199. -->
 
 
-## Missing Data
+## Codenames
 
-```{r dropped-participants}
-q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
-q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for personal reasons
-q_sorts <- q_sorts[ , !colnames(q_sorts) == "Claus", ]  # incomplete
-q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
-q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
-q_feedback <- q_feedback[ , !colnames(q_feedback) == "Claus", ]  # incomplete
+```{r real-names, echo = FALSE}
+real_names <- TRUE
+if (real_names == TRUE) {
+  codenames <- read.csv(file = "../Codenames.csv",header = TRUE)
+  colnames(q_sorts) <- codenames$First.Name
+  # TODO make this as a reader, not replace it
+  # TODO also do this for feedback
+}
 ```
+
 
 # Descriptives
 
-```{r descriptives}
+```{r descriptives, echo = FALSE}
 # item.mean <- apply(q.sorts, c(1,3), mean, na.rm = TRUE)
 # item.mean <- cbind(item.mean, item.mean[,"after"] - item.mean[,"before"])
 # colnames(item.mean)[3] <- "change"
@@ -204,36 +203,41 @@ Powerful computers, confirmation biases and time pressure for writers and reader
 Q methodology is different, and requires a more careful, patient treatment.
 While its mathematical core --- different methods of exploratory factor analysis (EFA) --- are well-rehearsed in mainstream quantitative social research, its application to Q is still strange to many.
 
-1. *Transposed Data Matrix.*
-  Because Q method *transposes* the conventional data matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
-<!-- TODO add brown quote for transposed -->
-  For this reason alone, it will be worth tracking every operation and grounding it in the unfamiliar epistemology of Q.
+1.  *Transposed Data Matrix.*
+
+    Because Q method *transposes* the conventional data matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
+    <!-- TODO add brown quote for transposed -->
+    For this reason alone, it will be worth tracking every operation and grounding it in the unfamiliar epistemology of Q.
 
 2. *Marginalization and Controversy.*
-  Almost 80 years after William @Stephenson1935 suggested this *inversion* of factor analysis in his letter to *Nature*, Q is still an exotic methodology.
-  It sometimes invites scathing critiques (@Tamas-Kampen-2014), but more often, is outright ignored in mainstream outlets.
-  <!-- TODO cite lack in textbooks etc in tamas kampen -->
-  As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular - though not into the "Church of Q" @Tamas-Kampen-2015 fear.
-  Q methodology may have sometimes shied away from exposing itself from rigorous criticism and disruptive trends in mainstream social research, though probably often out of sheer frustration with persistent misunderstandings, and because of genuine disagreement.
-  <!-- TODO add examples -->
-  In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies --- or opponents, at any rate.
 
-  [^freakshow]:
-    A prominent researcher recently described the annual meeting of the [International Society for the Scientific Study of Subjectivity](http://qmethod.org/issss) as an endearing "freak show".
-    With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get together.
+    Almost 80 years after William @Stephenson1935 suggested this *inversion* of factor analysis in his letter to *Nature*, Q is still an exotic methodology.
+    It sometimes invites scathing critiques (@Tamas-Kampen-2014), but more often, is outright ignored in mainstream outlets.
+    <!-- TODO cite lack in textbooks etc in tamas kampen -->
+    As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular - though not into the "Church of Q" @Tamas-Kampen-2015 fear.
+    Q methodology may have sometimes shied away from exposing itself from rigorous criticism and disruptive trends in mainstream social research, though probably often out of sheer frustration with persistent misunderstandings, and because of genuine disagreement.
+    <!-- TODO add examples -->
+    In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies --- or opponents, at any rate.
 
     Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
-  Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely dissenting into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
-  <!-- TODO find precise quotes -->
-  What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown.
-  These norms become hermetically sealed ideologies ("reliability does not apply to subjectivity") only when detached from their epistemological underpinnings, as, I suspect, would be the case for other methodologies.
-  <!-- TODO find source, argue that in fact, as per Brown, factor reliability DOES matter -->
-3. *Experimental Setting.*
+    Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely dissenting into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
+    <!-- TODO find precise quotes -->
+    What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown.
+    These norms become hermetically sealed ideologies ("reliability does not apply to subjectivity") only when detached from their epistemological underpinnings, as, I suspect, would be the case for other methodologies.
+    <!-- TODO find source, argue that in fact, as per Brown, factor reliability DOES matter -->
+
+3.  *Experimental Design*
   <!-- TODO fill in! -->
-4. *Literate Statistics.*
-  Not just when, or if, a method is new or controversial, as in Q, mathematical operations and argumentative prose should not be let to diverge too widely.
-  The intuition of literate programming holds for statistics, too: we do not *use* unintelligible algebra to *give* us a comprehensible result to be explained.
-  *Neither* mathematics nor prose are *primary*, algebra and language are *both* the explaining intellect at work, just in a different registrar.
+
+4.  *Literate Statistics.*
+
+    Not just when, or if, a method is new or controversial, as in Q, mathematical operations and argumentative prose should not be let to diverge too widely.
+    The intuition of literate programming holds for statistics, too: we do not *use* unintelligible algebra to *give* us a comprehensible result to be explained.
+    *Neither* mathematics nor prose are *primary*, algebra and language are *both* the explaining intellect at work, just in a different registrar.
+
+[^freakshow]:
+  A prominent researcher recently described the annual meeting of the [International Society for the Scientific Study of Subjectivity](http://qmethod.org/issss) as an endearing "freak show".
+  With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get together.
 
 I suggest then, that at least in the following, initial analysis, some verbosity has its virtue.
 Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q: Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to my own work is deeply indebted.
@@ -255,11 +259,7 @@ To make sense --- as we must --- of the shared viewpoints on taxation and the ec
 
 ## Correlation
 
-
-
-
-
- correlation matrix for factor analysis, Q is still an exotic research method.
+correlation matrix for factor analysis, Q is still an exotic research method.
 
 1. *Transposed Matrix*. While methods of exploratory factor analysis (EFA) are somewhat advanced, but well-established in mainstream quantitative social research, Q
 2.
@@ -337,8 +337,6 @@ I don't Have people in my sample who really stand out, as Brown 1980 261 hopes t
 garbage in garbage out is in Brown 1980 262
 
 
-## Correlations
-
 All of the following analyses exctract patterns from a transposed correlation matrix.
 Q studies do not always display or discuss the correlation matrix but considering that it is the basis for all downstream analyses, some initial comments will be in order.
 
@@ -360,7 +358,6 @@ ggcorr(cor_matrix = cor(q_sorts[,,"before"]), label=TRUE, label_round=2)
 #       color = TRUE)
 ```
 
-
 ```{r analysis}
 keyneson <- list("before"=c(), "after"=c())
 keyneson$before <- qmethod(
@@ -376,6 +373,7 @@ keyneson$before <- qmethod(
 #   forced = TRUE
 # )
 ```
+
 
 ## Factor Extraction
 
@@ -419,10 +417,8 @@ read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per
 
 <!-- PCA is scale-variant, but that is not a problem for the corr matrix, nor for the original matrix -->
 
+
 #### PAF
-
-
-#### Cluster Analysis
 
 <!-- COMMENT MH
 agree that in fact, as Kampen and Tamas point out, the representativeness of the q sample to the universe of statements is a weak, weak spot.
