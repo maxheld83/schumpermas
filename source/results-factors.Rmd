@@ -168,31 +168,6 @@ if (real_names == TRUE) {
 ```
 
 
-# Descriptives
-
-```{r descriptives, echo = FALSE}
-# item.mean <- apply(q.sorts, c(1,3), mean, na.rm = TRUE)
-# item.mean <- cbind(item.mean, item.mean[,"after"] - item.mean[,"before"])
-# colnames(item.mean)[3] <- "change"
-# item.mean
-# item.mean[order(item.mean[,"change"]),] #  sort by change
-
-# item.sd <- apply(q.sorts, c(1,3), sd, na.rm = TRUE)
-# item.sd <- cbind(item.sd, item.sd[,"after"] - item.sd[,"before"])
-# colnames(item.sd)[3] <- "change"
-# item.sd[order(item.sd[,"change"]),] #  sort
-# item.sd
-
-# person.cor <- cor(q.sorts[,,"before"])
-# person.cor[which.min(abs(person.cor))]
-# person.cor
-# str(person.cor)
-# help(which.min)
-```
-
-<!-- TODO make a correlation matrix, just for descriptives, look at which items are most highly correlated same thing for q sorts -->
-
-
 # Q Method Analysis
 
 Results chapters in quantitative research do not usually recount and justify every mathematical operation from raw data to final interpretation.
@@ -257,16 +232,84 @@ The following statistical groundwork is a worthwhile, but merely *necessary* ---
 To make sense --- as we must --- of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and if they are, in fact, shared.
 
 
+## Descriptives
+
+It is common to reproduce descriptive statistics before turning to more advanced analyses.
+Common summary statistics often include measures of central tendency (mean, median) and dispersion (standard deviation, range) on *variables* across *cases*.
+As mentioned before, in Q methodology, variables are *people*, and cases are *items*.
+The mean rank alloted by Q sorters (as the *variables*) across all items (as the *cases*), $\overline{x} = \frac{\sum{x}}{N}$, is then, unsurprisingly, `r unique(apply(q_sorts[,,"before"], 2, mean))` for *all* `r ncol(q_sorts[,,"before"])` participants.
+The *average* position of items has to be zero, because the forced distribution was symmetrical: since participants placed an equal number of cards at `-1 / 1`, `-2 / 2` and so on, item ranks will always cancel out.
+The most frequent *median* value, also by definition, will be `r unique(apply(q_sorts[,,"before"], 2, median))` for everyone, because the center value allowed the greatest number of (`r max(q_distribution)`) cards per the forced distribution.
+By the same token, the *range* extends from `r unique(apply(q_sorts[,,"before"], 2, min))` to `r unique(apply(q_sorts[,,"before"], 2, max))` for everyone, because those extreme values are defined by the forced distribution.
+The *standard deviation*, too, is the same for everyone.
+$s_N = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \overline{x})^2}$, gives the square root of the average squared differences of item scores for a participant, `r unique(apply(q_sorts[,,"before"], 2, pop.sd))` for everyone, because the "spread" of items across the mean is defined by the forced distribution.
+
+Conventional *R* type descriptives are, then, quite  meaningless [Nahinsky 1965 as cited in @Brown1980, 265], because they are the same for all participants and are defined ex-ante by the forced distribution [^free-distro-descr].
+<!-- TODO fix nahinsky quote -->
+
+[^free-distro-descr]: Descriptives are meaningless *only* if the Q distribution is *forced*, that is, the same for everyone.
+  If participants are allowed to sort into differently shaped --- but symmetric --- distributions, the standard deviation $s$ may indicate the degree of polarization in viewpoints that different people hold, that is, about how many items they feel extremely.
+  If, additionally, participants are allowed to sort into asymmetric distributions, the mean $\overline{x}$ may indicate the overall tendency of people to agree with the sorted statements.
+  "Free" distributions are a frequently discussed, if rarely used possibility for Q methodology.
+  <!-- TODO MH add source on free/forced -->
+
+
+```{r descriptives, echo = FALSE}
+# item.mean <- apply(q.sorts, c(1,3), mean, na.rm = TRUE)
+# item.mean <- cbind(item.mean, item.mean[,"after"] - item.mean[,"before"])
+# colnames(item.mean)[3] <- "change"
+# item.mean
+# item.mean[order(item.mean[,"change"]),] #  sort by change
+
+# item.sd <- apply(q.sorts, c(1,3), sd, na.rm = TRUE)
+# item.sd <- cbind(item.sd, item.sd[,"after"] - item.sd[,"before"])
+# colnames(item.sd)[3] <- "change"
+# item.sd[order(item.sd[,"change"]),] #  sort
+# item.sd
+
+# person.cor <- cor(q.sorts[,,"before"])
+# person.cor[which.min(abs(person.cor))]
+# person.cor
+# str(person.cor)
+# help(which.min)
+```
+
+<!-- TODO make a correlation matrix, just for descriptives, look at which items are most highly correlated same thing for q sorts -->
+
+
+
+
 ## Correlation
 
-All of the following analyses exctract patterns from a transposed correlation matrix.
-Q studies do not always display or discuss the correlation matrix but considering that it is the basis for all downstream analyses, some initial comments will be in order.
+To extract shared viewpoints, we must first look at pairwise comparisons of every participants Q-sort against everyone else's Q-sort.
+Since we would expect people with similar viewpoints to sort items in similar positions, we can use a correlation coefficient $r$ between any two people's sorts as a statistical summary of their similarity.
+
+(@pearsons_r) $$ $$
+
+
+
+Q studies do not always display or discuss this *correlation matrix*, but all of the downstream data reduction operations are, in fact, based on this table [@Brown1980, 207].
+
+Correlations are
 
 `Qmethod` --- as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a simple Pearson correlation coefficient.
 
 ```{r cor-viz-before}
-source("../ggcorr/ggcorr.R")  # FIXME update ggally from CRAN, should at some point have this function
-ggcorr(cor_matrix = cor(q_sorts[,,"before"]), label=TRUE, label_round=2)
+# make this a list of before/after
+library(corrplot)
+corrplot(corr = cor(q_sorts[,,"before"])
+  , method = "shade"  # make squares
+  , type = "full"  # take only upper triangular
+  , is.corr = TRUE
+  , addCoef.col = "Black"
+  , diag = TRUE
+  , addCoefasPercent = TRUE
+  , tl.col = "Black"
+  , tl.pos = "tl"
+  , tl.offset = 0.5
+  , order = "alphabet"
+)
+
 ```
 
 
