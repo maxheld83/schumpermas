@@ -141,10 +141,10 @@ q_feedback <- import.q.feedback(
 ## Missing Data
 
 ```{r dropped-participants, echo = FALSE}
-#q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
+q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
 q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for personal reasons
 #q_sorts <- q_sorts[ , !colnames(q_sorts) == "Claus", ]  # incomplete
-#q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
+q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 #q_feedback <- q_feedback[ , !colnames(q_feedback) == "Claus", ]  # incomplete
 ```
@@ -158,12 +158,14 @@ For more on what 0 means to q, see Brown 1980 199. -->
 ## Codenames
 
 ```{r real-names, echo = FALSE}
-real_names <- TRUE
-if (real_names == TRUE) {
-  codenames <- read.csv(file = "../Codenames.csv",header = TRUE)
-  colnames(q_sorts) <- codenames$First.Name
-  # TODO make this as a reader, not replace it
-  # TODO also do this for feedback
+real_names <- TRUE  # this is for manually enabling renaming
+if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
+  codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
+  for (name in colnames(q_sorts)) {  # loop over names in q_sorts
+    colnames(q_sorts)[colnames(q_sorts)==name] <- as.character(codenames[codenames[,1]==name,2])  # assign original name
+    colnames(q_feedback)[colnames(q_feedback)==name] <- as.character(codenames[codenames[,1]==name,2])  # assign original name
+  }
+  warning("This rendering includes real names. Do not publish or pass around!")
 }
 ```
 
@@ -232,7 +234,7 @@ The following statistical groundwork is a worthwhile, but merely *necessary* ---
 To make sense --- as we must --- of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and if they are, in fact, shared.
 
 
-## Descriptives
+## (No) Descriptives {#descriptives}
 
 It is common to reproduce descriptive statistics before turning to more advanced analyses.
 Common summary statistics often include measures of central tendency (mean, median) and dispersion (standard deviation, range) on *variables* across *cases*.
@@ -253,28 +255,92 @@ Conventional *R* type descriptives are, then, quite  meaningless [Nahinsky 1965 
   "Free" distributions are a frequently discussed, if rarely used possibility for Q methodology.
   <!-- TODO MH add source on free/forced -->
 
+```{r descriptives, echo = FALSE, include = FALSE}
+apply(q_sorts[,,"before"],1,mean)[order(apply(q_sorts[,,"before"],1,mean))]  # sort by mean
+apply(q_sorts[,,"before"],1,pop.sd)[order(apply(q_sorts[,,"before"],1,pop.sd))]  # sort by sd
 
-```{r descriptives, echo = FALSE}
-# item.mean <- apply(q.sorts, c(1,3), mean, na.rm = TRUE)
-# item.mean <- cbind(item.mean, item.mean[,"after"] - item.mean[,"before"])
-# colnames(item.mean)[3] <- "change"
-# item.mean
-# item.mean[order(item.mean[,"change"]),] #  sort by change
-
-# item.sd <- apply(q.sorts, c(1,3), sd, na.rm = TRUE)
-# item.sd <- cbind(item.sd, item.sd[,"after"] - item.sd[,"before"])
-# colnames(item.sd)[3] <- "change"
-# item.sd[order(item.sd[,"change"]),] #  sort
-# item.sd
-
-# person.cor <- cor(q.sorts[,,"before"])
-# person.cor[which.min(abs(person.cor))]
-# person.cor
-# str(person.cor)
-# help(which.min)
+person_cor <- cor(t(q_sorts[,,"before"]))  # make cor matrix across persons
+person_cor[upper.tri(person_cor, diag=TRUE)] <- NA  # kill upper triangle
+person_cor_m <- melt(person_cor, na.rm=TRUE)  # melt it
+person_cor_m[with(person_cor_m, order(-value)), ]  # order it
+person_cor_m[which.max(person_cor_m$value),]  # pos max
+person_cor_m[which.min(person_cor_m$value),]  # neg max
+person_cor_m[which.min(abs(person_cor_m$value)),]  # abs min
 ```
 
-<!-- TODO make a correlation matrix, just for descriptives, look at which items are most highly correlated same thing for q sorts -->
+In search for descriptives, one may be tempted then to revert back to the R way of looking at data, and to treat Q-sorted *items* as variables, and Q-sorting people as cases.
+One may ask, for example, which items were, on average of all participants, rated
+the highest (``r rownames(q_sorts)[which.max(apply(q_sorts[,,"before"],1,mean))]`` at `r max(apply(q_sorts[,,"before"],1,mean))`),
+the lowest (``r rownames(q_sorts)[which.min(apply(q_sorts[,,"before"],1,mean))]`` at `r min(apply(q_sorts[,,"before"],1,mean))`),
+which items were dispersed the most (``r rownames(q_sorts)[which.max(apply(q_sorts[,,"before"],1,pop.sd))]`` at `r max(apply(q_sorts[,,"before"],1,pop.sd))`),
+the least (``r rownames(q_sorts)[which.min(apply(q_sorts[,,"before"],1,pop.sd))]`` at `r min(apply(q_sorts[,,"before"],1,pop.sd))`),
+or --- most offending to Q methodologists, as well as spurious ---, which *items* were correlated
+the most positively (``r person_cor_m[which.max(person_cor_m$value),c(1,2)]`` at `r max(person_cor_m$value)`),
+the most negatively (``r person_cor_m[which.min(person_cor_m$value),c(1,2)]`` at `r min(person_cor_m$value)`),
+and the least (``r person_cor_m[which.min(abs(person_cor_m$value)),c(1,2)]`` at `r min(abs(person_cor_m$value))`).
+This kind of exploration is fascinating, and it invites seemingly inductive hypotheses:
+Do people respond most strongly to `poll-tax` and `simple-tax`, because these --- and other, supposedly similar items --- are easy to comprehend and relate to?
+Do people respond quite differently to `pro-socialism`, and quite similarly to `land-value-tax-resource`, because the former obviously aligns with political identities, while the latter does not?
+Do people feel similarly about `exchange-value` and `natural-market-order` because of a pervasive anti-market bias,
+<!-- TODO add caplan reference -->
+and very dissimilar about a `wealth-tax` and a `corporate-income-tax`, because they fall for a flypaper-theory of tax incidence?
+<!-- TODO add mccaffery reference -->
+
+While these survey-type approaches to the data are intriguing, they are inadequate for the data gathered here.
+It may appear arbitrary to categorically rule out a range of broadly-applicable techniques, let alone summary statistics on the grounds that the data were gathered for a different *purpose*.
+For example, Likert-scaled data collected for a (R-type) factor analysis may, if conditions apply, be subjected to a regression analysis.
+Q, however, is not just another statistical operation, it is a *methodology*, and while the gathered data bear a superficial resemblance to R methodological research, "[t]here never was a single matrix of scores to which *both* R and Q apply" [@Stephenson1935a: 15, emphasis in original].
+<!-- TODO find, verify original source. Browns 1980: 347 bibliography is unclear -->
+This postulated incomparability applies to this study, too, and plays out in several ways:
+
+ 1. *Generalizeability & Small N Design.*
+
+    In R, the *participants* are usually a *sample* of cases from a broader *population*, and the generalizeability of the results hinges on the quality of this ideally large, random selection.
+    In Q, *participants* are the *variables*, on which supposedly shared, subjective viewpoints are measured.
+    Sampling theory does not apply to Q, just as one would not ask *random* questions in a survey (or so one hopes).
+    Instead, Q method requires researchers to broadly maximize the diversity of participants to capture all existing viewpoints.
+    <!-- TODO add saturation sampling reference here -->
+    Generalizeability in Q, if applicable at all, concerns the representativeness of the sampled *items* of a "population" of statements, though no straightforward sampling theory applies to this concourse either, as it is both infinite and non-discrete.
+    The P-set of this study, the participants in the CiviCon Citizen Conference, are self-selected and probably not representative of the broader population, though recruitment was inclusive and diverse.
+    This flagrantly non-random sampling alone, however, may not yet rule out generalizeability to a broader population of *citizens willing to participate in deliberation*.
+    As I argue elsewhere, both self-selection and diversity of point of views are crucial for meaningful, *concept-valid* deliberation, and such non-random sampling may therefore be *required* for even R-methodological research into the effects of deliberation.
+    <!-- TODO add reference to concept-valid deliberation elsewhere -->
+    Given the haphazard recruitment and great demands placed on citizens, the group of CiviCon participants must probably be considered excessively non-random even by the more charitable standards of deliberation, but an even greater problem lies in the small number of participants.
+    <!-- TODO add footnote about bias of sample -->
+    A "sample" of $N=`r ncol(q_sorts[,,"before"])`$ people (including 2 moderating "confederates") simply does not admit of generalizations toward a broader population, even of would-be deliberators.
+    R statistics, even the cursory summary statistics in the above, implicitly rely on this kind of generalizeability:
+    If we concede that, say, the low average score of ``r rownames(q_sorts)[which.min(apply(q_sorts[,,"before"],1,mean))]`` at `r min(apply(q_sorts[,,"before"],1,mean))` is, to a large extent an artifact of the people who happened to show up at a locally-advertised, five-day sleepover conference for EUR 50 compensation, it becomes dubious why we should care about this factoid at all --- other than to characterize the *bias* of the group ^[Though that comparison, too, would require some representative baseline.].
+    <!-- TODO actually THAT may be a good reason -->
+    Given limited funds, and little experience the CiviCon Citizen Conference was *designed* for a small group of people, and this constraint was --- admittedly --- operational in the choice of Q methodology.
+    <!-- FIXME wrong verb, it's not operational ... -->
+    <!-- TODO add footnote on the large-n/long tradeoff -->
+
+    The small number of participants (even by Q standards) restricts the following Q analysis, too, but in a different, provisionally acceptable way.
+    <!-- FIXME maybe this belongs partly somewhere else? -->
+    Recall that in Q, people serve as *variables*.
+    `r ncol(q_sorts[,,"before"])` variables will still be considered quite crude to extract several latent concepts.
+    Consider, for example, the data reduction in Inglehart's and Welzel's human development theory: to arrive at *two* latent value concepts, they condense *35* variables [-@InglehartWelzel-2005-aa].
+    <!-- FIXME find out correct number of vars -->
+    The issue here, however, is one of *resolution*, not generalizeability.
+    With relatively few people-variables, Q method will be able to extract only a few, blurred shared viewpoints.
+    But the exercise is not moot: given a decent Q-sample of items, potential additional participants are exceedingly unlikely to render the factors extracted here null and void --- that scenario is later rejected as a Null-Hypothesis of sorts.
+    <!-- TODO add reference to why that is in fact what later tests test -->
+    By contrast, adding more people to this study may very well render the high average position of, say,  ``r rownames(q_sorts)[which.max(apply(q_sorts[,,"before"],1,mean))]`` at `r max(apply(q_sorts[,,"before"],1,mean))` a product of randomness or bias (a high standard deviation of `r pop.sd(q_sorts["simple-tax",,"before"])` would appear to bear this out).
+
+    The now familiar analogy of LEGO bricks serves to illustrate this difference in concepts of generalizeability once more.
+    Tasking, say, 15 people to build something out of a given set of LEGO bricks may seem reasonable to get a preliminary idea of the *kinds* of objects (cars, houses) that people build --- though we will probably miss out on some rarer constellations (spaceships?) and nuances of existing patterns (convertibles?).
+    Adding more people may increase the resolution to tease out these details, but it's unlikely that something as basic as "car-like", or "house-like" will completely disappear.
+    By contrast, again, it seems much *less* reasonable to take the ratings of *individual* LEGO bricks by these 15 people as anything but random flukes: there are bound to be some people who like red bricks, more so if the study listing displayed red bricks.
+
+  2. *Holism & Non-Independence.*
+  3. *Validity & Research Ethics.*
+
+
+
+
+The problem, alas, is that these are R, not Q mfuethodological questions, common in survey research, but not suited to the data gathered here.
+
+> In moving from R to Q, a fundamental transformation takes place: In R, one is normally dealing with objectively scorable traits which take meaning from the postulation of individual differences between persons, e.g. that individual $a$ has more of trait $A$ than does individual $b$; in Q, one is dealing fundamentally with the individual's subjectivity which takes meaning in terms of the proposition that person $a$ values trait $A$ more than $B$.
 
 
 
@@ -396,6 +462,8 @@ do cluster analysis instead of factor; according to kampen and tamas. This might
 #       graph = TRUE,
 #       color = TRUE)
 ```
+
+<!-- Use the lego example to explain the logic of the combinatorics - this can actually be good news, even with the small number of people -->
 
 <!-- Also notice this in the number of factors discussion: on the one hand, loom non-factor factors, spurious things that I should avoid.
 On the other hand looms the danger of ignoring factors, false negatives, that area really out there and without whom the following results may turn out to be quite trivial, and not faithful to the people who volunteered these sorts. -->

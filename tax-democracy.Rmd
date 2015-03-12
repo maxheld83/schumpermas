@@ -32,6 +32,7 @@ library(qmethod)
 
 ```{r setup-knitr, cache = FALSE, include = FALSE}
 opts_knit$set(root.dir = normalizePath(getwd()))
+options(digits=2)
 ```
 
 
