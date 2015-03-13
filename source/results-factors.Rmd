@@ -333,19 +333,79 @@ This postulated incomparability applies to this study, too, and plays out in sev
     By contrast, again, it seems much *less* reasonable to take the ratings of *individual* LEGO bricks by these 15 people as anything but random flukes: there are bound to be some people who like red bricks, more so if the study listing displayed red bricks.
 
   2. *Holism & Non-Independence.*
+
+    R methodological opinion research often proceeds by analysis, then synthesis; a construct is first dissected into its constituent parts (say, items), then reassembled into some composite (say, a scale or an index).
+    Truth, in principle, flows from inter-individual differences on the smallest measurable unit of meaning.
+    Inglehart's and Welzel's work with the World Values Survey, again, serves to illustrate [-@InglehartWelzel-2005-aa].
+    Items are constructed with some view to a broader construct (say, civicness), and then narrowed down to number of smaller concepts and items.
+    The reconstruction of latent concepts happens through a very deliberate, almost literate *synthesis*: you take $x$ units of item $A$, $y$ units of item $B$, standardize the result, and out comes a theory of human development to be subjected to confirmatory factor analysis.
+    <!-- FIXME really need to go back to the source and figure this out. This is probably BS -->
+    Here, too, the latent constructs (say, traditional vs secular-rational values), are of greater interest than any individual item, but the relationship is merely *additive*, or *triangulatory*, at best: you synthesize several variables to cancel out bias, and to get at a common concept that might unite them all, but these bigger pictures can never be more than the sum of their parts, let alone *different*.
+    <!-- TODO also add some Brown quotes to all of this -->
+
+    Q, by contrast, has a *holistic* outlook on human subjectivity.
+    What matters are not the individual items, but there overall constellation, that is, how (groups of) participants value these items *relative* to one another.
+
+    Summarizes Brown:
+
+    > In moving from R to Q, a fundamental transformation takes place:
+    > In R, one is normally dealing with objectively scorable traits which take meaning from the postulation of individual differences between persons, e.g. that individual $a$ has more of trait $A$ than does individual $b$;
+    > in Q, one is dealing fundamentally with the individual's subjectivity which takes meaning in terms of the proposition that person $a$ values trait $A$ more than $B$.
+    >
+    > [@Brown1980: 19]
+
+    These epistemological differences have practical research implications.
+
+    In R, items are supposed to narrowly measure *one* concept and should not invite *multiple* interpretations.
+    A typical item from the World Values Survey, `How would you feel about your daughter(son) moving in with a person from a different ethnicity?` was crafted to elicit a predefined, unambiguous scenario in the minds of respondents.
+    <!-- TODO find example for/against double-barelled items in Q -->
+    In Q, an item as open-ended as `labor-no-commodity` (``r q_concourse["labor-no-commodity","english"]``) is suitable *because* it invites a variety of different interpretations on what labor or a commodity are.
+    <!-- TODO need to add more here - there are limits to Q openennes of interpretation too; refer back to the section on item discussions -->
+    R survey design, and drafting (or collecting) Q statements may both be more craft than science, but they are a very different crafts that limit what can, and cannot be done with results.
+    Given the confidence we place in the common understanding of an R-type item, it is reasonable to present summary statistics on this *individual* item.
+    Conversely, given the openness to interpretation in Q, single item summaries make little sense, precisely because they were designed to mean very different things to different people.
+
+    In R, items are (mostly) measured *independently* from one another, that is, the choice of a participant on one item should not influence or restrict her choice on another item.
+    This independence is not only a requirement for some of the statistical procedures frequently used, it also follows from the analytic-synthetic epistemology: if the synthesizing operation is subject to hypothesis-testing, any relationships between individual items produced by the data gathering method would be considered an undesirable artifact.
+    <!-- TODO find statistical concept for non-independence-->
+    *Rating*, rather than *ranking* measurements are therefore the norm, and some survey research goes as far as randomizing the questionnaire to avoid ordering effects.
+    In Q, by contrast, items are evaluated *only* relative to one another and participants are reminded that the absolute scores assigned (`r range(q_sorts[,,"before"], na.rm = FALSE)` in this case) merely imply *ordinal* (better *than*), not *cardinal* valuation.
+    Relative item rating in Q has a technical reason, too: Only because all items are evaluated relative to all other items, all item scores come in the *same* unit (valuation relative to the remaining items), a transposed correlation matrix becomes possible (a statistical summary, of, say, height and weight would be nonsensical).
+    But strictly relative valuation has an epistemological dimension, too: if meaning can be derived from the *entire* item constellation only, participants must always choose *between* items.
+    *Rating* and *ranking* measurements, taken to these extremes, are not interchangeable and strictly limit the meaningful presentation of results.
+    An item from the World Values Survey can be summarized in isolation, because it was measured independently: the agreement with, say, a son-in-law from a different ethnicity by any one participant does not preclude her equal agreement with another item.
+    An item from a Q study as this cannot be summarized in isolation, because it was measured in a dependent way: a participant ranking, for example, `labor-no-commodity` at the top, will be precluded from ranking any other item in the same way.
+    By extension, it also makes little sense to present a mean valuation of `labor-no-commodity` (`r mean(q_sorts["labor-no-commodity",,"before"])`) in isolation because, in absence of the means of *all other items*, we have no idea what that value *means* (it might mean very different things, for example, if all other items were supremely agreeable).
+
+    The analogy of LEGO bricks only slightly overstates the absurdity of ignoring the holism aspired to by, and non-independence implied by Q.
+    Recall that participants were instructed to assemble a given set of bricks into an object of their design.
+    It would clearly be nonsensical to take the low *absolute* (x-axis) position of, for example, a small red brick as an indication of disliking, without relating its position to the overall design: depending on the position of other bricks, it might be part of an exposed car fender, or a hidden structure in a house basement.
+    It would be similarly perplexing to harp on the higher average (x-axis) position of ramp-shaped bricks, compared to the cuboid-shaped bricks: *of course*, if you are putting roof tiles on top, you *have* to place the foundation walls of a house underneath it.
+
+   <!-- TODO make a nice table contrasting the above things? -->
+
+
   3. *Validity & Research Ethics.*
 
+    <!-- notice that the above, even *inductive* hypothesizing is *in terms* of how the items were originally conceived, not so much in terms of subjectiv*ies* that people impressed on them -->
+    <!-- maybe sth about operant nature? -->
+
+    <!-- TODO this is about the LGO houses, not individual bricks - so it makes no sense -->
 
 
+<!-- I'm not against R (a little bit though) -->
 
-The problem, alas, is that these are R, not Q mfuethodological questions, common in survey research, but not suited to the data gathered here.
+<!-- The problem, alas, is that these are R, not Q mfuethodological questions, common in survey research, but not suited to the data gathered here. -->
 
-> In moving from R to Q, a fundamental transformation takes place: In R, one is normally dealing with objectively scorable traits which take meaning from the postulation of individual differences between persons, e.g. that individual $a$ has more of trait $A$ than does individual $b$; in Q, one is dealing fundamentally with the individual's subjectivity which takes meaning in terms of the proposition that person $a$ values trait $A$ more than $B$.
+<!-- Looking into the descriptives --- or any other R work, would, at best be a waste of effort, and at worst, strictly unscientific. -->
+
 
 
 
 
 ## Correlation
+
+The simplest summary statistic in lieu of descriptives we are left with is then the correlation matrix.
 
 To extract shared viewpoints, we must first look at pairwise comparisons of every participants Q-sort against everyone else's Q-sort.
 Since we would expect people with similar viewpoints to sort items in similar positions, we can use a correlation coefficient $r$ between any two people's sorts as a statistical summary of their similarity.
