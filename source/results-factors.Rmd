@@ -387,20 +387,73 @@ This postulated incomparability applies to this study, too, and plays out in sev
 
   3. *Validity & Research Ethics.*
 
-    <!-- notice that the above, even *inductive* hypothesizing is *in terms* of how the items were originally conceived, not so much in terms of subjectiv*ies* that people impressed on them -->
-    <!-- maybe sth about operant nature? -->
+    Finally, Q and R differ in their conceptions of validity.
 
-    <!-- TODO this is about the LGO houses, not individual bricks - so it makes no sense -->
+    In R, a measurement of inference is valid, if and to the extent that the stated concepts correspond to some objective reality "out there".
+    For example, the above-mentioned WVS item on `your daughter marrying someone from a different ethny` rests on the assumption that there is such a thing as an attitude on inter-ethnic relationships (which seems reasonable).
+    <!-- FIXME again, fix the WVS reference, or kill it -->
+    No matter how supposedly *inductive* --- probably just *exploratory* --- an R approach to data is, the terms of that data are always set *before the fact*, *by the researcher*.
+    Notice that the WVS item on inter-ethnic relationships will *not* admit of an attitude unforeseen by the researchers, say, a discriminatory sentiment based on *language*.
 
+    In Q, conventional definitions of validity do not easily apply, at least because there is, by definition, no external and objective standard to verify human subjectivity.
+    <!-- TODO point to respective section where I discuss that -->
+    Instead, one *posits* that viewpoints become *operant* through the act of sorting Q-cards, and that even a limited sample of diverse items will give people a roughly adequate material to impress their subjectivity on.
+    Items may --- or may not --- have been crafted and sampled with some theoretical preconception in mind (for example, libertarianism for `deontological-katallaxy`), but that preconception should not, in principle, limit the meaning that participants ascribe to it.
+    Dramatically *different* interpretations of the same item, are emphatically *not* a threat to validity in Q.
 
-<!-- I'm not against R (a little bit though) -->
+    It is easy to see how the above, cursory summary statistics shift the standard of validity, and invite what Brown calls "hypotheticodeductive" inferences [-@Brown1980: 121].
+    To nod at the high positive correlation of `exchange-value` and `natural-market-order` across participants is to reify a concept of "market radicalism" (or something similar), from which these items probably sprung *in the mind of the researcher*.
+    *"Ah, that makes sense"*, one thinks --- and by sense, meaning the sense of the researcher and (maybe similar) sense of the reader.
+    Looking at any particular item or relationships between items across people, always risks implying that the *meaning* of any given item is the same for everyone, as per the researcher's specification.
 
-<!-- The problem, alas, is that these are R, not Q mfuethodological questions, common in survey research, but not suited to the data gathered here. -->
+    It is also easy --- and self-serving for Q --- to overstate the difference to a hypotheticodeductive paradigm.
+    Falling short of accepting a debilitating, radical constructivism, researchers --- as all people --- will always have to rely on some *common* understanding of language, including Q researchers.
+    Researchers cannot interpret shared viewpoints of common sorting patterns (the factor scores) without *some* reference to their own preconceptions in drafting or sampling items.
 
-<!-- Looking into the descriptives --- or any other R work, would, at best be a waste of effort, and at worst, strictly unscientific. -->
+    No factor interpretation of holistic patterns of items can be undertaken without *some* reference to their own preconceptions about those items.
+    It would be impossible interpret even the relative position of `exchange-value`, rejecting any overlap or relationship to our academic understanding of that item: we would be looking at a heap of structured gibberish.
+    Q researchers are, in fact, quite fond of their own judgment: "researchers might, on occasion, 'know what to look for'" [Stephenson 1953: 44, as cited in @Watts2012: K2308].
+    The epistemology of *abduction* suggests to repeatedly go back and forth between hunches, interpretation and what the data will bear out.
+    <!-- TODO that's weak; fix and refer to abduction section -->
 
+    The point of validity in Q methodology is not to ban all researcher's preconceptions, but to both *relax* their grip on meaning, and to *constrain* the plausibility of their explanations.
+    On the one hand, the meaning of items is *relaxed*, because the linear relationship to the researcher's hypotheticodeductions is no longer presupposed: `pro-socialism`, may, or may not have been interpreted as the researcher intended.
+    On the other hand, the plausibility of any explanation is *constrained*, because any observed shared viewpoint must make *sense*, per *some* set of interpretations of its items.
 
+    These epistemological "Goldilocks" conditions disappear when R statistics are applied to these data:
+    when presented the isolated finding of the high negative correlation between `wealth-tax` and `corporate-income-tax` (`r min(person_cor_m$value)`), we can *only* refer back to some of the preconceptions on "misunderstanding taxation" presented earlier (Flypaper Theory).
+    <!-- TODO add reference to other section, mcccaffery -->
+    This may be a productive approach --- though probably not best undertaken with these items and data gathering --- but thereby "testing" people's understanding of tax emphatically is not a valid measurement of their subjectivity, and falls short of the deliberative conception of public choice espoused earlier.
+    <!-- TODO that's not quite right. Also, reference other section -->
 
+    These epistemological concerns also carry a research ethical imperative:
+    The data should be treated as participants were told it *would* be treated.
+    That adherence to informed consent *includes* the methodology.
+    <!-- TODO link to informed consent -->
+    I told the `r ncol(q_sorts)-2` guests at the first CiviCon Citizen Conference that I was interested in their viewpoints on taxation, that their unique perspectives on the economy mattered, and that there *would be no wrong way* to sort the Q-cards.
+    <!-- TODO link to the condition of instruction -->
+    For up to three hours, these citizens earnestly struggled with these `r nrow(q_sorts)` items "on which reasonable people could disagree", thoroughly weighing thoughts and items against another, graciously pouring their thoughts into the rigid and crude form of a Q-sort.
+    It would betray the trust and degrade the effort of the participants to treat these data as if they were R: I could have just handed them a survey and saved them a lot of time.
+    The ethics get even more damning, when R statistics treat data as tests, and understanding turns to grading, as so easily happens when looking at the extremely negative correlation of `wealth-tax` and `corporate-income-tax`, or similar would-be inconsistencies.
+    In the morning session of the second day, some participants expressed worry over being "tested" in the Q-sorts, as well as the conference.
+    The conundrum of measuring people's understanding of taxation, without testing them on some narrowly-preconceived notion of consistency is a familiar one, and it will continue to plague this research.
+    The least I owe to the CiviCon participants is to make every effort to render their viewpoints understandable *from the inside*.
+    That cannot be done with R methodology, and implore everyone using this data *not* to try.
+
+    LEGO, again, delivers a coda by analogy.
+    A hypotheticodeductive inference on a persons LEGO building would rely on a preconceived understanding of what any given brick means, for example: "this is a transparent brick".
+    Any discussion of the (absolute) position of individual items would, absent any other information, have to revert to the preconception of the researcher.
+    For example, one might argue that the extreme placement (on any axes) of the transparent bricks indicates strong feelings for these types of bricks.
+    In the context of a LEGO house, of course, the transparent bricks may be considered *windows* by participant builders, and be placed on the exterior of the building because of that function.
+    More varied meanings of transparent bricks are conceivable.
+    A subset of builders may place *small* transparent bricks *inside* the houses, not readily explicable by their transparency: why would *anyone* greatly place almost all transparent bricks on the perimeter, but only a very small one inside, the R researcher may wonder?
+    Given the context, one may recognize the surroundings of the small transparent bricks as "kitchens" and venture that these builders interpreted them as maybe sinks full of water, or aquariums.
+    Characteristically, the meaning of "transparent brick" is relaxed considerably in the light of context, but it also remains bound to a common understanding of some of its features (transparency), and therefore constrained to the subsets of possible meanings that might make sense of it (aquarium, sink full of water, or other *transparent* objects).
+
+    One may add that the participant builders may also be quite offended, if they learned that their LEGO constructions did not receive any attention as such, but where instead intended as a test of visual acuity: whether participants could distinguish transparent from non-transparent bricks.
+
+The point here is not to criticize R methodology, though the near hegemony over quantitative social sciences that Brown rails against [-@Brown1980: 321], may indeed have long stretched thin its foundations and overreached its purview.
+The point is that, for the present research question *or* given the present data, any excursion to R methodology would at best be a distraction, and at worst strictly unscientific.
 
 
 ## Correlation
