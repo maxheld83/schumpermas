@@ -44,10 +44,10 @@ All citizens as well as the researcher and the two moderators completed two Q so
 Because scientific computing can do a great deal to harm or promote reproducible research and open access, some words on the choice of software will be in order.
 <!-- TODO MCH: find some reproducible quote? what is it -->
 
-Good software for the following q methodological analyses should fulfill the following criteria:
+Good software for the following Q methodological analyses should fulfill the following criteria:
 
 - *Reproducibility.*
-  It should easy document and reproduce all the steps undertaken from raw data to the final factor interpretation.
+  It should be easy to document and reproduce all the steps undertaken from raw data to the final factor interpretation.
   This will be especially important during the factor extraction and (indeterminate!) rotation phases, where consequential and sometimes controversial methodological decisions must be made.
 - *Open Access.*
   Funded mostly by tax money, all of this scientific work should be conveniently available to the public.
@@ -69,16 +69,16 @@ The following free / open source and closed / proprietary programs are available
  Open Source | [R](http://www.r-project.org) | R: [qmethod](https://github.com/aiorazabala/qmethod) package, [PQMethod](http://schmolck.userweb.mwn.de/qmethod/)
 
 The closed-source, general-purpose programs offer some programmatic extensibility, but are poorly suited for Q methodology.
-These commercial, and often expensive offerings also make it hard reproduce and open up research.
+These commercial, and often expensive offerings also make it hard to reproduce and open up research.
 The special-purpose `PQMethod` was originally written for mainframe in 1992 by John Atkinson at Kent State University, and has since been ported for PCs and maintained by Peter Schmolck at the University of the Armed Forces in Munich, Germany.
 <!-- TODO MCH: add citation for PQMethod -->
-While nominally free and open-source, `PQMethod` consists largely of legacy FORTRAN code, which few people can read or write today.
+While nominally free and open-source, `PQMethod` consists largely of legacy FORTRAN code, which few people today can read or write.
 `PQMethod` also offers little programmatic extensibility, because it is a standalone program running within layers of emulators.
 
 The [`qmethod`](https://github.com/aiorazabala/qmethod) package [@Zabala-2014], implementing Q methodology in the free and open source [R programming language and software environment for statistical computing](http://www.r-project.org) [@R-2014] is the best fit for the above criteria.
-R is freely available for all platforms, and supported by vibrant community of developers.
+R is freely available for all platforms, and supported by a vibrant community of developers.
 `Qmethod`, while released only recently, has been thoroughly validated [@Zabala-2014-a], leverages existing packages for extraction and rotation and conveniently wraps specialized Q functions.
-Running inside the R command prompt, `qmethod` can be easily extended, now including several functions developed for this dissertation and contributed to the open source project.
+Running inside the R environment, `qmethod` can be easily extended, now including several functions developed for this dissertation and contributed to the open source project.
 <!-- TODO MCH add citation for my contribs -->
 Most importantly, using `R`, every step from raw data to final factor interpretation can be traced back, using publicly available and vetted code, down to base functions.
 <!-- TODO MCH find nice open source quote -->
@@ -88,6 +88,7 @@ Most importantly, using `R`, every step from raw data to final factor interpreta
 
 Machine-readable code, its results, and human-readable explanation of *what that code does* are often written and stored separately.
 Not only does such separation invite mistakes when code, result and explanation diverge, but it also makes research harder to reproduce and is conceptually flawed.
+<!-- TODO maybe relate to the Rogoff Reinhart paper? -->
 At least in the context of statistical analysis, what we want a machine to do, why we want it, and to what effect are *one* intellectual operation, and should be presented as such.
 Programs must not be considered black boxes that "do" things of their own accord, to be explained ex-post, but code should be a near equivalent of the same thought expressed in prose.
 
@@ -101,10 +102,10 @@ I try to follow this approach by interweaving prose and code in one document, us
 Aside from published R packages, all code is run *inside* this document upon rendering.
 Code will usually not be reproduced in print, but can always be inspected in the [source of this document](https://github.com/maxheld83/schumpermas), "*underneath*" the respective operation or result.
 
-<!-- TODO MH: see timetable of what was done when at the conference -->
-
 
 ## Import
+
+<!-- TODO MH: see timetable of what was done when at the conference -->
 
 ```{r import-q-sorts, echo = FALSE, warning = FALSE}
 q_sorts <- import.q.sorts(
@@ -137,28 +138,26 @@ q_feedback <- import.q.feedback(
 )
 ```
 
+<!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
+For more on what 0 means to q, see Brown 1980 199. -->
+
 
 ## Missing Data
 
 ```{r dropped-participants, echo = FALSE}
 q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
 q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for personal reasons
-#q_sorts <- q_sorts[ , !colnames(q_sorts) == "Claus", ]  # incomplete
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
-#q_feedback <- q_feedback[ , !colnames(q_feedback) == "Claus", ]  # incomplete
 ```
 
 <!-- complete import of `r ncol(q_sorts)`, three participants -->
-
-<!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
-For more on what 0 means to q, see Brown 1980 199. -->
 
 
 ## Codenames
 
 ```{r real-names, echo = FALSE}
-real_names <- TRUE  # this is for manually enabling renaming
+real_names <- FALSE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
   for (name in colnames(q_sorts)) {  # loop over names in q_sorts
@@ -179,27 +178,32 @@ Powerful computers, confirmation biases and time pressure for writers and reader
 
 Q methodology is different, and requires a more careful, patient treatment.
 While its mathematical core --- different methods of exploratory factor analysis (EFA) --- are well-rehearsed in mainstream quantitative social research, its application to Q is still strange to many.
+<!-- TODO add quotes to EFA books here -->
 
 1.  *Transposed Data Matrix.*
 
     Because Q method *transposes* the conventional data matrix, positing *people* as *variables*, and *items* as *cases*, all of the downstream concepts in data reduction, from covariance to eigenvalues, take on a different, Q-specific meaning, even if the mathematics stay the same.
     <!-- TODO add brown quote for transposed -->
     For this reason alone, it will be worth tracking every operation and grounding it in the unfamiliar epistemology of Q.
+    <!-- TODO note there are also more steps in Q; at the end you want item *scores* -->
 
 2. *Marginalization and Controversy.*
 
     Almost 80 years after William @Stephenson1935 suggested this *inversion* of factor analysis in his letter to *Nature*, Q is still an exotic methodology.
-    It sometimes invites scathing critiques (@Tamas-Kampen-2014), but more often, is outright ignored in mainstream outlets.
+    It sometimes invites scathing critiques [@Kampen-Tamas-2014], but more often, is outright ignored in mainstream outlets.
     <!-- TODO cite lack in textbooks etc in tamas kampen -->
     As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular - though not into the "Church of Q" @Tamas-Kampen-2015 fear.
     Q methodology may have sometimes shied away from exposing itself from rigorous criticism and disruptive trends in mainstream social research, though probably often out of sheer frustration with persistent misunderstandings, and because of genuine disagreement.
+    <!-- TODO add more detail on the problems of the statistics - they're out of date! -->
     <!-- TODO add examples -->
     In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies --- or opponents, at any rate.
 
     Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
-    Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely dissenting into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
+    Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely digressing into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
     <!-- TODO find precise quotes -->
+    <!-- FIXME make sure this is, in fact a mistake with the varimax -->
     What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown.
+    <!-- TODO add citations -->
     These norms become hermetically sealed ideologies ("reliability does not apply to subjectivity") only when detached from their epistemological underpinnings, as, I suspect, would be the case for other methodologies.
     <!-- TODO find source, argue that in fact, as per Brown, factor reliability DOES matter -->
 
@@ -217,19 +221,19 @@ While its mathematical core --- different methods of exploratory factor analysis
   With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get together.
 
 I suggest then, that at least in the following, initial analysis, some verbosity has its virtue.
-Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q: Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to my own work is deeply indebted.
+Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q: Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to which my own work is deeply indebted.
 <!-- TODO make this better, humbler -->
 Mathematics have their place, but formulae alone, inspite of their veneer of rigor, as code comments, need analogy, intuition and impression to cover the distance to the deliberative subjectities on taxation and the economy under study here --- which themselves are mathematized in this dissertation, nor much convincingly in the broader field, and maybe never will.
 <!-- TODO find better link to previous chapter -->
 One may add, that if science is also bound to a discourse ethic of reaching understanding, it, needs to relate its abstractions to the human lifeworld, from which all meaning eminates.
 <!-- TODO make this better or kill it -->
 
-The following pages will hopefully dissuade the Q skeptics, and take along newcomers to the method.
-
 At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical sophistication.
 They are right: the key to understanding human subjectivity lies in iterative abduction, in the thorough going back and forth between informed hunches about *what might make sense*, and what the data will bear out.
 
 The following statistical groundwork is a worthwhile, but merely *necessary* --- not *sufficient* --- condition to a *scientific* study of subjectivity (emphasis added, though intended by the [ISSSS](International Society for the Scientific Study of Subjectivity)).
+
+The following pages will hopefully dissuade the Q skeptics, and take along newcomers to the method.
 
 To make sense --- as we must --- of the shared viewpoints on taxation and the economy among the participants of the first CiviCon Citizen Conference, we must first be sure what they are, and if they are, in fact, shared.
 
@@ -268,7 +272,7 @@ person_cor_m[which.min(person_cor_m$value),]  # neg max
 person_cor_m[which.min(abs(person_cor_m$value)),]  # abs min
 ```
 
-In search for descriptives, one may be tempted then to revert back to the R way of looking at data, and to treat Q-sorted *items* as variables, and Q-sorting people as cases.
+In search for descriptives, one may be tempted then to revert back to the R way of looking at data, and to treat Q-sorted *items* as variables, and Q-sorting people as *cases*.
 One may ask, for example, which items were, on average of all participants, rated
 the highest (``r rownames(q_sorts)[which.max(apply(q_sorts[,,"before"],1,mean))]`` at `r max(apply(q_sorts[,,"before"],1,mean))`),
 the lowest (``r rownames(q_sorts)[which.min(apply(q_sorts[,,"before"],1,mean))]`` at `r min(apply(q_sorts[,,"before"],1,mean))`),
@@ -291,6 +295,7 @@ It may appear arbitrary to categorically rule out a range of broadly-applicable 
 For example, Likert-scaled data collected for a (R-type) factor analysis may, if conditions apply, be subjected to a regression analysis.
 Q, however, is not just another statistical operation, it is a *methodology*, and while the gathered data bear a superficial resemblance to R methodological research, "[t]here never was a single matrix of scores to which *both* R and Q apply" [@Stephenson1935a: 15, emphasis in original].
 <!-- TODO find, verify original source. Browns 1980: 347 bibliography is unclear -->
+<!-- TODO @Stephenson1952 483 on why Q and R are absolutely *not* trivially similar -->
 This postulated incomparability applies to this study, too, and plays out in several ways:
 
  1. *Generalizeability & Small N Design.*
@@ -301,7 +306,7 @@ This postulated incomparability applies to this study, too, and plays out in sev
     Instead, Q method requires researchers to broadly maximize the diversity of participants to capture all existing viewpoints.
     <!-- TODO add saturation sampling reference here -->
     Generalizeability in Q, if applicable at all, concerns the representativeness of the sampled *items* of a "population" of statements, though no straightforward sampling theory applies to this concourse either, as it is both infinite and non-discrete.
-    The P-set of this study, the participants in the CiviCon Citizen Conference, are self-selected and probably not representative of the broader population, though recruitment was inclusive and diverse.
+    The P-set of this study, the participants in the [CiviCon Citizen Conference](http://www.civicon.de), are self-selected and probably not representative of the broader population, though recruitment was inclusive and diverse.
     This flagrantly non-random sampling alone, however, may not yet rule out generalizeability to a broader population of *citizens willing to participate in deliberation*.
     As I argue elsewhere, both self-selection and diversity of point of views are crucial for meaningful, *concept-valid* deliberation, and such non-random sampling may therefore be *required* for even R-methodological research into the effects of deliberation.
     <!-- TODO add reference to concept-valid deliberation elsewhere -->
@@ -324,6 +329,7 @@ This postulated incomparability applies to this study, too, and plays out in sev
     The issue here, however, is one of *resolution*, not generalizeability.
     With relatively few people-variables, Q method will be able to extract only a few, blurred shared viewpoints.
     But the exercise is not moot: given a decent Q-sample of items, potential additional participants are exceedingly unlikely to render the factors extracted here null and void --- that scenario is later rejected as a Null-Hypothesis of sorts.
+    <!-- TODO uh, that is maybe an overstatement - the factors might look quite different, though it is unlikely that there would be *no factors* -->
     <!-- TODO add reference to why that is in fact what later tests test -->
     By contrast, adding more people to this study may very well render the high average position of, say,  ``r rownames(q_sorts)[which.max(apply(q_sorts[,,"before"],1,mean))]`` at `r max(apply(q_sorts[,,"before"],1,mean))` a product of randomness or bias (a high standard deviation of `r pop.sd(q_sorts["simple-tax",,"before"])` would appear to bear this out).
 
@@ -363,24 +369,31 @@ This postulated incomparability applies to this study, too, and plays out in sev
     <!-- TODO need to add more here - there are limits to Q openennes of interpretation too; refer back to the section on item discussions -->
     R survey design, and drafting (or collecting) Q statements may both be more craft than science, but they are a very different crafts that limit what can, and cannot be done with results.
     Given the confidence we place in the common understanding of an R-type item, it is reasonable to present summary statistics on this *individual* item.
-    Conversely, given the openness to interpretation in Q, single item summaries make little sense, precisely because they were designed to mean very different things to different people.
+    Conversely, given the openness to interpretation in Q, single item summaries make little sense, precisely because they were chosen to mean very different things to different people.
+    <!-- TODO notice that Q items are not always crafted as in this case; that makes the difference maybe even starker -->
 
     In R, items are (mostly) measured *independently* from one another, that is, the choice of a participant on one item should not influence or restrict her choice on another item.
-    This independence is not only a requirement for some of the statistical procedures frequently used, it also follows from the analytic-synthetic epistemology: if the synthesizing operation is subject to hypothesis-testing, any relationships between individual items produced by the data gathering method would be considered an undesirable artifact.
+    This independence is not only a requirement for some of the statistical procedures frequently used, it also follows from the analytic-synthetic epistemology:
+    if the synthesizing operation is subject to hypothesis-testing, any relationships between individual items produced by the data gathering method would be considered an undesirable artifact.
     <!-- TODO find statistical concept for non-independence-->
     *Rating*, rather than *ranking* measurements are therefore the norm, and some survey research goes as far as randomizing the questionnaire to avoid ordering effects.
+    <!-- TODO find source for randomized order -->
     In Q, by contrast, items are evaluated *only* relative to one another and participants are reminded that the absolute scores assigned (`r range(q_sorts[,,"before"], na.rm = FALSE)` in this case) merely imply *ordinal* (better *than*), not *cardinal* valuation.
-    Relative item rating in Q has a technical reason, too: Only because all items are evaluated relative to all other items, all item scores come in the *same* unit (valuation relative to the remaining items), a transposed correlation matrix becomes possible (a statistical summary, of, say, height and weight would be nonsensical).
+    <!-- TODO notice that at least I stressed that; also relate to later discussion -->
+    Relative item rating in Q has a technical reason, too:
+    Only because all items are evaluated relative to all other items, all item scores come in the *same* unit (valuation relative to the remaining items), a transposed correlation matrix becomes possible (a statistical summary, of, say, height and weight would be nonsensical).
     But strictly relative valuation has an epistemological dimension, too: if meaning can be derived from the *entire* item constellation only, participants must always choose *between* items.
     *Rating* and *ranking* measurements, taken to these extremes, are not interchangeable and strictly limit the meaningful presentation of results.
-    An item from the World Values Survey can be summarized in isolation, because it was measured independently: the agreement with, say, a son-in-law from a different ethnicity by any one participant does not preclude her equal agreement with another item.
+    An item from the World Values Survey can be summarized in isolation, because it was measured independently:
+    the agreement with, say, a son-in-law from a different ethnicity by any one participant does not preclude her equal agreement with another item.
     An item from a Q study as this cannot be summarized in isolation, because it was measured in a dependent way: a participant ranking, for example, `labor-no-commodity` at the top, will be precluded from ranking any other item in the same way.
     By extension, it also makes little sense to present a mean valuation of `labor-no-commodity` (`r mean(q_sorts["labor-no-commodity",,"before"])`) in isolation because, in absence of the means of *all other items*, we have no idea what that value *means* (it might mean very different things, for example, if all other items were supremely agreeable).
 
     The analogy of LEGO bricks only slightly overstates the absurdity of ignoring the holism aspired to by, and non-independence implied by Q.
     Recall that participants were instructed to assemble a given set of bricks into an object of their design.
     It would clearly be nonsensical to take the low *absolute* (x-axis) position of, for example, a small red brick as an indication of disliking, without relating its position to the overall design: depending on the position of other bricks, it might be part of an exposed car fender, or a hidden structure in a house basement.
-    It would be similarly perplexing to harp on the higher average (x-axis) position of ramp-shaped bricks, compared to the cuboid-shaped bricks: *of course*, if you are putting roof tiles on top, you *have* to place the foundation walls of a house underneath it.
+    It would be similarly perplexing to harp on the higher average (x-axis) position of ramp-shaped bricks, compared to the cuboid-shaped bricks:
+    *of course*, if you are putting roof tiles on top, you *have* to place the foundation walls of a house underneath it.
 
    <!-- TODO make a nice table contrasting the above things? -->
 
@@ -398,6 +411,7 @@ This postulated incomparability applies to this study, too, and plays out in sev
     In Q, conventional definitions of validity do not easily apply, at least because there is, by definition, no external and objective standard to verify human subjectivity.
     <!-- TODO point to respective section where I discuss that -->
     Instead, one *posits* that viewpoints become *operant* through the act of sorting Q-cards, and that even a limited sample of diverse items will give people a roughly adequate material to impress their subjectivity on.
+    <!-- Notice Browns language on this in the email on coefficients: it's a logic -of -science kind of axiom; we model things as if - we also model them on the forced distribution, might add this here -->
     Items may --- or may not --- have been crafted and sampled with some theoretical preconception in mind (for example, libertarianism for `deontological-katallaxy`), but that preconception should not, in principle, limit the meaning that participants ascribe to it.
     Dramatically *different* interpretations of the same item, are emphatically *not* a threat to validity in Q.
 
@@ -411,13 +425,15 @@ This postulated incomparability applies to this study, too, and plays out in sev
     Researchers cannot interpret shared viewpoints of common sorting patterns (the factor scores) without *some* reference to their own preconceptions in drafting or sampling items.
 
     No factor interpretation of holistic patterns of items can be undertaken without *some* reference to their own preconceptions about those items.
-    It would be impossible interpret even the relative position of `exchange-value`, rejecting any overlap or relationship to our academic understanding of that item: we would be looking at a heap of structured gibberish.
+    It would be impossible interpret even the relative position of `exchange-value`, rejecting any overlap or relationship to our academic understanding of that item:
+    we would be looking at a heap of structured gibberish.
     Q researchers are, in fact, quite fond of their own judgment: "researchers might, on occasion, 'know what to look for'" [Stephenson 1953: 44, as cited in @Watts2012: K2308].
     The epistemology of *abduction* suggests to repeatedly go back and forth between hunches, interpretation and what the data will bear out.
     <!-- TODO that's weak; fix and refer to abduction section -->
 
     The point of validity in Q methodology is not to ban all researcher's preconceptions, but to both *relax* their grip on meaning, and to *constrain* the plausibility of their explanations.
-    On the one hand, the meaning of items is *relaxed*, because the linear relationship to the researcher's hypotheticodeductions is no longer presupposed: `pro-socialism`, may, or may not have been interpreted as the researcher intended.
+    On the one hand, the meaning of items is *relaxed*, because the linear relationship to the researcher's hypotheticodeductions is no longer presupposed:
+    `pro-socialism`, may, or may not have been interpreted as the researcher intended.
     On the other hand, the plausibility of any explanation is *constrained*, because any observed shared viewpoint must make *sense*, per *some* set of interpretations of its items.
 
     These epistemological "Goldilocks" conditions disappear when R statistics are applied to these data:
@@ -433,7 +449,8 @@ This postulated incomparability applies to this study, too, and plays out in sev
     I told the `r ncol(q_sorts)-2` guests at the first CiviCon Citizen Conference that I was interested in their viewpoints on taxation, that their unique perspectives on the economy mattered, and that there *would be no wrong way* to sort the Q-cards.
     <!-- TODO link to the condition of instruction -->
     For up to three hours, these citizens earnestly struggled with these `r nrow(q_sorts)` items "on which reasonable people could disagree", thoroughly weighing thoughts and items against another, graciously pouring their thoughts into the rigid and crude form of a Q-sort.
-    It would betray the trust and degrade the effort of the participants to treat these data as if they were R: I could have just handed them a survey and saved them a lot of time.
+    It would betray the trust and degrade the effort of the participants to treat these data as if they were R:
+    I could have just handed them a survey and saved them a lot of time.
     The ethics get even more damning, when R statistics treat data as tests, and understanding turns to grading, as so easily happens when looking at the extremely negative correlation of `wealth-tax` and `corporate-income-tax`, or similar would-be inconsistencies.
     In the morning session of the second day, some participants expressed worry over being "tested" in the Q-sorts, as well as the conference.
     The conundrum of measuring people's understanding of taxation, without testing them on some narrowly-preconceived notion of consistency is a familiar one, and it will continue to plague this research.
@@ -450,33 +467,240 @@ This postulated incomparability applies to this study, too, and plays out in sev
     Given the context, one may recognize the surroundings of the small transparent bricks as "kitchens" and venture that these builders interpreted them as maybe sinks full of water, or aquariums.
     Characteristically, the meaning of "transparent brick" is relaxed considerably in the light of context, but it also remains bound to a common understanding of some of its features (transparency), and therefore constrained to the subsets of possible meanings that might make sense of it (aquarium, sink full of water, or other *transparent* objects).
 
-    One may add that the participant builders may also be quite offended, if they learned that their LEGO constructions did not receive any attention as such, but where instead intended as a test of visual acuity: whether participants could distinguish transparent from non-transparent bricks.
+    One may add that the participant builders may also be quite offended, if they learned that their LEGO constructions did not receive any attention as such, but where instead intended as a test of visual acuity:
+    whether participants could distinguish transparent from non-transparent bricks.
 
 The point here is not to criticize R methodology, though the near hegemony over quantitative social sciences that Brown rails against [-@Brown1980: 321], may indeed have long stretched thin its foundations and overreached its purview.
 The point is that, for the present research question *or* given the present data, any excursion to R methodology would at best be a distraction, and at worst strictly unscientific.
 
+## Correlations
 
-## Correlation
+To extract *shared* viewpoints, we must first establish a metric of how to measure the similarity in perspective between any pair of Q-sorts.
+Since we would expect people with similar viewpoints to sort items in similar positions, and therefore have similar values over all items, respectively, we can use a correlation coefficient between any two people's sorts as a statistical summary of their similarity.
 
-The simplest summary statistic in lieu of descriptives we are left with is then the correlation matrix.
-
-To extract shared viewpoints, we must first look at pairwise comparisons of every participants Q-sort against everyone else's Q-sort.
+Look at pairwise comparisons of every participants Q-sort against everyone else's Q-sort.
 Since we would expect people with similar viewpoints to sort items in similar positions, we can use a correlation coefficient $r$ between any two people's sorts as a statistical summary of their similarity.
 
-(@pearsons_r) $$ $$
+
+Such a *correlation matrix* is the simplest summary statistic that can be presented for Q data, maintaining both the holistic and relative nature of the sorts.
+It is also,
+Q studies do not always display or discuss this *correlation matrix*, but all of the downstream data reduction operations are, in fact, based on this table [@Brown1980: 207].
+
+<!-- this is about the linear relationship -->
+
+### Correlation Coefficients
+
+Depending on assumptions made, two *different* correlation coefficients are applicable to Q data.
+It might appear odd to explain and discuss these mainstream statistics in some detail.
+<!-- TODO notice that q textbook does not even mention these, and Brown glosses over them --- they may matter though -->
+As will be evident, however, the assumptions of these coefficients can be thorny for Q methodology and the following discussion serves well to acquaint us with the person-correlations at the heart of Q methodology.
+<!-- TODO it may be necessary to reorganize the following into the question of whether the data is ordinal or interval -->
+
+1. *Pearson's Product-Moment-Correlation Coefficient*.
+
+    The conventionally used Pearson product-moment correlation coefficient, or Pearson's $\rho$, starts from the covariance of any pair of Q-sorts, *in their raw form*,
+
+    (@cov) $$cov(X,Y)=\sum_{i=1}^{N}{\frac{(x_i-\overline{x})(y_i-\overline{y})}{N}}$$ [^pop-corr].
+    <!-- FIXME add reference to Pearson -->
+
+    Since in a forcibly symmetric Q distribution as ours, the mean will always be zero (see above), we can safely ignore the respective $-\overline{x}$ terms; by default, Q-sorts are already expressed as deviations from their expected values, $E$.
+    The covariance on all *items* for, say `Ingrid` and `Petra`, is therefore simply the cross-product of all item positions divided by the number of items, $N$.
+    It's easy to see how this number will be larger when the two scores have similar (absolute) values: `Petra`'s and `Ingrid`'s quite different ranks for, say `all-people-own-earth` (`r q_sorts["all-people-own-earth",c("Petra","Ingrid"),"before"]`, respectively) multiply to `r q_sorts["all-people-own-earth",c("Petra"),"before"] * q_sorts["all-people-own-earth",c("Ingrid"),"before"]`, whereas their more similar positions on `deontological-ethics` (`r q_sorts["deontological-ethics",c("Petra","Ingrid"),"before"]`, respectively) yields `r q_sorts["deontological-ethics",c("Petra"),"before"] * q_sorts["deontological-ethics",c("Ingrid"),"before"]`.
+    Brown reminds us that this multiplicative weighting of like extreme scores is "phenomenologically" appropriate, because respondents feel more strongly and are more certain about items ranked towards the margins [-@Brown1980: 271].
+    <!-- TODO maybe make this footnote? -->
+    The resulting covariance is, unfortunately, hard to interpret, because it is in squared units and depends on the spread of the data.
+    It is normalized into Pearson's product-moment correlation coefficient by dividing it by the product of the two standard deviations, in this case, `Petra`'s and `Ingrid`'s --- both of which are, by definition, the same.
+
+    (@Pearson) $$\rho(Petra,Y) = \frac{\operatorname{Cov}(X,Y)}{\sigma(X)\sigma(Y)}$$
+
+    Consider the special case of correlating a person's Q-sort with her own Q-sort, say `Petra` with `Petra`, to understand the bounds of the Pearson's $\rho$.
+    The denominator in (@Pearson) yields the $\operatorname{Var}(X)$, the square of `Petra`'s standard deviation over the item scores is, by definition, her variance.
+    The numerator is given by summed product of `Petra`'s scores with `Petra`'s scores, which is also the variance.
+    The correlation coefficient of two identical Q-sorts is therefore $1$.
+    A correlation coefficient of $-1$ would result if the two Q-sorts were diametrically opposed, as if mirrored around the distribution mean of zero: in that case, the numerator would be $-\operatorname{Var}-$.
+    <!-- FIXME need to clarify whether we use population or sample standard deviation -->
+    <!-- TODO probably need the variance in here, or earlier? -->
+    A correlation coefficient of $0$ would be expected if two Q-sorts are entirely unrelated.
+
+    All of these extremes are rarely reached in Q, with a range of `r range(cor(q_sorts[,,"before"])[lower.tri(cor(q_sorts[,,"before"]))])` in this case.
+
+    The Pearson correlation coefficient is a measure of *linear* association between two variables, or Q-sorts in our case.
+    On the one hand, that seems appropriate for Q methodology, because it is unclear what a hypothetical non-linear (say, v-shaped) association between two Q-sorts would mean:
+    it would express a *dissimilarity* in underlying viewpoints.
+    <!-- TODO maybe later add visualization of all scatterplots? -->
+    On the other hand, as a measure of *linear* association, it also requires at least interval-scaled data, that is the *difference* between values must have *cardinal*, not just ordinal meaning.
+    For example, cardinal valuation would imply cards sorted under $3$ are preferred to cards sorted $2$ by the *same amount* as cards between $7$ and $6$ respectively --- not just that higher sorted cards are valued *more*.
+    Q method is unfortunately a bit muddled on the issue of cardinal values in Q-sorts, though the confusion is perhaps forgivable because assumptions of correlational theory are disputed elsewhere, too (see @Brown1980: 276).
+    On the one hand, Stephenson (1950a: 553f as cited in @Brown1980: 276) suggests that Q-sorts fulfill all criteria for correlation coefficients, because they are transitory (sic!), though Brown and Stephenson elsewhere concede that the forced, quasi-normal distribution is only a heuristic to conveniently measure subjectivity and that its precise shape is relatively unimportant.
+    It would appear that only one of the two propositions can be true:
+    *either* people's feelings towards on items are, in fact, normally distributed, in which case we could treat Q-sort values as cardinal, *or* we make no assumptions about the true distribution of people's subjectivities towards items, in which case we have no reason to believe the differences between the values are of equal magnitude.
+    Absent a strong assumption on the distribution, the difference between $6$ and $7$ may, for example, be much bigger than the difference between $1$ and $2$, because a respondent feels much stronger about those items in the extremes.
+    A strong assumption on the distribution of subjective valuations of *any* respondent over *any set of items* would, in fact, appear quite implausible, because items are --- as is discussed elsewhere --- not strictly randomly sampled.
+    For any given Q set, it seems likely that they will illicit different distributions of intensity in respondents:
+    some Q sets may contain more evenly-spaced items in terms of their agreeability, and some Q sets may have harshly disagreeable items.
+    Relaxing the assumption of cardinal valuation in Q-sorts then seems to be the safest bet.
+    ^[Aside from these considerations, Pearson's $\rho$ is susceptible to outliers (*not robust*) and requires normally distributed data, though both are not a great concern in Q methodology, when forced distributions bound extreme values and close to a bell curve (as the current distribution is).
+
+2.  *Spearman's Rank Correlation Coefficient.*
+
+    Rank correlation coefficients offer a way out:
+    they are applicable to merely ordinally-scaled data.
+    Spearman's $\rho$ works much like Pearson's $\rho$, but starts from *rank orders*, instead of raw Q-sort values.
+    Raw Q-sorts are rank ordered, and assigned their rank index.
+    Crucially, in a case of ties --- of which there are many in Q ---, the average of the would-be occupied ranks is assigned as a rank.
+    For example, if two cards are sorted in the $-5$ column, as per the Q distribution, they will both receive the rank of $3.5$, because they *would* occupy the 3rd and 4th position, if they were not tied.
+    A Q-sort, beginning from the left (negative) extreme will look like this if transformed into Spearman's ranks:
+
+    Raw Value   Index   Spearman's Rank
+    ----------  ------  ----------------
+    -7          1       1
+    -6          2       2
+    -5          3       3.5
+    -5          4       3.5
+    -4          5       6.5
+    -4          6       6.5
+    -4          7       6.5
+    -4          8       6.5
+    -3          9       12
+    -3          10      12
+    -3          11      12
+    -3          12      12
+    -3          13      12
+    -3          14      12
+    ----------  ------  ---------------
+
+    <!-- TODO add spearman's formula? -->
+    Spearman's procedure then computes a Pearson's correlation coefficient (as in the above) from these ranks.
+    (@spearmans--ho) $\rho = 1- \frac{6 \sum d^2}{n^3}$
+
+    where $d_i = x_i - y_i$, the difference in ranks.
+    <!-- this is a simplification! -->
 
 
+    The resulting coefficient is likewise from $+1$ to $-1$, with perfect correlation indicating not a *linear* association, but a strictly *monotone* association, where all items are ranked the same, though possibly by different "amounts".
+    This is appropriate for Q methodology, where respondents are instructed to worry only about the *relative* positioning of items, and we would therefore suspect two people with similar *relative* item positions to have similar viewpoints.
+    Conversely, two Q-sorts with mutually reversed ranks would yield a $-1$ coefficient, indicating a negative, monotone relationship.
 
-Q studies do not always display or discuss this *correlation matrix*, but all of the downstream data reduction operations are, in fact, based on this table [@Brown1980, 207].
+[^pop-corr]: Here, as in all of the below formulae, I reproduce the (unbiased) *population* statistic.
+  The population statistics seem appropriate for (at least) a forcibly symmetric distribution as this, because a population mean of *any* number or selection of sampled statements is, in fact, known:
+  it must be zero, per the specified distribution.
+  The mean need not be estimated, and no correction for estimation bias need be introduced.
+  Steven Brown (email conversion in February 2015) also suggests to use the population variant, though the usage and terminology in his 1980 book *Political Subjectivity* are a little confusing.
+  Technically, all of the correlations reproduced here use the *sample* statistics, but because the de-biased $N-1$ term occurs both in the numerator and denominator of the correlation coefficient, it cancels out.
+  <!-- TODO fix this or add link to GH issue -->
+  <!-- FIXME add reference to Political Subjectivity -->
 
-Correlations are
+The differences between Spearman's rank coefficient and Pearson's product-moment coefficient are likely to be small for Q data, because outliers are bound by the forced distribution.
+Notice that in the extreme cases, both coefficients would be identical in the case of Q: because of the forced distribution, a Q-sort identical in ranks will also be identical in raw values.
+Contra Brown's conclusion [-Brown1980: 279], coefficients are, however, not "virtually identical" in this case, but differ by an average of `r mean(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))`, ranging up to a sizable `r max(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))`.
+
+<!-- notice that polychoric transformations assumes that there is latent, *normally* distributed variable http://stats.stackexchange.com/questions/78791/correlation-coefficients-for-ordered-data-kendalls-tau-vs-polychoric-vs-spearm -->
+
+These differences result from the "spreading out" of the distribution in the center:
+for example, in ranks, the difference between the $0$ and the $1$ column is $10.5$, whereas the difference between the $6$ and the $7$ columns is only $1$.
+As an illustration, Spearman's $\rho$ assumes that respondents ordered the items *side to side*, with equal signs pasted where they were indifferent (tied), instead of *on top of one another* in equal-width bins.
+Because the number of ties in the center is, by virtue of the forced distribution, greater than the number of ties towards the extremes, differences in valuation towards the center occupy a greater range.
+<!-- TODO Make below footnote -->
+These ties manufactured by the data gathering method are unwelcome:
+it would be preferable to count as ties only those items on which respondents explicitly *reported* to be indifferent.
+That, however, would require participants to rate *all* pairwise comparisons, a prohibitively high number for 77 items (`factorial(77) / factorial(2) * factorial(77-2)`).
+<!-- FIXME this does not knit properly, as per https://github.com/rstudio/rmarkdown/issues/406 -->
+
+By assigning greater values to differences in the middle of the Q-sort, Spearman's $\rho$ offsets *part* of the quadratic weighting in Pearson's correlation coefficient.
+For example, two equally ranked items at ($+7$) and ($+1$), will contribute `r (77-39)^2` and `r (49.5-39)^2`, respectively, at a ratio of   and two equally ranked items at a ratio of `r ((77-39)^2)/((49.5-39)^2)` to 1 in Spearman's ranks, but `r 7^2` and `r 1^2` at a ratio of `r 49` to 1.
+In short: similarities and differences between Q-sorts towards their middle get greater thrift with Spearman's $\rho$ compared to Pearson's.
+Brown, as previously noted, suggests that the quadratic weighting of differences and similarities towards the extremes is warranted because respondents feel strongest about these items.
+<!-- FIXME find citation -->
+That may be so, but it rests on the strong distributive assumption that, in fact, all respondents *do* feel *much* stronger about items placed in the extremes, and *by the same amount*.
+Absent a justification for this assumption, the presence (or absence) of strongly divisive items may inordinately affect correlations and later factor analysis.
+For example, the inclusion (or exclusion) of a divisive item such as `pro-socialism` (greatest standard deviation at `r sd(q_sorts["pro-socialism",,"before"])`) may produce so much covariance as to become something of an "anchor item" for a factor.
+The issue here is not that some items "anchor" a factor more than others --- that is very much the point --- but that the *divisiveness* of an item may crowd out other, "milder" patterns and even trivialize factors in an extreme scenario.
+
+Spearman's is not without problems:
+where Pearson's emphasizes the extremes, Spearman's stresses the middle of the distribution, an area where respondents feel less strongly, and less clearly about placed items.
+Any confusion or indifference about these items should result in *random* placement around the mean, and therefore, cancel out in the correlation coefficient.
+This makes Spearman's coefficient more conservative:
+by stressing covariance towards the noise-prone middle of the distribution, overall correlations may be *lower* (they are not at `r sum(cor(q_sorts[,,"before"],method="spearman"))` and `r sum(cor(q_sorts[,,"before"],method="pearson"))`, respectively) , or *less patterned*, and resulting factors are less likely to be superficially anchored by some agreement in the extreme.
+<!-- TODO add data for factor analysis showing that Spearman's is, in fact, harder; that's also the robustness analysis. -->
+This conservative bias on Spearman's is in line with Q's emphasis on a holistic picture of shared viewpoints.
+
+<!-- @Block-1961 78: also notes that Pearsons and Spearman's or Kendall's are "equvialent (...) because r, except in bizarre or contrived instances, is a monotonic transformation of tau" -->
+
+<!-- @Block-1961 78 cites as reasons for Kendall's that Pearson is "more readily computed, it hast a context of meaning which Kendall's tau and other rank-order indices do not yet enjoy, and most-important the or" -->
+
+<!-- Textbook doesn't even mention it? -->
+
+about the linearity:
+At Tue, 19 Oct 1999 22:11:43 -0400, Steven Brown cited Stephenson
+(1993-1994):
+> "The scoring is forced for theoretical reasons:
+> it is not a matter of
+> supposing each person might want to sort the statements differently.
+> Rather, it should be compared to a physicist's action when he puts a
+> certain voltage charge through an electric circuit:
+> He decides what the
+> voltage should be, and something of the kind is at issue in forcing a
+> Q-sort distribution of scores.
+> Theory is involved." (p. 10)
+
+@Fabrigar-Wegener-2012: 96
+can't use ordinal data for exploratory factor analysis
+
+> @Bartholomew-Steele-etal-2011: 45
+> "One might still wonder whether factor analysis could be used on other types of correlation coefficient specifically designed for ordered categorical data.
+> For example, Kruskal's *gamma*, Somer's *d*, or groupd forms of rank correlation coefficients such as Kendall's *tau* all measure the strength of the relationship between ordered categorical variables.
+> Factor analyses are sometimes carried out on such coefficients and, if they are viewed from a purely descriptive point of view, they may yield useful insights.
+> However, whatever the merits of such *ad hoc* methods, they have been superseded by better, model-based methods."
+
+
+@Basilevsky-1994: 512
+for ordinal data
+> "Three broad approaches can be used to factor analyze such data.
+> First, the nonmetric nature of the data can be ignored and Euclidian measures such as Sperman's (sic!) rho used to summarize relationships among multivariate rankings.
+> The approach has an interesting interpretation since it can be considered as a generalization of Kendall's well-known coefficient of concordance.
+> Secondly, we may define a purely nonparametric correlation coefficient such as Kendall's tau and proceed to decompose a correlation matrix constructed from such coefficients.
+> Third, a nonmetric algorithm can be employed where the factor structure itself is invariant under monotone transformations of the data within each colum.
+> "
+
+@Basilevsky-1994 515:
+> "Kendall's statistic of concordance however is a global measure of association and as such posesses two shortcomings.
+> First it does not shed light on the local structure of agreement/disagreement so that the existence of negative or zero correlation, for example, can be obscured by a value of W which is significantly different from zero.
+> This is especially true for moderate or large data matrices.
+> Second, it dos not provide information concern the correlation among the objects or columns of the matrix, or which clusters of objects (if any) are more (less) preferedd by certain groups of individuals.
+> Consequently, there is no opportunity to observe whether all individuals use the same criteria when judjing.
+> Note also that even an insigicfcant value of W does not necessarily imply the absence of local agreement (disagreement)."
+> **no comes the fun part**
+> A more complete understanding of the data can be achieved by a principal components analysis of the rankings, using a (n x n) matrix of Spearman rho correlations among the observers.
+> n addition the (k x k) correlation matrix of objects can also be analysed to uncover prefered (unpreferred) groupings of the objects.
+> The Analysis proceeds in the usualy fashion, with an examination of the correlation loadngs obtained from a Q analysis of the observers (section 5.4.1).
+> A one-dimensional positive isotropic structure implies uniform agreement amongst the individuals, whereas multidimensional structures imply the existence of clusters.
+
+
+@Basilevsky-1994 518 CONCLUDES:
+> "Rank-order data lack much of the ratio (interval) information present in continuous random variables.
+> If intrinsic continuity can be assumed either as a working hypothesis or by invoking a priori theoretical reasoning, most factor models carry through just as if the sample had been taken directly from a cintunious population.
+> If the assumption of continuits is tenuous, however, a nonparametric correlation coefficient such as Kendall's tau can be used, and a factor analysis then provides a fictious but herhaps usefuly summary of the data.
+
+<!-- TODO make a scatterplot of just two q-sorts here, to illustrate the coefficients, one for very high, one for very low -->
+
+@Bartholomew-Steele-etal-2011:
+245: say that interval treatment for six or seven categories is often done.
+Still, they warn on 245: there *will* be biases (more evidence in section 9.5)
+Kendall's tau, they say, "Factor analyses are sometimes carried out on such coefficients and, if they are viewed from a purely descriptive point of view, they may yield useful results.
+However, whatever the merits of such *ad hoch* methods, they have been superseded by better, model-based methods."
+257: polychoric correlations embody an "underlying variable" model
+
+The simplest summary statistic in lieu of descriptives we are left with is the correlation matrix.
 
 `Qmethod` --- as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a simple Pearson correlation coefficient.
+
+
+### Correlation Matrix
 
 ```{r cor-viz-before}
 # make this a list of before/after
 library(corrplot)
-corrplot(corr = cor(q_sorts[,,"before"])
+corrplot(corr = cor(q_sorts[,,"before"],method="spearman")
   , method = "shade"  # make squares
   , type = "full"  # take only upper triangular
   , is.corr = TRUE
@@ -488,33 +712,26 @@ corrplot(corr = cor(q_sorts[,,"before"])
   , tl.offset = 0.5
   , order = "alphabet"
 )
-
 ```
 
 
 ## Factor Extraction
 
-```{r analysis}
-keyneson <- list("before"=c(), "after"=c())
-keyneson$before <- qmethod(
-  dataset = q_sorts[,,"before"],
-  nfactors = 3,
-  rotation = "varimax",
-  forced = TRUE
-)
-# keyneson$after <- qmethod(
-#   dataset = q_sorts[,,"after"],
-#   nfactors = 3,
-#   rotation = "varimax",
-#   forced = TRUE
-# )
-```
-
-
-
 ### Which Data Reduction Technique
 
+We want *exploratory* factor analysis
+
+note though that later on, to confirm that it is different between the two sessions, we might need confirmatory FA.
+
+Notice here, too, an entire reconstruction of Q may be required, in light of modern available methods, lifted limits on computation etc - that, unfortunately, is beyond the purview of this analysis.
+
+Also list the disadvantages of PCA (though the indeterminateness of centroid may not be one of them)
+
+<!-- is there, or is there not a latent variable idea? -->
+
 <!-- Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary --- it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis. -->
+
+<!-- a lot of the original innovation of Q method was informed by technical limits at the time, see for example @Stephenson1935a: 18 -->
 
 <!--
 factor extraction
@@ -544,7 +761,51 @@ read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per
 -->
 
 
+centroid is obsolete, developed (as much in early factor analysis) because of *computational* ease @Yates-1987: 1
+
+"factor analysis is held in low regard asa  method for exploratory data analysis" (yates 2), instead suggests:
+- check out cluster analysis
+- and multidmensional scaling!
+- the problem with factor analysis is that it suggests *latent* concepts, thereby a causal modal (as revealed by the communility diagonal)
+
+this quote still seems to apply:
+> "far too many [...] complain that the only basis they have for choosing among the many types of factor analysis is the prestige of a given theorist or the fact that this or that "maximin" solution has often been used
+> - Butler 1969: 252f as catied in Yates 6
+
+
+@Fabrigar-Wegener-2012: 30 on EFA vs PCA
+common factor model or PCA model?
+notice how ibid. recommend model fit indices (such as maximimum likelihood parameter estimation) and/or standard errors, confidence intervals and statistical tests for model parameters for EFA - let's see what else we can do here).
+it's a very contentious debate: EFA vs PCA ibid 30.
+
+@Fabrigar-Wegener-2012 31
+> "the common factor model was formulated as a general mathematical framework for understanding the structure of correlations among measured variables.
+> It postulated that correlations among measured variables can be explained by a relatively small set of latent constructs (common factors), and that each measured variable is a linear combination of these underlying common factors and a unique factor (comprised of a specific factor and random error).
+> PCA differs from the common factor model in several notable ways (Wildama, 2007, see also Thomson, 1939)
+> First, PCA was not originally designed to account for the structure of correlations among measured variables, but rather to reduce scores on a battery of measured variables to a smaller set of scores (i.e. principal components).
+> This smaller set of scores are linear combinations of the original measured variable scores that retain as much information as possible (i.e., explain as much variance as possible) from the original measured variables.
+> Thus, the primary goal of PCA is to account for the variances of measured variables rather than to explain the correlations (or covariances) among them.
+> Similarly PCA was not designed with the intent that the principal components should be interpreted as directly corresponding to meaningful latent constructs.
+> Rather the components simply represent efficient methods of capturing information in the measured variables (regardless of whether those measured variables rrepresent meaningful latent constructs).
+> "
+
+Notice that I have NO hunch of a latent variable model, as, for example, you might have with people who have called in sick a lot "burn out)" where you suspect a latent variable, plus some additional idiosyncratic stuff.
+We have no reason to assume that the same is applicable in Q; there is nothing idiosyncratic about any one person's Q-Sort
+What gets explained, and what not, is completely arbitrary
+
+Look into DAnish piece again
+
+Notice I have *no* idea how many, or what kinds of factors might emerge, so it's really EFA.
+
 #### PCA
+
+- considers all of the available variance (common AND unique), places 1 ons on diagonal.
+- Seeks a linear combination of variables such that maximum variance is extracted (repeats the step)
+- use when there is concern with prediction, parsimony and specific/error variance is small (it is NOT!)
+- results in orthogonal
+- sets the communialities to 1, ex ante.
+
+-t's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
 
 <!-- Steps in a PCA
 - correlation matrix (explain detail, just the covariance, somehow standardized to the variance)
@@ -552,8 +813,14 @@ read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per
 
 <!-- PCA is scale-variant, but that is not a problem for the corr matrix, nor for the original matrix -->
 
+estimates all variance, not just shared
 
 #### PAF
+
+latent variable model: burnout, as taken from  @Field-Miles-2012: 750
+
+analyses SHARED variance only, error is just estimated; PCA estimates ALL variance
+FA causes variables, PCA components are aggregates of the variables.
 
 <!-- COMMENT MH
 agree that in fact, as Kampen and Tamas point out, the representativeness of the q sample to the universe of statements is a weak, weak spot.
@@ -561,6 +828,22 @@ Important: as cuppen in  kampen and tamas writes 3112 it's not the number of sup
 Consider the discussion of q methodology and validities oin kampen tamas 3112
 do cluster analysis instead of factor; according to kampen and tamas. This might be interesting.
 -->
+
+- considers only common variance (places communality estimates on diagonal of correlation matrix
+- seeks least number of factors that can account for the common variance of a set of variables
+- PAF is only analyzing common factor variability; removing the uniqueness or unexplained variability from the model
+- called PAF
+- PAF does not use all of the variability, just the one that is actually common
+-
+
+
+@Mulaik-2009: 147
+centroid, developed by Burt and, later Thurstone (1947)
+was developed as an approximation of principal-axis method, while saving computation
+
+-CA minimizes the variance after nfactors extracted   that seems like a good thing!
+
+Talk about Thurstone's concept of simple structure, nicely explained in mulaik
 
 
 ### Number of Factors {#nfactors}
@@ -576,25 +859,54 @@ do cluster analysis instead of factor; according to kampen and tamas. This might
 #       color = TRUE)
 ```
 
+scree plot is from Catell 1966b
+
+Kaiser 1960 is just all eigenvalues greater than .1
+
+Kaiser's generally overestimates (Field Miles discovering stats 762)
+
+- Kaiser's rule: more than EV1
+- scree plot: where is the elbow
+- Chi-Square: non-significant result
+- Horn's parallel analysis
+
+
+### Other tests
+
+Some of these criteria are general others are specific to Q
+
+- What about bartlett test?
+- test of sphericity?
+- test of multicolinnearity?
+
+
+
+Kendall's may also be odd because it tells you the probability for any *two* sets of items (which we don't care about, it seems too predictive) and "it does not shed light on the local structure of agreement/disagreement" (Basilevksy 515)
+
+
 <!-- Use the lego example to explain the logic of the combinatorics - this can actually be good news, even with the small number of people -->
 
 <!-- Also notice this in the number of factors discussion: on the one hand, loom non-factor factors, spurious things that I should avoid.
 On the other hand looms the danger of ignoring factors, false negatives, that area really out there and without whom the following results may turn out to be quite trivial, and not faithful to the people who volunteered these sorts. -->
 
+Bartlett's test of sphericity tests whether it is, in fact, worthwhile at all to extract factors. (though this may not be necessary for PCA?!)
+
+
 <!-- notice: there may be stuff in the data that suggests how many factors make sense (loc 2287)
 notice: I am definetely doing exploratory factor analysis; no ex-ante reason to expect one or the other result -->
 
+
 <!-- for why validity makes no sense, see Brown 1980:4, that may (or may not) be so, but what definietely needs to be tested is whether, in fact, these tautologically valid viewpoints are also *patterned*, wheter some shared can be extracted.-->
-In this (above context) Q methodologists often advise that, occasionally, researchers would know what to look for,
+<!-- In this (above context) Q methodologists often advise that, occasionally, researchers would know what to look for, -->
 <!-- TODO MCH: find reference, find source from Watts Stenner on this -->
-and that therefore some substantive discretion would be warranted.
+<!-- and that therefore some substantive discretion would be warranted.
 In the extreme case, any number of extracted factor would be acceptable, so as long as it *made sense*.
-The problem here, oddly not obvious to many Q researchers, is that this kind of "makes-sense"-discretion comes perilously close to the imposition of deductively hypothesized meaning so criticized in survey research. (see brown 3 or so)
+The problem here, oddly not obvious to many Q researchers, is that this kind of "makes-sense"-discretion comes perilously close to the imposition of deductively hypothesized meaning so criticized in survey research. (see brown 3 or so) -->
 
-This comes close to massaging data.
-There is something falsifiable here; are there, or are there not common factors.
+<!-- This comes close to massaging data.
+There is something falsifiable here; are there, or are there not common factors. -->
 
-- Experience / Common sense: 6--8 persons per ex-ante factor (Stenner \& Watts 2012: loc 2652):
+<!-- - Experience / Common sense: 6-8 persons per ex-ante factor (Stenner \& Watts 2012: loc 2652):
     `r ncol(q_sorts)/8` factors
 - Magic Number 7 (Brown 1980: 223):
     `r ncol(q_sorts)/7` people per factor?!
@@ -602,7 +914,8 @@ There is something falsifiable here; are there, or are there not common factors.
 - Two or more loadings (Brown 1980: 222)
 - Humphrey's rule: Cross-Product of 2 highest loadings greater than twice the standard error
 - Scree plot (2nd derivative < 0)
-- Parallel Analysis (Horn 1965)
+- Parallel Analysis (Horn 1965) -->
+
 
 <!--
 stephenson on number of factors, via verena
@@ -616,9 +929,9 @@ all that the operations demand: It will be the end
 <!-- \cite[6]{Exel2005} recommends 4-5 people per viewpoint, which given 17 participants yields 3-4 factors, or viewpoints. -->
 
 <!-- \cite{Wittenborn} says explicitly what the problem is: 132, namely that there is no test as to whether there are other people who would sort like this. -->
-
+<!--
 Brown's case (42) against statistical (as opposed to, ominously, "substantive") criteria for the number of cases seems to rest on particular people's viewpoints being important, which is not the case in my study, nor probably will it ever be in this kind of work.
-This *does* make sense because you don't want to rest on numbers game along, namely the amount of people who load on a factor, that's true --- but this is still a necessary, if not a sufficient condition.
+This *does* make sense because you don't want to rest on numbers game along, namely the amount of people who load on a factor, that's true - but this is still a necessary, if not a sufficient condition.
 Or something like that?
 
 Brown (43) seems to be aware of the problem of false positives from Eigenvalues, but doesn't seem interested in parallel analysis.
@@ -627,8 +940,35 @@ He also argues (and more convincingly!) that (43) factor size depends on the peo
 I think this is an overstatement; it merely implies false negatives?!? (or something)
 Think this through!
 Also, point out that absent any kind of such a criterion, we're left in a very uncomfortabel spot
-also, in my case, arguably sampling *is* ok, because deliberative participants will always be self-selected (as argued elsewhere).
+also, in my case, arguably sampling *is* ok, because deliberative participants will always be self-selected (as argued elsewhere). -->
 <!-- TODO MCH: notice in the recruitment part that a) too much money may drive out other incentives, and b) already, the VHS-kind-of-orientation-what-do-i-learn was a bit of a problem, might need greater stakes, better output format, more responsibility. This is all under the heading of external validity of the conference -->
+
+
+### Principal Components Extraction
+
+```{r analysis}
+keyneson <- list("before"=c(), "after"=c())
+#keyneson$before <- list("pearson"=c(), "kendall"=c(), "spearman"=c())
+keyneson$before <- qmethod(
+  dataset = q_sorts[,,"before"],
+  nfactors = 3,
+  rotation = "varimax",
+  forced = TRUE
+  , cor.method = "spearman"
+)
+#keyneson$before$pearson$flagged == keyneson$before$spearman$flagged
+#keyneson$before$kendall$flagged == keyneson$before$spearman$flagged
+#sum(keyneson$before$pearson$f_char$characteristics$expl_var)
+#sum(keyneson$before$spearman$f_char$characteristics$expl_var)
+#sum(keyneson$before$kendall$f_char$characteristics$expl_var)
+# keyneson$after <- qmethod(
+#   dataset = q_sorts[,,"after"],
+#   nfactors = 3,
+#   rotation = "varimax",
+#   forced = TRUE
+# )
+```
+
 
 
 ### What Rotation?
@@ -636,6 +976,21 @@ also, in my case, arguably sampling *is* ok, because deliberative participants w
 - Judgmental / Manual
 - Automatic (varimax, equamax etc.)
 <!-- good piece on why judgemental rotation on brown 224: but it's also an invitation to reify stuff, or viewpoints the researcher has. notice that there's already place for judgment in the *interpretation* -->
+
+**Varimax**
+- minimizes number of variables with high (or low) loadings on a factor, makes it possible to identifiy a variable with a factor
+
+
+**Quartimax**
+- minimizes the number of factors needed to explain each variable. Tend to generate a general factor on which most variables load with med to high values - not helpful for resurch
+
+**Equimax**
+- combination of above.
+
+What is a good factor structure?
+Should have more than .6 total variance explained (barely so!)
+
+<!-- Structure matrix vs pattern matrix applies only for non-orthogonal rotation -->
 
 <!-- I don't Have people in my sample who really stand out, as Brown 1980 261 hopes there would be. -->
 
@@ -662,7 +1017,7 @@ In my view, the meaningfulness of certain quantitative coefficients in Q, like s
 
 ## Loadings
 
-For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240.
+<!-- For the analogy that the factors are the loading people's lego buildigns superimposed on another, see Brown 240. -->
 
 
 ## Factor scores
@@ -682,17 +1037,17 @@ check whether the two flagging criteria make sense, aren't they too restrictive?
 
 #### QDC
 
-QDCs are not calculated, as one might think, as t-tests, but using Brown 1980 244.
+<!-- QDCs are not calculated, as one might think, as t-tests, but using Brown 1980 244. -->
 
 
 ### What visualization
 
-notice that while z-scores have more information, it makes this hard to see because of overplotting.
-A neat visualization, in this case, is more than just cosmetic; easy navigation can be considered crucial to arrive at good factor interpretations.
+<!-- notice that while z-scores have more information, it makes this hard to see because of overplotting.
+A neat visualization, in this case, is more than just cosmetic; easy navigation can be considered crucial to arrive at good factor interpretations. -->
 
-Notice that "consensus statements" is something of a misnomer, because the significance cutoff point is asymmetric.
+<!-- Notice that "consensus statements" is something of a misnomer, because the significance cutoff point is asymmetric. -->
 
-the items *together* make sense (or not) Brown 1980: 257
+<!-- the items *together* make sense (or not) Brown 1980: 257 -->
 
 <!-- TODO MCH: write to q list about this -->
 
