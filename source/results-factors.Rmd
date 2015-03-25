@@ -157,7 +157,7 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ## Codenames
 
 ```{r real-names, echo = FALSE}
-real_names <- FALSE  # this is for manually enabling renaming
+real_names <- TRUE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
   for (name in colnames(q_sorts)) {  # loop over names in q_sorts
@@ -473,35 +473,29 @@ This postulated incomparability applies to this study, too, and plays out in sev
 The point here is not to criticize R methodology, though the near hegemony over quantitative social sciences that Brown rails against [-@Brown1980: 321], may indeed have long stretched thin its foundations and overreached its purview.
 The point is that, for the present research question *or* given the present data, any excursion to R methodology would at best be a distraction, and at worst strictly unscientific.
 
+
 ## Correlations
 
-To extract *shared* viewpoints, we must first establish a metric of how to measure the similarity in perspective between any pair of Q-sorts.
+To extract *shared* viewpoints, we must first establish what it means or any pair of Q-sorts to be *alike*.
 Since we would expect people with similar viewpoints to sort items in similar positions, and therefore have similar values over all items, respectively, we can use a correlation coefficient between any two people's sorts as a statistical summary of their similarity.
+A *correlation matrix* of all such pairs is the simplest summary statistic that can be presented for Q data, maintaining both the holistic and relative nature of the sorts.
+Though Q studies do not always display or discuss the correlation matrix, all of the downstream analyses are, in fact, based on this table [@Brown1980: 207].
 
-Look at pairwise comparisons of every participants Q-sort against everyone else's Q-sort.
-Since we would expect people with similar viewpoints to sort items in similar positions, we can use a correlation coefficient $r$ between any two people's sorts as a statistical summary of their similarity.
-
-
-Such a *correlation matrix* is the simplest summary statistic that can be presented for Q data, maintaining both the holistic and relative nature of the sorts.
-It is also,
-Q studies do not always display or discuss this *correlation matrix*, but all of the downstream data reduction operations are, in fact, based on this table [@Brown1980: 207].
-
-<!-- this is about the linear relationship -->
 
 ### Correlation Coefficients
 
-Depending on assumptions made, two *different* correlation coefficients are applicable to Q data.
-It might appear odd to explain and discuss these mainstream statistics in some detail.
+Depending on assumptions made, *different* correlation coefficients are applicable to Q data.
+These coefficients are well-known statistics, but, their underlying assumptions can be thorny for Q methodology and consequential for these data.
+The proceeding discussion also serves to rehearse the uncommon person-correlations at the heart of Q methodology.
 <!-- TODO notice that q textbook does not even mention these, and Brown glosses over them --- they may matter though -->
-As will be evident, however, the assumptions of these coefficients can be thorny for Q methodology and the following discussion serves well to acquaint us with the person-correlations at the heart of Q methodology.
 <!-- TODO it may be necessary to reorganize the following into the question of whether the data is ordinal or interval -->
 
-1. *Pearson's Product-Moment-Correlation Coefficient*.
+1. *Pearson's $\rho$ Product-Moment-Correlation Coefficient*.
 
     The conventionally used Pearson product-moment correlation coefficient, or Pearson's $\rho$, starts from the covariance of any pair of Q-sorts, *in their raw form*,
 
     (@cov) $$cov(X,Y)=\sum_{i=1}^{N}{\frac{(x_i-\overline{x})(y_i-\overline{y})}{N}}$$ [^pop-corr].
-    <!-- FIXME add reference to Pearson -->
+    <!-- TODO add reference to Pearson -->
 
     Since in a forcibly symmetric Q distribution as ours, the mean will always be zero (see above), we can safely ignore the respective $-\overline{x}$ terms; by default, Q-sorts are already expressed as deviations from their expected values, $E$.
     The covariance on all *items* for, say `Ingrid` and `Petra`, is therefore simply the cross-product of all item positions divided by the number of items, $N$.
@@ -511,40 +505,23 @@ As will be evident, however, the assumptions of these coefficients can be thorny
     The resulting covariance is, unfortunately, hard to interpret, because it is in squared units and depends on the spread of the data.
     It is normalized into Pearson's product-moment correlation coefficient by dividing it by the product of the two standard deviations, in this case, `Petra`'s and `Ingrid`'s --- both of which are, by definition, the same.
 
-    (@Pearson) $$\rho(Petra,Y) = \frac{\operatorname{Cov}(X,Y)}{\sigma(X)\sigma(Y)}$$
+    (@Pearson) $$\rho(Petra,Ingrid) = \frac{\operatorname{Cov}(Petra,Ingrid)}{\sigma(Petra)\sigma(Ingrid)}$$
 
     Consider the special case of correlating a person's Q-sort with her own Q-sort, say `Petra` with `Petra`, to understand the bounds of the Pearson's $\rho$.
     The denominator in (@Pearson) yields the $\operatorname{Var}(X)$, the square of `Petra`'s standard deviation over the item scores is, by definition, her variance.
-    The numerator is given by summed product of `Petra`'s scores with `Petra`'s scores, which is also the variance.
+    The numerator is given by the summed product of `Petra`'s scores with `Petra`'s scores, which is also the variance.
     The correlation coefficient of two identical Q-sorts is therefore $1$.
-    A correlation coefficient of $-1$ would result if the two Q-sorts were diametrically opposed, as if mirrored around the distribution mean of zero: in that case, the numerator would be $-\operatorname{Var}-$.
-    <!-- FIXME need to clarify whether we use population or sample standard deviation -->
+    A correlation coefficient of $-1$ would result if the two Q-sorts were diametrically opposed, as if mirrored around the distribution mean of zero:
+    in that case, the numerator would be $-\operatorname{Var}-$, and everything else would remain the same.
     <!-- TODO probably need the variance in here, or earlier? -->
     A correlation coefficient of $0$ would be expected if two Q-sorts are entirely unrelated.
 
     All of these extremes are rarely reached in Q, with a range of `r range(cor(q_sorts[,,"before"])[lower.tri(cor(q_sorts[,,"before"]))])` in this case.
 
     The Pearson correlation coefficient is a measure of *linear* association between two variables, or Q-sorts in our case.
-    On the one hand, that seems appropriate for Q methodology, because it is unclear what a hypothetical non-linear (say, v-shaped) association between two Q-sorts would mean:
-    it would express a *dissimilarity* in underlying viewpoints.
-    <!-- TODO maybe later add visualization of all scatterplots? -->
-    On the other hand, as a measure of *linear* association, it also requires at least interval-scaled data, that is the *difference* between values must have *cardinal*, not just ordinal meaning.
-    For example, cardinal valuation would imply cards sorted under $3$ are preferred to cards sorted $2$ by the *same amount* as cards between $7$ and $6$ respectively --- not just that higher sorted cards are valued *more*.
-    Q method is unfortunately a bit muddled on the issue of cardinal values in Q-sorts, though the confusion is perhaps forgivable because assumptions of correlational theory are disputed elsewhere, too (see @Brown1980: 276).
-    On the one hand, Stephenson (1950a: 553f as cited in @Brown1980: 276) suggests that Q-sorts fulfill all criteria for correlation coefficients, because they are transitory (sic!), though Brown and Stephenson elsewhere concede that the forced, quasi-normal distribution is only a heuristic to conveniently measure subjectivity and that its precise shape is relatively unimportant.
-    It would appear that only one of the two propositions can be true:
-    *either* people's feelings towards on items are, in fact, normally distributed, in which case we could treat Q-sort values as cardinal, *or* we make no assumptions about the true distribution of people's subjectivities towards items, in which case we have no reason to believe the differences between the values are of equal magnitude.
-    Absent a strong assumption on the distribution, the difference between $6$ and $7$ may, for example, be much bigger than the difference between $1$ and $2$, because a respondent feels much stronger about those items in the extremes.
-    A strong assumption on the distribution of subjective valuations of *any* respondent over *any set of items* would, in fact, appear quite implausible, because items are --- as is discussed elsewhere --- not strictly randomly sampled.
-    For any given Q set, it seems likely that they will illicit different distributions of intensity in respondents:
-    some Q sets may contain more evenly-spaced items in terms of their agreeability, and some Q sets may have harshly disagreeable items.
-    Relaxing the assumption of cardinal valuation in Q-sorts then seems to be the safest bet.
-    ^[Aside from these considerations, Pearson's $\rho$ is susceptible to outliers (*not robust*) and requires normally distributed data, though both are not a great concern in Q methodology, when forced distributions bound extreme values and close to a bell curve (as the current distribution is).
 
-2.  *Spearman's Rank Correlation Coefficient.*
+2.  *Spearman's $\rho$ Rank Correlation Coefficient.*
 
-    Rank correlation coefficients offer a way out:
-    they are applicable to merely ordinally-scaled data.
     Spearman's $\rho$ works much like Pearson's $\rho$, but starts from *rank orders*, instead of raw Q-sort values.
     Raw Q-sorts are rank ordered, and assigned their rank index.
     Crucially, in a case of ties --- of which there are many in Q ---, the average of the would-be occupied ranks is assigned as a rank.
@@ -569,138 +546,237 @@ As will be evident, however, the assumptions of these coefficients can be thorny
     -3          14      12
     ----------  ------  ---------------
 
-    <!-- TODO add spearman's formula? -->
-    Spearman's procedure then computes a Pearson's correlation coefficient (as in the above) from these ranks.
-    (@spearmans--ho) $\rho = 1- \frac{6 \sum d^2}{n^3}$
+    Spearman's procedure then computes a Pearson's correlation coefficient (as in the above) from the rank *differences* $d_i = x_i - y_i$ (instead of the difference to the mean).
+    <!-- TODO add reference to Spearman's -->
+    This version of Pearson's coefficient can be summarized thus:
 
-    where $d_i = x_i - y_i$, the difference in ranks.
-    <!-- this is a simplification! -->
+    (@spearmans-rho) $$\rho = 1- \frac{6 \sum d^2}{n^3}$$
 
-
-    The resulting coefficient is likewise from $+1$ to $-1$, with perfect correlation indicating not a *linear* association, but a strictly *monotone* association, where all items are ranked the same, though possibly by different "amounts".
-    This is appropriate for Q methodology, where respondents are instructed to worry only about the *relative* positioning of items, and we would therefore suspect two people with similar *relative* item positions to have similar viewpoints.
+    The resulting coefficient is likewise bounded from $+1$ to $-1$, with perfect correlation indicating not a *linear* association, but a strictly *monotone* association, where all items are ranked the same, though possibly by different "amounts".
     Conversely, two Q-sorts with mutually reversed ranks would yield a $-1$ coefficient, indicating a negative, monotone relationship.
+
+3. *Kendall's $\tau$ Rank Correlation Coefficient*
+
+    Kendall's $\tau$ starts not with differences in scores or ranks, but with a comparison of item pairs between the two Q-sorts.
+    When the ranks of two items ($j$, $i$) agree between two Q-sorts ($x$, $y$), the item pair is said to be *concordant* ($x_i > x_j$ and $y_i > y_j$, or $x_i < x_j$ and $y_i < y_j$).
+    When the ranks between the two respondents disagree ($x_i > x_j$ and $y_i < y_j$ or $x_i < x_j$ and $y_i > y_j$), they are said to be *discordant*.
+    An item pair is said to be *tied* on a Q-Sort if both items have received the same score (as frequently happens in Q), $x_i = x_j$.
+    In the simplest form, Kendall's $\tau_A$ divides the difference between the number of concordant pairs $n_c$ and the number of discordant pairs $n_d$ by half the number of pairs squared:
+    $\tau_A = \frac{n_c - n_d}{n(n-1)/2}$.
+    For example, `Petra` and `Ingrid` are *concordant* on `poll-tax` (`r q_sorts["poll-tax",c("Petra","Ingrid"),"before"]`, respectively) and `corporate-income-tax` (`q_sorts["corporate-income-tax",c("Petra","Ingrid"),"before"]`, respectively): they both prefer `corporate-income-tax` over `poll-tax`, if by a different amount.
+    They are *discordent* on `infinite-growth` (`r q_sorts["infinite-growth",c("Petra","Ingrid"),"before"]`, respectively) and `use-value` (`r q_sorts["use-value",c("Petra","Ingrid"),"before"]`, respectively):
+    Between the two, `Petra` prefers `infinite-growth`, `Ingrid` prefers `use-value`.
+
+    Because the denominator gives the total number of combinations of two items out of the total number of items (in this case `r (77*76)/2`), Kendall's $\tau$, too, is bounded from $+1$ to $-1$.
+    If two Q-sorts are identical (opposed), they will (dis)agree on *all* pairwise item comparisons, divided by *all* possible such combinations, yielding ($-$)$1$.
+    If two Q-sorts agreed and disagreed on half of the comparisons each, the numerator will be $0$, yielding a $0$ coefficient.
+
+    Because in Q-sorts items must be stacked in some columns, there are many ties.
+    Kendall's $\tau_B$ additional terms in the denominator adjust for such ties, considering the number of ties $n_1$ and $n_2$ on both Q-sorts:
+
+    (@kendalls-tau) $$\tau_B = \frac{n_c - n_d}{\sqrt{(n_0-n_1)(n_0-n_2)}}$$.
+
+    Kendall's $\tau$, does not give an association between the two Q-sorts, but expresses the *probability*, that any given pair of items will be ranked equally between the two Q-sorts.
 
 [^pop-corr]: Here, as in all of the below formulae, I reproduce the (unbiased) *population* statistic.
   The population statistics seem appropriate for (at least) a forcibly symmetric distribution as this, because a population mean of *any* number or selection of sampled statements is, in fact, known:
   it must be zero, per the specified distribution.
   The mean need not be estimated, and no correction for estimation bias need be introduced.
   Steven Brown (email conversion in February 2015) also suggests to use the population variant, though the usage and terminology in his 1980 book *Political Subjectivity* are a little confusing.
-  Technically, all of the correlations reproduced here use the *sample* statistics, but because the de-biased $N-1$ term occurs both in the numerator and denominator of the correlation coefficient, it cancels out.
+  <!-- TODO add email specifics citation -->
+
+  On a technical level, however, all of the code used to calculate correlations reported here us the *sample* statistic.
+  Because because the de-biased $N-1$ term occurs both in the numerator and denominator of the correlation coefficient, it cancels out.
   <!-- TODO fix this or add link to GH issue -->
   <!-- FIXME add reference to Political Subjectivity -->
 
-The differences between Spearman's rank coefficient and Pearson's product-moment coefficient are likely to be small for Q data, because outliers are bound by the forced distribution.
-Notice that in the extreme cases, both coefficients would be identical in the case of Q: because of the forced distribution, a Q-sort identical in ranks will also be identical in raw values.
-Contra Brown's conclusion [-Brown1980: 279], coefficients are, however, not "virtually identical" in this case, but differ by an average of `r mean(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))`, ranging up to a sizable `r max(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))`.
+The choice among these correlation coefficients depends first on the kind of data gathered upstream, and the kind of analysis intended downstream.
 
-<!-- notice that polychoric transformations assumes that there is latent, *normally* distributed variable http://stats.stackexchange.com/questions/78791/correlation-coefficients-for-ordered-data-kendalls-tau-vs-polychoric-vs-spearm -->
+Pearson's $\rho$ requires at least interval-scaled data: the *difference* between values must have *cardinal*, not just ordinal meaning. ^[Aside from these considerations, Pearson's $\rho$ is susceptible to outliers (*not robust*) and requires normally distributed data, though both are not a great concern in Q methodology, when forced distributions bound extreme values and close to a bell curve (as the current distribution is).
+For example, cardinal valuation would imply cards sorted under $3$ are preferred to cards sorted $2$ by the *same amount* as cards between $7$ and $6$ respectively --- not just that higher sorted cards are valued *more*.
 
-These differences result from the "spreading out" of the distribution in the center:
-for example, in ranks, the difference between the $0$ and the $1$ column is $10.5$, whereas the difference between the $6$ and the $7$ columns is only $1$.
+Both Spearman's $\rho$ and Kendall's $\tau$ relax this assumption, and can be used on ordinally-scaled data, with item scores merely rank, but not a rating.
+
+
+#### Ordinal vs Interval Data
+
+Q method is, unfortunately, a bit muddled on the issue of cardinal or ordinal valuation in Q-sorts.
+Most studies simply use the default Pearson coefficient and many articles as well as the leading introductory textbook on the method [@Watts2012] do not even *mention*, let alone justify, the use of one of the three common coefficients.
+This oversight might be easily forgiven, because for Q data, at least Spearman's and Pearson's coefficients appear to be closely related.
+Given the relatively high number of ranks assigned (usually more than 9, 15 in this case), many researchers might have no trouble treating the data as interval-scaled, much as (shorter-ranged) Likert-scales are often interpreted.
+<!-- TODO add citation on what ordinal can usually be used as interval -->
+Additionally, Q data is tightly bounded, especially when a forced distribution is used: there *can* be no outliers, that might inordinately affect Pearson's, but not Spearman's.
+One might then conclude, as Block [-@Block-1961: 78] and Brown [-@Brown-1971: 284] that the choice of correlation coefficient does not much matter, effectively sidestepping the fundamental question of which coefficient is the appropriate one.
+Brown argues correctly that *absent ties*, Spearman's and Pearson's *must* be identical, and that illustrate with his data, that even *with ties*, Spearman's and Pearson's "produce virtually identical results [...]", which are "in turn [...] essentially the same as those obtained utilizing Kendall's $\rho" [-@Brown1980: 279].
+The problem is that, in fact, Q data has *many* ties, and using this data, the coefficients *do* differ by an average of `r mean(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))`, ranging up to a sizable `r max(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))` for Spearman's and Kendall's, each compared to Pearson's.
+<!-- TODO add table with all the differences -->
+As the sensitivity analysis in the appendix shows, these differences in correlations can also filter down to the factor analysis, and may even bias the interpretation in a *systematic* way.
+<!-- TODO add, link to sensitivity analysis -->
+
+```{r coefficients-lipset, include=FALSE}
+data(lipset)
+max(abs(cor(lipset$ldata, method="pearson")-cor(lipset$ldata, method="spearman")))
+max(abs(cor(lipset$ldata, method="pearson")-cor(lipset$ldata, method="kendall")))
+lipset$spearman <- qmethod(
+  dataset = lipset$ldata,
+  nfactors = 3,
+  rotation = "varimax",
+  forced = TRUE
+  , cor.method = "spearman"
+)
+lipset$pearson <- qmethod(
+  dataset = lipset$ldata,
+  nfactors = 3,
+  rotation = "varimax",
+  forced = TRUE
+  , cor.method = "pearson"
+)
+```
+
+<!--TODO  Make note on decision tree why verbosity is important: it's a combinatorial explosion, and I don't want to waste my or the reader's tiem datamining -->
+
+Aside from Brown's here falsified *empirical* claim that "within the factor-analytic framework [...] the interval-ordinal distinction is of no importance" [-@Brown1980: 289], there appears to be no *methodological* literature to justify a choice of coefficients on Q-epistemological or ontological grounds.
+
+The choice between interval and ordinal valuations in Q-sorts seems to turn on the status of the Q distribution.
+
+On the one hand, we can seek to ascribe *positive* status to the Q distribution, that is, assume that there is such a thing as a *true* distribution on any given set of items for any given respondent, and that this distribution can be measured.
+The simplest way to go about this may be to let people sort items freely into a fixed number of bins.
+Given the relatively great number of bins (15 in this case), it seems reasonable to treat distances between adjacent bins as meaningful, because respondents were able to freely project their subjectivity, however formed.
+Alternatively, one can assume that *any* respondent's feelings towards *any set of items* are normally distributed as a matter of ex-ante empirical finding.
+Assuming that every person has one $-7$ item, two $-6$ items, and so forth under the bell curve, it is reasonable to assume same and meaningful distances between equal bins slicing up the (continuous!) normal distribution.
+This latter assumption is, of course, quite heroic, especially considering that P-sets of items cannot be random sampled and any given set of items will likely include idiosyncracies.
+I am not aware that anyone in the Q literature would make, nor provide evidence for this latter assumption, though few researchers have implemented free distributions.
+
+On the other hand, we can ascribe *epistemological* status to the Q distribution, that is, treat it "as a formal model in the logic-of-science sense and in terms of which persons are instructed to present their points of views", in Brown's characteristically cogent words (2015, via email on Qlistserv).
+<!-- TODO add email as referenc -->
+Oddly --- though not unconvincingly --- this is then an *operational* definition of the *distribution* to *operantly* measure the structure of subjective viewpoints (Stephenson 1968: 501), to borrow a popular dichotomony in Q circles.
+<!-- TODO Fix citation, as cited in Watts Stenner 684 -->
+The quasi-normal Q distribution is *defined* by the researcher as the terms in which respondents may express the concept of subjectivity, much as R researchers define items based on some pre-existing concept.
+This latter view of the distribution underpins most of Q research, though not always as explicitly as in Brown's writing.
+The case for the forced-distribution-as-model is twofold.
+<!-- TODO link here to an earlier discussion of the forced distribution -->
+First, the forced distribution strongly single-centers all the *items*, a pre-condition for a transposed factor analysis: under a forced curve, all items are always ranked relative to the same reference point of all other items. ^[Arguably, items may still be considered single-centered if under a free distribution, as long as they are thoroughly weighted at the same time.]
+<!-- TODO note here that a free coordinate system, where people have to wrestle with the relative positions of items might do this trick! -->
+Second, the forced distribution extracts "hidden" preferences by making Q sorters make the same, tightly circumscribed decisions: for example, people cannot place more than one item in the leftmost bin.
+A complete rank ordering might be the logical --- if impractical --- solution to reveal all hidden preferences: in a complete rank order, no ambiguities are left.
+<!-- TODO is "complete" rank order the correct term? -->
+<!-- TODO make this whol thing a GH issue, I can make a paper out of this -->
+<!-- TODO there is a obvious link between all of this and vNM consistency -->
+
+The former *positive* view on the Q distribution might straightforwardly justify cardinal valuation of Q-sorts.
+
+Stephen Brown argues that cardinal valuation can be maintained for the latter, *epistemological* view on the Q distribution, too, or at least that "the equality of intervals along the Q-sort range [...] is no more subject to proof than it is to disproof, which is common to models." (Brown 2015, email to Qlistserv)
+<!-- TODO add link or something, proper reference -->
+It seems to me though, that the model implied here conceives of Q-sorts as *ordinal* valuations, and that data should be treated respectively.
+To operationally "reveal the Q sorters' preference (as opposed to their likes)" by forcing people to decide *between* items is to negate meaningful distances (ibid.).
+Stephen Brown may be correct that "preferences" and "likes" cannot be observed at the same time, akin to the quantum principle of complementarity (Brown's analogy).
+However, this *same* complementarity holds between ordinal and cardinal valuations.
+If preferences are to be revealed in terms of *choices* constrained by the measuring mechanism, then that is an *ordinal* measurement, without meaningful distances.
+Meaningful distances require that respondents be arbitrarily free in their choices, including, for example, all items in one column, with no distinctions enforced.
+
+An ordinal interpretation of data also dovetails with the related, relentness instructions to respondents that they worry only about the *relative* positioning of items.
+<!-- TODO find citation -->
+
+Readers may wonder, at this point, what could possibly warrant this methodological diversion in the context of the `Keyneson` data analysis.
+Problematically, the correlation matrix for `Keyneson` looks not just different, depending on the chosen coefficient, but in a systematic way.
+
+This bias stems from the different weighting of similarly (and dissimilarly) sorted items in the *extremes* of the distribution.
+Recall that Pearson's $\rho$ squares the covariance, giving great weight to whatever similarity people's viewpoints express in their tails.
+By comparison, Spearman's $\rho$ offsets this quadratic weighting partly by "spreading out" the center of the distribution:
+for example, in Spearman's ranks, the difference between the (raw, Pearson's) $0$ and the $1$ column is $10.5$, whereas the difference between the $6$ and the $7$ columns is only $1$.
 As an illustration, Spearman's $\rho$ assumes that respondents ordered the items *side to side*, with equal signs pasted where they were indifferent (tied), instead of *on top of one another* in equal-width bins.
 Because the number of ties in the center is, by virtue of the forced distribution, greater than the number of ties towards the extremes, differences in valuation towards the center occupy a greater range.
 <!-- TODO Make below footnote -->
-These ties manufactured by the data gathering method are unwelcome:
-it would be preferable to count as ties only those items on which respondents explicitly *reported* to be indifferent.
-That, however, would require participants to rate *all* pairwise comparisons, a prohibitively high number for 77 items (`factorial(77) / factorial(2) * factorial(77-2)`).
-<!-- FIXME this does not knit properly, as per https://github.com/rstudio/rmarkdown/issues/406 -->
-
-By assigning greater values to differences in the middle of the Q-sort, Spearman's $\rho$ offsets *part* of the quadratic weighting in Pearson's correlation coefficient.
 For example, two equally ranked items at ($+7$) and ($+1$), will contribute `r (77-39)^2` and `r (49.5-39)^2`, respectively, at a ratio of   and two equally ranked items at a ratio of `r ((77-39)^2)/((49.5-39)^2)` to 1 in Spearman's ranks, but `r 7^2` and `r 1^2` at a ratio of `r 49` to 1.
 In short: similarities and differences between Q-sorts towards their middle get greater thrift with Spearman's $\rho$ compared to Pearson's.
 Brown, as previously noted, suggests that the quadratic weighting of differences and similarities towards the extremes is warranted because respondents feel strongest about these items.
 <!-- FIXME find citation -->
-That may be so, but it rests on the strong distributive assumption that, in fact, all respondents *do* feel *much* stronger about items placed in the extremes, and *by the same amount*.
-Absent a justification for this assumption, the presence (or absence) of strongly divisive items may inordinately affect correlations and later factor analysis.
-For example, the inclusion (or exclusion) of a divisive item such as `pro-socialism` (greatest standard deviation at `r sd(q_sorts["pro-socialism",,"before"])`) may produce so much covariance as to become something of an "anchor item" for a factor.
-The issue here is not that some items "anchor" a factor more than others --- that is very much the point --- but that the *divisiveness* of an item may crowd out other, "milder" patterns and even trivialize factors in an extreme scenario.
+That may be so, but it implies an otherwise rejected *positive* assumption on the Q distribution, namely, that all respondents *do* feel *much* stronger about items placed in the extremes, and *by the same amount*.
 
-Spearman's is not without problems:
-where Pearson's emphasizes the extremes, Spearman's stresses the middle of the distribution, an area where respondents feel less strongly, and less clearly about placed items.
+*Absent* such a positive assumption, the inordinate influence of covariance in the extremes can conspire to introduce bias as a function of the *given* Q-set.
+Consider that items may --- especially when they are not gathered "in the wild", but crafted, as for `Keyneson` --- differ in the starkness of their wording.
+For example, `pro-socialism` might have been formulated *without* reference to the informative, but tainted term "planned economy". ^[The German "Planwirtschaft" carries negative associations with the East German economic malaise, and general mismanagement. An equally tainted term for Americans may be "socialism".]
+Consider also that *some* (and only *one*) item has to fill the extreme position, irrespective of whether a participant really feels that much stronger about the last item.
+It may then be that starkly worded items tend to occupy these extreme positions, greatly load the correlation matrix and downstream factor analysis.
+In the extreme case, the inclusion (or exclusion) of a divisive item such as `pro-socialism` (greatest standard deviation at `r sd(q_sorts["pro-socialism",,"before"])`) may produce so much covariance as to become something of an "anchor item" for a factor.
+
+The issue here is not that some items "anchor" a factor more than others (that is very much the point of distinguishing statements),
+<!-- TODO add footnote to QDC part -->
+nor that some items are worded in a different style (that is very much the point of the factor interpretation).
+The issue is that *absent* a *positive* view on the Q distribution --- which we have rejected --- the *divisiveness* of some items may crowd out other, "milder" patterns of covariance towards the middle of the distribution, even trivialize factors in an extreme scenario, all for no good reason.
+Recall that without a positive distributive assumption, we have no reason to assume that the difference between, say $6$ and $7$ is the same as between $0$ and $1$.
+We cannot consequently know in any absolute amount how much more or less strongly people felt about more or less divisive items: the weighting of the (mildly worded) middle covariances to the (starkly worded) extreme covariances is, becomes *arbitrary*.
+
+Q methodology with a forced distribution has thrust us into a no-mans-land between interval and ordinal data, inhospitable to sound statistics.
+If we assume interval scaling, and use Pearson's $\rho$, covariances in the extremes are weighted more, though the magnitude of that weighting is suspect, for the above-mentioned reasons.
+If we assume ordinal scaling, and use Spearman's $\rho$, covariances in the extremes are weighted less, though the magnitude of that weighting is suspect, too.
+Recall that the "spreading out" occurs as a function of ties within the higher columns towards the middle of the distribution.
+These ties, however, are *also* enforced by the method, and did not arise organically.
+
+Ideally, Q method would produce a thoroughly grounded clarification of how covariances across the (forced) distributions should be appropriately weighted.
+Unfortunately, at least the outspoken members of the Q listserv appear untroubled by this supposed conundrum.
+Bob Braswell (2015, email on Qlist) suggests that because the downstream analyses require Pearson's "the burden of proof is on someone who would like to substitute another correlation coefficient".
+Braswell and Brown also doubt differences in coefficients will be consequential, and suggest any downstream effects may be counteracted by judgmental flagging and rotation.
+In a way, these skeptics are right: even a (rejected) uncertainty on the choice of correlation coefficient does not invalidate Q Methodology, and final factors are likely to share a great family resemblance, as also indicated by the robustness analysis in the appendix.
+<!-- TODO add link to appendix -->
+Still, this ambiguity on coefficients affects Q methodology at a fundamental level, carrying on through all downstream analyses, and even small differences should matter for an avowedly *scientific* study of subjectivity.
+The troublingly common resort to abductive judgment in the face of muddied statistics risks loosening the tight positive bounds placed on researcher's interpretation ever mover: if, *in  addition* to the rotation method, the flagging, the number of factors and the extraction method, even the correlation coefficient were up for grabs, researchers would enjoy considerable latitude in specifying their models --- all before the supposedly bounded qualitative interpretation has begun.
+These and other methodological challenges are often met by reframing them in terms of (outsider) R and (insider) Q approaches, even where, as in this case, the conundrum is thoroughly grounded in Q, possibly betraying an insular retreat of the method.
+
+Alternatively, Q method could take *either* ordinal or cardinal valuations in Q sorts to their respective logical conclusions:
+complete rank orders and non-parametric statistics in the former, freely distributed sorts in the latter.
+Such innovations would require, among other things, thorough validation, and are clearly beyond the purview of this research.
+
+Among the imperfect --- because arbitrary --- choices, Spearman's $\rho$ appears to be the *conservative* choice, and for that reason, will be used in the following.
+Spearman's stresses the middle of the distribution, an area where respondents feel less strongly, and less clearly about placed items.
 Any confusion or indifference about these items should result in *random* placement around the mean, and therefore, cancel out in the correlation coefficient.
-This makes Spearman's coefficient more conservative:
-by stressing covariance towards the noise-prone middle of the distribution, overall correlations may be *lower* (they are not at `r sum(cor(q_sorts[,,"before"],method="spearman"))` and `r sum(cor(q_sorts[,,"before"],method="pearson"))`, respectively) , or *less patterned*, and resulting factors are less likely to be superficially anchored by some agreement in the extreme.
+Overall correlations may be *lower* (they are not at `r sum(cor(q_sorts[,,"before"],method="spearman"))` and `r sum(cor(q_sorts[,,"before"],method="pearson"))`, respectively) , or *less patterned*, and resulting factors are less likely to be superficially anchored by some agreement in the extreme.
 <!-- TODO add data for factor analysis showing that Spearman's is, in fact, harder; that's also the robustness analysis. -->
-This conservative bias on Spearman's is in line with Q's emphasis on a holistic picture of shared viewpoints.
 
-<!-- @Block-1961 78: also notes that Pearsons and Spearman's or Kendall's are "equvialent (...) because r, except in bizarre or contrived instances, is a monotonic transformation of tau" -->
+<!-- TODO fix this quote in the above on approximately interval sth
+  @Bartholomew-Steele-etal-2011:
+  > 245: say that interval treatment for six or seven categories is often done.
+  > Still, they warn on 245: there *will* be biases (more evidence in section 9.5) -->
 
-<!-- @Block-1961 78 cites as reasons for Kendall's that Pearson is "more readily computed, it hast a context of meaning which Kendall's tau and other rank-order indices do not yet enjoy, and most-important the or" -->
+#### (Linear) Association vs. Probability
 
-<!-- Textbook doesn't even mention it? -->
+Assuming that the present Q-sort data best be treated as ordinal scaled, the question arises how their correlation coefficients can be appropriately and meaningfully summarized into ideal viewpoints.
 
-about the linearity:
-At Tue, 19 Oct 1999 22:11:43 -0400, Steven Brown cited Stephenson
-(1993-1994):
-> "The scoring is forced for theoretical reasons:
-> it is not a matter of
-> supposing each person might want to sort the statements differently.
-> Rather, it should be compared to a physicist's action when he puts a
-> certain voltage charge through an electric circuit:
-> He decides what the
-> voltage should be, and something of the kind is at issue in forcing a
-> Q-sort distribution of scores.
-> Theory is involved." (p. 10)
+Q methodology, ordinarily relying on Pearson's $\rho$ has it easy: as measure of *linear* association it lends itself well to the matrix algebra of factor or principal components analysis.
 
-@Fabrigar-Wegener-2012: 96
-can't use ordinal data for exploratory factor analysis
+The case is more complicated for rank order statistics.
+Fabrigar and Wegener rule out exploratory factor analysis for ordinal data, suggesting  [-@Fabrigar-Wegener-2012: 96].
+Instead of shoe-horning rank data into factor analysis , Bartholomew, Stew et al. recommend new "model-based methods" [-@Bartholomew-Steele-etal-2011: 45].
+As indicated in the above, taking an ordinal view on Q-sorts to its statistical conclusion might be worthwhile, but the required re-validation and epistemological foundation is untenable here.
 
-> @Bartholomew-Steele-etal-2011: 45
-> "One might still wonder whether factor analysis could be used on other types of correlation coefficient specifically designed for ordered categorical data.
-> For example, Kruskal's *gamma*, Somer's *d*, or groupd forms of rank correlation coefficients such as Kendall's *tau* all measure the strength of the relationship between ordered categorical variables.
-> Factor analyses are sometimes carried out on such coefficients and, if they are viewed from a purely descriptive point of view, they may yield useful insights.
-> However, whatever the merits of such *ad hoc* methods, they have been superseded by better, model-based methods."
+Luckily, other statisticians are more optimistic about factor-analyzing ordinal data.
+Basilevsky recommends "*euclidian* measures such as Sperman's (sic!) $\rho$ [...]" over Kendall's $\tau$ *probability*, because the latter obscures local differences and yields no meaningful factor analytic result [-@Basilevsky-1994: 512, emphasis added].
+Fittingly, Basilevsky explicitly validates a Spearman's-based principal-components analysis of an "n x n matrix [...] *among the observers*", though he might not have had Q methodology in mind [-@Basilevsky-1994: 515, emphasis added].
+He concludes for Spearman's that "if intrinsic continuity can be assumed either as a working hypothesis or by invoking a priori theoretical reasoning, most factor models carry through just as if the sample had been taken directly from a continuous population" [[-@Basilevsky-1994: 518].
+That bodes well for this analysis.
+Intrinsic continuity is customarily assumed for "six or seven categories" [@Bartholomew-Steele-etal-2011: 245], and should be defensible for 15 categories.
 
+This remains very much an "*ad hoc* method[]" for treating Q-sort data [@Bartholomew-Steele-etal-2011: 45, emphasis in original], but it is a conservative one.
+At best, analyses based on Spearman's $\rho$ dovetail with Brown's *operational* definition of subjectivity as Q-sorts under a quasi-normal distribution, implementing an appropriate statistic for fine-grained, but ordinal data.
+At worst, Spearman's-based analyses fall short off the ordinal scaling of Q-sorts, and merely effect a monotone transformation of would-be cardinal data, emphasizing covariances towards the center of the distribution.
 
-@Basilevsky-1994: 512
-for ordinal data
-> "Three broad approaches can be used to factor analyze such data.
-> First, the nonmetric nature of the data can be ignored and Euclidian measures such as Sperman's (sic!) rho used to summarize relationships among multivariate rankings.
-> The approach has an interesting interpretation since it can be considered as a generalization of Kendall's well-known coefficient of concordance.
-> Secondly, we may define a purely nonparametric correlation coefficient such as Kendall's tau and proceed to decompose a correlation matrix constructed from such coefficients.
-> Third, a nonmetric algorithm can be employed where the factor structure itself is invariant under monotone transformations of the data within each colum.
-> "
-
-@Basilevsky-1994 515:
-> "Kendall's statistic of concordance however is a global measure of association and as such posesses two shortcomings.
-> First it does not shed light on the local structure of agreement/disagreement so that the existence of negative or zero correlation, for example, can be obscured by a value of W which is significantly different from zero.
-> This is especially true for moderate or large data matrices.
-> Second, it dos not provide information concern the correlation among the objects or columns of the matrix, or which clusters of objects (if any) are more (less) preferedd by certain groups of individuals.
-> Consequently, there is no opportunity to observe whether all individuals use the same criteria when judjing.
-> Note also that even an insigicfcant value of W does not necessarily imply the absence of local agreement (disagreement)."
-> **no comes the fun part**
-> A more complete understanding of the data can be achieved by a principal components analysis of the rankings, using a (n x n) matrix of Spearman rho correlations among the observers.
-> n addition the (k x k) correlation matrix of objects can also be analysed to uncover prefered (unpreferred) groupings of the objects.
-> The Analysis proceeds in the usualy fashion, with an examination of the correlation loadngs obtained from a Q analysis of the observers (section 5.4.1).
-> A one-dimensional positive isotropic structure implies uniform agreement amongst the individuals, whereas multidimensional structures imply the existence of clusters.
-
-
-@Basilevsky-1994 518 CONCLUDES:
-> "Rank-order data lack much of the ratio (interval) information present in continuous random variables.
-> If intrinsic continuity can be assumed either as a working hypothesis or by invoking a priori theoretical reasoning, most factor models carry through just as if the sample had been taken directly from a cintunious population.
-> If the assumption of continuits is tenuous, however, a nonparametric correlation coefficient such as Kendall's tau can be used, and a factor analysis then provides a fictious but herhaps usefuly summary of the data.
-
-<!-- TODO make a scatterplot of just two q-sorts here, to illustrate the coefficients, one for very high, one for very low -->
-
-@Bartholomew-Steele-etal-2011:
-245: say that interval treatment for six or seven categories is often done.
-Still, they warn on 245: there *will* be biases (more evidence in section 9.5)
-Kendall's tau, they say, "Factor analyses are sometimes carried out on such coefficients and, if they are viewed from a purely descriptive point of view, they may yield useful results.
-However, whatever the merits of such *ad hoch* methods, they have been superseded by better, model-based methods."
-257: polychoric correlations embody an "underlying variable" model
-
-The simplest summary statistic in lieu of descriptives we are left with is the correlation matrix.
-
-`Qmethod` --- as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a simple Pearson correlation coefficient.
+<!-- TODO maybe later add visualization of all scatterplots? -->
 
 
 ### Correlation Matrix
 
+The simplest summary statistic in lieu of descriptives we are left with is the correlation matrix.
+
+`Qmethod` --- as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a Spearman's $\rho$ correlation coefficient.
+The correlation matrix is characteristically complex, and hard to interpret --- which is probably why most Q studies, especially with more participants, do not report it.
+
 ```{r cor-viz-before}
 # make this a list of before/after
 library(corrplot)
-corrplot(corr = cor(q_sorts[,,"before"],method="spearman")
+cor <- list("before","after")
+cor$before <- cor(q_sorts[,,"before"], method="spearman")  # make correlations
+# TODO make other array for cor or sth?
+corrplot(corr = cor$before
   , method = "shade"  # make squares
   , type = "full"  # take only upper triangular
   , is.corr = TRUE
@@ -712,7 +788,34 @@ corrplot(corr = cor(q_sorts[,,"before"],method="spearman")
   , tl.offset = 0.5
   , order = "alphabet"
 )
+cor$before
+cor$after <- cor(q_sorts[,,"after"], method="spearman")
+sd(cor$after)
+sd(cor$before)
 ```
+
+To protect the anonymity of participants, as discussed elsewhere, I cannot provide additional details to contextualize individually high or low correlations between Q sorters.
+Suffice it to say that the correlations broadly track views expressed at the conference, and, to a lesser extent, age and education.
+
+Still, some general observations are in order.
+Correlations do not go especially high, with a maximum of `r max(cor$before[cor$before!=1])`, though merely rough similarities may be expected with a diverse and complicated Q-set as `keyneson`.
+Recall that some participants reported problems sorting several items: the resulting (random) error might prevent greater correlations (greater overall, and more bifurcated correlations *after* the conference appear to bear this out.)
+
+More remarkable is the fact that while there are several correlations close to 0 --- quite rare in Q ---, there are no substantial *negative* correlations.
+Recall that the Q-set was designed for "reasonable people to disagree on", so why did respondents *not* disagree more?
+One the hand, the absence of negative correlations might indicate that people do not think in strictly *opposite* ways about taxation --- or the `keyneson` items, at any rate.
+Instead, people might think *differently* about it, expressing uncorrelated sorts.
+The greatest difference in expressed subjectivity among the participants lies not between diametrically opposed patterns, but between different patterns.
+On the other hand, the predominantly positive correlations might betray a lack of diversity, or presence of skew among the P set of participants already suspected from the conference report.
+For example, in a broadly social-democratic crowd, with some socialists and conservatives sprinkled in, but no libertarian, disagreement is unlikely to be diametrical.
+Neither a socialist, nor a conservative take the precisely the *opposite* viewpoint of a social democrat, though they may differ considerably.
+
+While this lack of diversity may spell trouble for the quality of the sample, it is good news for the factor analysis.
+<!-- TODO link to sections where you discuss the sample -->
+Without negative correlations, it is unlikely that people will load on opposite ends of "polar factors" --- a great hassle for computing composite scores.
+
+<!-- TODO make signifciance test, comment on why that is not relevant here – the false-negative test comes later. -->
+<!-- TODO make histogram of correlation coefficients -->
 
 
 ## Factor Extraction
