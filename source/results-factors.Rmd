@@ -157,7 +157,7 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ## Codenames
 
 ```{r real-names, echo = FALSE}
-real_names <- TRUE  # this is for manually enabling renaming
+real_names <- FALSE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
   for (name in colnames(q_sorts)) {  # loop over names in q_sorts
@@ -607,7 +607,7 @@ Given the relatively high number of ranks assigned (usually more than 9, 15 in t
 <!-- TODO add citation on what ordinal can usually be used as interval -->
 Additionally, Q data is tightly bounded, especially when a forced distribution is used: there *can* be no outliers, that might inordinately affect Pearson's, but not Spearman's.
 One might then conclude, as Block [-@Block-1961: 78] and Brown [-@Brown-1971: 284] that the choice of correlation coefficient does not much matter, effectively sidestepping the fundamental question of which coefficient is the appropriate one.
-Brown argues correctly that *absent ties*, Spearman's and Pearson's *must* be identical, and that illustrate with his data, that even *with ties*, Spearman's and Pearson's "produce virtually identical results [...]", which are "in turn [...] essentially the same as those obtained utilizing Kendall's $\rho" [-@Brown1980: 279].
+Brown argues correctly that *absent ties*, Spearman's and Pearson's *must* be identical, and that illustrate with his data, that even *with ties*, Spearman's and Pearson's "produce virtually identical results [...]", which are "in turn [...] essentially the same as those obtained utilizing Kendall's $\rho$" [-@Brown1980: 279].
 The problem is that, in fact, Q data has *many* ties, and using this data, the coefficients *do* differ by an average of `r mean(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))`, ranging up to a sizable `r max(abs(cor(q_sorts[,,"before"],method="pearson") - cor(q_sorts[,,"before"],method="spearman")))` for Spearman's and Kendall's, each compared to Pearson's.
 <!-- TODO add table with all the differences -->
 As the sensitivity analysis in the appendix shows, these differences in correlations can also filter down to the factor analysis, and may even bias the interpretation in a *systematic* way.
@@ -751,7 +751,7 @@ As indicated in the above, taking an ordinal view on Q-sorts to its statistical 
 
 Luckily, other statisticians are more optimistic about factor-analyzing ordinal data.
 Basilevsky recommends "*euclidian* measures such as Sperman's (sic!) $\rho$ [...]" over Kendall's $\tau$ *probability*, because the latter obscures local differences and yields no meaningful factor analytic result [-@Basilevsky-1994: 512, emphasis added].
-Fittingly, Basilevsky explicitly validates a Spearman's-based principal-components analysis of an "n x n matrix [...] *among the observers*", though he might not have had Q methodology in mind [-@Basilevsky-1994: 515, emphasis added].
+Fittingly, Basilevsky explicitly validates a Spearman's-based principal-components analysis of an "n x n matrix [...] *among the observers*", though he might not have had Q methodology in mind [-@Basilevsky-1994: 515, emphasis added].
 He concludes for Spearman's that "if intrinsic continuity can be assumed either as a working hypothesis or by invoking a priori theoretical reasoning, most factor models carry through just as if the sample had been taken directly from a continuous population" [[-@Basilevsky-1994: 518].
 That bodes well for this analysis.
 Intrinsic continuity is customarily assumed for "six or seven categories" [@Bartholomew-Steele-etal-2011: 245], and should be defensible for 15 categories.
@@ -770,7 +770,7 @@ The simplest summary statistic in lieu of descriptives we are left with is the c
 `Qmethod` --- as other Q software, does not report the correlation matrix, but the below correlation matrix is produced calling the same function also used in later analyses, a Spearman's $\rho$ correlation coefficient.
 The correlation matrix is characteristically complex, and hard to interpret --- which is probably why most Q studies, especially with more participants, do not report it.
 
-```{r cor-viz-before}
+```{r cor-viz-before, echo=FALSE}
 # make this a list of before/after
 library(corrplot)
 cor <- list("before","after")
@@ -788,6 +788,9 @@ corrplot(corr = cor$before
   , tl.offset = 0.5
   , order = "alphabet"
 )
+```
+
+```{r cor-anal-more, echo=FALSE, include=FALSE}
 cor$before
 cor$after <- cor(q_sorts[,,"after"], method="spearman")
 sd(cor$after)
@@ -814,7 +817,7 @@ While this lack of diversity may spell trouble for the quality of the sample, it
 <!-- TODO link to sections where you discuss the sample -->
 Without negative correlations, it is unlikely that people will load on opposite ends of "polar factors" --- a great hassle for computing composite scores.
 
-<!-- TODO make signifciance test, comment on why that is not relevant here – the false-negative test comes later. -->
+<!-- TODO make signifciance test, comment on why that is not relevant here   the false-negative test comes later. -->
 <!-- TODO make histogram of correlation coefficients -->
 
 

@@ -35,7 +35,6 @@ opts_knit$set(root.dir = normalizePath(getwd()))
 options(digits=2)
 ```
 
-
 ```{r q-method, message = FALSE, results = "hide", echo = FALSE}
 knit("source/method-q.Rmd")
 ```

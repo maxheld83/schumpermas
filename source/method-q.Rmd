@@ -7,7 +7,6 @@ library: held_library.bib
 
 # Q Methodology
 
-
 <!-- q methodology is "zwischen den stuehlen", and for that reason alone seems appropriate for this research project (jk).
 It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
 So the voices become more strained, more insular and isolated.
@@ -89,8 +88,6 @@ Great quote on what happens during Q:
 > Each Qsort is therefore subject to analysis of variance, which for this subject (81) is shown in table 7 along with the analysis of the Q sorts of two other subjects (87 and 812).
 > brown 31
 
-###
-
 
 ### Q Distribution
 
@@ -139,8 +136,7 @@ Loevinger is scited in brown on how it is impossible to delineate.
 
 > "more art than science"
 > -brown 186
->
->
+
 
 ```{r q-concourse}
 q_concourse <- import.q.concourse(  # import concourse
