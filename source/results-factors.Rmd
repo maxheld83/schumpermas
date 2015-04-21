@@ -157,7 +157,7 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ## Codenames
 
 ```{r real-names, echo = FALSE}
-real_names <- FALSE  # this is for manually enabling renaming
+real_names <- TRUE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
   for (name in colnames(q_sorts)) {  # loop over names in q_sorts
@@ -819,11 +819,44 @@ Without negative correlations, it is unlikely that people will load on opposite 
 
 <!-- TODO make signifciance test, comment on why that is not relevant here   the false-negative test comes later. -->
 <!-- TODO make histogram of correlation coefficients -->
+<!-- TODO notice the issue of positive manifolds (via Schmolck email); this seems to be given here, too -->
 
 
 ## Factor Extraction
 
 ### Which Data Reduction Technique
+
+
+McCloy, Metheny & Knott 1938; / Brown;
+> The fact of indeterminacy in its free-floating usage by Stephenson is commonplace, at least nowadays.  Incidentally I came across an article that made clear already in the year 1938 that "the factors found by the Hotelling method of principal components present the same necessity for rotation as those found by the Thurstone method of multiple factors. (McCloy,  Metheny,  & Knott, 1938).
+>
+
+
+Brown 1980: 209
+> The centroid method was the first to be fully elaborated in factor theory, largely because of its computational ease, although it was always regarded as only an approximation to the more refined methods such as principal axes (Holzinger, 1946); on the other hand, Burt (1972) has more recently shown that the centroid and the more precise methods produce virtually the same results. With the development of computers, however, what was before a chore came within easy reach of all, so that contemporary factorists can now avail themselves of the more determinant methods, and usually do.
+
+
+It is incorrect, what brown 1980: 211 writes
+> As indicated previously, the correlation of each variable with itself would produce all 1.00s in the diagonal, and some factor analysts prefer this "closed model" (Cattell, 1965: 198), which assumes no error.
+> As a practical matter, however ,it is doubtful that any person in real life, if usntructed to take the same Q sort wtice (which adminsitrations separated by a day or two), would ever correlate with himself as highly as 1.00; we would expect test-retest *r*s (relibaility coefficients) to be more nearly in the neighborhood of 0.80 to 0.90 (Frank, 1956; Hilden, 1958; Steller and Meurer, 1974), and if these *r*s where available for each subject, they would be the preferred diagonal elements.
+
+
+Schmlock in 1997 on the list:
+> Quite to the contrary: I would
+like to hear what the master's (Q methodology) orders for the slave
+(mathematics) are. I do not object against the demand that the data
+should _not_ (automatically) determine results. However, that does not
+suffice as a goal definition for which a mathematical solution exists.
+The point I wanted to make is really very trivial: One cannot use
+mathematics to solve a non-mathematical problem without specifying one's
+goals and criteria in mathematical terms. Everything else would amount
+to number-magic. Steven Brown's eloquent exposition of the scientific
+goals of interbehaviorism is beside the point here. His explanations
+might be of relevance only for someone who believes mathematics is the
+master, and that mathematical criteria can decide about the legitimacy
+of scientific goals. I am not aware of anyone who thinks so.
+- https://listserv.kent.edu/cgi-bin/wa.exe?A2=Q-METHOD;624d5964.9706
+
 
 We want *exploratory* factor analysis
 
@@ -832,6 +865,24 @@ note though that later on, to confirm that it is different between the two sessi
 Notice here, too, an entire reconstruction of Q may be required, in light of modern available methods, lifted limits on computation etc - that, unfortunately, is beyond the purview of this analysis.
 
 Also list the disadvantages of PCA (though the indeterminateness of centroid may not be one of them)
+
+> "... but in Q methodology it is often worthwhile to rotate factors judgmentally in keeping with theoretical, as opposed to mathematical, criteria [emphasis added] (Creaser, 1978; Thompson, 1962). In these respects, the centroid method, long ago discarded for its indeterminacy, still has its usefulness, for the uniqueness of the centroid method is its indeterminacy [emphasis added]: There is no correct solution out of the infinite number of solutions available, so the investigator is free to pursue his own inclinations, guided by his theory.
+> - Brown 1980 p. 33
+> -
+
+Much of the debate, unfortunately happens only on the email list, especially through Schmolck.
+
+
+
+Notice that is pretty unclear just how manual reflection should be theoretically informed -- it's just too far away from that data.
+
+In any event, no one is using manual CFA – they all use PQMethod, which implements an automatic reflection procedure.
+
+
+
+Underlying simple structure is Occam's razor.
+
+CFA was originally introduced as a "computational expedient when it became apparent that the principal-factor solution was too laborious" (Harman 1967: 5)
 
 <!-- is there, or is there not a latent variable idea? -->
 
@@ -866,6 +917,21 @@ Harman 1976 says they will mostly be the same! -->
 read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per harman1976
 -->
 
+<!-- Peter Schmolck describes (the justification of) centroid as a "myth" and "dead freight" (email from June 2nd, 2012) -->
+<!-- more on this: https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&P=R2&1=q-method&9=A&J=on&d=No+Match%3BMatch%3BMatches&z=4 -->
+
+<!-- Noori Akthar-Danish is also very skeptical on centroid, not clear what exactly the supposed *indeterminance* would mean -->
+
+<!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
+
+The manual steps in centroid are when manually "reflecting" columns – and that is a step that involves some amount of discretion, can be done more or less skillfully.
+As a result, factors also need not decrease monotically.
+
+The argument for manual reflection kind of goes away, because nowadays centroid is always done with a computer anyway.
+
+Peter Schmolck describes the "centroid myth" as dead freight. (email from june 2nd, 2012) https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&F=&S=&X=7A14F22EEE7751DED2&Y=p41bsmk%40unibw-muenchen.de&P=63
+
+<!-- MH TODO find real resources on PCA vs centroid -->
 
 centroid is obsolete, developed (as much in early factor analysis) because of *computational* ease @Yates-1987: 1
 
@@ -1136,6 +1202,10 @@ In my view, the meaningfulness of certain quantitative coefficients in Q, like s
 <!-- COMMENT MH
 check whether the two flagging criteria make sense, aren't they too restrictive?
 -->
+
+Peter SChmolck:
+> The automatic flagging method in PQMethod  often misunderstood as a well-founded, decisive statistical-q-methodological solution for the problem. However, it originates neither from William Stephenson nor Steven Brown. The reason for the frequent misunderstanding might lie in bad English. With the 'pre-' prefix I wanted to say, 'preliminary', before the 'real' work has to be done. I later noticed that the prefix never appeared when people referred to this  method of selecting the defining sorts.
+This appears to be a good opportunity for disclosing how the algorithm came into PQMethod. In John Atkinson's  original version of the software,  the only possible method of manual flagging was rather cumbersome, one had to enter the series of sort numbers to be flagged for every factor (this method is still available in PQMethod as the 'old' version). In the course of checking and further developing the software I had to permanently repeat running the program from start to end for testing if the last changes worked as intended. Going through the flagging stage each time was quite annoying. I therefore needed a solution for automatic processing. From my times as a research assistant in scale construction projects I had a vague recollection how so-called 'marker items' were found for factor interpretation and item selection for the scales. It was the so-called Fürntratt Criterion: To be eligible as a marker item for a certain factor, the variance explained by that factor must exceed the total amount of variance explained by the other factors. This seemed to me a sound method for securing that a sort cannot be definer for more than one factor. Since I was aware that Q people have a strong affection for significance formulas, I added the (lenient) p<.05 'significance' requirement. The latter, BTW, has nearly never an additional effect when the first criterion is met.
 
 
 ### Scoring
