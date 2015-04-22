@@ -70,7 +70,7 @@ The following free / open source and closed / proprietary programs are available
 
 The closed-source, general-purpose programs offer some programmatic extensibility, but are poorly suited for Q methodology.
 These commercial, and often expensive offerings also make it hard to reproduce and open up research.
-The special-purpose `PQMethod` was originally written for mainframe in 1992 by John Atkinson at Kent State University, and has since been ported for PCs and maintained by Peter Schmolck at the University of the Armed Forces in Munich, Germany.
+The special-purpose `PQMethod` was originally written for mainframe in 1992 by John Atkinson at Kent State University in Kent, OH, and has since been ported for PCs and generously maintained by Peter Schmolck at the University of the Armed Forces in Munich, Germany.
 <!-- TODO MCH: add citation for PQMethod -->
 While nominally free and open-source, `PQMethod` consists largely of legacy FORTRAN code, which few people today can read or write.
 `PQMethod` also offers little programmatic extensibility, because it is a standalone program running within layers of emulators.
@@ -78,7 +78,7 @@ While nominally free and open-source, `PQMethod` consists largely of legacy FORT
 The [`qmethod`](https://github.com/aiorazabala/qmethod) package [@Zabala-2014], implementing Q methodology in the free and open source [R programming language and software environment for statistical computing](http://www.r-project.org) [@R-2014] is the best fit for the above criteria.
 R is freely available for all platforms, and supported by a vibrant community of developers.
 `Qmethod`, while released only recently, has been thoroughly validated [@Zabala-2014-a], leverages existing packages for extraction and rotation and conveniently wraps specialized Q functions.
-Running inside the R environment, `qmethod` can be easily extended, now including several functions developed for this dissertation and contributed to the open source project.
+Running inside the R environment, `qmethod` can be easily extended, now including several functions developed for this dissertation and contributed back to the open source project.
 <!-- TODO MCH add citation for my contribs -->
 Most importantly, using `R`, every step from raw data to final factor interpretation can be traced back, using publicly available and vetted code, down to base functions.
 <!-- TODO MCH find nice open source quote -->
@@ -139,7 +139,7 @@ q_feedback <- import.q.feedback(
 ```
 
 <!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
-For more on what 0 means to q, see Brown 1980 199. -->
+For more on what 0 means to q, see Brown 1980 199, also note the flac I got on the correlation coefficient email on the meaning of 0. -->
 
 
 ## Missing Data
@@ -156,7 +156,7 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 
 ## Codenames
 
-```{r real-names, echo = FALSE}
+```{r real-names, echo = FALSE, eval = FALSE}
 real_names <- TRUE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
@@ -192,17 +192,19 @@ While its mathematical core --- different methods of exploratory factor analysis
     Almost 80 years after William @Stephenson1935 suggested this *inversion* of factor analysis in his letter to *Nature*, Q is still an exotic methodology.
     It sometimes invites scathing critiques [@Kampen-Tamas-2014], but more often, is outright ignored in mainstream outlets.
     <!-- TODO cite lack in textbooks etc in tamas kampen -->
-    As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular - though not into the "Church of Q" @Tamas-Kampen-2015 fear.
+    As the dynamics of marginalization go, the community of Q researchers, may, on occasion, have turned insular --- though not into the "Church of Q" @Tamas-Kampen-2015 fear.
+    <!-- TODO maybe add literatures for marginalization dynamics: groupthink, ingroup/outgroup dynamics, institutional inertia, path dependency -->
     Q methodology may have sometimes shied away from exposing itself from rigorous criticism and disruptive trends in mainstream social research, though probably often out of sheer frustration with persistent misunderstandings, and because of genuine disagreement.
     <!-- TODO add more detail on the problems of the statistics - they're out of date! -->
     <!-- TODO add examples -->
     In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies --- or opponents, at any rate.
 
     Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
-    Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely digressing into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation"), in the otherwise fine textbook indroduction by @Watts2012.
+    Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely digressing into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation", in the otherwise fine textbook introduction by @Watts2012).
     <!-- TODO find precise quotes -->
     <!-- FIXME make sure this is, in fact a mistake with the varimax -->
-    What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown.
+    What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown, though at least some of this orthodoxy now appears now obsolete.
+    <!-- TODO reword this, based on recent experience especially with "centroid myth" -->
     <!-- TODO add citations -->
     These norms become hermetically sealed ideologies ("reliability does not apply to subjectivity") only when detached from their epistemological underpinnings, as, I suspect, would be the case for other methodologies.
     <!-- TODO find source, argue that in fact, as per Brown, factor reliability DOES matter -->
@@ -218,15 +220,17 @@ While its mathematical core --- different methods of exploratory factor analysis
 
 [^freakshow]:
   A prominent researcher recently described the annual meeting of the [International Society for the Scientific Study of Subjectivity](http://qmethod.org/issss) as an endearing "freak show".
-  With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get together.
+  With heirs of the methods founder, William Stephenson, occasionally in attendance, it sure sounds different from your average disinterested get-together.
 
 I suggest then, that at least in the following, initial analysis, some verbosity has its virtue.
-Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q: Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to which my own work is deeply indebted.
+Readers will be relieved to learn that I intend not to reproduce the entire mathematical apparatus of Q:
+Steven Brown has accomplished that, and much more in his authoritative, insight-laced "Political Subjectivity" to which my own work is deeply indebted.
 <!-- TODO make this better, humbler -->
-Mathematics have their place, but formulae alone, inspite of their veneer of rigor, as code comments, need analogy, intuition and impression to cover the distance to the deliberative subjectities on taxation and the economy under study here --- which themselves are mathematized in this dissertation, nor much convincingly in the broader field, and maybe never will.
+Mathematics have their place, but formulae alone, in spite of their veneer of rigor, need analogy, intuition and impression to cover the distance to the deliberative subjectities on taxation and the economy under study here --- which themselves are not mathematized in this dissertation, nor much convincingly in the broader field, and maybe never will.
 <!-- TODO find better link to previous chapter -->
-One may add, that if science is also bound to a discourse ethic of reaching understanding, it, needs to relate its abstractions to the human lifeworld, from which all meaning eminates.
+One may add, that if science is also bound to a discourse ethic of reaching understanding, it too needs to relate its abstractions to the human lifeworld, from which all meaning eminates.
 <!-- TODO make this better or kill it -->
+<!-- TODO add Habermas reference? -->
 
 At the same time, some of the details of this chapter may raise the ire of some established Q methodologists who never tire of stressing the substantive analysis over statistical sophistication.
 They are right: the key to understanding human subjectivity lies in iterative abduction, in the thorough going back and forth between informed hunches about *what might make sense*, and what the data will bear out.
@@ -324,6 +328,7 @@ This postulated incomparability applies to this study, too, and plays out in sev
     <!-- FIXME maybe this belongs partly somewhere else? -->
     Recall that in Q, people serve as *variables*.
     `r ncol(q_sorts[,,"before"])` variables will still be considered quite crude to extract several latent concepts.
+    <!-- FIXME uh-oh you say elsewhere that there are no latent concepts -->
     Consider, for example, the data reduction in Inglehart's and Welzel's human development theory: to arrive at *two* latent value concepts, they condense *35* variables [-@InglehartWelzel-2005-aa].
     <!-- FIXME find out correct number of vars -->
     The issue here, however, is one of *resolution*, not generalizeability.
@@ -824,7 +829,97 @@ Without negative correlations, it is unlikely that people will load on opposite 
 
 ## Factor Extraction
 
+Based on the above correlation matrix showing the pairwise similarities of all participants, Q methodology proceeds by summarizing these patterns into *fewer*, *shared* viewpoints.
+
+By way of LEGO analogy, the correlation matrix superimposes any two buildings on top of another, displaying the degree of overlap between them.
+To extract the *kinds* of objects that our participant builders have constructed, we must somehow further summarize this matrix to yield a shorter list of family resemblances among the LEGO objects.
+
+Q methodology, in other words, rests on an *exploratory* data reduction technique.
+
+
 ### Which Data Reduction Technique
+
+Just *which* of a number of such data reduction techniques would be a appropriate for Q *methodology* is, alas, again equally disputed and consequential.
+The Q literature, unfortunately, offers no definitive resolution, but instead loosely refers to epistemological (metaphysical?) axioms ("indeterminacy") or invokes tradition (Stephenson, and increasingly, Brown) and *past* computational limitations (e.g. @Stephenson1935a: 18]).
+<!-- MH TODO find sources for reverting to authority -->
+Criticism of such Q orthodoxy is rising on the Qlistserv and elsewhere, most notably (and convincingly) by decade-long contributor (and `PQMethod` maintainer) Peter Schmolck as well as recently @Akthar-Danesh-2007, but no work has been traditionally published yet.
+<!-- MH TODO link to Peter Schmolck's message, somehow include in Bib -->
+Butler's critique, originally directed at factor analysis in general, oddly, still seems to apply to Q:
+
+> "far too many [...] students complain that the only basis they have for choosing among the many types of factor analysis is the prestige of a given theorist or the fact that this or that "*maximin*" solution has often been used"
+> [@Butler-1969: 252f], also see updated critique in [@Yates-1987: 6]
+
+Absent well-justified choice in the literature, we then have to delve into the alternative methods and decide for this study on their merits.
+
+Readers will be relieved that the purview of this investigation can be pragmatically limited to only three different extraction methods for exploratory factor analysis (EFA):
+
+1. Principal Components Analysis (PCA), sometimes also known as the Hoteling method
+2. Centroid Factor Analysis (CFA)
+3. Principal Axis Factoring (PAF)
+<!-- MH TODO add references for these! -->
+
+There are many other multivariate techniques that may --- or may not --- hold promise for Q methodology, including cluster analysis (CA), multi-dimensional scaling (MDS), latent profile analysis (LPA) or structural equation modeling (SEM), as well as yet different *non*parametric methods (latent trait and latent class analysis) [@Yates-1987: 2], as may be required by a stringently ordinal reading of Q sorts.
+Such a systematic reconstruction of Q *methodology* in light of currently available *techniques* may be worthwhile --- or not ---, but it is clearly beyond the scope of this study.
+Of course, just because *alternative* methods may be difficult and untested does not mean that the above conventional techniques are adequate.
+Limiting the discussion to the above techniques is still prudent, not only because they have been tested in Q studies, but also because they (especially PCA) are *relatively* simple mathematical operations with limited assumptions that can be readily defended.
+
+Readers will also be relieved that only the chosen procedure will be presented in some mathematical detail; the choice among PCA, CFA and PAF can be well-justified on a verbal level.
+
+The choice boils down to two features of the three methods: a supposed indeterminacy and a possible latent variable model.
+
+ | Indeterminate | Determinate
+ -|----|----
+ Latent Variable Model | Centroid Factor Analysis (CFA) | Principal Axis Factoring (PAF)
+ Linear Composition |  | Principal Components Analysis (PCA)
+
+
+#### Latent Variable Model or Linear Composition
+
+Centroid Factor Analysis (CFA) and Principal Axis Factoring (PAF) are both *latent variable models*.
+They *estimate* a smaller set of latent variables (here: Q factors) from a larger set of *manifest* variables (here: individual Q sorts).
+By the same token, these techniques allow for *error*: any particular *manifest* respondent's Q sort would be explained by her loadings on a set of *latent* factors, plus some residual error term, accounting for the particularities of that person's Q-sort.
+As such, CFA and PAF summarize only the *common* variance among the sorts, but not the *specific* variance.
+
+By contrast, Principal Components Analysis (PCA) considers all of the available variance, common *and* unique.
+There is no concept of measurable manifest and underlying latent variables in PCA: as will be described later, the principal components are merely a compressed "vector recipe" to re-expand to the original correlation matrix.
+
+This difference between CFA and PFA on the hand and PCA on the other also reflects in the correlation matrix passed on to the data reduction technique.
+Recall that the diagonal in a correlation matrix are all ones; by definition, a Q sort is perfectly correlated with itself.
+PCA takes this original correlation matrix as the starting point, with all ones in the diagonal.
+If expanded again, the summary produced by (a complete) PCA would yield the original data, including the idiosyncrasies of individual sorts.
+CFA and PAF start from the same correlation matrix, but replace the diagonal with some measure of that sort's degree of *common-ness*, or shared variance with the other Q sorts.
+PAF places the communality $h^2$ of a variable (here: Q-sort) in the diagonal, the squared factor loadings for any given Q-sort across all the factors, indicating the percentage of *total* variance of a given Q-sort explained by all the factors.
+For CFA, Brown also suggests other diagonal substitutes, including estimated test-retest reliabilities which will be discussed later [-@Brown1980: 211].
+<!-- MH TODO add link to later discussion of reliability -->
+
+Brown --- as well as many orthodox Q methodologists --- recommend CFA for its latent variable model because as a "closed model" PCA "assumes no error" [-@Brown1980: 211].
+Brown is of course correct that a person is unlikely to reproduce the same Q-sort after a day or two *exactly*, though it appears implausible that her subjectivity on a general topic such as taxation and the economy would have perceptively changed in that time-frame.
+It is less clear however, that such test-retest reliabilities --- or any other substitution on the diagonal --- would effectively identify anything that might be called *error*.
+As Brown is quick to point elsewhere, there *is* no external standard of one's subjectivity, denying conventional notions of validity.
+If a Q-sort at any one point in time *is* operant subjectivity, how would we know that any difference to a later Q-sort would be in error?
+It may well be that such test-retest differences reflect spurious *fluctuations* in subjectivity, but any one snapshot of such variable subjectivity would still be valid for that moment in time.
+We might want to consider such reliabilities as *resolutions*, when interpreting the factor scores, or when comparing Q-sorts after some "treatment" (as is the case here), but for now, we want a summary model that also explains this supposed "noise" in a person's Q-sort.
+<!-- MH TODO link to distinguishing statements -->
+As such, we would want a summary model that also explains this supposedly "unreliable" component of a person's Q-sort.
+
+
+To filter out these fluctuations, we might instead average several Q-sorts,
+
+but we cannot paste these *would-be* reliabilities in the diagonal of the correlation matrix.
+Thus discounting the diagonal
+
+
+including, one might think, over time.
+
+
+
+
+
+
+
+#### In(determinacy)
+
+
 
 
 McCloy, Metheny & Knott 1938; / Brown;
@@ -834,11 +929,6 @@ McCloy, Metheny & Knott 1938; / Brown;
 
 Brown 1980: 209
 > The centroid method was the first to be fully elaborated in factor theory, largely because of its computational ease, although it was always regarded as only an approximation to the more refined methods such as principal axes (Holzinger, 1946); on the other hand, Burt (1972) has more recently shown that the centroid and the more precise methods produce virtually the same results. With the development of computers, however, what was before a chore came within easy reach of all, so that contemporary factorists can now avail themselves of the more determinant methods, and usually do.
-
-
-It is incorrect, what brown 1980: 211 writes
-> As indicated previously, the correlation of each variable with itself would produce all 1.00s in the diagonal, and some factor analysts prefer this "closed model" (Cattell, 1965: 198), which assumes no error.
-> As a practical matter, however ,it is doubtful that any person in real life, if usntructed to take the same Q sort wtice (which adminsitrations separated by a day or two), would ever correlate with himself as highly as 1.00; we would expect test-retest *r*s (relibaility coefficients) to be more nearly in the neighborhood of 0.80 to 0.90 (Frank, 1956; Hilden, 1958; Steller and Meurer, 1974), and if these *r*s where available for each subject, they would be the preferred diagonal elements.
 
 
 Schmlock in 1997 on the list:
@@ -858,11 +948,7 @@ of scientific goals. I am not aware of anyone who thinks so.
 - https://listserv.kent.edu/cgi-bin/wa.exe?A2=Q-METHOD;624d5964.9706
 
 
-We want *exploratory* factor analysis
-
 note though that later on, to confirm that it is different between the two sessions, we might need confirmatory FA.
-
-Notice here, too, an entire reconstruction of Q may be required, in light of modern available methods, lifted limits on computation etc - that, unfortunately, is beyond the purview of this analysis.
 
 Also list the disadvantages of PCA (though the indeterminateness of centroid may not be one of them)
 
@@ -870,15 +956,9 @@ Also list the disadvantages of PCA (though the indeterminateness of centroid may
 > - Brown 1980 p. 33
 > -
 
-Much of the debate, unfortunately happens only on the email list, especially through Schmolck.
-
-
-
 Notice that is pretty unclear just how manual reflection should be theoretically informed -- it's just too far away from that data.
 
 In any event, no one is using manual CFA – they all use PQMethod, which implements an automatic reflection procedure.
-
-
 
 Underlying simple structure is Occam's razor.
 
@@ -887,8 +967,6 @@ CFA was originally introduced as a "computational expedient when it became appar
 <!-- is there, or is there not a latent variable idea? -->
 
 <!-- Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary --- it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis. -->
-
-<!-- a lot of the original innovation of Q method was informed by technical limits at the time, see for example @Stephenson1935a: 18 -->
 
 <!--
 factor extraction
@@ -902,16 +980,10 @@ psych also appears to do parallel analysis by fa.parallel
 
 <!-- Even Brown admits that CFA was originally developed because it was a computationally simpler, though similar in results to PAF. -->
 
-<!-- Why would we get rid of negative cors? What do the columns mean? Brown 210 odd procedure -->
-
 <!-- funny pun from Brown: factor analysis is a complicated tautology 223 -->
 
 <!-- check kline 1994 and Harman 1976 in the above on PCA vs CF
 Harman 1976 says they will mostly be the same! -->
-
-- *Exploratory* Factor Analysis (Centroid) @Brown1980's favorite
-- Principal Components Analysis
-- ...?
 
 <!-- COMMENT MH
 read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per harman1976
@@ -935,14 +1007,7 @@ Peter Schmolck describes the "centroid myth" as dead freight. (email from june 2
 
 centroid is obsolete, developed (as much in early factor analysis) because of *computational* ease @Yates-1987: 1
 
-"factor analysis is held in low regard asa  method for exploratory data analysis" (yates 2), instead suggests:
-- check out cluster analysis
-- and multidmensional scaling!
 - the problem with factor analysis is that it suggests *latent* concepts, thereby a causal modal (as revealed by the communility diagonal)
-
-this quote still seems to apply:
-> "far too many [...] complain that the only basis they have for choosing among the many types of factor analysis is the prestige of a given theorist or the fact that this or that "maximin" solution has often been used
-> - Butler 1969: 252f as catied in Yates 6
 
 
 @Fabrigar-Wegener-2012: 30 on EFA vs PCA
@@ -965,27 +1030,18 @@ Notice that I have NO hunch of a latent variable model, as, for example, you mig
 We have no reason to assume that the same is applicable in Q; there is nothing idiosyncratic about any one person's Q-Sort
 What gets explained, and what not, is completely arbitrary
 
-Look into DAnish piece again
-
-Notice I have *no* idea how many, or what kinds of factors might emerge, so it's really EFA.
-
 #### PCA
 
 - considers all of the available variance (common AND unique), places 1 ons on diagonal.
 - Seeks a linear combination of variables such that maximum variance is extracted (repeats the step)
 - use when there is concern with prediction, parsimony and specific/error variance is small (it is NOT!)
 - results in orthogonal
-- sets the communialities to 1, ex ante.
 
 -t's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
 
 <!-- Steps in a PCA
-- correlation matrix (explain detail, just the covariance, somehow standardized to the variance)
 - extract principal components by matrix multiplication (dot product) -->
 
-<!-- PCA is scale-variant, but that is not a problem for the corr matrix, nor for the original matrix -->
-
-estimates all variance, not just shared
 
 #### PAF
 
@@ -1006,8 +1062,6 @@ do cluster analysis instead of factor; according to kampen and tamas. This might
 - PAF is only analyzing common factor variability; removing the uniqueness or unexplained variability from the model
 - called PAF
 - PAF does not use all of the variability, just the one that is actually common
--
-
 
 @Mulaik-2009: 147
 centroid, developed by Burt and, later Thurstone (1947)
@@ -1050,10 +1104,6 @@ Some of these criteria are general others are specific to Q
 - What about bartlett test?
 - test of sphericity?
 - test of multicolinnearity?
-
-
-
-Kendall's may also be odd because it tells you the probability for any *two* sets of items (which we don't care about, it seems too predictive) and "it does not shed light on the local structure of agreement/disagreement" (Basilevksy 515)
 
 
 <!-- Use the lego example to explain the logic of the combinatorics - this can actually be good news, even with the small number of people -->
