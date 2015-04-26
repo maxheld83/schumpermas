@@ -796,7 +796,6 @@ corrplot(corr = cor$before
 ```
 
 ```{r cor-anal-more, echo=FALSE, include=FALSE}
-cor$before
 cor$after <- cor(q_sorts[,,"after"], method="spearman")
 sd(cor$after)
 sd(cor$before)
@@ -842,7 +841,7 @@ Q methodology, in other words, rests on an *exploratory* data reduction techniqu
 Just *which* of a number of such data reduction techniques would be a appropriate for Q *methodology* is, alas, again equally disputed and consequential.
 The Q literature, unfortunately, offers no definitive resolution, but instead loosely refers to epistemological (metaphysical?) axioms ("indeterminacy") or invokes tradition (Stephenson, and increasingly, Brown) and *past* computational limitations (e.g. @Stephenson1935a: 18]).
 <!-- MH TODO find sources for reverting to authority -->
-Criticism of such Q orthodoxy is rising on the Qlistserv and elsewhere, most notably (and convincingly) by decade-long contributor (and `PQMethod` maintainer) Peter Schmolck as well as recently @Akthar-Danesh-2007, but no work has been traditionally published yet.
+Criticism of such Q orthodoxy is rising on the Qlistserv and elsewhere, most notably (and convincingly) by decade-long contributor (and `PQMethod` maintainer) Peter Schmolck as well as recently @Akthar-Danesh-2007, but no work has been published yet.
 <!-- MH TODO link to Peter Schmolck's message, somehow include in Bib -->
 Butler's critique, originally directed at factor analysis in general, oddly, still seems to apply to Q:
 
@@ -858,14 +857,14 @@ Readers will be relieved that the purview of this investigation can be pragmatic
 3. Principal Axis Factoring (PAF)
 <!-- MH TODO add references for these! -->
 
-There are many other multivariate techniques that may --- or may not --- hold promise for Q methodology, including cluster analysis (CA), multi-dimensional scaling (MDS), latent profile analysis (LPA) or structural equation modeling (SEM), as well as yet different *non*parametric methods (latent trait and latent class analysis) [@Yates-1987: 2], as may be required by a stringently ordinal reading of Q sorts.
+There are many other multivariate techniques that may --- or may not --- hold promise for Q methodology, including cluster analysis (CA), multi-dimensional scaling (MDS), latent profile analysis (LPA) or structural equation modeling (SEM), as well as yet different *non*-parametric methods (latent trait and latent class analysis) [@Yates-1987: 2], as may be required by a stringently ordinal reading of Q sorts (see above).
 Such a systematic reconstruction of Q *methodology* in light of currently available *techniques* may be worthwhile --- or not ---, but it is clearly beyond the scope of this study.
 Of course, just because *alternative* methods may be difficult and untested does not mean that the above conventional techniques are adequate.
 Limiting the discussion to the above techniques is still prudent, not only because they have been tested in Q studies, but also because they (especially PCA) are *relatively* simple mathematical operations with limited assumptions that can be readily defended.
 
-Readers will also be relieved that only the chosen procedure will be presented in some mathematical detail; the choice among PCA, CFA and PAF can be well-justified on a verbal level.
+Readers will also be relieved that only the chosen procedure will be presented in some mathematical detail; the *choice* among PCA, CFA and PAF can be well-justified on a verbal level.
 
-The choice boils down to two features of the three methods: a supposed indeterminacy and a possible latent variable model.
+The choice boils down to two features of the three methods: a supposed indeterminacy and a possibly implied latent variable model.
 
  | Indeterminate | Determinate
  -|----|----
@@ -893,34 +892,120 @@ For CFA, Brown also suggests other diagonal substitutes, including estimated tes
 <!-- MH TODO add link to later discussion of reliability -->
 
 Brown --- as well as many orthodox Q methodologists --- recommend CFA for its latent variable model because as a "closed model" PCA "assumes no error" [-@Brown1980: 211].
-Brown is of course correct that a person is unlikely to reproduce the same Q-sort after a day or two *exactly*, though it appears implausible that her subjectivity on a general topic such as taxation and the economy would have perceptively changed in that time-frame.
+Brown is of course correct that a person is unlikely to reproduce the same Q-sort after a day or two *exactly*, though it appears implausible that her subjectivity on a general topic such as taxation and the economy would have perceptively changed in that time frame.
 It is less clear however, that such test-retest reliabilities --- or any other substitution on the diagonal --- would effectively identify anything that might be called *error*.
 As Brown is quick to point elsewhere, there *is* no external standard of one's subjectivity, denying conventional notions of validity.
 If a Q-sort at any one point in time *is* operant subjectivity, how would we know that any difference to a later Q-sort would be in error?
-It may well be that such test-retest differences reflect spurious *fluctuations* in subjectivity, but any one snapshot of such variable subjectivity would still be valid for that moment in time.
+It may well be that such test-retest differences reflect spurious *fluctuations* in subjectivity, but any one snapshot of such variable subjectivity would still be accurate for that moment in time.
 We might want to consider such reliabilities as *resolutions*, when interpreting the factor scores, or when comparing Q-sorts after some "treatment" (as is the case here), but for now, we want a summary model that also explains this supposed "noise" in a person's Q-sort.
 <!-- MH TODO link to distinguishing statements -->
-As such, we would want a summary model that also explains this supposedly "unreliable" component of a person's Q-sort.
+As such, we would want a summary model that also explains this supposedly "unreliable" component of a person's Q-sort. [^average-sorts]
 
+[^average-sorts]: We may alternatively filter out these possible fluctuations by looking at *average* Q-sorts, but that would imply a different operationalization as *medium-term* subjectivity, would greatly complement the procedure and might  raise additional practical problems, including saturation and consistency effects.
+<!-- TODO: find source -->
 
-To filter out these fluctuations, we might instead average several Q-sorts,
+A latent-variable model, more generally, would appear to fit awkwardly into Q methodology.
+Consider, by contrast, an exploratory factor analysis of burnout, a supposedly externally valid phenomenon that cannot be measured directly (example taken from  @Field-Miles-2012: 750).
+In such a study, we may legitimately be interested *only* in those variables that are highly correlated *among* burnout patients, such as motivation, sleeping patterns, self-worth and so on.
+If and to the extent that the sampling frame (burnout) is externally valid --- a big if --- we can draw a meaningful distinction between common and specific variance.
+If, for example, only some burnout patients report back pain, we may reasonably consider this to be specific variance related to another (skeletal-muscular) condition, and disregard it for the present model.
+In the correlation matrix of variables, we may want to replace the diagonal entry for the back pain variable with something *less* than one, because we do not require a model that also accounts for levels of back pain.
+The sampling frame "burnout patients" implies --- however justifiably --- a latent variable (burnout), that we expect behind all shared manifestations.
+Conversely, we would only want to model patterns of variable correlations that are widely shared by our burnout patients, and would therefore greatly "discount" idiosyncratic variables such as back pain.
 
-but we cannot paste these *would-be* reliabilities in the diagonal of the correlation matrix.
-Thus discounting the diagonal
+Recall, again, that in Q methodology, items are cases, and participants are variables.
+Q methodology has a *case* sampling frame, too, but these cases are *items* in Q: it is assumed that all items relate to taxation and the economy. [^tax-sampling-frame]
 
+[^tax-sampling-frame]: As discussed elsewhere, this sampling frame also needs to correspond to *one* externally valid concept, or be *commensurate* in Q terminology.
+  A Q-sample of items on, say, cat personality and architecture may not make much sense.
 
-including, one might think, over time.
+It is not clear, however, what the equivalent to the back-pain scenario of a "stray" variable in Q might imply.
+It is possible that some participants (as the variables) will have less in common with everyone else than others.
+In this study the degree of common variance, provisionally measured as the average correlation per participant row (or columns) in the correlation matrix, ranges from `r min(apply(cor$before, 2, mean))` to `r max(apply(cor$before, 2, mean))`.
 
+```{r sum-corr, echo=FALSE, include=FALSE}
+# look at it provisionnally with only the avg cor
+range(apply(cor$before, 2, mean))
+summary(cor$before)
 
+# look at the summary loadings of the full model later
+keyneson$before$loa
+apply(keyneson$before$loa, 1, sum)
+range(t(keyneson$before$loa))  # have to transpose
+summary(t(keyneson$before$loa))  # have to transpose
 
+# TODO really implement this, include as results
+```
+Applying the latent-variable logic of an ordinary, items-as-*variables* factor analysis to Q, we might then conclude that the relatively uncommon Q-sorters introduce idiosyncratic specific variance, and ought to be discounted in the model.
 
+At least in this study, such discounting does not make sense, because we are principally interested in *all* Q-sorters, qua being participating citizens.
+Recall that when studying burnout --- but not back pain --- there are many variables that you are *not* interested in, even though it may not be clear at the outset what these are.
+In contrast to a burnout study, there is *no* conceivable variable-participant that we would *not* be interested in.
+Health symptoms may --- or may not --- have a bearing on burnout, but *all* citizens do have a bearing on common understandings of taxation and the economy. [^q-with-latent-var]
 
+[^q-with-latent-var]: There may be Q studies with an explicit interest in only the factors shared by a subset of well-correlated participants, as might be the case for a study into hegemony.
+  I am not aware of any Q study explicitly espousing such a latent-variable model.
+
+<!-- TODO to clarify, add table here with items, cases, variables, and what is common/specific -->
+
+A latent-variable generally seems at odds with the scientific study of human subjectivity.
+In contrast to many R-type exploratory factor analyses, per the abductive logic of Q, there *is* no preconception of what might delineate specific from common variance in substantive terms.
+To the extent that all Q sorters participate in the same realm of communicability, and share in the same concourse --- as is assumed by the respective theories for any modern society --- we are equally interested in maverick and mainstream Q sorts.
+In fact, to discount the poorly correlated Q-sorts would be to (slightly) stack the deck in favor of the one straightforwardly *falsifiable* hypothesis that q methodology admits of: namely, that viewpoints are, in fact *shared* (see later discussion on the number of factors). [^why-not-discount-items]
+
+<!-- TODO maybe reference here already the justification/discussion of flagging, which would appear to contradict this argument; I guess the rescue is that flagging is only to "clean up" the ideal points, not anything else. -->
+
+[^why-not-discount-items]: Readers may object at this point, that in fact, Q methodology *does* imply a latent-variable model concerning the *items*.
+  Operant subjectivity on the (somewhat haphazardly) sampled items is taken to be *manifestly* representative of similar, *latently* shared viewpoints in a  broader concourse.
+  One may, consequently, be inclined to discount those items that are less correlated with all other items.
+  Here, as often, the uncommon correlation matrix of Q implies an unintuitive logic.
+  Items, in spite of their verbal form, are *cases*, not variables --- latent or otherwise.
+  To discount Q-items at this point would be analogous to discounting participant-cases --- not variables --- in an R-type factor analysis.
+  Clearly, some of the sampled items may be more expressive of a shared viewpoints than others, but that distinction is relevant only later in the analysis, when shared, *ideal-type* viewpoints are interpreted.
+  By analogy to R-type factor analysis, some people may also be more expressive of some burnout-factors than others, but that becomes meaningful only *after* the factor extraction.
+  We might --- again, analogously --- be particularly interested in the *ideal-typical* burnout-cases, and interpret them in more detail, but only later.
 
 
 #### In(determinacy)
 
 
+<!-- Dear Noori,
+Dear Peter,
+Dear all,
 
+I'm a little behind the curve on the listserv, but I, too, am still struggling with the supposed "indeterminacy" of centroid (CFA) vs. principal components (PCA). I don't have anything to add to Noori's succinct question or the 2012 Brown/Schmolck CFA vs PCA exchange (kindly posted by Noori, highly recommended).
+
+I've spend a couple of hours sifting through the listserv and am trying to offer an update on the state of the centroid vs PCA/PAF debate.
+
+Is the following summary correct/fair?
+The supposed indeterminacy of the  extraction method is the primary reason for proponents of CFA. (In addition, CFA but not principal axis factoring (PAF), works with commonalities in the diagonal and more people than Q-sorts.)
+The supposed indeterminacy does not lie in a rotation phase specific to PAF; PCA, too, admits of an infinite number of rotations, from which one must be chosen for mathematical (varimax?) and/or theoretical (judgmental) reasons. (Peter Schmolck helpfully unearthed a source way back from 1938 to that effect in the above 2012 exchange; McCloy, Metheny & Knott 1938).
+CFA comes in different variants, depending on what is placed on the diagonal of the correlation matrix (communalities, test-retest reliabilities, ... -> see above 2012 thread by Schmolck on more options, as well as Brown 1980: 211). It would appear that the appropriate choice of diagonal values comes down to an ontological question on whether there are, or are not, latent variables in Q (see recent, also unresolved, thread by Dean and Schmolck), and would be analogous to the choice between PCA and PAF.
+CFA includes manual "reflections" of variables in the correlation matrix, by which the signs of columns and rows are reversed so as to have as many possible rows sum to a positive number (see Brown 1980: 209 for details). The procedure effects that some people's Q-sorts are reversed, or reflected around the center: the degree (absolute magnitude) of association between people remains, but the sign changes. Reflecting, obviously, may cause other rows to have negative sum, but the sum total may be increased. After the first factor is extracted, the residual correlation table (as well as the appropriate factor loadings) are de-reflected. The procedure is repeated for every extracted factor.
+It seems to me that only point 4 is uniquely "indeterminate" to CFA; variates can be reflected in a different order, with more or less skill, yielding different (unrotated) factor loadings. (Notice, though, that as Noori and Peter intimated, there ought to be one set of reflections that yields the highest possible variance, even if CFA has no way of producing that).
+
+For this feature of CFA to be valuable to researchers, I suggest two conditions:
+a) the procedure would have to be practicable.
+b) the procedure would have to be intelligible to researchers in substantive terms to aid them in their abduction.
+Re: a): It seems to me that few researchers today would be inclined to do even a CFA by hand, including the manual reflections. We would need a computer program that allows manual reflection, which would be possible, though the user interface may be non-trivial and I am not aware that such a program exists.
+
+Re: b): It is utterly inconceivable to me how a researcher should make abductively informed reflections this early in the analysis; the table acted upon (the correlation matrix) and the operation (multiplying of rows and columns by -1) does not, to me, reveal and/or correspond to the kind of substantive interpretation of factor scores in which every Q study culminates, and in which, supposedly, the abduction occurs (as in: "mmh, interesting, under this viewpoint item 02 and item 04 are pretty close, I wonder what might make people think so ..."). I've spent the last 9 month with my modest keyneson dataset (77 statements, 19 people), and I'm still having a hard time relating this or that methodological decision (say, flagging or judgmental rotation) to substantive outcomes in terms of factor scores. I have no idea what kind of abductive insight I could possibly gain during manual reflection.
+There is, of course a (sinister) alternative: you could go back and forth between reflections and downstream factor scores and pick whichever reflection results in factors that make sense. That would, first of all, be colossally cumbersome. Also, I fear, that might stretch the concept of abduction pretty thin – it's more like data mining.
+
+Note, again, that judgmental rotation, what ought to be in the diagonal (aka PAF vs PCA) as well as an abductive process in general are entirely separate concerns. The question is what centroid brings to the table in addition or as a condition for the former.
+
+It seems to me: nothing much but confusion.
+
+Steven Brown wrote on this list in 1997 in favour of centroid that "there may be more to mathematics than mathematics". That may be so, but I would think that any such epistemological or ontological differences should somehow play out in research practice in a meaningful way. Manual reflection is the only difference between PCA/PAF and CFA I can see in how a researcher proceeds, and I imagine it to be quite meaningless as described above.
+
+It's entirely possible that I'm completely wrong. In that case, I apologize for my ignorance in advance and blame it partly on the relative paucity of clear treatments on the matter.
+
+Attentive readers of the listserv will notice that much of this is a reiteration of Peter Schmolck's thoughts over the years (including from 1997); I (and, I think, Q) are deeply indebted to him for his thoughtful dissenting opinions. Insight is his, mistakes are mine.
+
+Best
+Max
+
+Ps.: Bonus points for responses that avoid hand-waving references to "R" vs "Q".
 
 McCloy, Metheny & Knott 1938; / Brown;
 > The fact of indeterminacy in its free-floating usage by Stephenson is commonplace, at least nowadays.  Incidentally I came across an article that made clear already in the year 1938 that "the factors found by the Hotelling method of principal components present the same necessity for rotation as those found by the Thurstone method of multiple factors. (McCloy,  Metheny,  & Knott, 1938).
@@ -962,7 +1047,7 @@ In any event, no one is using manual CFA – they all use PQMethod, which implem
 
 Underlying simple structure is Occam's razor.
 
-CFA was originally introduced as a "computational expedient when it became apparent that the principal-factor solution was too laborious" (Harman 1967: 5)
+CFA was originally introduced as a "computational expedient when it became apparent that the principal-factor solution was too laborious" (Harman 1967: 5) -->
 
 <!-- is there, or is there not a latent variable idea? -->
 
@@ -996,16 +1081,16 @@ read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per
 
 <!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
 
-The manual steps in centroid are when manually "reflecting" columns – and that is a step that involves some amount of discretion, can be done more or less skillfully.
+<!-- The manual steps in centroid are when manually "reflecting" columns – and that is a step that involves some amount of discretion, can be done more or less skillfully.
 As a result, factors also need not decrease monotically.
 
 The argument for manual reflection kind of goes away, because nowadays centroid is always done with a computer anyway.
 
-Peter Schmolck describes the "centroid myth" as dead freight. (email from june 2nd, 2012) https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&F=&S=&X=7A14F22EEE7751DED2&Y=p41bsmk%40unibw-muenchen.de&P=63
+Peter Schmolck describes the "centroid myth" as dead freight. (email from june 2nd, 2012) https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&F=&S=&X=7A14F22EEE7751DED2&Y=p41bsmk%40unibw-muenchen.de&P=63 -->
 
 <!-- MH TODO find real resources on PCA vs centroid -->
 
-centroid is obsolete, developed (as much in early factor analysis) because of *computational* ease @Yates-1987: 1
+<!-- centroid is obsolete, developed (as much in early factor analysis) because of *computational* ease @Yates-1987: 1
 
 - the problem with factor analysis is that it suggests *latent* concepts, thereby a causal modal (as revealed by the communility diagonal)
 
@@ -1028,7 +1113,8 @@ it's a very contentious debate: EFA vs PCA ibid 30.
 
 Notice that I have NO hunch of a latent variable model, as, for example, you might have with people who have called in sick a lot "burn out)" where you suspect a latent variable, plus some additional idiosyncratic stuff.
 We have no reason to assume that the same is applicable in Q; there is nothing idiosyncratic about any one person's Q-Sort
-What gets explained, and what not, is completely arbitrary
+What gets explained, and what not, is completely arbitrary -->
+
 
 #### PCA
 
@@ -1044,8 +1130,6 @@ What gets explained, and what not, is completely arbitrary
 
 
 #### PAF
-
-latent variable model: burnout, as taken from  @Field-Miles-2012: 750
 
 analyses SHARED variance only, error is just estimated; PCA estimates ALL variance
 FA causes variables, PCA components are aggregates of the variables.
