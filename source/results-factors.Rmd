@@ -157,7 +157,7 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ## Codenames
 
 ```{r real-names, echo = FALSE, eval = FALSE}
-real_names <- TRUE  # this is for manually enabling renaming
+real_names <- FALSE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
   for (name in colnames(q_sorts)) {  # loop over names in q_sorts
@@ -853,8 +853,9 @@ Absent well-justified choice in the literature, we then have to delve into the a
 Readers will be relieved that the purview of this investigation can be pragmatically limited to only three different extraction methods for exploratory factor analysis (EFA):
 
 1. Principal Components Analysis (PCA), sometimes also known as the Hoteling method
-2. Centroid Factor Analysis (CFA)
-3. Principal Axis Factoring (PAF)
+2. Centroid Factor Analysis (CFA), also known as the Simple Summation Method
+<!-- TODO add Thurstone 1947 in Brown 1980 as source for CFA, Burt1940 in ibid as source for simple summation -->
+3. Principal Axis Factoring (PAF), also known as Common Factor Analysis
 <!-- MH TODO add references for these! -->
 
 There are many other multivariate techniques that may --- or may not --- hold promise for Q methodology, including cluster analysis (CA), multi-dimensional scaling (MDS), latent profile analysis (LPA) or structural equation modeling (SEM), as well as yet different *non*-parametric methods (latent trait and latent class analysis) [@Yates-1987: 2], as may be required by a stringently ordinal reading of Q sorts (see above).
@@ -929,11 +930,10 @@ range(apply(cor$before, 2, mean))
 summary(cor$before)
 
 # look at the summary loadings of the full model later
-keyneson$before$loa
-apply(keyneson$before$loa, 1, sum)
-range(t(keyneson$before$loa))  # have to transpose
-summary(t(keyneson$before$loa))  # have to transpose
-
+#keyneson$before$loa
+#apply(keyneson$before$loa, 1, sum)
+#range(t(keyneson$before$loa))  # have to transpose
+#summary(t(keyneson$before$loa))  # have to transpose
 # TODO really implement this, include as results
 ```
 Applying the latent-variable logic of an ordinary, items-as-*variables* factor analysis to Q, we might then conclude that the relatively uncommon Q-sorters introduce idiosyncratic specific variance, and ought to be discounted in the model.
@@ -965,93 +965,89 @@ In fact, to discount the poorly correlated Q-sorts would be to (slightly) stack 
   By analogy to R-type factor analysis, some people may also be more expressive of some burnout-factors than others, but that becomes meaningful only *after* the factor extraction.
   We might --- again, analogously --- be particularly interested in the *ideal-typical* burnout-cases, and interpret them in more detail, but only later.
 
+<!-- TODO check kline 1994 in Watts/Stenner on PCA vs CFA -->
+<!-- TODO read  Harman 1976 in the above on PCA vs CF -->
+
 
 #### In(determinacy)
 
+Proponents of Centroid Factor Analysis (CFA) often cite the technique's supposed indeterminacy in favor of the method.
+It might seem odd that a statistical procedure may be favored for *not* producing the same result, with the same data.
+This unfamiliar criteria might be best understood in the historical context of factor analysis, as Peter Schmolck recently suggested.
+<!-- TODO actually, it's sthis email by Schmolck https://listserv.kent.edu/cgi-bin/wa.exe?A2=q-method;5c40e976.1206 -->
+<!-- TODO cite Peter schmolck email with McCloy, Metheny and Knott 1938 email -->
+Different methods of factor analysis and rotation were originally developed to summarize differences in human personality and intelligence.
+Some of these early factor analysts were convinced that alternative theories of personality and intelligence could be adjudicated purely based on the *mathematical* elegance of the extraction and rotation method that produced results in line with these theories.
+<!-- FIXME need more sources here, better description -->
+Against this backdrop, Stephenson's insistence on a supposedly more flexible method such as Centroid Factor Analysis seems plausible.
+<!-- TODO find stephenson source on using centroid -->
+Convincingly, @Stephenson1953 points out that "it is difficult to accept any one kind of geometrical substructure, as, in principle, the only basis for inference" [-@Stephenson1953: 41].
 
-<!-- Dear Noori,
-Dear Peter,
-Dear all,
+It is, however, less clear what the suggested indeterminacy of CFA means, and how it might meaningfully enhance an analysis in practical terms.
 
-I'm a little behind the curve on the listserv, but I, too, am still struggling with the supposed "indeterminacy" of centroid (CFA) vs. principal components (PCA). I don't have anything to add to Noori's succinct question or the 2012 Brown/Schmolck CFA vs PCA exchange (kindly posted by Noori, highly recommended).
+CFA is often associated with judgmental rotation and PCA with automatic procedures, such as varimax [@Brown1980: 33].
+While these extraction and rotation procedures may have evolved in historical tandems, there is no inherent logic tying them together.
+A CFA can be automatically rotated just as a PCA can be judgmentally rotated.
+In fact, as Peter Schmolck has pointed out, *already* back in Stephenson's day, factor analysts pointed out that PCA, too, admits of an *infinite* number of rotations, from which one must be chosen for mathematical (varimax?) and/or theoretical (judgmental) reasons: "the factors found by the Hotelling method of principal components present the same necessity for rotation as those found by the Thurstone method of multiple factors" (McCloy, Metheny & Knott 1938).
+<!-- TODO this is again, peter schmolck 2012 exchange, add page number, too -->
+The question of which rotation procedure to use then arises for *every* possible extraction method and will be further discussed later on.
 
-I've spend a couple of hours sifting through the listserv and am trying to offer an update on the state of the centroid vs PCA/PAF debate.
+[@Brown1980: 211] seems suggests two additional reasons for  CFA, though a clear and accessible statement of advantages *other* than the historically associated rotation procedures is hard to come by.
 
-Is the following summary correct/fair?
-The supposed indeterminacy of the  extraction method is the primary reason for proponents of CFA. (In addition, CFA but not principal axis factoring (PAF), works with commonalities in the diagonal and more people than Q-sorts.)
-The supposed indeterminacy does not lie in a rotation phase specific to PAF; PCA, too, admits of an infinite number of rotations, from which one must be chosen for mathematical (varimax?) and/or theoretical (judgmental) reasons. (Peter Schmolck helpfully unearthed a source way back from 1938 to that effect in the above 2012 exchange; McCloy, Metheny & Knott 1938).
-CFA comes in different variants, depending on what is placed on the diagonal of the correlation matrix (communalities, test-retest reliabilities, ... -> see above 2012 thread by Schmolck on more options, as well as Brown 1980: 211). It would appear that the appropriate choice of diagonal values comes down to an ontological question on whether there are, or are not, latent variables in Q (see recent, also unresolved, thread by Dean and Schmolck), and would be analogous to the choice between PCA and PAF.
-CFA includes manual "reflections" of variables in the correlation matrix, by which the signs of columns and rows are reversed so as to have as many possible rows sum to a positive number (see Brown 1980: 209 for details). The procedure effects that some people's Q-sorts are reversed, or reflected around the center: the degree (absolute magnitude) of association between people remains, but the sign changes. Reflecting, obviously, may cause other rows to have negative sum, but the sum total may be increased. After the first factor is extracted, the residual correlation table (as well as the appropriate factor loadings) are de-reflected. The procedure is repeated for every extracted factor.
-It seems to me that only point 4 is uniquely "indeterminate" to CFA; variates can be reflected in a different order, with more or less skill, yielding different (unrotated) factor loadings. (Notice, though, that as Noori and Peter intimated, there ought to be one set of reflections that yields the highest possible variance, even if CFA has no way of producing that).
+1. Because CFA operates directly on the correlation matrix, diagonal entries can be easily replaced, as the researcher sees fit.
+   @Brown1980 suggests various replacements on the diagonal of the correlation matrix, including communalities and test-retest reliabilities [-@Brown1980: 211], though any choice of such replacements would appear to imply one or another latent variable model.
+   At least if a latent variable model is deemed inapplicable, as is the case here, so is this rationale for using CFA.
+2. Fundamentally, CFA is indeterminant, because it involves  *reflecting* of variables in the correlation matrix, a process that can be done in varying orders, and with varying levels of skill.
+<!-- TODO for reflecting source is Holzinger 1946 in Brown 1980 -->
+   Because CFA extracts factors by dividing row (or column) sums by the square root of the *sum total of all correlations*, it requires maximally *positive* correlation coefficients.
+   To achieve that, negative-sum rows (and columns) are multiplied by $-1$ (reflected), effectively mirroring that Q-sort around the center.
+   The factor loadings of the respective rows (or columns) are later multiplied by $-1$ again to restore the original orientation.
+   The operation, done manually, is quite demanding, because an earlier reflection of a *row*, will affect other *column* sums and may require additional multiplications.
+   Depending on the order in which variables are reflected, different *factor* loadings will result from the downstream extraction, with an infinite number of equally "correct" models.
+   By contrast, a procedure like PCA will yield only *one* correct (unrotated) model: that which explains the greatest amount of variance.
+   Oddly --- for the proponents of CFA --- such a model of maximum explained variance *also* exists theoretically for the centroid method, but is not identified by the procedure.
+   It is this formal equality of *different* resulting models in CFA that supposedly invites judgmental rotation and strengthens the researcher's interpretation.
+   From Brown's exposition, it remains unclear, however, how the reflection procedure --- a very early step in the analysis --- may conceivably be informed by a researcher's substantive abductions, because these hunches would need to be in the form of more or less plausible ideal viewpoints, a summary that is not available until much later in the procedure.
+   It is hard to imagine how even knowledgeable and skillful researchers might be *substantively* guided in this technical and preparatory step.
+   It is entirely unclear what reflecting one column first over another might *mean* in terms which only become visible *through* that very procedure.
 
-For this feature of CFA to be valuable to researchers, I suggest two conditions:
-a) the procedure would have to be practicable.
-b) the procedure would have to be intelligible to researchers in substantive terms to aid them in their abduction.
-Re: a): It seems to me that few researchers today would be inclined to do even a CFA by hand, including the manual reflections. We would need a computer program that allows manual reflection, which would be possible, though the user interface may be non-trivial and I am not aware that such a program exists.
+   In addition --- though this would be remediable --- most, if not all, recently published Q studies *do* rely on computer algorithms for extraction, including the reflection stage.
+   While these algorithms may proceed differently, and, accordingly, produce different results, these differences are caused by the heuristics of *programmers*, not the abductions of researchers.
 
-Re: b): It is utterly inconceivable to me how a researcher should make abductively informed reflections this early in the analysis; the table acted upon (the correlation matrix) and the operation (multiplying of rows and columns by -1) does not, to me, reveal and/or correspond to the kind of substantive interpretation of factor scores in which every Q study culminates, and in which, supposedly, the abduction occurs (as in: "mmh, interesting, under this viewpoint item 02 and item 04 are pretty close, I wonder what might make people think so ..."). I've spent the last 9 month with my modest keyneson dataset (77 statements, 19 people), and I'm still having a hard time relating this or that methodological decision (say, flagging or judgmental rotation) to substantive outcomes in terms of factor scores. I have no idea what kind of abductive insight I could possibly gain during manual reflection.
-There is, of course a (sinister) alternative: you could go back and forth between reflections and downstream factor scores and pick whichever reflection results in factors that make sense. That would, first of all, be colossally cumbersome. Also, I fear, that might stretch the concept of abduction pretty thin – it's more like data mining.
-
-Note, again, that judgmental rotation, what ought to be in the diagonal (aka PAF vs PCA) as well as an abductive process in general are entirely separate concerns. The question is what centroid brings to the table in addition or as a condition for the former.
-
-It seems to me: nothing much but confusion.
-
-Steven Brown wrote on this list in 1997 in favour of centroid that "there may be more to mathematics than mathematics". That may be so, but I would think that any such epistemological or ontological differences should somehow play out in research practice in a meaningful way. Manual reflection is the only difference between PCA/PAF and CFA I can see in how a researcher proceeds, and I imagine it to be quite meaningless as described above.
-
-It's entirely possible that I'm completely wrong. In that case, I apologize for my ignorance in advance and blame it partly on the relative paucity of clear treatments on the matter.
-
-Attentive readers of the listserv will notice that much of this is a reiteration of Peter Schmolck's thoughts over the years (including from 1997); I (and, I think, Q) are deeply indebted to him for his thoughtful dissenting opinions. Insight is his, mistakes are mine.
-
-Best
-Max
-
-Ps.: Bonus points for responses that avoid hand-waving references to "R" vs "Q".
-
-McCloy, Metheny & Knott 1938; / Brown;
-> The fact of indeterminacy in its free-floating usage by Stephenson is commonplace, at least nowadays.  Incidentally I came across an article that made clear already in the year 1938 that "the factors found by the Hotelling method of principal components present the same necessity for rotation as those found by the Thurstone method of multiple factors. (McCloy,  Metheny,  & Knott, 1938).
->
-
-
-Brown 1980: 209
-> The centroid method was the first to be fully elaborated in factor theory, largely because of its computational ease, although it was always regarded as only an approximation to the more refined methods such as principal axes (Holzinger, 1946); on the other hand, Burt (1972) has more recently shown that the centroid and the more precise methods produce virtually the same results. With the development of computers, however, what was before a chore came within easy reach of all, so that contemporary factorists can now avail themselves of the more determinant methods, and usually do.
-
-
-Schmlock in 1997 on the list:
-> Quite to the contrary: I would
-like to hear what the master's (Q methodology) orders for the slave
-(mathematics) are. I do not object against the demand that the data
-should _not_ (automatically) determine results. However, that does not
-suffice as a goal definition for which a mathematical solution exists.
-The point I wanted to make is really very trivial: One cannot use
-mathematics to solve a non-mathematical problem without specifying one's
-goals and criteria in mathematical terms. Everything else would amount
-to number-magic. Steven Brown's eloquent exposition of the scientific
-goals of interbehaviorism is beside the point here. His explanations
-might be of relevance only for someone who believes mathematics is the
-master, and that mathematical criteria can decide about the legitimacy
-of scientific goals. I am not aware of anyone who thinks so.
-- https://listserv.kent.edu/cgi-bin/wa.exe?A2=Q-METHOD;624d5964.9706
+In conclusion, the vicissitudes of Centroid appear less as Q epistemological necessity, than a product of its genesis.
+As [@Brown1980: 209] admits, CFA was developed in the era before electronic computing "largely because of its *computational ease*", and "as only an *approximation* to the more refined methods such as principal axes" (emphases added).
+<!-- TODO additional source for "computational expedient when it became apparent that the principal-factor solution was too laborious" is from Harman 1967:5 -->
+Keeping in mind the necessity for rotation, Centroid Factor Analysis can, at least for this study, be considered technically "obsolote" [@Yates-1987 1] and historical "dead freight" of Q methodology.
+<!-- TODO Schmlock source: email from june 2nd more on this: https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&P=R2&1=q-method&9=A&J=on&d=No+Match%3BMatch%3BMatches&z=4 -->
 
 
-note though that later on, to confirm that it is different between the two sessions, we might need confirmatory FA.
+### Principal Components Analysis (what does it do)
 
-Also list the disadvantages of PCA (though the indeterminateness of centroid may not be one of them)
+Principal Components Analysis then appears the most appropriate data reduction technique for this study, if not Q methodology in general.
+Because it is relatively easy to describe, unfamiliar for a correlation matrix of people-variables and provides the basis for all of the following analysis, I explain the procedure in some detail and with reference to my data.
 
-> "... but in Q methodology it is often worthwhile to rotate factors judgmentally in keeping with theoretical, as opposed to mathematical, criteria [emphasis added] (Creaser, 1978; Thompson, 1962). In these respects, the centroid method, long ago discarded for its indeterminacy, still has its usefulness, for the uniqueness of the centroid method is its indeterminacy [emphasis added]: There is no correct solution out of the infinite number of solutions available, so the investigator is free to pursue his own inclinations, guided by his theory.
-> - Brown 1980 p. 33
-> -
+<!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
 
-Notice that is pretty unclear just how manual reflection should be theoretically informed -- it's just too far away from that data.
+<!-- @Fabrigar-Wegener-2012 31
+> "the common factor model was formulated as a general mathematical framework for understanding the structure of correlations among measured variables.
+> It postulated that correlations among measured variables can be explained by a relatively small set of latent constructs (common factors), and that each measured variable is a linear combination of these underlying common factors and a unique factor (comprised of a specific factor and random error).
+> PCA differs from the common factor model in several notable ways (Wildama, 2007, see also Thomson, 1939)
+> First, PCA was not originally designed to account for the structure of correlations among measured variables, but rather to reduce scores on a battery of measured variables to a smaller set of scores (i.e. principal components).
+> This smaller set of scores are linear combinations of the original measured variable scores that retain as much information as possible (i.e., explain as much variance as possible) from the original measured variables.
+> Thus, the primary goal of PCA is to account for the variances of measured variables rather than to explain the correlations (or covariances) among them.
+> Similarly PCA was not designed with the intent that the principal components should be interpreted as directly corresponding to meaningful latent constructs.
+> Rather the components simply represent efficient methods of capturing information in the measured variables (regardless of whether those measured variables rrepresent meaningful latent constructs).
+> " -->
 
-In any event, no one is using manual CFA – they all use PQMethod, which implements an automatic reflection procedure.
+- considers all of the available variance (common AND unique), places 1 ons on diagonal.
+- Seeks a linear combination of variables such that maximum variance is extracted (repeats the step)
+- use when there is concern with prediction, parsimony and specific/error variance is small (it is NOT!)
+- results in orthogonal
 
-Underlying simple structure is Occam's razor.
+-t's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
 
-CFA was originally introduced as a "computational expedient when it became apparent that the principal-factor solution was too laborious" (Harman 1967: 5) -->
-
-<!-- is there, or is there not a latent variable idea? -->
-
-<!-- Also note somewhere that the talk of vectors distending the items during the sort is not completely arbitrary --- it is exactly this kind of mathematical operation that returns in the matrix algebra of factor analysis. -->
+<!-- Steps in a PCA
+- extract principal components by matrix multiplication (dot product) -->
 
 <!--
 factor extraction
@@ -1063,70 +1059,7 @@ http://cran.r-project.org/web/packages/FactoMineR/index.html
 psych also appears to do parallel analysis by fa.parallel
 -->
 
-<!-- Even Brown admits that CFA was originally developed because it was a computationally simpler, though similar in results to PAF. -->
-
 <!-- funny pun from Brown: factor analysis is a complicated tautology 223 -->
-
-<!-- check kline 1994 and Harman 1976 in the above on PCA vs CF
-Harman 1976 says they will mostly be the same! -->
-
-<!-- COMMENT MH
-read kline 1994 on wattss/stenner on PCA vs CFA, and they will be similar as per harman1976
--->
-
-<!-- Peter Schmolck describes (the justification of) centroid as a "myth" and "dead freight" (email from June 2nd, 2012) -->
-<!-- more on this: https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&P=R2&1=q-method&9=A&J=on&d=No+Match%3BMatch%3BMatches&z=4 -->
-
-<!-- Noori Akthar-Danish is also very skeptical on centroid, not clear what exactly the supposed *indeterminance* would mean -->
-
-<!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
-
-<!-- The manual steps in centroid are when manually "reflecting" columns – and that is a step that involves some amount of discretion, can be done more or less skillfully.
-As a result, factors also need not decrease monotically.
-
-The argument for manual reflection kind of goes away, because nowadays centroid is always done with a computer anyway.
-
-Peter Schmolck describes the "centroid myth" as dead freight. (email from june 2nd, 2012) https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&F=&S=&X=7A14F22EEE7751DED2&Y=p41bsmk%40unibw-muenchen.de&P=63 -->
-
-<!-- MH TODO find real resources on PCA vs centroid -->
-
-<!-- centroid is obsolete, developed (as much in early factor analysis) because of *computational* ease @Yates-1987: 1
-
-- the problem with factor analysis is that it suggests *latent* concepts, thereby a causal modal (as revealed by the communility diagonal)
-
-
-@Fabrigar-Wegener-2012: 30 on EFA vs PCA
-common factor model or PCA model?
-notice how ibid. recommend model fit indices (such as maximimum likelihood parameter estimation) and/or standard errors, confidence intervals and statistical tests for model parameters for EFA - let's see what else we can do here).
-it's a very contentious debate: EFA vs PCA ibid 30.
-
-@Fabrigar-Wegener-2012 31
-> "the common factor model was formulated as a general mathematical framework for understanding the structure of correlations among measured variables.
-> It postulated that correlations among measured variables can be explained by a relatively small set of latent constructs (common factors), and that each measured variable is a linear combination of these underlying common factors and a unique factor (comprised of a specific factor and random error).
-> PCA differs from the common factor model in several notable ways (Wildama, 2007, see also Thomson, 1939)
-> First, PCA was not originally designed to account for the structure of correlations among measured variables, but rather to reduce scores on a battery of measured variables to a smaller set of scores (i.e. principal components).
-> This smaller set of scores are linear combinations of the original measured variable scores that retain as much information as possible (i.e., explain as much variance as possible) from the original measured variables.
-> Thus, the primary goal of PCA is to account for the variances of measured variables rather than to explain the correlations (or covariances) among them.
-> Similarly PCA was not designed with the intent that the principal components should be interpreted as directly corresponding to meaningful latent constructs.
-> Rather the components simply represent efficient methods of capturing information in the measured variables (regardless of whether those measured variables rrepresent meaningful latent constructs).
-> "
-
-Notice that I have NO hunch of a latent variable model, as, for example, you might have with people who have called in sick a lot "burn out)" where you suspect a latent variable, plus some additional idiosyncratic stuff.
-We have no reason to assume that the same is applicable in Q; there is nothing idiosyncratic about any one person's Q-Sort
-What gets explained, and what not, is completely arbitrary -->
-
-
-#### PCA
-
-- considers all of the available variance (common AND unique), places 1 ons on diagonal.
-- Seeks a linear combination of variables such that maximum variance is extracted (repeats the step)
-- use when there is concern with prediction, parsimony and specific/error variance is small (it is NOT!)
-- results in orthogonal
-
--t's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
-
-<!-- Steps in a PCA
-- extract principal components by matrix multiplication (dot product) -->
 
 
 #### PAF
@@ -1339,7 +1272,7 @@ check whether the two flagging criteria make sense, aren't they too restrictive?
 
 Peter SChmolck:
 > The automatic flagging method in PQMethod  often misunderstood as a well-founded, decisive statistical-q-methodological solution for the problem. However, it originates neither from William Stephenson nor Steven Brown. The reason for the frequent misunderstanding might lie in bad English. With the 'pre-' prefix I wanted to say, 'preliminary', before the 'real' work has to be done. I later noticed that the prefix never appeared when people referred to this  method of selecting the defining sorts.
-This appears to be a good opportunity for disclosing how the algorithm came into PQMethod. In John Atkinson's  original version of the software,  the only possible method of manual flagging was rather cumbersome, one had to enter the series of sort numbers to be flagged for every factor (this method is still available in PQMethod as the 'old' version). In the course of checking and further developing the software I had to permanently repeat running the program from start to end for testing if the last changes worked as intended. Going through the flagging stage each time was quite annoying. I therefore needed a solution for automatic processing. From my times as a research assistant in scale construction projects I had a vague recollection how so-called 'marker items' were found for factor interpretation and item selection for the scales. It was the so-called Fürntratt Criterion: To be eligible as a marker item for a certain factor, the variance explained by that factor must exceed the total amount of variance explained by the other factors. This seemed to me a sound method for securing that a sort cannot be definer for more than one factor. Since I was aware that Q people have a strong affection for significance formulas, I added the (lenient) p<.05 'significance' requirement. The latter, BTW, has nearly never an additional effect when the first criterion is met.
+This appears to be a good opportunity for disclosing how the algorithm came into PQMethod. In John Atkinson's  original version of the software,  the only possible method of manual flagging was rather cumbersome, one had to enter the series of sort numbers to be flagged for every factor (this method is still available in PQMethod as the 'old' version). In the course of checking and further developing the software I had to permanently repeat running the program from start to end for testing if the last changes worked as intended. Going through the flagging stage each time was quite annoying. I therefore needed a solution for automatic processing. From my times as a research assistant in scale construction projects I had a vague recollection how so-called 'marker items' were found for factor interpretation and item selection for the scales. It was the so-called Fuerntratt Criterion: To be eligible as a marker item for a certain factor, the variance explained by that factor must exceed the total amount of variance explained by the other factors. This seemed to me a sound method for securing that a sort cannot be definer for more than one factor. Since I was aware that Q people have a strong affection for significance formulas, I added the (lenient) p<.05 'significance' requirement. The latter, BTW, has nearly never an additional effect when the first criterion is met.
 
 
 ### Scoring
