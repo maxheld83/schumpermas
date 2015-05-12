@@ -5,7 +5,8 @@
 			"file_exclude_patterns":
 			[
 				".latexmkrc",
-				"tax-democracy-held.pdf"
+				"tax-democracy-held.pdf",
+				"tax-democracy.pdf"
 			],
 			"folder_exclude_patterns":
 			[
@@ -20,7 +21,7 @@
 	],
 	"options":
 	{
-		"pdf": "schumpermas",
+		"pdf": "tax-democracy-held.pdf",
 		"root": "tax-democracy-held.tex"
 	}
 }

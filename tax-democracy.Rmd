@@ -1,6 +1,9 @@
 ---
 title: "Taxation and Democracy"
 author: "Maximilian Held"
+documentclass: book
+classoption: a4paper
+geometry: margin=1.5in
 output:
   pdf_document:
     fig_caption:
