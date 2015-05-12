@@ -103,6 +103,9 @@
 	% 	\input{./tex/common-grounds}
 % \part{The Test}
 % 	\label{part:test}
+		\chapter{Methodology Test}
+<<child-methodology-test, child='./source/methodology-test.Rnw'>>=
+@
 % 	\chapter{Operationalization}
 % 		\label{chap:operationalization}
 % 		\input{./tex/operationalization.tex}
