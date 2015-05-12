@@ -1,26 +1,16 @@
 ---
 title: "Taxation and Democracy"
 author: "Maximilian Held"
-documentclass: book
 classoption: a4paper
-geometry: margin=1.5in
 output:
   pdf_document:
-    fig_caption:
-    - yes
-    number_sections:
-    - yes
-    toc:
-    - yes
-  html_document:
-    toc:
-    - yes
-    fig_caption:
-    - yes
-    fig_retina:
-    - yes
-bibliography: ../held-library/held_library.bib
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+geometry: margin=1.5in
 lang: english
+documentclass: article
+bibliography: ../held-library/held_library.bib
 ---
 
 ```{r preamble, echo = FALSE}
@@ -37,6 +27,7 @@ library(qmethod)
 opts_knit$set(root.dir = normalizePath(getwd()))  # what does this do?
 options(digits=2)
 ```
+
 
 ```{r q-method, message = FALSE, results = "hide", echo = FALSE}
 knit("source/method-q.Rmd")
