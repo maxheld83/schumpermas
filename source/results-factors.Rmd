@@ -68,6 +68,8 @@ The following free / open source and closed / proprietary programs are available
  Closed Source | [SPSS](http://www-01.ibm.com/software/analytics/spss/), [STATA](http://www.stata.com) | [PCQ](http://www.pcqsoft.com)
  Open Source | [R](http://www.r-project.org) | R: [qmethod](https://github.com/aiorazabala/qmethod) package, [PQMethod](http://schmolck.userweb.mwn.de/qmethod/)
 
+Table: Overview of Q Methodology Software
+
 The closed-source, general-purpose programs offer some programmatic extensibility, but are poorly suited for Q methodology.
 These commercial, and often expensive offerings also make it hard to reproduce and open up research.
 The special-purpose `PQMethod` was originally written for mainframe in 1992 by John Atkinson at Kent State University in Kent, OH, and has since been ported for PCs and generously maintained by Peter Schmolck at the University of the Armed Forces in Munich, Germany.
@@ -1025,6 +1027,7 @@ Keeping in mind the necessity for rotation, Centroid Factor Analysis can, at lea
 
 Principal Components Analysis then appears the most appropriate data reduction technique for this study, if not Q methodology in general.
 Because it is relatively easy to describe, unfamiliar for a correlation matrix of people-variables and provides the basis for all of the following analysis, I explain the procedure in some detail and with reference to my data.
+
 
 <!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
 
