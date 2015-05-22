@@ -120,8 +120,9 @@ Brown talks about platykurvic etc. on 1980 200
 
 This differs a little bit from what a standard normal distribution would be for the given parameters, of `r sum(q_distribution)` items and a maximum value of `7`.
 
-```{r compare-automatic}
+```{r compare-automatic, include=FALSE, eval=FALSE}
 make.distribution(nstat=78, max.bin=7) - q_distribution
+# notice I am not doing that anyway
 ```
 
 <!-- TODO MH: make visualization of bins -->

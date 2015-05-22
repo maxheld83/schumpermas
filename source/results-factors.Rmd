@@ -33,11 +33,9 @@ The first CiviCon Citizen Conference on taxation produced a wealth of data, incl
 
 <!-- TODO MCH: make this into a table with availability and status of processing -->
 
-
 ## Data Import
 
 All citizens as well as the researcher and the two moderators completed two Q sorts each, one at the beginning and one at the end of the conference.
-
 
 ## Software for Open Science and Reproducible Research
 
@@ -745,6 +743,7 @@ Overall correlations may be *lower* (they are not at `r sum(cor(q_sorts[,,"befor
   > 245: say that interval treatment for six or seven categories is often done.
   > Still, they warn on 245: there *will* be biases (more evidence in section 9.5) -->
 
+
 #### (Linear) Association vs. Probability
 
 Assuming that the present Q-sort data best be treated as ordinal scaled, the question arises how their correlation coefficients can be appropriately and meaningfully summarized into ideal viewpoints.
@@ -778,6 +777,7 @@ The simplest summary statistic in lieu of descriptives we are left with is the c
 The correlation matrix is characteristically complex, and hard to interpret --- which is probably why most Q studies, especially with more participants, do not report it.
 
 ```{r cor-viz-before, echo=FALSE}
+
 # make this a list of before/after
 library(corrplot)
 cor <- list("before","after")
@@ -801,6 +801,39 @@ corrplot(corr = cor$before
 cor$after <- cor(q_sorts[,,"after"], method="spearman")
 sd(cor$after)
 sd(cor$before)
+```
+
+Recall, again, that the correlations in the above matrix are between *people-variables* across *item-cases*.
+The below plot illustrates this for the strongest positive, the strongest negative, the weakest and a self-correlation.
+<!-- TODO(maxheld83) this should probably go someplace else, maybe way above in the 
+cor discussion. -->
+<!-- TODO(maxheld83) Add footnote that jitter was added to avoid overplotting. -->
+
+```{r cor-example-plot, include=FALSE, eval=FALSE}
+cor.ex <- vector("list", 4)  # create empty list
+names(cor.ex) <- c("positive", "negative", "null", "identity")
+cor.ex$positive <- rownames(which(cor$before == max(cor$before[cor$before < 1]), arr.ind = TRUE))  # find the highest positive correlation pair
+cor.ex$negative <- rownames(which(cor$before == min(cor$before[cor$before < 1]), arr.ind = TRUE))  # find the highest negative correlation pair
+cor.ex$null <- rownames(which(cor$before == min(abs(cor$before[cor$before < 1])), arr.ind = TRUE))  # find the lowest correlation
+cor.ex$identity <- c(rep(x = vec.examples$minimum[2], times = 2))  # identity is just one with him/herself
+labels <- row.names(q_sorts)  # make labels vector
+labels[-sample(x = 1:length(row.names(q_sorts)), size = 3, replace = FALSE )] <- NA  # take a sample otherwise too much overplotting
+cor.ex.plots <- cor.ex  # make empty list with vec.example names
+for (i in names(cor.ex)) {
+  g <- ggplot(data = as.data.frame(q_sorts[,,"before"]), mapping = aes_string(x = cor.ex[[i]][1], y = cor.ex[[i]][2]))  # need aes_string because vec.examples includes strings (unhelpfully)
+  g <- g + geom_point(position = "jitter")  # must jitter b/c overplotting, alpha is bad
+  g <- g + geom_smooth(method = "lm")  # add regression line
+  g <- g + geom_text(mapping = aes(label = labels), hjust = 0, vjust = 0)  # ad sampled labels
+  g <- g + ggtitle(i)  # add titles
+  g <- g + coord_fixed()  # make aspect ratio 1
+  # TODO(maxheld83) color the plots as the respective fields in the cor matrix
+  # TODO(maxheld8) cut superfluous space on the axes
+  cor.ex.plots[[i]] <- g  # write out plot
+}
+library(gridExtra)
+n <- length(cor.ex.plots)  # number of plots
+nCol <- floor(sqrt(n))  # number of cols
+do.call("grid.arrange", c(cor.ex.plots, ncol=nCol))
 ```
 
 To protect the anonymity of participants, as discussed elsewhere, I cannot provide additional details to contextualize individually high or low correlations between Q sorters.
@@ -938,6 +971,7 @@ summary(cor$before)
 #summary(t(keyneson$before$loa))  # have to transpose
 # TODO really implement this, include as results
 ```
+
 Applying the latent-variable logic of an ordinary, items-as-*variables* factor analysis to Q, we might then conclude that the relatively uncommon Q-sorters introduce idiosyncratic specific variance, and ought to be discounted in the model.
 
 At least in this study, such discounting does not make sense, because we are principally interested in *all* Q-sorters, qua being participating citizens.
@@ -1022,12 +1056,116 @@ As [@Brown1980: 209] admits, CFA was developed in the era before electronic comp
 Keeping in mind the necessity for rotation, Centroid Factor Analysis can, at least for this study, be considered technically "obsolote" [@Yates-1987 1] and historical "dead freight" of Q methodology.
 <!-- TODO Schmlock source: email from june 2nd more on this: https://listserv.kent.edu/cgi-bin/wa.exe?A2=ind1206&L=q-method&P=R2&1=q-method&9=A&J=on&d=No+Match%3BMatch%3BMatches&z=4 -->
 
+Principal Components Analysis (PCA) then appears the most appropriate data reduction technique for this study, if not Q methodology in general.
 
-### Principal Components Analysis (what does it do)
 
-Principal Components Analysis then appears the most appropriate data reduction technique for this study, if not Q methodology in general.
-Because it is relatively easy to describe, unfamiliar for a correlation matrix of people-variables and provides the basis for all of the following analysis, I explain the procedure in some detail and with reference to my data.
+### Principal Components Analysis in Q Methodology
+<!-- aka: what does it do -->
 
+<!-- TODO(maxheld83) in the tree chart, make it maybe a bit tighter in the middle, that's where this happens, where we are at at the dimensionality level, going back to items -->
+
+Principal Components Analysis (PCA), originally developed by @Pearson-1901 and (independently) by @Hotelling-1936 @Hotelling-1933, is a well-rehearsed technique with several good introductions [@Child-2006, @Fabrigar-Wegener-2012, @Basilevsky-1994,Uslaner-1978, @Bartholomew-Steele-etal-2011, @Kim-Mueller-1978, @Cureton-DAgostino-1983, @Yates-1987,Mulaik-2009].
+There is, however, no published discussion of an application of PCA to Q methodology and its unfamiliar correlation matrix of people-variables.
+Here again, no reiteration of elementary multivariate statistics will be necessary (nor possible), but central concepts must be briefly rehashed in their application to Q data.
+
+Principal components analysis can be (equivalently) described in at least two formalisms: linear algebra and matrix algebra, both of which can be illustrated with the present Q data.
+
+
+#### Linear Algebra
+
+```{r SE-example, include=FALSE, eval=FALSE}
+# # http://stats.stackexchange.com/q/153564/60119
+# q_sorts[,c("Elena", "BarbaraK"), "before"]
+# Person1 <- q_sorts[, "BarbaraK", "before"]
+# names(Person1) <- NULL
+# Person2 <- q_sorts[, "Elena", "before"]
+# names(Person2) <- NULL
+# Person1 <-paste(Person1, collapse = ",")
+# Person2 <- paste(Person2, collapse = ",")
+# Person1
+# Person2
+####
+# I have a dataset of 17 people, ranking 77 statements. 
+# I want to extract principal components on a *rotated* correlation matrix of correlations *between people* (as variables) *across statements* (as cases).
+# I know, it's odd, it's called [Q Methodology](http://en.wikipedia.org/wiki/Q_methodology).
+# 
+# I want to **illustrate** how PCA works in this context, by **extracting and visualizing eigenvalues/vectors** for only a *pair* of data.
+# (Because few people in my discipline *get* PCA, let alone it's application to Q, myself included).
+# 
+# I want the visualization from [this fantastic tutorial](https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/), only for **my real data**.
+# 
+# ![Great visualization][1]
+# 
+# Let this be a subset of my data:
+#
+    Person1 <- c(-3,1,1,-3,0,-1,-1,0,-1,-1,3,4,5,-2,1,2,-2,-1,1,-2,1,-3,4,-6,1,-3,-4,3,3,-5,0,3,0,-3,1,-2,-1,0,-3,3,-4,-4,-7,-5,-2,-2,-1,1,1,2,0,0,2,-2,4,2,1,2,2,7,0,3,2,5,2,6,0,4,0,-2,-1,2,0,-1,-2,-4,-1)
+    Person2 <- c(-4,-3,4,-5,-1,-1,-2,2,1,0,3,2,3,-4,2,-1,2,-1,4,-2,6,-2,-1,-2,-1,-1,-3,5,2,-1,3,3,1,-3,1,3,-3,2,-2,4,-4,-6,-4,-7,0,-3,1,-2,0,2,-5,2,-2,-1,4,1,1,0,1,5,1,0,1,1,0,2,0,7,-2,3,-1,-2,-3,0,0,0,0)
+    df <- data.frame(cbind(Person1, Person2))
+    g <- NULL
+    g <- ggplot(data = df, mapping = aes(x = Person1, y = Person2))
+    g <- g + geom_point(alpha = 1/3)  # alpha b/c of overplotting
+    g <- g + geom_smooth(method = "lm")  # just for comparsion
+    g <- g + coord_fixed()  # otherwise, the angles of vectors are off
+    g
+# 
+# ![corrplot for my data][2]
+# 
+# Notice that, by measurement, this data:
+# 
+# - ... has a mean of zero, 
+# - ... is perfectly symmetrical, 
+# - ... and is equally scaled on both variables (should be no difference between correlation and covariance matrix)
+# 
+# Now, I want to **combine the two above plots**.
+#
+    corre <- cor(x = df$Person1, y = df$Person2, method = "spearman")  # calculate correlation, must be spearman b/c of measurement
+    matrix <- matrix(c(1, corre, corre, 1), nrow = 2)  # make this into a matrix
+    eigen <- eigen(matrix)  # calculate eigenvectors and values
+    eigen
+#
+# gives
+# 
+    g <- g + stat_ellipse(type = "norm")
+      # add ellipse, though I am not sure which is the adequate type
+      # as per https://github.com/hadley/ggplot2/blob/master/R/stat-ellipse.R
+    eigen$slopes[1] <- eigen$vectors[1,1]/eigen$vectors[2,1]  # calc slopes as ratios
+    eigen$slopes[2] <- eigen$vectors[1,1]/eigen$vectors[1,2]  # calc slopes as ratios
+    g <- g + geom_abline(intercept = 0, slope = eigen$slopes[1], colour = "green")  # plot pc1
+    g <- g + geom_abline(intercept = 0, slope = eigen$slopes[2], colour = "red")  # plot pc2
+    g <- g + geom_segment(x = 0, y = 0, xend = eigen$values[1], yend = eigen$slopes[1] * eigen$values[1], colour = "green", arrow = arrow(length = unit(0.2, "cm")))  # add arrow for pc1
+    g <- g + geom_segment(x = 0, y = 0, xend = eigen$values[2], yend = eigen$slopes[2] * eigen$values[2], colour = "red", arrow = arrow(length = unit(0.2, "cm")))  # add arrow for pc2
+    # Here come the perpendiculars, from StackExchange answer http://stackoverflow.com/questions/30398908/how-to-drop-a-perpendicular-line-from-each-point-in-a-scatterplot-to-an-eigenv ===
+    perp.segment.coord <- function(x0, y0, a=0,b=1){
+    #finds endpoint for a perpendicular segment from the point (x0,y0) to the line
+    # defined by lm.mod as y=a+b*x
+      x1 <- (x0+b*y0-a*b)/(1+b^2)
+      y1 <- a + b*x1
+      list(x0=x0, y0=y0, x1=x1, y1=y1)
+    }
+    ss <- perp.segment.coord(df$Person1, df$Person2, 0, eigen$slopes[1])
+    g <- g + geom_segment(data=as.data.frame(ss), aes(x = x0, y = y0, xend = x1, yend = y1), colour = "green", linetype = "dotted")
+    g
+# 
+# ![final plot][3]
+# 
+# Obviously, something is wrong with this plot:
+# 
+# - the vectors don't seem to slice either of the ellipses in half
+# - the **vectors do not appear to be orthogonal!**
+# 
+# So, what did I do wrong?
+# What could I do better?
+# Is this a reasonable visualization?
+```
+
+```{r eigen-illustration}
+source("qmethod/R/q.eigenpair.R")  # until properly in function
+vec.examples <- q.eigenpair(data = q_sorts[,,"before"])
+do.call("grid.arrange", c(vec.examples$scatterplots, ncol=2))
+```
+
+
+#### Matrix Algebra
 
 <!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
 
@@ -1047,7 +1185,7 @@ Because it is relatively easy to describe, unfamiliar for a correlation matrix o
 - use when there is concern with prediction, parsimony and specific/error variance is small (it is NOT!)
 - results in orthogonal
 
--t's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
+- it's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
 
 <!-- Steps in a PCA
 - extract principal components by matrix multiplication (dot product) -->
@@ -1185,6 +1323,7 @@ Also, point out that absent any kind of such a criterion, we're left in a very u
 also, in my case, arguably sampling *is* ok, because deliberative participants will always be self-selected (as argued elsewhere). -->
 <!-- TODO MCH: notice in the recruitment part that a) too much money may drive out other incentives, and b) already, the VHS-kind-of-orientation-what-do-i-learn was a bit of a problem, might need greater stakes, better output format, more responsibility. This is all under the heading of external validity of the conference -->
 
+<!-- TODO(maxheld83) notice some more that this cannot replace a real textbook, that's obvious, it's just an exercise of what all of this means for Q, which is important, because it's otherwise illiterate -->
 
 ### Principal Components Extraction
 

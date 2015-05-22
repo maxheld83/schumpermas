@@ -18,6 +18,8 @@ library(devtools)
 library(knitr)
 library(rmarkdown)
 library(corrplot)
+library(grid)  # needed, for, well, grids and arrows
+library(gridExtra)  # needed for more grids
 library(reshape2)
 install.packages(c("qmethod"), repos = NULL, type="source")
 library(qmethod)
@@ -35,5 +37,6 @@ knit("source/method-q.Rmd")
 
 ```{r results-factors, child="source/results-factors.Rmd"}
 ```
+
 
 # References
