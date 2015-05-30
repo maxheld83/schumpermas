@@ -98,21 +98,21 @@ The forced distribution was defined as follows:
 
 ```{r q-distribution}
 q_distribution <- as.integer(c(  # set up distribution
-  1, # -7
-  1, # -6
-  2, # -5
-  4, # -4
-  6, # -3
-  9, # -2
-  10, # -1
-  11, #  0
-  10, #  1
-  9, #  2
-  6, #  3
-  4, #  4
-  2, #  5
-  1, #  6
-  1 #  7
+  "-7" = 1,  # these names are crap, they don't really work, maybe rather make this a matrix if you really want names
+  "-6" = 1,
+  "-5" = 2,
+  "-4" = 4,
+  "-3" = 6,
+  "-2" = 9,
+  "-1" = 10,
+  "0" = 11,
+   "1" = 10,
+   "2" = 9,
+   "3" = 6,
+   "4" = 4,
+   "5" = 2,
+   "6" = 1,
+   "7" = 1
 ))
 ```
 

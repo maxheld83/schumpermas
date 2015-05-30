@@ -5,11 +5,12 @@ classoption: a4paper
 output:
   pdf_document:
     fig_caption: yes
+    keep_tex: yes
     number_sections: yes
     toc: yes
 geometry: margin=1.5in
+documentclass : memoir
 lang: english
-documentclass: article
 bibliography: ../held-library/held_library.bib
 ---
 
@@ -21,8 +22,10 @@ library(corrplot)
 library(grid)  # needed, for, well, grids and arrows
 library(gridExtra)  # needed for more grids
 library(reshape2)
-install.packages(c("qmethod"), repos = NULL, type="source")
+library(ggplot2)
+install.packages(c("qmethod"), repos = NULL, type = "source")
 library(qmethod)
+source("source/q.eigenpair.R")
 ```
 
 ```{r setup-knitr, cache = FALSE, include = FALSE}
