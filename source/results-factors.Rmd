@@ -1076,8 +1076,12 @@ Principal components analysis can be (equivalently) described in at least two fo
 #### Linear Algebra
 
 ```{r eigen-illustration}
-vec.examples <- q.eigenpair(data = q_sorts[,,"before"])
-do.call("grid.arrange", c(vec.examples$scatterplots, ncol = 2))
+source(file = "source/q.eigenpair.R")
+eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
+# notice this actually is based on pearson cor coeff, because prcomp uses it, otherwise inconsistent, it is JUST TO ILLUSTRATE!
+eigen.examples["positive",2]
+do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2)))
+do.call("grid.arrange", c(t(eigen.examples["positive",c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
 

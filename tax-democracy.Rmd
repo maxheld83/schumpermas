@@ -25,7 +25,9 @@ library(reshape2)
 library(ggplot2)
 install.packages(c("qmethod"), repos = NULL, type = "source")
 library(qmethod)
-source("source/q.eigenpair.R")
+# install_github("vqv/ggbiplot")
+# library(ggbiplot)
+install_github("kassambara/factoextra")
 ```
 
 ```{r setup-knitr, cache = FALSE, include = FALSE}
