@@ -47,6 +47,7 @@ Good software for the following Q methodological analyses should fulfill the fol
 - *Reproducibility.*
   It should be easy to document and reproduce all the steps undertaken from raw data to the final factor interpretation.
   This will be especially important during the factor extraction and (indeterminate!) rotation phases, where consequential and sometimes controversial methodological decisions must be made.
+  <!-- TODO: is it really indeterminate? -->
 - *Open Access.*
   Funded mostly by tax money, all of this scientific work should be conveniently available to the public.
   Research on deliberation and citizen participation, especially, should be *Open* Science.
@@ -88,7 +89,7 @@ Most importantly, using `R`, every step from raw data to final factor interpreta
 
 Machine-readable code, its results, and human-readable explanation of *what that code does* are often written and stored separately.
 Not only does such separation invite mistakes when code, result and explanation diverge, but it also makes research harder to reproduce and is conceptually flawed.
-<!-- TODO maybe relate to the Rogoff Reinhart paper? -->
+<!-- TODO maybe relate to the Rogoff Reinhart paper, cite LaCour retractions -->
 At least in the context of statistical analysis, what we want a machine to do, why we want it, and to what effect are *one* intellectual operation, and should be presented as such.
 Programs must not be considered black boxes that "do" things of their own accord, to be explained ex-post, but code should be a near equivalent of the same thought expressed in prose.
 
@@ -100,6 +101,7 @@ Donald Knuth has formulated this central tenet of his *Literate Programming* app
 
 I try to follow this approach by interweaving prose and code in one document, using the [`knitr`](http://yihui.name/knitr/) R package [@knitr].
 Aside from published R packages, all code is run *inside* this document upon rendering.
+<!-- TODO add knitr, literate programming ref -->
 Code will usually not be reproduced in print, but can always be inspected in the [source of this document](https://github.com/maxheld83/schumpermas), "*underneath*" the respective operation or result.
 
 
@@ -198,12 +200,13 @@ While its mathematical core --- different methods of exploratory factor analysis
     <!-- TODO add more detail on the problems of the statistics - they're out of date! -->
     <!-- TODO add examples -->
     In epistemological squabbles, too, crazy people [^freakshow] sometimes have real enemies --- or opponents, at any rate.
+    <!-- TODO to name these opponents, cite from BRown's concluding words in his book -->
 
     Happily, within Q, too, considerable disagreement remains (for example, on the appropriate factor extraction technique), though legacy procedures and programs sometimes hamper intellectual progress.
     Unfortunately, misunderstanding and marginalization is sometimes compounded by a lack of deep statistical understanding, though rarely digressing into glib ignorance of "technicalities" or outright mistakes ("varimax rotation maximizes variation", in the otherwise fine textbook introduction by @Watts2012).
     <!-- TODO find precise quotes -->
     <!-- FIXME make sure this is, in fact a mistake with the varimax -->
-    What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown, though at least some of this orthodoxy now appears now obsolete.
+    What may easily appear as articles of faith ("thou shalt not use automatic rotation"), are in fact thoroughly argued reservations, based on a deep mathematical and epistemological understanding, as evidenced in both the works of William Stephenson and Stephen Brown, though at least some of this orthodoxy now appears obsolete.
     <!-- TODO reword this, based on recent experience especially with "centroid myth" -->
     <!-- TODO add citations -->
     These norms become hermetically sealed ideologies ("reliability does not apply to subjectivity") only when detached from their epistemological underpinnings, as, I suspect, would be the case for other methodologies.
@@ -387,6 +390,7 @@ This postulated incomparability applies to this study, too, and plays out in sev
     <!-- TODO notice that at least I stressed that; also relate to later discussion -->
     Relative item rating in Q has a technical reason, too:
     Only because all items are evaluated relative to all other items, all item scores come in the *same* unit (valuation relative to the remaining items), a transposed correlation matrix becomes possible (a statistical summary, of, say, height and weight would be nonsensical).
+    <!-- TODO is this analogy exactly right? Have I really gotten this? -->
     But strictly relative valuation has an epistemological dimension, too: if meaning can be derived from the *entire* item constellation only, participants must always choose *between* items.
     *Rating* and *ranking* measurements, taken to these extremes, are not interchangeable and strictly limit the meaningful presentation of results.
     An item from the World Values Survey can be summarized in isolation, because it was measured independently:
@@ -459,13 +463,14 @@ This postulated incomparability applies to this study, too, and plays out in sev
     The ethics get even more damning, when R statistics treat data as tests, and understanding turns to grading, as so easily happens when looking at the extremely negative correlation of `wealth-tax` and `corporate-income-tax`, or similar would-be inconsistencies.
     In the morning session of the second day, some participants expressed worry over being "tested" in the Q-sorts, as well as the conference.
     The conundrum of measuring people's understanding of taxation, without testing them on some narrowly-preconceived notion of consistency is a familiar one, and it will continue to plague this research.
+    <!-- TODO add link -->
     The least I owe to the CiviCon participants is to make every effort to render their viewpoints understandable *from the inside*.
     That cannot be done with R methodology, and implore everyone using this data *not* to try.
 
     LEGO, again, delivers a coda by analogy.
     A hypotheticodeductive inference on a persons LEGO building would rely on a preconceived understanding of what any given brick means, for example: "this is a transparent brick".
     Any discussion of the (absolute) position of individual items would, absent any other information, have to revert to the preconception of the researcher.
-    For example, one might argue that the extreme placement (on any axes) of the transparent bricks indicates strong feelings for these types of bricks.
+    For example, one might argue that the extreme placement (on any axis) of the transparent bricks indicates strong feelings for these types of bricks.
     In the context of a LEGO house, of course, the transparent bricks may be considered *windows* by participant builders, and be placed on the exterior of the building because of that function.
     More varied meanings of transparent bricks are conceivable.
     A subset of builders may place *small* transparent bricks *inside* the houses, not readily explicable by their transparency: why would *anyone* greatly place almost all transparent bricks on the perimeter, but only a very small one inside, the R researcher may wonder?
@@ -805,7 +810,7 @@ sd(cor$before)
 
 Recall, again, that the correlations in the above matrix are between *people-variables* across *item-cases*.
 The below plot illustrates this for the strongest positive, the strongest negative, the weakest and a self-correlation.
-<!-- TODO(maxheld83) this should probably go someplace else, maybe way above in the 
+<!-- TODO(maxheld83) this should probably go someplace else, maybe way above in the
 cor discussion. -->
 <!-- TODO(maxheld83) Add footnote that jitter was added to avoid overplotting. -->
 
@@ -868,6 +873,7 @@ Without negative correlations, it is unlikely that people will load on opposite 
 Based on the above correlation matrix showing the pairwise similarities of all participants, Q methodology proceeds by summarizing these patterns into *fewer*, *shared* viewpoints.
 
 By way of LEGO analogy, the correlation matrix superimposes any two buildings on top of another, displaying the degree of overlap between them.
+<!-- TODO is that right? -->
 To extract the *kinds* of objects that our participant builders have constructed, we must somehow further summarize this matrix to yield a shorter list of family resemblances among the LEGO objects.
 
 Q methodology, in other words, rests on an *exploratory* data reduction technique.
@@ -960,6 +966,7 @@ Q methodology has a *case* sampling frame, too, but these cases are *items* in Q
 It is not clear, however, what the equivalent to the back-pain scenario of a "stray" variable in Q might imply.
 It is possible that some participants (as the variables) will have less in common with everyone else than others.
 In this study the degree of common variance, provisionally measured as the average correlation per participant row (or columns) in the correlation matrix, ranges from `r min(apply(cor$before, 2, mean))` to `r max(apply(cor$before, 2, mean))`.
+<!-- TODO add explanation what happens with stray items (high variance) in the current design -->
 
 ```{r sum-corr, echo=FALSE, include=FALSE}
 # look at it provisionnally with only the avg cor
@@ -989,6 +996,7 @@ Health symptoms may --- or may not --- have a bearing on burnout, but *all* citi
 A latent-variable generally seems at odds with the scientific study of human subjectivity.
 In contrast to many R-type exploratory factor analyses, per the abductive logic of Q, there *is* no preconception of what might delineate specific from common variance in substantive terms.
 To the extent that all Q sorters participate in the same realm of communicability, and share in the same concourse --- as is assumed by the respective theories for any modern society --- we are equally interested in maverick and mainstream Q sorts.
+<!-- TODO add sources for those theories -->
 In fact, to discount the poorly correlated Q-sorts would be to (slightly) stack the deck in favor of the one straightforwardly *falsifiable* hypothesis that q methodology admits of: namely, that viewpoints are, in fact *shared* (see later discussion on the number of factors). [^why-not-discount-items]
 
 <!-- TODO maybe reference here already the justification/discussion of flagging, which would appear to contradict this argument; I guess the rescue is that flagging is only to "clean up" the ideal points, not anything else. -->
@@ -1035,7 +1043,7 @@ The question of which rotation procedure to use then arises for *every* possible
 1. Because CFA operates directly on the correlation matrix, diagonal entries can be easily replaced, as the researcher sees fit.
    @Brown1980 suggests various replacements on the diagonal of the correlation matrix, including communalities and test-retest reliabilities [-@Brown1980: 211], though any choice of such replacements would appear to imply one or another latent variable model.
    At least if a latent variable model is deemed inapplicable, as is the case here, so is this rationale for using CFA.
-2. Fundamentally, CFA is indeterminant, because it involves  *reflecting* of variables in the correlation matrix, a process that can be done in varying orders, and with varying levels of skill.
+2. Fundamentally, CFA is indeterminant, because it involves *reflecting* of variables in the correlation matrix, a process that can be done in varying orders, and with varying levels of skill.
 <!-- TODO for reflecting source is Holzinger 1946 in Brown 1980 -->
    Because CFA extracts factors by dividing row (or column) sums by the square root of the *sum total of all correlations*, it requires maximally *positive* correlation coefficients.
    To achieve that, negative-sum rows (and columns) are multiplied by $-1$ (reflected), effectively mirroring that Q-sort around the center.
@@ -1070,19 +1078,159 @@ Principal Components Analysis (PCA), originally developed by @Pearson-1901 and (
 There is, however, no published discussion of an application of PCA to Q methodology and its unfamiliar correlation matrix of people-variables.
 Here again, no reiteration of elementary multivariate statistics will be necessary (nor possible), but central concepts must be briefly rehashed in their application to Q data.
 
-Principal components analysis can be (equivalently) described in at least two formalisms: linear algebra and matrix algebra, both of which can be illustrated with the present Q data.
+Recall that exploratory factor analysis in Q serves as a *data reduction* technique, in our case from `r length(colnames(q_sorts))` individual Q-sorts by our participants (as variables) to a smaller number of shared, ideal-typical Q-sorts.
+More precisely, this process *attempts* to reduce the dimensionality of the original data, from `r length(colnames(q_sorts))` dimensions (one for each participant-variable) to a lower-dimensional space, while accounting for as much of the original Q sorts as possible.
+
+PCA accomplishes this by decomposing the dataset into orthogonal (that is, uncorrelated), *eigenvectors*.
+Because `r length(colnames(q_sorts))`-dimensional spaces are hard to wrap your head around, I illustrate how PCA operates on Q data using only selected *pairs* of Q-sorts: the most positively, most negatively and lowest correlated pair.
+The results of such an attempted data reduction from two to one dimension are emphatically *not* interesting in substantive terms (because there *are* more participants), but these subsets serve well to dissect the mathematical operations. [^eigenex-pearson]
+
+[^eigenex-pearson]: Note further that the below, illustrative results cannot be compared to the overall analysis, because the exemplary PCA is based on Pearson's correlation coefficient, not Spearman's.
+  A function to extract eigenvalues *and* scores from a custom correlation matrix was not readily available.
+
+PCA can be (equivalently) described in at least two formalism: linear and matrix algebra.
+
+```{r eigen-examples, include = FALSE}
+source(file = "source/q.eigenpair.R")
+eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
+# do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2))) too small to be informative
+```
 
 
 #### Linear Algebra
 
-```{r eigen-illustration}
-source(file = "source/q.eigenpair.R")
-eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
-# notice this actually is based on pearson cor coeff, because prcomp uses it, otherwise inconsistent, it is JUST TO ILLUSTRATE!
-eigen.examples["positive",2]
-do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2)))
-do.call("grid.arrange", c(t(eigen.examples["lowest",c(4,6)]), list(nrow = 1, ncol = 2)))
+The below panel displays the original scatterplot of the most highly correlated pair, `r eigen.examples[["positive","pairs"]]`, next to the same data in a Q-Q plot.
+
+```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair")}
+do.call("grid.arrange", c(t(eigen.examples[c("positive"),c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
+On the left-hand scatterplot, the axes are simply the ranked columns from `r range(q_sorts)`, under which the two participants sorted the Q cards. [^overplotted-points]
+The points are individual Q cards, positioned according to their ranks by the two Q sorters.
+To remind readers that the data points are *item-cases*, not people-cases as in R-type correlations and PCA, some points are labeled.
+
+[^overplotted-points]: Because Q sorting allows ties, several data points overlap: *several* statements are placed in the same column by both sorters.
+  To counter overplotting, data points are partly transparent and darker points indicate several points in the same position.
+
+The *first* principal component (PC) of any data is the axis through this 2-dimensional cloud of points *along which there is the most variance*.
+This axis can also be imagined as the longest diameter of an ellipsoid fitted around the data points.
+Because the two sorters `r eigen.examples[["positive","pairs"]]`, are *positively* correlated, this ellipsoid is oblong along a diameter with a positive slope. [^peculiar-eigenvec]
+
+[^peculiar-eigenvec]: Because of the peculiarities of forced-distribution Q data, the first PC is always unit-sloped, though this is not a characteristic of PCA in general.
+<!-- TODO better make sure this is in fact an artefact of the data, and not some screwup in my vis -->
+
+Each principal component consists of a pair of *eigenvector* and *eigenvalue*.
+The eigenvector describes the *direction* of the principal component, and the eigenvalue constitutes the *length* of that vector, illustrated with the small arrows plotted over the PC axes in the above figure.
+
+Once the first PC is extracted, PCA continues to the next, orthogonal axis along which data points (here: Q cards) have the second-largest variance.
+This process continues until there are no possible orthogonal axes left, which is the case when there are as many PCs as there were people-variables.
+
+In our exemplary pairs, the second PC is both easy to find and trivial: because there are only two dimensions (one for each Q-sorter in the pair), there is *only one* remaining orthogonal axis.
+
+Crucially, a complete PCA down to the last component *does not*, in fact, reduce  dimensions.
+That is precisely the point of an orthogonal transformation: it merely re-organizes the data on a new set of axes, with axis sorted by the amount of variance they account for.
+The result can be seen on the right-hand side of the above figure: the *same* data is here plotted on the two PCs.
+The first PC, by definition, explains more of the variance in the data, and the points are consequently more spread out on this horizontal dimension than on the vertical dimension.
+
+Because the principal components are just linear combinations of the original axes, these people-variables, `r eigen.examples[["positive","pairs"]]`, can also be added to the plot, by placing them according to their respective (unrotated) loadings on the two components.
+These (unrotated) loadings indicate how much of the respective original people-variable is explained by the two PCs.
+In our example of complete extraction, by construction, the two PCs together explain *all* of the original people-variables. [^unrotated-ex]
+Consequently, multiplying the respective PC scores of the data points (statement-cases) with the loadings of the two original people-variables yields the original data.
+This equivalence of the two plots in the above figure is borne out on close inspection: the left-hand side is, in fact, merely a 135° rotation of the original data.
+
+[^unrotated-ex]: The unrotated loadings are characteristically uninformative; they merely split the explained variance in half between the two PCs.
+
+
+**Operant Subjectivity as Vector Bundles**
+
+Maybe more so than in R-methodological research, the language of linear algebra is well-suited to describe Q, and captures its epistemology with some surprising mathematical precision.
+
+Recall first, that an individual sorting act, of, say `growth-empty` under column `5` is conceived as *operant subjectivity*, that is, subjectivity made *behavior*.
+Rather than passively measuring some (scalar-type) magnitude of agreement with, or distance from a set of items, a respondent will *impress* her subjectivity onto the limited set of statements she is given by *displacing* it from the neutral origin of `0`, from which the Q distribution "distends" to both extremes.
+<!-- TODO find quote for distends -->
+An individual data point in Q (`growth-empty` under column `5`) is therefore, quite literally, best understood as a one-dimensional *vector* associated with a statement: it has a *magnitude* (`5`) *and* a *direction* (right of `0`), and physical work was done for this *displacement*.
+
+Recall further, that respondents express their subjectivity using a *sample* of Q items.
+Any one Q-sort is therefore a family of one-dimensional vector spaces, one for each sampled items.
+Topologically, operant subjectivity is then --- loosely --- defined as a *vector bundle* over some continuous space of human communicability, that sum of things that could be said about any subject.
+<!-- TODO talk to jan whether this language is actually precise, mathematically -->
+A particular subject and associated condition of instruction are then a *plane* through that space, in this case, the sum of things that could be said about taxation and the economy.
+The present Q study further reduces the vector bundle by sampling `r nrow(q_sorts)` statements from their respective bases.
+
+The eigenvectors and -values of PCA, illustrated in the above example, now extract --- to the extent possible --- *common* sets of movements of item-cases *across* the people-variables.
+Perplexingly, the Principal Components (precisely: their scores) are, themselves, *vector bundles*, that is, sets of displacements shared by several respondents.
+Loosely, but helpfully, the first PC in the above example can be imagined as a set of *common* displacement instructions: move `growth-empty` from `0` to `5`, move `ability-2-pay` from `0` to `-2`, and so on.
+Each individual Q sort, such as `r eigen.examples[["positive","pairs"]]` could be completely *recreated* using several sets (here, two PCs) of such instructions, each weighted by that respondents loading.
+
+Throughout these operations, a Principal Components Analysis (PCA) maintains the epistemological and ontological stance of operant subjectivity.
+Appropriately, it produces results that, as Stephenson demanded, can be quite literally read as "pure behavior": PCA scores are shared bundles of vectors, telling researchers how to displace Q items from `0`, according to particular viewpoint.
+<!-- TODO add source -->
+
+
+**Data Reduction**
+
+Readers unfamiliar with PCA may now wonder how the procedure can *reduce*, in addition to
+*transform* data, which is the key objective in the current analysis.
+In short, PCA allows us to reduce dimensions, because it re-organizes the data in a new set of orthogonal dimensions (PCs), ranked from most to least "descriptive" of the original data.
+Depending on the relative amounts of variance accounted for by subsequent PCs, "later" dimensions may be dropped, with relatively little information lost.
+This familiar process again takes on specific meaning in Q methodology.
+
+A comparison of the above eigenvalue extraction of the most positively correlated pair, `r eigen.examples[["positive","pairs"]]` with the least correlated pair, `r eigen.examples[["positive","pairs"]]`, illustrates the process.
+
+```{r linear-algebra-lowest, fig.cap = c("Eigenvector Extraction from Least Correlated Pair")}
+do.call("grid.arrange", c(t(eigen.examples[c("lowest"),c(4,6)]), list(nrow = 1, ncol = 2)))
+```
+
+The original, uncorrelated sorts by `r eigen.examples[["lowest","pairs"]]` can still be decomposed into eigenvectors, and transformed accordingly, but there is very little reason to drop *one* of the components, because both explain equal amounts, and about as much *as the original case-variables*.
+The ellipsoid of the eigenvector plot on the left-hand side appears quite close to circular; only marginally more variance can be projected on the PC1 axis than *any* other axis.
+To be sure, the original vector bundles can still be reformulated in terms of eigenvalues, as in the biplot on the right-hand panel, but little is gained by such an operation.
+Instead of *two* separate sets of displacement instructions, one for each participant-variable, we now have *two* compound sets of such instructions, which *both* apply to the Q sorts, but with different weights (or loadings).
+For example, instead of a simple *move `growth-empty` from `0` to `5`* `r eigen.examples[["lowest","pairs"]][1]`'s sort might now be recreated by, say, multiplying the first PC instruction (*move `growth-empty` from `0` to `6`*) by its loading (`.5`) and adding the second PC instruction (*move `growth-empty` from `0` to `-4`*), multiplied by its loading (`-.5`).
+No information is thus lost, but there is also no reason to drop any of the PCs as dimensions.
+Because they are uncorrelated, the sorts by `r eigen.examples[["lowest","pairs"]]` *cannot* be meaningfully compressed without loosing a lot of information.
+
+This futility of reducing the dimensionality of `r eigen.examples[["lowest","pairs"]]` is borne out in Q methodological terms.
+Their respective operant subjectivities are expressed in quite unrelated vector bundles; these *could* be eigenvector-decomposed into two vector bundles, but both of these synthetic instruction tests would be alien to the real world, and likely unintelligible.
+To further illustrate, consider the familiar LEGO analogy.
+Suppose that LEGO cars and houses share no common assembly instructions.
+Still, imagine these two building manuals would be bunched up in two new, *synthetic* manuals, where, say, the respective first lines read "*take a `ramp-shaped object` and move it up `4`*" and "*take a `ramp-shaped object` and move it down `4`*".
+The meta-manual for the house would then advise you to do what the first manual said, *plus* the opposite of what the second manual said.
+If you follow the instructions precisely, you will still place the roofing tile at the top of the house, where it belongs, so strictly speaking, no information would be lost.
+Obviously, though, the synthetic building manuals do not, in themselves, describe any *real existing* objects, and do not invite a design critique (or otherwise).
+The same holds for a Q-methodological interpretation: a synthetic vector bundle that is *not*at least roughly expressive of *actual* Q sorts is emphatically *not* subjectivity turned behavior, and allows no abductive interpretation thereof, because there is no such underlying behavior to begin with, just like there is no car-house (granted, there *are* motorhomes).
+
+By contrast, consider the below, spurious eigenvalue decomposition of `r eigen.examples[["identity","pairs"]][1]` with herself.
+
+```{r linear-algebra-identity, fig.cap = c("Spurious Eigenvector Extraction from Identical Pair")}
+do.call("grid.arrange", c(t(eigen.examples[c("identity"),c(4,6)]), list(nrow = 1, ncol = 2)))
+```
+
+Such a perfect (`1.00`) correlation is unlikely to exist in real Q studies, but serves as an instructive boundary case.
+In the eigenplot on the left, all (overplotted) items form, by definition, a perfect straight line.
+An ellipsoid shaped around this data would be infinitesimally narrow, extending along all points on that line.
+There is only *one* eigenvector (the second one has a length, or eigenvalue, of `0`).
+Once transposed into the biplot on the right-hand side, it becomes obvious that the second PC can be dropped as a dimension: the data *only* vary horizontally, and no information is lost.
+Circularly, because these two Q sorts are identical, they can be created from *one* synthetic set of displacement instructions, which we might call `r eigen.examples[["identity","pairs"]][1]`.
+In terms of the LEGO analogy consider a scenario, in which two supposedly distinct building manuals yielded the *exact* same LEGO car –-- you might conclude that the two separate instructions were created in error, and that you might as well keep only one of them.
+Notice further that the "synthetic" vector bundle describing the construction of both Q sorts, is, in fact, correlated (perfectly!) with real-existing operant subjectivity.
+In this boundary case, the scores for the first Principal Component, are, in fact, not synthetic at all: they are simply `r eigen.examples[["identity","pairs"]][1]`'s sorting vectors.
+
+In real world PC analysis of Q data, as is the objective here, matters are a great deal more nuanced, because correlations are often neither perfect, nor completely absent.
+
+Recall the above figure on the most strongly correlated pair, `r eigen.examples[["positive","pairs"]]` for a more realistic example.
+In this scenario, it might be acceptable to drop the second PC as a dimension, and call it the `r eigen.examples[["positive","pairs"]]`-factor.
+This would be a *lossy* data reduction; the variance spread on the second PC (vertical axis in the right-hand side biplot) is lost.
+This second PC accounts for the *difference* between the two Q sorts, as illustrated by their case-variable arrows pointing in opposite dimensions on this vertical dimension.
+By dropping the second PC, we thereby preserve and interpret *only* `r eigen.examples[["positive","pairs"]]`'s *shared* subjectivities, or viewpoints –-- exactly as intended here.
+Consider a LEGO-built car and train as analogous illustrations; these objects share a decent amount of features (both have wheels, headlamps, windshields, etc.) but they also differ tremendously (length, weight, undercarriage).
+Dropping the second PC, only a first PC of shared characteristics would remain, a set of vector bundles that might be interpreted as a `rolling-thing` factor, or something similar.
+This may well be a gross oversimplification, but notice that both a `rolling-thing` and a `r eigen.examples[["positive","pairs"]]`-factor, while synthetic, *roughly* describe observed, operant subjectivity, and may be amenable to some interpretation ("*it's designed to move*", "*it's a pretty leftist outlook*", respectively.)
+
+Of course, there is not much to reduce two-dimensional data, of pairs of LEGO objects or Q-sorts, as in the examples above.
+The need to reduce dimensions becomes pressing only when the original dimensionality is overwhelming for interpretation, as is the case for the `r length(colnames(q_sorts))`-dimensional space of Q-sorts to be analyzed here.
+
+That is the decision we turn to next: how many dimensions to drop, and why.
+
+
 
 
 #### Matrix Algebra
