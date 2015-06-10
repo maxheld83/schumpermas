@@ -1235,6 +1235,33 @@ That is the decision we turn to next: how many dimensions to drop, and why.
 
 #### Matrix Algebra
 
+```{r matrix-tex-builders, echo=FALSE}
+source(file = "source/Make.LaTeX.Matrix.R")
+```
+
+
+(@matrix-positive) $$
+\begin{aligned}
+\mathbf{Correlation}_{`r eigen.examples[["positive","pairs"]]`} \times \mathbf{Eigenvector} &= \mathbf{Scaled Matrix} = Eigenvalue \times \mathbf{Eigenvector} \\
+```{r test23, echo=FALSE, results="asis"}
+# options(digits=2)  # this would be nice, but does not work, because the below function returns a *string*
+corr <- cor(q_sorts[,eigen.examples[["positive","pairs"]],"before"])
+cat(x = m2l(corr))
+cat("\\times")
+vector <- as.matrix(eigen.examples[["positive","eigen"]]$vectors[,1])
+cat(m2l(vector))
+cat("&=")
+mult.vec <- corr %*% vector
+cat(m2l(mult.vec))
+cat("=")
+# as.vector(unique(mult.vec / vector)) * vector == mult.vec  # test, it works!
+cat(as.vector(unique(mult.vec / vector)))
+cat("\\times")
+cat(m2l(vector))
+```
+\end{aligned}
+$$
+
 <!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
 
 <!-- @Fabrigar-Wegener-2012 31

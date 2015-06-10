@@ -21,7 +21,7 @@ m2l <- function(matr) {  # this function only makes matrices, without borders
     ret <- paste(paste(x, collapse = " & "), "\\\\")
     sprintf(ret)
   }
-  out <- apply(matr,1,printmrow)
-  out2 <- paste("\\begin{bmatrix}", paste(out, collapse = ' '), "\\end{bmatrix}")
+  out <- apply(matr, 1, printmrow)
+  out2 <- paste("\\begin{pmatrix}", paste(out, collapse = ' '), "\\end{pmatrix}")  # use parantheses instead
   return(out2)
 }
