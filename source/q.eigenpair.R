@@ -54,7 +54,7 @@ Eigen.Illustrate <- function(data, cormatrix = NULL, pairs = NULL, cases = NULL)
 
   # Set up data structure
   data <- as.data.frame(data)  # ggplot does not like matrices
-  eigenpairs <- matrix(data = pairs, nrow = length(pairs), ncol = 6, dimnames = list(names(pairs), c("pairs","scatterplot", "eigen", "eigenplot", "pca", "biplot")))
+  eigenpairs <- matrix(data = pairs, nrow = length(pairs), ncol = 11, dimnames = list(names(pairs), c("pairs", "scatterplot", "eigen", "eigenplot", "pca", "biplot", "evector", "evalue", "corrm", "scalem", "formula")))
     # make this a MATRIX of LISTS (though pairs is just a vector, other cbound objects will be lists)
 
   # For loop over all pairs
@@ -72,9 +72,38 @@ Eigen.Illustrate <- function(data, cormatrix = NULL, pairs = NULL, cases = NULL)
     scatterplot <- styleg(g = scatterplot)
     eigenpairs[[i,"scatterplot"]] <- scatterplot
 
+    # save whatever cormatrix was entered (this CAN be spearman!)
+    corrm <- cormatrix[current.pair,current.pair]
+    eigenpairs[[i, "corrm"]] <- corrm  # write to output object
     # calculate eigenstuff ====
-    eigen <- eigen(cormatrix[current.pair,current.pair])  # calculate eigenvectors and values
-    eigenpairs[[i,"eigen"]] <- eigen
+    eigen <- eigen(x = corrm)  # calculate eigenvectors and values
+    eigenpairs[[i,"eigen"]] <- eigen  # keep this for legacy support
+    evalue <- eigen$values
+    eigenpairs[[i, "evalue"]] <- evalue  # store sep for convenience
+    evector <- as.matrix(eigen$vectors[,1])  # take only 1st eigenvector
+    eigenpairs[[i, "evector"]] <- evector  # store sep for convenience
+    scalem <- corrm %*% as.matrix(evector)
+    eigenpairs[[i, "scalem"]] <- scalem  # store sep for convenience
+
+    # formula ===
+    source(file = "source/Make.LaTeX.Matrix.R")  # this is to make the latex
+    formula <- c(
+      "\\begin{aligned}",  # set up environment
+      # formula with placeholders
+      "\\mathbf{Correlation}_{", current.pair, "}", "\\times", "\\mathbf{Eigenvector}",
+      "=",
+      "\\mathbf{Scaled Matrix}",
+      "=",
+      "Eigenvalue", "\\times", "\\mathbf{Eigenvector}",
+      "\\\\",  # linebreak
+      # with actual data
+      m2l(corrm), "\\times", m2l(evector),
+      "=",
+      m2l(scalem),
+      "=", round(x = as.vector(unique(scalem / evector)), digits = 2), "\\times", m2l(evector),  # the multiplier
+      "\\end{aligned}"
+    )
+    eigenpairs[[i, "formula"]] <- formula  # store sep for convenience
 
     # eigenplot ======
     if (current.pair[1] != current.pair[2]) {  # ellipse is only defined if not equal, makes sense!
