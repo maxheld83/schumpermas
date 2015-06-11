@@ -957,6 +957,19 @@ In the correlation matrix of variables, we may want to replace the diagonal entr
 The sampling frame "burnout patients" implies --- however justifiably --- a latent variable (burnout), that we expect behind all shared manifestations.
 Conversely, we would only want to model patterns of variable correlations that are widely shared by our burnout patients, and would therefore greatly "discount" idiosyncratic variables such as back pain.
 
+
+<!-- This is just for future reference, it's a good quote
+> @Fabrigar-Wegener-2012 31
+> "the common factor model was formulated as a general mathematical framework for understanding the structure of correlations among measured variables.
+> It postulated that correlations among measured variables can be explained by a relatively small set of latent constructs (common factors), and that each measured variable is a linear combination of these underlying common factors and a unique factor (comprised of a specific factor and random error).
+> PCA differs from the common factor model in several notable ways (Wildama, 2007, see also Thomson, 1939)
+> First, PCA was not originally designed to account for the structure of correlations among measured variables, but rather to reduce scores on a battery of measured variables to a smaller set of scores (i.e. principal components).
+> This smaller set of scores are linear combinations of the original measured variable scores that retain as much information as possible (i.e., explain as much variance as possible) from the original measured variables.
+> Thus, the primary goal of PCA is to account for the variances of measured variables rather than to explain the correlations (or covariances) among them.
+> Similarly PCA was not designed with the intent that the principal components should be interpreted as directly corresponding to meaningful latent constructs.
+> Rather the components simply represent efficient methods of capturing information in the measured variables (regardless of whether those measured variables rrepresent meaningful latent constructs).
+> " -->
+
 Recall, again, that in Q methodology, items are cases, and participants are variables.
 Q methodology has a *case* sampling frame, too, but these cases are *items* in Q: it is assumed that all items relate to taxation and the economy. [^tax-sampling-frame]
 
@@ -1082,34 +1095,36 @@ Recall that exploratory factor analysis in Q serves as a *data reduction* techni
 More precisely, this process *attempts* to reduce the dimensionality of the original data, from `r length(colnames(q_sorts))` dimensions (one for each participant-variable) to a lower-dimensional space, while accounting for as much of the original Q sorts as possible.
 
 PCA accomplishes this by decomposing the dataset into orthogonal (that is, uncorrelated), *eigenvectors*.
-Because `r length(colnames(q_sorts))`-dimensional spaces are hard to wrap your head around, I illustrate how PCA operates on Q data using only selected *pairs* of Q-sorts: the most positively, most negatively and lowest correlated pair.
-The results of such an attempted data reduction from two to one dimension are emphatically *not* interesting in substantive terms (because there *are* more participants), but these subsets serve well to dissect the mathematical operations. [^eigenex-pearson]
-
-[^eigenex-pearson]: Note further that the below, illustrative results cannot be compared to the overall analysis, because the exemplary PCA is based on Pearson's correlation coefficient, not Spearman's.
-  A function to extract eigenvalues *and* scores from a custom correlation matrix was not readily available.
-
-PCA can be (equivalently) described in at least two formalism: linear and matrix algebra.
+Because `r length(colnames(q_sorts))`-dimensional spaces as are hard to wrap your head around, I illustrate how PCA operates on Q data using only selected *pairs* of Q-sorts: the most positively, most negatively and lowest correlated pair.
+The results of such an attempted data reduction from two to one dimension are emphatically *not* interesting in substantive terms (because there *are* more participants), but these subsets serve well to dissect the mathematical operations.
 
 ```{r eigen-examples, include = FALSE}
-source(file = "source/q.eigenpair.R")
+source(file = "source/q.eigenpair.R")  # this produces all the example objects
 eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
 # do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2))) too small to be informative
 ```
 
+PCA can be (equivalently) described in at least two formalism: linear and matrix algebra.
+Throughout the following examples, I rely mostly on the graphical, linear algebra but also briefly present the same operations in matrix form.
 
-#### Linear Algebra
 
-The below panel displays the original scatterplot of the most highly correlated pair, `r eigen.examples[["positive","pairs"]]`, next to the same data in a Q-Q plot.
+#### Eigenvalue Decomposition
 
-```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair")}
-do.call("grid.arrange", c(t(eigen.examples[c("positive"),c(4,6)]), list(nrow = 1, ncol = 2)))
-```
-On the left-hand scatterplot, the axes are simply the ranked columns from `r range(q_sorts)`, under which the two participants sorted the Q cards. [^overplotted-points]
-The points are individual Q cards, positioned according to their ranks by the two Q sorters.
+The central operation in PCA, eigenvalue decomposition, can be readily illustrated for 2-dimensional data using familiar plots.
+The below panels display the scatterplot of the original people-variables with overlayed eigenvectors (what might be called *eigenplots*) on the left, and the same data plotted against their respective eigenvectors as axes, with the original people-variables on top (known as *biplots*). [^source-dallas]
+The points in both plots are the item-cases, that is, the Q cards positioned according to their ranks by the two Q sorters. [^overplotted-points]
 To remind readers that the data points are *item-cases*, not people-cases as in R-type correlations and PCA, some points are labeled.
 
 [^overplotted-points]: Because Q sorting allows ties, several data points overlap: *several* statements are placed in the same column by both sorters.
   To counter overplotting, data points are partly transparent and darker points indicate several points in the same position.
+
+[^source-dallas]: The below graphs are inspired by [George Dallas](https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/) tutorial on PCA [@Dallas-2015].
+
+Beginning with the most highly correlated pair of Q sorts, `r eigen.examples[["positive","pairs"]]`, the left-hand eigenplot in the below figure displays a cloud of points, scattered around an upward-sloping axis, as would be expected for a positive correlation.
+
+```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair"), echo = FALSE}
+do.call("grid.arrange", c(t(eigen.examples[c("positive"),c(4,6)]), list(nrow = 1, ncol = 2)))
+```
 
 The *first* principal component (PC) of any data is the axis through this 2-dimensional cloud of points *along which there is the most variance*.
 This axis can also be imagined as the longest diameter of an ellipsoid fitted around the data points.
@@ -1121,17 +1136,28 @@ Because the two sorters `r eigen.examples[["positive","pairs"]]`, are *positivel
 Each principal component consists of a pair of *eigenvector* and *eigenvalue*.
 The eigenvector describes the *direction* of the principal component, and the eigenvalue constitutes the *length* of that vector, illustrated with the small arrows plotted over the PC axes in the above figure.
 
-Once the first PC is extracted, PCA continues to the next, orthogonal axis along which data points (here: Q cards) have the second-largest variance.
+The same variance-summarizing can be illustrated using matrix algebra, as in formula (@matrix-positive).
+The relationship between the two sorters `r eigen.examples[["positive","pairs"]]` is here presented as a familiar correlation matrix, with a diagonal of `1`.
+The eigenvector is simply that vector, which, multiplied with a scalar (the eigenvalue, actually), yields the original matrix, multiplied by the eigenvector.
+Somewhat trivially for a two-dimensional correlation matrix, this first eigenvector in matrix form merely extracts the direction (notice the slope `1` of the vector (`.71, .71`)!) and length (`1.6`) of the main diagonal, the first PC.
+
+(@matrix-positive) $$
+```{r matrix-positive, echo = FALSE, results = "asis"}
+cat(eigen.examples[["positive","formula"]])
+```
+$$
+
+Once the first PC is extracted, PCA continues to the next, orthogonal axis along which data points (here: Q cards as item-variables) have the second-largest variance.
 This process continues until there are no possible orthogonal axes left, which is the case when there are as many PCs as there were people-variables.
 
-In our exemplary pairs, the second PC is both easy to find and trivial: because there are only two dimensions (one for each Q-sorter in the pair), there is *only one* remaining orthogonal axis.
+In our exemplary pairs, the second PC is both easy to find and trivial: because there are only two dimensions to begin with (one for each Q-sorter in the pair), there is *only one* remaining orthogonal axis.
 
 Crucially, a complete PCA down to the last component *does not*, in fact, reduce  dimensions.
 That is precisely the point of an orthogonal transformation: it merely re-organizes the data on a new set of axes, with axis sorted by the amount of variance they account for.
 The result can be seen on the right-hand side of the above figure: the *same* data is here plotted on the two PCs.
 The first PC, by definition, explains more of the variance in the data, and the points are consequently more spread out on this horizontal dimension than on the vertical dimension.
 
-Because the principal components are just linear combinations of the original axes, these people-variables, `r eigen.examples[["positive","pairs"]]`, can also be added to the plot, by placing them according to their respective (unrotated) loadings on the two components.
+Because the principal components are just linear combinations of the original axes, these people-variables, `r eigen.examples[["positive","pairs"]]`, can also be added to the left-side biplot, by placing them according to their respective (unrotated) loadings on the two components (the eigenspace).
 These (unrotated) loadings indicate how much of the respective original people-variable is explained by the two PCs.
 In our example of complete extraction, by construction, the two PCs together explain *all* of the original people-variables. [^unrotated-ex]
 Consequently, multiplying the respective PC scores of the data points (statement-cases) with the loadings of the two original people-variables yields the original data.
@@ -1140,25 +1166,25 @@ This equivalence of the two plots in the above figure is borne out on close insp
 [^unrotated-ex]: The unrotated loadings are characteristically uninformative; they merely split the explained variance in half between the two PCs.
 
 
-**Operant Subjectivity as Vector Bundles**
+#### Operant Subjectivity as Vector Bundles
 
 Maybe more so than in R-methodological research, the language of linear algebra is well-suited to describe Q, and captures its epistemology with some surprising mathematical precision.
 
-Recall first, that an individual sorting act, of, say `growth-empty` under column `5` is conceived as *operant subjectivity*, that is, subjectivity made *behavior*.
-Rather than passively measuring some (scalar-type) magnitude of agreement with, or distance from a set of items, a respondent will *impress* her subjectivity onto the limited set of statements she is given by *displacing* it from the neutral origin of `0`, from which the Q distribution "distends" to both extremes.
+Recall first, that an individual sorting act, of, say `growth-empty` under column `5` is conceived as *operant subjectivity*, that is, subjectivity as and through *behavior*.
+Rather than passively measuring some (scalar-type) magnitude of agreement with, or distance from a set of items, a Q sorter will *impress* her subjectivity onto the limited Q set of statements she is given by *displacing* it from the neutral origin of `0`, from which the Q distribution "distends" to both extremes.
 <!-- TODO find quote for distends -->
-An individual data point in Q (`growth-empty` under column `5`) is therefore, quite literally, best understood as a one-dimensional *vector* associated with a statement: it has a *magnitude* (`5`) *and* a *direction* (right of `0`), and physical work was done for this *displacement*.
+An individual data point in Q (say, `growth-empty` under column `5`) is therefore, quite literally, best understood as a one-dimensional *vector* associated with a statement: it has a *magnitude* (`5`) *and* a *direction* (right of `0`), and physical work was done for this *displacement*.
 
 Recall further, that respondents express their subjectivity using a *sample* of Q items.
 Any one Q-sort is therefore a family of one-dimensional vector spaces, one for each sampled items.
-Topologically, operant subjectivity is then --- loosely --- defined as a *vector bundle* over some continuous space of human communicability, that sum of things that could be said about any subject.
+Topologically, operant subjectivity in general is then --- loosely --- defined as a *vector bundle* over some continuous (high-dimensional?) space of human communicability, that sum of things that could be said about any subject.
 <!-- TODO talk to jan whether this language is actually precise, mathematically -->
-A particular subject and associated condition of instruction are then a *plane* through that space, in this case, the sum of things that could be said about taxation and the economy.
+A particular subject and associated condition of instruction are then a *plane* through that space, in this case, the *concourse* of things that could be said about taxation and the economy.
 The present Q study further reduces the vector bundle by sampling `r nrow(q_sorts)` statements from their respective bases.
 
 The eigenvectors and -values of PCA, illustrated in the above example, now extract --- to the extent possible --- *common* sets of movements of item-cases *across* the people-variables.
 Perplexingly, the Principal Components (precisely: their scores) are, themselves, *vector bundles*, that is, sets of displacements shared by several respondents.
-Loosely, but helpfully, the first PC in the above example can be imagined as a set of *common* displacement instructions: move `growth-empty` from `0` to `5`, move `ability-2-pay` from `0` to `-2`, and so on.
+Loosely, but helpfully, the first PC in the above example can be imagined as a set of *common* displacement instructions shared between people-variables: move `growth-empty` from `0` to `5`, move `ability-2-pay` from `0` to `2`, and so on.
 Each individual Q sort, such as `r eigen.examples[["positive","pairs"]]` could be completely *recreated* using several sets (here, two PCs) of such instructions, each weighted by that respondents loading.
 
 Throughout these operations, a Principal Components Analysis (PCA) maintains the epistemological and ontological stance of operant subjectivity.
@@ -1166,7 +1192,7 @@ Appropriately, it produces results that, as Stephenson demanded, can be quite li
 <!-- TODO add source -->
 
 
-**Data Reduction**
+#### Data Reduction
 
 Readers unfamiliar with PCA may now wonder how the procedure can *reduce*, in addition to
 *transform* data, which is the key objective in the current analysis.
@@ -1176,12 +1202,28 @@ This familiar process again takes on specific meaning in Q methodology.
 
 A comparison of the above eigenvalue extraction of the most positively correlated pair, `r eigen.examples[["positive","pairs"]]` with the least correlated pair, `r eigen.examples[["positive","pairs"]]`, illustrates the process.
 
-```{r linear-algebra-lowest, fig.cap = c("Eigenvector Extraction from Least Correlated Pair")}
+```{r linear-algebra-lowest, fig.cap = c("Eigenvector Extraction from Least Correlated Pair", echo = FALSE)}
 do.call("grid.arrange", c(t(eigen.examples[c("lowest"),c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
 The original, uncorrelated sorts by `r eigen.examples[["lowest","pairs"]]` can still be decomposed into eigenvectors, and transformed accordingly, but there is very little reason to drop *one* of the components, because both explain equal amounts, and about as much *as the original case-variables*.
-The ellipsoid of the eigenvector plot on the left-hand side appears quite close to circular; only marginally more variance can be projected on the PC1 axis than *any* other axis.
+
+This relative "weakness" of the first eigenvector is also obvious in matrix form in formula (@matrix-negative): The first eigenvector is essentially the same, but the associated multiplying eigenvalue is only marginally above 1, meaning that it "explains" *little more than the original case-variables*. [^eigenex-pearson]
+
+[^eigenex-pearson]: Readers will notice an incongruence between the matrix notation and the linear algebra notation here.
+  The first eigenvector in the above eigenplot has a *positive* slope, but a *negative* slope here.
+  In fact, the first eigenvector in matrix notation corresponds to the *second* PC in linear algebra notation.
+  This mixup is a result of technical limitations in this illustration; because no function to extract eigenvalues *and* scores from a custom correlation matrix was readily available, the two analyses use different correlation coefficients.
+  The linear algebra notation is based on Pearson's $\rho$, not Spearman's $\rho$, as all the rest of the analysis.
+  Apparently, the two correlation matrices are sufficiently different in this case to switch the (marginally explanatory) PCs.
+
+(@matrix-negative) $$
+```{r matrix-negative, echo = FALSE, results = "asis"}
+cat(eigen.examples[["negative","formula"]])
+```
+$$
+
+The ellipsoid of the eigenvector plot on the left-hand side appears quite close to circular; only marginally more variance can be projected on the first PC axis than *any* other axis.
 To be sure, the original vector bundles can still be reformulated in terms of eigenvalues, as in the biplot on the right-hand panel, but little is gained by such an operation.
 Instead of *two* separate sets of displacement instructions, one for each participant-variable, we now have *two* compound sets of such instructions, which *both* apply to the Q sorts, but with different weights (or loadings).
 For example, instead of a simple *move `growth-empty` from `0` to `5`* `r eigen.examples[["lowest","pairs"]][1]`'s sort might now be recreated by, say, multiplying the first PC instruction (*move `growth-empty` from `0` to `6`*) by its loading (`.5`) and adding the second PC instruction (*move `growth-empty` from `0` to `-4`*), multiplied by its loading (`-.5`).
@@ -1192,17 +1234,23 @@ This futility of reducing the dimensionality of `r eigen.examples[["lowest","pai
 Their respective operant subjectivities are expressed in quite unrelated vector bundles; these *could* be eigenvector-decomposed into two vector bundles, but both of these synthetic instruction tests would be alien to the real world, and likely unintelligible.
 To further illustrate, consider the familiar LEGO analogy.
 Suppose that LEGO cars and houses share no common assembly instructions.
-Still, imagine these two building manuals would be bunched up in two new, *synthetic* manuals, where, say, the respective first lines read "*take a `ramp-shaped object` and move it up `4`*" and "*take a `ramp-shaped object` and move it down `4`*".
+Still, imagine these two building manuals would be bunched up in *two* new, *synthetic* manuals, where, say, the respective first lines read "*take a `ramp-shaped object` and move it up `4`*" and "*take a `ramp-shaped object` and move it down `4`*".
 The meta-manual for the house would then advise you to do what the first manual said, *plus* the opposite of what the second manual said.
 If you follow the instructions precisely, you will still place the roofing tile at the top of the house, where it belongs, so strictly speaking, no information would be lost.
-Obviously, though, the synthetic building manuals do not, in themselves, describe any *real existing* objects, and do not invite a design critique (or otherwise).
-The same holds for a Q-methodological interpretation: a synthetic vector bundle that is *not*at least roughly expressive of *actual* Q sorts is emphatically *not* subjectivity turned behavior, and allows no abductive interpretation thereof, because there is no such underlying behavior to begin with, just like there is no car-house (granted, there *are* motorhomes).
+Obviously, though, the *separate* synthetic building manuals do not, in themselves, describe any *real existing* objects, and do not invite a design critique (or otherwise).
+The same holds for a Q-methodological interpretation: a synthetic vector bundle that is *not*at least roughly expressive of *actual* Q sorts is emphatically *not* subjectivity turned behavior, and allows no abductive interpretation thereof, because there is no such underlying behavior to begin with, just like there is no "car-house" (granted, there *are* motorhomes).
 
-By contrast, consider the below, spurious eigenvalue decomposition of `r eigen.examples[["identity","pairs"]][1]` with herself.
+By contrast, consider the below, spurious eigenvalue decomposition of `r eigen.examples[["identity","pairs"]][1]` with herself in linear and matrix algebra notation.
 
 ```{r linear-algebra-identity, fig.cap = c("Spurious Eigenvector Extraction from Identical Pair")}
 do.call("grid.arrange", c(t(eigen.examples[c("identity"),c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
+
+(@matrix-identity) $$
+```{r matrix-identity, echo = FALSE, results = "asis"}
+cat(eigen.examples[["identity","formula"]])
+```
+$$
 
 Such a perfect (`1.00`) correlation is unlikely to exist in real Q studies, but serves as an instructive boundary case.
 In the eigenplot on the left, all (overplotted) items form, by definition, a perfect straight line.
@@ -1231,80 +1279,10 @@ The need to reduce dimensions becomes pressing only when the original dimensiona
 That is the decision we turn to next: how many dimensions to drop, and why.
 
 
-
-
-#### Matrix Algebra
-
-$$
-```{r matrix-positive, echo = FALSE, results = "asis"}
-cat(eigen.examples[["positive","formula"]])
-```
-$$
-
-<!-- ) Principal components analysis (PCA) produces just linear transformations of the original variates (q-sorts) into orthogonal (uncorrelated) new variates which each in succession explains as much of the not yet explained variance as is possible.  -->
-
-<!-- @Fabrigar-Wegener-2012 31
-> "the common factor model was formulated as a general mathematical framework for understanding the structure of correlations among measured variables.
-> It postulated that correlations among measured variables can be explained by a relatively small set of latent constructs (common factors), and that each measured variable is a linear combination of these underlying common factors and a unique factor (comprised of a specific factor and random error).
-> PCA differs from the common factor model in several notable ways (Wildama, 2007, see also Thomson, 1939)
-> First, PCA was not originally designed to account for the structure of correlations among measured variables, but rather to reduce scores on a battery of measured variables to a smaller set of scores (i.e. principal components).
-> This smaller set of scores are linear combinations of the original measured variable scores that retain as much information as possible (i.e., explain as much variance as possible) from the original measured variables.
-> Thus, the primary goal of PCA is to account for the variances of measured variables rather than to explain the correlations (or covariances) among them.
-> Similarly PCA was not designed with the intent that the principal components should be interpreted as directly corresponding to meaningful latent constructs.
-> Rather the components simply represent efficient methods of capturing information in the measured variables (regardless of whether those measured variables rrepresent meaningful latent constructs).
-> " -->
-
-- considers all of the available variance (common AND unique), places 1 ons on diagonal.
-- Seeks a linear combination of variables such that maximum variance is extracted (repeats the step)
-- use when there is concern with prediction, parsimony and specific/error variance is small (it is NOT!)
-- results in orthogonal
-
-- it's weird that PCA starts with the greatest-variance factor   because there is no reason in Q to somehow favor that.
-
-<!-- Steps in a PCA
-- extract principal components by matrix multiplication (dot product) -->
-
-<!--
-factor extraction
-just use factanal normal factor
-or normal princcop as opposed to psych
-http://www.statmethods.net/advstats/factor.html
-http://cran.r-project.org/web/packages/nFactors/index.html
-http://cran.r-project.org/web/packages/FactoMineR/index.html
-psych also appears to do parallel analysis by fa.parallel
--->
-
-<!-- funny pun from Brown: factor analysis is a complicated tautology 223 -->
-
-
-#### PAF
-
-analyses SHARED variance only, error is just estimated; PCA estimates ALL variance
-FA causes variables, PCA components are aggregates of the variables.
-
-<!-- COMMENT MH
-agree that in fact, as Kampen and Tamas point out, the representativeness of the q sample to the universe of statements is a weak, weak spot.
-Important: as cuppen in  kampen and tamas writes 3112 it's not the number of supporters that count, just the perspectives.
-Consider the discussion of q methodology and validities oin kampen tamas 3112
-do cluster analysis instead of factor; according to kampen and tamas. This might be interesting.
--->
-
-- considers only common variance (places communality estimates on diagonal of correlation matrix
-- seeks least number of factors that can account for the common variance of a set of variables
-- PAF is only analyzing common factor variability; removing the uniqueness or unexplained variability from the model
-- called PAF
-- PAF does not use all of the variability, just the one that is actually common
-
-@Mulaik-2009: 147
-centroid, developed by Burt and, later Thurstone (1947)
-was developed as an approximation of principal-axis method, while saving computation
-
--CA minimizes the variance after nfactors extracted   that seems like a good thing!
-
-Talk about Thurstone's concept of simple structure, nicely explained in mulaik
-
-
 ### Number of Factors {#nfactors}
+
+
+
 
 ```{r how many factors?}
 # library(paran)
@@ -1427,6 +1405,15 @@ keyneson$before <- qmethod(
 
 
 ### What Rotation?
+
+<!-- COMMENT MH
+agree that in fact, as Kampen and Tamas point out, the representativeness of the q sample to the universe of statements is a weak, weak spot.
+Important: as cuppen in  kampen and tamas writes 3112 it's not the number of supporters that count, just the perspectives.
+Consider the discussion of q methodology and validities oin kampen tamas 3112
+do cluster analysis instead of factor; according to kampen and tamas. This might be interesting.
+-->
+
+<!-- Talk about Thurstone's concept of simple structure, nicely explained in mulaik -->
 
 - Judgmental / Manual
 - Automatic (varimax, equamax etc.)
