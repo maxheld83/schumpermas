@@ -1281,7 +1281,21 @@ That is the decision we turn to next: how many dimensions to drop, and why.
 
 ### Number of Factors {#nfactors}
 
+In choosing a number of factors (or PCs, to be precise) for a Q methodological analysis, you can err both ways.
+Extracting *too many* factors leaves you with spurious viewpoints which, at best, are only marginally more expressive than an individual Q sort, and, at worst, spurious amalgams of quite *different* Q sorts, all mixed together, as in the analogous "car-house" building manual.
+Extracting *too few* factors, at best, you needlessly loose nuance in people's viewpoints, and, at worst, you may disregard people's subjectivity by (through rotation) subsuming them under overly broad factors.
 
+Much of the Q literature appears to treat this choice as *methodological* issue, to be decided based on their downstream merit for factor interpretation, and generally gives the alternative criteria short shrift.
+<!-- TODO add source -->
+
+At least in the context of this study on *changing* operant subjectivity on taxation and the economy, the number of factors is primarily the first *empirical* concern in the chain of analyses.
+Alternately *shared* viewpoints on taxation and the economy are primarily a *positive*, even *falsifiable* question, notwithstanding the need for downstream abductive interpretation.
+Consider, for example, a hypothetical Q sort of items written in a language that the participants *did not understand*.
+In that scenario, we would assume items to be sorted randomly, and would clearly expect *no* shared viewpoints.
+In fact, some respondents noted during the `before` Q-sort that they did not understand some, or even many of the items.
+Arguably, a Q-set on taxation and the economy is thus somewhere along the continuum between intelligible and "foreign language".
+The *absence* of any shared viewpoints are thus a null-hypothesis of sorts, applicable even though the analysis is ultimately geared towards an *interpretation*.
+We therefore need to look at competing criteria for the number of factors to be extracted in some detail.
 
 
 ```{r how many factors?}
