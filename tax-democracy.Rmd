@@ -18,16 +18,13 @@ bibliography: ../held-library/held_library.bib
 library(devtools)
 library(knitr)
 library(rmarkdown)
-library(corrplot)
 library(grid)  # needed, for, well, grids and arrows
 library(gridExtra)  # needed for more grids
 library(reshape2)
+library(plyr)
 library(ggplot2)
-install.packages(c("qmethod"), repos = NULL, type = "source")
+install.packages(c("qmethod"), repos = NULL, type = "source", INSTALL_opts = c('--no-lock'))
 library(qmethod)
-# install_github("vqv/ggbiplot")
-# library(ggbiplot)
-install_github("kassambara/factoextra")
 ```
 
 ```{r setup-knitr, cache = FALSE, include = FALSE}
