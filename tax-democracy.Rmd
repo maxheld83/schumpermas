@@ -23,7 +23,7 @@ library(gridExtra)  # needed for more grids
 library(reshape2)
 library(plyr)
 library(ggplot2)
-install.packages(c("qmethod"), repos = NULL, type = "source", INSTALL_opts = c('--no-lock'))
+install.packages(repos = NULL, type = "source", INSTALL_opts = c('--no-lock'), pkgs = c("qmethod"))
 library(qmethod)
 ```
 
@@ -32,8 +32,7 @@ opts_knit$set(root.dir = normalizePath(getwd()))  # what does this do?
 options(digits=2)
 ```
 
-```{r q-method, message = FALSE, results = "hide", echo = FALSE}
-knit("source/method-q.Rmd")
+```{r q-method, child="source/method-q.Rmd"}
 ```
 
 ```{r results-factors, child="source/results-factors.Rmd"}
