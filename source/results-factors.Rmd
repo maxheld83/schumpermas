@@ -120,13 +120,16 @@ q_sorts <- import.q.sorts(
       "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
       row.names=2
     )
-  )
+  ),
+  header = FALSE
 )
 ```
+
 
 ## Participant Feedback
 
 ```{r import-q-feedback, echo = FALSE}
+#TODO all this importing stuff should be done together with exporting to dataverse in a convenient way, maybe as an R object after all
 q_feedback <- import.q.feedback(
   q.feedback.dir = "keyneson/feedback/",
   q.sorts = q_sorts,
@@ -158,7 +161,7 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 
 ## Codenames
 
-```{r real-names, echo = FALSE, eval = FALSE}
+```{r real-names, echo = FALSE, eval = TRUE}
 real_names <- FALSE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
@@ -623,10 +626,11 @@ The problem is that, in fact, Q data has *many* ties, and using this data, the c
 As the sensitivity analysis in the appendix shows, these differences in correlations can also filter down to the factor analysis, and may even bias the interpretation in a *systematic* way.
 <!-- TODO add, link to sensitivity analysis -->
 
-```{r coefficients-lipset, include=FALSE}
+```{r coefficients-lipset, include=FALSE, eval = FALSE}
+# this is just for the list email to show that results are also different for the lipset data
 data(lipset)
-max(abs(cor(lipset$ldata, method="pearson")-cor(lipset$ldata, method="spearman")))
-max(abs(cor(lipset$ldata, method="pearson")-cor(lipset$ldata, method="kendall")))
+max(abs(cor(lipset$ldata, method = "pearson") - cor(lipset$ldata, method = "spearman")))
+max(abs(cor(lipset$ldata, method = "pearson") - cor(lipset$ldata, method = "kendall")))
 lipset$spearman <- qmethod(
   dataset = lipset$ldata,
   nfactors = 3,
@@ -782,30 +786,10 @@ The simplest summary statistic in lieu of descriptives we are left with is the c
 The correlation matrix is characteristically complex, and hard to interpret --- which is probably why most Q studies, especially with more participants, do not report it.
 
 ```{r cor-viz-before, echo=FALSE}
-
-# make this a list of before/after
-library(corrplot)
-cor <- list("before","after")
-cor$before <- cor(q_sorts[,,"before"], method="spearman")  # make correlations
-# TODO make other array for cor or sth?
-corrplot(corr = cor$before
-  , method = "shade"  # make squares
-  , type = "full"  # take only upper triangular
-  , is.corr = TRUE
-  , addCoef.col = "Black"
-  , diag = TRUE
-  , addCoefasPercent = TRUE
-  , tl.col = "Black"
-  , tl.pos = "tl"
-  , tl.offset = 0.5
-  , order = "alphabet"
-)
-```
-
-```{r cor-anal-more, echo=FALSE, include=FALSE}
-cor$after <- cor(q_sorts[,,"after"], method="spearman")
-sd(cor$after)
-sd(cor$before)
+cor <- array(data = NA, dim = c(ncol(q_sorts), ncol(q_sorts), dim(q_sorts)[3]), dimnames = list(colnames(q_sorts), colnames(q_sorts), dimnames(q_sorts)[[3]]))
+cor[,,"before"] <- cor(q_sorts[,,"before"], method = "spearman")  # make correlations
+cor[,,"after"] <- cor(q_sorts[,,"after"], method = "spearman")  # make correlations
+q.corrplot(cor[,,"before"])
 ```
 
 Recall, again, that the correlations in the above matrix are between *people-variables* across *item-cases*.
@@ -817,13 +801,14 @@ cor discussion. -->
 ```{r cor-example-plot, include=FALSE, eval=FALSE}
 cor.ex <- vector("list", 4)  # create empty list
 names(cor.ex) <- c("positive", "negative", "null", "identity")
-cor.ex$positive <- rownames(which(cor$before == max(cor$before[cor$before < 1]), arr.ind = TRUE))  # find the highest positive correlation pair
-cor.ex$negative <- rownames(which(cor$before == min(cor$before[cor$before < 1]), arr.ind = TRUE))  # find the highest negative correlation pair
-cor.ex$null <- rownames(which(cor$before == min(abs(cor$before[cor$before < 1])), arr.ind = TRUE))  # find the lowest correlation
+cor.ex$positive <- rownames(which(cor[,,"before"] == max(cor[,,"before"][cor[,,"before"] < 1]), arr.ind = TRUE))  # find the highest positive correlation pair
+cor.ex$negative <- rownames(which(cor[,,"before"] == min(cor[,,"before"][cor[,,"before"] < 1]), arr.ind = TRUE))  # find the highest negative correlation pair
+cor.ex$null <- rownames(which(cor[,,"before"] == min(abs(cor[,,"before"][cor[,,"before"] < 1])), arr.ind = TRUE))  # find the lowest correlation
 cor.ex$identity <- c(rep(x = cor.ex$null[2], times = 2))  # identity is just one with him/herself
 labels <- row.names(q_sorts)  # make labels vector
 labels[-sample(x = 1:length(row.names(q_sorts)), size = 3, replace = FALSE )] <- NA  # take a sample otherwise too much overplotting
 cor.ex.plots <- cor.ex  # make empty list with vec.example names
+g <- NULL
 for (i in names(cor.ex)) {
   g <- ggplot(data = as.data.frame(q_sorts[,,"before"]), mapping = aes_string(x = cor.ex[[i]][1], y = cor.ex[[i]][2]))  # need aes_string because vec.examples includes strings (unhelpfully)
   g <- g + geom_point(position = "jitter")  # must jitter b/c overplotting, alpha is bad
@@ -835,8 +820,6 @@ for (i in names(cor.ex)) {
   # TODO(maxheld8) cut superfluous space on the axes
   cor.ex.plots[[i]] <- g  # write out plot
 }
-grid.arrange(cor.ex.plots)
-library(gridExtra)
 n <- length(cor.ex.plots)  # number of plots
 nCol <- floor(sqrt(n))  # number of cols
 do.call("grid.arrange", c(cor.ex.plots, ncol=nCol))
@@ -847,7 +830,7 @@ To protect the anonymity of participants, as discussed elsewhere, I cannot provi
 Suffice it to say that the correlations broadly track views expressed at the conference, and, to a lesser extent, age and education.
 
 Still, some general observations are in order.
-Correlations do not go especially high, with a maximum of `r max(cor$before[cor$before!=1])`, though merely rough similarities may be expected with a diverse and complicated Q-set as `keyneson`.
+Correlations do not go especially high, with a maximum of `r max(cor[,,"before"][cor[,,"before"]!=1])`, though merely rough similarities may be expected with a diverse and complicated Q-set as `keyneson`.
 Recall that some participants reported problems sorting several items: the resulting (random) error might prevent greater correlations (greater overall, and more bifurcated correlations *after* the conference appear to bear this out.)
 
 More remarkable is the fact that while there are several correlations close to 0 --- quite rare in Q ---, there are no substantial *negative* correlations.
@@ -978,13 +961,13 @@ Q methodology has a *case* sampling frame, too, but these cases are *items* in Q
 
 It is not clear, however, what the equivalent to the back-pain scenario of a "stray" variable in Q might imply.
 It is possible that some participants (as the variables) will have less in common with everyone else than others.
-In this study the degree of common variance, provisionally measured as the average correlation per participant row (or columns) in the correlation matrix, ranges from `r min(apply(cor$before, 2, mean))` to `r max(apply(cor$before, 2, mean))`.
+In this study the degree of common variance, provisionally measured as the average correlation per participant row (or columns) in the correlation matrix, ranges from `r min(apply(cor[,,"before"], 2, mean))` to `r max(apply(cor[,,"before"], 2, mean))`.
 <!-- TODO add explanation what happens with stray items (high variance) in the current design -->
 
 ```{r sum-corr, echo=FALSE, include=FALSE}
 # look at it provisionnally with only the avg cor
-range(apply(cor$before, 2, mean))
-summary(cor$before)
+range(apply(cor[,,"before"], 2, mean))
+summary(cor[,,"before"])
 
 # look at the summary loadings of the full model later
 #keyneson$before$loa
@@ -1101,7 +1084,7 @@ The results of such an attempted data reduction from two to one dimension are em
 ```{r eigen-examples, include = FALSE}
 source(file = "source/q.eigenpair.R")  # this produces all the example objects
 eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
-# do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2))) too small to be informative
+# do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2)))  # too small to be informative
 ```
 
 PCA can be (equivalently) described in at least two formalism: linear and matrix algebra.
@@ -1203,10 +1186,10 @@ This familiar process again takes on specific meaning in Q methodology.
 A comparison of the above eigenvalue extraction of the most positively correlated pair, `r eigen.examples[["positive","pairs"]]` with the least correlated pair, `r eigen.examples[["positive","pairs"]]`, illustrates the process.
 
 ```{r linear-algebra-lowest, fig.cap = c("Eigenvector Extraction from Least Correlated Pair", echo = FALSE)}
-do.call("grid.arrange", c(t(eigen.examples[c("lowest"),c(4,6)]), list(nrow = 1, ncol = 2)))
+do.call("grid.arrange", c(t(eigen.examples[c("lowest"), c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
-The original, uncorrelated sorts by `r eigen.examples[["lowest","pairs"]]` can still be decomposed into eigenvectors, and transformed accordingly, but there is very little reason to drop *one* of the components, because both explain equal amounts, and about as much *as the original case-variables*.
+The original, uncorrelated sorts by `r eigen.examples[["lowest", "pairs"]]` can still be decomposed into eigenvectors, and transformed accordingly, but there is very little reason to drop *one* of the components, because both explain equal amounts, and about as much *as the original case-variables*.
 
 This relative "weakness" of the first eigenvector is also obvious in matrix form in formula (@matrix-negative): The first eigenvector is essentially the same, but the associated multiplying eigenvalue is only marginally above 1, meaning that it "explains" *little more than the original case-variables*. [^eigenex-pearson]
 
@@ -1226,7 +1209,7 @@ $$
 The ellipsoid of the eigenvector plot on the left-hand side appears quite close to circular; only marginally more variance can be projected on the first PC axis than *any* other axis.
 To be sure, the original vector bundles can still be reformulated in terms of eigenvalues, as in the biplot on the right-hand panel, but little is gained by such an operation.
 Instead of *two* separate sets of displacement instructions, one for each participant-variable, we now have *two* compound sets of such instructions, which *both* apply to the Q sorts, but with different weights (or loadings).
-For example, instead of a simple *move `growth-empty` from `0` to `5`* `r eigen.examples[["lowest","pairs"]][1]`'s sort might now be recreated by, say, multiplying the first PC instruction (*move `growth-empty` from `0` to `6`*) by its loading (`.5`) and adding the second PC instruction (*move `growth-empty` from `0` to `-4`*), multiplied by its loading (`-.5`).
+For example, instead of a simple *move `growth-empty` from `0` to `5`* `r eigen.examples[["lowest","pairs"]]`'s sort might now be recreated by, say, multiplying the first PC instruction (*move `growth-empty` from `0` to `6`*) by its loading (`.5`) and adding the second PC instruction (*move `growth-empty` from `0` to `-4`*), multiplied by its loading (`-.5`).
 No information is thus lost, but there is also no reason to drop any of the PCs as dimensions.
 Because they are uncorrelated, the sorts by `r eigen.examples[["lowest","pairs"]]` *cannot* be meaningfully compressed without loosing a lot of information.
 
@@ -1240,7 +1223,7 @@ If you follow the instructions precisely, you will still place the roofing tile 
 Obviously, though, the *separate* synthetic building manuals do not, in themselves, describe any *real existing* objects, and do not invite a design critique (or otherwise).
 The same holds for a Q-methodological interpretation: a synthetic vector bundle that is *not*at least roughly expressive of *actual* Q sorts is emphatically *not* subjectivity turned behavior, and allows no abductive interpretation thereof, because there is no such underlying behavior to begin with, just like there is no "car-house" (granted, there *are* motorhomes).
 
-By contrast, consider the below, spurious eigenvalue decomposition of `r eigen.examples[["identity","pairs"]][1]` with herself in linear and matrix algebra notation.
+By contrast, consider the below, spurious eigenvalue decomposition of `r eigen.examples[["identity","pairs"]]` with herself in linear and matrix algebra notation.
 
 ```{r linear-algebra-identity, fig.cap = c("Spurious Eigenvector Extraction from Identical Pair")}
 do.call("grid.arrange", c(t(eigen.examples[c("identity"),c(4,6)]), list(nrow = 1, ncol = 2)))
@@ -1257,10 +1240,10 @@ In the eigenplot on the left, all (overplotted) items form, by definition, a per
 An ellipsoid shaped around this data would be infinitesimally narrow, extending along all points on that line.
 There is only *one* eigenvector (the second one has a length, or eigenvalue, of `0`).
 Once transposed into the biplot on the right-hand side, it becomes obvious that the second PC can be dropped as a dimension: the data *only* vary horizontally, and no information is lost.
-Circularly, because these two Q sorts are identical, they can be created from *one* synthetic set of displacement instructions, which we might call `r eigen.examples[["identity","pairs"]][1]`.
+Circularly, because these two Q sorts are identical, they can be created from *one* synthetic set of displacement instructions, which we might call `r eigen.examples[["identity","pairs"]]`.
 In terms of the LEGO analogy consider a scenario, in which two supposedly distinct building manuals yielded the *exact* same LEGO car –-- you might conclude that the two separate instructions were created in error, and that you might as well keep only one of them.
 Notice further that the "synthetic" vector bundle describing the construction of both Q sorts, is, in fact, correlated (perfectly!) with real-existing operant subjectivity.
-In this boundary case, the scores for the first Principal Component, are, in fact, not synthetic at all: they are simply `r eigen.examples[["identity","pairs"]][1]`'s sorting vectors.
+In this boundary case, the scores for the first Principal Component, are, in fact, not synthetic at all: they are simply `r eigen.examples[["identity","pairs"]]`'s sorting vectors.
 
 In real world PC analysis of Q data, as is the objective here, matters are a great deal more nuanced, because correlations are often neither perfect, nor completely absent.
 
@@ -1282,34 +1265,245 @@ That is the decision we turn to next: how many dimensions to drop, and why.
 ### Number of Factors {#nfactors}
 
 In choosing a number of factors (or PCs, to be precise) for a Q methodological analysis, you can err both ways.
-Extracting *too many* factors leaves you with spurious viewpoints which, at best, are only marginally more expressive than an individual Q sort, and, at worst, spurious amalgams of quite *different* Q sorts, all mixed together, as in the analogous "car-house" building manual.
-Extracting *too few* factors, at best, you needlessly loose nuance in people's viewpoints, and, at worst, you may disregard people's subjectivity by (through rotation) subsuming them under overly broad factors.
+Retaining *too many* factors leaves you with spurious viewpoints which, at best, are only marginally more expressive than an individual Q sort, and, at worst, spurious amalgams of quite *different* Q sorts, all mixed together, as in the analogous "car-house" building manual.
+Retaining *too few* factors, at best, you needlessly loose nuance in people's viewpoints, and, at worst, you may disregard people's subjectivity by (through rotation) subsuming them under overly broad factors.
 
-Much of the Q literature appears to treat this choice as *methodological* issue, to be decided based on their downstream merit for factor interpretation, and generally gives the alternative criteria short shrift.
+Much of the Q literature appears to treat this choice as *methodological* issue, to be decided based on their downstream merit for factor interpretation, and generally gives the alternative *statistical* criteria short shrift.
 <!-- TODO add source -->
 
 At least in the context of this study on *changing* operant subjectivity on taxation and the economy, the number of factors is primarily the first *empirical* concern in the chain of analyses.
-Alternately *shared* viewpoints on taxation and the economy are primarily a *positive*, even *falsifiable* question, notwithstanding the need for downstream abductive interpretation.
+Varying *shared* viewpoints on taxation and the economy are primarily a *positive*, even *falsifiable* question, notwithstanding the need for downstream abductive interpretation.
 Consider, for example, a hypothetical Q sort of items written in a language that the participants *did not understand*.
 In that scenario, we would assume items to be sorted randomly, and would clearly expect *no* shared viewpoints.
 In fact, some respondents noted during the `before` Q-sort that they did not understand some, or even many of the items.
+<!-- TODO add reference to feedback here -->
 Arguably, a Q-set on taxation and the economy is thus somewhere along the continuum between intelligible and "foreign language".
 The *absence* of any shared viewpoints are thus a null-hypothesis of sorts, applicable even though the analysis is ultimately geared towards an *interpretation*.
 We therefore need to look at competing criteria for the number of factors to be extracted in some detail.
 
 
-```{r how many factors?}
-# library(paran)
-# hornvectors <- paran(t(q_sorts[,,"after"]),
-#       iterations = 1000,x
-#       centile = 95,
-#       quietly = FALSE,
-#       status = TRUE,
-#       graph = TRUE,
-#       color = TRUE)
+#### Criteria Based on Eigenvalues
+
+```{r how many factors?, include = FALSE}
+howmany <- NULL
+
+# Separately
+howmany$before <- q.nfactors(dataset = q_sorts[,,"before"], cutoff = 8, siglevel = 0.05, cor.method = "spearman")
+howmany$after <- q.nfactors(dataset = q_sorts[,,"after"], cutoff = 8, siglevel = 0.05, cor.method = "spearman")
+howmany$before$residuals.plots[[1]]
+
+# Together
+bandaf <- cbind(q_sorts[,,"before"], q_sorts[,,"after"])  # take before and after together, this is just for kicks
+colnames(bandaf)[1:17] <- paste(colnames(q_sorts), "before", sep = "-")
+colnames(bandaf)[18:34] <- paste(colnames(q_sorts), "after", sep = "-")
+howmany$together <- q.nfactors(dataset = bandaf, cutoff = 8, siglevel = 0.05)
+
 ```
 
+```{r simulate-paran-more-p, include = FALSE, eval = FALSE, cache=TRUE}
+library(paran)
+resparan <- matrix(data = NA, nrow = 400, ncol = 400)  # make empty results object
+for(i in 2:401) {  # loop over number of variables
+  rdata <- matrix(data = rnorm(n = 77, mean = 0, sd = 2.8), nrow = 77, ncol = i)
+  resparan[1:i, i] <- paran(x = rdata, iterations = 100, centile = 95, quietly = TRUE, status = FALSE)$RndEv
+  print(paste("Calculating for", i, "variables."))
+  flush.console()
+}
+resparan.long <- melt(data = resparan, varnames = c("ncomps", "nvars"), value.name = "randomeigen")
+summary(resparan.long)
+ggplot(data = resparan.long, mapping = aes(x = ncomps, y = randomeigen, group = nvars, colour = nvars)) + geom_line() + geom_hline(yintercept = 1, colour = "red")
+ggplot(data = resparan.long, mapping = aes(x = nvars, y = randomeigen, group = ncomps, colour = ncomps)) + geom_line() + geom_hline(yintercept = 1, colour = "red", ) + geom_vline(xintercept = 77, colour = "green") + ggtitle("N = 77 item-cases")
+#TODO(maxheld83) also try this for different numbers of cases, N
+#TODO(maxheld83) look only at the dispersion of the first PC, others are not so interesting (says Jan)
+#TODO(maxheld83) random matrix theory might be the place to look
+#TODO(maxheld83) make paper out of this for quality and quantity re: Q with Jan?
+#TODO(maxheld83) notice that the EVs *must* increase, because the center line of the corr matrix increase, to which the EVs must sum
+#TODO(maxheld83) notice that with more vars, there will be more identical vars, that is there will be more ZERO.vectors (or close to zero) in the PCA, as a result, "earlier" eigenvalues have to grow, so it *might* end up being linear very very late in the game, with very very many people and few cards.
+```
+
+Eigenvalues and derivative statistics, summarized in the below figure, give a readily interpretable standard for deciding the number of factors: they summarize the descriptive power of each successively extracted eigenvector.
+Because there are as many eigenvalues as there are people-variables in a Q study, and because eigenvalues *sum* to that number of people-variables, they can be interpreted in terms of *constituent Q-sorts*: the highest eigenvalue accounts for as much as `r max(howmany$before$eigenvalues$Unadjusted)` Q sorts.
+Recall that, conversely, a Q study with all zero-correlated sorts would yield eigenvalues of `1`: every extracted principal component would explain exactly as much variance as *one* original Q sort --- no data *reduction* would be possible.
+A threshold eigenvalue of `1`, otherwise known as the Kaiser-Gutmann rule, [@Kaiser-1960, @Gutmann-1954] thus makes sense for a Q study, too.
+*Shared* subjectivity, at least, should be more expressive than any *one* Q sort.
+
+Eigenvalues can be easily translated into their successive contribution to the overall $R^2$ by dividing them by the number of people-variables in the study.
+The first and highest principal component accounts for a dominant `r max(howmany$before$eigenvalues$R2)` share of the variance, followed by distant second and third principal component.
+
+```{r ev-table-before}
+knitr::kable(howmany$before$eigenvalues)
+```
+
+By the Kaiser-Gutmann rule, also plotted as a red line in the below figure, we may retain up to `r howmany$before$summary["KaiserGuttmann", "NFactors"]` factors.
+
+```{r screeplot-before}
+howmany$after$screeplot
+```
+
+In addition to the level, we may consider the *change* in successive eigenvalues, as additional components are retained.
+@Catell-1966 has suggested a visual criterion based on the above scree plot to guide the decision on how many factors to extract.
+According to Catell, factors should be retained up to an "elbow" point, beyond which successive components drop gently in (unadjusted) eigenvalue, akin to a scree field at the foot of a steep mountain.
+A scree test often involves some subjective judgement, especially when the eigenvalue curve has several elbow points, or falls gently over all components.
+In this case, components beyond `3` can probably be considered "scree" to be safely dropped from further analysis, though the sharpest turn occurs already at `2`.
+Under the scree test, either `2` or `3` factors should be retained for further analysis.
+
+The Kaiser-Guttman and Catell criteria both rely on "raw", *unadjusted* eigenvalues.
+While this makes intuitive sense, it risks overretention, especially when sample sizes of *item-cases* are relatively low, as is always the case in Q studies.
+In small samples, some correlations may persist due to "sampling error and least-squares 'bias' " [@Horn-1965: 180], where in larger samples, these spurious similarities would likely cancel out.
+We can readily imagine how this might play out in a Q study: even if the item-cases were in a foreign language, because they are so relatively few, given a sufficiently large number of people-variables, some Q sorts will likely share some variance by random chance.
+From these fluke correlations, Q methodologists might then extract entirely spurious factors, and arrive at interpretations however grounded in their abductive faculties, but unsupported by facts.
+
+To avoid such overretention, John Horn has suggested a procedure called "parallel analysis".
+The procedure, here based on an implementation in R by @Dinno-2012, repeatedly extracts factors from *random* (thereby uncorrelated) data, with the same range and rank as the observed Q study. [^more-parameters].
+As suggested by @Glorfeld-1995, the Dinno's parallel analysis calculates not only the mean of randomly extracted eigenvalues, but, using Monte Carlo estimations, calculates biases at arbitrary centiles, here set to `siglevel = 0.05`.
+The random eigenvalues reported in the above table and plot are the limit *below* which 95% of all eigenvalues from random data fall.
+The *adjusted* eigenvalues are the observed eigenvalues, corrected for the random component.
+
+[^more-parameters]: @Hayton-Allen-etal-2004 urge that parallel analysis should be further parametrized to fit the observed data, but @Dinno-2009 disagrees and finds that given a sufficiently large number of iterations, additional parameters are unnecessary.
+  The present analysis is run with `iterations = 10.000` random datasets.
+
+Using the familiar LEGO analogy, unadjusted eigenvalues as "magnitudes of overlap" between different brick constellations, may express similarities between structures which arose out of random chance.
+Imagine, for example, a set of LEGO bricks placed into a washing machine for a spin cycle. [^LEGO-washing]
+The bricks may well assemble into partly similar structures merely by random chance, such as a stack of colored bricks forming a seemingly meaningful national flag.
+Parallel analysis estimates the overlap between different brick structures that may, in a 95% percentile "worst case scenario" result from random chance only and then *subtracts* such a possible random component from any supposed overlap between, say, car-like and house-like objects assembled by real builders.
+
+[^LEGO-washing]: Incidentally, LEGO bricks in a spin cycle *have* been used to model the genesis of complex structures from simple parts by random recombination, such as in evolution [@Althofer-2014].
+
+Applying Horn's parallel analysis and Glorfeld's extension to Q methodology, we can be 95% certain only that the first *two* factors are *not* a product of random chance *and* explain more than any one constituent Q-sort.
+Parallel analysis posits a fairly conservative standard characteristic for *positive* research: at the 95th percentile --- as opposed to the mean --- it sharply favors false negatives over false positives.
+There *may* well be *real* factors beyond the 2nd principal component, but unless we can be at least 95% sure of their existence, we assume them to be spurious [^50th-percentile].
+This strict standard is in line with mainstream empirical research, and serves well to *falsify* shared subjectivity on taxation and the economy: under a positivist standard, it may be preferable *not* to pollute scientific debate with a result unless proven robust by a conventional probability (95%).
+
+[^50th-percentile]: It should be noted that in this case, even a more lenient 50th percentile would not change the result: only two factors are distinguishable from random data eigenvalues.
+
+
+<!-- TODO: also calculate adjusted R2 -->
+
+
+#### Eigenvalues and Q Methodology
+
+Some leading Q methodologists are, perhaps unsurprisingly, skeptical about statistical criteria for factor retention in general, and eigenvalue-based thresholds in particular.
+
+<!-- TODO write a paper / something out of this, maybe with jan? -->
+<!-- Consider email from schmolck on this, very insightful -->
+
+<!-- From Brown email response:
+The drive to find a universally acceptable criterion for determining the number of factors—so that this particular loose end can be tied up once and for all—takes its place alongside principal components analysis, simple structure, Cronbach’s alpha, and other predetermined procedures, and Gigerenzer (1987) provides an interesting take on this, referring to it as “the fight against subjectivity” (i.e., against the investigator’s subjective judgment) through the mechanization of knowledge, which leads to objective knowledge (presumably) that is independent of a knower.  As Stephenson (1972) said in this regard, “objective measurements and observations can, in principle, be made by everyone (or by a piece of apparatus)…” (p. 17, italics in original).  This is protopostulatory to the social sciences (in the R-methodological mode) and is motivated, according to Gigerenzer, by a desire to approximate the successes of classical physics, which assumes a concrete reality that is separate from the knower and independent of the instruments employed. -->
+
+Convincingly, Brown reminds readers that "eigenvalues and total variance are relatively meaningless in Q-technique studies as they depend to too great extent on the arbitrary number of persons included in the study who happen to be of one factor type, rather than another" [@Brown1980: 233].
+Notice that in Q studies, *both* the item-cases and the people-variables are *not* randomly sampled.
+The Q-set of item-cases, as discussed before, cannot be randomly sampled because there is no theoretically enumerable universe of the concourse.
+<!-- TODO link to earlier discussion -->
+The P-set of people-variables *may* theoretically be randomly sampled, but is usually not, and will arguably always remain self-selected for deliberation, as is the case here.
+In any event, because P-sets are *variables*, they carry no presumption of representation: much like in an R-methodological study, you include variables because they may be *interesting*, not because they are a random subset of all *possible* variables.
+<!-- TODO link to earlier discussion on saturation sampling -->
+Conversely, a set of only very few correlated variables does not make the resulting factor any less interesting, *if* we can be sure that the relationship is not a product of random chance.
+This is emphatically so for Q methodology, which, despite the appearance of *clustering* people is *not* designed to measure the relative prevalence of viewpoints, but their substance. [^sample-problem-eigenvalue]
+
+[^sample-problem-eigenvalue]: It is sometimes suggested that parallel analysis would be *especially* vulnerable to the arbitrary composition of the P-set.
+  That is not so: *all* eigenvalue-based criteria, including the seemingly more "interpretative" scree test are equally influenced by the P-set.
+  Parallel analysis merely shifts the threshold for acceptable eigenvalues by discounting for possible random relationships.
+  The procedure itself, because it draws many *random* datasets is entirely unaffected by the P-set.
+
+Variable selection and its effects on factor and other multivariate analyses are not peculiar to Q methodology; they affect R-type research in similar ways.
+Contrary to R-technique, however, Q methodology --- at least in its current incarnations --- does not have the luxury of increasing the sample size of item-cases to filter out random associations: people can be expected to sort only a limited number of items, with the current `r nrow(q_sorts)` already at the upper bound.
+
+This leaves eigenvalue-based criteria, and especially the stringent parallel analysis in a seemingly awkward spot within Q methodology: under their veneer of scientific objectivity lies the arbitrariness of any particular P-set, in this case, the participants at the first CiviCon Citizen Conference on Taxation.
+With different, especially with more politically *diverse* participants, more, and different factors may have arisen.
+
+Entirely compatible with this caveat, eigenvalue-based criteria and parallel analysis do, however, constitute *sufficient* --- nut merely *necessary* --- conditions to identify shared subjectivities.
+A factor retained under Horn's stringent criteria from any one, however arbitrary P set, *will* at the specified 95% likelihood *persist* through future Q studies with different participants.
+Even if the factor could *not be found* on a future P set, using the same Q set, we could be certain that, if factor analyzed together, the original factors would again yield similar eigenvalues.
+In fact, *because* Q methodology is not concerned with the prevalence of factors, the original factors would, by construction, persist even in an arbitrarily large and diverse P set.
+On the one hand, the covariance explained by the original factors may, in an expanded Q study, be subsumed by other, more refined factors.
+But on the other hand, in the unlikely scenario that even among thousands of other Q sorts, they were unique, *the original factors would still be retained* with adjusted eigenvalues above one.
+<!-- TODO rephrase? -->
+One way or another, the patterns of covariance robustly identified on the basis of eigenvalues and parallel analysis *will* remain recognizable in superseding P sets.
+
+Conversely, would-be factors dropped from the analysis under eigenvalue-based criteria may well fulfill some *necessary* conditions for shared subjectivity, such as making abductive "sense", but we *cannot* be certain that these patterns will persist in a larger, or more diverse, P-set.
+
+To err on the side of caution, and to drop factors unless proven robust over alternate P-sets might be appropriate, especially considering the substantial leeway accorded to Q methodologists during downstream judgmental rotation and abductive interpretation.
+
+Barring any innovations allowing a (far) greater number of item-cases in Q, *reliable* sensitivity can only be increased by adding diverse people-variables to the P-set.
+Recall that eigenvalues and parallel analysis --- though not scree tests --- posit *absolute*, not relative thresholds: in line with Q methodology, it does *not* matter how many people-variables contribute to a factor, only that the corresponding (discounted) eigenvalue is greater than one.
+In a sufficiently large and diverse P-set, even very small groups of non-randomly
+
+
+
+
+While superficially alien to Q methodology, where participants constitute people-variables, greatly increasing *and* diversifying the
+
+While the variance explained by the original factors and shared by those relatively few, and arbitrary participants, may be subsumed under broader, or more precise factors, the same relatio
+
+
+Eigenvalue-based criteria and parallel analysis, do, however, remain
+
+
+
+not only is the Q-set of item-cases *not* randomly sampled (because there is no theoretically enumerable universe of for the concourse
+
+<!-- Notice that Johnstone et al write about this, quite recently, and worry what happens if you have quite a lot of observations, but not so many variables. Apparently (296) this is a problem that plagues disciplines *other* than Q: climate studies, etc. -->
+<!-- Johnstone 298 also notes that "the smaller n/p, the more spread the eigenvalues; even asymptotically, the spread of the empirical eigenvalues does not disappear." -->
+
+<!-- Hayton 192: praises parallal analysis (horn) as one of the most accurate, but most underutilized methods. -->
+
+Turner 1998 as cited in Hayton 202 noted that
+> due to the interdependent natuer of eigenvalues, the presence of a large first factor in a PA will reduce the size of noise eigenvalues. The consequence is that in certain situations, PA can underfactor, which is potentially more serious than overfactoring. The impact of this limitation is most serious for *smaller sample sizes*, where there is a high correlation between factors, or where a second factor is based on a relatively small number of items. (!)
+
+<!-- Talk some more about the *slope* of the scree plot, that is important – and discouraging! -->
+
+<!-- Schmolck says Cattell speaks of random factors, not spurious -->
+
+<!-- Notice that increases in communality need not translate into (rotated) loadings on THAT factor -->
+
+
+
+#### Criteria Specific to Q Methodology
+
+
+#### Criteria Based on Communalities and Residual Correlations
+```{r residuals}
+grid.arrange(howmany$before$residuals.plots[[2]], howmany$before$residuals.plots[[3]])
+do.call(grid.arrange, howmany$before$residuals.plots)
+howmany$before$residuals[c("Susanne","Sabine","Helga"),c("Susanne","Sabine","Helga"),c(2:3)]
+```
+
+Braswell in email points out that communalities are also affected by non-random sampling and in the same way, and he is correct.
+
+Horn is the method of CONSENSUS says Dinno
+
 scree plot is from Catell 1966b
+
+Wilson & Copper 2008: 867 (as cited in Watts/Stenner) define Paran:
+> it "shows how big the first, second, third etc. eigenvalues typically are (...) when in reality there are no factors present in the data"
+
+Notice the problem with Brown's loadings-based criteria: these depend on the *rotation*, and the rotation, in turn, can be decided only *after* the number of factors to be rotated on.
+
+
+Kaiser-Guttman criterion is EV > 1, Guttman 1954, Kaiser 1960, 1970)
+
+Below that accounts for *less* variance than any one Q sort
+
+"Magic number 7" is Brown 1980: 223
+
+n/6-8 is Watts Simon Loc 2546
+
+Humphrey's Rule: "factor siginificant if the cross-product of its two highest loadings exceeds twice the standard error" (Brown 1980: 223)
+
+unknown / Brown 1980: 222-223 > 2 sig loading people
+
+> The basic logic behind parallel analysis is to improve upon the eigenvalue > 1 (principal component analysis) or eigenvalue > 0 (common factor analysis), by (1) recognizing that in finite data, some eigenvalues will be greater than 1 or less than 1 simply due to chance because the correlation matrix will not be a perfect identity matrix, and (2) correcting for this "sampling and least squares bias" by averaging the each of the p eigenvalues from "many" uncorrelated data sets of the same n and p as your observed data, and retaining only those observed eigenvalues greater than the corresponding mean of random data eigenvalues.
+
+
+In plain english: it is the likelihood that it is less than ... etc.
+
+Just what bRown means with this is characteristically unclear:
+
+> But as will be shown, insignificant factors frequently contain small amounts of systematic variance that can help in improving the loadings on a major factor, in the same way that otherwise useless autos may contain parts that can be pillaged in order to make a good car even better.
+> After rotation, insigificant residual factors are merely discarded.
+> -- BRown 1980Ö: 223
+
+comment on communality later on; it stays the same no matter how the stuff is rotated
 
 Kaiser 1960 is just all eigenvalues greater than .1
 
@@ -1320,6 +1514,24 @@ Kaiser's generally overestimates (Field Miles discovering stats 762)
 - Chi-Square: non-significant result
 - Horn's parallel analysis
 
+Techniques most commonly used include
+1) Extracting factors until the chi square of the residual matrix is not significant.
+2) Extracting factors until the change in chi square from factor n to factor n+1 is not significant.
+3) Extracting factors until the eigen values of the real data are less than the corresponding 27
+eigen values of a random data set of the same size (parallel analysis) fa.parallel (Horn, 1965).
+4) Plotting the magnitude of the successive eigen values and applying the scree test (a sudden drop in eigen values analogous to the change in slope seen when scrambling up the talus slope of a mountain and approaching the rock face (Cattell, 1966).
+5) Extracting factors as long as they are interpretable.
+6) Using the Very Structure Criterion (vss) (Revelle and Rocklin, 1979).
+7) Using Wayne Velicer’s Minimum Average Partial (MAP) criterion (Velicer, 1976).
+8) Extracting principal components until the eigen value < 1.
+Each of the procedures has its advantages and disadvantages. Using either the chi square test or the change in square test is, of course, sensitive to the number of subjects and leads to the nonsensical condition that if one wants to find many factors, one simply runs more subjects. Parallel analysis is partially sensitive to sample size in that for large samples the eigen values of random factors will be very small. The scree test is quite appealing but can lead to differences of interpretation as to when the scree“breaks”. Extracting interpretable factors means that the number of factors reflects the investigators creativity more than the data. vss, while very simple to understand, will not work very well if the data are very factorially complex. (Simulations suggests it will work fine if the complexities of some of the items are no more than 2). The eigen value of 1 rule, although the default for many programs, seems to be a rough way of dividing the number of variables by 3 and is probably the worst of all criteria.
+
+<!-- Notice that Dinno has found that actually, it's not necessary to parametrize the paran -->
+
+<!-- hayton has more details on how to do paran, cite this -->
+
+<!-- The word is over/underretention -->
+
 
 ### Other tests
 
@@ -1329,6 +1541,7 @@ Some of these criteria are general others are specific to Q
 - test of sphericity?
 - test of multicolinnearity?
 
+<!-- # Brown's two sig-loading criterion (watts Stenner 2012: loc 2551 in Kindle), also Brown 1980: 222-223 -->
 
 <!-- Use the lego example to explain the logic of the combinatorics - this can actually be good news, even with the small number of people -->
 
@@ -1391,18 +1604,23 @@ also, in my case, arguably sampling *is* ok, because deliberative participants w
 
 <!-- TODO(maxheld83) notice some more that this cannot replace a real textbook, that's obvious, it's just an exercise of what all of this means for Q, which is important, because it's otherwise illiterate -->
 
+
+#### Conclusion: The Degree of Shared Viewpoints Before CiviCon
+
+
 ### Principal Components Extraction
 
 ```{r analysis}
-keyneson <- list("before"=c(), "after"=c())
+keyneson <- list("before" = c(), "after"= c ())
 #keyneson$before <- list("pearson"=c(), "kendall"=c(), "spearman"=c())
 keyneson$before <- qmethod(
   dataset = q_sorts[,,"before"],
   nfactors = 3,
-  rotation = "varimax",
+  rotation = "none",
   forced = TRUE
-  , cor.method = "spearman"
+  , cor.method = "pearson"
 )
+
 #keyneson$before$pearson$flagged == keyneson$before$spearman$flagged
 #keyneson$before$kendall$flagged == keyneson$before$spearman$flagged
 #sum(keyneson$before$pearson$f_char$characteristics$expl_var)
@@ -1426,6 +1644,13 @@ Important: as cuppen in  kampen and tamas writes 3112 it's not the number of sup
 Consider the discussion of q methodology and validities oin kampen tamas 3112
 do cluster analysis instead of factor; according to kampen and tamas. This might be interesting.
 -->
+
+```{r manual-rotation, include=FALSE, eval=FALSE}
+q.rotate(results = keyneson$before, plot.type = "base", cache = FALSE)
+```
+Brown calls varimax etc "atheoretical rotation" (Brown 1980: 227 ) - nice!
+
+great example / illustration with the stuff on the beach comes from Brown 1980: 222
 
 <!-- Talk about Thurstone's concept of simple structure, nicely explained in mulaik -->
 
@@ -1518,7 +1743,7 @@ is there maybe a need to also look at the loose lego blocks *overall*? And what 
 -->
 
 ```{r array-viz, fig.width = 20, fig.height=18}
-arrayviz <- array.viz(
+arrayviz <- q.scoreplot(
   results = keyneson$before
   #,f.names = c("resentment","critical","moderate") TODO(maxheld83) name them separately
   ,incl.qdc = TRUE
