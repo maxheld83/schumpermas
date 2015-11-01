@@ -1,7 +1,0 @@
-# Problems to be solved
-
-- Communality / nloads of factors seem to change (different people!)
-- Eigenvalues increase!
-- Factor of factors?
-- Factor of item movements?
-Look at factor CONGRUENCE (the angles!)

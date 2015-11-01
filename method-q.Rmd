@@ -7,6 +7,38 @@ library: held_library.bib
 
 # Q Methodology
 
+<!-- Onsampling Q statements from non-natural occurences, from some email from the list
+
+> I agree with Lucy Parry on both counts:  (a) Q statements are not variables, but elements in a sample, drawn from the universe of subjective communicability; and (b) statements ought to be altered as little as possible from their original form.  In a doctoral dissertation from some years ago (Newman, 2005), statements about physician-assisted suicide and euthanasia were drawn from two academic articles that claimed comprehensiveness from Kant onward, but the language was in academese and so some words were replaced with equivalents that were more accessible to members of the general public who, along with experts, would be taking the Q sort—e.g., by converting “The patient’s values should form the basis for the regimen to treatment” to “The patient’s values should form the basis for medical treatment.”
+> Mine is VERY similar to this design:
+
+
+But to respond to Jonathan Bishop….  He says that "the selection of variables [by which he means statements] must be based on theory,” but the statements are in no way dependent upon the theory in the same way that scale items are dependent upon the concepts that they are assumed to represent.  In the above-mentioned study of doctor-assisted suicide, for instance, the authors who were summarizing the debate (Fins & Bacchetta, 1994, 1995) claimed that it boiled down to three principles, viz.:
+
+PRINCIPLES
+(a) deontology  (b) clinical pragmatism  (c) consequentialism
+
+VALENCE
+(d) pro  (e) con
+
+All statements that they reported fit into one of these three categories, and to expand diversity in the Q sample, statements both for and against doctor-assisted suicide were included.  Eventually, n=6 statements from each of the (2)(3)=6 categories above were selected, for a Q sample of N=36.  The role of the above factorial design ends with the selection of statements, however, and the results are not analyzed via variance analysis, which preserves the categories; rather, by way of factor analysis, which preserves the subjectivity (Brown, 1999; Stephenson, 1993/1994).  In Q, it is rarely the case that there are hypotheses to test, in keeping with the hypothetico-deductive framework; more commonly, there are structures to be found and understood, in line with an abductory framework.e
+
+
+
+
+Notice that maybe the condition of instruction really did change during my study or it should in future: people can give their viewpoint from their own view, or from a rawlsian or Sth especially if the conference proceeds and take it as real civic duty.
+Consider for example that Paul stenner had people draw scenarios of an experience of jealousy to get people in the headspace.
+Civicon might be something similar.
+
+Problem is: is that then an artifact or a result?
+
+Diss: a little bit of data is a very dangerous thing
+
+> -->
+
+
+
+
 <!-- q methodology is "zwischen den stuehlen", and for that reason alone seems appropriate for this research project (jk).
 It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
 So the voices become more strained, more insular and isolated.
@@ -22,6 +54,22 @@ Also, I know do tax, exactly the kind of research that I was previously opposed 
 <!-- In a word, q method is "subjective" but not "arbitrary" Brown 1980: 257 -->
 
 <!-- Saturation sampling is mentioned citing Glaser and Strauss 1967: 61-62 in Brown 1980 -->
+
+<!-- comment more broadly on the inadequacy of survey research on welfare states;
+- both because WS is a non-issue,
+- because items on WS are bs
+- because survey research makes people passive, instrumental rationality, it's not about the context
+- notice how more often than not, the data availability of surveys determines the research (including that there are no widespread surveys on preferences towards the economy) – so we really have to look into the politics of survey design, especially the BIG surveys, the wield great power. -->
+
+
+<!-- Notices from video
+- Concourse is similar to comm. practice (Habermas)
+- Concourse is old concept from cicero, stephen brown video 1
+- similaratiy: It's PRAGMATIC, about SOLVING PROBLEMS (loosely defined)
+- Video 2: any single statement concourse be the launch pad for a new entire study, so you kind of start at an arbitrary stage
+- random numbering is important to Steven Brown video 2 -->
+
+
 
 > In placing emphasis on the centrality of self-reference, as outlined in more detail elsewhere (Brown and Taylor, 1972, 1973), we run the risk of being lumped with those phenomenologists and existentialists who tend to reify the self, denuding it of all meaning in an effort to save mankind from mathe- maticians. (Conversely, in suggesting the use of factor analysis, we run the opposite risk of being accused of having made the world unsafe for humanists.) It is therefore necessary to rescue the self and subjectivity from any meta- physical smoke screen behind which others may seek to conceal it.
 Fundamentally, a person's subjectivity is merely his own point of view. It is neither a trait nor a variable, nor is it fruitful to regard it as a tributary emanating from some subterranean `stream of consciousness." It is pure behavior of the kind we encounter during the normal course of the day, as when a person prefaces his remarks with "As far as I'm concerned ... ," or "In my opinion
@@ -137,6 +185,21 @@ Loevinger is scited in brown on how it is impossible to delineate.
 
 > "more art than science"
 > -brown 186
+
+
+on synthesized statements via Q listserv from Steven Brown:
+> In a doctoral dissertation from some years ago (Newman, 2005), statements about physician-assisted suicide and euthanasia were drawn from two academic articles that claimed comprehensiveness from Kant onward, but the language was in academese and so some words were replaced with equivalents that were more accessible to members of the general public who, along with experts, would be taking the Q sort—e.g., by converting “The patient’s values should form the basis for the regimen to treatment” to “The patient’s values should form the basis for medical treatment.”,
+
+from the same email, clarifies quite well why I'm not getting out the same vars as I plugged in:
+> But to respond to Jonathan Bishop….  He says that "the selection of variables [by which he means statements] must be based on theory,” but the statements are in no way dependent upon the theory in the same way that scale items are dependent upon the concepts that they are assumed to represent.  In the above-mentioned study of doctor-assisted suicide, for instance, the authors who were summarizing the debate (Fins & Bacchetta, 1994, 1995) claimed that it boiled down to three principles, viz.:
+>
+> PRINCIPLES
+> (a) deontology  (b) clinical pragmatism  (c) consequentialism
+>
+> VALENCE
+> (d) pro  (e) con
+>
+> All statements that they reported fit into one of these three categories, and to expand diversity in the Q sample, statements both for and against doctor-assisted suicide were included.  Eventually, n=6 statements from each of the (2)(3)=6 categories above were selected, for a Q sample of N=36.  The role of the above factorial design ends with the selection of statements, however, and the results are not analyzed via variance analysis, which preserves the categories; rather, by way of factor analysis, which preserves the subjectivity (Brown, 1999; Stephenson, 1993/1994).  In Q, it is rarely the case that there are hypotheses to test, in keeping with the hypothetico-deductive framework; more commonly, there are structures to be found and understood, in line with an abductory framework.
 
 
 ```{r q-concourse}

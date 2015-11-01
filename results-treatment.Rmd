@@ -1,0 +1,31 @@
+# Problems to be solved
+
+<!-- - Communality / nloads of factors seem to change (different people!)
+- Eigenvalues increase!
+- Factor of factors?
+- Factor of item movements?
+Look at factor CONGRUENCE (the angles!) -->
+
+<!-- make screeplot with before/after data in one plot, that's essentially what you're hypothesizing -->
+
+<!-- is there a two-dimensional equivalent to PCA? -->
+
+
+<!-- crazy idea for two-dimensional PCA, just make the lower diag different, this is via qlist from Tim Michel:
+i J Christopher:
+
+I've been reading all the responses my query  has generated, to reflect on your response:
+
+1) I understood what you meant by fusing the Q-Sorts together.
+2) However, I agree with others on the topic that it doesn't make sense to simply fuse the sorts together and then do the calculations as if they were one large Q-Sort
+3) I reiterate that using a block diagonal correlation matrix would seem a more reasonable approach
+
+i.e.  [ M   0  ] , where M are the correlations based on the 1st Qsort and N the 2nd.
+      [ 0   N  ]
+
+4) That would get away from correlating apples and oranges so to speak
+5) This way we would get a cleaner result and the calculated factors would possibly reflect the subject positions on Qsort1 and Qsort2 without the other noise in the data.
+6) I think one would still have to make a case that the qsets are related and would have to administered in the same temporal frame.
+
+Now in my limited exposure to Q-Methodology, it seems to me that it is employed to find clusters of opinions or subjectivities on the topic outlined int the Q-sets. I would think that combining the Q-Sorts in this manner would identify clusters of opinions & subjectivities in the combined Q-Sets.
+ -->

@@ -20,10 +20,5 @@
 		{
 			"path": "/Users/Max/Github/qmethod.wiki"
 		}
-	],
-	"options":
-	{
-		"pdf": "tax-democracy-held.pdf",
-		"root": "tax-democracy-held.tex"
-	}
+	]
 }
