@@ -8,6 +8,58 @@ Look at factor CONGRUENCE (the angles!) -->
 
 <!-- make screeplot with before/after data in one plot, that's essentially what you're hypothesizing -->
 
+
+
+```{r diff}
+diff <- NULL
+diff$data <- q_sorts[,,"after"] - q_sorts[,,"before"]
+
+test <- q.corrplot(corr.matrix = cor(diff$data, method = "pearson")) + ggtitle("Correlation of Movements")
+
+
+diff$howmany <- q.nfactors(dataset = diff$data, cutoff = 8)
+diff$howmany$screeplot
+
+diff$howmany.r <- q.nfactors(dataset = t(diff$data))
+diff$howmany
+
+diff$results <- qmethod(dataset = diff$data, nfactors = 3, rotation = "equamax", forced = FALSE, cor.method = "pearson", threshold = "none", allow.confounded = TRUE, distribution = diff$distro)
+
+diff$distro <- c(
+  -7, 
+  -6, 
+  rep(-5, 2), 
+  rep(-4, 4),
+  rep(-3, 6),
+  rep(-2, 9),
+  rep(-1, 10),
+  rep(0, 11),
+  rep(1, 10),
+  rep(2, 9),
+  rep(3, 6),
+  rep(4, 4),
+  rep(5, 2),
+  6,
+  7
+)
+
+diff$results$f_char$characteristics
+
+q.scoreplot.ord(results = diff$results, factor = 1)
+
+q.corrplot(corr.matrix = (cor(t(diff$data))))
+```
+
+
+
+```{r threeway}
+library(ThreeWay)
+help(T3)
+dimnames(q_sorts)
+keyneson$threeway <- T3(data = q_sorts, laba = dimnames(q_sorts)[[1]], labb = dimnames(q_sorts)[[2]], labc = dimnames(q_sorts)[[3]])
+```
+
+
 <!-- is there a two-dimensional equivalent to PCA? -->
 
 

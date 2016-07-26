@@ -1,3 +1,11 @@
+---
+title: "The Deliberative Subjectivities of Tax: Treatment Effects of a Citizen Conference using Q2D"
+author: "Maximilian Held"
+date: "30 April 2016"
+output: pdf_document
+---
+
+
 > Why, in the most prosperous of economies, are we plagued by widening inequality, underfunded states and persistent unemployment?  
 > Why, in the most enlightened of times, are we thoroughly confused about governing our mixed economies and perilously disaffected with the results our democratic rule produces? 
  

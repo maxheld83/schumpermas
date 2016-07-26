@@ -1,0 +1,20 @@
+---
+title: "The Deliberative Subjectivities of Tax: How to Measure the Treatment Effects of a Citizen Conference using Q"
+author: "Maximilian Held"
+date: "30 April 2016"
+output: pdf_document
+---
+
+The respectful give and take of deliberative citizen participation is expected to change political views, though in which way, and how to measure it, is less clear.
+Conventional survey research offers rigorous and advanced analytics, but is marred by deductive operationalization and often falls short of a measure of communicative rationality.
+Q methodology is better suited for the study of deliberative democracy, because it  offers a holistic, and operantly defined view on political subjectivity, but traditionally provides no clear way to study the *treatment effects* of some participatory intervention.
+
+Using Q-sort data on taxation gathered *before* and *after* the 2014 [CiviCon Citizen Conference](http://www.civicon.de) hosted by the author, I apply a newly developed 2-dimensional Q analysis (Q-2D) to tease out the treatment effect of this deliberation.
+On the one hand, results indicate that, after considerable computation and graphical transformation, the effects of deliberation can be meaningfully interpreted using Q2D.
+Participation in the Citizen Conference seems to increase substantive consistency of political viewpoints.
+On the other hand, a unified longitudinal factor model may also unreasonably restrict the change of subjectivity during deliberation.
+Analyzed separately, there is some evidence that before and after factor models are, in fact, incongruent.
+
+Alternative Q-approaches to studying deliberative democracy are suggested.
+
+(Note that an earlier, simpler analysis of the same data was presented at ISSSS 2015, though without the *treatment* effect.)

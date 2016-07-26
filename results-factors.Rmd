@@ -110,10 +110,8 @@ Code will usually not be reproduced in print, but can always be inspected in the
 <!-- TODO MH: see timetable of what was done when at the conference -->
 
 ```{r import-q-sorts, echo = FALSE, warning = FALSE}
-getwd()
-help(import.q.sorts)
 q_sorts <- import.q.sorts(
-  q.sorts.dir = "keyneson/qsorts",
+  q.sorts.dir = "keyneson/qsorts/",
   q.set = q_set,
   q.distribution = q_distribution,
   conditions = c("before","after"),
@@ -1087,9 +1085,9 @@ Because `r length(colnames(q_sorts))`-dimensional spaces as are hard to wrap you
 The results of such an attempted data reduction from two to one dimension are emphatically *not* interesting in substantive terms (because there *are* more participants), but these subsets serve well to dissect the mathematical operations.
 
 ```{r eigen-examples, include = FALSE}
-source(file = "source/q.eigenpair.R")  # this produces all the example objects
+source(file = "R/q.eigenpair.R")  # this produces all the example objects
 eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
-eigen.examples <- Eigen.Illustrate(data = q_sorts)
+#eigen.examples <- Eigen.Illustrate(data = q_sorts)
 # do.call("grid.arrange", c(t(eigen.examples[,c(4,6)]), list(nrow = 4, ncol = 2)))  # too small to be informative
 ```
 
@@ -1111,8 +1109,8 @@ To remind readers that the data points are *item-cases*, not people-cases as in 
 
 Beginning with the most highly correlated pair of Q sorts, `r eigen.examples[["positive","pairs"]]`, the left-hand eigenplot in the below figure displays a cloud of points, scattered around an upward-sloping axis, as would be expected for a positive correlation.
 
-```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair"), echo = FALSE}
-do.call("grid.arrange", c(t(eigen.examples[c("positive"),c(4,6)]), list(nrow = 1, ncol = 2)))
+```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair"), echo = FALSE, purl=FALSE}
+do.call("grid.arrange", c(t(eigen.examples[c("identity"),c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
 The *first* principal component (PC) of any data is the axis through this 2-dimensional cloud of points *along which there is the most variance*.
@@ -1294,18 +1292,23 @@ We therefore need to look at competing criteria for the number of factors to be 
 howmany <- NULL
 
 # Separately
-howmany$before <- q.nfactors(dataset = q_sorts[,,"before"], cutoff = 8, siglevel = 0.05, cor.method = "spearman")
-howmany$after <- q.nfactors(dataset = q_sorts[,,"after"], cutoff = 8, siglevel = 0.05, cor.method = "spearman")
+howmany$before <- q.nfactors(dataset = q_sorts[,,"before"], cutoff = 5, siglevel = 0.05, cor.method = "spearman")
+howmany$after <- q.nfactors(dataset = q_sorts[,,"after"], cutoff = 5, siglevel = 0.05, cor.method = "spearman")
 howmany$before$residuals.plots[[1]]
-
-homany$before <- q.nfactors(dataset = q_sorts, cutoff = 8, siglevel = 0.05, cor.method = "spearman")
+howmany$before$
 
 # Together
 bandaf <- cbind(q_sorts[,,"before"], q_sorts[,,"after"])  # take before and after together, this is just for kicks
 colnames(bandaf)[1:17] <- paste(colnames(q_sorts), "before", sep = "-")
 colnames(bandaf)[18:34] <- paste(colnames(q_sorts), "after", sep = "-")
 howmany$together <- q.nfactors(dataset = bandaf, cutoff = 8, siglevel = 0.05)
+howmany$together$screeplot
 
+keyneson$bandaf <- qmethod(dataset = bandaf, nfactors = 6, rotation = "quartimax", allow.confounded = TRUE, threshold = "none", cor.method = "spearman")
+bandaf.loa <- q.loaplot(results = keyneson$bandaf)
+bandaf.loa$f1$f2
+
+q.corrplot(corr.matrix = cor(bandaf, method = "spearman"))
 ```
 
 ```{r simulate-paran-more-p, include = FALSE, eval = FALSE, cache=TRUE}
@@ -1317,10 +1320,25 @@ for(i in 2:401) {  # loop over number of variables
   print(paste("Calculating for", i, "variables."))
   flush.console()
 }
+resparan30 <- matrix(data = NA, nrow = 400, ncol = 400)  # make empty results object
+for(i in 2:401) {  # loop over number of variables
+  rdata <- matrix(data = rnorm(n = 30, mean = 0, sd = 2.8), nrow = 30, ncol = i)
+  resparan30[1:i, i] <- paran(x = rdata, iterations = 100, centile = 95, quietly = TRUE, status = FALSE)$RndEv
+  print(paste("Calculating for", i, "variables."))
+  flush.console()
+}
+str(resparan30)
+library(reshape2)
+resparan30.long <- melt(data = resparan30, varnames = c("ncomps", "nvars"), value.name = "randomeigen")
 resparan.long <- melt(data = resparan, varnames = c("ncomps", "nvars"), value.name = "randomeigen")
-summary(resparan.long)
+summary(resparan30.long)
+library(ggplot2)
 ggplot(data = resparan.long, mapping = aes(x = ncomps, y = randomeigen, group = nvars, colour = nvars)) + geom_line() + geom_hline(yintercept = 1, colour = "red")
-ggplot(data = resparan.long, mapping = aes(x = nvars, y = randomeigen, group = ncomps, colour = ncomps)) + geom_line() + geom_hline(yintercept = 1, colour = "red", ) + geom_vline(xintercept = 77, colour = "green") + ggtitle("N = 77 item-cases")
+g77 <- ggplot(data = resparan.long, mapping = aes(x = nvars, y = randomeigen, group = ncomps, colour = ncomps)) + geom_line() + geom_hline(yintercept = 1, colour = "red", ) + geom_vline(xintercept = 77, colour = "green") + ggtitle("N = 77 item-cases") + ylim(0,25)
+g30 <- ggplot(data = resparan30.long, mapping = aes(x = nvars, y = randomeigen, group = ncomps, colour = ncomps)) + geom_line() + geom_hline(yintercept = 1, colour = "red", ) + geom_vline(xintercept = 30, colour = "green") + ggtitle("N = 33 item-cases") + ylim(0,25)
+library(gridExtra)
+grid.arrange(g77, g30, ncol = 2)
+g30
 #TODO(maxheld83) also try this for different numbers of cases, N
 #TODO(maxheld83) look only at the dispersion of the first PC, others are not so interesting (says Jan)
 #TODO(maxheld83) random matrix theory might be the place to look
@@ -1346,6 +1364,7 @@ By the Kaiser-Gutmann rule, also plotted as a red line in the below figure, we m
 
 ```{r screeplot-before}
 howmany$after$screeplot
+grid.arrange(howmany$before$screeplot, howmany$after$screeplot)
 ```
 
 In addition to the level, we may consider the *change* in successive eigenvalues, as additional components are retained.
@@ -1419,7 +1438,7 @@ Contrary to R-technique, however, Q methodology --- at least in its current inca
 This leaves eigenvalue-based criteria, and especially the stringent parallel analysis in a seemingly awkward spot within Q methodology: under their veneer of scientific objectivity lies the arbitrariness of any particular P-set, in this case, the participants at the first CiviCon Citizen Conference on Taxation.
 With different, especially with more politically *diverse* participants, more, and different factors may have arisen.
 
-Entirely compatible with this caveat, eigenvalue-based criteria and parallel analysis do, however, constitute *sufficient* --- nut merely *necessary* --- conditions to identify shared subjectivities.
+Entirely compatible with this caveat, eigenvalue-based criteria and parallel analysis do, however, constitute *sufficient* --- not merely *necessary* --- conditions to identify shared subjectivities.
 A factor retained under Horn's stringent criteria from any one, however arbitrary P set, *will* at the specified 95% likelihood *persist* through future Q studies with different participants.
 Even if the factor could *not be found* on a future P set, using the same Q set, we could be certain that, if factor analyzed together, the original factors would again yield similar eigenvalues.
 In fact, *because* Q methodology is not concerned with the prevalence of factors, the original factors would, by construction, persist even in an arbitrarily large and diverse P set.
@@ -1470,9 +1489,12 @@ Turner 1998 as cited in Hayton 202 noted that
 
 
 #### Criteria Based on Communalities and Residual Correlations
+
 ```{r residuals}
 grid.arrange(howmany$before$residuals.plots[[2]], howmany$before$residuals.plots[[3]])
 do.call(grid.arrange, howmany$before$residuals.plots)
+grid.arrange(howmany$before$residuals.plots)
+howmany$before$residuals.plots
 howmany$before$residuals[c("Susanne","Sabine","Helga"),c("Susanne","Sabine","Helga"),c(2:3)]
 ```
 
@@ -1619,6 +1641,7 @@ also, in my case, arguably sampling *is* ok, because deliberative participants w
 ### Principal Components Extraction
 
 ```{r analysis}
+keyneson <- NULL
 keyneson <- list("before" = c(), "after"= c ())
 #keyneson$before <- list("pearson"=c(), "kendall"=c(), "spearman"=c())
 keyneson$before <- qmethod(
@@ -1626,12 +1649,125 @@ keyneson$before <- qmethod(
   nfactors = 3,
   rotation = "quartimax",
   forced = TRUE,
+  cor.method = "spearman",
+  threshold = "none",
+  allow.confounded = TRUE
+)
+keyneson$after <- qmethod(
+  dataset = q_sorts[,,"after"],
+  nfactors = 3,
+  rotation = "quartimax",
+  forced = TRUE,
+  cor.method = "spearman",
+  threshold = "none",
+  allow.confounded = TRUE
+)
+keyneson$before.varimax <- qmethod(
+  dataset = q_sorts[,,"before"],
+  nfactors = 3,
+  rotation = "varimax",
+  forced = TRUE,
+  cor.method = "spearman",
+  threshold = "none",
+  allow.confounded = TRUE
+)
+keyneson$before.none <- qmethod(
+  dataset = q_sorts[,,"before"],
+  nfactors = 3,
+  rotation = "none",
+  forced = TRUE,
+  cor.method = "spearman",
+  threshold = "none",
+  allow.confounded = TRUE
+)
+keyneson$before.equamax <- qmethod(
+  dataset = q_sorts[,,"before"],
+  nfactors = 3,
+  rotation = "equamax",
+  forced = TRUE,
+  cor.method = "spearman",
+  threshold = "none",
+  allow.confounded = TRUE
+)
+
+library(gridExtra)
+grid.arrange(q.loaplot(keyneson$before), q.loaplot(keyneson$before.varimax))
+
+library(reshape2)
+quartimax <- keyneson$before$loa
+quartimax$qsorts <- rownames(keyneson$before$loa)
+quartimax$rotation <- "quartimax"
+quartimax
+# quartimax <- melt(data = quartimax, )
+
+varimax <- keyneson$before.varimax$loa
+varimax$qsorts <- rownames(keyneson$before.varimax$loa)
+#varimax <- melt(varimax)
+varimax$rotation <- "varimax"
+varimax
+
+varimax[, 1:3] - quartimax[, 1:3]
+
+rotcompare <- rbind(varimax, quartimax)
+
+rotcompare$`0.05thres` <- 1.96/sqrt(keyneson$before$brief$nstat) 
+rotcompare$`0.01thres` <- 2.58/sqrt(keyneson$before$brief$nstat) 
+
+couples <- NULL
+couples$f1f2 <- c("f1", "f2")
+couples$f1f3 <- c("f1", "f3")
+couples$f2f3 <- c("f2", "f3")
+
+i <- couples$f1f2
+
+library(ggplot2)
+for (i in couples) {
+  rotcompplot <- ggplot(data = rotcompare, mapping = aes_string(x = i[1], y = i[2], label = "qsorts", group = "rotation")) + xlim(0, 1) + ylim(0,1) + coord_fixed()
+  rotcompplot <- rotcompplot + geom_point(mapping = aes(shape = rotation, colour = qsorts))
+  rotcompplot <- rotcompplot + geom_vline(mapping = aes(xintercept = `0.05thres`)) + geom_hline(mapping = aes(yintercept = `0.05thres`))
+}
+
+keyneson$before$brief$rotmat
+keyneson$before.varimax$brief$rotmat
+
+
+keyneson$after <- qmethod(
+  dataset = q_sorts[,,"after"],
+  nfactors = 3,
+  rotation = "quartimax",
+  forced = TRUE,
   cor.method = "spearman"
 )
+keyneson$before$flagged
+keyneson$after$loa
+
+q.loaplot(results = keyneson$before)
+q.compplot(results = keyneson$before)
+
+
 keyneson$before <- q.fnames(keyneson$before, fnames = c("resentment", "critical", "moderate"))
-keyneson$before <- q.fcolors(keyneson$before)
+keyneson$after <- q.fnames(keyneson$after, fnames = c("decommodification", "radical", "pragmatic"))
+
+keyneson$before <- q.fcolors(keyneson$before, color.scheme = "Set1")
+keyneson$after <- q.fcolors(keyneson$after, color.scheme = "Set2")
+
+
 q.scoreplot.num(keyneson$before, 1)
+q.scoreplot.ord(results = keyneson$before, factor = 1, label.scale = 450) + ggtitle("Before: Resentment")
+q.scoreplot.ord(results = keyneson$before, factor = 2, label.scale = 450) + ggtitle("Before: Critical")
+q.scoreplot.ord(results = keyneson$before, factor = 3, label.scale = 450) + ggtitle("Before: Moderate")
+q.scoreplot.ord(results = keyneson$after, factor = 1, label.scale = 450) + ggtitle("After: Decommodification")
+q.scoreplot.ord(results = keyneson$after, factor = 2, label.scale = 450) + ggtitle("After: Radical")
+q.scoreplot.ord(results = keyneson$after, factor = 3, label.scale = 450) + ggtitle("After: Pragmatic")
+
+row.names(q_set)
+make.cards(q.set = q_set[sort(row.names(q_set)), ], study.language = "english", output.pdf = TRUE, show.handles = TRUE)
+
+
+
+
 plot.before <- q.scoreplot(results = keyneson$before)
+keyneson$before$loa
 plot.before$resentment
 keyneson$before$zsc_n[c("wealth-tax", "land-value-tax-resources", "poor-central-planner", "exchange-value"), ]
 keyneson$before$zsc[c("wealth-tax", "land-value-tax-resources", "poor-central-planner"), ]
@@ -1771,13 +1907,14 @@ is there maybe a need to also look at the loose lego blocks *overall*? And what 
 -->
 
 ```{r array-viz, fig.width = 20, fig.height=18}
-arrayviz <- q.scoreplot(
+arrayviz <- q.scoreplot.ord(
   results = keyneson$before
   #,f.names = c("resentment","critical","moderate") TODO(maxheld83) name them separately
   ,incl.qdc = TRUE
   #,color.scheme = "Set1"
   ,extreme.labels = c("very much disagree","very much agree")
 )
+q.scoreplot.ord(results = keyneson$before, factor = 1)
 arrayviz[3]
 ```
 
@@ -1810,6 +1947,25 @@ Frank destroys the SD of pro-socialism
 
 ```{r frank discussion pro socialism}
 # q.feedback["pro-socialism","Frank","after"]
+
+keyneson$before$f_char$characteristics$condition <- "before"
+keyneson$after$f_char$characteristics$condition <- "after"
+
+explvar <- rbind(keyneson$before$f_char$characteristics, keyneson$after$f_char$characteristics)
+explvar$comps <- rownames(explvar)
+explvar <- explvar[c(4,5,6,1,2,3), ]
+explvar$condition <- factor(explvar$condition, levels = c("before", "after"))
+library(ggplot2)
+
+faccolors <-c(keyneson$before$brief$fcolors, keyneson$after$brief$fcolors)
+
+ggplot(data = explvar, mapping = aes(x = condition, fill=comps, y=expl_var, label=comps)) + geom_bar(stat = "identity") + ylim(0,100) + scale_fill_manual(values = c("resentment" = "#E41A1C", "critical"="#377EB8", "moderate"="#4DAF4A", "decommodification"="#66C2A5", "radical" = "#FC8D62", "pragmatic" = "#8DA0CB"))
+
+names(faccolors[4:6]) <- c("decommodification", "radical", "pragmatic")
+faccolors
+
+keyneson$before$brief$fcolors
+explvar
 ```
 
 <!-- - ordinal data throughout might lead to classifier, maybe that'll give probabilities not sure about that
@@ -1885,3 +2041,6 @@ Notice how a lot of the debate on rationality in deliberation, and how / if to m
 Maybe some of the agonistic writers are on Horkheimer side of the debate?
 
 Really need to read Mouffe, before talking about it
+
+
+
