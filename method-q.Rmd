@@ -246,7 +246,8 @@ What we have here is a *factorial* design of statements (not of people!)
 
 ```{r q-sampling-structure}
 q_sampling_structure <- read.csv(  # read in sampling structure
-  file = "keyneson/keyneson-sample/sampling-structure.csv"
+  file = "keyneson/keyneson-sample/sampling-structure.csv",
+  fileEncoding = "UTF-8"  # should not be necessary, all data is ascii
 )
 ```
 
@@ -274,6 +275,7 @@ q_set <- build.q.set(
   q.sample = q_sampling_structure$handle,
   q.distribution = q_distribution
 )
+names(dimnames(q_set)) <- c("items", "languages")
 ```
 
 

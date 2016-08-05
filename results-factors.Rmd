@@ -123,6 +123,7 @@ q_sorts <- import.q.sorts(
   ),
   header = FALSE
 )
+names(dimnames(q_sorts)) <- c("items", "people", "conditions")
 ```
 
 
@@ -150,11 +151,23 @@ For more on what 0 means to q, see Brown 1980 199, also note the flac I got on t
 ## Missing Data
 
 ```{r dropped-participants, echo = FALSE}
-q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
+#q_sorts <- q_sorts[ , !colnames(q_sorts) == "Wolfgang", ]  # delete researcher
 q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for personal reasons
-q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
+#q_feedback <- q_feedback[ , !colnames(q_feedback) == "Wolfgang", ]  # delete researcher
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ```
+
+```{r rda export}
+# this is because we needed it in another package
+civicon_2014 <- NULL
+civicon_2014$sorts <- q_sorts
+civicon_2014$set <- q_set
+library(devtools)
+use_data(civicon_2014, pkg = "../pensieve/", overwrite = TRUE, compress = "bzip2")
+```
+
+
+
 
 <!-- complete import of `r ncol(q_sorts)`, three participants -->
 
