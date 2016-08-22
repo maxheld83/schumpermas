@@ -162,6 +162,22 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 civicon_2014 <- NULL
 civicon_2014$sorts <- q_sorts
 civicon_2014$set <- q_set
+civicon_2014$grid <- c("-7" = 1,
+                       "-6" = 1,
+                       "-5" = 2,
+                       "-4" = 4,
+                       "-3" = 6,
+                       "-2" = 9,
+                       "-1" = 10,
+                       "0" = 11,
+                       "1" = 10,
+                       "2" = 9,
+                       "3" = 6,
+                       "4" = 4,
+                       "5" = 2,
+                       "6" = 1,
+                       "7" = 1)
+storage.mode(civicon_2014$grid) <- "integer"
 library(devtools)
 use_data(civicon_2014, pkg = "../pensieve/", overwrite = TRUE, compress = "bzip2")
 ```
@@ -1772,11 +1788,6 @@ q.scoreplot.ord(results = keyneson$before, factor = 3, label.scale = 450) + ggti
 q.scoreplot.ord(results = keyneson$after, factor = 1, label.scale = 450) + ggtitle("After: Decommodification")
 q.scoreplot.ord(results = keyneson$after, factor = 2, label.scale = 450) + ggtitle("After: Radical")
 q.scoreplot.ord(results = keyneson$after, factor = 3, label.scale = 450) + ggtitle("After: Pragmatic")
-
-row.names(q_set)
-make.cards(q.set = q_set[sort(row.names(q_set)), ], study.language = "english", output.pdf = TRUE, show.handles = TRUE)
-
-
 
 
 plot.before <- q.scoreplot(results = keyneson$before)

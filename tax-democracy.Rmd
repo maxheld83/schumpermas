@@ -1,7 +1,5 @@
 ---
 output: pdf_document
----
-hek---
 title: "Taxation and Democracy"
 author: "Maximilian Held"
 classoption: a4paper
