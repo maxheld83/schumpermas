@@ -160,8 +160,18 @@ q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ```{r rda export}
 # this is because we needed it in another package
 civicon_2014 <- NULL
-civicon_2014$sorts <- q_sorts
-civicon_2014$set <- q_set
+library(tibble)
+library(lettercase)
+library(tibble)
+lookup <- tibble(handle = make_names(rownames(lookup.table)), 
+                 id_pretest = lookup.table[,1], 
+                 id_westfluegel = lookup.table[,2])
+civicon_2014$QItems <- list(q_set = make_names(rownames(q_set)), 
+                            concourse = q_concourse, 
+                            lookup = lookup)
+rownames(civicon_2014$QItems$concourse) <- make_names(rownames(q_concourse))
+class(civicon_2014$QItems) <- c("QItems", "list")
+civicon_2014$qData <- list(sorts = q_sorts)
 civicon_2014$grid <- c("-7" = 1,
                        "-6" = 1,
                        "-5" = 2,

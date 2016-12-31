@@ -1,0 +1,155 @@
+---
+title: "Trumpocalypse"
+author: "Maximilian Held"
+date: "11/10/2016"
+output: html_document
+bibliography: held_library.bib
+---
+
+# The Great Unravelling: Why we Must Now Embrace Complexity to Avoid a Return to Fascism
+
+```{r setup}
+devtools::install_github("crsh/citr")
+library(citr)
+```
+
+With Donald Trump elected to the most powerful office on the planet, Brexit passed, rightwing populists banging on the gates of parliaments and government in France, Germany and elsewhere, we find ourselves in the midst of the greatest assault on liberal democracy since World War II.
+Instead of the heralded "End of History" [@Fukuyama1992], we must now consider a broad civilisational regression, and even the return of large-scale violence as [real and frightening possibilities](https://medium.com/@theonlytoby/history-tells-us-what-will-happen-next-with-brexit-trump-a3fefd154714#.dz7g9ccbw).
+<!-- also cite collapse jared diamond -->
+
+Calmer minds may find this alarmist; I hope they are right.
+But when the downside risks are so enormous, the precautionary principle almost *dictates* alarmism. 
+When the stakes are this high, we'd better be safe than sorry.
+
+*Marginal* polling errors notwithstanding, the return of demogoguery and populism isn't exactly a sudden shock, but it calls us all to urgent action.
+
+But first, we need a precise diagnosis of what is going on.
+
+<!-- It's a perfect storm -->
+
+
+There are already many thoroughly argued explanations out there, including of a global [white identity backlash](http://www.vox.com/world/2016/11/9/13572174/president-elect-donald-trump-2016-victory-racism-xenophobia) [@ivarsflaten-2008, @cederman-wimmer-etal-2010], [widening income inequality](http://bruegel.org/2016/11/income-inequality-boosted-trump-vote/) and postindustrial decay, [cultural](http://www.cracked.com/blog/6-reasons-trumps-rise-that-no-one-talks-about/) [alienation](http://www.tagesspiegel.de/politik/die-globale-klasse-eine-andere-welt-ist-moeglich-aber-als-drohung/14737914.html), education and age.
+Perhaps crucially, Trump and other right-wing populist voters may be driven by *loss aversion* concerning their material or (however illegitimate) cultural status, compared to some real or imagined past, as James Surowiecki has recently [pointed out](http://www.newyorker.com/magazine/2016/06/06/losers-for-trump) in the New Yorker [compare @levy-2003, @KahnemanTversky1979].
+As always, the preliminary empirical evidence (at least from US exit polls) seems [more complicated](http://fivethirtyeight.com/features/the-mythology-of-trumps-working-class-support/), and many of these *correlations* are also *multi*collinear.
+
+To these, I add a new (if not especially original) hypothesis: Voters turn to right-wing populists, because they seek to avoid the moral and ethnical cognitive load that the abstractions, complexity and interdependencies of the modern world place on them.
+
+And no, this is not just another way of calling Trump-supporters "dumb".
+We may all be the 99% ignorant.
+
+Consider, for a first illustration, anthropogenic climate change.
+*If* you believe climate change is *a fact*, and if you value -- as is increasingly demanded, and rightfully so -- all *human beings* equally, but also fly across the atlantic to attend a conference of questionable value, as I recently did, then you face a pesky **moral-cognitive dissonance** [compare @festinger-1957].
+More than a mere dissonance, this behavior  challenges my comfortable *identity* as a biking, vegetarian, and generally blameless treehugger: turns out, I *did* value the cosmopolitan ego-boost of an international conference more than the people of Bangladesh, my future childrens future and the rest of the planet.
+Straightforwardly, I can either own up to this inconsistency (which sucks), or I can change my behavior (which also sucks).
+There are, alas, two other ways to resolve the dissonance:
+
+1. I can *discredit the fact* of global warming ("the Jury's still out!"), question the authority of climate scientists ("the climate lobby is corrupted!"), or even reject the entire abstraction of a global climate system out of hand ("but this winter, there was a lot of snow!").
+2. I can *discount the value of other human beings*, by straightforward jingoism ("America first!"), subtle privilege ("Flying is part of our transatlantic culture!") or othering racism ("these people only live in huts anyway!")
+
+By forming either, or any combination of these *preferences over these beliefs* [@Caplan2007], I've solved my problem.
+Notice that this is quite a taxing problem, it's not just liberal handwringing: to *really* consider the lives of people I have never met, or lives in a distant future, and to relate that to an exciting trip is a mighty ask for a cognitive and moral miser like myself.
+
+To be fair, as someone who has spent all of his adult life arguing things, I can come up with somewhat cleverer-sounding delusions. 
+I could argue that I only buy marginal seats at cheap prices, and that therefore, the plane would have flown anyway, and only the marginal CO2e cost of adding my body and bags to the wide-body jet were incurred.
+Or I can point out that transatlantic flights *have no carbon-free* substitute (for now), and that if only all other parts of the economy were carbon neutral, then flying would not be a big problem.
+In a way, Elon Musk is my Donald Trump: A self-made entrepreneur whose every outlandish utopia I *want* to believe in, because it helps me resolve these pesky inconsistencies.
+
+I have developed this hypothesis in my exploratory dissertation work on public understandings of taxation, as well as personal conversations with AfD-voters and Trump-supporters.
+Over the past 10 years, I have studied tax policy and made it my (hopefully) 1% non-ignorant domain.
+As it turns out, taxation is marred in abstractions and complex interdependencies, which force you to re-evaluate your conceptions of justice and your own (financial) biography at every juncture.
+
+For example, if you *want* a progressive schedule (rich people paying more as a percentage), *and* you do not want to "punish" people for marrying, then you *will* have to accept that the tax burden of a couple depends on the *distribution* of income between the spouses (stay-home moms with high-earning husbands will do well).
+This is not an opinion, it is a logical fact: of the above three oft-desired outcomes, you can only have two [@Moffitt2003: 124, @Dalsgaard2005: 29].
+As a voter and as a politician, it is a whole lot easier to disregard this unavoidable abstraction, and to simply demand, or promise a tax system which would support all "working-class families equally", even though that is a fairly meaningless statement in this context.
+
+Most abstractions of tax do not even take the form of a trilemma, and are still cognitively and morally vexing.
+For example, most OECD tax regimes do not tax imputed rents from owner-occupied housing (and the US slaps on the infamous home mortgage interest deduction).
+To treat renters and owners *equally*, as horizontal tax equity would dictate, we would have to (partly) *tax* house owners on the rents they *would* have to pay for their *own* houses, because this is a capital income, and the otherwise equal renter will have to pay the same tax on her capital income, from, say, a mutual fund.
+I would wager that, in the abstract, *most* people would agree that renters and owners should be treated equally.
+But faced with the consequence of imputed-rent taxation, many of the (self-selected, small N) citizens I worked with balked at the idea.
+They came up with with (very benign) forms of the above-mentioned forms of dissonance resolution: they either rejected the abstraction ("but it's *my* house!"), or they othered-away the equal rights of renters ("they could have bought a house, it's a lot of work!").
+
+I chose these illustrations, because they are the easiest to explain, and the least controversial.
+There are other, far more complicated and more consequential abstractions of taxation, including the adequate *base* of taxation, the *incidence* of (corporate) taxes and welfare effects.
+
+What does any of this have to do with President Trump and his supporters?
+It has *everything* to do with rampant inequality, low growth, high debt, post-industrial decay, poor jobs and a government structurally unresponsive to resulting voter demands: the whole post-democratic malaise [@Crouch2004].
+This is not some inconsequential, wonky distinction.
+This fine print makes or breaks the social contract.
+
+Over the past decades, this foundation of the social contract has fractured.
+In fact, if you were to purposely design a tax system to protect rich people and heirs while squeezing future generations, poor and middle earners, you could hardly design a more effective regime then the current income tax and value-added tax system [compare @McCaffery2005].
+The *tax system really is rigged*, though not in the ways that Donald Trump *or* Bernie Sanders might think: it simply presents the legislatures with prohibitively and needlessly unattractive tradeoffs, such as between equity and efficiency.
+Predictably, faced with the choice of a rock or a hard place, democratic institutions become unresponsive, and voters feel increasingly disenfranchised.
+
+This might look like a grand conspiracy, but I don't think it is one.
+Instead, I fear, it is simply a slowly unfolding trainwreck of fiscal history.
+Some people may -- in the medium term -- benefit from a fractured social contract, though any potential sabotage may yet backfire (violence), and I am skeptical whether these beneficiaries ever successfully colluded.
+The bigger blame lies with us: the 99% ignorant.
+
+The data from my exploratory (small-N) dissertation study show that ordinary citizens hold staggeringly inconsistent beliefs and values on taxation, which can, at least partly, be explained by their cognitive ease and comfort and as an outlet for resentment against the economic system.
+(I am aware that this is not a deductive proof; it is an abductive hunch, but also see @McCaffery2006b, @SausgruberTyran2011).
+Absent a deeper understanding, or at least appreciation of complexity, some of the most promising suggestions for reform will never be discussed in such an impoverished political process: a Negative Income Tax [@Friedman1962], a Progressive Consumption Tax [@Seidman1997], a Land Value Tax [@George1879ab], or even a proper Inheritance and/or Property Tax are *all* unfamiliar, complex and demand a recognition of our mutual interdependence.
+In 2008, a leading party operative for the Social Democratic Party of Germany (SPD) told me that frankly, a Progressive Consumption Tax was a nice idea, but that it would be too vulnerable to populist attacks to promote.
+
+This is the vicious cycle we find ourselves in: a dysfunctional policy makes democratic institutions unresponsive, which frustrates and impoverishes voters, who turn to increasingly populist candidates, who degrade the political discourse, and make it impossible to pass better policy.
+This is a democracy, eating itself alive.
+
+Complex policy, of course, is not a recent phenomenon, and voters decades ago were probably not any better equipped to deal with the complexity of their day.
+However, background conditions have shifted dramatically over the last decades, exacerbating the mismatch.
+On the one hand, the factual complexity has grown, mutual interdependencies have deepened and the moral horizon has widened. 
+This process of social integration is unequivocally good, perhaps such reaping of positive-sum cooperation is even the telos of human cultural evolution.
+On the one hand, voters have also learned to demand more of government, and traditional political elites (smoke-filled backrooms) and institutions (party affiliation) have eroded.
+This process of emancipation and individualisation is also, by and large, a good thing.
+
+These two processes together *do not* in itself "overload government", as conservative critics once feared.
+They do, however, demand a lot from voters.
+They also open up a tremendeous opportunity on the supply side of politics to engage in *"discursive dumping"*, to dumb down and discredit complexity and interdependence, to offer voters (false) relief from their cognitive and moral loads.
+After an initial successful fix, and the following hangover, as voter demands continued to be frustrated, politicians slowly increased the dosage -- from "welfare queen" to "Joe the Plumber" to "death tax", and, ultimately, "Make America Great Again".
+This was neither a fast, nor continuous process, but rather, a slow and self-reinforcing  chipping away at communicative rationality, one sound bite at a time, one delusional simplification after another.
+
+This is not yet a rigorously conceptualised hypothesis, let alone a tested one.
+As sociological theory goes, it is also pretty banal.
+
+<!-- # This is more than just moral cognition -->
+
+
+But it might explain some of the frankly bizarre topics and politics, pedelled by many of these latest, most dangerous right wing populists.
+Vaccination and climate "skepticism" (Trump, AfD), an insistence on traditional gender norms (AfD), opposition to "political correctness" (Trump, AfD), rejection of trade (Trump, AfD), assorted conspiracy theories
+
+By any conventional dimensions [e.g. @WelzelInglehart-2003-aa], it is not obvious what, say, an 
+
+But as a latent, and intervening variable, for the above-mentioned theories based on racism and economic deprivation, it might help explain some of t
+
+
+
+
+Realists might respond that democracies have always muddled through.
+That is probably and that is certainly correct -- though
+
+
+What is more, the participating citizens specifically rejected, or were indifferent towards some of the most promising suggestions for reform, such as a Negative Income Tax, a Progressive Consumption Tax, a Land Value Tax or even an Inheritance or Property Tax, perhaps because some of these are unfamiliar, complicated and demand an 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To resolve it, I can own up to that inconsistency, revisit my comfortable identity as a biking, vegetarian, treehugging change my behavior and skip the next time- and CO2e-wasting, but ego-enhancing conference (which sucks).
+Al, *or* you resolve it by sufficiently *othering*, say, the people of low-lying Bangladesh,
+
+
+
+
+
+
+

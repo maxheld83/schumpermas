@@ -279,11 +279,18 @@ names(dimnames(q_set)) <- c("items", "languages")
 ```
 
 ```{r make-cards}
+library(qmethod)
 make.cards(q.set = q_set[sort(row.names(q_set)), ], 
            study.language = "english", 
            output.pdf = TRUE, 
            show.handles = TRUE,
-           file.name = "Output/cards-civicon_researcher")
+           file.name = "Output/cards-civicon_researcher",
+           duplex.double = TRUE)
+help(make.cards)
+library(assertthat)
+library(digest)
+library(tikzDevice)
+library(xtable)
 ```
 
 

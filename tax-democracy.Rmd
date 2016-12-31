@@ -24,7 +24,7 @@ library(gridExtra)  # needed for more grids
 library(reshape2)
 library(plyr)
 library(ggplot2)
-install.packages(repos = NULL, type = "source", INSTALL_opts = c('--no-lock'), pkgs = c("qmethod"))
+install_local(path = "../qmethod/")
 library(qmethod)
 ```
 
