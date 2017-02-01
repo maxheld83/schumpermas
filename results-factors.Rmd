@@ -908,6 +908,7 @@ Q methodology, in other words, rests on an *exploratory* data reduction techniqu
 
 Just *which* of a number of such data reduction techniques would be a appropriate for Q *methodology* is, alas, again equally disputed and consequential.
 The Q literature, unfortunately, offers no definitive resolution, but instead loosely refers to epistemological (metaphysical?) axioms ("indeterminacy") or invokes tradition (Stephenson, and increasingly, Brown) and *past* computational limitations (e.g. @Stephenson1935a: 18]).
+<!-- phenomenal issue here: http://stats.stackexchange.com/questions/215404/is-there-factor-analysis-or-pca-for-ordinal-or-binary-data -->
 <!-- MH TODO find sources for reverting to authority -->
 Criticism of such Q orthodoxy is rising on the Qlistserv and elsewhere, most notably (and convincingly) by decade-long contributor (and `PQMethod` maintainer) Peter Schmolck as well as recently @Akthar-Danesh-2007, but no work has been published yet.
 <!-- MH TODO link to Peter Schmolck's message, somehow include in Bib -->
@@ -970,7 +971,7 @@ We might want to consider such reliabilities as *resolutions*, when interpreting
 <!-- MH TODO link to distinguishing statements -->
 As such, we would want a summary model that also explains this supposedly "unreliable" component of a person's Q-sort. [^average-sorts]
 
-[^average-sorts]: We may alternatively filter out these possible fluctuations by looking at *average* Q-sorts, but that would imply a different operationalization as *medium-term* subjectivity, would greatly complement the procedure and might  raise additional practical problems, including saturation and consistency effects.
+[^average-sorts]: We may alternatively filter out these possible fluctuations by looking at *average* Q-sorts, but that would imply a different operationalization as *medium-term* subjectivity, would greatly complicate the procedure and might  raise additional practical problems, including saturation and consistency effects.
 <!-- TODO: find source -->
 
 A latent-variable model, more generally, would appear to fit awkwardly into Q methodology.
@@ -2036,6 +2037,15 @@ Maybe the effectiveness on consistency and other q sort stuff depends on the com
  -->
 
 <!-- cite the q "study groups" (by some grace) thread in my presentation; qmethod has been used as an instrument in consensus building, not so much as a measurement of its results. -->
+
+<!-- from the new yorker on jane jacobs from adam gopnik 
+> The sad truth is that the saints we revere for thinking for themselves almost always end up thinking by themselves.
+We are disappointed to find that the self-taught are also self-centered, although a moment's reflection should tell us that you have to be self-centered to *become* self-taught.
+(The more easily instructed are busy brushing their teeth, as pledged.)
+The independent-minded philosopher-saints are so sure of themselves that they often lose the discipline of any kind of peer review, formal or amateur.
+They end up opiniated, and alone.
+-->
+
 
 <!-- more diss notes (sokrates)
 
