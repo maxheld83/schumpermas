@@ -15,12 +15,18 @@ script:
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::epub_book')"
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  local-dir: _book/
-  github-token: $GITHUB_TOKEN
-  on:
-    branch: master
-
+  - provider: firebase
+    token: $FIREBASE_TOKEN
+    project: schumpermas
+    message: $TRAVIS_COMMIT_MESSAGE
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: pages
+    skip_cleanup: true
+    local-dir: _book/
+    github-token: $GITHUB_TOKEN
+    on:
+      branch: master
 notifications:
   email: false
