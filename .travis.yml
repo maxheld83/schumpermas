@@ -4,10 +4,6 @@ language: r
 
 warnings_are_errors: false
 
-before_install:
-  - tlmgr install babel babel-german
-  - tlmgr install polyglossia
-
 cache:
   packages: true
   directories:
