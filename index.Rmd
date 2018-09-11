@@ -25,8 +25,13 @@ documentclass: memoir
 lang: en-US
 ---
 
-```{r, child="README.rmd"}
+# (PART) About {-}
+
+
+```{r, include = knitr:::is_html_output(), eval=knitr:::is_html_output(), child="README.rmd"}
+# this includes the travis badge, which does not work in latex
 ```
+
 
 ```{r setup, cache = FALSE, include = FALSE}
 source("setup.R")

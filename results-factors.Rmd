@@ -1,9 +1,4 @@
----
-title: "Results: Baseline"
-author: "Maximilian Held"
-output: pdf_document
-library: held_library.bib
----
+# (PART) Results {-}
 
 # Data
 

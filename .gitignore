@@ -6,3 +6,5 @@
 .httr-oauth
 _book/
 _bookdown_files/
+held_give_n_take_cache/
+held_give_n_take.*

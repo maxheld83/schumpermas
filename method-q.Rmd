@@ -1,9 +1,5 @@
----
-title: "Q Methodology: Measuring Political Subjectivities"
-author: "Maximilian Held"
-output: pdf_document
-library: held_library.bib
----
+# (PART) Methods {-}
+
 
 # Q Methodology
 
