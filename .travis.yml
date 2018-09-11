@@ -4,6 +4,10 @@ language: r
 
 warnings_are_errors: false
 
+before_install:
+  - tlmgr install babel babel-german
+  - tlmgr install polyglossia
+
 cache:
   packages: true
   directories:
@@ -11,7 +15,6 @@ cache:
 
 script:
   - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
-  - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::pdf_book')"
   - Rscript -e "bookdown::render_book('index.Rmd, 'bookdown::epub_book')"
 
 deploy:
