@@ -1,0 +1,13 @@
+book_filename: "held_give_n_take"
+repo: https://github.com/maxheld83/schumpermas
+language:
+  ui:
+    edit: "Edit"
+    chapter_name: "Chapter "
+delete_merged_file: true
+edit: https://github.com/maxheld83/schumpermas/edit/master/%s
+rmd_files: [
+  "index.Rmd",
+  "references.Rmd"
+]
+clean: ["packages.bib"]

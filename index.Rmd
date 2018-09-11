@@ -1,0 +1,38 @@
+--- 
+title: "Give-and-Take"
+subtitle: "What citizens would think about taxation, if they could."
+description: "Drafts for Maximilian Held's dissertation on taxation and democracy."
+author:
+  - name: "Maximilian Held"
+    affiliation: "Bremen International Graduate School of Social Sciences (BIGSSS)"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+bibliography: [held_library.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+github-repo: maxheld83/schumpermas
+url: https\://schumpermas.maxheld.de
+classoption:
+  - a4paper
+  - twoside
+  - openright
+geometry: margin=1.5in
+documentclass: memoir
+lang: en-US
+---
+
+```{r, child="README.rmd"}
+```
+
+```{r setup, cache = FALSE, include = FALSE}
+source("setup.R")
+```
+
+
+`r if (!knitr:::is_html_output()) '
+## References {-}
+'`
