@@ -4,4 +4,9 @@ Title: Does not matter.
 Version: 0.0.1
 Imports: 
   bookdown,
-  svglite
+  qmethod
+  reshape2,
+  svglite,
+  tidyverse
+Remotes:
+  maxheld83/qmethod

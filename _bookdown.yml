@@ -11,7 +11,8 @@ rmd_files: [
   "introduction.Rmd",
   "rq.rmd",
   "civicon.Rmd",
-  "qsort.Rmd",
+  "method-q.Rmd",
+  "results-factors.Rmd",
   "references.Rmd",
 ]
 clean: ["packages.bib"]

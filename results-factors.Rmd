@@ -28,18 +28,12 @@ The first CiviCon Citizen Conference on taxation produced a wealth of data, incl
 
 All citizens as well as the researcher and the two moderators completed two Q sorts each, one at the beginning and one at the end of the conference.
 
-<!-- # move this to colophon -->
-
-A lot of Q research is funded mostly by tax money, all of this scientific work should be conveniently available to the public.
-  Research on deliberation and citizen participation, especially, should be *Open* Science.
+At its heart, Q methodology involves factor analyses and similar data reduction techniques, procedures that are widely used and available in all general-purpose statistics programs.
+However, Q methodology also requires some specialized operations, not easily accomplished in general-purpose programs.
+The transposed correlation matrix, flagging participants and compositing weighted factor scores in particular, are hard or counter-intuitive to do in mainstream software.
 
 Counter to many Q studies, this research features several conditions (before, after), groups of participants (citizens, moderators, researcher), types of items (values, beliefs, preferences) as well as an extended research question, all of which will need to be analyzed systematically.
-  Running and documenting all these variations will be next to impossible without programmatic extensibility of the software used.
-  
-  At its heart, Q methodology involves factor analyses and similar data reduction techniques, procedures that are widely used and available in all general-purpose statistics programs.
-  However, Q methodology also requires some specialized operations, not easily accomplished in general-purpose programs.
-  The transposed correlation matrix, flagging participants and compositing weighted factor scores in particular, are hard or counter-intuitive to do in mainstream software.
-
+Running and documenting all these variations will be next to impossible without programmatic extensibility of the software used.
 
 
 ## Import
@@ -94,7 +88,7 @@ q_sorts <- q_sorts[ , !colnames(q_sorts) == "Uwe", ]  # left conference for pers
 q_feedback <- q_feedback[ , !colnames(q_feedback) == "Uwe", ]  # incomplete
 ```
 
-```{r rda export}
+```{r rda export, eval = FALSE}
 # this is because we needed it in another package
 civicon_2014 <- NULL
 library(tibble)
@@ -130,15 +124,13 @@ use_data(civicon_2014, pkg = "../pensieve/", overwrite = TRUE, compress = "bzip2
 ```
 
 
-
-
 <!-- complete import of `r ncol(q_sorts)`, three participants -->
 
 
 ## Codenames
 
 ```{r real-names, echo = FALSE, eval = TRUE}
-real_names <- TRUE  # this is for manually enabling renaming
+real_names <- FALSE  # this is for manually enabling renaming
 if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.csv")) {  # renaming works only if (private) file is available and is set to true
   codenames <- read.csv(file = "../../Google Drive/CiviCon/Data/Codenames.csv",header = TRUE)  # read in codenames
   for (name in colnames(q_sorts)) {  # loop over names in q_sorts
@@ -251,7 +243,7 @@ apply(q_sorts[,,"before"],1,pop.sd)[order(apply(q_sorts[,,"before"],1,pop.sd))] 
 
 person_cor <- cor(t(q_sorts[,,"before"]))  # make cor matrix across persons
 person_cor[upper.tri(person_cor, diag=TRUE)] <- NA  # kill upper triangle
-person_cor_m <- melt(person_cor, na.rm=TRUE)  # melt it
+person_cor_m <- reshape2::melt(person_cor, na.rm=TRUE)  # melt it
 person_cor_m[with(person_cor_m, order(-value)), ]  # order it
 person_cor_m[which.max(person_cor_m$value),]  # pos max
 person_cor_m[which.min(person_cor_m$value),]  # neg max
@@ -1061,7 +1053,7 @@ PCA accomplishes this by decomposing the dataset into orthogonal (that is, uncor
 Because `r length(colnames(q_sorts))`-dimensional spaces as are hard to wrap your head around, I illustrate how PCA operates on Q data using only selected *pairs* of Q-sorts: the most positively, most negatively and lowest correlated pair.
 The results of such an attempted data reduction from two to one dimension are emphatically *not* interesting in substantive terms (because there *are* more participants), but these subsets serve well to dissect the mathematical operations.
 
-```{r eigen-examples, include = FALSE}
+```{r eigen-examples, include = FALSE, eval = FALSE}
 source(file = "R/q.eigenpair.R")  # this produces all the example objects
 eigen.examples <- Eigen.Illustrate(data = q_sorts[,,"before"])
 #eigen.examples <- Eigen.Illustrate(data = q_sorts)
@@ -1084,15 +1076,15 @@ To remind readers that the data points are *item-cases*, not people-cases as in 
 
 [^source-dallas]: The below graphs are inspired by [George Dallas](https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/) tutorial on PCA [@Dallas-2015].
 
-Beginning with the most highly correlated pair of Q sorts, `r eigen.examples[["positive","pairs"]]`, the left-hand eigenplot in the below figure displays a cloud of points, scattered around an upward-sloping axis, as would be expected for a positive correlation.
+Beginning with the most highly correlated pair of Q sorts, ` eigen.examples[["positive","pairs"]]`, the left-hand eigenplot in the below figure displays a cloud of points, scattered around an upward-sloping axis, as would be expected for a positive correlation.
 
-```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair"), echo = FALSE, purl=FALSE}
+```{r linear-algebra-positive, fig.cap = c("Eigenvector Extraction from Positively Correlated Pair"), echo = FALSE, purl=FALSE, eval = FALSE}
 do.call("grid.arrange", c(t(eigen.examples[c("identity"),c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
 The *first* principal component (PC) of any data is the axis through this 2-dimensional cloud of points *along which there is the most variance*.
 This axis can also be imagined as the longest diameter of an ellipsoid fitted around the data points.
-Because the two sorters `r eigen.examples[["positive","pairs"]]`, are *positively* correlated, this ellipsoid is oblong along a diameter with a positive slope. [^peculiar-eigenvec]
+Because the two sorters ` eigen.examples[["positive","pairs"]]`, are *positively* correlated, this ellipsoid is oblong along a diameter with a positive slope. [^peculiar-eigenvec]
 
 [^peculiar-eigenvec]: Because of the peculiarities of forced-distribution Q data, the first PC is always unit-sloped, though this is not a characteristic of PCA in general.
 <!-- TODO better make sure this is in fact an artefact of the data, and not some screwup in my vis -->
@@ -1101,12 +1093,12 @@ Each principal component consists of a pair of *eigenvector* and *eigenvalue*.
 The eigenvector describes the *direction* of the principal component, and the eigenvalue constitutes the *length* of that vector, illustrated with the small arrows plotted over the PC axes in the above figure.
 
 The same variance-summarizing can be illustrated using matrix algebra, as in formula (@matrix-positive).
-The relationship between the two sorters `r eigen.examples[["positive","pairs"]]` is here presented as a familiar correlation matrix, with a diagonal of `1`.
+The relationship between the two sorters ` eigen.examples[["positive","pairs"]]` is here presented as a familiar correlation matrix, with a diagonal of `1`.
 The eigenvector is simply that vector, which, multiplied with a scalar (the eigenvalue, actually), yields the original matrix, multiplied by the eigenvector.
 Somewhat trivially for a two-dimensional correlation matrix, this first eigenvector in matrix form merely extracts the direction (notice the slope `1` of the vector (`.71, .71`)!) and length (`1.6`) of the main diagonal, the first PC.
 
 (@matrix-positive) $$
-```{r matrix-positive, echo = FALSE, results = "asis"}
+```{r matrix-positive, echo = FALSE, results = "asis", eval = FALSE}
 cat(eigen.examples[["positive","formula"]])
 ```
 $$
@@ -1121,7 +1113,7 @@ That is precisely the point of an orthogonal transformation: it merely re-organi
 The result can be seen on the right-hand side of the above figure: the *same* data is here plotted on the two PCs.
 The first PC, by definition, explains more of the variance in the data, and the points are consequently more spread out on this horizontal dimension than on the vertical dimension.
 
-Because the principal components are just linear combinations of the original axes, these people-variables, `r eigen.examples[["positive","pairs"]]`, can also be added to the left-side biplot, by placing them according to their respective (unrotated) loadings on the two components (the eigenspace).
+Because the principal components are just linear combinations of the original axes, these people-variables, ` eigen.examples[["positive","pairs"]]`, can also be added to the left-side biplot, by placing them according to their respective (unrotated) loadings on the two components (the eigenspace).
 These (unrotated) loadings indicate how much of the respective original people-variable is explained by the two PCs.
 In our example of complete extraction, by construction, the two PCs together explain *all* of the original people-variables. [^unrotated-ex]
 Consequently, multiplying the respective PC scores of the data points (statement-cases) with the loadings of the two original people-variables yields the original data.
@@ -1149,7 +1141,7 @@ The present Q study further reduces the vector bundle by sampling `r nrow(q_sort
 The eigenvectors and -values of PCA, illustrated in the above example, now extract --- to the extent possible --- *common* sets of movements of item-cases *across* the people-variables.
 Perplexingly, the Principal Components (precisely: their scores) are, themselves, *vector bundles*, that is, sets of displacements shared by several respondents.
 Loosely, but helpfully, the first PC in the above example can be imagined as a set of *common* displacement instructions shared between people-variables: move `growth-empty` from `0` to `5`, move `ability-2-pay` from `0` to `2`, and so on.
-Each individual Q sort, such as `r eigen.examples[["positive","pairs"]]` could be completely *recreated* using several sets (here, two PCs) of such instructions, each weighted by that respondents loading.
+Each individual Q sort, such as ` eigen.examples[["positive","pairs"]]` could be completely *recreated* using several sets (here, two PCs) of such instructions, each weighted by that respondents loading.
 
 Throughout these operations, a Principal Components Analysis (PCA) maintains the epistemological and ontological stance of operant subjectivity.
 Appropriately, it produces results that, as Stephenson demanded, can be quite literally read as "pure behavior": PCA scores are shared bundles of vectors, telling researchers how to displace Q items from `0`, according to particular viewpoint.
@@ -1164,13 +1156,13 @@ In short, PCA allows us to reduce dimensions, because it re-organizes the data i
 Depending on the relative amounts of variance accounted for by subsequent PCs, "later" dimensions may be dropped, with relatively little information lost.
 This familiar process again takes on specific meaning in Q methodology.
 
-A comparison of the above eigenvalue extraction of the most positively correlated pair, `r eigen.examples[["positive","pairs"]]` with the least correlated pair, `r eigen.examples[["positive","pairs"]]`, illustrates the process.
+A comparison of the above eigenvalue extraction of the most positively correlated pair, ` eigen.examples[["positive","pairs"]]` with the least correlated pair, `eigen.examples[["positive","pairs"]]`, illustrates the process.
 
-```{r linear-algebra-lowest, fig.cap = c("Eigenvector Extraction from Least Correlated Pair", echo = FALSE)}
+```{r linear-algebra-lowest, fig.cap = c("Eigenvector Extraction from Least Correlated Pair", echo = FALSE), eval = FALSE}
 do.call("grid.arrange", c(t(eigen.examples[c("lowest"), c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
-The original, uncorrelated sorts by `r eigen.examples[["lowest", "pairs"]]` can still be decomposed into eigenvectors, and transformed accordingly, but there is very little reason to drop *one* of the components, because both explain equal amounts, and about as much *as the original case-variables*.
+The original, uncorrelated sorts by ` eigen.examples[["lowest", "pairs"]]` can still be decomposed into eigenvectors, and transformed accordingly, but there is very little reason to drop *one* of the components, because both explain equal amounts, and about as much *as the original case-variables*.
 
 This relative "weakness" of the first eigenvector is also obvious in matrix form in formula (@matrix-negative): The first eigenvector is essentially the same, but the associated multiplying eigenvalue is only marginally above 1, meaning that it "explains" *little more than the original case-variables*. [^eigenex-pearson]
 
@@ -1182,7 +1174,7 @@ This relative "weakness" of the first eigenvector is also obvious in matrix form
   Apparently, the two correlation matrices are sufficiently different in this case to switch the (marginally explanatory) PCs.
 
 (@matrix-negative) $$
-```{r matrix-negative, echo = FALSE, results = "asis"}
+```{r matrix-negative, echo = FALSE, results = "asis", eval = FALSE}
 cat(eigen.examples[["negative","formula"]])
 ```
 $$
@@ -1190,11 +1182,11 @@ $$
 The ellipsoid of the eigenvector plot on the left-hand side appears quite close to circular; only marginally more variance can be projected on the first PC axis than *any* other axis.
 To be sure, the original vector bundles can still be reformulated in terms of eigenvalues, as in the biplot on the right-hand panel, but little is gained by such an operation.
 Instead of *two* separate sets of displacement instructions, one for each participant-variable, we now have *two* compound sets of such instructions, which *both* apply to the Q sorts, but with different weights (or loadings).
-For example, instead of a simple *move `growth-empty` from `0` to `5`* `r eigen.examples[["lowest","pairs"]]`'s sort might now be recreated by, say, multiplying the first PC instruction (*move `growth-empty` from `0` to `6`*) by its loading (`.5`) and adding the second PC instruction (*move `growth-empty` from `0` to `-4`*), multiplied by its loading (`-.5`).
+For example, instead of a simple *move `growth-empty` from `0` to `5`* `eigen.examples[["lowest","pairs"]]`'s sort might now be recreated by, say, multiplying the first PC instruction (*move `growth-empty` from `0` to `6`*) by its loading (`.5`) and adding the second PC instruction (*move `growth-empty` from `0` to `-4`*), multiplied by its loading (`-.5`).
 No information is thus lost, but there is also no reason to drop any of the PCs as dimensions.
-Because they are uncorrelated, the sorts by `r eigen.examples[["lowest","pairs"]]` *cannot* be meaningfully compressed without loosing a lot of information.
+Because they are uncorrelated, the sorts by ` eigen.examples[["lowest","pairs"]]` *cannot* be meaningfully compressed without loosing a lot of information.
 
-This futility of reducing the dimensionality of `r eigen.examples[["lowest","pairs"]]` is borne out in Q methodological terms.
+This futility of reducing the dimensionality of ` eigen.examples[["lowest","pairs"]]` is borne out in Q methodological terms.
 Their respective operant subjectivities are expressed in quite unrelated vector bundles; these *could* be eigenvector-decomposed into two vector bundles, but both of these synthetic instruction tests would be alien to the real world, and likely unintelligible.
 To further illustrate, consider the familiar LEGO analogy.
 Suppose that LEGO cars and houses share no common assembly instructions.
@@ -1204,14 +1196,14 @@ If you follow the instructions precisely, you will still place the roofing tile 
 Obviously, though, the *separate* synthetic building manuals do not, in themselves, describe any *real existing* objects, and do not invite a design critique (or otherwise).
 The same holds for a Q-methodological interpretation: a synthetic vector bundle that is *not*at least roughly expressive of *actual* Q sorts is emphatically *not* subjectivity turned behavior, and allows no abductive interpretation thereof, because there is no such underlying behavior to begin with, just like there is no "car-house" (granted, there *are* motorhomes).
 
-By contrast, consider the below, spurious eigenvalue decomposition of `r eigen.examples[["identity","pairs"]]` with herself in linear and matrix algebra notation.
+By contrast, consider the below, spurious eigenvalue decomposition of `eigen.examples[["identity","pairs"]]` with herself in linear and matrix algebra notation.
 
-```{r linear-algebra-identity, fig.cap = c("Spurious Eigenvector Extraction from Identical Pair")}
+```{r linear-algebra-identity, fig.cap = c("Spurious Eigenvector Extraction from Identical Pair"), eval = FALSE}
 do.call("grid.arrange", c(t(eigen.examples[c("identity"),c(4,6)]), list(nrow = 1, ncol = 2)))
 ```
 
 (@matrix-identity) $$
-```{r matrix-identity, echo = FALSE, results = "asis"}
+```{r matrix-identity, echo = FALSE, results = "asis", eval = FALSE}
 cat(eigen.examples[["identity","formula"]])
 ```
 $$
@@ -1221,21 +1213,21 @@ In the eigenplot on the left, all (overplotted) items form, by definition, a per
 An ellipsoid shaped around this data would be infinitesimally narrow, extending along all points on that line.
 There is only *one* eigenvector (the second one has a length, or eigenvalue, of `0`).
 Once transposed into the biplot on the right-hand side, it becomes obvious that the second PC can be dropped as a dimension: the data *only* vary horizontally, and no information is lost.
-Circularly, because these two Q sorts are identical, they can be created from *one* synthetic set of displacement instructions, which we might call `r eigen.examples[["identity","pairs"]]`.
+Circularly, because these two Q sorts are identical, they can be created from *one* synthetic set of displacement instructions, which we might call ` eigen.examples[["identity","pairs"]]`.
 In terms of the LEGO analogy consider a scenario, in which two supposedly distinct building manuals yielded the *exact* same LEGO car –-- you might conclude that the two separate instructions were created in error, and that you might as well keep only one of them.
 Notice further that the "synthetic" vector bundle describing the construction of both Q sorts, is, in fact, correlated (perfectly!) with real-existing operant subjectivity.
-In this boundary case, the scores for the first Principal Component, are, in fact, not synthetic at all: they are simply `r eigen.examples[["identity","pairs"]]`'s sorting vectors.
+In this boundary case, the scores for the first Principal Component, are, in fact, not synthetic at all: they are simply `eigen.examples[["identity","pairs"]]`'s sorting vectors.
 
 In real world PC analysis of Q data, as is the objective here, matters are a great deal more nuanced, because correlations are often neither perfect, nor completely absent.
 
-Recall the above figure on the most strongly correlated pair, `r eigen.examples[["positive","pairs"]]` for a more realistic example.
-In this scenario, it might be acceptable to drop the second PC as a dimension, and call it the `r eigen.examples[["positive","pairs"]]`-factor.
+Recall the above figure on the most strongly correlated pair, `eigen.examples[["positive","pairs"]]` for a more realistic example.
+In this scenario, it might be acceptable to drop the second PC as a dimension, and call it the ` eigen.examples[["positive","pairs"]]`-factor.
 This would be a *lossy* data reduction; the variance spread on the second PC (vertical axis in the right-hand side biplot) is lost.
 This second PC accounts for the *difference* between the two Q sorts, as illustrated by their case-variable arrows pointing in opposite dimensions on this vertical dimension.
-By dropping the second PC, we thereby preserve and interpret *only* `r eigen.examples[["positive","pairs"]]`'s *shared* subjectivities, or viewpoints –-- exactly as intended here.
+By dropping the second PC, we thereby preserve and interpret *only* `eigen.examples[["positive","pairs"]]`'s *shared* subjectivities, or viewpoints –-- exactly as intended here.
 Consider a LEGO-built car and train as analogous illustrations; these objects share a decent amount of features (both have wheels, headlamps, windshields, etc.) but they also differ tremendously (length, weight, undercarriage).
 Dropping the second PC, only a first PC of shared characteristics would remain, a set of vector bundles that might be interpreted as a `rolling-thing` factor, or something similar.
-This may well be a gross oversimplification, but notice that both a `rolling-thing` and a `r eigen.examples[["positive","pairs"]]`-factor, while synthetic, *roughly* describe observed, operant subjectivity, and may be amenable to some interpretation ("*it's designed to move*", "*it's a pretty leftist outlook*", respectively.)
+This may well be a gross oversimplification, but notice that both a `rolling-thing` and a ` eigen.examples[["positive","pairs"]]`-factor, while synthetic, *roughly* describe observed, operant subjectivity, and may be amenable to some interpretation ("*it's designed to move*", "*it's a pretty leftist outlook*", respectively.)
 
 Of course, there is not much to reduce two-dimensional data, of pairs of LEGO objects or Q-sorts, as in the examples above.
 The need to reduce dimensions becomes pressing only when the original dimensionality is overwhelming for interpretation, as is the case for the `r length(colnames(q_sorts))`-dimensional space of Q-sorts to be analyzed here.
@@ -1265,7 +1257,7 @@ We therefore need to look at competing criteria for the number of factors to be 
 
 #### Criteria Based on Eigenvalues
 
-```{r how many factors?, include = FALSE}
+```{r how many factors?, include = FALSE, eval = FALSE}
 howmany <- NULL
 
 # Separately
@@ -1275,9 +1267,10 @@ howmany$before$residuals.plots[[1]]
 howmany$before$
 
 # Together
-bandaf <- cbind(q_sorts[,,"before"], q_sorts[,,"after"])  # take before and after together, this is just for kicks
-colnames(bandaf)[1:17] <- paste(colnames(q_sorts), "before", sep = "-")
-colnames(bandaf)[18:34] <- paste(colnames(q_sorts), "after", sep = "-")
+bandaf <- cbind(q_sorts[,,"before"], q_sorts[,,"after"])
+# take before and after together, this is just for kicks
+colnames(bandaf)[1:18] <- paste(colnames(q_sorts), "before", sep = "-")
+colnames(bandaf)[19:34] <- paste(colnames(q_sorts), "after", sep = "-")
 howmany$together <- q.nfactors(dataset = bandaf, cutoff = 8, siglevel = 0.05)
 howmany$together$screeplot
 
@@ -1325,21 +1318,21 @@ g30
 ```
 
 Eigenvalues and derivative statistics, summarized in the below figure, give a readily interpretable standard for deciding the number of factors: they summarize the descriptive power of each successively extracted eigenvector.
-Because there are as many eigenvalues as there are people-variables in a Q study, and because eigenvalues *sum* to that number of people-variables, they can be interpreted in terms of *constituent Q-sorts*: the highest eigenvalue accounts for as much as `r max(howmany$before$eigenvalues$Unadjusted)` Q sorts.
+Because there are as many eigenvalues as there are people-variables in a Q study, and because eigenvalues *sum* to that number of people-variables, they can be interpreted in terms of *constituent Q-sorts*: the highest eigenvalue accounts for as much as `max(howmany$before$eigenvalues$Unadjusted)` Q sorts.
 Recall that, conversely, a Q study with all zero-correlated sorts would yield eigenvalues of `1`: every extracted principal component would explain exactly as much variance as *one* original Q sort --- no data *reduction* would be possible.
 A threshold eigenvalue of `1`, otherwise known as the Kaiser-Gutmann rule, [@Kaiser-1960, @Gutmann-1954] thus makes sense for a Q study, too.
 *Shared* subjectivity, at least, should be more expressive than any *one* Q sort.
 
 Eigenvalues can be easily translated into their successive contribution to the overall $R^2$ by dividing them by the number of people-variables in the study.
-The first and highest principal component accounts for a dominant `r max(howmany$before$eigenvalues$R2)` share of the variance, followed by distant second and third principal component.
+The first and highest principal component accounts for a dominant `max(howmany$before$eigenvalues$R2)` share of the variance, followed by distant second and third principal component.
 
-```{r ev-table-before}
+```{r ev-table-before, eval = FALSE}
 knitr::kable(howmany$before$eigenvalues)
 ```
 
-By the Kaiser-Gutmann rule, also plotted as a red line in the below figure, we may retain up to `r howmany$before$summary["KaiserGuttmann", "NFactors"]` factors.
+By the Kaiser-Gutmann rule, also plotted as a red line in the below figure, we may retain up to ` howmany$before$summary["KaiserGuttmann", "NFactors"]` factors.
 
-```{r screeplot-before}
+```{r screeplot-before, eval = FALSE}
 howmany$after$screeplot
 grid.arrange(howmany$before$screeplot, howmany$after$screeplot)
 ```
@@ -1410,7 +1403,7 @@ This is emphatically so for Q methodology, which, despite the appearance of *clu
   The procedure itself, because it draws many *random* datasets is entirely unaffected by the P-set.
 
 Variable selection and its effects on factor and other multivariate analyses are not peculiar to Q methodology; they affect R-type research in similar ways.
-Contrary to R-technique, however, Q methodology --- at least in its current incarnations --- does not have the luxury of increasing the sample size of item-cases to filter out random associations: people can be expected to sort only a limited number of items, with the current `r nrow(q_sorts)` already at the upper bound.
+Contrary to R-technique, however, Q methodology --- at least in its current incarnations --- does not have the luxury of increasing the sample size of item-cases to filter out random associations: people can be expected to sort only a limited number of items, with the current `nrow(q_sorts)` already at the upper bound.
 
 This leaves eigenvalue-based criteria, and especially the stringent parallel analysis in a seemingly awkward spot within Q methodology: under their veneer of scientific objectivity lies the arbitrariness of any particular P-set, in this case, the participants at the first CiviCon Citizen Conference on Taxation.
 With different, especially with more politically *diverse* participants, more, and different factors may have arisen.
@@ -1452,7 +1445,7 @@ not only is the Q-set of item-cases *not* randomly sampled (because there is no 
 <!-- Hayton 192: praises parallal analysis (horn) as one of the most accurate, but most underutilized methods. -->
 
 Turner 1998 as cited in Hayton 202 noted that
-> due to the interdependent natuer of eigenvalues, the presence of a large first factor in a PA will reduce the size of noise eigenvalues. The consequence is that in certain situations, PA can underfactor, which is potentially more serious than overfactoring. The impact of this limitation is most serious for *smaller sample sizes*, where there is a high correlation between factors, or where a second factor is based on a relatively small number of items. (!)
+> due to the interdependent nature of eigenvalues, the presence of a large first factor in a PA will reduce the size of noise eigenvalues. The consequence is that in certain situations, PA can underfactor, which is potentially more serious than overfactoring. The impact of this limitation is most serious for *smaller sample sizes*, where there is a high correlation between factors, or where a second factor is based on a relatively small number of items. (!)
 
 <!-- Talk some more about the *slope* of the scree plot, that is important – and discouraging! -->
 
@@ -1467,7 +1460,7 @@ Turner 1998 as cited in Hayton 202 noted that
 
 #### Criteria Based on Communalities and Residual Correlations
 
-```{r residuals}
+```{r residuals, eval = FALSE}
 grid.arrange(howmany$before$residuals.plots[[2]], howmany$before$residuals.plots[[3]])
 do.call(grid.arrange, howmany$before$residuals.plots)
 grid.arrange(howmany$before$residuals.plots)
@@ -1617,7 +1610,7 @@ also, in my case, arguably sampling *is* ok, because deliberative participants w
 
 ### Principal Components Extraction
 
-```{r analysis}
+```{r analysis, eval = FALSE}
 keyneson <- NULL
 keyneson <- list("before" = c(), "after"= c ())
 #keyneson$before <- list("pearson"=c(), "kendall"=c(), "spearman"=c())
@@ -1878,7 +1871,7 @@ but still, dispersion is interesting - those are the loose lego blocks
 is there maybe a need to also look at the loose lego blocks *overall*? And what are those? What are the loosest blocks?
 -->
 
-```{r array-viz, fig.width = 20, fig.height=18}
+```{r array-viz, fig.width = 20, fig.height=18, eval = FALSE}
 arrayviz <- q.scoreplot.ord(
   results = keyneson$before
   #,f.names = c("resentment","critical","moderate") TODO(maxheld83) name them separately
@@ -1890,7 +1883,7 @@ q.scoreplot.ord(results = keyneson$before, factor = 1)
 arrayviz[3]
 ```
 
-```{r add-type}
+```{r add-type, eval = FALSE}
 # array.viz.data <- merge(  # add type of item
 #   x = array.viz.data
 #   ,y = q.sampling.structure  # that is where the types are from
@@ -1917,7 +1910,7 @@ arrayviz[3]
 Frank destroys the SD of pro-socialism
 -->
 
-```{r frank discussion pro socialism}
+```{r frank discussion pro socialism, eval = FALSE}
 # q.feedback["pro-socialism","Frank","after"]
 
 keyneson$before$f_char$characteristics$condition <- "before"

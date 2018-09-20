@@ -1,7 +1,6 @@
-# (PART) Methods {-}
-
-
 # Q Methodology
+
+<!-- add stuff from why q here -->
 
 <!-- Onsampling Q statements from non-natural occurences, from some email from the list
 
@@ -72,7 +71,7 @@ As I show in my dissertation, underneath contradictory positive claims, and unde
 An ITT-Q can be developed and tested using this domain, but should be extensible to others.
 
 
-![Illustration of a Paper-based Q-sorting Process](https://dl.dropboxusercontent.com/u/5341489/images/Qsorter.jpg)
+![Illustration of a Paper-based Q-sorting Process](img/Qsorter.jpg)
 
 <!-- q methodology is "zwischen den stuehlen", and for that reason alone seems appropriate for this research project (jk).
 It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
@@ -172,7 +171,7 @@ Great quote on what happens during Q:
 > brown 31
 
 
-### Q Distribution
+## Q Distribution
 
 Notice that the difference between the two is because I need an uneven number of columns --- this may not matter much, except there being a significance to the 0, as per Brown:
 > "all meaning distends from the middle" (brown 22)
@@ -211,7 +210,7 @@ make.distribution(nstat=78, max.bin=7) - q_distribution
 <!-- TODO MH: make visualization of bins -->
 
 
-### Q Concourse
+## Q Concourse
 
 Brown says it clearly: 28: it's easier to draw a definitive universe of people from which to sample, because there are registers, and they are also discrete.
 Statements are not discrete, and there are possible infinities.
@@ -247,7 +246,7 @@ q_concourse <- import.q.concourse(  # import concourse
 Heady ideas seem to have some history in Q, as for example the items on Brown 36
 
 
-### Q Sampling
+## Q Sampling
 
 more on the factorial design, sources for sampling structured in brown 188
 
@@ -313,7 +312,7 @@ q_set <- build.q.set(
 names(dimnames(q_set)) <- c("items", "languages")
 ```
 
-```{r make-cards}
+```{r make-cards, eval = FALSE}
 library(qmethod)
 make.cards(q.set = q_set[sort(row.names(q_set)), ], 
            study.language = "english", 
@@ -321,11 +320,6 @@ make.cards(q.set = q_set[sort(row.names(q_set)), ],
            show.handles = TRUE,
            file.name = "Output/cards-civicon_researcher",
            duplex.double = TRUE)
-help(make.cards)
-library(assertthat)
-library(digest)
-library(tikzDevice)
-library(xtable)
 ```
 
 

@@ -11,6 +11,8 @@ options(knitr.kable.NA = '')
 
 
 # dependencies ====
+library(qmethod)
+library(tidyverse)
 # automatically create a bib database for R packages
 knitr::write_bib(
   x = c(

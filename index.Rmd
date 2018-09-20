@@ -78,6 +78,9 @@ Aside from published R packages, all code is run *inside* this document upon ren
 <!-- TODO add knitr, literate programming ref -->
 Code will usually not be reproduced in print, but can always be inspected in the [source of this document](https://github.com/maxheld83/schumpermas), "*underneath*" the respective operation or result.
 
+A lot of Q research is funded mostly by tax money, all of this scientific work should be conveniently available to the public.
+  Research on deliberation and citizen participation, especially, should be *Open* Science.
+
 
 `r if (!knitr:::is_html_output()) '
 ## References {-}
