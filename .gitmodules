@@ -7,9 +7,6 @@
 [submodule "civicon.github.io.wiki"]
 	path = civicon.github.io.wiki
 	url = https://github.com/civicon/civicon.github.io.wiki.git
-[submodule "qmethod"]
-	path = qmethod
-	url = https://github.com/maxheld83/qmethod.git
 [submodule "schumpermas.wiki"]
 	path = schumpermas.wiki
 	url = https://github.com/maxheld83/schumpermas.wiki.git
