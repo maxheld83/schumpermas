@@ -8,6 +8,8 @@ delete_merged_file: true
 edit: https://github.com/maxheld83/schumpermas/edit/master/%s
 rmd_files: [
   "index.Rmd",
+  "abstract_en.Rmd",
+  "abstract_de.Rmd",
   "references.Rmd"
 ]
 clean: ["packages.bib"]
