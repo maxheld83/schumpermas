@@ -1,17 +1,6 @@
----
-title: "Trumpocalypse"
-author: "Maximilian Held"
-date: "11/10/2016"
-output: html_document
-bibliography: held_library.bib
----
+# Epilogue
 
-# The Great Unravelling: Why we Must Now Embrace Complexity to Avoid a Return to Fascism
-
-```{r setup}
-devtools::install_github("crsh/citr")
-library(citr)
-```
+## The Great Unravelling: Why we Must Now Embrace Complexity to Avoid a Return to Fascism
 
 With Donald Trump elected to the most powerful office on the planet, Brexit passed, rightwing populists banging on the gates of parliaments and government in France, Germany and elsewhere, we find ourselves in the midst of the greatest assault on liberal democracy since World War II.
 Instead of the heralded "End of History" [@Fukuyama1992], we must now consider a broad civilisational regression, and even the return of large-scale violence as [real and frightening possibilities](https://medium.com/@theonlytoby/history-tells-us-what-will-happen-next-with-brexit-trump-a3fefd154714#.dz7g9ccbw).
@@ -146,10 +135,3 @@ What is more, the participating citizens specifically rejected, or were indiffer
 
 To resolve it, I can own up to that inconsistency, revisit my comfortable identity as a biking, vegetarian, treehugging change my behavior and skip the next time- and CO2e-wasting, but ego-enhancing conference (which sucks).
 Al, *or* you resolve it by sufficiently *othering*, say, the people of low-lying Bangladesh,
-
-
-
-
-
-
-

@@ -10,6 +10,6 @@ rmd_files: [
   "index.Rmd",
   "abstract_en.Rmd",
   "abstract_de.Rmd",
-  "references.Rmd"
+  "references.Rmd",
 ]
 clean: ["packages.bib"]

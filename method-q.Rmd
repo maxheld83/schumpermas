@@ -32,8 +32,47 @@ Diss: a little bit of data is a very dangerous thing
 
 > -->
 
+It is perhaps unsurprising that intellectual humility, and a concomitant public discourse ethic are hard to operationalize, and harder to promote (as per Question 2 of the RFP). 
+Intellectual humility realism would seem to defy direct measurement or overt promotion by definition: inner virtue cannot be incentivized, but is easily faked.
+A plural understanding of intellectual humility appears more hospitable to empirical research and intervention, yet, when pressed into such service, each *single* concept – say, "openness to new ideas" – easily crumbles into a formalistic shell, somehow *less* than its share of the sum of all polithetic sibling concepts.
+Aside from attractive, but counterfactual ideal speech situations [e.g. @Rawls-1971], communicative action is similarly slippery in the field.
+Taking a *substantive* perspective, researchers and activists risk becoming judges of just *what* is the "better argument" deserving of a "forceless force" [@Habermas-1984].
+Merely *procedural*, often *negative* operationalizations – say, absence of coercion, or number reasons provided – may be necessary or correlated, but they fall far short of the telos of human speech: reaching understanding.
+
+It may be especially valuable to learn to imitate (and therefore understand) those principled commitments behind *ideological viewpoints*, on which reaching *metaconsensus* – agreeing what to disagree on – might be our best, humblest hope [@Niemeyer2007].
+I use ideology here not as a pejorative, but simply as a shorthand for complexly interrelated sets of *ontological beliefs*, *axiological values* and *policy preferences* (ibid.).
+In the domain of taxation and the economy, for example, ontological beliefs might concern the nature of human motivation (homo economicus, or homo reciprocans?), axiological values might prescribe a consequentialist or deontological ethic, and policy preferences might differ on the appropriate base (income or consumption?) for taxation (an expansive list is developed in my dissertation).
+Because ideologically *a priori*, these viewpoints are all *non-falsifiable*, when pared down to their core convictions.
+This is obvious for values and preferences, but also holds for beliefs, when man-made institutions are concerned, as is the case in policy and politics. 
+Within uncertain biological limits, these institutions shape the very human nature which they were designed (or evolved?) to augment [e.g. @Dawkins1976].
+For example, whether and how "humans react to incentives" may, to some degree, depend on the institutions under which said human grew up, including tax and other economic institutions, thus possibly turning "homo economicus" from falsifiable assertion to political choice.
+This emancipatory claim – that we are, or could be, the masters of our own nature – is, of course, itself contested.
+People disagree to what extend we can, or should, transcend our ancestral baggage by institutional intervention.
+Disagreement on ontological beliefs, in other words, recurs to a second-level axiological question of whether, among other things, to *let evolve* or *design*, contesting the boundary between values and beliefs.
+
+Thus teasing apart ideological viewpoints is not merely constructionist casuistry: it is, rather, an act of intellectual humility, while remaining deeply committed.
+It is humble, because by stating the normative – not claiming the positive –  you embrace your fallibility and context, and speak in terms that reasonable people *can* disagree on.
+It is civil, because by laboring to pare down another's viewpoint to such deeply-felt convictions, you honor – not merely tolerate – the other, you strive to see things *her* way, from the *ideological inside*.
+It is principled – not relativistic –, because by *achieving such true disagreement*, you clarify your own viewpoint, but do so in terms comprehensible to those who disagree.
+
+An ITT is a fitting paradigm to measure such metaconsensus, but much depends on the implementation details.
+Existing, sparsely documented designs use open-ended communication prone to idiosyncrasies and inaccessible to quantitative rigor or [survey questions](http://econturingtest.com), which again turn on *operational* definitions of, say, a "libertarian" viewpoint, sure to be controversial.
+Q methodological approaches provide a more organic, because in turn *operant* definition of subjectivity as pure behavior [@Brown1980].
+In Q, participants rank-order statements on some spontaneously meaningful dimension, such as truthfulness (belief) or desirability (value).
+Using items as *cases* and participants as *variables*, shared patterns are then extracted via principal principal analysis [@Stephenson1935].
+Resulting rotated component scores can then be interpreted as ideal-typical rank orders of empirically *shared* viewpoints.
+Crucially, Q method yields holistic *patterns* of item ranks, where, for example, the rank of one item can be interpreted *ipsatively* in light of the position significant other items.
+Q methodology can also be productively expanded to cover belief, value and preference dimensions as well as categorical judgments.
+
+Moreover, these 17 ordinary citizens refined their viewpoints, and clarified their disagreement after they participated in the week-long [CiviCon Citizen Conference on Taxation and the Economy](http://www.civicon.de) I hosted as part of my field research in Germany.
+Participants also noted that the Q-sorting activity *itself* helped them to clarify their own, and opposing viewpoints.
+
+The debate on taxation and the economy is marred by division like few others, and in dire need of intellectual humility.
+As I show in my dissertation, underneath contradictory positive claims, and undergirding the rich scientific literature, lie contrasting viewpoints rooted in deep ontological and axiological commitments.
+An ITT-Q can be developed and tested using this domain, but should be extensible to others.
 
 
+![Illustration of a Paper-based Q-sorting Process](https://dl.dropboxusercontent.com/u/5341489/images/Qsorter.jpg)
 
 <!-- q methodology is "zwischen den stuehlen", and for that reason alone seems appropriate for this research project (jk).
 It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
