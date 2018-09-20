@@ -47,7 +47,7 @@ Look at factor CONGRUENCE (the angles!) -->
 
 
 
-```{r diff}
+```{r diff, eval = FALSE}
 diff <- NULL
 diff$data <- q_sorts[,,"after"] - q_sorts[,,"before"]
 
@@ -89,7 +89,7 @@ q.corrplot(corr.matrix = (cor(t(diff$data))))
 
 
 
-```{r threeway}
+```{r threeway, eval = FALSE}
 library(ThreeWay)
 help(T3)
 dimnames(q_sorts)

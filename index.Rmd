@@ -25,8 +25,6 @@ documentclass: memoir
 lang: en-US
 ---
 
-# (PART) About {-}
-
 <!-- this includes the travis badge, which does not work in latex -->
 ```{r, include = knitr:::is_html_output(), eval=knitr:::is_html_output(), child="README.rmd"}
 ```
@@ -34,6 +32,52 @@ lang: en-US
 ```{r setup, cache = FALSE, include = FALSE}
 source("setup.R")
 ```
+
+
+## Abstracts {-}
+
+### English {-}
+
+<!-- abstracts are nicer in their own files, hence the weird importing -->
+```{r, child="abstract_en.rmd"}
+```
+
+### German {-}
+
+```{r, child="abstract_de.rmd"}
+```
+
+## Colophon {-}
+
+This book was written in [bookdown](http://bookdown.org/) inside [RStudio](http://www.rstudio.com/ide/).
+The book is available in several formats at [`https://schumpermas.maxheld.de`](https://schumpermas.maxheld.de).
+The complete source of the book can be found on [github](https://github.com/maxheld83/schumpermas).
+The website is updated after every commit by [travis-ci](https://travis-ci.com/).
+
+
+## Literate Programming {-}
+
+> Let us change our traditional attitude to the construction of programs:
+> Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to humans what we want the computer to do.
+>
+> --- @Knuth-1984
+
+Most importantly, using `R`, every step from raw data to final factor interpretation can be traced back, using publicly available and vetted code, down to base functions.
+<!-- TODO MCH find nice open source quote -->
+
+Machine-readable code, its results, and human-readable explanation of *what that code does* are often written and stored separately.
+Not only does such separation invite mistakes when code, result and explanation diverge, but it also makes research harder to reproduce and is conceptually flawed.
+<!-- TODO maybe relate to the Rogoff Reinhart paper, cite LaCour retractions -->
+At least in the context of statistical analysis, what we want a machine to do, why we want it, and to what effect are *one* intellectual operation, and should be presented as such.
+Programs must not be considered black boxes that "do" things of their own accord, to be explained ex-post, but code should be a near equivalent of the same thought expressed in prose.
+
+Donald Knuth has formulated this central tenet of his *Literate Programming* approach thus:
+
+I try to follow this approach by interweaving prose and code in one document, using the [`knitr`](http://yihui.name/knitr/) R package [@knitr].
+Aside from published R packages, all code is run *inside* this document upon rendering.
+<!-- TODO add knitr, literate programming ref -->
+Code will usually not be reproduced in print, but can always be inspected in the [source of this document](https://github.com/maxheld83/schumpermas), "*underneath*" the respective operation or result.
+
 
 `r if (!knitr:::is_html_output()) '
 ## References {-}

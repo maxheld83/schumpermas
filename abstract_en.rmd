@@ -1,7 +1,3 @@
-# Abstracts {-}
-
-## English {-}
-
 Everyone pays taxes, and **taxation** affords us citizens some democratic control over the mixed economy, yet we often poorly understand its fundamental tradeoffs and alternatives.
 Reasoning with one another may strengthen our **democracy**, but little is known how such a deliberative ideal fares on abstract policy or how deliberative quality might be measured.
 
