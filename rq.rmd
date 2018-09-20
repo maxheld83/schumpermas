@@ -1,1 +1,8 @@
 # Research Question
+
+<!-- 1. Research Question [based on proposal] -->
+<!--    - Explicates *research question* at the intersection of the literature on (subjective understandings of) tax, and (empirical research on) deliberative democracy -->
+<!--    - includes literature review of tax misunderstandings/disagreements and empirical deliberative democracy -->
+<!--    - Why tax is a good *case*; and more than a case. -->
+<!--    - Why deliberation is a good *method*; and more than a method. -->
+<!--    - Draft completed by **2014-01-31** -->

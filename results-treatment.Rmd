@@ -1,5 +1,16 @@
 # Q2D: A Novel Approach to Measure Deliberative Quality at a Citizen Conference on Taxation
 
+<!-- - reports *changes* in factor composition and loadings between pre- and post-sort. -->
+<!--    - *factor interpretation* in terms of deliberative democracy (as per Niemeyer: beliefs, values, preferences) -->
+<!--    - testing (increased) *meta-consensus and intersubjective rationality* (aka consistency) -->
+<!--    - additional *qualitative analyses* of selected, cursorily transcripted discussions from CiviCon-1 -->
+
+<!-- 1. **compare factor loadings**: look at the dimensionality, and loadings of factors befre and after; this would be the broadest kind of result, ideally that the factor space becomes lower dimensional -->
+<!-- 2. **pooling** of data (including before and after sorts in *one* dataset for analysis): may show different before/after factors, as well as the change of people -->
+<!-- 3. **2nd order analysis** (make factors out of factors): will be limited because of max. 8 cases (factors), but would be very interesting: these might be the *misunderstandings* -->
+<!-- 4. **factors of deltas** compute the delta in score for each item (say, item moves from -5 to 2 for a participant), then compute factors of these movements: this may reveal the "misunderstandings", and/or the kinds of learning processes that have happened. -->
+<!-- 5. **spiking** of data; place (some of the) "before" factor arrays into the "after" dataset as cases; then do judgmental rotation: this is not a very common method, but may reveal how things have changed from the vantage point of "before". -->
+
 The respectful give and take of deliberative citizen participation is expected to change political views, though in which way, and how to measure it, is less clear. 
 On the one hand, conventional survey research offers rigorous and advanced analytics, but is marred by deductive operationalizations and often falls short of a convincing measure of communicative rationality. 
 Qualitative approaches, on the other hand, leave much to the researcher's discretion, and risk conflating a measure of deliberative quality with the researcher's substantive theory of justice or reason.

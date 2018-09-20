@@ -1,3 +1,9 @@
 # (PART) Methods {-}
 
 # CiviCon
+
+<!-- 1. Methods-1 (CiviCon) -->
+<!--    - explicates the *treatment condition*; in this case, the CiviCon Citizen Conference -->
+<!--    - *contextualizes* the CiviCon format within existing literature, formats, conflicts, tradeoffs -->
+<!--    - *documents* structure, experts, sample, etc. of CiviCon -->
+<!--    - *reports* on the validity, reliability of the treatment in deliberative terms, including citizen and moderator feedback. -->

@@ -1,5 +1,10 @@
 # Q Methodology
 
+   <!-- - explicates the *data*; in this case, Q-Sorts -->
+   <!-- - *contextualizes* Q-methodology within existing literature, alternative formats, tradeoffs -->
+   <!-- - *documents* q-sampling (of statements), condition of instruction etc. -->
+   <!-- - *argues* how/why q-methodology is a fitting method for the (deliberative + tax) research question -->
+
 <!-- add stuff from why q here -->
 
 <!-- Onsampling Q statements from non-natural occurences, from some email from the list

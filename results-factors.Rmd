@@ -2,6 +2,9 @@
 
 # Data
 
+<!-- - reports correlations, factors from pre- and post-sort. -->
+<!--    - *factor interpretation* in substantive terms of tax and the economy. -->
+
 ## Administration
 
 <!--```{r administration, child='keyneson/keyneson.wiki/q-administration.md'}```-->

@@ -13,6 +13,10 @@ rmd_files: [
   "civicon.Rmd",
   "method-q.Rmd",
   "results-factors.Rmd",
+  "results-treatment.Rmd",
+  "discussion.Rmd",
+  "conclusion.rmd",
+  "trumpocalypse.Rmd",
   "references.Rmd",
 ]
 clean: ["packages.bib"]
