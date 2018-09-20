@@ -2,14 +2,14 @@
 
 ## English {-}
 
-Everyone pays taxes, and **taxation** affords us citizens some democratic control over the mixed economy, yet we often poorly understand it.
+Everyone pays taxes, and **taxation** affords us citizens some democratic control over the mixed economy, yet we often poorly understand its fundamental tradeoffs and alternatives.
 Reasoning with one another may strengthen our **democracy**, but little is known how such a deliberative ideal fares on abstract policy or how deliberative quality might be measured.
 
 The first [CiviCon Citizen Conference](http://www.civicon.de) tests in a **quasi-experiment** how deliberating policy as abstract as taxation might work, and how people's thinking on taxation might change as a result.
-During the week-long conference, 16 diverse, self-selected citizens were tasked to design a tax system "from scratch", choosing among possible combinations of base schedule.
+During the week-long conference, 16 diverse, self-selected citizens were tasked to design a tax system "from scratch", choosing among possible combinations of base and schedule.
 They participated in [learning phases](https://github.com/civicon/samuelson), deliberated in moderated small group and plenary sessions, met with experts and held a concluding press conference.
 
-Before and after the conference, citizens sorted 79 statements on taxation and  economics according to their subjective viewpoint.
+Before and after the conference, citizens sorted 79 statements on taxation and economics according to their subjective viewpoint.
 Following **[Q methodology](https://en.wikipedia.org/wiki/Q_methodology)**, sorts were factorized to extract ideal-typical viewpoints shared by participants.
 Before the conference, citizens expressed *resentful*, *radical* and *moderate* viewpoints, including some apparent inconsistencies between *beliefs*, *values* and *preferences* on taxation.
 After the conference, citizens shared *decommodifying*, *pragmatic* and *critical* viewpoints and displayed a simpler, lower-dimensional structuration of viewpoints.
