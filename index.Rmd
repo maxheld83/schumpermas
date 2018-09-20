@@ -8,7 +8,7 @@ author:
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
-bibliography: [held_library.bib, packages.bib]
+bibliography: [held-library.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 colorlinks: yes
