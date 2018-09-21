@@ -1,11 +1,100 @@
 # Q Methodology
 
+Q methodology and deliberative democracy share epistemological and normative roots in American pragmatism: that meaning is intersubjective, that communication is human action and that we can -- and should -- reach some mutual understanding on the objective and moral world, even if contingent and preliminary.
+This study illustrates and explores how this common legacy makes Q methodology and and deliberative democracy are a good fit for political psychology.
+On the one hand, deliberation posits the regulative ideal under which individuals can freely constitute and express their political subjectivity: a mutual and egalitarian give-and-take of reasons.
+On the other hand, Q may serve to measure the quality of deliberation, occupying a sweet spot between quantitatively constrained interpretations for researchers and qualitative leeway for citizens' viewpoints: increased consistency or structuration of Q sorts might be falsifiable meta-standards without substantive (and circular) prejudice as to which one viewpoint would be "deliberative".
+The study concludes by suggesting further extensions and applications of Q methodology and deliberative democracy.
+
+One fitting conceptional framework might be: Habermas source of reasons from the lifeworld, devoid of power. 
+This, fittingly, is also one formulation of the ideal scientist.
+
+## goldstein keoane 1993
+
+> "We do not seek to explain the sources of these ideas; we focus on their effects" (7)
+Notice: my view isn't really about ideas as explaining anything; ideas *are+ the stuff.
+
+### On Reflectivism: (similar to constructivism, symbolic interactionism)
+
+> "beliefs are a central element of all research because (...) analysis turns on how 'knowledgable practices constitute subjects'. Reflectivists 'share a cognitive, intersubjective conception of process in which identities and interests are endogenous to interaction, rather than a rationalist-behavioral one in which they are exogenous.'" (5)
+
+> "This explains how preferences are formed and how identities are shaped"
+
+**Bingo! This is the exact place of pluralism vs. deliberative fora on tax. This is the kind of process I'm looking at.**
+
+> "Reflectivist students of the impact of ideas on policy often argue that interests cannot be conceptualized apart from ideas that constitute them, and that it is therefore futile to try to distinguish interests and ideas analytically, as we seek to do. Adopting such a view, however, would foreclose the possibility of evaluating the hypothesis that ideas are hooks against our argument that they often exert a major impact on policy." (26)
+
+### Three Types of Beliefs
+
+1. World Views
+  > "conceptions of possibility" (8)
+  > "the connections between world views and shifts in material power and interests are complex and need investigation" (8
+2. Principled Beliefs
+	right from from, just from unjust (9)
+	> "mediate between world views and particular policy conclusions; they translate fundamental doctrines into guidance for contemporary human action." (9)
+3. Causal Beliefs
+	> "... about cause-effect relationships which derive authority from the shared consensus of recognized elites, whether they be village elders or scientists at elite institutions" (10)
+
+
+### What is Q-Methodology?
+
+>"Factor analysis (...) is concerned with a population of n individuals each of whom has been measured in m tests or other instruments.
+>The (...) correlations for these m variables are subjected to (...) factor analysis.
+>But this technique (...) can also be inverted.
+>We may concern ourselves with a population of N different tests (or other items), each of which is measured or scaled relatively, by M individuals."
+>-- Stephenson (1936a: 334)
+
+- "factor analysis with the data table turned sideways"; persons are *variables* and traits/tests/statements/abilities are the *sample* or *population*.
+- looks at 
+
+
+### Why Q-Methodology?
+
+- Works with *small* n (of people), but needs *large* n (of statements)
+- Blaug 1997 107: is one of the few empirical methods available for the systematic study of intersubjectivity that "has been informed by discursive and domination-free notions of opinion formation"
+- Watts & Stenner 2012: K157: "reveals the key viewpoints extant among a group of participants and allows those viewpoints to be understood holistically and to a high level of qualitative detail."
+- Watts & Stenner 2012: K501: "allows us to interpret the emergent factors, and hence to understand the nature of shared viewpoints we have discovered to a very high level of qualitative detail"
+
+
+### How Q-Methodology?
+
+- People will receive sets of statements (40-90) that they rank order to fit under a normal distribution.
+- The statements will be a *structured sample* (equivalent to "purposive sample"), drawn from my prior work.
+
+
+### Analysis
+
+1. Factor analysis (Q method) of individual q-sorts to investigate metaconsensus.
+2. Correlations between factor loadings of individuals to investigate intersubjective rationality (small n problem)
+3. Secondary factor analysis of factor array, with individual factors as "cases" and items as variables.
+4. Correlations between factor loadings and other gathered data (SES, etc.) (small n problem)
+
+
+1. Good deliberation is: Metaconsensus (or well-structured ordinal preferences)
+2. Good deliberation is: Intersubjective Consensus (IC) or Intersubjective Rationality
+   People who share the same *beliefs* and hold the same *values* express the same *preferences* and vice versa.
+
+   1. As a result of deliberation, metaconsensus in *beliefs*, *values* and *preferences* will be higher. Factors will be fewer, and loadings higher.
+   2. As a result of deliberation, intersubjective consensus will be higher. People who share the same beliefs about the economy, and hold the same allocative values will express the same tax preferences and vice versa.
+
+This is *open* also to factors of fundamental disagreements about the role of rationality in democratic decisions (as compared to, say, power, practice).
+
    <!-- - explicates the *data*; in this case, Q-Sorts -->
    <!-- - *contextualizes* Q-methodology within existing literature, alternative formats, tradeoffs -->
    <!-- - *documents* q-sampling (of statements), condition of instruction etc. -->
    <!-- - *argues* how/why q-methodology is a fitting method for the (deliberative + tax) research question -->
 
 <!-- add stuff from why q here -->
+
+1. Knowledge Gain will be expressed in greater metaconsensus (and, equivalently), the lower preferences for "misunderstood" items.
+2. "Tax misunderstandings" will appear as differences in factors and factor loadings before and after the deliberation.
+3. Universal validity will be expressed in metaconsensus.
+4. Attitude change *are not part of Q-methodology*.
+5. Meta assessment (autonomy, competence and meaningful choice) *are not part of Q-methodology*.
+6. Interaction effects (SES) *are not part of Q-methodology*.
+7. Fundamental disagreements about the role of economics, or generally, rationality in policy choice (as opposed to, say, power, practice) will show up as factors -- if the Q sample of statements is good enough.
+
+
 
 <!-- Onsampling Q statements from non-natural occurences, from some email from the list
 
@@ -338,3 +427,26 @@ though with only simple bricks (say, no transparent elements, no surface, no ang
 Look at Brown 1980: 14 for the body parts analogy; putting it back together in R requires researchers' subjectivity. -->
 
 <!-- garbage in garbage out is in Brown 1980 262 -->
+
+#Niemeyer2007
+
+487: "there is considerable uncertainty regarding the appropriate nature of desired deliberative outcomes".
+
+500: Meta-consensus, "or agreement about the nature of the issue at hand, not necessarily on the actual outcome"
+
+500: inter-subjective rationality, "when individuals who agree on preferences also concur on the relevant reasons, and vice versa for disagreement"
+507: "any pair of deliberators with similar subjective positions -- in that they agree on values and beliefs -- ought also to agree on preferences"
+
+501:
+1. Choices (preferences regarding course of action) area *function* of
+2. beliefs
+3. desires (values)
+
+- (502f) Consensus
+    + Normative consensus (on values)
+    + Epistemic consensus (on beliefs; actions and cause and effects)
+    + Preference consensus (what should be done)
+- (504f) Meta-Consensus
+    + Normative meta-consensus ("shared recognition of the legitimacy of a set of values, but no agreement")
+    + Epistemic meta-consensus ("agreement on the credibility of beliefs and their relevance to the question under deliberation")
+    + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension)

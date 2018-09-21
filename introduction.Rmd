@@ -27,3 +27,461 @@
 <!--    - because the *welfare state (or mixed economy)* is based on good taxation, and taxation is in crisis. -->
 <!--    - because *representative/pluralist democracy* faces structural (dealignment) and inherent challenges (public choice); tax is that issue where these problems intersect. -->
 <!--    - these possible crises of democracy and taxation may have a profound effect on *social and political equality* -->
+
+
+from seligman 20: 20: look again into Buchanan, and relate it to Nagel/murphy the myth of ownership: maybe both looking from the right AND the left, infinite regress ensues – (this is hard to say). TODO actually this is still pretty loose, I think probably think about this in a more careful way. The bottom line would be something like this: buchanan talks about the fiscal illusion, which requires a prior of private property, which is difficult to talk about without reference to the institutions that actually allow private property and commerce. On the other hand, talking about the advantage of public goods only makes sense once you talk about
+
+
+### Schumpeter 1918
+
+- reads like today!
+- cite SChumpeter: the confusion and non-scientific/ideological nature seems very interesting, p. 99
+- 103: argues that once there is a state, *anything* could be a matter for the public; now I am not so sure, there are still economic considerations (economies of scale, etc.)
+- 104: that's a good thought – it's ahistorical to think of previous times as hyper-private, without the state – because this *functional differentiation* simply had not happened yet.
+- 105: that's a good point: that the crisis must be fundamental, related to the foundational logic – maybe we have that today with the dual crises of the welfare state
+- 108: such a great notion how the democracies are saddled with the old baggage of feudalism! It was the princes state that was assimiliated (as far as possible by democracies)
+- notice that this 108ff schumpeter makes the same argument as could be made about post-communist welfare states: they *were no* welfare *states* under socialism, because the economy and state were *one* undifferentiated realm
+- 114: not sure how we can practically have a monopoly tax, but some things work out great – the land value tax! Schumpeter also recommends it!
+- 116: fantastic keynes-esque quote on the end of history in tax
+- 124: the whole war debt thing is a bit of magical thinking ...
+- 131: more keynesian optimism on the future end of history
+
+Comment: Schumpeter might really be thinking about the laffer curve: past regime does not work because costs of extraction are prehibivey,  so you need a new system.
+In away, schumpeter really thinks AS WE MUSt of tax state as interfacing the mixed economy.
+
+
+### Buchanan 1967
+
+TODO Cite Buchanan on fiscal illusion in diss, and the italians he cites, seems quite similar.
+
+- hereagain the myth of ownership strikes hard: it is VERY hard to price the "real" cost of public goods, almost circularly.
+- either way, infinite regress ensues.
+- i'd like to hear him argue against the LVT or PCT
+- I agree with much of this: financial transaction tax really is a tax that's widely loved because no one knows who pays it.
+
+## Thorndike Address
+
+Thorndike is interested in the arguments on fairness, not the answers (that's interesting, that's great for CiviCon!)
+
+book: the pale king, book on taxation!
+
+Consent, Compliance and Confession.
+
+Question: how about the compliance on illiquid tax, especially within the PIT (on accrual or realisation)
+
+Look back into Macomber, what the ruling says, maybe get back to Ajay (it seems that Macomber did *not* introduce realisation-based evaluation).
+
+
+- We should do relate this to social/epistemic/individual preferences *explicitly* (if we can)
+- We should explicate the external validity (real world?), increase the complexity (effort, capital)
+- We should try and relate this to Kahnemann/Tversky research program.
+- [Lucy Barnes](https://www.kent.ac.uk/politics/staff/canterbury/barnes.html) was quite interested in this stuff
+
+
+> relate to Kahnemann/Tversky work on bounded rationality: which behavioral biases work here?
+
+It's not clear to me how these biases translate to more complex tax scenarios.
+McCaffery and Baron have tried this, but only on very, very simple models.
+Loss Aversion probably plays a role.
+
+
+- deliberation IS used more often on taxation, says Caroline lee: post 2008, there IS stuff on retrenchment
+- public engagement profs: raising people's tax morale
+- 2 issues: it's better to be remote from the state // it's better to open up questions
+- problem: don't feel prepared yet, this might translate (problematically) to empathy
+- new orleans was means
+- citizen assembly failed; so what does that mean? What's my
+- AmericaSpeaks national conversation on the national debt there is more research on this
+- feminist critique: mullifying critique
+- more structured / less structured:
+- malgorzata: is it habermas or weber? (Habermas: its convergence in values)
+- degrees of logical consistency / are there
+- isn't this bad news for habermas? very slightly more structured (MAGNITUDES MATTER DON'T THEY?)
+- methods not that much better than other survey / GARBAGE_IN_GARBAGE_OUT / underlying? really? is this latent variable model? Operant metaphor is the school: SHAWH ROSENBERG
+- ambitious interpretative method in: abductive / it is quite limited
+- where in the process? did they understand all the items? did they do the Q-sort: of course it should become more organized
+- local police is NOT depoliticized (!) at least in the US.
+
+TODO: read Caroline Lee's work.
+- especially "Hard Times, Hard Choices", just the article
+- Do-It-Yourself Democracy (monograph)
+
+
+## K11: Author Meets Critics: “Do-It-Yourself Democracy: The Rise of the Public Engagement Industry”
+
+really be hard about this: this is a charge that civicon (thin leftiest supporter) also faces: does it just mullify dissent?
+
+### Elisabeth Clemens
+
+- On the non-zero sumness: do we really not have that?
+- Re-read nina eliasoph: conflict out
+- Why is conflict more genuine than consent?
+- Nina Eliasoph, 
+- Chantal Mouffe
+- intellectually coward, self-congratulatory
+
+really add this as a completely new reason for my diss: the concern that deliberation might be watered down, professionalized to the degree where it becomes just marketing.
+
+My answer out of that is actually - counterintuitively -- longer, deeper, learning.
+
+actually this is a somewhat fundamental addition: it's not just "facilitating dialogue" (whoch is what deliberation seems to degenerate into) – we need "didactiv reduction"; again the schools for democracy goes quite deep here.
+
+I have a reference to abortion somewhere, that it CANNOT be resolved and there seems to be a case from Caroline Lee where pro-life and pro-choice people got together and talked with one another to prevent violence, and they ended up liking one another, but *not* agreeing at all
+this is interesting both because of of the moral issue of abortion, but also as an example of the talk
+
+
+# why don't we have a better tax?
+
+also look at the plots I have on this; why, really?
+what are alternative explanations?
+
+
+# As if economics
+
+Milton Friedman argued that for economic models is does not matter whether assumptions are realistic, or whether actors understand them – but whether predictions are borne out, and whether actors behave *as if they had some given theory in mind*.
+An instructive example for this would be a billard player who does not know the laws of physics in any case, but behaves *as if* s/he understood them.
+This is the example from Friedman.
+
+Paul Pfleiderer via Econtalk on Russ Ruberts points out that this depends on *continuous* and *instantaneous* feedback – so these are repetetitive games, with quick feedback.
+So something like the 10k hours rules might apply.
+Paul Pfleider then applies this to capital structure decisions by firms – a lot of research on this.
+How do firms decide this?
+The problem that we have is that very similar firms objectively have very different capital structures, and we don't know why.
+So the solutions suggested by economists are incredibly complex – but there's a catch: CEOs make very few capital structure decisions, and they don't get immediate feedback (none).
+So the 10k hour learning kind of rule does not at all apply.
+
+... so I need to make some kind of pragmatic argument out of this.
+
+# Habermas Ach Europa
+so clearly, we want only a notion of a plausible *possibility* of rational solutions, we don't want to look just at rational solutions (first vs second order).
+However, you can't just defer this to process; that would be insufficient, and turn full circle. A deliberation is good if it makes rational solutions plausible, and solutions are plausible if they result from good deliberation. Discuss the different operationalizations about this, including DQI.
+So what we need, is some kind of standard that is not procedural, but also not substantive, but in-between, kinda like  Rawls. But we don't have that ideal position (but we might approximate it?)
+
+The question now is: can Q-method, or intersubjective rationality and meta-consensus *be* this thing, and if so, why.
+
+Need to look in to the whole concourse theory thing
+
+Q Methodology, maybe via its quantum theoretic reading (it's about viewpoints, and there exist no objective statements (like zero energy atom states) outside of it -- that's not soo far from discourse theory.
+	on this see especially Wendy S. Rogers in operating subjectivity; she argues it is and/or can be used as a form of discourse analysis.
+
+FIXME I might have the difference between constructivism and constructionism wrong in my thesis, especially when citing Berger/Luckmann which seem to be the former and Foucault which is the latter. Constructionism may be the social variant. 
+
+Write to McCafferys co-author about q, since he is a psychologist and also does quant stuff.
+
+Somehow the stuff that happens during deliberation is actually quite close to some of the stuff that q methodologists rights and that stephenson assumed; it's in expressing and exchanging views vis-a-vis subjects. Both approaches negate that there's stuff "in the braiN" that just need be extracted.
+
+### Hemerijck
+
+> "I like to believe that history is smarter than I am." (Hemerijck, December 10, 2010)
+
+really?!? I think path dependency is part of the answer why history errs in this case. Before individual (let alone electronic) checking and savings accounts, only an income tax was feasible to achieve some degree of progression. Individual Haig-Simons accounts were simply not available for a large share of the population. In addition, the income tax was, at that point, a powerful tool to get at the supramarginal returns of a capital-owning class. Today, the income tax, or some defunct version of it lingers on for reasons of path dependency. A PCT, indeed, cannot easily co-exist with an income tax.
+
+
+# Loftager
+
+deliberative democracy is the opposite to economic theories of democracy
+
+
+# Trivilization of democracy
+
+They slice and dice the electorate.
+
+Look at the US to see what's coming up.
+
+Kahnemann/Tversky. The Myth of the Rational Voter.
+
+
+Liberal, representative democracy, rests on a pluralist theory of governance (Louw 2005:15). Pluralism, being both empirical hypothesis and normative prescription supposes that political power is, and should be widely dispersed among society’s interest groups. These interest groups, made up of ever active citizens, openly compete with one another, thereby preventing any one of them to become a dominant elite.
+
+Joe the Plumber
+Bittergate
+
+Compared to gun control and abortion rights, the environment is a weakling of an issue. (...). (There,) the devil is in the details and voters don’t like details. (ibid.: 201)
+
+
+# parties on Taxes
+# FDP
+
+11: Unser Ziel bleibt die Entlastung der arbeitenden Mitte. Eine höhere Steuerbelastung für Bürger und Unternehmen lehnen wir entschieden ab. Hohe Steuersätze führen nicht auto- matisch zu höheren Staatseinnahmen, sondern verhindern Wachstum, vernichten Arbeits- plätze und gefährden damit die Existenz zahlloser Arbeitnehmer und ihrer Familien.
+
+11: Wir sehen nach wie vor die Notwendigkeit einer grundlegenden Reform des Einkommen- und des Unternehmensteuerrechts. Dabei setzen wir auf ein einfaches, niedriges und ge- rechtes Steuersystem mit moderaten Sätzen und wenigen Ausnahmen – idealerweise in einem Stufentarif.
+
+13: Die Unternehmensteuer muss wachstumsfreundlich modernisiert werden. Dazu wollen wir sie möglichst rechtsform- und finanzierungsneutral ausgestalten und für kleine und mittle- re GmbHs die so genannte transparente Besteuerung einführen. Danach könnten sich klei- ne und mittelständische GmbHs vergleichbar mit Personenunternehmen besteuern lassen. Bei der Konzernbesteuerung brauchen wir ein wettbewerbsfähiges Gruppenbesteuerungs- recht nach österreichischem Vorbild. Umwandlungen innerhalb des Konzerns dürfen weder der Ertrag- noch der Grunderwerbsteuer unterworfen werden.
+
+14: Um die Eigenkapitalbildung in Personengesellschaften zu erleichtern, die nach der Ein- kommensteuer veranlagt werden, wollen wir eine steuermindernde Eigenkapitalverzinsung umsetzen, wie sie in anderen europäischen Ländern bereits erfolgreich verwirklicht wird. Alle Aufwendungen, die durch den Betrieb veranlasst wurden, sollen auch in Zukunft im bisherigen Umfang abzugsfähig bleiben
+
+12: Ein verschärftes Erbschaftsteuerrecht sowie eine Vermögensabgabe und eine Vermögen- steuer wären gerade für kleine und mittelständische Unternehmen eine untragbare Belas- tung und würden zu einem massiven Abfluss von Kapital und Vermögen aus Deutschland führen und viele Arbeitsplätze vernichten. Das lehnen wir ab.
+?
+
+# Linke
+9: Hohe Einkommen müssen wieder mit einem Spitzensteuersatz von 53 Prozent besteuert werden. Zudem wollen wir eine Millionärsteuer auf hohe Vermögen einfüh- ren und eine Reform der Erbschaftsteuer.
+
+10: Die Finanzmärkte und Banken müssen wirksam kontrolliert und in den Dienst der Gesellschaft gestellt werden. Wir wollen eine Finanztransaktionsteuer und eine europaweite einmalige Abgabe für Vermögen über einer Million Euro.
+n
+
+24: Hohe Vermögen, Spitzeneinkommen, Kapitalgewinne, Finanztransaktionen und große Erb - schaften müssen stärker beziehungs - weise überhaupt besteuert werden.
+n
+
+24: Wir fordern, eine Millionärsteuer – also eine Vermögensteuer für Millionäre – einzuführen. Dabei bleibt die erste Million des Vermögens steuerfrei. Danach wird ein Steuersatz in Höhe von fünf Prozent auf Pri- vat- und Betriebsvermögen erhoben, unter Abzug der darauf lastenden Schulden. Für betriebsnotwendiges Sachvermögen von Einzelunternehmerinnen und Einzelunter- nehmern und Personenunternehmen gilt ein erhöhter Freibetrag von fünf Millionen Euro.
+Die Regelung stellt die Handlungsfähigkeit von (kleinen und mittleren) Unternehmen nicht in Frage. Sie verhindert, dass Privat-
+vermögen in Betriebsvermögen verscho- ben und so der Millionärsteuer entzogen werden kann
+
+25: Die Unternehmenssteuern wurden in den letzten Jahren massiv gesenkt. Die Körperschaftsteuer muss wieder auf 25 Prozent erhöht werden.
+
+25: Um die unsoziale Wirkung der Umsatz- steuer auszugleichen, wird der ermäßig- te Umsatzsteuersatz auf Produkte und Dienstleistungen für Kinder, arbeitsinten- sive Handwerks-Dienstleistungen, apothe- kenpflichtige Arzneimittel sowie für den Schienenpersonenverkehr eingeführt. Bei
+
+26: Mit einer Finanztransaktionsteuer wollen wir die Spekulationen auf den Finanzmärk- ten eindämmen und die Verursacherinnen und Verursacher der Krise an deren Kosten beteiligen.
+
+26: Sehr hohe Einkommen wollen wir besonders besteuern: Jeder Euro, der – nach Abzug der Sozialversicherungsbei- träge – über einer Million Einkommen liegt, soll mit 75 Prozent besteuert werden (Reichensteuer).
+
+
+# SPD
+
+68: Arbeit darf nicht höher besteuert werden als Einkommen aus Kapitalvermögen. Des- halb wollen wir in einem ersten Schritt die Abgeltungssteuer unter Beibehaltung des Optionswahlrechtes von 25 Prozent auf 32 Prozent erhöhen. Sollten wir feststellen, dass das Aufkommen dieser Abgeltungssteuer geringer ausfällt als die voraussichtli- chen Einnahmen bei der Besteuerung mit dem persönlichen Einkommensteuersatz, wollen wir die Abgeltungssteuer innerhalb von drei Jahren abschaffen und die Kapital- erträge wieder der synthetischen Besteuerung unterwerfen
+
+# CDU
+
+13: Für uns gilt: Vorfahrt für Arbeit! Deshalb bleibt unser Ziel, die von Arbeitgebern und Arbeitnehmern zu glei- chen Teilen finanzierten Lohnzusatzkosten stabil unter 40 Prozent zu halten.
+
+18: Klar aber ist, dass deutsche Unternehmen zu den Leid- tragenden [einer Vermögenssteuer] gehören würden.
+
+17: Die oberen 25 Prozent der Steu- erpflichtigen haben 76,9 Prozent des Einkommensteuer- aufkommens geschultert. Wer diese Schraube überdreht, gefährdet den Zusammenhalt und schwächt die Leis- tungsbereitschaft der Menschen.
+Mittelschicht
+
+# Grüne
+84: Die Abgeltungsteuer bevorzugt Kapital- gegenüber Arbeitsein-
+kommen und ist damit eine Privilegierung der Rentiers auf Kosten der Allgemeinheit. Diese Subvention von Finanzinvestitionen gegenüber realen Investitionen und von Fremdkapital gegenüber Eigenkapital gehört abgeschafft und Kapitaleinkommen wieder progressiv be- steuert. Die Abzugsfähigkeit von Gehältern und Boni als Betriebs- ausgaben wollen wir auf 500.000 Euro beschränken, damit hohe Einkommen nicht weiter subventioniert werden.
+
+87: Das derzeitige Einkommensteuersystem ist ungerecht. Wir erhö-
+hen deshalb den Grundfreibetrag auf 8.700 Euro. Das kommt vor allem den Geringverdienern zugute. Gutverdiener sollen etwas mehr zur Finanzierung öffentlicher Leistungen beitragen. Wir wollen des- halb den Spitzensteuersatz für Einkommen ab 80.000 Euro auf 49 % erhöhen. Daneben wollen wir Kapitalerträge wie alle anderen Ein- kommen besteuern. Bisher werden Kapitalerträge, egal ob 10.000 oder 1 Mio. Euro, fest mit 25 % besteuert und damit ohne Grund gegenüber Einkommen aus Arbeit privilegiert. Alle, die weniger als 60.000 Euro Jahreseinkommen haben, werden entlastet. Wer mehr verdient, trägt in Zukunft mehr zur Finanzierung unseres Gemeinwe- sens bei. Das ist gerechter
+
+
+# tax quotes
+
+# McCaffery
+- McCaffery 2009 (819): tax. Most importantly, it develops more formally two norms about the taxation of capital: the yield-to-capital norm, which holds that the return to capital is an increment of value that ought to be taxed, and the ordinary-savings norm, which holds that savings that merely shift labor earnings within a lifetime or between taxpayers ought not to be excessively burdened. These two norms are in fatal tension under an income tax; in contrast, a consistent, progressive postpaid consumption tax accommodates both norms by design.
+
+these are actually last reasons!
+
+JIPEEEH I got it. Cafferty 2005: 918 says. Corporate income tax has two problems: it depends on incidence (economists disagree), and even if it does tax capital, it does so randomly, not progressively. All capital owners are taxed, not just the progressive ones.
+
+
+# other last reasons Nozick
+
+On distributive justice: no, it shouldn't be entitlement "that a person is entitled to those goods acquired in uncoerced exchanges with others" (Robert Nozick, as cited in Bankman, Griffith 1997: 1915)
+I want a welfarist theory of distibritutive justice. It shouldn't be utilitarianism, it should be leximin / Rawls.
+Also: dynamics / outliers / network effects (Benkler, matthias' guy) / inequality / spirit level.
+Also: Hobbesian.
+
+
+# other proponents for pct
+
+## bank 2004
+
+## Bank 2004
+
+2: talks about the ideal combination that McCaffery's plan is: progressive appeals to liberals, exemption for avings and investment appeals to conservatives
+3: skepticism that this ever will materialize. rather: the consumption tax supporters want a flat VAT, the progressive guys want an income tax
+2: was considered post WW1 (graduated spendings tax), Mill's proposal again in1942 by Treasury Secretary Henry Morgenthau (graduated surtax on spending), and lastly in 1995 by Sen Sam Nunn, Pete Domenici, Bob Kerrey Unlimited Savings Allowance (USA Tax).
+4: numbers for the PCT can be found here (US example, progression up to 50%).
+4: Haig-Simons definition of income: I=C+A
+debt repayment would be deducted from income (it's a form of investment), debt spending however would be consumption
+5: estate and gift tax, according to McCaffery can be safely abolished. Dead people don't spend. Their heirs pay when they spend.
+7: two ideas were present from the very beginning: place the burden on the wasteful spender, never the investor. Also, make it more equitable, yet efficient.
+10: the progressives were against it because it didn't tax firms, nor property as such
+10: the regressives were against it, well, because it was progressive, they wanted flat ax, already back in 1921.
+10: Representative Stevenson asked: "[put] into effect the proposition according to what a man spends and graduate it according as he spends it, and the United States Government will have to have an auditor behind every man in the country who has any money to spend. How would you ever carry it out?"
+15: "Under the progressive consumption tax, Hazelett explained, "we define income as what it really is. there is no economic income but the living standard of the taxpayer".
+this point is key: things OUT to be about consumption!
+18, 19: the USA tax had to problems: it didn't include borrowing as income and it didn't terminate the estate and gift taxes (which are transfers, not new consumption)
+19: Both in 1942 and in 1995 the PCT failed because of its complexities: the more complexity you introduce, the more devils, the more rejection. With that rise chances for evasion: flat and sales tax proponents are disenchanted
+Think about the problems of old savings: we have to know about these, do a full cash flow status of people.
+as cited on  22 As McCaffery writes, "I will not add fuel to think tank fires. Complexity can wait. The devil may indeed dwell in the details, but we first need to find an angel or two in the abstractions that govern tax."
+idea: the PCT is between a rock and a hard place in terms of how people like it in the political spectrum! But that doesn't need to be so. there is nothing inherently good about the income tax.
+actually, the PCT provides a possibility to fight evasion: you can force people to prove where they have invested and treat it as consumption, otherwise. The problem, of course,  need to think this through
+
+## Seidman
+
+2 USA tax is the only that doesn't discourage either savings or is regressive!
+8: education should be deductible
+old age equity issue? - think this through!
+coment on the need for an asset tax based on net workf effects, think about collateral.
+The history
+Kaldo 1955: an Expenditure Tax
+Irving Fisher did it before
+even Hobbes, Mills mention it, just didn't think it was technically feasible
+cite the history (14)
+Fisher 1942: 14: wait a minute, all you need is to deduct!
+
+
+frank as well
+
+## Fried 1992
+
+There are three arguments, says Fried 965 why savers and spenders ought to be treated the same, and she says, they're all flawed
+1) Abstinence ideas: savers and spenders ought tob ear equivalent tax burdens because they have equivalent wealth ex post, once the costs of deferreing consumtpion are accounted for
+this is, in fact, as fried notes 967, an improved income tax.
+the abstinence justification is: you have costs when deferring consumptions, psychic costs. OR: you have less utility for the remaining lifetime
+2) Bradford: savers and spenders ought to bear equivalent tax burdens, whether or not they are in equivalent positions ex post, because they face equivalent choices ex ante
+3) savers and spenders ought to bear the equivalent tax burdens because they are entitled to preserve the relative ex post advantages, whether equivalent or not, that they enjoy in a no-tax world.
+now here is a key argument (971) she argues that the abstinence theory is wrong, because we never compensate for pscychic cost of at the margin-leisure, we don't do this for workers, they work at the margin of where they are indifferent between working and not working. But we don't reward them enduring the psychic cost of working, we just tax them anyway. So they will include this in their rationales for working more. Her argument is: then why do it for the psychic cost of saving?!?
+here's a tentative solution: we do that for workers, actually, and we should: it's the base-rate of only consumption, which I think we should continue
+
+
+## a desire that others not understanding
+
+We sometimes hear it is only a "matter of timing" when we pay the income tax. This , McLure 1988 as cited in Seidman 125 writes, is either because  "Such a statement reveals a basic failure to understand - or a desire that others not understand - the nature of income taxation and tax avoidance: (...) If income tax can be postponed (...), interest (or other capital income) can be earned on a tax deferred basis in the meantime". in other words: compound interest, is ignored.
+
+
+## bad cycles
+
+## Ganghof 2007
+
+notes two things:
+income taxation isn't enough, it needs to be on capital, too
+income taxation nesd to be progressive
+provides a cool argument 1063 how (institutional) veto playing may favor, rather than weaken the forces of retrenchmecn because of the wide-reaching legal changes that would be required to avoid retrechnment
+Kato 2003 as cited in ibid 1064: yes, a revenue shift to regressive taxes makes it politically easier to maintain a large public sector (51) but that is a bad idea, it's not the idea of a welfare state
+1075 says that there are few major overhauls of tax systems because they are associated with significant transaction costs and political risks, so centrist and pragmatic policy makers will avoid that.
+
+
+## Ganghof 2004
+
+scharpf in foreword 12 cites the negative employment effects of high social contributions, also inequitable because they're strictly proportional
+also in scharpf foreword 13: MwST does 2 bad things: it depresses the price-elastic demand for low-qualification service industry jobs (which is very bad) and it raises the costs of living for everyone.
+Scharpf is right when he says there is much to explain about the chaos of german tax. In fact, there is MUCH more to be explained if you look at a perfect counterfactual.
+19 CIT and PIT highest marginal rates are same in Germany since 1977 (and for a  good reason)
+25 make this key point: when Ganghof suggests a dual income tax for germany, fundamental equity (OR efficiency) concerns are long past. 25. He cites two "pragmatic reasons" 1) it will be easier to find a cap income tax rate that is low enough to include as many as possible kinds of cap income. 2) labor incomes can still be taxed progressively.
+wow, where's the innovation?
+
+## Genschel 2004
+
+the sceptics and the revisionists have it wrong: because they lack the right counterfactual 616
+the welfare state is indeed, and rightly so, expected to do 2 things as Genschel 617 writes (this is part of the two criterion)
+to systematically control economic developments at the macro-level (macro-economic control), and
+to guarantee, unconditionally, adequate living standards at the micro-level (redistributive social policy)
+
+note that really depreciation isn't all that difficult: we do that for firms, too and we do it fairly roughly. We can do that for households, too. Also: if people sell their stuff at some point, we may even allow them to correct for the depreciation up or downwards.
+
+
+## mcCaffery: misunderstandings
+
+is right indeed "the canonical understanding of consumption taxes changes under consistently progressive rates. No longer are prepaid and postpaid consumption taxes - taxes on wages and spending, respecitbely - equivalent. Postpaid consumption taxes can and do burden the yield to capital, and not in an arbitrary, random way. Far from it: A progressive postpaid consumption tax emerges as the fairest and least arbitrary of all comprehensive tax systems, precisely because it chooses to make its decisions about the appropriate level of progressivity at the right time. In doind so, it burdens some but not all uses of capital and its yield. and for normatively attractive reasons". (812)
+wow.
+"This traditional view has generated an impoverished choice set for tax, consisting of a badly flawed status quo on the one hand and a flat consumption tax of some sort on the other. Under the guiding light of the traditional view, we are heading ever closer towards a flat wage tax." 812
+"Under progressive tax rates a postpaid, cash-flow or (all equivalently) spending tax is not equivalent to a yield-exempt or wage tax" 813
+
+governing dynamics of inequality.
+"Genuinely progressive taxation is necessarily personal taxation" (Vickrey 1947 "Agenda for Progressive taxation" as cited in MCCafferty 830)
+
+if you want read more on this by Mirrleess, Bankman and Griffith, as cited in McCafferty 835 and elsewhere
+
+
+Hobbes and smith come down for consumption taxes. Both the father of economics and the father of the state
+Hobbes, Leviathan 386-87
+[T]he equality of imposition, consisteth rather in the equality of that which is consumed than of the riches of the persons that consume the same. For what reason is there that he which laboureth much, and sparing the fruits of his labour, consumeth little, should be more charged than he that living idlely, getteth little, and spendeth all he gets, seeing the one hath no more protection from the commonwealth than the other? But when the impositions are laid upon those things which men consume, every man payeth equally for what he useth, nor is the commonwealth defrauded by the luxurious waste of private men.
+Smith
+Every tax ought to be levied at the time, or in the manner, in which it is most likely to be convenient for the contributor to pay it.... Taxes upon such consumable goods as are articles of luxury, are all finally paid by the consumer, and generally in a manner that is very convenient for him. He pays them little by little, as he has occasion to buy the goods. As he is at liberty too, either to buy, or not to buy, as he pleases, it must be his own fault if he ever suffers any considerable inconveniency from such taxes. Smith supra note 54 in cafferty
+McCaffery says the USA mistake came from mistaking the Haigs-Simon definition: "an is had become an ought" (emphgasis in original. 840 MccFfery
+this comes from Andrew's' idea that the most sophisticated reason for the PCT would be principled nontaxation of the yield to capital. That is the wrong reason! It is taxed, too. just differently.
+yields to capital are taxed, and only there where they elevate living standards (that's vertical quity) as opposed to horizontal equity between saving, then spending
+McCaffery makes this very point that progressivity, even though desired, is disappearing because of the choice of really bad tax choice.
+
+848: "Advocates of redistributive taxes must wake up and realize that their end is in jeopardy on account of their poor choice of means: they are fighting, and losing, the wrong war."
+Neutrality in comparison to a no-tax world seems nice, but is a problematic thing.
+
+if you avoid distortion of the saving-spending decision, you skew the work-leisure tradeoff.
+comment on this!
+neutrality, or rather, fairness, narrowly understood as economic welfarist perspective (the optimal tax literature) is bad.
+1) judgment of fairness need to take the pretax status quo as normatively appropriate
+2) optimal welfare-maximizing tax answer may clash with ordinary moral intutions and reflective normative commitments
+
+
+Make the point of lumpy earner, steady earner and trust fund baby *878) compare to the other tersm used for the same thing.
+note, as McCaffery does on 883 that private markets can also solve the consumer durables smoothing problem: leasing, reanting.
+the income tax problem for the propertied classes gets even worse because of the "wait until realiziation" and the "wait until debt is repaid" problem - bth may never happen for the super rich (this is McCaffery 888) (at least this shifts the time problem, and may make it very problematic. in the US, the fact that things canthat are inherited can be sold at fair market value free of tax makes this an even bigger problem. This is an extension of the CIT problem actually, a problem that maters for all things where accretions are not immediatley realized. "Tax planning 101 is elegantly simple: buy, borrow, die" (890)
+this can't be easily solved, it's an admoinositratove nightmare.
+hence the backstop of the estate and gift tax.
+this is it: DYSFUNCTIONS OF THE BACKSTOPS. Dysfunctional backstoppers of PIT: CIT, PIT.
+nice quote "THings in tax today are bad" (McCaffery 893)
+
+899: "Together with the basic tax planning of buy/borrow/die, lower tax rates on capital realizations and corporate dividends, cash-value life insurance, and the taxation of home-ownership, the new developments in retirement savings help to move tax towards a world in which citizens will pay taxes on their wages, under a compressed rate structure, and never again. This is the world of prepaid consumption, or wage, taxation"
+people arbitrage their way toward a falt, wage-tax.
+
+
+"Corporations are legal fictions".
+ the key moral intuition, and Rawlsian reflective equilibrium is this: it seems fair and appropriate to burden capital ransactions when these facilitate or enable a better lifestyle, reflecting a greater "ability to pay" or more "benefits received" from the social compact. But it does not seem fair and appropriate to burden capital transactions when they are used simply and sensibly to move around in time uneven labor market earnings." 921
+ 
+ "People treat a plan as realistic when it approximates what already exists and as utopican when it departs from current arrangements. Only proposals that are hardly worht fighting for - reformist tinkering - seem practicable" (Roberto Managebrai Unger, False Necesseity 12 1987 as cited in McCaffery 938)
+
+ > "A progressive postpaid consumption tax emerges as the fairest and least arbitrary of all comprehensive tax systems, precisely because it chooses to make its decisions about the appropriate level of progressivity at the right time. In doing so, it burdens some but not all uses of capital and its yield, and for normatively attractive reasons."
+ > Edward J. McCaffery (2005: 812).
+
+ There are three types of taxes
+ 1. Income taxes (including capital incomes)
+ 2. Prepaid consumption taxes (VAT), or, equivalently, payroll taxes, or, equivalently social contributions (such as statutory health insurance, unemployment insurance, pensions, etc. in Germany)
+ 3. Postpaid, progressive consumption taxes ("The Perfect Tax"), based on a cash flow account of spending (Consumption = Income - Savings / aka Haig-Simons definition of income).
+
+ There are two savings norms (as in: what exactly is saving?)
+ 1. Ordinary Savings Norm: saving is just postponed consumption, "smoothed out" over the lifetime. Nominal interest is just a compensation for postponement (think: inflation, risk, growth, discounting of the future). Incomes from savings (= capital incomes) should not be taxed.
+ 2. Yield-to-Capital Norm: incomes from savings are a genuine accretion to wealth. Interest is income.  Incomes from savings (= capital incomes) should be taxed.
+ 	Note:
+ 	- Income taxes (if complete) adopt a yield-to-capital norm. All capital incomes are (ideally) taxed. (In reality, as McCafferty explained, they hardly ever are, because there are systemic flaws, such as "tax evasion 101")
+ 	- Prepaid consumption taxes (or VAT, or payroll, or social contributions) adopt an ordinary savings norm. No capital incomes are taxed.
+ 	- Postpaid progressive consumption taxes (or spending taxes, or cash flow based consumption taxes) tax some capital incomes. To the extent that (dis!)saving is used to smooth out consumption, interest is not taxed. To the extent that it is used to enhance lifestyle, or for lumpy consumption (opposite of smoothed out), it is taxed.
+ 	For a review of different taxes and how they work, consider my prospectus (again attached), pages 60-66
+ 	Consider this example to understand that a VAT (German MwSt.) is the same as a proportional payroll or proportional social contribution.
+
+
+ ## The Detective Story of Income Taxation (Who Dunnit? Who killed progressivity?)
+
+ > "The real and pressingly practical question for tax is not whether to have an income or a consumption tax, but what form of consumption tax to have. The stakes in this battle are clear and dramatic: the fate of progressivity in tax lies in the balance."
+ > Edward J. McCaffery (2005: 817)
+
+ > "Advocates of redistributive taxes must wake up and realize that their end is in jeopardy on account of their poor choice of means: they are fighting, and losing, the wrong war."
+ > Edward J. McCaffery (2005: 848)
+
+ The political alternatives now seem to be between progressive income tax and prepaid proportional/flat consumption tax (VAT, Social Contributions, Payroll, all equivalent). This is an incomplete choice set.
+ The one progressive component of today's tax regimes, the personal income tax, has deficient backstops.
+ - Estate and gift taxes (buy, borrow, die)
+ - Corporate income tax (indeterminate incidence, no progression, indeterminate location of value generation)
+
+ The personal income tax as structural flaws, remaking the PIT ever more into a wage or prepaid consumption tax.
+ 1. Macomber. Tax on accession/accrual or tax on realization? The Supreme Court rules: you can tax only on realization (selling).
+ 	this problem is much exacerbated in the case of income in illiquid assets.
+ 2. Tax Planning 101 aka Buy, Borrow, Die. Mrs Macomber could simply borrow on her (appreciating!) stock as collateral. Recall that borrowing, is not income under an income tax. Mrs Macomber can spend out of the borrowing tax-free.
+ 3. Heirs never pay the estate tax, because that is (as it makes sense) a net tax on assets minus liabilities. In the extreme case of Tax Planning 101, there is no estate.
+ 4. Also, Tax Planning 101 incentivizes people to never realize, to never sell. This may lead to markets freezing up and asset as well as derivatives (!) bubbles, at great cost to the economy.
+
+ ## A Numerical Example to Show the Equivalence of VAT and Payroll
+
+ 2 Periods
+ EUR 100 Income
+ 20% tax
+ 10% interest
+ Payroll / Social Contributions
+ EUR 100 Gross * 0.8 Payroll Tax = EUR 80 Net
+ Period
+ Consumption
+ Saving
+ p1
+ EUR 40
+ EUR 40
+ p2
+ EUR 44 (from Saving * 1.1)
+ 0
+ Aggregate Consumption / Utility = EUR 84
+
+
+ VAT
+ EUR 100 Gross = EUR 100 Net
+ Period
+ Consumption
+ Saving
+ p1
+ EUR 50 * 0.8 = EUR 40
+ EUR 50
+ p2
+ (EUR 50 from Saving * 1.1) * 0.8 = EUR 44
+ 0
+ 
