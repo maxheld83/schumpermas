@@ -8,6 +8,9 @@
 <!--    - *documents* structure, experts, sample, etc. of CiviCon -->
 <!--    - *reports* on the validity, reliability of the treatment in deliberative terms, including citizen and moderator feedback. -->
 
+<!-- absolutely must re-read moore piece on conducting deliberation; this is key for how it's done and facilitated, there are also helpful comments in there. -->
+
+<!-- title: so crazy, it did just work? -->
 
 <!-- TODO: get offe field report email -->
 

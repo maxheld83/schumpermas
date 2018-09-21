@@ -1,5 +1,19 @@
 # Epilogue
 
+> Hope is definitely *not* the same as optimism. 
+> It is not the conviction that something will turn out well, but the certainty that something makes sense, regardless of how it turns out.
+> Václav @HavelDisturbingPeaceConversation1985
+Read more at: https://www.brainyquote.com/quotes/vaclav_havel_152338
+
+<!-- things have gotten worse in the meantime -->
+
+\begin{quote}
+	\emph{``Hoffnung ist eben nicht Optimismus, ist nicht Überzeugung, dass etwas gut ausgeht, sondern die Gewissheit, dass etwas Sinn hat --- ohne Rücksicht darauf, wie es ausgeht.''}
+	\\*
+	--- V\'{a}clav Havel (1936 - 2011)
+	%better quote
+\end{quote}
+
 ## The Great Unravelling: Why we Must Now Embrace Complexity to Avoid a Return to Fascism
 
 With Donald Trump elected to the most powerful office on the planet, Brexit passed, rightwing populists banging on the gates of parliaments and government in France, Germany and elsewhere, we find ourselves in the midst of the greatest assault on liberal democracy since World War II.
