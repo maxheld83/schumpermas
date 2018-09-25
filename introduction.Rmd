@@ -1123,8 +1123,30 @@ Now, we must adjudicate their universal validity on their own terms.
 With any luck, the [bigsss]{acronym-label="bigsss" acronym-form="singular+short"} will still be a place where such communicative action happens.
 
 
-<!-- % \input{./tex/metaconsensus-tax-x3.tex}
-% \input{./tex/metaconsensus-tax-x5.tex}
+Table: Variable Metaconsensus in Taxation (x3)
+
+|  | Values | Beliefs | Preferences |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Subject | What makes a tax desirable? | What makes a tax doable? | Which tax do we want? |
+| Existing Work | `axiology`, `desirable-tax` | `ontology`, `doable-tax` | `better-tax` |
+| Example Statements |  *"People should pay taxes on what they earn on their wealth"* | *"A tax can be easily collected right at the source, in the firm"* | *"We should tax the income of corporations."* |
+| Example Extracted Factors | Efficiency vs. Equity | Withholding Taxation | Corporate Income Taxation |
+| Meta-Consensus | High(er) loadings on relatively few(er) factors. People understand that people can disagree on efficiency vs. equity. | High(er) loadings on relatively few(er) factors. People understand that one of the choices would be to tax at the source. |  High(er) loadings on relatively few(er) factors. People understand different taxes, and recognize it in different formulations. |
+| Example Extracted Secondary Factor | Indirect Taxation (all columns) |  |  |
+| Intersubjective Rationality | People who value wealth taxation, and think withholding taxes are easier to collect will prefer a Corporate Income Tax. (all columns) |  |  |
+| Delta Before and After Deliberation | Tax Misunderstanding: Flypaper Theory (all columns) |  |  |
+
+
+Table: Variable Metaconsensus in Taxation (x5)
+
+|  | Values (specific) | Values (General) | Beliefs (General) | Beliefs (Specific) | Preferences |
+|---------------------------|------------------------|----------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------|
+| Subject | What is desirable? | What makes a tax desirable? | What is doable? | What makes a tax doable? | Which tax do we want? |
+| Existing Work | `axiology` | `desirable-tax` | `ontology` | `doable-tax` | `better-tax` |
+| Example Statements | *"Growth is good"* | *"A good tax should encourage people to save for the future."* | *"Markets are a reasonable way to organize much of human activity."* | *"It is more feasible to tax things whose value is known."* | *"People should be taxed on what they spend."* |
+| Example Extracted Factors | Consequentialist Ethic | Time-Discounted Stable Incomes | Pro-Market | Liquidity Taxation | Progressive Consumption Tax |
+
+
 % \input{./tex/niemeyer-vs-me.tex} -->
 
 <!-- %\cite{Genschel2004} and Achim \cite{Kemmerling2009} in particular have published on the effects of economic liberalization on national tax regimes.
