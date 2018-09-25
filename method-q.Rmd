@@ -1,5 +1,18 @@
 # Q Methodology
 
+Table: Concourse Sampling Scheme
+
+|  | **Main Effects** |  |
+|----------------------------------------------|:-------------------------------------:|-------------------------|
+| Values / Axiology | Beliefs / Ontology | Preferences / Taxes |
+|  | **Levels** |  |
+| Efficiency | Individuals vs Groups | Corporate Tax |
+|  | *General* |  |
+| "Actions are good if consequences are good". | "People are motivated by incentives". | "Unfettered markets". |
+|  | *Specific* |  |
+| What makes a tax desirable? | What makes a tax doable? | Which tax do we want? |
+| "A good tax gets at the yield to capital". | "A doable tax is a withholding tax." | "Corporate Income Tax". |
+
 <!-- The respectful give and take of deliberative citizen participation is expected to change political views, though in which way, and how to measure it, is less clear.  -->
 <!-- On the one hand, conventional survey research offers rigorous and advanced analytics, but is marred by deductive operationalizations and often falls short of a convincing measure of communicative rationality.  -->
 <!-- Qualitative approaches, on the other hand, leave much to the researcher's discretion, and risk conflating a measure of deliberative quality with the researcher's substantive theory of justice or reason. -->
