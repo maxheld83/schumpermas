@@ -1,13 +1,11 @@
 # Q Methodology
 
-Table: Concourse Sampling Scheme
+Table: Factorial Concourse Sampling Scheme
 
-|  | **Main Effects** |  |
-|----------------------------------------------|:-------------------------------------:|-------------------------|
 | Values / Axiology | Beliefs / Ontology | Preferences / Taxes |
-|  | **Levels** |  |
-| Efficiency | Individuals vs Groups | Corporate Tax |
+|:----------------------------------------------:|:-------------------------------------:|:-------------------------:|
 |  | *General* |  |
+| Efficiency | Individuals vs Groups | Corporate Tax |
 | "Actions are good if consequences are good". | "People are motivated by incentives". | "Unfettered markets". |
 |  | *Specific* |  |
 | What makes a tax desirable? | What makes a tax doable? | Which tax do we want? |
