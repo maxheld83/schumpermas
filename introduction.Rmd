@@ -492,6 +492,16 @@ designs as those by @McCafferyBaron2004 or @SausgruberTyran2011 may well face tw
 
 [^flexible_prices]: Tellingly, @SausgruberTyran2011 already take pains to remind readers that [tax-lse]{acronym-label="tax-lse" acronym-form="singular+short"} only holds when factor rents and prices are fully flexible --- a condition that is as controversial as is it is difficult to verify, even after 60 years of macroeconomic debate about little else [@Wapshott2011].
 
+Table: Pluralist and Deliberative Democracy
+
+|  | Pluralist Democracy | Deliberative Democracy |
+|-----------------------|:---------------------------------------:|:---------------------------------:|
+| *Knowledge* | Miracle of Aggregation Wisdom of Crowds | Schools as the Operative Metaphor |
+| *Legitimacy* | Special Interests | (Alternative!) Common Good*s* |
+| *Equal Participation* | Representation | Veil of Ignorance |
+| *Speech* | Power | Communicative Action |
+| *Preferences* | Pre-Social | Intersubjective |
+
 
 ## Project description
 
