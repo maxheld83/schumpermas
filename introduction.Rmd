@@ -4,22 +4,64 @@
 
 # Introduction
 
-> The spirit of a people, its cultural level, its social structure, the deeds its polity may prepare – all this and more is written in its fiscal history, stripped of all phrases.
+> The spirit of a people, its cultural level, its social structure, the deeds its polity may prepare -- all this and more is written in its fiscal history, stripped of all phrases.
 > He who knows how to listen to its message here discerns the **thunder of world history** more clearly than anywhere else.  
-> –– Joseph Schumpeter (1918: 6)
+> ––- Joseph @Schumpeter [1918: 6]
 
-> Reaching understanding, (...) **the inherent telos of human speech**.  
+> The unforced force of the better argument: [@Habermas1996, 305]
+> The speaker must choose a comprehensible expression so that speaker and hearer can understand one another. [@Habermas1976: 2f]  
+> [A]nyone acting communicatively must, in performing any speech act, raise universal validity claims and suppose that they can be vindicated. [@Habermas1979: 2]  
+> Reaching understanding, (...) **the inherent telos of human speech**. 
 > –– Jürgen Habermas (1987: 287)
+<!-- TODO last citation isn't quite right -->
 
 <!-- ![Citizens preparing the press conference at the 2014 CiviCon Citizen -->
 <!-- Conference](https://dl.dropboxusercontent.com/u/5341489/images/civicon-prep-poster_small.jpg) -->
 
+If world history is still written in tax, as @Schumpeter believed, the people of our democracies, too, must read and speak these codes, to live up to the emancipatory promise of modernity.
+If communicative action can heal the disagreement and confusion wrought as modernity differentiated System and Lifeworld, as @Habermas-1984 hopes, in our discourse on tax, too, universally acceptable validity claims instead of money and power must rule to uphold our faith in liberal democracy.
+<!-- comment MN dependent on each theorie -->
 
-> Why, in the most prosperous of economies, are we plagued by widening inequality, underfunded states and persistent unemployment?  
-> Why, in the most enlightened of times, are we thoroughly confused about governing our mixed economies and perilously disaffected with the results our democratic rule produces? 
- 
-> **What if** there were alternative taxes, which afforded us more attractive tradeoffs between economic efficiency, equity and sustainability or other ends  
-> **What if** we *could* agree on such alternative taxes, but *would not*, because we lacked the necessary information or suitable fora, and because our capacity for mutual reason-giving had been diminished by alienating inequality or clouded by special interest?
+I here probe into one intersection of legitimate inputs and outputs of the social contract [compare @Scharpf1997]: the discourse *on*, and economics *of* tax.
+
+I ask, how --- if at all --- people under current democratic arrangements think and speak differently about tax, from how they *would* think and speak about it, if they lived under conditions of ideal speech.
+<!-- not so much the speech with q any more ... -->
+I test, how --- if at all --- people change their thinking and speech about tax, if they participate in a democratic process that is *closer* to the Habermasian ideal?
+I hypothesize that --- as a result of *more* ideal speech --- people will prefer different taxes, including a PCT.
+<!-- %rather than more, write closer to, more could be misunderstood -->
+
+
+## Taxation and Welfare
+
+Why does taxation matter for human welfare?
+
+As @Schumpeter knew, "in the modern world, taxation *is* the social contract" [@Martin2009a, 1, emphasis in original], even though social scientists have since paid little attention to it [@Tilly2009, K191].
+Tax matters especially for current OECD-style welfare regimes, in which markets and states must co-exist [@Stiglitz2011].
+In such a mixed economy, government must be able to draft some privately-owned resources to serve its --- ideally democratic --- *command*, without unduly altering the prices of --- ideally competitive --- *exchanges* [@Ardant1975, 165f]. 
+<!-- TODO ref chapter on mixed econ here -->
+Much of modern social integration occurs in the balance of these two contrasting logics to produce and allocate resources, "enmesh[ing] us in the web of generalized reciprocity that constitutes modern society" [@Martin2009a, 3].
+State plans make the conditions *for*, and set limits *to* *individual* action, as when government builds roads or collects sewage fees.
+Conversely, market exchanges produce much of the "fungible resources" used for *collective* choice, as when government pays road builders or procures sewage pipes [@Martin2009a, 4].
+
+Of all conceivable institutions to govern the interface of states and markets, taxation --- not price controls, not expropriation, not debt, not printing money, not tariffs --- is the most equitable, efficient and sustainable [@MusgThet1959; @Stiglitz2011].
+<!-- TODO ref tax-matters chapter -->
+Welfare states, with their penchant for market interventions for equity, efficiency *and* sustainability, especially, rely on good taxes.
+
+<!-- %bad überleitung, the instead doesnt work -->
+Still, taxation everywhere in the OECD is in crisis.
+As alternative sources of economic relief --- monetary expansion and sovereign debt --- are maxed out, structural misalignments persist, and previously forestalling (asset) bubbles have burst into their days of reckoning, public revenues appear to be strictly limited by the longtime coming contradictions of current tax regimes [@Streeck2013].
+<!-- %not sure about this soure, must read it -->
+The popular mixture of (progressive) income, (proportional) consumption and (regressive) payroll taxes appears to offer only harshly unattractive tradeoffs between equity and efficiency [@McCafferyHines2010], as bases have shrunk and schedules flattened [@Ganghof2006].
+At the same time --- possibly partly as a result --- inequalities of incomes and wealth have widened [@Butterwegge; @Wagner2007; @Grabka2007].[^no_wealth_distro]
+<!-- TODO mention here that inequality findings are contentious -->
+
+[^no_wealth_distro]: Data on the distribution of wealth is conspicuously hard to come by [@Crouch2004, 158] or ordinally summarized in deciles, rendering much of the inequality invisible.
+
+If governments cannot raise the resources necessary to meet democratic demands without incurring prohibitive costs, the social contract is fraying [@Crouch2004].
+<!-- %so so shource -->
+Whichever way governments now turn, absent better tax, they will violate the post-war capitalist compact of stable, widely shared growth [@Pierson2002; @StreeckMertens2010].
+<!-- %so-so source -->
+<!-- TODO ref 3-crisis chapter -->
 
 
 <!-- . Introduction [based on introduction] -->

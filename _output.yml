@@ -16,7 +16,6 @@ bookdown::pdf_book:
     after_body: latex/after_body.tex
   dev: "cairo_pdf"
   latex_engine: xelatex
-  citation_package: natbib
   keep_tex: yes
   toc_depth: 1
 bookdown::epub_book:
