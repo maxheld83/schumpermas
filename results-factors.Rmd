@@ -1,6 +1,4 @@
-# (PART) Results {-}
-
-# Data
+# Data {#baseline}
 
 <!-- - reports correlations, factors from pre- and post-sort. -->
 <!--    - *factor interpretation* in substantive terms of tax and the economy. -->

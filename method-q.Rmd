@@ -1,4 +1,8 @@
-# Q Methodology
+# Q Methodology {#q}
+
+<!-- TODO so you're putting the same arguments *into* the items which where the treatments to test whether the treatment wored; isn't that circular?!? Maybe refer back to the yoga study to argue that:
+- no, it's not (because pragmatism?, because patterns?)
+- well, so what, it's remedial, public Sociology kinda thing -->
 
 Table: Factorial Concourse Sampling Scheme
 

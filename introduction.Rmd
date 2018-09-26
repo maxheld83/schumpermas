@@ -2,7 +2,7 @@
 
 # (PART) Theory {-}
 
-# Introduction
+# Introduction {#intro}
 
 > The spirit of a people, its cultural level, its social structure, the deeds its polity may prepare -- all this and more is written in its fiscal history, stripped of all phrases.
 > He who knows how to listen to its message here discerns the **thunder of world history** more clearly than anywhere else.  
@@ -29,6 +29,120 @@ I ask, how --- if at all --- people under current democratic arrangements think 
 I test, how --- if at all --- people change their thinking and speech about tax, if they participate in a democratic process that is *closer* to the Habermasian ideal?
 I hypothesize that --- as a result of *more* ideal speech --- people will prefer different taxes, including a PCT.
 <!-- %rather than more, write closer to, more could be misunderstood -->
+
+
+## Structure of the Dissertation {#structure}
+
+The following chapters follow a fairly conventional structure from theory to methods to results and conclusion, but the *status* of especially the first couple of chapters may unclear to readers.
+Out of substantive necessity, the references and disciplines in these first couple of chapters can be quite wide-ranging, though these are merely introductory (for the reader) and remedial (for the participants).
+To clarify the role of these chapters, let me first situate them within the remainder of this dissertation.
+
+This project is modeled on a straightforward experimental design, as it is frequently used in clinical studies.
+However, because the study deals not with easily measurable biomarkers, but with subleties of deliberation and the abstractions of text, the design can be hard to recognize.
+
+
+### Research Design by Analogy
+
+Consider an analogous example to let me guide you through the following chapters:
+A doctoral candidate in medicine wants to study how a daily morning exercise affects mindfulness.
+In this exercise study, the absence (or presence) of the morning routine is the *independent variable* (IV), the kind and level of mindfulness the *dependent variable*.
+Analogously, in the present study, the participation in the CiviCon citizen conference is the *IV*, and subjectivities concerning taxation are the *DV*.[^no-rct]
+<!-- TODO might cite some experimental design literature here -->
+
+[^no-rct]: Proper experimental designs are often double-blind *randomly controlled trials* (RCT), but these additional rigors are not possible or deemed unecessary for the present study on deliberation and taxation:
+
+  - A fully **randomised treatment** is impossible, because participants in a deliberative forum will (and should) always be free to exit the sample.
+  Because the universe of participants are all citizens, or even all human beings affected by the policy in question, even a reasonably representative quota sample will be hard to come by.
+  Largely because of limited resource, the present study is a self-selected haphazard sample, described in more detail in chapter \@ref(civicon).
+<!-- TODO ... is that the right reference? -->
+  - A **control group** of non-participating citizens would be possible in the present study, but was not included because of limited resources.
+  In any event, there were no expected background events or trends affecting the subjectivities concerning taxation of *both* treatment and control groups, so a control group was deemed dispensible.
+  Whatever changes the participating citizens displayed are likely to be a result of the deliberation.
+  - A **blind design** is impossible because participants will, by the nature of the treatment, always know whether they are participating in a deliberative forum, or not.
+  There should be no *placebo* deliberations, though there may well be those formats worthy of such a label.
+<!-- TODO refer to chapter were I diss other formats -->
+
+
+Table: (\#tab:commented-toc) A Commented Table of Comments with Analogous Experimental Design
+
+| Research Design Concept | Hypothetical Mindfulness Study | This Study | Chapter |
+|-------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Research Topic | Effect of morning exercise on mindfulness. | Effect of deliberation on subjectivities on taxation. | \@ref(intro) |
+| Conceptualisation | Hatha Yoga | Why taxation matters. | \@ref(3-crises) |
+| Theoretical Background | Diet (*mitahara*), body cleansing (*shatkarma*), breathing (*pranayama*) and some philosophical background. | Optimality, Incidence, Haig-Simons Equivalence, Circular Flow, Personal Taxation as well as some axiology and ontology. | \@ref(abstractions) |
+| Operationalisation | 5 selected asanas (positions), including the rare *firefly pose*. | Fundamental choices in taxation: base and schedule | \@ref(base-schedule) |
+| Treatment regimen | In-Person group sessions at local gym | Weeklong deliberation with room and board and extensive learning phases. | \@ref(civicon) |
+| Measurement | - | Q Methodology. | \@ref(q) |
+| Field Report | - | Report from the CiviCon Citizen Conference | \@ref(field-report) |
+| Results (Baseline) | - |  | \@ref(baseline) |
+| Results (Treatment) | - |  | \@ref(treatment) |
+| Discussion |  |  |  |
+| Conclusion |  |  |  |
+
+We need to complicate this simple design only a little bit to bring it close the present study on deliberation and taxation, as shown in table \@ref(tab:commented-toc).
+
+First, let us assume that our M.D. to be presents good reasons to concentrate on a *particular* kind of exercise, say, hatha yoga.
+Perhaps, the aspiring doctor argues convincingly that hatha yoga is an especially promising treatment, or that it has been previously understudied, or that really, "exercise" without the kind of body-awareness honed by hatha yoga is a meaningless concept, likely to yield only spurious effects, if any.
+
+So it is with this research on deliberation and taxation.
+In chapter \@ref(3-crises) I argue that taxation is a key, yet understudied precondition for a functioning mixed-economy and that to be effective, deliberation needs to engage with highly structured and abstract topics such as tax.
+
+Secondly, suppose that our M.D.-hopeful insists on teaching the participants not just some positions, but also other related practices such covering diet (*mitahara*), body cleansing (*shatkarma*), breathing (*pranayama*) as well as some philosophical background.
+At this point, her supervisors get a little anxious and worry where this might all lead.
+However, our medical student maintains that concentrating on exercise alone is alien to the tradition and shows how the elements of hatha yoga are neatly intertwined.
+She is the first to admit that she is not an expert in philosophy, let alone buddhist philosophy, but she is confident that she can provide at least *some* helpful background for participants do understand the broader context.
+
+Analogously, this dissertation also requires some deep background for participants and readers alike.
+In chapter \@ref(abstractions), I rehearse a few selected abstractions of taxation and microeconomics, including optimality, incidence, the Haig-Simons equivalence of income, the circular flow of the economy and implications of personal taxation.
+I describe why these are necessary concepts to any reasoned debate on taxation.
+Because these concepts, along with their underlying ontological and axiological assumptions are also concentious, I also provide a working vocabulary of economic philosophy to explicate the ideological import of these concepts.
+
+Thirdly, imagine that our medical student is also quite particular about proper postures and requires subjects to concentrate on, say, the somewhat obscure and demanding *firefly pose*, along with four other precisely defined positions, and nothing else.
+Her supervisors wonder why she could not use simpler, more mainstream positions, such as the *downward-facing dog*, or *really*, just some plain breathing exercises.
+The medical student counters that *only* these selected five positions, evolved over centuries, form a well-rounded exercise regimen and rehearses some biomechanical research to support her claim.
+
+This dissertation, too, is quite particular about the taxes to be deliberated on.
+In chapter \@(hypotheticals) I argue, citing some mainstream economic research, that there are only a few, fundamental choices in taxation, given by the interaction of base and schedule.
+I show that these choices are highly consequential, irreducibly political, and therefore, essential for deliberating citizens.
+
+Fourth, the medical student informs her supervisors that, *unfortunately* the planned study cannot be undertaken in the usual clinical setting, but that because of all the required instruction, she will need to meet participants in person every morning for a group session at a local gym, which she will decorate appropriately with sandalwood incense.[^centerpiece]
+Aghast upon hearing this latest proposal, one of the supervisors resigns from the committee and vows to never supervise a student again who so much as mentions Eastern philosophy.
+The student studies existing treatment regimens, and argues that an intensive intervention is the only way to do this research.
+She also finds two other studies with similar treatments, one even flew participants out to a carribean yoga retreat.
+The remaining supervisors stay on, perhaps just hoping that the philosophising will now come to an end, and the study reach firmer ground.
+
+[^centerpiece]: This part is actually factual.
+    At the behest of the trained moderators, we installed a vaguely new-agey centerpiece at the deliberation venue.
+    It worked wonders.
+    <!-- TODO refer to picture in the appendix -->
+
+This study too, required an unconventional treatment regimen.
+In chapter \@(civicon) I explain why, instead of the more usual short and large-n deliberative fora, to study taxation, a longer and more intensive format is necessary.
+I review existing deliberative fora, and argue why their experimental value remains limited.
+I describe the design of the **CiviCon Citizen Conference** I hosted as part of this dissertation.
+
+Fifth, our aspiring clinician recognizes that measuring "mindfulness", her DV, is quite tricky.
+Existing survey instruments seem too closed-ended, but entirely qualitative methods do not seem scientific enough for her.
+Instead, she finds a clever way to holistically measure *different* experiences of mindfulness, and records how they change during the course of the treatment.
+
+Measuring *whether* a forum was deliberative, and if so, what the *substantive effects* of the deliberation were may be yet more vexing than quantifying "mindfulness".
+In chapter \@(q), I review existing measurements for deliberative quality, as well as their results and, finding most of them unsatisfactory for the present needs, suggest an application of rarely used Q-Methodology.
+
+
+## Theory as Treatment
+
+<!-- TODO a research question chapter is missing in the above, and that is in fact where, well, what is tested would be listed -->
+
+What may strike readers as odd about the first couple of chapters is that these are wide-ranging, but in no way original.
+They have the feeling of a *textbook*.
+This is by design, and follows from the remedial aspiration of deliberation itself.
+<!-- TODO explain why it needs didactic reduction etc. -->
+
+Emphatically, the content of the theory chapters is also *nowhere* subject to an empirical test in this dissertation.
+Much like our hypothetical medical student would not test whether participants could successfully do a *firefly pose*, I never test whether participants understand the deadweight-loss (DWL) of taxation, let alone whether, under which circumstances or to what extent, this abstraction is a positive phenomenon.
+All these chapters have the status of *justifying* and *explicating* the *treatment*, that is, the framing and briefing for the deliberative forum.
+
+<!-- TODO add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are. -->
 
 
 ## Taxation and Welfare

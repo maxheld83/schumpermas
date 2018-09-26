@@ -1,6 +1,6 @@
 # (PART) Methods {-}
 
-# CiviCon
+# CiviCon {#civicon}
 
 <!-- 1. Methods-1 (CiviCon) -->
 <!--    - explicates the *treatment condition*; in this case, the CiviCon Citizen Conference -->
