@@ -528,3 +528,21 @@ Table: Variable Metaconsensus in Taxation (x5)
 %On the one hand, equality is a necessary precondition of autonomy.
 %It is only in a cooperative exchange between equals that the self-expression and critical selfreflection required for the self-reflective construction of one’s understandings and interests is possible. -->
 <!-- %%25: ``the potential for abuse [by facilitators] is real, and crafting an appropriate conceptual and institutional response will be difficult'' -->
+
+
+<!-- A fitting deliberative format for my project...
+
+1. Includes a strong learning component, structured roughly along my drafts -- but shorter, and in more accessible style.
+	(It must not be a microeconomics text).
+2. Relates these abstractions to personal experiences and intersubjective value judgments.
+3. Prioritizes intensity (duration) over representativeness (sample size) under given constraints (time, money).
+4. May involve me and existing material for the learning component, but someone else must moderate the deliberations.
+5. Starts from a small-scale, face-to-face deliberation as a pilot study, both to guarantee concept validity and because I have no idea about deliberation- -->
+
+
+<!-- #### Threats
+
+1. SES-graded, unequal participation may remain/result, especially because tax tends towards academic abstractions.
+2. Political apathy may remain/result, especially because fundamental tax reform cannot even be done at the national level and may face other hurdles.
+	Participants will in no way have some actual decision-making power over the subject of their deliberation.
+3. The deliberation might regress into a microeconomics class, where deliberators look for “right” or “wrong”, rather than empower their own voices and intersubjective understandings. -->

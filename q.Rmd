@@ -29,6 +29,8 @@ Table: Factorial Concourse Sampling Scheme
 <!-- They participated in learning phases, deliberated in moderated small group and plenary sessions, met with experts and held a concluding press conference. -->
 <!-- Before and after the conference, citizens sorted 79 statements on taxation and economics according to their subjective viewpoint. -->
 
+<!-- Besides, it’s not clear that we need random sampling, maybe we need theoretical saturation, that might make more sense for Q method. -->
+
 <!-- Following traditional Q methodology, sorts were factor analyzed to extract ideal-typical viewpoints shared by participants.  -->
 <!-- Before the conference, citizens expressed resentful, radical and moderate viewpoints, including some apparent inconsistencies between beliefs, values and preferences on taxation.  -->
 <!-- After the conference, citizens shared decommodifying, pragmatic and critical viewpoints and displayed a simpler, lower-dimensional structuration of viewpoints. -->
@@ -511,3 +513,10 @@ Look at Brown 1980: 14 for the body parts analogy; putting it back together in R
     + Normative meta-consensus ("shared recognition of the legitimacy of a set of values, but no agreement")
     + Epistemic meta-consensus ("agreement on the credibility of beliefs and their relevance to the question under deliberation")
     + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension)
+
+
+    <!-- ## Methode Q-Sort
+
+    - Q-Sort wurde in mehreren Versionen 8 mal durchgeführt, Änderungen eingearbeitet
+    - Q Methode wurde im Doctoral Colloquium vorgestellt, Feedback von Christopher Cohrs (UB) eingeholt
+    - Siehe Auszug DC Präsentation (anbei) -->

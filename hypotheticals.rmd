@@ -8,6 +8,8 @@ it hinges on irreducible moral and causal judgments [for example, @McCaffery2005
 
 <!-- these are first order hypotheticals -->
 
+<!-- we need discrete choices for a CiviCon, otherwise we're all over the place, but it needs to be a choice that is relevantly abstract -->
+
 <!-- this is what the learning phases are about -->
 
 <!-- taxes vs fees vs pigou (tijnbergen!) -->

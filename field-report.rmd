@@ -2,14 +2,23 @@
 
 # Field Report {#field}
 
+<!-- "Das beste Argument gegen die Demokratie ist ein fünfminütiges Gespräch mit dem durchschnittlichen Wähler.”
+
+Wir sagen: das beste Argument für Demokratie ist ein fünftägiges Gespräch mit Bürgerinnen und Bürgern wie Sie und ich. -->
+
 <!-- people talked more about general participation, less about tax stuff
 also evident in their presentation and feedback -->
+
+<!-- This IS teilnehmende Beobachtung -->
+<!-- not just what happened, also some cursory reflections on how this deliberation panned out -->
 
 <!-- they felt like they did not have enough time to really decide on the tax
 there was also no obvious external pressure; nor was it clear that this would have been legitimate
 or maybe, it would have been, because an external stake/pressure is just realistic -->
 
 <!-- the proof of concept worked: people liked this -->
+
+<!-- this section also includes some suggestions for improvements -->
 
 After filling out the questionnaire, the topic of the deliberation will be introduced by two moderators, both of which are non-experts in the field.
 The moderators again introduce a simplified version of the above table, and walk participants through the combinations of base and schedule --- including presently used [pit]{acronym-label="pit" acronym-form="singular+short"}, [vat]{acronym-label="vat" acronym-form="singular+short"} and [payroll]{acronym-label="payroll" acronym-form="singular+short"} --- but abstain from causal, or normative statements about these taxes.
@@ -25,7 +34,103 @@ Participants fill out a questionnaire again, including some of the questions fro
 are recompensed for their time and thanked by the convener.
 
 
+## Recruiting
+
+<!-- ### (via audio note on 2014-07-14)
+Finally, ideally you won't need the PR strategy, because with a constitutional mandate, a civicon should "spin itself " – but that's not happening anytime soon.
+Civicon should probably be an independent format with some gravitas and an established brand before it enters into any formal relationship with the state, which may otherwise really interfere with its operation.
+Or maybe not?
+Maybe I am wrong about that.
+I need a visualization that shows the demand for a good civicon
+Actually, you need a n argument why long, why complex civicon.
+Then you need the same thing for different civicon,s what gives them enough people, such as money, venue, PR.
+Which of these is important for the IMPACT factor and which for REPRESENTATIVESS of the sample (2x2 table anyone?) -->
+
+<!-- ### (via audio note on 2014-07-25)
+There seem to be several standards that might work for civicon sampling:
+1) Public relations and impact: you need a self-selected sample, and just a lot of ads. Self-selection raises awareness, because here, a self-selected sample, everyone *could* have applied
+2) Random sample undertaken by polling firm may be ideal for representativeness, but it might not raise awareness as much.
+Whether society notices recruiting or not matters a great deal, not just to push deliberative democracy, but also simply to strengthen concept validity of the format, or make it externally valid.
+There needs to be something at stake; and that doesn't work in this case because there is no external mandate or actual decisions to be had, not a constitutional mandate anyway.
+The only thing you might have that matters is that people listen to the results, and find it important.
+That might need much more money and professional PR, maybe something an external foundation could pay for.
+But it also matters for the research, because this raises the stakes and establishes concept validity. -->
+
+<!-- ### science ethics in the experiment (via audio note on 2014-07-14)
+Also notice the conundrum that for all practical intends and purposes it would be easier if I could make people sign people a paper that forces them to participate, and then to pay pack some money if they drop out at the last minute.
+But that would be completely unethical probably generally because of scientific informed consnet science ethics / experimental ethics: people must always be able to drop out without financial repercussions.
+This is especially so in this case, where there are audio and video recordings.
+So, no signing.
+Generally, it seems hard to underestimate the psychological stress this might piut people under, including confronting their own economic situation.
+This will only become more challenging the more diverse the sample becomes. -->
+
+<!-- ### on reimbursements (via audio note on 2014-07-14)
+If you want a representative sample, as in a GSEOP-kind of sample, you might want to have *huge* incentives, especially if you want to attract poor, marginal people, busy people, with kids etc.
+The problem then is of course that people might participate *not* as a matter of a citizen right, or even privilege, but simply because they face outrageous incentives.
+(This might again mean to treat people as means, not as ends – compare strategic behavior as per Habermas).
+That might not be the best idea.
+So maybe, after all, you live with it not being representative – just like in elections: there is a huge non-particiupation.
+The standard, of course, must be that it must be plausibly possible for everyone to participate.
+I have to really be careful here not to construe the format in a way (such as 2 weeks, sleep in communal haousing, enjoy bbq together etc) that the format attracts a certain kind of people, but not others, maybe because it's too intimate for them or just too plain long.
+It must not be infeasible for others.
+That is a very delecate balance.
+Obviously the standards for elections is very low: it does not ask a lof citizens, but a civicon well might. -->
+
+
+<!-- Manfred Palm notes that more incremental formats (just a half day, then ask for more) might work better, and would like to see more concrete information on the brochure. Maybe needs longer brochure. -->
+
+<!-- anwogessel@yahoo.de (anonym) has some skepticism (see email), generally makes me wonder whether there are people who are just too angry and distrustful to participate, or whether they indeed have a point, as in:
+- is this indoctrination?
+- does this only attract like-minded people?
+- shouldn't this be left to pluralism? (ha!) -->
+
+<!-- DGB Telefonat
+Mit Anette Düring, Regionsvorsitzende, hatte Email gelesen, war extrem aufgebracht, ärgerlich, sie hat kein Interesse daran.
+oh man, manchmal verstehe ich diese Welt einfach nicht. Ich habe beim DGB Bremen (endlich) jemanden telefonisch erreicht, und die Frau (Vorsitzende Bremen) war extrem aufgebracht, sie hätten an sowas kein Interesse, würden mir auch nicht sagen warum, und auf emails wie meine bräuchte sie auch nicht zu antworten. -->
+
+
+<!-- you have to start somewhere, that’s pretty hard. You need trust, and some structure.
+That leads back to corporatism (as social capital, not as interest representation), and as harbingers of a sense of citizenship – and to social capital proper (people who know people).
+
+It’s not even clear whether a proper random sample (say, by drawing from the books) would be that much better – maybe it would be, maybe not. Maybe it would lack the kind of public spiritness that this process selects for.
+
+Also, this kind of recruitment is a lot more open – but systematically biased in many ways.
+
+Good news: it also serves as its own PR; more people get to know about this thing, they *had* a chance to participate (which they would never have had if only random luck had chosen them). -->
+
+
+<!-- hate mail auf facebook
+Nicola Schöning Das ist doch totaler Quatsch, würde bedeuten ich habe umsonst drei Jahre tagein tagaus das "tolle" deutsche Steuerrecht gepaukt....ich hab zu der Zeit Urlaub, aber nach dem Stress ist mir meine Freizeit heilig, anstatt mir so einen Quatsch anzuhören... -->
+
+<!-- anwogessel@yahoo.de (anonym) has some skepticism (see email), generally makes me wonder whether there are people who are just too angry and distrustful to participate, or whether they indeed have a point, as in:
+- is this indoctrination?
+- does this only attract like-minded people?
+- shouldn't this be left to pluralism? (ha!) -->
+
+<!-- afraid of unemployed people
+
+why are they so afraid?
+do they resent academia? -->
+
+
 ## Schedule
+
+Table: A preliminary (very rough) draft schedule
+
+|              |                    Tuesday                     |                Wednesday                |                      Thursday                      |           Friday           |                  Saturday                  |            Sunday            |            Monday           |
+|--------------|------------------------------------------------|-----------------------------------------|----------------------------------------------------|----------------------------|--------------------------------------------|------------------------------|-----------------------------|
+| 09:00-09:30  | Arrival                                        | Learning: Ends of the Mixed economy     | Learning: Tradeoffs, Smoke/mirrors real dissavings | Learning: Optimal Tax      | Learning: Incidence of Tax/Elasticity      | Free Time / Church Service   | Learning: Tax Choice        |
+| 11:00-11:30  | Introduction                                   | Small Group: Ends of Mixed Economy      | Small Group: Tradeoffs, Smoke/mirrirs, dissavings  | Small-Group: ptimal Tax    | Small-Group: Incidence                     | Plenary: Preparing Questions | Small Group                 |
+| Lunch Break  |                                                |                                         |                                                    |                            |                                            |                              |                             |
+| 14:00-15:00  | Small Group: Experience and Questions with Tax | Learning: Means of the Mixed Economy    | Plenary: Summary                                   | Learning: Just Taxation    | Learning: Schedule, timing/Neutrality      | Experts Panel: Q&A           | Plenary: Write up of Report |
+| 16:00-17:30  | Plenary: Report on above                       | Small Group: Means of the mixed economy | Learning: Overview of existing taxes               | Small Group: Just taxation | Small Group: Schedule, Timing & Neutrality | Plenary: Reflection          | see above.                  |
+|              | Learning: Distilling guiding questions         |                                         |                                                    |                            |                                            |                              |                             |
+| Dinner Break |                                                |                                         |                                                    |                            |                                            |                              | Farewell Dinner             |
+| 20:00ff      | Movie: 12 Angry Men                            | tba.                                    | Games Night                                        | tba.                       | tba.                                       | tba.                         | Departure                            |
+
+<!-- think through the didactics, do something tangible, where people can move, do stuff. maybe a ballet for the economic cycle, also something for tax base and schedule -->
+
+<!-- don’t explain more outside of groups: we’re doing this because we want to advance to the stuff that people can disagree on; not factual questions, those are the most interesting ones -->
 
 <!-- & Introduction
 &
@@ -108,3 +213,28 @@ Plenary: Write-up of Report\
 Additionally, process data from the deliberation will be gathered, comprising of the claims, themes and questions raised by participants and summarized by the moderator and/or scribe at the end of each deliberation, as well as the final report on taxation and other documents or notes produced during the deliberation.
 Deliberations will also be audio-(visually) recorded, although comprehensive transcription and analysis of this data will probably not be possible.
 This process data and select recordings will then be subjected to a qualitative content analysis, both to verify that participants *could* make arguments reciprocally comprehensible (and otherwise valid), and to record which of several arguments deliberators accepted as based on universal validity claims.
+
+
+## Press Conference
+
+<!-- Pressetelefonate:
+
+Weser Kurier
+Landwehr Rückruf 0421 36713610 / Block
+NDR Oldenburg
+maybe
+Taz Bremen
+interested, but understaffed
+Radio Bremen 4
+maike evers
+Sat 1 Regionalfernsehen
+NDR4 Info
+040 41560 3925
+NDR Fernsehen Hallo Niedersachsen
+halloniedersachsen@ndr.de -->
+<!-- Weser Kurier
+Landwehr Rückruf 0421 36713610 / Block
+NDR Oldenburg
+maybe
+Taz Bremen
+interested, but understaffed -->

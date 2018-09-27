@@ -11,6 +11,17 @@ if you're not concentrating, you're talking about nothing (or everything) -->
 <!-- provisionally accept homo oec + abstractions -->
 
 
+<!-- ### What's special about deliberating tax choice?
+
+- Tax offers/demands very structured choices: there are essentially only 4x3 broad tax types (see tax table in drafts).
+  Different from, for example, a deliberation on “racial tensions”, deliberating tax choice is more close-ended.
+- Tax expertise is easily politicized, because:
+	- Tax cannot be reduced to an empirical question, both because inframarginal data is not available, and because macroeconomics is incompletely understood.
+	- Tax cannot be reduced to a consequentialist inquiry, because people (may) care about other normative claims, too (e.g. fairness).
+- Tax cannot be easily (if at all) dumbed down to subsets of tax choice (e.g. VAT vs PIT), or subsets of abstractions (e.g. only “bastard keynesianism”) for two reasons:
+	1. Any such reduction would violate the spirit of deliberation; citizens could not set their own agenda.
+	2. Any such reduction may well fail to elucidate my hypothesized misunderstandings: ßI imagine “understanding tax” as a bucket, which, if leaky will drain to the lowest level. For example, if deliberators would discuss most aspects of taxation, but skip over the limits (!) of price controls, they may well opt for price controls in lieu of, or in addition to taxation. -->
+
 ## Axiology
 
 
@@ -37,6 +48,8 @@ So the 10k hour learning kind of rule does not at all apply.
 
 
 ## Incidence
+
+<!-- civicon quote (for the incidence day): the curious task of economics is to .. -->
 
 
 ## Circular Flow
@@ -193,3 +206,6 @@ people arbitrage their way toward a falt, wage-tax.
   - McCaffery 2009 (819): tax. Most importantly, it develops more formally two norms about the taxation of capital: the yield-to-capital norm, which holds that the return to capital is an increment of value that ought to be taxed, and the ordinary-savings norm, which holds that savings that merely shift labor earnings within a lifetime or between taxpayers ought not to be excessively burdened. These two norms are in fatal tension under an income tax; in contrast, a consistent, progressive postpaid consumption tax accommodates both norms by design.
 
   these are actually last reasons! -->
+
+
+<!-- also: man works to live / live to work about the fischergleichnis böll story -->
