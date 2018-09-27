@@ -1,4 +1,4 @@
-# Data {#baseline}
+# Baseline {#baseline}
 
 <!-- - reports correlations, factors from pre- and post-sort. -->
 <!--    - *factor interpretation* in substantive terms of tax and the economy. -->
@@ -1938,11 +1938,3 @@ We are disappointed to find that the self-taught are also self-centered, althoug
 The independent-minded philosopher-saints are so sure of themselves that they often lose the discipline of any kind of peer review, formal or amateur.
 They end up opiniated, and alone.
 -->
-
-
-## Graetz 1979?
-
-- Graetz on progressive consumption tax 1979
-	- eliminates the problem of double taxing of saving
-	- India and Sri Lanka have tried it, and failed. But it should be easier than income tax to administer
-	- problem: "the notion of a sharp division between pleasure-seeking and profit-seeking is alien to human psychology and essentially unrealistic" (chirelstein as cited in graetz 1979 1586). And yet, we deal with the same problem in income taxation. And remember how much good this tax could still do, how it could redefine the very boundary of what is pleasure and what profit (thinkg conspicuous consumption). Also, we have this thing called depreciation which takes care of it.

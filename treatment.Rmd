@@ -1,4 +1,6 @@
-# Q2D: A Novel Approach to Measure Deliberative Quality at a Citizen Conference on Taxation
+# Treatment
+
+<!-- Q2D: A Novel Approach to Measure Deliberative Quality at a Citizen Conference on Taxation -->
 
 <!-- - reports *changes* in factor composition and loadings between pre- and post-sort. -->
 <!--    - *factor interpretation* in terms of deliberative democracy (as per Niemeyer: beliefs, values, preferences) -->
@@ -45,8 +47,6 @@ These are conceptually *independent dimensions* and the very status of some asse
 Here, too, Q2D can significantly improve upon conventionally analyzed, repeated Q studies by yielding *jointly extracted and rotated*, two-dimensional ideal viewpoints vis-a-vis the *same* items, readily interpretable in terms of meta-consensus and intersubjective rationality.
 
 Algorithms and visualizations in open-source R-code are presented, conceptual limitations of Q2D are discussed and compared to alternative analytical approaches to Q data in empirical deliberative democracy research.
-
-# Problems to be solved
 
 <!-- - Communality / nloads of factors seem to change (different people!)
 - Eigenvalues increase!
