@@ -11,7 +11,7 @@
 > The unforced force of the better argument: [@Habermas1996, 305]
 > The speaker must choose a comprehensible expression so that speaker and hearer can understand one another. [@Habermas1976: 2f]  
 > [A]nyone acting communicatively must, in performing any speech act, raise universal validity claims and suppose that they can be vindicated. [@Habermas1979: 2]  
-> Reaching understanding, (...) **the inherent telos of human speech**. 
+> Reaching understanding, (...) **the inherent telos of human speech**.
 > –– Jürgen Habermas (1987: 287)
 <!-- TODO last citation isn't quite right -->
 
@@ -38,7 +38,7 @@ Out of substantive necessity, the references and disciplines in these first coup
 To clarify the role of these chapters, let me first situate them within the remainder of this dissertation.
 
 This project is modeled on a straightforward experimental design, as it is frequently used in clinical studies.
-However, because the study deals not with easily measurable biomarkers, but with subleties of deliberation and the abstractions of text, the design can be hard to recognize.
+However, because the study deals not with easily measurable biomarkers, but with subtleties of deliberation and the abstractions of text, the design can be hard to recognize.
 
 
 ### Research Design by Analogy
@@ -49,14 +49,14 @@ In this exercise study, the absence (or presence) of the morning routine is the 
 Analogously, in the present study, the participation in the CiviCon citizen conference is the *IV*, and subjectivities concerning taxation are the *DV*.[^no-rct]
 <!-- TODO might cite some experimental design literature here -->
 
-[^no-rct]: Proper experimental designs are often double-blind *randomly controlled trials* (RCT), but these additional rigors are not possible or deemed unecessary for the present study on deliberation and taxation:
+[^no-rct]: Proper experimental designs are often double-blind *randomly controlled trials* (RCT), but these additional rigors are not possible or deemed unnecessary for the present study on deliberation and taxation.
 
-  - A fully **randomised treatment** is impossible, because participants in a deliberative forum will (and should) always be free to exit the sample.
+  - A fully **randomized treatment** is impossible, because participants in a deliberative forum will (and should) always be free to exit the sample.
   Because the universe of participants are all citizens, or even all human beings affected by the policy in question, even a reasonably representative quota sample will be hard to come by.
   Largely because of limited resource, the present study is a self-selected haphazard sample, described in more detail in chapter \@ref(civicon).
-<!-- TODO ... is that the right reference? -->
+<!-- TODO ... is that the right reference? VK: it is.-->
   - A **control group** of non-participating citizens would be possible in the present study, but was not included because of limited resources.
-  In any event, there were no expected background events or trends affecting the subjectivities concerning taxation of *both* treatment and control groups, so a control group was deemed dispensible.
+  In any event, there were no expected background events or trends affecting the subjectivities concerning taxation of *both* treatment and control groups, so a control group was deemed dispensable.
   Whatever changes the participating citizens displayed are likely to be a result of the deliberation.
   - A **blind design** is impossible because participants will, by the nature of the treatment, always know whether they are participating in a deliberative forum, or not.
   There should be no *placebo* deliberations, though there may well be those formats worthy of such a label.
@@ -67,12 +67,12 @@ Table: (\#tab:commented-toc) A Commented Table of Comments with Analogous Experi
 
 | Research Design Concept | Hypothetical Mindfulness Study | This Study | Chapter |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Research Topic | Effect of morning exercise on mindfulness. | Effect of deliberation on subjectivities on taxation. | \@ref(intro) |
-| Conceptualisation | Hatha Yoga | Why taxation matters. | \@ref(3-crises) |
-| Theoretical Background | Diet (*mitahara*), body cleansing (*shatkarma*), breathing (*pranayama*) and some philosophical background. | Optimality, Incidence, Haig-Simons Equivalence, Circular Flow, Personal Taxation as well as some axiology and ontology. | \@ref(abstractions) |
-| Operationalisation | 5 selected asanas (positions), including the rare *firefly pose*. | Fundamental choices in taxation: base and schedule | \@ref(base-schedule) |
-| Treatment regimen | In-Person group sessions at local gym | Weeklong deliberation with room and board and extensive learning phases. | \@ref(civicon) |
-| Measurement | - | Q Methodology. | \@ref(q) |
+| Research Topic | Effect of morning exercise on mindfulness | Effect of deliberation on subjectivities on taxation | \@ref(intro) |
+| Conceptualisation | Hatha Yoga | Why taxation matters | \@ref(3-crises) |
+| Theoretical Background | Diet (*mitahara*), body cleansing (*shatkarma*), breathing (*pranayama*) and some philosophical background | Optimality, Incidence, Haig-Simons Equivalence, Circular Flow, Personal Taxation as well as some axiology and ontology | \@ref(abstractions) |
+| Operationalisation | 5 selected asanas (positions), including the rare *firefly pose* | Fundamental choices in taxation: base and schedule | \@ref(base-schedule) |
+| Treatment regimen | In-Person group sessions at local gym | Weeklong deliberation with room and board and extensive learning phases | \@ref(civicon) |
+| Measurement | - | Q Methodology | \@ref(q) |
 | Field Report | - | Report from the CiviCon Citizen Conference | \@ref(field-report) |
 | Results (Baseline) | - |  | \@ref(baseline) |
 | Results (Treatment) | - |  | \@ref(treatment) |
@@ -108,8 +108,8 @@ I show that these choices are highly consequential, irreducibly political, and t
 Fourth, the medical student informs her supervisors that, *unfortunately* the planned study cannot be undertaken in the usual clinical setting, but that because of all the required instruction, she will need to meet participants in person every morning for a group session at a local gym, which she will decorate appropriately with sandalwood incense.[^centerpiece]
 Aghast upon hearing this latest proposal, one of the supervisors resigns from the committee and vows to never supervise a student again who so much as mentions Eastern philosophy.
 The student studies existing treatment regimens, and argues that an intensive intervention is the only way to do this research.
-She also finds two other studies with similar treatments, one even flew participants out to a carribean yoga retreat.
-The remaining supervisors stay on, perhaps just hoping that the philosophising will now come to an end, and the study reach firmer ground.
+She also finds two other studies with similar treatments, one even flew participants out to a Caribbean yoga retreat.
+The remaining supervisors stay on, perhaps just hoping that the philosophizing will now come to an end, and the study reach firmer ground.
 
 [^centerpiece]: This part is actually factual.
     At the behest of the trained moderators, we installed a vaguely new-agey centerpiece at the deliberation venue.
@@ -151,7 +151,7 @@ Why does taxation matter for human welfare?
 
 As @Schumpeter knew, "in the modern world, taxation *is* the social contract" [@Martin2009a, 1, emphasis in original], even though social scientists have since paid little attention to it [@Tilly2009, K191].
 Tax matters especially for current OECD-style welfare regimes, in which markets and states must co-exist [@Stiglitz2011].
-In such a mixed economy, government must be able to draft some privately-owned resources to serve its --- ideally democratic --- *command*, without unduly altering the prices of --- ideally competitive --- *exchanges* [@Ardant1975, 165f]. 
+In such a mixed economy, government must be able to draft some privately-owned resources to serve its --- ideally democratic --- *command*, without unduly altering the prices of --- ideally competitive --- *exchanges* [@Ardant1975, 165f].
 <!-- TODO ref chapter on mixed econ here -->
 Much of modern social integration occurs in the balance of these two contrasting logics to produce and allocate resources, "enmesh[ing] us in the web of generalized reciprocity that constitutes modern society" [@Martin2009a, 3].
 State plans make the conditions *for*, and set limits *to* *individual* action, as when government builds roads or collects sewage fees.
@@ -252,10 +252,10 @@ beliefs [@Caplan2007] and preferences [@Fishkin2009] is worth knowing for severa
 1.  There may be *agreeable*, doable but hypothetical taxes, which may (Pareto)-improve over current taxes [@Harberger1974] or may be fairer [@Rawls-1971] and more sustainable [@Solow1956], including a [@Mill1848; @McCaffery2002; @Frank2005a; @Seidman1997], a [@George1879; @Buiter1988] and a [@Friedman1962].
     By comparison, existing taxes appear unnecessarily wasteful, inequitable and unsustainable.[^oecd-taxes]
     <!-- COMMENT MN würde dieses Wissen schon so eingespeist? Bias? -->
-    
+
     These suboptimal tax regimes may present democratic sovereigns with needlessly harsh tradeoffs between efficiency, equity, sustainability and other competing ends.
     The means of an intact mixed economy [@MusgThet1959; @Stiglitz2011] may consequently erode or even force retrenched welfare states into "permanent austerity" [@Pierson2002; @StreeckMertens2010] as it becomes harder for them to reconcile planned allocation and market exchange through taxation.
-    
+
     Public confusion about taxation may be a contributing factor, or even a sufficient --- but not a necessary --- condition for the non-existence of these supposedly superior taxes.
 
 2.  Progressivity in tax, especially, may hinge upon an enlightened, "new understanding of tax" [@McCaffery2005], as the historic mainstay of redistribution --- the [pit]{acronym-label="pit" acronym-form="singular+short"} --- withers away in the face of its inherent contradictions [@McCafferyHines2010].
@@ -351,11 +351,11 @@ In a similar vein, [@Steiner2004] studied in how far deliberatively reached deci
 
 [^steiner_v_rawls]: @Steiner2012 presents a questionable summary of @Rawls-1971:
     > This principle states that in a political decision the most disadvantaged social groups should profit the most [@Steiner2012 95].
-    
+
     He finds it expressed when a parliamentarian says:
-    
+
     > The government's priority must be to help those who have the greatest difficulty in paying rather then spreading it evenly across the range.
-    
+
     The difference principle actually states that "social and economic *inequalities* are to \[...\] be to the greatest benefit to the least advantaged members of society" [@Rawls-1971 266], a complex and conditional claim to moral validity that is characteristically degraded in both the operationalization and the coded snippet.
 
 In other work, deliberation is the *dependent* variable, investigating its causes (including @Steiner2004 on institutional aspects or @Steiner2012 [13] on issue polarization).
@@ -382,7 +382,7 @@ The operationalizations employed vary widely, ranging from the crudely statistic
 The [dqi]{acronym-label="dqi" acronym-form="singular+short"} --- even in @Steenbergen2003's more exacting formulation --- and other such operationalizations "can be applied easily and reliably to a wide range of deliberative contexts" [@Steenbergen2003 22], but that very decontextualization makes it hard to adjudicate whether really, universal validity was discussed, let alone reciprocally acclaimed.
 I share the uneasyness of "critical theorists and postmodernists" [@Steiner2012 11] with this measure of quality of deliberation --- though I do not think you have to be either to object, nor for the same reasons.[^postmodern_criticism_of_dqi]
 
-[^postmodern_criticism_of_dqi]: [@King2009] criticizes that coded interpretations are presented as objective fact, rather than inter-subjective. 
+[^postmodern_criticism_of_dqi]: [@King2009] criticizes that coded interpretations are presented as objective fact, rather than inter-subjective.
 
 Rather than *how many* justifications were given in total, or *how often* people referred to counterarguments [@Steenbergen2003 29], I want to know whether these reasons corresponded in *substantive terms to those they disagree with*.
 I provide a hypothetical exchange from deliberating taxation to illustrate my point:
@@ -654,7 +654,7 @@ The deliberative experiments on taxation proposed here builds on these two stran
 
 2.  Lastly, deliberating taxation will provide data to better understand possible misunderstandings of tax and, thereby, clarify remaining controversies over it.
     From this perspective, optimal taxation and popular deviations therefrom are the research topic, and deliberation provides the *method* to investigate, or even resolve these differences in a normatively attractive manner [@Rawls-1971; @Habermas-1984].
-    
+
 <!-- %add visualization of the above and below paragraph? -->
 
 These three research topics all fold into the aforementioned research question:
@@ -1131,7 +1131,7 @@ Learning interventions will further drive knowledge gain and improve self-assess
 
     2.  [\[itm:universal-validity\]]{#itm:universal-validity label="itm:universal-validity"} *Universal Validity*
         People will find the above abstractions meaningful and accept a universal validity of underlying causal and moral arguments.
-        
+
         <!-- %			\item \label{itm:preference-structuration}
         %				\emph{Preference structuration.}
         %				Partly as a function of the above knowledge gain, people will have better-structured preferences over taxation.
@@ -1429,7 +1429,7 @@ really be hard about this: this is a charge that civicon (thin leftiest supporte
 - On the non-zero sumness: do we really not have that?
 - Re-read nina eliasoph: conflict out
 - Why is conflict more genuine than consent?
-- Nina Eliasoph, 
+- Nina Eliasoph,
 - Chantal Mouffe
 - intellectually coward, self-congratulatory
 
@@ -1477,7 +1477,7 @@ Need to look in to the whole concourse theory thing
 Q Methodology, maybe via its quantum theoretic reading (it's about viewpoints, and there exist no objective statements (like zero energy atom states) outside of it -- that's not soo far from discourse theory.
 	on this see especially Wendy S. Rogers in operating subjectivity; she argues it is and/or can be used as a form of discourse analysis.
 
-FIXME I might have the difference between constructivism and constructionism wrong in my thesis, especially when citing Berger/Luckmann which seem to be the former and Foucault which is the latter. Constructionism may be the social variant. 
+FIXME I might have the difference between constructivism and constructionism wrong in my thesis, especially when citing Berger/Luckmann which seem to be the former and Foucault which is the latter. Constructionism may be the social variant.
 
 Write to McCafferys co-author about q, since he is a psychologist and also does quant stuff.
 
@@ -1724,7 +1724,7 @@ people arbitrage their way toward a falt, wage-tax.
 
 "Corporations are legal fictions".
  the key moral intuition, and Rawlsian reflective equilibrium is this: it seems fair and appropriate to burden capital ransactions when these facilitate or enable a better lifestyle, reflecting a greater "ability to pay" or more "benefits received" from the social compact. But it does not seem fair and appropriate to burden capital transactions when they are used simply and sensibly to move around in time uneven labor market earnings." 921
- 
+
  "People treat a plan as realistic when it approximates what already exists and as utopican when it departs from current arrangements. Only proposals that are hardly worht fighting for - reformist tinkering - seem practicable" (Roberto Managebrai Unger, False Necesseity 12 1987 as cited in McCaffery 938)
 
  > "A progressive postpaid consumption tax emerges as the fairest and least arbitrary of all comprehensive tax systems, precisely because it chooses to make its decisions about the appropriate level of progressivity at the right time. In doing so, it burdens some but not all uses of capital and its yield, and for normatively attractive reasons."
@@ -1797,8 +1797,8 @@ people arbitrage their way toward a falt, wage-tax.
  p2
  (EUR 50 from Saving * 1.1) * 0.8 = EUR 44
  0
- 
- 
+
+
 # more random tax note
 
 <!-- %garrard 2012
