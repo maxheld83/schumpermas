@@ -142,8 +142,34 @@ Emphatically, the content of the theory chapters is also *nowhere* subject to an
 Much like our hypothetical medical student would not test whether participants could successfully do a *firefly pose*, I never test whether participants understand the deadweight-loss (DWL) of taxation, let alone whether, under which circumstances or to what extent, this abstraction is a positive phenomenon.
 All these chapters have the status of *justifying* and *explicating* the *treatment*, that is, the framing and briefing for the deliberative forum.
 
-<!-- TODO add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are. -->
+<!-- TODO 
+add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are. 
+this might be a bigraph, with the different chapters on both sides as nodes, edges with descriptions in the middle
+explain that the econ101 in chap 1-3 is *both* for readers, and for civicon participants, *and* for items
+-->
 
+<!-- Precisely, what we ought to do in all these chapters, hence also the axiology and philosophical stuff, we need to find whatever is *contentious* behind first order Questions
+for example, behind the CIT
+but this can only happen at the end, its axiomatic, and this just needs some time to develop-->
+
+<!-- This stuff is what makes this diss a little complicated, but it's also about the only thing that makes it worthwhile, and perhaps, original -->
+<!-- we need to get a lot of first-order questions out of the way, it is necessary, but weird -->
+
+
+## Theory as Didactic Reduction
+
+<!-- we need tax and the background, because this all needs Philosophy
+in way, what this all is, is citizen science -->
+
+<!-- I *am* actually concentrating here; there is *lot* that is not mentioned here:
+- monetary policy (because it is a technical issue, at least for now)
+- spending side (completely different ballgame, ends up making the whole thing wayyy to big and loosy-goosy)
+- you gotta do this, otherwise it gets too fluffy -->
+
+# Theory as Explanandum
+
+<!-- You need to have a first-order theory that you need to explain -->
+<!-- maybe do the whole first/second oder business here -->
 
 ## Taxation and Welfare
 

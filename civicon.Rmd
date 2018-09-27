@@ -2,6 +2,8 @@
 
 # CiviCon {#civicon}
 
+<!-- why do we need learning phases? how is this necessary? (it is) -->
+
 <!-- 1. Methods-1 (CiviCon) -->
 <!--    - explicates the *treatment condition*; in this case, the CiviCon Citizen Conference -->
 <!--    - *contextualizes* the CiviCon format within existing literature, formats, conflicts, tradeoffs -->
@@ -11,6 +13,8 @@
 <!-- absolutely must re-read moore piece on conducting deliberation; this is key for how it's done and facilitated, there are also helpful comments in there. -->
 
 <!-- title: so crazy, it did just work? -->
+
+<!-- this will definetely remain very much a proof of concept; it's too small and unporfessionall to say much -->
 
 <!-- TODO: get offe field report email -->
 

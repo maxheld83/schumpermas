@@ -3,6 +3,12 @@
 <!-- - reports correlations, factors from pre- and post-sort. -->
 <!--    - *factor interpretation* in substantive terms of tax and the economy. -->
 
+<!-- TODO decommodification factor = scale dependence
+one way to read the decommodification factor is also that it kinda revolts against scales that are too big
+because it's not that people didn't *understand* the issue of, say treating renters and homeowners alike
+it's that they understood it, but still didn't want it
+they just wanted to be left alone by the abstractions of Society -->
+
 ## Administration
 
 <!--```{r administration, child='keyneson/keyneson.wiki/q-administration.md'}```-->

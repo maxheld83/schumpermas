@@ -18,7 +18,7 @@ rmd_files: [
   "results-treatment.Rmd",
   "discussion.Rmd",
   "conclusion.rmd",
-  "trumpocalypse.Rmd",
+  "epilogue.Rmd",
   "statement-authorship.rmd",
   "references.Rmd",
 ]
