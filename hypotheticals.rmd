@@ -11,3 +11,20 @@
 <!-- if there were no other taxes, no fundamental alternatives, no deep disagreement -- then why should we bother for deliberation?
 in that case, we might just stick with the status quo, or maybe move on to fix the small stuff, or the really big stuff (capitalism)
 in this case, we can really move on from tax -->
+
+> Why, in the most prosperous of economies, are we plagued by widening inequality, underfunded states and persistent unemployment?  
+> Why, in the most enlightened of times, are we thoroughly confused about governing our mixed economies and perilously disaffected with the results our democratic rule produces? 
+ 
+> **What if** there were alternative taxes, which afforded us more attractive tradeoffs between economic efficiency, equity and sustainability or other ends  
+> **What if** we *could* agree on such alternative taxes, but *would not*, because we lacked the necessary information or suitable fora, and because our capacity for mutual reason-giving had been diminished by alienating inequality or clouded by special interest?
+
+
+Table: Progressive Consumption Taxation of Thrifty Ant, Big Spender Grasshopper and Big Earner/Spender Lion.
+
+|  | Ant | Grasshopper | Lion |
+|-------------|--------|-------------|---------|
+| Income | 30.000 | 30.000 | 600.000 |
+| Saving | 10.000 | 0 | 300.000 |
+| Consumption | 20.000 | 30.000 | 300.000 |
+| Tax Rate | 5% | 10% | 33% |
+| Tax | 1.000 | 3.000 | 100.000 |

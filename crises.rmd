@@ -1,4 +1,6 @@
-# A Tale of Three Crises {#3-crises}
+# (PART) Theory {-}
+
+# A Tale of Three Crises {#crises}
 
 <!-- TODO we're in a bad place, but it could be better -->
 

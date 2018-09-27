@@ -11,15 +11,23 @@ rmd_files: [
   "acknowledgements.rmd",
   "preface.rmd",
   "introduction.Rmd",
+  # theory
+  "crises.rmd",
+  "abstractions.rmd",
+  "hypotheticals.rmd",
+  # methods
   "rq.rmd",
   "civicon.Rmd",
-  "method-q.Rmd",
-  "results-factors.Rmd",
-  "results-treatment.Rmd",
+  "q.Rmd",
+  # results
+  "field-report.rmd",
+  "baseline.Rmd",
+  "treatment.Rmd",
   "discussion.Rmd",
   "conclusion.rmd",
   "epilogue.Rmd",
   "statement-authorship.rmd",
   "references.Rmd",
+  "appendix.rmd"
 ]
 clean: ["packages.bib"]

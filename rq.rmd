@@ -1,3 +1,5 @@
+# (PART) Methods {-}
+
 # Research Question
 
 <!-- 1. Research Question [based on proposal] -->

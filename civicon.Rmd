@@ -1,6 +1,4 @@
-# (PART) Methods {-}
-
-# CiviCon {#civicon}
+# The CiviCon Citizen Conference {#civicon}
 
 <!-- why do we need learning phases? how is this necessary? (it is) -->
 
