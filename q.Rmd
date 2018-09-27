@@ -6,6 +6,17 @@
 - no, it's not (because pragmatism?, because patterns?)
 - well, so what, it's remedial, public Sociology kinda thing -->
 
+> "[A]nyone acting communicatively must, in performing any speech act, raise universal validity claims and suppose that they can be vindicated."
+>
+> -- Jürgen Habermas [-@Habermas-1984]
+
+
+Q methodology and deliberative democracy share epistemological and normative roots in American pragmatism: that meaning is intersubjective, that communication is human action and that we can -- and should -- reach some mutual understanding on the objective and moral world, even if contingent and preliminary.
+This study illustrates and explores how this common legacy makes Q methodology and and deliberative democracy are a good fit for political psychology.
+On the one hand, deliberation posits the regulative ideal under which individuals can freely constitute and express their political subjectivity: a mutual and egalitarian give-and-take of reasons.
+On the other hand, Q may serve to measure the quality of deliberation, occupying a sweet spot between quantitatively constrained interpretations for researchers and qualitative leeway for citizens' viewpoints: increased consistency or structuration of Q sorts might be falsifiable meta-standards without substantive (and circular) prejudice as to which one viewpoint would be "deliberative".
+The study concludes by suggesting further extensions and applications of Q methodology and deliberative democracy.
+
 Table: Factorial Concourse Sampling Scheme
 
 | Values / Axiology | Beliefs / Ontology | Preferences / Taxes |
@@ -56,28 +67,16 @@ Q Methodology, maybe via its quantum theoretic reading (it's about viewpoints, a
 
 Somehow the stuff that happens during deliberation is actually quite close to some of the stuff that q methodologists rights and that stephenson assumed; it's in expressing and exchanging views vis-a-vis subjects. Both approaches negate that there's stuff "in the braiN" that just need be extracted. -->
 
-# How to Measure Deliberative Success?
 
-> "[A]nyone acting communicatively must, in performing any speech act, raise universal validity claims and suppose that they can be vindicated."
->
-> -- Jürgen Habermas [-@Habermas-1984]
-
-
-Q methodology and deliberative democracy share epistemological and normative roots in American pragmatism: that meaning is intersubjective, that communication is human action and that we can -- and should -- reach some mutual understanding on the objective and moral world, even if contingent and preliminary.
-This study illustrates and explores how this common legacy makes Q methodology and and deliberative democracy are a good fit for political psychology.
-On the one hand, deliberation posits the regulative ideal under which individuals can freely constitute and express their political subjectivity: a mutual and egalitarian give-and-take of reasons.
-On the other hand, Q may serve to measure the quality of deliberation, occupying a sweet spot between quantitatively constrained interpretations for researchers and qualitative leeway for citizens' viewpoints: increased consistency or structuration of Q sorts might be falsifiable meta-standards without substantive (and circular) prejudice as to which one viewpoint would be "deliberative".
-The study concludes by suggesting further extensions and applications of Q methodology and deliberative democracy.
-
-One fitting conceptional framework might be: Habermas source of reasons from the lifeworld, devoid of power. 
+<!-- One fitting conceptional framework might be: Habermas source of reasons from the lifeworld, devoid of power. 
 This, fittingly, is also one formulation of the ideal scientist.
 
 ## goldstein keoane 1993
 
 > "We do not seek to explain the sources of these ideas; we focus on their effects" (7)
-Notice: my view isn't really about ideas as explaining anything; ideas *are+ the stuff.
+Notice: my view isn't really about ideas as explaining anything; ideas *are+ the stuff. -->
 
-### On Reflectivism: (similar to constructivism, symbolic interactionism)
+<!-- ### On Reflectivism: (similar to constructivism, symbolic interactionism)
 
 > "beliefs are a central element of all research because (...) analysis turns on how 'knowledgable practices constitute subjects'. Reflectivists 'share a cognitive, intersubjective conception of process in which identities and interests are endogenous to interaction, rather than a rationalist-behavioral one in which they are exogenous.'" (5)
 
@@ -149,6 +148,7 @@ This is *open* also to factors of fundamental disagreements about the role of ra
 
 <!-- add stuff from why q here -->
 
+<!---
 1. Knowledge Gain will be expressed in greater metaconsensus (and, equivalently), the lower preferences for "misunderstood" items.
 2. "Tax misunderstandings" will appear as differences in factors and factor loadings before and after the deliberation.
 3. Universal validity will be expressed in metaconsensus.
@@ -156,7 +156,7 @@ This is *open* also to factors of fundamental disagreements about the role of ra
 5. Meta assessment (autonomy, competence and meaningful choice) *are not part of Q-methodology*.
 6. Interaction effects (SES) *are not part of Q-methodology*.
 7. Fundamental disagreements about the role of economics, or generally, rationality in policy choice (as opposed to, say, power, practice) will show up as factors -- if the Q sample of statements is good enough.
-
+ -->
 
 
 <!-- Onsampling Q statements from non-natural occurences, from some email from the list
@@ -188,7 +188,7 @@ Diss: a little bit of data is a very dangerous thing
 
 > -->
 
-It is perhaps unsurprising that intellectual humility, and a concomitant public discourse ethic are hard to operationalize, and harder to promote (as per Question 2 of the RFP). 
+<!-- It is perhaps unsurprising that intellectual humility, and a concomitant public discourse ethic are hard to operationalize, and harder to promote (as per Question 2 of the RFP). 
 Intellectual humility realism would seem to defy direct measurement or overt promotion by definition: inner virtue cannot be incentivized, but is easily faked.
 A plural understanding of intellectual humility appears more hospitable to empirical research and intervention, yet, when pressed into such service, each *single* concept – say, "openness to new ideas" – easily crumbles into a formalistic shell, somehow *less* than its share of the sum of all polithetic sibling concepts.
 Aside from attractive, but counterfactual ideal speech situations [e.g. @Rawls-1971], communicative action is similarly slippery in the field.
@@ -228,7 +228,7 @@ As I show in my dissertation, underneath contradictory positive claims, and unde
 An ITT-Q can be developed and tested using this domain, but should be extensible to others.
 
 
-![Illustration of a Paper-based Q-sorting Process](img/Qsorter.jpg)
+![Illustration of a Paper-based Q-sorting Process](img/Qsorter.jpg) -->
 
 <!-- q methodology is "zwischen den stuehlen", and for that reason alone seems appropriate for this research project (jk).
 It's a gallisches dorf, and as happens to be, they are right about some things, they have real enemies, and they are misunderstood by most.
@@ -261,8 +261,7 @@ Also, I know do tax, exactly the kind of research that I was previously opposed 
 - random numbering is important to Steven Brown video 2 -->
 
 
-
-> In placing emphasis on the centrality of self-reference, as outlined in more detail elsewhere (Brown and Taylor, 1972, 1973), we run the risk of being lumped with those phenomenologists and existentialists who tend to reify the self, denuding it of all meaning in an effort to save mankind from mathe- maticians. (Conversely, in suggesting the use of factor analysis, we run the opposite risk of being accused of having made the world unsafe for humanists.) It is therefore necessary to rescue the self and subjectivity from any meta- physical smoke screen behind which others may seek to conceal it.
+<!-- > In placing emphasis on the centrality of self-reference, as outlined in more detail elsewhere (Brown and Taylor, 1972, 1973), we run the risk of being lumped with those phenomenologists and existentialists who tend to reify the self, denuding it of all meaning in an effort to save mankind from mathe- maticians. (Conversely, in suggesting the use of factor analysis, we run the opposite risk of being accused of having made the world unsafe for humanists.) It is therefore necessary to rescue the self and subjectivity from any meta- physical smoke screen behind which others may seek to conceal it.
 Fundamentally, a person's subjectivity is merely his own point of view. It is neither a trait nor a variable, nor is it fruitful to regard it as a tributary emanating from some subterranean `stream of consciousness." It is pure behavior of the kind we encounter during the normal course of the day, as when a person prefaces his remarks with "As far as I'm concerned ... ," or "In my opinion
 ... ," or whatnot.
 - brown 46
@@ -291,12 +290,12 @@ As Brown contrasts, the R methodological or survey research view of "subjectivit
 > Procedurally, components x, Y, and z are declared to be properties of trait A (say, anomy); statements X, Y, and Z are constructed and subjected to tests of reliability and validity; and the scale is administered to respondents.
 > - Brown
 
-One may argue, that all empirical science proceeds like that, with say, an operational (even arbitrary) definition of what a meter unit of length is.
+One may argue, that all empirical science proceeds like that, with say, an operational (even arbitrary) definition of what a meter unit of length is. -->
 
 <!-- really look at the separation of operational from operant, see brown 1980 page 3; on this page is precisely the kind of constraint and deductive hypothesizing that I cannot afford; because that would not be deliberative, and I don't have that kind of hypotheses anyway. -->
 
 
-Notice a bit problem: Q methodology does, in fact, enforce VnM consistency, hence in future, we might not want to use it for preferences, just beliefs and values.
+<!-- Notice a bit problem: Q methodology does, in fact, enforce VnM consistency, hence in future, we might not want to use it for preferences, just beliefs and values.
 
 Instead of sorting on two dimensions, it might be easier to just sort them twice --- and record the result, should have the same form -7 +7. Or is there a problem?
 
@@ -308,20 +307,20 @@ On the other hand, data gathered from q data is bad for R analyses because the s
 
 Q method makes visible (as per Brown 21) not just how much people agree or disagree with a given item, but how important they find that item vis-a-vis other items.
 That seems to be naturally the case in deciding values and beliefs on the economy, where not only the valence, but their relative importance matter a great deal, especially values vs beliefs.
-)
+) -->
 
 <!-- Great part on Brown 28 on how misleading, logicocategorical R survey research can be; says more about the hypothesizing researcher, than the subject area.
 Same may be the case in taxation, especially when you get to the meta items that problematize the relative legitimacy of explanations, something that - with disdain - Caplan called "preferences over beliefs", but that someone else might call "emancipation" -->
 
-> "Operational definitions begin with concepts in search of behavior; operant definitions begin with behavior in search of concepts.
+<!-- > "Operational definitions begin with concepts in search of behavior; operant definitions begin with behavior in search of concepts.
 > The difference in temporal sequence is of the utmost importance to a behavioral science."
 > Brown 28
 
 Notice that this (the above) isn't just about deductive vs inductive; it's about the ontology and epistemology of concepts; what are they, and how could they be seen?
-Explain the "behaviorism" in here.
+Explain the "behaviorism" in here. -->
 
 
-Great quote on what happens during Q:
+<!-- Great quote on what happens during Q:
 
 > Given that the sample of statements is structured (table 6), each Q sort can in itself be considered as a miniexperiment, the structure being a kind of thought maze through which the subject's attitude wanders, attaching itself to this idea, rejecting that one, ignoring others.
 > Each Qsort is therefore subject to analysis of variance, which for this subject (81) is shown in table 7 along with the analysis of the Q sorts of two other subjects (87 and 812).
@@ -333,7 +332,7 @@ Great quote on what happens during Q:
 Notice that the difference between the two is because I need an uneven number of columns --- this may not matter much, except there being a significance to the 0, as per Brown:
 > "all meaning distends from the middle" (brown 22)
 
-The forced distribution was defined as follows:
+The forced distribution was defined as follows: -->
 
 ```{r q-distribution}
 q_distribution <- as.integer(c(  # set up distribution
@@ -355,9 +354,9 @@ q_distribution <- as.integer(c(  # set up distribution
 ))
 ```
 
-Brown talks about platykurvic etc. on 1980 200
+<!-- Brown talks about platykurvic etc. on 1980 200
 
-This differs a little bit from what a standard normal distribution would be for the given parameters, of `r sum(q_distribution)` items and a maximum value of `7`.
+This differs a little bit from what a standard normal distribution would be for the given parameters, of `r sum(q_distribution)` items and a maximum value of `7`. -->
 
 ```{r compare-automatic, include=FALSE, eval=FALSE}
 make.distribution(nstat=78, max.bin=7) - q_distribution
@@ -367,14 +366,14 @@ make.distribution(nstat=78, max.bin=7) - q_distribution
 <!-- TODO MH: make visualization of bins -->
 
 
-## Q Concourse
+<!-- ## Q Concourse
 
 Brown says it clearly: 28: it's easier to draw a definitive universe of people from which to sample, because there are registers, and they are also discrete.
 Statements are not discrete, and there are possible infinities.
-Loevinger is scited in brown on how it is impossible to delineate.
+Loevinger is scited in brown on how it is impossible to delineate. -->
 <!-- TODO MCH: refer to what matthias wrote about language and the possibility to express infinite things with finite elements, chomsky or something -->
 
-> "more art than science"
+<!-- > "more art than science"
 > -brown 186
 
 
@@ -391,7 +390,7 @@ from the same email, clarifies quite well why I'm not getting out the same vars 
 > (d) pro  (e) con
 >
 > All statements that they reported fit into one of these three categories, and to expand diversity in the Q sample, statements both for and against doctor-assisted suicide were included.  Eventually, n=6 statements from each of the (2)(3)=6 categories above were selected, for a Q sample of N=36.  The role of the above factorial design ends with the selection of statements, however, and the results are not analyzed via variance analysis, which preserves the categories; rather, by way of factor analysis, which preserves the subjectivity (Brown, 1999; Stephenson, 1993/1994).  In Q, it is rarely the case that there are hypotheses to test, in keeping with the hypothetico-deductive framework; more commonly, there are structures to be found and understood, in line with an abductory framework.
-
+ -->
 
 ```{r q-concourse}
 q_concourse <- import.q.concourse(  # import concourse
@@ -400,7 +399,7 @@ q_concourse <- import.q.concourse(  # import concourse
 )
 ```
 
-Heady ideas seem to have some history in Q, as for example the items on Brown 36
+<!-- Heady ideas seem to have some history in Q, as for example the items on Brown 36
 
 
 ## Q Sampling
@@ -433,7 +432,7 @@ We need a carpet; it's just a way of looking at it, just a model, and it shouldn
 , unknown.
 A q sample (and concourse) will always be more of *regulative* ideal --- hence the github account.
 
-What we have here is a *factorial* design of statements (not of people!)
+What we have here is a *factorial* design of statements (not of people!) -->
 
 ```{r q-sampling-structure}
 q_sampling_structure <- read.csv(  # read in sampling structure
@@ -442,7 +441,7 @@ q_sampling_structure <- read.csv(  # read in sampling structure
 )
 ```
 
-generally nice quote: q methodology lets "subjects (sic!) speak for himself (Sic)" brown 45
+<!-- generally nice quote: q methodology lets "subjects (sic!) speak for himself (Sic)" brown 45
 
 This sampling structure is, in fact, very similar to what Brown does on page 30 --- except that the other axis is, arguably, farther away from the resultant factors than in brown#s case.
 My are not actually that theory driven; they are history-of-ideas driven ("marxism", "liberalism") --- they need not imply that actual people had these ideologies today, but merely that these might be some co
@@ -457,7 +456,7 @@ Maybe, just maybe, that's ok, as Brown ()
 
 Brown says the good thing is that through q, even from a limited number of statements, people can still give us there viewpoint.
 This is, in fact, another example of the elements of language.
-Garbage-in-garbage out, unfortunately still holds, if with qualifications.
+Garbage-in-garbage out, unfortunately still holds, if with qualifications. -->
 
 
 ```{r q-sampling}
@@ -481,7 +480,7 @@ make.cards(q.set = q_set[sort(row.names(q_set)), ],
 
 
 
-## Lego Analogy
+<!-- ## Lego Analogy -->
 
 <!-- the lego analogy also works for the information that this is about; relative, and operative --- though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
 though with only simple bricks (say, no transparent elements, no surface, no angled bricks for roofs, you end up with pretty brutalist architecture) -->
@@ -491,7 +490,7 @@ Look at Brown 1980: 14 for the body parts analogy; putting it back together in R
 
 <!-- garbage in garbage out is in Brown 1980 262 -->
 
-#Niemeyer2007
+<!-- #Niemeyer2007
 
 487: "there is considerable uncertainty regarding the appropriate nature of desired deliberative outcomes".
 
@@ -512,7 +511,7 @@ Look at Brown 1980: 14 for the body parts analogy; putting it back together in R
 - (504f) Meta-Consensus
     + Normative meta-consensus ("shared recognition of the legitimacy of a set of values, but no agreement")
     + Epistemic meta-consensus ("agreement on the credibility of beliefs and their relevance to the question under deliberation")
-    + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension)
+    + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension) -->
 
 
     <!-- ## Methode Q-Sort
