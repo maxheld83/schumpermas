@@ -1,5 +1,9 @@
 # First-Order Abstractions {#abstractions}
 
+<!-- this works well for pragmatism:
+> "Vain is the word of a philosopher which does not heal any suffering of man. For just as there is no profit in medicine if it does not expel the diseases of the body, so there is no profit in philosophy either, if it does not expel the suffering of the mind."
+- Epicurus --> -->
+
 <!-- this is about economic imagination, akin to sociological imagination, gans 1988 public Sociology
 a household, but with a case of millions -->
 
@@ -209,3 +213,27 @@ people arbitrage their way toward a falt, wage-tax.
 
 
 <!-- also: man works to live / live to work about the fischergleichnis böll story -->
+
+
+<!-- more diss notes (sokrates)
+
+these are notes from August 9, from a discussion
+
+starting point: it's difficult to teach economics ("why is greece so much in debt?"/ issue of trade balances) in school on a problem-based approach, because economics is based on (politicized) axioms and ontologies (marginal logic, incentives, etc). If you don't get to problematizing those, you end up with random disagreement and some arbitrary teaching from, say, a marxist and neoclassical economist.
+Crucially, the two (and especially the students, or civicon citizens) won't even know why the disagree (metaconsensus).
+
+so you need to go in depth, so that people get the axioms and ontologies. You can either do that spontaneously, starting wherever you are, which might be better from a motivational point of view, or systematically, say according to some textbook. That might be less optimal from a motivational point of view.
+
+notice why the axioms and ontologies are so important: economics (and politics) is both circular reasoning and implies policy (collectively binding stuff).
+It is circular, because (need a plot for this): when you decide on institutions (assuming that you accept some human agency and choice in that, and are NOT a fascist or a libertarian or otherwise non-Bonhoeffer), you obviously want them to somehow correspond to human motivation. They cannot completely ignore human motivation.
+On the other hand, that very human motivation is, of course -- especially of already grown, existing humans -- shaped by their experience with past institutions: a lifetime of incentives and property rights will probably create people who respond to incentives and believe in property rights.
+So you have a circular piece of reasoning in any economic policy making.
+
+Notice that this does not pertain to whichever part of human motivation is not amenable to institutions but hard-coded "nature".
+
+Notice that this is less dramatic for natural sciences, because they do not have a circular reasoning in their reasoning; instead they have objectiviable criteria, so cutting of the chain of justification and referring to tradition or authority (experts say that) is not, in principle, illegitimate, at least to the extent that their scientific process is ok.
+This is not the case for deliberative democracy and economics: NO process relying on such a circular piece of reasoning can ever be legitimate.
+
+Pragmatism may be the only way out: you accept that you always have to take some present state of the world as given for policy, but that state can never justify the ends of that policy, you must always look towards a horizon of more, even if you can only judge taht horizon imperfectly.
+
+This shows up quite dramatically in deliberation, where absent a recourse to the foundations of economics (marxist, marginal, etc.) it's very hard to reach metaconsensus. -->

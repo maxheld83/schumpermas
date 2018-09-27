@@ -479,6 +479,13 @@ make.cards(q.set = q_set[sort(row.names(q_set)), ],
 ```
 
 
+<!-- This is from lorenz project prop:
+> Moreover, depolarization happens only on factual and much less on value-laden issues (Vinokur and Burnstein 1978).
+
+Deliberation is not something you can be sure of that it happened; it is a regulative ideal – so that causes quite a lot of problems for studying it, especially if you're interested in its RESULTS or effects; it almost becomes circular.
+
+5The experimental literature on deliberation is rapidly expanding. To a large extent, however, it is descriptive (see, for an overview, Karpowitz and Mendelberg 2011). -->
+
 
 <!-- ## Lego Analogy -->
 

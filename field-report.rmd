@@ -207,6 +207,19 @@ Plenary: Write-up of Report\
 
 ## Field Data
 
+The first CiviCon Citizen Conference on taxation produced a wealth of data, including:
+
+- 2x 18x Q-Sorts (before, after)
+- 2x 18x Item Feedback (before, after)
+- 17x Socio-Economic & Demographic data
+- 15x General written feedback
+- 315x Notes, Posters, Illustrations
+- 1601x Photos
+- 100hrs Audio
+- 80hrs Video (1080p)
+
+<!-- TODO MCH: make this into a table with availability and status of processing -->
+
 <!-- this stuff is only used cursorily, q is the main act! -->
 <!-- explain why we can't get into that data in detail -->
 

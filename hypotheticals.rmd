@@ -146,3 +146,10 @@ actually, the PCT provides a possibility to fight evasion: you can force people 
 
 <!-- die linke actually writes that they think the fta tax would burden factors
 26: Mit einer Finanztransaktionsteuer wollen wir die Spekulationen auf den Finanzmärk- ten eindämmen und die Verursacherinnen und Verursacher der Krise an deren Kosten beteiligen. -->
+
+<!-- ## Graetz 1979?
+
+- Graetz on progressive consumption tax 1979
+	- eliminates the problem of double taxing of saving
+	- India and Sri Lanka have tried it, and failed. But it should be easier than income tax to administer
+	- problem: "the notion of a sharp division between pleasure-seeking and profit-seeking is alien to human psychology and essentially unrealistic" (chirelstein as cited in graetz 1979 1586). And yet, we deal with the same problem in income taxation. And remember how much good this tax could still do, how it could redefine the very boundary of what is pleasure and what profit (thinkg conspicuous consumption). Also, we have this thing called depreciation which takes care of it. -->

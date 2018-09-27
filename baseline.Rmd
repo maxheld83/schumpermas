@@ -15,21 +15,8 @@ they just wanted to be left alone by the abstractions of Society -->
 <!-- TODO MH: paste condition of instruction? -->
 <!-- TODO MH include data-gathering here, too -->
 
-
-## Data Gathering
-
-The first CiviCon Citizen Conference on taxation produced a wealth of data, including:
-
-- 2x 18x Q-Sorts (before, after)
-- 2x 18x Item Feedback (before, after)
-- 17x Socio-Economic & Demographic data
-- 15x General written feedback
-- 315x Notes, Posters, Illustrations
-- 1601x Photos
-- 100hrs Audio
-- 80hrs Video (1080p)
-
-<!-- TODO MCH: make this into a table with availability and status of processing -->
+<!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
+For more on what 0 means to q, see Brown 1980 199, also note the flac I got on the correlation coefficient email on the meaning of 0. -->
 
 ## Data Import
 
@@ -44,8 +31,6 @@ Running and documenting all these variations will be next to impossible without 
 
 
 ## Import
-
-<!-- TODO MH: see timetable of what was done when at the conference -->
 
 ```{r import-q-sorts, echo = FALSE, warning = FALSE}
 q_sorts <- import.q.sorts(
@@ -81,9 +66,6 @@ q_feedback <- import.q.feedback(
   )
 )
 ```
-
-<!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
-For more on what 0 means to q, see Brown 1980 199, also note the flac I got on the correlation coefficient email on the meaning of 0. -->
 
 
 ## Missing Data
@@ -130,11 +112,8 @@ library(devtools)
 use_data(civicon_2014, pkg = "../pensieve/", overwrite = TRUE, compress = "bzip2")
 ```
 
-
 <!-- complete import of `r ncol(q_sorts)`, three participants -->
 
-
-## Codenames
 
 ```{r real-names, echo = FALSE, eval = TRUE}
 real_names <- FALSE  # this is for manually enabling renaming
@@ -149,7 +128,7 @@ if (real_names == TRUE & file.exists("../../Google Drive/CiviCon/Data/Codenames.
 ```
 
 
-# Q Method Analysis
+## Q Method Analysis
 
 Results chapters in quantitative research do not usually recount and justify every mathematical operation from raw data to final interpretation.
 In reporting mainstream statistics, say, a linear regression (OLM) much in the way of axioms and preconditions is often taken for granted, though perhaps, sometimes too much.
@@ -1949,29 +1928,6 @@ explvar
 <!-- what we're loosing when then R2 increases is, by definition, some residuals.
 interesting idea: maybe look at what kind of residuals was lost? could we tell a story about that? -->
 
-<!-- Notice towards the end: these are not revolutionary insights.
-In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity --- missing liberals, in particular.
-Still, it is very interesting, and it would be crucial to have larger samples to extract more items. -->
-
-
-this works well for pragmatism:
-> "Vain is the word of a philosopher which does not heal any suffering of man. For just as there is no profit in medicine if it does not expel the diseases of the body, so there is no profit in philosophy either, if it does not expel the suffering of the mind."
-- Epicurus -->
-
-<!-- notice that actually, weighting and flagging are again, latent variable models thinking
-This is from lorenz project prop:
-> Moreover, depolarization happens only on factual and much less on value-laden issues (Vinokur and Burnstein 1978).
-
-Deliberation is not something you can be sure of that it happened; it is a regulative ideal – so that causes quite a lot of problems for studying it, especially if you're interested in its RESULTS or effects; it almost becomes circular.
-
-look again at the proposal from jan for the social choice stuff; it matters
-
-5The experimental literature on deliberation is rapidly expanding. To a large extent, however, it is descriptive (see, for an overview, Karpowitz and Mendelberg 2011).
-
-Ist echt ulkig, für so Literatur mit der ich oft *nicht* übereinstimme brauche ich oft Ferien oder etwas Abstand und gute Laune. Sagt einem vielleicht etwas über die *psychologischen* Erfordernisse von Deliberation. So anderer Leute Argumente sind echt ein Stück Arbeit ;)
-
-Maybe the effectiveness on consistency and other q sort stuff depends on the complexity or modernity of the issue? Plausible say abortion prostitution or assisted suicide might not change as much in values beliefs preferences because they are so much less complex
- -->
 
 <!-- cite the q "study groups" (by some grace) thread in my presentation; qmethod has been used as an instrument in consensus building, not so much as a measurement of its results. -->
 
@@ -1983,49 +1939,6 @@ The independent-minded philosopher-saints are so sure of themselves that they of
 They end up opiniated, and alone.
 -->
 
-
-<!-- more diss notes (sokrates)
-
-these are notes from August 9, from a discussion
-
-starting point: it's difficult to teach economics ("why is greece so much in debt?"/ issue of trade balances) in school on a problem-based approach, because economics is based on (politicized) axioms and ontologies (marginal logic, incentives, etc). If you don't get to problematizing those, you end up with random disagreement and some arbitrary teaching from, say, a marxist and neoclassical economist.
-Crucially, the two (and especially the students, or civicon citizens) won't even know why the disagree (metaconsensus).
-
-Also note that in future, metaconsensus might really be best measured by asking some people to q-sort as other (participant) people – that is after all what you want to figure out: Do people agree on what they disagree on.
-
-so you need to go in depth, so that people get the axioms and ontologies. You can either do that spontaneously, starting wherever you are, which might be better from a motivational point of view, or systematically, say according to some textbook. That might be less optimal from a motivational point of view.
-
-notice why the axioms and ontologies are so important: economics (and politics) is both circular reasoning and implies policy (collectively binding stuff).
-It is circular, because (need a plot for this): when you decide on institutions (assuming that you accept some human agency and choice in that, and are NOT a fascist or a libertarian or otherwise non-Bonhoeffer), you obviously want them to somehow correspond to human motivation. They cannot completely ignore human motivation.
-On the other hand, that very human motivation is, of course -- especially of already grown, existing humans -- shaped by their experience with past institutions: a lifetime of incentives and property rights will probably create people who respond to incentives and believe in property rights.
-So you have a circular piece of reasoning in any economic policy making.
-
-Notice that this does not pertain to whichever part of human motivation is not amenable to institutions but hard-coded "nature".
-
-Notice that this is less dramatic for natural sciences, because they do not have a circular reasoning in their reasoning; instead they have objectiviable criteria, so cutting of the chain of justification and referring to tradition or authority (experts say that) is not, in principle, illegitimate, at least to the extent that their scientific process is ok.
-This is not the case for deliberative democracy and economics: NO process relying on such a circular piece of reasoning can ever be legitimate.
-
-Pragmatism may be the only way out: you accept that you always have to take some present state of the world as given for policy, but that state can never justify the ends of that policy, you must always look towards a horizon of more, even if you can only judge taht horizon imperfectly.
-
-This shows up quite dramatically in deliberation, where absent a recourse to the foundations of economics (marxist, marginal, etc.) it's very hard to reach metaconsensus.
-
-
-Consider in some depth the "wir wollen keine Unruhe in die Betriebe bringen" (SPD) example for inheritance tax, seems on the face of it aggreable, but it's completely empty:
-why betriebe ? (they are not being taxed)
-betriebe hide the issue of ownership
-
-
-
----
-
-Notice how a lot of the debate on rationality in deliberation, and how / if to measure deliberation echos the old dialectics of enlightment struggles.
-Maybe some of the agonistic writers are on Horkheimer side of the debate?
-
-Really need to read Mouffe, before talking about it
-
-
-
-## decommodification
 
 ## Graetz 1979?
 

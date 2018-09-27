@@ -34,6 +34,10 @@ actually this is a somewhat fundamental addition: it's not just "facilitating di
 programming is much nicer.
 but it's not clear that we can do without this -->
 
+<!-- Notice towards the end: these are not revolutionary insights.
+In part, because item development may still be in its infancy, and in large part, because the sample was quite limited in diversity --- missing liberals, in particular.
+Still, it is very interesting, and it would be crucial to have larger samples to extract more items. -->
+
 
 ## Limitations
 
