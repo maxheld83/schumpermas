@@ -16,5 +16,162 @@
 
 <!-- reiterate some empirical findings here -->
 
+## Taxation and Welfare
+
+Why does taxation matter for human welfare?
+
+As @Schumpeter knew, "in the modern world, taxation *is* the social contract" [@Martin2009a, 1, emphasis in original], even though social scientists have since paid little attention to it [@Tilly2009, K191].
+Tax matters especially for current OECD-style welfare regimes, in which markets and states must co-exist [@Stiglitz2011].
+In such a mixed economy, government must be able to draft some privately-owned resources to serve its --- ideally democratic --- *command*, without unduly altering the prices of --- ideally competitive --- *exchanges* [@Ardant1975, 165f].
+<!-- TODO ref chapter on mixed econ here -->
+Much of modern social integration occurs in the balance of these two contrasting logics to produce and allocate resources, "enmesh[ing] us in the web of generalized reciprocity that constitutes modern society" [@Martin2009a, 3].
+State plans make the conditions *for*, and set limits *to* *individual* action, as when government builds roads or collects sewage fees.
+Conversely, market exchanges produce much of the "fungible resources" used for *collective* choice, as when government pays road builders or procures sewage pipes [@Martin2009a, 4].
+
+Of all conceivable institutions to govern the interface of states and markets, taxation --- not price controls, not expropriation, not debt, not printing money, not tariffs --- is the most equitable, efficient and sustainable [@MusgThet1959; @Stiglitz2011].
+<!-- TODO ref tax-matters chapter -->
+Welfare states, with their penchant for market interventions for equity, efficiency *and* sustainability, especially, rely on good taxes.
+
+<!-- %bad überleitung, the instead doesnt work -->
+Still, taxation everywhere in the OECD is in crisis.
+As alternative sources of economic relief --- monetary expansion and sovereign debt --- are maxed out, structural misalignments persist, and previously forestalling (asset) bubbles have burst into their days of reckoning, public revenues appear to be strictly limited by the longtime coming contradictions of current tax regimes [@Streeck2013].
+<!-- %not sure about this soure, must read it -->
+The popular mixture of (progressive) income, (proportional) consumption and (regressive) payroll taxes appears to offer only harshly unattractive tradeoffs between equity and efficiency [@McCafferyHines2010], as bases have shrunk and schedules flattened [@Ganghof2006].
+At the same time --- possibly partly as a result --- inequalities of incomes and wealth have widened [@Butterwegge; @Wagner2007; @Grabka2007].[^no_wealth_distro]
+<!-- TODO mention here that inequality findings are contentious -->
+
+[^no_wealth_distro]: Data on the distribution of wealth is conspicuously hard to come by [@Crouch2004, 158] or ordinally summarized in deciles, rendering much of the inequality invisible.
+
+If governments cannot raise the resources necessary to meet democratic demands without incurring prohibitive costs, the social contract is fraying [@Crouch2004].
+<!-- %so so shource -->
+Whichever way governments now turn, absent better tax, they will violate the post-war capitalist compact of stable, widely shared growth [@Pierson2002; @StreeckMertens2010].
+<!-- %so-so source -->
+<!-- TODO ref 3-crisis chapter -->
+
+<!-- %\cite{Genschel2004} and Achim \cite{Kemmerling2009} in particular have published on the effects of economic liberalization on national tax regimes.
+%Steffen \cite{Ganghof2006}, also losely associated with the CRC 597, has published extensively on the changes undergoing national income taxation under conditions of economic globalization.
+%
+%%McCaffery
+%	%our tax system is a disgrace, and has been so for decades.
+%The way we tax is complicated, inefficient, and unfair.
+%Yet whenever elected officials in Washington actually try to do something about tax, they tinker at best.
+%At worst, they make the system even more annoying.
+%We need fundamental, comprehensive tax reform, not ad hoc tinkering.
+%Two, there is a widening gap between the rich and the not-rich in this country.
+%It may surprise many readers to learn that there is a deep connection between these two facts.
+%Tax as it is today is a cause of the wealth gap.
+%Tax as it could be tomorrow would narrow it.
+%That'sRead more at location 50   • Delete this highlight
+%	%Note: this is key.
+%It's fucked up, but systematically so.
+%Edit
+-->
+
+<!-- ## Ganghof 2007
+
+notes two things:
+income taxation isn't enough, it needs to be on capital, too
+income taxation nesd to be progressive
+provides a cool argument 1063 how (institutional) veto playing may favor, rather than weaken the forces of retrenchmecn because of the wide-reaching legal changes that would be required to avoid retrechnment
+Kato 2003 as cited in ibid 1064: yes, a revenue shift to regressive taxes makes it politically easier to maintain a large public sector (51) but that is a bad idea, it's not the idea of a welfare state
+1075 says that there are few major overhauls of tax systems because they are associated with significant transaction costs and political risks, so centrist and pragmatic policy makers will avoid that.
+
+
+## Ganghof 2004
+
+scharpf in foreword 12 cites the negative employment effects of high social contributions, also inequitable because they're strictly proportional
+also in scharpf foreword 13: MwST does 2 bad things: it depresses the price-elastic demand for low-qualification service industry jobs (which is very bad) and it raises the costs of living for everyone.
+Scharpf is right when he says there is much to explain about the chaos of german tax. In fact, there is MUCH more to be explained if you look at a perfect counterfactual.
+19 CIT and PIT highest marginal rates are same in Germany since 1977 (and for a  good reason)
+25 make this key point: when Ganghof suggests a dual income tax for germany, fundamental equity (OR efficiency) concerns are long past. 25. He cites two "pragmatic reasons" 1) it will be easier to find a cap income tax rate that is low enough to include as many as possible kinds of cap income. 2) labor incomes can still be taxed progressively.
+wow, where's the innovation?
+
+## Genschel 2004
+
+the sceptics and the revisionists have it wrong: because they lack the right counterfactual 616
+the welfare state is indeed, and rightly so, expected to do 2 things as Genschel 617 writes (this is part of the two criterion)
+to systematically control economic developments at the macro-level (macro-economic control), and
+to guarantee, unconditionally, adequate living standards at the micro-level (redistributive social policy)
+
+note that really depreciation isn't all that difficult: we do that for firms, too and we do it fairly roughly. We can do that for households, too. Also: if people sell their stuff at some point, we may even allow them to correct for the depreciation up or downwards. -->
+
+
+## Deliberation and Democracy
+
+Why does deliberating taxation matter for democracy?
+
+A dysfunctional mixed economy without good taxes may produce illegitimate outputs, and, in so far as it disturbs the state-market balance of the mixed economy, violates output congruence of a democracy [compare @Zurn-2000-aa 190].
+Yet, even if experts could agree on a tax --- such as a promising, post-paid, cash-flow based [pct]{acronym-label="pct" acronym-form="singular+short"} --- the tradeoffs involved in choosing or calibrating a tax regime are irreducibly political.
+For example, experts cannot *positively* inquire whether economic "growth" [^positive_sum] is in itself *virtuous*, which inter-subjective aggregation would be *utility-maximizing*, what *deontological* rights owners have or which human *relationships* should be governed by prices or command at all --- even if they could agree on any of those alternative ethics.
+
+[^positive_sum]: More precisely, the reaping of greater non-zero-sumness from social integration [@Wright2000].
+
+<!-- TODO these are all discussed in *wanted* chapter -->
+<!-- Even to the extent that tax choice can be left to economic a-priori or empirical analyses, of, for example, \glspl{dwl}, such expertise relies on contentious views of human nature \citep[for a review,][]{Persky1995}, and observations of nature are, in any event, devoid of moral messages \citep[43]{Gould1982}. -->
+These metaphysical conundrums are reflected in very concrete, technocratic issues in taxation.
+<!-- TODO add complete list here, those are old links issues in taxation, including \glspl{dwl} (p.~\pageref{sec:tax-optimality}), \hyperref[sec:diminishing-marginal-utility]{diminishing marginal utility} (p.~\pageref{sec:diminishing-marginal-utility}), the \hyperref[des:structural-agnosticism]{treatment of capital income} (p.~\pageref{des:structural-agnosticism}), or \hyperref[sec:love-marriage]{joint spousal taxation} (p.~\pageref{sec:love-marriage}), respectively. -->
+Likewise, experts cannot justify the axioms on which their (economic) analyses rest:
+whether, and under which institutional circumstances we are homines oeconomici, cannot be exhaustively answered from observation, because nature provides no intelligible moral messages on what kind of man we *should* be [@Gould1982 43].
+<!-- again reference wanted chapter -->
+This ontological stance matters for tax, too:
+for an expert to model a general equilibrium is to invoke, as well as to make, a homo economicus.
+
+Of all conceivable institutions to resolve these disagreements, deliberative --- not aggregative, not pluralist, not participatory --- democracy offers the greatest normative appeal, because these disagreements raise, in @Habermas-1984's words, competing *validity claims*, in need of argumentative redemption, as in:
+is "growth" *comprehensible*, who *truly* bears a [cit]{acronym-label="cit" acronym-form="singular+short"}, is homo economicus *right*, and are social insurance employer co-payments *truthful*?
+I illustrate further more, and less valid claims on taxation.
+<!-- %I illustrate further more -- language does not work -->
+<!-- TODO referer to validity-claims tex table here! -->
+<!-- TODO INPUT validity claims table here! -->
+
+Liberal democracy, born out of the hope that material inequality and political autonomy *can* be reconciled, especially, rests on deliberation, because if anywhere, it is in taxation that money and power may have replaced language to govern meaning and action [@Habermas-1971].
+In fact, if you wanted to hide some process of (re)producing inequality anywhere, you could hardly find a better place than the intricacies of (income) taxation (consider, for example "tax planning 101" in @McCaffery2005 [888]).
+
+Instead of communicative action [@Habermas-1984], what emerges today from citizens, their legislatures and public spheres, may be more "analytic muddle of tax" [@McCaffery2005 862].
+The beliefs held and issues considered in the public [for example, @Caplan2007], appear to bear little resemblance to the abstractions suggested by economists [for example, @Harberger1974].
+People seem to ignore fundamental choices in tax [for example, @McCafferyHines2010], and may fall for inconsequential alternatives [for example, @SausgruberTyran2011], possibly even err systematically against their own material interest --- if they are on the lower economic rungs [for a German example, @Kemmerling2009].
+Here, too, (input) congruence of democratic rule may be violated if and to the extent that people are confused about policy choices [compare @Zurn-2000-aa 90].
+
+
+<!-- Liberal, representative democracy, rests on a pluralist theory of governance (Louw 2005:15). Pluralism, being both empirical hypothesis and normative prescription supposes that political power is, and should be widely dispersed among society’s interest groups. These interest groups, made up of ever active citizens, openly compete with one another, thereby preventing any one of them to become a dominant elite. -->
+
+<!-- Compared to gun control and abortion rights, the environment is a weakling of an issue. (...). (There,) the devil is in the details and voters don’t like details. (ibid.: 201) -->
+
+<!-- # Loftager
+deliberative democracy is the opposite to economic theories of democracy -->
+
+
 
 ## Misunderstanding Tax
+
+<!-- ## The Detective Story of Income Taxation (Who Dunnit? Who killed progressivity?)
+
+> "The real and pressingly practical question for tax is not whether to have an income or a consumption tax, but what form of consumption tax to have. The stakes in this battle are clear and dramatic: the fate of progressivity in tax lies in the balance."
+> Edward J. McCaffery (2005: 817)
+
+> "Advocates of redistributive taxes must wake up and realize that their end is in jeopardy on account of their poor choice of means: they are fighting, and losing, the wrong war."
+> Edward J. McCaffery (2005: 848)
+
+The political alternatives now seem to be between progressive income tax and prepaid proportional/flat consumption tax (VAT, Social Contributions, Payroll, all equivalent). This is an incomplete choice set.
+The one progressive component of today's tax regimes, the personal income tax, has deficient backstops.
+- Estate and gift taxes (buy, borrow, die)
+- Corporate income tax (indeterminate incidence, no progression, indeterminate location of value generation)
+
+The personal income tax as structural flaws, remaking the PIT ever more into a wage or prepaid consumption tax.
+1. Macomber. Tax on accession/accrual or tax on realization? The Supreme Court rules: you can tax only on realization (selling).
+ this problem is much exacerbated in the case of income in illiquid assets.
+2. Tax Planning 101 aka Buy, Borrow, Die. Mrs Macomber could simply borrow on her (appreciating!) stock as collateral. Recall that borrowing, is not income under an income tax. Mrs Macomber can spend out of the borrowing tax-free.
+3. Heirs never pay the estate tax, because that is (as it makes sense) a net tax on assets minus liabilities. In the extreme case of Tax Planning 101, there is no estate.
+4. Also, Tax Planning 101 incentivizes people to never realize, to never sell. This may lead to markets freezing up and asset as well as derivatives (!) bubbles, at great cost to the economy. -->
+
+
+## A Vicious Cycle
+
+These two crises --- an ineffective and/or inefficient welfare state and a confused democracy --- may partly reinforce one another into one perfect storm of societal reaction by stealth:
+
+> The two issues, the crisis of egalitarian politics and the trivialization of democracy, are not necessarily the same.
+> Egalitarians might say that they do not care how manipulative of democracy a government is, provided it divides society's wealth and power more evenly.
+> A conservative democrat will point out that improving the quality of political debate need not necessarily result in more redistributive policies.
+> But at certain crucial points, the two issues do intersect [\ldots].
+> My central contentions are that while the forms of democracy remain fully in place --- and today in some respects are actually strengthened --- politics and governments are increasingly slipping back into the control of privileged elites in the manner characteristic of pre-democratic times;
+> and that one major consequence of this process is the growing impotence of egalitarian causes.
+> --- Colin @Crouch2004 [6]

@@ -10,3 +10,101 @@ there was also no obvious external pressure; nor was it clear that this would ha
 or maybe, it would have been, because an external stake/pressure is just realistic -->
 
 <!-- the proof of concept worked: people liked this -->
+
+After filling out the questionnaire, the topic of the deliberation will be introduced by two moderators, both of which are non-experts in the field.
+The moderators again introduce a simplified version of the above table, and walk participants through the combinations of base and schedule --- including presently used [pit]{acronym-label="pit" acronym-form="singular+short"}, [vat]{acronym-label="vat" acronym-form="singular+short"} and [payroll]{acronym-label="payroll" acronym-form="singular+short"} --- but abstain from causal, or normative statements about these taxes.
+The table will also be prominently displayed on premise for easy reference by participants.
+Participants are then tasked to deliberate the basic choices of base and schedule.
+
+Deliberation alternates throughout the day between small-group settings of 5--8 persons and larger plenary sessions.
+Moderators assist the participants and encourage the norms of deliberation --- including respect, equal participation and argumentative reciprocity --- but do not clarify or comment on substantive questions.
+Moderators also make sure that no pressure for a collective decision is exerted.
+Participants are invited to collect questions for a question and answer session held mid-day with a balanced panel of economic experts.
+The deliberation concludes in a plenary session where participants are invited to reflect on the experience, as well as to identify further questions for deliberation.
+Participants fill out a questionnaire again, including some of the questions from the initial questionnaire, as well as some additional items concentrating on the deliberative experience, especially the perceived autonomy, equality and competence of participants.
+are recompensed for their time and thanked by the convener.
+
+
+## Schedule
+
+<!-- & Introduction
+&
+Small Group: What do we want from market, state?
+&
+Small Group: What alternatives does a mixed economy face?
+&
+Small Group: What makes a tax efficient?
+&
+Small Group: Who really pays a tax, and why?
+&
+Small Group: What do we want to know from experts?
+&
+Small Group: What tax do we want?\
+Lunch
+&
+&
+&
+&
+&
+&
+&\
+14:00-15:30
+&
+Small Group: Experiences, Questions, Stories on/with Tax
+&
+:
+(p. )
+&
+Plenary: How should state and market co-exist?
+&
+:
+(p. )
+&
+:
+,
+,
+(p. ff.)
+&
+Expert Panel: Questions and Answers
+&
+Plenary: What tax do we want?\
+Break
+&
+&
+&
+&
+&
+&
+&\
+16:00-17:30
+&
+Plenary: Distilling Guiding Questions, Criteria
+&
+Small Group: How can states and markets interface?
+&
+Overview of existing taxes
+&
+Small Group: What makes a tax just?
+&
+Small Group: At what rate, on what source, and when we tax?
+&
+Plenary: What did we learn from the experts?
+&
+Plenary: Write-up of Report\
+
+\scriptsize{
+	Light grey cells are \emph{deliberation phases}; participants discuss with one another in small group and plenary sessions.
+	Their work is facilitated by a moderator and they a scribe.
+	Dark grey cells are \emph{learning phases}; citizens participate in an interactive seminar held by the instructor.
+	The seminar responds to the guiding questions identified by the participants.
+	} -->
+
+
+## Field Data
+
+<!-- this stuff is only used cursorily, q is the main act! -->
+<!-- explain why we can't get into that data in detail -->
+
+Additionally, process data from the deliberation will be gathered, comprising of the claims, themes and questions raised by participants and summarized by the moderator and/or scribe at the end of each deliberation, as well as the final report on taxation and other documents or notes produced during the deliberation.
+Deliberations will also be audio-(visually) recorded, although comprehensive transcription and analysis of this data will probably not be possible.
+This process data and select recordings will then be subjected to a qualitative content analysis, both to verify that participants *could* make arguments reciprocally comprehensible (and otherwise valid), and to record which of several arguments deliberators accepted as based on universal validity claims.

@@ -25,7 +25,176 @@ if you're not concentrating, you're talking about nothing (or everything) -->
 
 ## Circular Flow
 
+
 ## Love and Marriage
 
 
-# Haig-Simons Identity of Income
+## Haig-Simons Identity of Income
+
+
+## Savings norms
+
+<!-- ## Fried 1992
+this appears to be re mccaffery
+
+There are three arguments, says Fried 965 why savers and spenders ought to be treated the same, and she says, they're all flawed
+1) Abstinence ideas: savers and spenders ought tob ear equivalent tax burdens because they have equivalent wealth ex post, once the costs of deferreing consumtpion are accounted for
+this is, in fact, as fried notes 967, an improved income tax.
+the abstinence justification is: you have costs when deferring consumptions, psychic costs. OR: you have less utility for the remaining lifetime
+2) Bradford: savers and spenders ought to bear equivalent tax burdens, whether or not they are in equivalent positions ex post, because they face equivalent choices ex ante
+3) savers and spenders ought to bear the equivalent tax burdens because they are entitled to preserve the relative ex post advantages, whether equivalent or not, that they enjoy in a no-tax world.
+now here is a key argument (971) she argues that the abstinence theory is wrong, because we never compensate for pscychic cost of at the margin-leisure, we don't do this for workers, they work at the margin of where they are indifferent between working and not working. But we don't reward them enduring the psychic cost of working, we just tax them anyway. So they will include this in their rationales for working more. Her argument is: then why do it for the psychic cost of saving?!?
+here's a tentative solution: we do that for workers, actually, and we should: it's the base-rate of only consumption, which I think we should continue -->
+
+
+
+
+<!-- As if economics were true
+
+Milton Friedman argued that for economic models is does not matter whether assumptions are realistic, or whether actors understand them – but whether predictions are borne out, and whether actors behave *as if they had some given theory in mind*.
+An instructive example for this would be a billard player who does not know the laws of physics in any case, but behaves *as if* s/he understood them.
+This is the example from Friedman.
+
+Paul Pfleiderer via Econtalk on Russ Ruberts points out that this depends on *continuous* and *instantaneous* feedback – so these are repetetitive games, with quick feedback.
+So something like the 10k hours rules might apply.
+Paul Pfleider then applies this to capital structure decisions by firms – a lot of research on this.
+How do firms decide this?
+The problem that we have is that very similar firms objectively have very different capital structures, and we don't know why.
+So the solutions suggested by economists are incredibly complex – but there's a catch: CEOs make very few capital structure decisions, and they don't get immediate feedback (none).
+So the 10k hour learning kind of rule does not at all apply.
+
+... so I need to make some kind of pragmatic argument out of this. -->
+
+
+<!-- Schumpeter 1918
+- reads like today!
+- cite SChumpeter: the confusion and non-scientific/ideological nature seems very interesting, p. 99
+- 103: argues that once there is a state, *anything* could be a matter for the public; now I am not so sure, there are still economic considerations (economies of scale, etc.)
+- 104: that's a good thought – it's ahistorical to think of previous times as hyper-private, without the state – because this *functional differentiation* simply had not happened yet.
+- 105: that's a good point: that the crisis must be fundamental, related to the foundational logic – maybe we have that today with the dual crises of the welfare state
+- 108: such a great notion how the democracies are saddled with the old baggage of feudalism! It was the princes state that was assimiliated (as far as possible by democracies)
+- notice that this 108ff schumpeter makes the same argument as could be made about post-communist welfare states: they *were no* welfare *states* under socialism, because the economy and state were *one* undifferentiated realm
+- 114: not sure how we can practically have a monopoly tax, but some things work out great – the land value tax! Schumpeter also recommends it!
+- 116: fantastic keynes-esque quote on the end of history in tax
+- 124: the whole war debt thing is a bit of magical thinking ...
+- 131: more keynesian optimism on the future end of history
+
+Comment: Schumpeter might really be thinking about the laffer curve: past regime does not work because costs of extraction are prehibivey,  so you need a new system.
+In away, schumpeter really thinks AS WE MUSt of tax state as interfacing the mixed economy. -->
+
+<!-- from seligman 20: 20: look again into Buchanan, and relate it to Nagel/murphy the myth of ownership: maybe both looking from the right AND the left, infinite regress ensues – (this is hard to say). TODO actually this is still pretty loose, I think probably think about this in a more careful way. The bottom line would be something like this: buchanan talks about the fiscal illusion, which requires a prior of private property, which is difficult to talk about without reference to the institutions that actually allow private property and commerce. On the other hand, talking about the advantage of public goods only makes sense once you talk about -->
+
+
+<!-- Buchanan 1967
+
+TODO Cite Buchanan on fiscal illusion in diss, and the italians he cites, seems quite similar.
+
+- hereagain the myth of ownership strikes hard: it is VERY hard to price the "real" cost of public goods, almost circularly.
+- either way, infinite regress ensues.
+- i'd like to hear him argue against the LVT or PCT
+- I agree with much of this: financial transaction tax really is a tax that's widely loved because no one knows who pays it. -->
+
+<!-- Thorndike Address
+
+Thorndike is interested in the arguments on fairness, not the answers (that's interesting, that's great for CiviCon!)
+
+book: the pale king, book on taxation!
+
+Consent, Compliance and Confession.
+
+Question: how about the compliance on illiquid tax, especially within the PIT (on accrual or realisation)
+
+Look back into Macomber, what the ruling says, maybe get back to Ajay (it seems that Macomber did *not* introduce realisation-based evaluation).
+
+- We should do relate this to social/epistemic/individual preferences *explicitly* (if we can)
+- We should explicate the external validity (real world?), increase the complexity (effort, capital)
+- We should try and relate this to Kahnemann/Tversky research program.
+- [Lucy Barnes](https://www.kent.ac.uk/politics/staff/canterbury/barnes.html) was quite interested in this stuff
+
+
+> relate to Kahnemann/Tversky work on bounded rationality: which behavioral biases work here?
+
+It's not clear to me how these biases translate to more complex tax scenarios.
+McCaffery and Baron have tried this, but only on very, very simple models.
+Loss Aversion probably plays a role. -->
+
+<!-- ## mcCaffery: misunderstandings
+
+is right indeed "the canonical understanding of consumption taxes changes under consistently progressive rates. No longer are prepaid and postpaid consumption taxes - taxes on wages and spending, respecitbely - equivalent. Postpaid consumption taxes can and do burden the yield to capital, and not in an arbitrary, random way. Far from it: A progressive postpaid consumption tax emerges as the fairest and least arbitrary of all comprehensive tax systems, precisely because it chooses to make its decisions about the appropriate level of progressivity at the right time. In doind so, it burdens some but not all uses of capital and its yield. and for normatively attractive reasons". (812)
+wow.
+"This traditional view has generated an impoverished choice set for tax, consisting of a badly flawed status quo on the one hand and a flat consumption tax of some sort on the other. Under the guiding light of the traditional view, we are heading ever closer towards a flat wage tax." 812
+"Under progressive tax rates a postpaid, cash-flow or (all equivalently) spending tax is not equivalent to a yield-exempt or wage tax" 813
+
+governing dynamics of inequality.
+"Genuinely progressive taxation is necessarily personal taxation" (Vickrey 1947 "Agenda for Progressive taxation" as cited in MCCafferty 830)
+
+if you want read more on this by Mirrleess, Bankman and Griffith, as cited in McCafferty 835 and elsewhere
+
+
+Hobbes and smith come down for consumption taxes. Both the father of economics and the father of the state
+Hobbes, Leviathan 386-87
+[T]he equality of imposition, consisteth rather in the equality of that which is consumed than of the riches of the persons that consume the same. For what reason is there that he which laboureth much, and sparing the fruits of his labour, consumeth little, should be more charged than he that living idlely, getteth little, and spendeth all he gets, seeing the one hath no more protection from the commonwealth than the other? But when the impositions are laid upon those things which men consume, every man payeth equally for what he useth, nor is the commonwealth defrauded by the luxurious waste of private men.
+Smith
+Every tax ought to be levied at the time, or in the manner, in which it is most likely to be convenient for the contributor to pay it.... Taxes upon such consumable goods as are articles of luxury, are all finally paid by the consumer, and generally in a manner that is very convenient for him. He pays them little by little, as he has occasion to buy the goods. As he is at liberty too, either to buy, or not to buy, as he pleases, it must be his own fault if he ever suffers any considerable inconveniency from such taxes. Smith supra note 54 in cafferty
+McCaffery says the USA mistake came from mistaking the Haigs-Simon definition: "an is had become an ought" (emphgasis in original. 840 MccFfery
+this comes from Andrew's' idea that the most sophisticated reason for the PCT would be principled nontaxation of the yield to capital. That is the wrong reason! It is taxed, too. just differently.
+yields to capital are taxed, and only there where they elevate living standards (that's vertical quity) as opposed to horizontal equity between saving, then spending
+McCaffery makes this very point that progressivity, even though desired, is disappearing because of the choice of really bad tax choice.
+
+848: "Advocates of redistributive taxes must wake up and realize that their end is in jeopardy on account of their poor choice of means: they are fighting, and losing, the wrong war."
+Neutrality in comparison to a no-tax world seems nice, but is a problematic thing.
+
+if you avoid distortion of the saving-spending decision, you skew the work-leisure tradeoff.
+comment on this!
+neutrality, or rather, fairness, narrowly understood as economic welfarist perspective (the optimal tax literature) is bad.
+1) judgment of fairness need to take the pretax status quo as normatively appropriate
+2) optimal welfare-maximizing tax answer may clash with ordinary moral intutions and reflective normative commitments
+
+Make the point of lumpy earner, steady earner and trust fund baby *878) compare to the other tersm used for the same thing.
+note, as McCaffery does on 883 that private markets can also solve the consumer durables smoothing problem: leasing, reanting.
+the income tax problem for the propertied classes gets even worse because of the "wait until realiziation" and the "wait until debt is repaid" problem - bth may never happen for the super rich (this is McCaffery 888) (at least this shifts the time problem, and may make it very problematic. in the US, the fact that things canthat are inherited can be sold at fair market value free of tax makes this an even bigger problem. This is an extension of the CIT problem actually, a problem that maters for all things where accretions are not immediatley realized. "Tax planning 101 is elegantly simple: buy, borrow, die" (890)
+this can't be easily solved, it's an admoinositratove nightmare.
+hence the backstop of the estate and gift tax.
+this is it: DYSFUNCTIONS OF THE BACKSTOPS. Dysfunctional backstoppers of PIT: CIT, PIT.
+nice quote "THings in tax today are bad" (McCaffery 893)
+
+899: "Together with the basic tax planning of buy/borrow/die, lower tax rates on capital realizations and corporate dividends, cash-value life insurance, and the taxation of home-ownership, the new developments in retirement savings help to move tax towards a world in which citizens will pay taxes on their wages, under a compressed rate structure, and never again. This is the world of prepaid consumption, or wage, taxation"
+people arbitrage their way toward a falt, wage-tax.
+
+
+"Corporations are legal fictions".
+ the key moral intuition, and Rawlsian reflective equilibrium is this: it seems fair and appropriate to burden capital ransactions when these facilitate or enable a better lifestyle, reflecting a greater "ability to pay" or more "benefits received" from the social compact. But it does not seem fair and appropriate to burden capital transactions when they are used simply and sensibly to move around in time uneven labor market earnings." 921
+
+ "People treat a plan as realistic when it approximates what already exists and as utopican when it departs from current arrangements. Only proposals that are hardly worht fighting for - reformist tinkering - seem practicable" (Roberto Managebrai Unger, False Necesseity 12 1987 as cited in McCaffery 938)
+
+ > "A progressive postpaid consumption tax emerges as the fairest and least arbitrary of all comprehensive tax systems, precisely because it chooses to make its decisions about the appropriate level of progressivity at the right time. In doing so, it burdens some but not all uses of capital and its yield, and for normatively attractive reasons."
+ > Edward J. McCaffery (2005: 812).
+
+ There are three types of taxes
+ 1. Income taxes (including capital incomes)
+ 2. Prepaid consumption taxes (VAT), or, equivalently, payroll taxes, or, equivalently social contributions (such as statutory health insurance, unemployment insurance, pensions, etc. in Germany)
+ 3. Postpaid, progressive consumption taxes ("The Perfect Tax"), based on a cash flow account of spending (Consumption = Income - Savings / aka Haig-Simons definition of income).
+
+ There are two savings norms (as in: what exactly is saving?)
+ 1. Ordinary Savings Norm: saving is just postponed consumption, "smoothed out" over the lifetime. Nominal interest is just a compensation for postponement (think: inflation, risk, growth, discounting of the future). Incomes from savings (= capital incomes) should not be taxed.
+ 2. Yield-to-Capital Norm: incomes from savings are a genuine accretion to wealth. Interest is income.  Incomes from savings (= capital incomes) should be taxed.
+ 	Note:
+ 	- Income taxes (if complete) adopt a yield-to-capital norm. All capital incomes are (ideally) taxed. (In reality, as McCafferty explained, they hardly ever are, because there are systemic flaws, such as "tax evasion 101")
+ 	- Prepaid consumption taxes (or VAT, or payroll, or social contributions) adopt an ordinary savings norm. No capital incomes are taxed.
+ 	- Postpaid progressive consumption taxes (or spending taxes, or cash flow based consumption taxes) tax some capital incomes. To the extent that (dis!)saving is used to smooth out consumption, interest is not taxed. To the extent that it is used to enhance lifestyle, or for lumpy consumption (opposite of smoothed out), it is taxed.
+ 	For a review of different taxes and how they work, consider my prospectus (again attached), pages 60-66
+ 	Consider this example to understand that a VAT (German MwSt.) is the same as a proportional payroll or proportional social contribution. -->
+
+
+  <!-- # other last reasons Nozick
+
+  On distributive justice: no, it shouldn't be entitlement "that a person is entitled to those goods acquired in uncoerced exchanges with others" (Robert Nozick, as cited in Bankman, Griffith 1997: 1915)
+  I want a welfarist theory of distibritutive justice. It shouldn't be utilitarianism, it should be leximin / Rawls.
+  Also: dynamics / outliers / network effects (Benkler, matthias' guy) / inequality / spirit level.
+  Also: Hobbesian. -->
+
+
+  <!-- # McCaffery
+  - McCaffery 2009 (819): tax. Most importantly, it develops more formally two norms about the taxation of capital: the yield-to-capital norm, which holds that the return to capital is an increment of value that ought to be taxed, and the ordinary-savings norm, which holds that savings that merely shift labor earnings within a lifetime or between taxpayers ought not to be excessively burdened. These two norms are in fatal tension under an income tax; in contrast, a consistent, progressive postpaid consumption tax accommodates both norms by design.
+
+  these are actually last reasons! -->

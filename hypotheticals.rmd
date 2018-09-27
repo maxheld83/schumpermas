@@ -1,5 +1,11 @@
 # Well-Structured Hypotheticals {#hypotheticals}
 
+Taxation offers highly structured choices along the three dimensions of base, schedule and timing, the first two of which are cross-tabulated in table.
+<!-- TODO refer to tax overview table here -->
+There can be no meaningful democratic rule on taxation that does not ultimately opt for a definitive mix of distinct combinations along those dimensions.
+The choice among these (already high-level) alternatives cannot be abstracted away, or relegated to experts:
+it hinges on irreducible moral and causal judgments [for example, @McCaffery2005].
+
 <!-- these are first order hypotheticals -->
 
 <!-- this is what the learning phases are about -->
@@ -28,3 +34,119 @@ Table: Progressive Consumption Taxation of Thrifty Ant, Big Spender Grasshopper 
 | Consumption | 20.000 | 30.000 | 300.000 |
 | Tax Rate | 5% | 10% | 33% |
 | Tax | 1.000 | 3.000 | 100.000 |
+
+
+<!-- %tax allows only very limited choice: income, consumption or assets; a couple of schedules, plus some pigouvian taxation.
+% the CIT, notably, is just a special way to raise the PIT.
+%Otherwise, only natural persons.
+%Tax demands these choices.
+%Also, these choices \emph{are} as I explain in the below, political, so they must be made legitimately, and we may not be able to simply outsource them to elites.
+
+%there remain problems: you can't just go about this as if it wwere not controversial; it is controversially maongst experts, but more importantly, controversial whether experts have in fact authority and the right context.
+%It can't just be an experiment, or a treatment intervention where ordinary citizens must necessarily become more like experts, and if they are not, then the teaching has failed.
+%It must be possible for people to disagree with the abstractions they ar epresented with, see the criticism of it.
+
+%tax is very technocratic, simply because the instition is like that.
+%this will have to be qualitative
+
+%\gls{oecd}-world (\autoref{chap:3-crises}
+
+%Tax offers/demands very structured choices: there are essentially only 4x3 broad tax types (see tax table in drafts).
+%Different from, for example, a deliberation on “racial tensions”, deliberating tax choice is more close-ended.
+%Tax expertise is easily politicized, because:
+%Tax cannot be reduced to an empirical question, both because inframarginal data is not available, and because macroeconomics is incompletely understood.
+%Tax cannot be reduced to a consequentialist inquiry, because people (may) care about other normative claims, too (for example, fairness).
+
+%Tax cannot be easily (if at all) dumbed down to subsets of tax choice (for example, VAT vs PIT), or subsets of abstractions (for example, only “bastard keynesianism”) for two reasons:
+    %Any such reduction would violate the spirit of deliberation; citizens could not set their own agenda.
+    %Any such reduction may well fail to elucidate my hypothesized misunderstandings: I imagine “understanding tax” as a bucket, which, if leaky will drain to the lowest level.
+%For example, if deliberators would discuss most aspects of taxation, but skip over the limits (!) of price controls, they may well opt for price controls in lieu of, or in addition to taxation -->
+
+
+<!-- A Numerical Example to Show the Equivalence of VAT and Payroll
+
+2 Periods
+EUR 100 Income
+20% tax
+10% interest
+Payroll / Social Contributions
+EUR 100 Gross * 0.8 Payroll Tax = EUR 80 Net
+Period
+Consumption
+Saving
+p1
+EUR 40
+EUR 40
+p2
+EUR 44 (from Saving * 1.1)
+0
+Aggregate Consumption / Utility = EUR 84
+
+
+VAT
+EUR 100 Gross = EUR 100 Net
+Period
+Consumption
+Saving
+p1
+EUR 50 * 0.8 = EUR 40
+EUR 50
+p2
+(EUR 50 from Saving * 1.1) * 0.8 = EUR 44
+0 -->
+
+<!-- if you need stuff on positional races, go here, otherwise KILL IT
+%garrard 2012
+	% briefly reference Rousseau "obsessive being-for-others" with whom "one is forced to compare onself at each instant".
+	% 382: ``The possession of positional goods has also been associated with measurable levels of increased well-being, while their absence has been linked with increased stress, status anxiety and other adverse psychological and physical effects such as depression, heart disease and reduced life expectancy''.
+	%382``There is some evidence of a connection between blood concentrations of the neurotransmitter serotonin—the so-called ‘happiness hormone’—and dominance. Unusually high levels of serotonin have been found in officers of college fraternities, athletic team captains and officers and crew members on an extended sailing voyage (Frank 1985: 23–8). Richard Wilkinson has linked being in a subordinate position with heightened levels of stress and depressed levels of serotonin (Wilkinson 1996). Increased levels of the central stress hormone cortisol, which can be measured in blood and saliva, have been found in individuals whose self-esteem and social status are threatened, and stress has been positively linked to The status of happiness 383 poor health and increased obesity. Low or declining social status has also been associated in some studies with poor cardiovascular health (Wilkinson and Pickett 2009: 38, 191; Marmot 2004).
+	%383: Rousseau may be right, but it might be nature already: While there is some evidence that he was more or less right about this, it seems as though our preoccupation with status and relative position is rooted in our natures which, according to evolutionary psychology, are ‘adaptive responses shaped by man’s biological nature and situation on earth’ (Hirschleifer 1978: 321).
+	%. ‘[T]he farther an individual fell in his local pecking order,’ according to economist Robert Frank, ‘the more serious were the threats to his survival,’ which typically provoked feelings of stress and anxiety affecting levels of testosterone and serotonin, as we have already seen (Frank 1999: 136). In such a setting, ‘low social status is an evolutionary dead end,’ to put it bluntly (Wilkinson and Pickett 2009: 204). For
+	%``What mattered for survival in this environment was one’s position relative to local rivals with whom individuals and groups were in direct, immediate competition for food and sex, ‘whereas comparisons with others who are distant in time and space are typically irrelevant’, from an evolutionary perspective (Frank 2007: 57). One of the central findings of Robert Frank is that most people today are relatively indifferent to the wealth and status of people far removed from them, whereas they ‘care deeply about where they stand in their various local hierarchies’ (Frank 1985: 107). Hence,''
+	%``For example, the voluntary simplicity movement seeks to overthrow ‘the god of positional consumption’ (Schor 1999: 61) in the name of reduced consumption, anti- materialism and sustainable development. A policy of deliberate ‘downshifting’ typically involves working less, earning less and consuming less so that there is more time to better enable people to pursue other goods. Such a lifestyle would be materially poorer than now but richer in non-material, non-positional goods and therefore happier. To the extent that it is possible to reduce the speed of the consumption treadmill so that less time and fewer resources are expended on the joyless pursuit of positional goods and status, we may be able to devote ourselves to more intrinsically satisfying activities and forms of consumption that actually improve our quality of life, such as higher air quality, more urban parkland, cleaner drinker water, reducing violent crime (Frank 1999: 11).''
+		%comment on this kind of anti-growth stuff; it might be anti-growth, but anti-spending might be even better. -->
+
+<!-- ## Seidman
+
+2 USA tax is the only that doesn't discourage either savings or is regressive!
+8: education should be deductible
+old age equity issue? - think this through!
+coment on the need for an asset tax based on net workf effects, think about collateral.
+The history
+Kaldo 1955: an Expenditure Tax
+Irving Fisher did it before
+even Hobbes, Mills mention it, just didn't think it was technically feasible
+cite the history (14)
+Fisher 1942: 14: wait a minute, all you need is to deduct! -->
+
+<!-- ## a desire that others not understanding
+We sometimes hear it is only a "matter of timing" when we pay the income tax. This , McLure 1988 as cited in Seidman 125 writes, is either because  "Such a statement reveals a basic failure to understand - or a desire that others not understand - the nature of income taxation and tax avoidance: (...) If income tax can be postponed (...), interest (or other capital income) can be earned on a tax deferred basis in the meantime". in other words: compound interest, is ignored. -->
+
+
+<!-- ## Bank 2004
+
+2: talks about the ideal combination that McCaffery's plan is: progressive appeals to liberals, exemption for avings and investment appeals to conservatives
+3: skepticism that this ever will materialize. rather: the consumption tax supporters want a flat VAT, the progressive guys want an income tax
+2: was considered post WW1 (graduated spendings tax), Mill's proposal again in1942 by Treasury Secretary Henry Morgenthau (graduated surtax on spending), and lastly in 1995 by Sen Sam Nunn, Pete Domenici, Bob Kerrey Unlimited Savings Allowance (USA Tax).
+4: numbers for the PCT can be found here (US example, progression up to 50%).
+4: Haig-Simons definition of income: I=C+A
+debt repayment would be deducted from income (it's a form of investment), debt spending however would be consumption
+5: estate and gift tax, according to McCaffery can be safely abolished. Dead people don't spend. Their heirs pay when they spend.
+7: two ideas were present from the very beginning: place the burden on the wasteful spender, never the investor. Also, make it more equitable, yet efficient.
+10: the progressives were against it because it didn't tax firms, nor property as such
+10: the regressives were against it, well, because it was progressive, they wanted flat ax, already back in 1921.
+10: Representative Stevenson asked: "[put] into effect the proposition according to what a man spends and graduate it according as he spends it, and the United States Government will have to have an auditor behind every man in the country who has any money to spend. How would you ever carry it out?"
+15: "Under the progressive consumption tax, Hazelett explained, "we define income as what it really is. there is no economic income but the living standard of the taxpayer".
+this point is key: things OUT to be about consumption!
+18, 19: the USA tax had to problems: it didn't include borrowing as income and it didn't terminate the estate and gift taxes (which are transfers, not new consumption)
+19: Both in 1942 and in 1995 the PCT failed because of its complexities: the more complexity you introduce, the more devils, the more rejection. With that rise chances for evasion: flat and sales tax proponents are disenchanted
+Think about the problems of old savings: we have to know about these, do a full cash flow status of people.
+as cited on  22 As McCaffery writes, "I will not add fuel to think tank fires. Complexity can wait. The devil may indeed dwell in the details, but we first need to find an angel or two in the abstractions that govern tax."
+idea: the PCT is between a rock and a hard place in terms of how people like it in the political spectrum! But that doesn't need to be so. there is nothing inherently good about the income tax.
+actually, the PCT provides a possibility to fight evasion: you can force people to prove where they have invested and treat it as consumption, otherwise. The problem, of course,  need to think this through -->
+
+
+<!-- JIPEEEH I got it. Cafferty 2005: 918 says. Corporate income tax has two problems: it depends on incidence (economists disagree), and even if it does tax capital, it does so randomly, not progressively. All capital owners are taxed, not just the progressive ones. -->
+
+<!-- die linke actually writes that they think the fta tax would burden factors
+26: Mit einer Finanztransaktionsteuer wollen wir die Spekulationen auf den Finanzmärk- ten eindämmen und die Verursacherinnen und Verursacher der Krise an deren Kosten beteiligen. -->

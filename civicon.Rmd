@@ -1,12 +1,286 @@
 # The CiviCon Citizen Conference {#civicon}
 
-<!-- why do we need learning phases? how is this necessary? (it is) -->
-
 <!-- 1. Methods-1 (CiviCon) -->
 <!--    - explicates the *treatment condition*; in this case, the CiviCon Citizen Conference -->
 <!--    - *contextualizes* the CiviCon format within existing literature, formats, conflicts, tradeoffs -->
 <!--    - *documents* structure, experts, sample, etc. of CiviCon -->
 <!--    - *reports* on the validity, reliability of the treatment in deliberative terms, including citizen and moderator feedback. -->
+
+I here propose to investigate a supposed difference in current, and (more) ideal speech thinking about tax by subjecting a group of diverse citizens to a deliberative forum on the topic, which, in one succinct summary [@Steenbergen2003 25ff], is marked by
+
+1. open *participation*, including setting the agenda and deciding on procedures (@Benhabib-1996-aa, @Chambers1995, @Cohen-1989-aa, @Habermas1992 [370ff])
+2. mutual *justification* of assertions and validity claims [@Habermas1992 370],
+3. orientation on the *common good* [@Rawls-1971],
+<!-- not sure about this, it's kinda downstream from habermas -->
+4. *respect* for one another, as well as one's arguments (@Gutmann1996, @Macedo1999), other-directedness, empathy and solidarity,
+5. *constructive politics* of a widely acceptable decision over well-defined policy alternatives, ideally --- though not necessarily --- by consensus [@Cohen-1989-aa 23],
+6.  *authenticity* in sincere, not strategic communication [@Habermas-1984 149]
+<!-- %add here, maybe: manifest equality as demanded by Cohen -->
+
+<!-- TODO insert this alternative list:
+%\begin{enumerate}
+%	\item reasonably accurate and complete \emph{information},
+%	\item substantive \emph{balance} of possibly competing arguments and perspectives presented,
+%	\item \emph{diversity} of participants and their positions taken,
+%	\item a sincere weighting of arguments by participants, or \emph{conscientiousness}
+%	\item equal consideration of all arguments, regardless of which participant offered them \cite[K1799]{Fishkin2009}.
+%\end{enumerate} -->
+
+## Reciprocity
+
+Deliberation is no such catalogue of first-order considerations of what would make a good (efficient, fair, sustainable) decision in any given policy field, but instead, a second-order prescription to resolve disagreement *over* those very the moral and causal arguments [@GutmannThompson-2004-aa 125].
+Still, and in contrast to pluralism, it places more than just *procedural* claims, but posits *substantive* requirements for how agreement must be reached.
+Succinctly, @GutmannThompson-2004-aa demand that "your fellow citizens must give reasons that are comprehensible to you" [-@GutmannThompson-2004-aa K177].
+More than merely intelligible, permissible arguments to reach deliberative agreement must raise validity [@Habermas-1984] and moral [@Rawls-1971] claims *universally* acceptable to everyone.
+
+Logically, it must then be theoretically possible for any *given* argument to *fail* that test, and to be impermissible --- including the arguments brought forward by experts.
+In fact, deliberation reserves no special place for nominal experts at all, except if and to the extent that these experts have arrived at, and present their agreement under the standards of deliberation.
+
+As noted in the above, any research design that axiomatizes any disagreement between experts (or ex-ante logic) as *misunderstandings* on the part of the non-experts fails the deliberative standard, no matter the supposedly enlightening de-biasing treatments.
+
+The desiderata of taxation and deliberation are seemingly in conflict.
+Taxation requires people to consider an exogenously given catalogue of abstractions, and deliberation implies that no such set of arguments can be unconditionally accepted.
+This is a general contradiction of procedural and substantively epistemic formulations of deliberative democracy [@Bohman1998 402].
+
+This impasse has real repercussions for the proposed research design:
+apparently, it can serve only one master.
+Either, participants misunderstandings can be revealed by treating them with introductory economics, *or* they can deliberate any which arguments they themselves find comprehensible.
+
+As with so much that deliberative theory is up against this is a false dichotomy.[^false_dichotomies]
+
+[^false_dichotomies]: For example, political participation versus enlightened understanding versus political equality, as @Fishkin2009 points out.
+
+Argumentative reciprocity implies that expert knowledge be neither presumed, nor negated, but that these arguments --- as all others --- be allowed to demonstrate their universal causal and moral validity.
+
+<!-- %``Mutual justification means not merely offering reasons to other people, or even offering reasons that they happen to accept [\ldots] \citep[98]{GutmannThompson-2004-aa}.
+%	It means providing reasons that constitute a justification for imposing binding laws on them.
+%	What reasons count as such a justification is inescapably a substantive question.
+%	Merely formal standards for mutual justification --- such as a requirement that maxims implied by laws be generalizable --- are not sufficient.%plagiarism? -->
+
+Expert- and non-expert (as all other) arguments must not merely be balanced in terms of airtime or affect, but "the considerations offered in favor of, or against, a proposal, candidate or policy \[must\] be answered in a substantive way by *those who advocate a different position*" [@Fishkin2009 K550, emphasis added].
+Deliberation is, in other words, when non-experts answer expert arguments *on their own, expert terms*, and vice versa, too.
+Surely, the relation of this ideal to practice is "aspirational", too, as all in deliberation [@Fishkin2009 K2679].
+So far, democratic theorists have failed to show "how to incorporate the need for expertise and technical administration in a deliberative democracy" [@Thompson2008 515] and "\[a\] great deal of work on deliberative theory focuses on conflicting values, religious toleration, identities and so on, and relatively little on conflicting facts" [@Moore2011 2].
+
+Yet, for the deliberative experimenter, this aspiration to argumentative reciprocity is the ultimate hypothesis in need of falsification, including reciprocity with expert arguments.
+If expert knowledge on taxation is presumed valid, and any dissent chalked up as misunderstandings the aspiration of communicative action could *never* be falsified.
+Likewise, if expert knowledge on taxation is not given adequate opportunity to be reciprocally considered on its own terms, communicative action will *always* be violated.
+Neither of those formats would provide construct-valid deliberation.
+Expert knowledge is then "a special case of the general problem of convincing those who are not 'in the room' to accept the results of a deliberation in which they did not directly participate" [@Moore2011 2].
+This problem can only be resolved by a "democratic conception of expert authority" [@Moore2011 2], that is, if deliberative standards are extended to expert arguments, too.
+A good deliberative format brings ordinary citizens into this business:
+they must be enabled to the farthest extent possible to argue expert as well as non-expert claims on their own terms, including the possibility to reject expert opinion if it is found insufficiently reciprocal in argument.
+
+Because bringing ordinary citizens into this business, and *equally* so, is, as @Rosenberg-2002-aa's so difficult, deliberations must "be regarded as remedial institutions" [-@Rosenberg-2007-aa 12] and more, "they must be sites for political education and development" [-@Rosenberg-2007-aa 13].
+
+<!-- %%Mansbridge 2010
+%	%   * points out that deliberative polling mostly does not include radical solutions, perspectives (that could be a problem)
+%
+
+%Any such reduction would violate the spirit of deliberation; citizens could not set their own agenda.
+%Any such reduction may well fail to elucidate my hypothesized misunderstandings: I imagine “understanding tax” as a bucket, which, if leaky will drain to the lowest level.
+%For example, if deliberators would discuss most aspects of taxation, but skip over the limits (!) of price controls, they may well opt for price controls in lieu of, or in addition to taxation.
+
+%Meaningfully deliberating tax requires a lot of knowledge, and that knowledge is unlikely to spring merely from the act of deliberation, but it needs some input.
+
+%\citep[101]{GutmannThompson-2004-aa} ``Reciprocity is to justice in political ethics what replication is to truth in scientific ethics.
+%A finding of truth in science requires replicability, which calls for public demonstration.
+%A finding of justice in political ethics requires reciprocity, which calls for public deliberation.
+%Deliberation is not sufficient to establish justice, but deliberation at some point in history is necessary.'' --> 
+
+<!-- I have a reference to abortion somewhere, that it CANNOT be resolved and there seems to be a case from Caroline Lee where pro-life and pro-choice people got together and talked with one another to prevent violence, and they ended up liking one another, but *not* agreeing at all
+this is interesting both because of of the moral issue of abortion, but also as an example of the talk -->
+
+
+## Remedial Deliberation
+
+If their democratic rule is to be enlightened, deliberators must also engage a set of abstractions concerning its optimality, justice and sustainability as well as problematize the view of human motivation, utility and rationality implied by these (economic) abstractions.
+<!-- TODO link to old tax sections in the above -->
+Deliberators must also understand the means and ends of an (ideal) mixed economy within which taxation reconciles allocation by plan and by exchange, including respective government and market failures.
+@Warren2008 [K1513], reporting on the [ca]{acronym-label="ca" acronym-form="singular+short"}, notes that such learning phases are "crucial to its ability to render a decision, and indeed" and that it *can be done*:
+"the decision was a learned and sophisticated one";
+"Most members transformed themselves from lay citizens with little knowledge of electoral systems into experts over a period of several months (...)" [-@Warren2008 K1513].
+Any deliberation that fails to engage such technical but broadly consensual --- if not entirely coherent --- concerns, must be considered unenlightened.
+It would ignore some of the causal relationships and moral alternatives that we must assume exist, if and to the extent that we accept the economic ontology of coexisting states and markets.
+
+The fora, even though featuring learning phases, must not regress to a (traditional) classroom setting in which the economics teacher knows best.
+Still, this *is* the inescapable challenge of deliberation in the modern world, as @Moore2011 points out:
+"the ideal of citizen equality to deliberate issues that affect them is in tension with the inequalities of knowledge that are inherently governing complex societies", *but* "the question is not *whether* expert authority is part of the deliberative system, but *how* it is integrated and whether *this integration is itself subject to deliberative standards*" [@Moore2011 14, emphasis added].
+
+
+<!-- TODO link to mixed econony and ontology -->
+
+<!-- why do we need learning phases? how is this necessary? (it is) -->
+
+<!-- cite rosenberg to argue for learning phases: -->
+<!-- % \subsection{Political Psychology}
+% Communicative action is very demanding of the cognitive and moral faculties of deliberators.
+% Political psychologists have problematized these demands that deliberation poses \citep{Rosenberg-2002-aa} --- especially, but not only, deliberation of highly abstract topics.
+% Troublingly for deliberative democracy of the Habermasian kind, recent research in political psychology suggests, that --- contrary to the bounded rationality assumption \citep[for example,][]{Simon-1999-aa,Kahneman2011} --- imperfect human reasoning may not only stem from remediable cognitive scarcity, but may be developmentally determined.
+% \citet{Rosenberg-2002-aa} has proposed a threefold developmental sequence and typology of \emph{sequential}, \emph{linear} and \emph{systematic} reasoning.
+% %TODO add better rosenberg references
+% His empirical accounts suggest that if any, only systematic thinkers will be able to meet the cognitive demands for reasoned arguments, and egalitarian free speech of deliberative democracy.
+% Moreover, this cognitive competence was found \emph{not} to be domain specific, and while people may regress to lower levels of competence under high loads or appropriate cues, they are unlikely to easily, if ever, achieve higher than developed levels.
+% ``Structurally (more and) less developed reasoning adults'' make ``not only the adequacy of citizens' reasoning, but also their \emph{equality}'' a problem for deliberative democracy \citep[12, emphasis added]{Rosenberg-2007-aa}.
+
+% On this red flag, too, much of deliberative practice is silent.
+% While deliberative formats routinely strive to attract diverse participants and ensure their equal participation \citep{Fishkin2009}, they rarely problematize, or measure the substantive, argumentative \emph{equality} of participants.
+% Among the small research that has looked into argumentative equality of actual (\gls{dp}) proceedings, \cite{Siu} finds that information, rather than education of participants is related to argument quality \emph{at the small group level}, but offers no individual-level analysis.
+% There is also yet --- to my knowledge --- no research that tracks how limited and unequal capacities for moral and causal reasoning may filter up to understandings of, and preferences over complex policy issues.
+% Here, too, taxation is a good case to test the promise of deliberative fora:
+% it demands both advanced moral and causal reasoning, and raises controversies and tradeoffs likely to impact the life-chances of people along similar socio-economic dimensions as those related to cognitive competence.
+
+% Based on his sobering findings, \citet[20]{Rosenberg-2007-aa} also suggests a revised understanding of deliberation:
+
+% \begin{quotation}
+% 	\emph{``Deliberative fora must not be regarded simply as empty stages that provide a venue for the realization of citizenship;
+% 	nor must the design of these deliberative stages focus simply on the removal of obstructions that may inhibit freedom or give unequal scope for maneuver.
+% 	Instead, deliberation must be understood as a site for the construction and transformation of citizenship.
+% 	In deliberation, citizens are made as well as realized.
+% 	The operative metaphor here is that of a school, but of particular kind.
+% 	The educational goal is not the transmission of specific beliefs and values, although these are by no means irrelevant.
+% 	Rather the central aim must be to foster the requisite cognitive development for a fuller autonomy, a greater communicative competence and a better ability to engage in a collaborative effort to make good and just public policy.''}
+% 	\\*
+% 	--- Shawn W.\ \citet[20]{Rosenberg-2007-aa}
+% \end{quotation}
+
+% This ``reforming'' variant of \citeauthor{Habermas-1984}' vision --- informed by empirical facts about our time, and our people --- also bears on the analysis and operationalization of deliberation.
+% \emph{School}, as \citeauthor{Rosenberg-2007-aa} reminds us, is the ``operative metaphor'', one that balances furthering of equality and citizens' autonomy.
+
+%note that the link between rosenbergs sequence thinking and my tax misunderstandings is still to be developed -->
+
+
+## Format
+
+Consequently, a good format for deliberating tax includes a strong learning component, where participants are introduced to the structured choices and relevant abstractions suggested by experts, including their disagreements, conditions and uncertainties.
+Deliberators are unlikely to cover these extensive grounds by themselves, or pick them up from (very limited) briefing books and will benefit from well-planned lessons.
+On the other hand, a good format must also feature extensive small-group discussion, where participants talk amongst themselves, shielded from the authority of expertise.
+Deliberators may benefit from a trained, non-expert moderator and/or scribe to assist, structure and document their discussion.
+Most importantly, participants must be encouraged to adjudicate the validity claims of economics, to contrast and possibly relate those to their own, and other claims.
+
+As noted earlier, most deliberative formats include --- often moderated --- small-group discussion, but few add to that a substantive learning component.[^dps]
+
+[^dps]: [dps]{acronym-label="dp" acronym-form="plural+short"}, the pronounced methodological gold standard of deliberation [@Mansbridge2010] are too short to feature long lessons, and confine expert knowledge to ad-hoc question and answer sessions with experts and limited briefing books [@Fishkin2009].
+    Citizen Juries [@SmithWales-2000-aa], Planning Cells [@Dienel-1999-aa] and related formats also include no learning components, and some experimenters even advise against expert knowledge.
+
+Among those that do are the small-n Danish-developed Consensus Conferences [@Grundahl1995] and especially the large-n, one-off [ca]{acronym-label="ca" acronym-form="singular+short"} in British Columbia, Canada [@Citizen-2004-aa].
+Consensus Conferences have been held on very technical issues, including nanotechnology [@LeeKleinman2007] or genetically modified foods, and the Citizen Assembly was tasked to recommend an alternative electoral system for the province.
+Much like taxation, technology policy, and especially electoral systems design also demand highly structured choices (for example, a seat allocation rule or regulation) and raises a set of abstractions (party systems or risk distributions).
+
+In a Consensus Conference, 12-15 self-selected but diverse citizens discuss a technical matter of political relevance for three or more days (!) and issue a report on their discussions [@LeeKleinman2007].
+In preparation for the conference, participants read quite extensive background material, which they discuss during the first of several daylong sessions.
+At later sessions, they (publicly) share their questions with experts and finally draft a report for the sponsoring body and/or the media.
+@LeeKleinman2007 report that a positive atmosphere, good organization and skillful facilitation are necessary for a successful Consensus Conference.
+They also recommend that participants tell their stories, which moderators then weave into themes, to help citizens relate their experiences to expert knowledge [-@LeeKleinman2007 159].
+
+The [ca]{acronym-label="ca" acronym-form="singular+short"} expanded on this model.
+Over the course of a year, 160 randomly selected British Columbians read and learned about electoral systems, held public hearings, deliberated amongst themselves and, after several intermediate votes, recommended a (quite complicated) [stv]{acronym-label="stv" acronym-form="singular+short"}-variant and drafted a report [@Citizen-2004-aa].
+The extensive learning phase, spanning six (!) weekends stands out among deliberative experiments.
+In addition to a university-level textbook on electoral systems, Citizens received interactive lectures accompanied by small discussion groups.
+An expert panel vetted the learning phase for impartiality and accuracy of information.
+Participants also developed a set of shared values during the learning phase, both (procedurally) for how they wished to deliberate and (substantively) for a desirable electoral system.
+
+
+## Implementation
+
+The [ca]{acronym-label="ca" acronym-form="singular+short"} provides an ideal blueprint for a deliberative forum on tax;
+however, limited resources and lack of experience do not permit such a large undertaking for this project.
+
+Instead, the project proposed here is a scaled-down hybrid, combining the ambitious learning phases of a Citizen Assembly, with the more intimate, small-n interaction and participant empowerment of Consensus Conferences.[^learning_phase_ca]
+
+[^learning_phase_ca]: The [ca]{acronym-label="ca" acronym-form="singular+short"} also featured a "listening phase" [@Pearse2008 1609] during which members held public hearings throughout the province, drawing some 3,000 attendees and 1,600 written submissions.
+    Both because I do not have the resources and --- absent a mandate --- expect limited public interest, I plan no such phase.
+
+A small, self-selected sample of 15-24 diverse, ideally randomly-sampled, citizens will attend around 6 days of learning and deliberation spread over several weeks.
+A provisional schedule is included in (p. ).
+
+After introducing the format and framing the issue, deliberators are invited to tell stories about experiences with taxation, following @Mansbridge2010a [67]'s recommendation:
+'Stories can establish credibility, create empathy, and trigger a sense of injustice, all of which contribute directly or indirectly to justification'' [-@Mansbridge2010a 67].
+Deliberators also share opinions and grievances about tax as well as identify relevant questions and issues, which will be taken up in, and structure the later learning phases.
+During these learning sessions, taking up less than half of the time, participants receive information about the structured choices and relevant abstractions of taxation from the author.
+These lessons are organized around themes and values identified by deliberators in an initial session, and attempt to relate the subject matter to participant experiences.
+Learning sessions alternate with extensive small-group deliberations, during which participants reflect on the lessons, relate or contrast it to their own experiences and claims and adjudicate the validity of the presented moral and causal arguments.
+Small-group deliberations are facilitated by a trained moderator, who has no expertise in taxation or economics.
+At the end of the process, participants must agree on a tax and write a report outlining their recommendation, which can be released to the public.
+If resources permit, participants will also hear a panel of expert witnesses to discuss their questions.
+
+<!-- notice pretest at uni hamburg
+%Participants in the university class will be graded, but not based on their contributions to the deliberations, to which the author and instructor will not be a party.
+%The class will be advertised through the usual channels at the university. -->
+
+
+<!--
+%a good format for my goal includes
+    %Includes a strong learning component, structured roughly along my drafts -- but shorter, and in more accessible style.
+%(It must not be a microeconomics text).
+    %Relates these abstractions to personal experiences and intersubjective value judgments.
+    %Prioritizes intensity (duration) over representativeness (sample size) under given constraints (time, money).
+    %May involve me and existing material for the learning component, but someone else must moderate the deliberations.
+    %Starts from a small-scale, face-to-face deliberation as a pilot study, both to guarantee concept validity and because I have no idea about deliberation-
+
+    %Instead the same quasi-experimental design could be run with qualitative data, including, open-ended questionnaires and/or semi-structured interviews, or even a record of the deliberations.
+%Such data could be content-analysed (or rather: coded) to distill the (mis)understanding before and after the treatment.
+
+%note reciprocity, sharing ones causal assumptions
+
+%\cite{Azmanova2010} (also \cite{Fishkin2009}: 529)
+	%49: thoughtfulness and reflexivity (as per Fishkin) require 1) reasonably accurate information 2) substantive balance 3) diversity, 4) conscientiousness, 5) equal consideration
+
+%\cite{Citizen-2004-aa}
+	%11: one guy did the learning sessions
+	%1) has a selection phase
+	%2)  has a LEARNING phase
+		%also develop "shared values" about the process
+	%3) has a PUBLIC HEARING phase
+	%4) has a DELIBERATION phase
+	%go to chrch with group, maybe.
+
+%\cite{Fung-2003-ac}
+	%very good summary, get back to this
+
+%\cite{Fishkin2009}
+	%democracies are supposed to fulfill two values; political equality and deliberation (loc.
+%84)
+	%``a democracy in which we all had substantive information [and] [\ldots] substantive opinions would seem to take too many meetings.''
+	%what's wrong with unenlightened opinions (all loc.
+%113ff)
+		%\begin{enumerate}
+			%\item they may be volatile (cite other sources
+			%\item people may be manipulated by foregrounding some information (clean coal vs.\ dirty coal, forgetting about natural gas -- compare this to tax choice)
+			%\item misinformation (savings rate)
+			%\item favor favorable, true arguments over others
+			%\item manipulation may ``prime'' one aspect of policy.
+		%\end{enumerate}
+	%K260: ``the hard choice, in other words, is between debilitated but actual opinion, on the one hand, and deliberative but counterfactual opinion, on the other.''
+	%K369: table with raw/refined opinion, and different kinds of sampling.
+	%K438: ``The idea is that if a counterfactual situation is morally relevant, why not do a serious social science experiment -- rather than merely engage in informal inference or armchair empiricism -- to determine what the appropriate counterfactual situation might look like?
+%and if that counterfactual is both discoverable and normatively relevent, why not then let the rest of the world know about it?
+%Just as John Rawls's original position can be thought of having a kind of recommending force, the counterfactual representation of public opinion identified by the \gls{dp} also recommends to the rest of the population some conclusions that they ought to take seriously.''
+	%K390: self-selected samples will be very limited in what they can achieve.
+	%K401: citizen juries use quota samples, consensus conferences use self-selected samples, then with some quota sampling
+	%K550: notes that positions must not merely be balanced in terms of airtime or affect, but ``whether the considerations offered in favor of, or against, a proposal, candidate or policy are answered in a substantive way by those who advocate a different position.'' %THIS IS KEY!
+	%K561: three categories for such considerations
+		%``the benefits or burdens of a policy or political choice,
+		% the causal arguments about whether those benefits or benefits or burdens will actually result from one choice or another,
+		%and the values by which those benefits and burdens might best be evaluated.''
+		%K1424: ``the problem is that any microcosmis deliberation taking place in a modern society will be one in which there are significant social and economic inequalities in the conduct of ordinary life in the broader society.
+		 	%It seems difficult or impossible to `bracket' these inequalities -- for participants to behave `as if' they do not exist.
+		 	%Indeed the problem goes deeper.
+%The possibility of doing so is the challenge of the ``autonomy of the political'', namely, whether or not equality can hold sway in politics in a world in which inequality rules in economic and social relations.
+		 	%The viability and legitimacy of the liberal-democratic process may turn on the answer.'' \citep[loc.
+%2679]{Fishkin2009}
+
+%\cite{GutmannThompson-2004-aa}
+	%loc177: `your fellow citizens must give reasons that are comprehensible to you''
+	%K188: they introduce first and second-order theories, too!
+	%K919, writing about Fish: ``Giving reasons is the chief way of academics to exercise power in democratic politics.
+%All the talk about deliberation, like deliberation itself, is merely a cover for power politics.''.
+
+%iris marion young, especially notes that people of lower status may have a hard time getting listened to, or that others may be particularly accustomed to orderly forms of reason-giving arguments that weigh with other participants -- and this may be particulary problematic the more substantive the topic is.
+
+%note that
+
+%groupthink!
 
 <!-- absolutely must re-read moore piece on conducting deliberation; this is key for how it's done and facilitated, there are also helpful comments in there. -->
 

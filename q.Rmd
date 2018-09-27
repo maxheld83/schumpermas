@@ -42,6 +42,18 @@ Table: Factorial Concourse Sampling Scheme
 
 <!-- Alternative analytical approaches to Q data in empirical deliberative democracy research are discussed. -->
 
+<!-- # Habermas Ach Europa
+so clearly, we want only a notion of a plausible *possibility* of rational solutions, we don't want to look just at rational solutions (first vs second order).
+However, you can't just defer this to process; that would be insufficient, and turn full circle. A deliberation is good if it makes rational solutions plausible, and solutions are plausible if they result from good deliberation. Discuss the different operationalizations about this, including DQI.
+So what we need, is some kind of standard that is not procedural, but also not substantive, but in-between, kinda like  Rawls. But we don't have that ideal position (but we might approximate it?)
+
+The question now is: can Q-method, or intersubjective rationality and meta-consensus *be* this thing, and if so, why.
+
+Q Methodology, maybe via its quantum theoretic reading (it's about viewpoints, and there exist no objective statements (like zero energy atom states) outside of it -- that's not soo far from discourse theory.
+	on this see especially Wendy S. Rogers in operating subjectivity; she argues it is and/or can be used as a form of discourse analysis.
+
+Somehow the stuff that happens during deliberation is actually quite close to some of the stuff that q methodologists rights and that stephenson assumed; it's in expressing and exchanging views vis-a-vis subjects. Both approaches negate that there's stuff "in the braiN" that just need be extracted. -->
+
 # How to Measure Deliberative Success?
 
 > "[A]nyone acting communicatively must, in performing any speech act, raise universal validity claims and suppose that they can be vindicated."

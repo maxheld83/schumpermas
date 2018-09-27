@@ -33,6 +33,23 @@ lang: en-US
 source("setup.R")
 ```
 
+<!-- TODO make this an opening page -->
+
+> The spirit of a people, its cultural level, its social structure, the deeds its polity may prepare -- all this and more is written in its fiscal history, stripped of all phrases.
+> He who knows how to listen to its message here discerns the **thunder of world history** more clearly than anywhere else.  
+> ––- Joseph @Schumpeter [1918: 6]
+
+> The unforced force of the better argument: [@Habermas1996, 305]
+> The speaker must choose a comprehensible expression so that speaker and hearer can understand one another. [@Habermas1976: 2f]  
+> [A]nyone acting communicatively must, in performing any speech act, raise universal validity claims and suppose that they can be vindicated. [@Habermas1979: 2]  
+> Reaching understanding, (...) **the inherent telos of human speech**.
+> –– Jürgen Habermas (1987: 287)
+<!-- TODO last citation isn't quite right -->
+
+<!-- ![Citizens preparing the press conference at the 2014 CiviCon Citizen -->
+<!-- Conference](https://dl.dropboxusercontent.com/u/5341489/images/civicon-prep-poster_small.jpg) -->
+
+
 
 ## Abstracts {-}
 
