@@ -1823,8 +1823,6 @@ people arbitrage their way toward a falt, wage-tax.
  0
 
 
-# more random tax note
-
 <!-- %garrard 2012
 	% briefly reference Rousseau "obsessive being-for-others" with whom "one is forced to compare onself at each instant".
 	% 382: ``The possession of positional goods has also been associated with measurable levels of increased well-being, while their absence has been linked with increased stress, status anxiety and other adverse psychological and physical effects such as depression, heart disease and reduced life expectancy''.

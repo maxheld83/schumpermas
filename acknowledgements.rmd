@@ -1,4 +1,6 @@
-Franziska Deutsch, who has brought me and Bogaards together, and reminded me why tax and democracy is so important (it affects everyone, but no one understands it).
+# Acknowledgements {-}
+
+<!-- Franziska Deutsch, who has brought me and Bogaards together, and reminded me why tax and democracy is so important (it affects everyone, but no one understands it).
 
 Olaf who's always shepharded this project
 
@@ -19,4 +21,4 @@ to Claus Offe for reminding me that I need a second-order theory.
 	* Dr.~Scharpf
 	* Dr.~Ganghof
 	* Dr.~Werner
-	* Karlhans-Sauernheimer, who gave me thoughtful comments on the MPP piece, and for getting me interested in economics in the first place.
+	* Karlhans-Sauernheimer, who gave me thoughtful comments on the MPP piece, and for getting me interested in economics in the first place. -->

@@ -2,6 +2,7 @@ bookdown::gitbook:
   dev: svglite
   css: css/style.css
   split_by: rmd
+  toc_depth: 1
   config:
     toc:
       before: |
@@ -17,7 +18,7 @@ bookdown::pdf_book:
   dev: "cairo_pdf"
   latex_engine: xelatex
   keep_tex: yes
-  toc_depth: 1
+  toc_depth: 2
 bookdown::epub_book:
   dev: svglite
   stylesheet: css/style.css
