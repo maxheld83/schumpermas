@@ -487,6 +487,10 @@ Deliberation is not something you can be sure of that it happened; it is a regul
 5The experimental literature on deliberation is rapidly expanding. To a large extent, however, it is descriptive (see, for an overview, Karpowitz and Mendelberg 2011). -->
 
 
+<!-- notice that actually, weighting and flagging are again, latent variable models thinking
+Maybe the effectiveness on consistency and other q sort stuff depends on the complexity or modernity of the issue? Plausible say abortion prostitution or assisted suicide might not change as much in values beliefs preferences because they are so much less complex
+ -->
+
 <!-- ## Lego Analogy -->
 
 <!-- the lego analogy also works for the information that this is about; relative, and operative --- though it is easy to overstate, because the kind of object your can build may in fact be more restricted than it is the case in legos.
