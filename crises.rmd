@@ -525,7 +525,403 @@ An efficient tax system should reduce the burden on low-productivity earners, to
 A desirable tax has a minimal incidence on low-productivity earners to lower their cost of living.
 
 
-### Bad Tax
+## Bad Tax
+
+The Forerunner: Indirect, Proportional Taxes: VAT & Payroll {#sec:ScoreVAT}
+
+Indirect, proportional taxes are the forerunners in tax choice today.
+For the last two to three decades, they have assumed an ever greater share of GDP, compared to other taxes (for Germany and the UK, see [@Kemmerling2009 11].
+
+VAT and Payroll, for all their differences, share key characteristics:
+they are indirect, they are proportional and they fall on relatively immobile bases.
+
+#### Neutrality.
+
+The key merit of indirect, proportional taxation is its neutrality to relative prices in the economy:
+deadweight losses are indeed , as per desideratum [\[des:minimal-DWL\]](#des:minimal-DWL){reference-type="ref" reference="des:minimal-DWL"}.
+
+##### Everyone Has to Consume.
+
+For the VAT, the neutrality case is clear-cut.
+Ultimately, people can only spend the savings and (capital, labor) income they have on goods on the market.
+If buying of *all* goods is proportionally taxed, people have no way to avoid the tax.
+They *cannot* react to a price signal that is *universally* increased:
+their (page ) is minimal.
+The same holds for sellers:
+they have to sell to someone.
+When every potential buyer has to bear the same tax, sellers have no way to react.
+Their (p. ) is minimal, too.
+The VAT falls on a as per desideratum [\[des:tax-inelastic\]](#des:tax-inelastic){reference-type="ref" reference="des:tax-inelastic"}.
+
+##### Everyone Has to Work ...
+
+A proportional payroll tax is neutral when one accepts an exclusive, (page ).
+When capital rents are only *compensation* for risky, deferred consumption all savings and capital rents are ultimately labor incomes.
+Under the , someone living off her savings is someone living off her past work.
+In short, to consume and to live at all, everybody has to work, for someone, sometime.
+If you have to work for someone, and every potential employment is subject to the same, proportional tax, you cannot react to the tax.
+Again, the of labor supply (page ) is minimal.
+The same holds for employers:
+they have to employ someone.
+If every potential employer is subjected to the same, proportional tax, their of labor demand (page ) is minimal, too.
+[^7]
+
+##### ...Except the Rich.
+
+Under a (page ), a proportional tax is not neutral.
+When capital rents are a genuine increment to wealth, there is an alternative to work:
+you can either work, or live off your interest.
+In formal terms, rich people can substitute their labor income with capital income.
+As the availability of substitutes increases price elasticity, the labor supply by rich people is no longer price inelastic.
+Absent the payroll tax, they might have elected to work more than they will if their labor income is taxed.
+
+##### Ideally, A Ordoliberally Hygienic Tax.
+
+A neutral tax, by definition, has no fee or pigouvian component.
+A VAT or payroll tax with a proportional, uniform rate is as per desideratum [\[des:ordoliberal-hygiene\]](#des:ordoliberal-hygiene){reference-type="ref" reference="des:ordoliberal-hygiene"}.
+
+#### Redistribution $=$ General Revenue?
+
+To the extent that proportional taxation is accepted as an equity norm (!), a VAT or payroll that goes into general government revenue is a proper instrument both to , as a desirable tax should as per desideratum [\[des:redistribution-and-revenue-are-one\]](#des:redistribution-and-revenue-are-one){reference-type="ref" reference="des:redistribution-and-revenue-are-one"}.
+
+In Germany and many other countries, *capped* payroll taxes are used to raise social insurance contributions.
+Here, redistribution and revenue generation undesirably interact.
+
+First, social insurance contributions are proper taxes:
+they serve to pool risks and they redistribute between old and young, healthy and sick.
+Second, these services are actually provided universally and unconditionally:
+as a last resort, the (German) welfare state pays even for those who have *not* contributed.
+The welfare state polity, has in other words, already adopted an allocative norm.
+
+Raising revenue for these very services on a *regressive* schedule (capped) on only some incomes (employed labor) embodies another, very specific allocation, for which no normative justification is readily available.
+In Germany, only employed people pay for the health insurance of all other employed people.
+Exactly *why*, at minimum, self-employed people do not also contribute to this risk pool is unexplained, but allocatively consequential.
+
+#### Fairness.
+
+At best, a VAT or payroll tax can be regarded as a proportional taxation on as per desideratum [\[des:personal-taxation\]](#des:personal-taxation){reference-type="ref" reference="des:personal-taxation"}.
+[^8]
+It cannot accommodate progression, let alone an arbitrarily steep schedule.
+
+##### Payroll: Regressive.
+
+An (ideal) payroll tax is proportional only under an (page ).
+When capital rents are regarded as proper income (, page ), a payroll tax falls only on one of two types of incomes.
+A payroll tax is clearly not , as mandated by desideratum [\[des:structural-agnosticism\]](#des:structural-agnosticism){reference-type="ref" reference="des:structural-agnosticism"}.
+
+##### VAT: Proportional.
+
+No matter the savings norm, a VAT is straightforwardly proportional, because *all* income is ultimately consumed and tax liable to generate utility.
+
+##### Different Rates Are Not An Option.
+
+One common alteration to make the VAT fairer is to adopt different rates for different types of products.
+Goods that cover basic needs (food) often enjoy a lower VAT rate.
+In a complex economy and modern society, it is impossible to easily determine which goods satisfy basic needs and which do not.
+Is a meat a basic need?
+Is a filet mignon?
+Is a filet mignon every day?
+<!-- %more generally, this violates the norm of neutrality, it will affect less people who buy 10 sedans than people who buy 1 luxury car.
+%This is about as non-agnostic as it gets. -->
+
+When the state *does* establish different VAT rates, it risks becoming a micro-manager of fairness and will create arbitrary incentives for cross-substitution.
+
+#### The Problems of Proportional Taxation.
+
+Aside from not being progressive, a proportional tax raises a number of problems (page ).
+
+##### Diminishing Utility and Positional Consumption.
+
+As proportional taxes, VAT and payroll cannot consider of wealth, income or consumption.
+Whether you are struggling to pay for the first class trip of your child or whether you are thinking about signing up your child for the third summer school, the taxman will treat these two transactions equally, irrespective of the clearly differential impact on the subjective well-being --- not to mention opportunity --- of parents and child in these two families.
+
+Similarly, a proportional VAT on consumption can also not curb ().
+Whether you are buying a high-priced Mercedes sedan because you enjoy a luxury car during your frequent trips on the German autobahn, or whether you are buying it merely because you do not want the smaller car than your neighbor, the taxman will treat these two transactions equally, with no regard to a potentially wasteful, positional component of consumption.
+
+##### Proportional Taxation Raises the Effective Price Floor of Labor.
+
+\phantomsection
+[\[sec:PropTaxDWL\]]{#sec:PropTaxDWL label="sec:PropTaxDWL"}
+Most problematically, any proportional taxation will make it relatively more expensive for low-income earners to make ends meet.
+In welfare states with legislated or effective minimal standards of living, such an increase in the real costs of living will push more people into structural unemployment.
+When every trip to the grocery store gets more expensive, more low-skilled people will be unable to afford a socially acceptable minimal standard of living from their equilibrium incomes.
+Conversely, the (very price-elastic) demand for such low-qualification service jobs drops dramatically, as struggling workers try to extract higher wages (Scharpf in foreword to @Ganghof2004 [12ff]).
+An equivalent dynamic holds for proportional payroll taxes.
+
+Proportional taxation raises the in violation of desideratum [\[des:low-price-floor\]](#des:low-price-floor){reference-type="ref" reference="des:low-price-floor"}.
+Present some income-replacing transfer scheme, as is nearly universally the case in developed welfare states, supply for low-productivity work becomes very elastic:
+you can either work for *less* net purchasing power, or receive *same* or a little more from the state for not working at all.
+Proportional VAT or payroll taxation then creates a substantial of structural unemployment, disallowed in desideratum [\[des:minimal-DWL\]](#des:minimal-DWL){reference-type="ref" reference="des:minimal-DWL"}.
+[^9]
+
+##### Limited Stabilization.
+
+Proportional taxation, by definition cannot serve as an automatic stabilizer.
+When the schedule is linear, it does not matter how lumpy your consumption is.
+A VAT or ideal payroll will do nothing to prevent you from buying nothing during a bust, and too much during a boom.
+
+A proportional VAT could, theoretically serve as an discretionary stabilizer if government were to lower the VAT rate during the downturn.
+People would have an incentive to buy at lower taxes during the downturn, rather than later at higher rates.
+
+Unemployment insurance works as an automatic stabilizer because of how the revenue is *used*, and not how it is *raised*.
+Consumption is smoothed out as the incomes of laid-off workers are insured in the medium term.
+Two problems remain:
+First, laid-off workers can still consume less than they optimally should, maybe because they are anticipating a prolonged, uninsured downturn.
+Second, unemployment insurance would be a much better automatic stabilizer if it were raised in a manner that also smoothes consumption.
+
+#### A Mixed Bag For Capitalism.
+
+On the pro side, a VAT and proportional payroll tax let entrepreneurs make their own production decisions, and on their own dime and incentive.
+
+A VAT and proportional payroll tax also do not require , as disallowed by desideratum [\[des:liquid-assets\]](#des:liquid-assets){reference-type="ref" reference="des:liquid-assets"}.
+
+On the other hand, a VAT and proportional payroll tax does little to avoid (page ff.).
+If capital is concentrated in the hands of only a few people, the rest will not be able to close intelligently incentivized deals on their unobservable effort and uncertain innovations.
+
+#### A Tiny Little Bit Difference Principle.
+
+For all its equity and efficiency shortcomings, a proportional VAT shares the fundamental merit of all consumption taxes:
+it taxes a normatively justifiable basis.
+Taxing consumption, not incomes, may be desirable under the the , as per desideratum [\[des:difference-principle\]](#des:difference-principle){reference-type="ref" reference="des:difference-principle"}.
+This is presented in greater detail and strength in [\[sec:foundational-beauty\]](#sec:foundational-beauty){reference-type="ref" reference="sec:foundational-beauty"} on the *Progressive* Consumption Tax.
+Absent progression, the difference principle merits of the VAT are negligible.
+
+The merit of consumption taxation under VAT also manifests itself in the (somewhat
+[^10]
+positive savings rate it allows for..
+If government would raise its revenue exclusively through a VAT, people's incentive to save would be unaltered:
+as argued in the above, a VAT is agnostic towards capital or labor incomes.
+
+The Old Hand --- Direct, Progressive Taxes: PIT, CIT & Dual PIT {#sec:ScorePIT}
+---------------------------------------------------------------
+
+The [pit]{acronym-label="pit" acronym-form="singular+short"} is the archetypical modern tax designed to redistribute.
+It was conceived in the early to mid 19th century to address the inequities of early capitalism.
+
+#### Income Taxation Punishes Saving.
+
+A [pit]{acronym-label="pit" acronym-form="singular+short"} can cause two different kinds of in desideratum [\[des:minimal-DWL\]](#des:minimal-DWL){reference-type="ref" reference="des:minimal-DWL"}.
+
+First, if insufficiently progressive (= near proportional), it causes the discussed for VAT and payroll taxes (page ).
+
+Second, if it is sufficiently progressive on both labor and capital incomes, it taxes savings twice:
+once when they are earned, and a second time when they yield an interest (and yet again when they yield a compound interest).
+This has a number of negative implications.
+
+When people can avoid double taxation by consuming income right away, they may very well do so.
+Capital incomes are taxed, even though saving is elastic.
+This conflicts with desideratum [\[des:tax-inelastic\]](#des:tax-inelastic){reference-type="ref" reference="des:tax-inelastic"} ().
+Things become even more awry when we consider investments (savings) of different risk.
+When the (uncertain, but higher) rewards of risky investment are taxed progressively, people will have a smaller incentive to run the risk in the first place.
+The PIT still allows for local, decentralized production decisions but incentives are substantially dampened.
+
+A PIT discourages saving, and it falls twice on capital income, and only once on labor income.
+
+#### The Merits of Progression.
+
+It also serves to of labor as per desideratum [\[des:low-price-floor\]](#des:low-price-floor){reference-type="ref" reference="des:low-price-floor"}.
+The problematic double taxation of capital incomes also serves to substantially dampen and ensures *some* degree of broad ownership.
+
+#### The Limits of Progression Under the PIT.
+
+A tax on *income*, by definition, does little to curb .
+
+More fundamentally, a PIT does *not* allow for truly arbitrarily steep schedules.
+For a high *average* tax rate on incomes say, 50%, *marginal* tax rates would be prohibitively high.
+Such high marginal tax rates would all but destroy at that margin at all.
+It seems likely that a PIT will be no match to the (page ), given its limited steepness in progression.
+
+#### No Stabilization.
+
+As any tax on income, the PIT cannot serve as an effective automatic or discretionary stabilizer.
+
+#### The Systemic Flaws of the PIT.
+
+Aside from its limited and problematic merits, the PIT carries with it some unavoidable, inherent flaws.
+
+##### The PIT's Ugly or Unfair trade-off: Accrual vs. Realization.
+
+Because the PIT is based on flows of economic welfare, it requires a method to measure these flows.
+Whenever assets are illiquid
+the taxman can either wait indefinitely for realization, or tax on some assumed accrual.
+Either way, substantial welfare losses ensue and desideratum [\[des:liquid-assets\]](#des:liquid-assets){reference-type="ref" reference="des:liquid-assets"} on the is violated.
+
+Income taxation on accrual or realization also has substantial equity implications.
+In contrast to the VAT, it is *not* merely a matter of timing when we pay the income tax.
+
+> "Such a statement reveals a basic failure to understand --- or a desire that others not understand --- the nature of income taxation and tax avoidance:
+> \[...\] if income tax can be postponed \[...\], interest (or other capital income) can be earned on a tax deferred basis in the meantime."\
+> --- McLure (1988 @Seidman1997 [125])
+
+In short:
+taxation on realization ignores compound interest.
+
+##### Tax Evasion 101: Buy, Borrow, Die.
+
+\phantomsection
+[\[sec:TaxEvasion101\]]{#sec:TaxEvasion101 label="sec:TaxEvasion101"}
+A sinister exploitation of the evaluation problem of the PIT goes by the name of *buy, borrow, die*.
+[^11]
+
+It emerges from the following three doctrines, all of which make sense in isolation.
+
+First, a PIT never taxes debt as income.
+It makes little sense to tax debt:
+according to @Haig1921-@Simons1938 (equation eq:HaigSimons) and common intuition, the income-generating ability of a person does not change just because she takes out a loan.
+Consequently, people pay their taxes on the income they use to repay principal and interest.
+
+Second, for the practical reason of avoiding evaluations by a central planner, the PIT is levied on realization, not accrual.
+
+Third, for @Haig1921-@Simons1938 and common intuition, heirs are (estate) taxed only net of assets and liabilities handed down to them.
+
+So far so good?
+These three trivially intuitive doctrines, in combination constitute the fatal achilles heel of effective capital income taxation.
+Tax evaders can follow a simple, and entirely legal strategy.
+First, they *buy* appreciating, but illiquid assets.
+In a second step, they *borrow* money on the appreciating asset as collateral.
+Recall that this cash inflow is not taxed.
+Also recall that lenders may very well consider the yet-illiquid appreciation of the asset in extending their loan terms.
+Tax evaders can now spend out of the appreciation of the asset without paying *any* capital income tax on this de-facto accrual of welfare.
+Third, tax evaders *die* and bequest their assets to someone else.
+That someone else is liable only for estate tax on the *net* value of the assets and liabilities.
+The consumption of the deceased tax evader is deducted from the net value.
+Again, ultimately, and irrevocably, consumed capital incomes escape taxation.
+
+This loophole, like the underlying problem of , is *not* a practical aberration that could conceivably be closed.
+Any income tax on realization will offer this evasive strategy.
+<!-- %is this an entirely new problem, or does this fall adequately under "don't tax illiquid stuff?" Can I break it down like that?
+%Or is there maybe another thing behind it?
+%Timing?
+%Is it all accrual vs realization? -->
+
+This is not a hypothetical or esoteric problem.
+The pre-2007 housing bubble in the U.S., Spain and elsewhere was --- amongst other factors --- also fueled by this strategy.
+Houses were good illiquid assets (*buy*).
+Banks willingly offered mortgages on the houses (*borrow*).
+They also happily refinanced the loan, if the suggested (but unrealized!) fair market value of the house had increased.
+Consumers took out a bigger mortgage on the (supposedly) appreciated house and spent the difference on a new SUV and a flat screen TV.
+All tax free.
+
+Appreciation in illiquid assets is no small component of our economic growth.
+A colossal share of the real welfare that accrues to capital income earners escapes income taxation without further notice, and any readily available fix.
+
+##### The PIT's Ugly Backstops: The Estate and Gift Tax.
+
+It follows from the strategy of tax evasion 101 that an estate and gift tax are necessary backstops to the PIT.
+Without a tax on the substance bequested, unrealized appreciations on illiquid assets would go entirely untaxed.
+With an estate and gift tax, "only" the consumed part of unrealized appreciations escapes taxation.
+
+The estate and gift taxes are, in themselves ugly beasts.
+Just like the PIT, they require an evaluation of a flow of economic welfare in the potential absence of a market equilibrium price of that very flow.
+If an entrepreneur bequests her family-owned firm to her daughter, no one can know how much it is worth.
+Again, problems in the taxation of illiquid assets ensue.
+
+##### The PIT's Ugly Backstops: The CIT.
+
+\phantomsection
+[\[sec:ScoreCIT\]]{#sec:ScoreCIT label="sec:ScoreCIT"}
+A PIT has another, even uglier backstop:
+the Corporate Income Tax.
+Recall that a PIT is meant to tax all incomes, including interest and compound interest.
+With only a PIT, tax evaders would have at their disposal a strategy even simpler than tax evasion 101:
+they could place (or retain) their savings in an incorporated firm.
+First, tax evaders could spread out their (spiky) income over a longer period of time to play the progressive schedule.
+A small, but steady trickle of income is better than a large, lumpy flow under a progressive tax.
+Second, and more fundamentally problematic, tax evaders can also retain their initial capital income in the corporation and have it earn a compound interest.
+Note that the compound interest is earned on a capital income which, ideally, *should* have been taxed *already*.
+
+To avoid this loophole, a PIT needs a CIT to get at the corporate shelter from the income tax [@Genschel2005 7].
+Also empirically, PIT and CIT rates go hand in hand, between countries and over time, further supporting the intricate, if dysfunctional link between the two [@Piatkowski2008 14].
+
+The CIT is as bad as the PIT, minus the merits of progressive, personal taxation of the PIT.
+
+First, the CIT has no as demanded in desideratum [\[des:determined-incidence\]](#des:determined-incidence){reference-type="ref" reference="des:determined-incidence"} [@McCaffery2005 918].
+Corporations are fictions.
+If you tax them anyway, you violate desideratum [\[des:personal-taxation\]](#des:personal-taxation){reference-type="ref" reference="des:personal-taxation"} ().
+
+Second and related, the CIT knows no progression.
+To the extent the the CIT ever reliably fell on capital, it made some sense historically when corporate ownership was a reasonable proxy for the propertied classes.
+This is no longer the case.
+Many people receive capital incomes [@Grabka2007a XV].
+The CIT has no way of distinguishing *between* different owners [@McCaffery2005 918].
+Whether a particular Volkswagen share belongs to the life insurance of a single working mother or a stock market tycoon, both are taxed at some uniform corporate income rate .
+
+Third, much like the PIT, the CIT itself is plagued by unavoidable loopholes.
+The CIT is very sensitive to international tax rate competition:
+if CIT rates differ from country to country, multinational companies can easily shift profits to the country with the lowest rate.
+A number of strategies are available to do this, the simplest of which is to charge inflated (deflated) prices in intra-company trade [@Ganghof2004 43ff].
+This loophole cannot be closed as inflation (deflation) of intra-company trade prices cannot be reliably detected.
+More fundamentally, "any national claim to a particular share of \[a multinational's\] profits is hard to justify on the basis of principle" [@Genschel2005 61].
+<!-- %also explain how they can always calculate themselves to zero, not just with arbitrage. -->
+
+#### The Downgraded Upgrade: The Dual PIT.
+
+\phantomsection
+[\[sec:ScoreDualPIT\]]{#sec:ScoreDualPIT label="sec:ScoreDualPIT"}
+To the extent that a Dual PIT has substantially lower, and proportional rates on capital incomes, it alleviates the PIT's disincentives to save and invest.
+The Dual PIT is simply another non- relative burdening of capital and labor incomes in violation of desideratum [\[des:structural-agnosticism\]](#des:structural-agnosticism){reference-type="ref" reference="des:structural-agnosticism"}.
+
+##### A Hollowed-Out PIT.
+
+The relatively smaller burden on capital is hard to justify on principle.
+The largest incomes are, by definition, capital incomes.
+[^12]
+Charging capital incomes a lower, proportional rate will greatly depress the overall progressivity of the PIT
+Progression is limited under the PIT already, but will be even more compressed under a dual rate structure.
+
+To the extent that more of the tax burden falls on labor, a Dual PIT will also raise the , as disallowed in desideratum [\[des:low-price-floor\]](#des:low-price-floor){reference-type="ref" reference="des:low-price-floor"}.
+
+The Dual PIT is a PIT only in name.
+It hollows out the ideal of universal progression.
+The lower the rate on capital gets, the more a Dual PIT approximates a (progressive) payroll tax.
+
+The Streaker --- Local Business Tax (LBT) {#sec:ScoreLBT}
+-----------------------------------------
+
+A tax on the earnings of local businesses shares all of the disadvantages of the CIT.
+
+More fundamentally, the LBT is not a proper tax.
+It should not need to be discussed here at all.
+
+Local authorities provide different kinds of (see ).
+The , and it provides should be financed out of general revenue.
+A general revenue tax should fall only on as per desideratum [\[des:personal-taxation\]](#des:personal-taxation){reference-type="ref" reference="des:personal-taxation"}.
+
+Local authorities also provide such as parks and such as sewers.
+[^13]
+Common good and natural monopolies should be financed out of Pigouvian levies (at marginal cost) and fees (at average cost), respectively.
+
+The LBT sits in the nomansland somewhere between general revenue taxation and Pigouvian levy or fee.
+It violates the norm of as per desideratum [\[des:ordoliberal-hygiene\]](#des:ordoliberal-hygiene){reference-type="ref" reference="des:ordoliberal-hygiene"}.
+
+To the extent that the LBT is used to finances risk pools, public goods and redistributes, it should not be allowed to differ between municipalities.
+If universal education is an allocative goal of the broader, national polity, everyone should pay for it.
+<!-- %sometimes, such break-downs might be impractical, in that case, paying it out of general revenue might just be the better ticket. -->
+If fire protection is a public good, everyone should pay for it.
+LBT revenue used to finance these things should be replaced by transfers from higher levels of government.
+<!-- %to avoid arbitrage
+	%reference fiscal federalism -->
+
+To the extent that the LBT is used to finance common goods or natural monopolies, it must specifically fall (at marginal or average cost, respectively) on the very consumption of these goods, and not on the earnings of a firm in general.
+If industry pollutes a local river, *every unit of discharged pollution* should be (Pigouvian) taxed at marginal cost, not every firm in the city based on their earnings.
+If some firms or citizens in a rural municipality require high-speed internet access (a natural monopoly), each *user* of the network should pay at average costs, not every firm in the vicinity.
+Also note that LVT can replace this purpose to some extent.
+
+In short, the LBT is an anti-ordoliberal streaker that should never have entered this game of perfect taxation.
+It should be marshaled off the playing field as soon as possible.
+
+Impotent Redistribution
+-----------------------
+
+> *"Advocates of redistributive taxes must wake up and realize that their end is in jeopardy on account of their poor choice of means:
+> they are fighting, and losing, the wrong war."*\
+> --- Edward J. @McCaffery2005 [848]
+
+
+
+<!-- %McCaffery:
+	%taxes have become voluntary.Read more at location 57   • Delete this highlight
+	%Add a note -->
 
 <!-- %Genschel, Kemmerling and Seils (2009) suggest (corporate income) tax competition is shaped by four interrelated institutional mechanisms of the EU:
 %Market integration (↑) reduces transaction costs of cross-border arbitrage (think:\ exchange rate volatility, tariffs) and thereby facilitates tax competition.
