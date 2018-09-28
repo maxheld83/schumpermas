@@ -2,12 +2,28 @@
 
 # A Tale of Three Crises {#crises}
 
+<!-- %if you'd want to hide injustice, you'd best do it in a really complex system, like tax. -->
+
+<!-- % offe:
+%write a 2nd order theory on the reform suggestion (such as offe 2009) -->
+
 <!-- i don't even mention the issues of imperfect economic integration here (EU!), though much of them can be read as extensions of the malaise described here -->
 
 <!-- first, you have to show here that tax is a worthwhile issue; it *is* the social contract, and it is currently in bad shape, and it *is* the best way to address a lot of our problems (not spending, not printing money, no nothing) -->
 
 <!-- also, crucially, the point here is *not* how inequality is positively (that is pretty complicated), nor how how the contravening institutions should be calibrated.
 The point is that, *no matter* the desired redistribution, the institutions are bad. -->
+
+<!-- this is also, when talking about mixed economy, strictly about institutions which *reconcile* command and market economy (otherwise, somewhat misleadingly, called democracy and capitalism)
+it is at this interface that this diss is, and the question is whether the institutions governing this interface are good or bad, whether they can somehow satisfy the demands of *both* an efficient market economy, and a democratically powerful sovereign
+the question, emphatically, is not about *where to steer*, so to speak.
+but just what kind of steering mechanism we should have
+the engineering metaphor doesn't fully work of course, because, as it turns out, it's not a well-defined engineering problem that you can outsource to experts (maybe not even in engineering, who knows)
+there are *already* deep, last-reason kind of question *in* the design questions for the steering mechanism, so to speak
+that is what this is about
+some people criticise this as "market-compatible democracy", but that's misleading.
+neither mechanism is somehow inherently superior, or more legitimate.
+or at least there is no reason to assume this here. -->
 
 <!-- it's easy to see how accounts of material inequality (or lack thereof) become marred in ontological and axiological fights, and burrow down to last reasons -- though *these* are emphatically *not* the last reasons that are of interest here.
 to name just a few, whether you include household size, or real wages, or improvements in products, these all easily and fundamentally change the picture and any trends -->
@@ -568,6 +584,36 @@ The beliefs held and issues considered in the public [for example, @Caplan2007],
 People seem to ignore fundamental choices in tax [for example, @McCafferyHines2010], and may fall for inconsequential alternatives [for example, @SausgruberTyran2011], possibly even err systematically against their own material interest --- if they are on the lower economic rungs [for a German example, @Kemmerling2009].
 Here, too, (input) congruence of democratic rule may be violated if and to the extent that people are confused about policy choices [compare @Zurn-2000-aa 90].
 
+
+<!-- %Value research points to increasing disaffection of voters, not with democracy as a system of rule, but with the institutions and performance of real-existing, sustained democracies \citep{Dalton-2004-aa}
+%\footnote{
+	%Dalton (ibid.) has pointed out that voter disaffection may in fact be regarded as democratically desirable, if we hold it to be indicators of critical citizen oversight of governance.
+%This assumption --- that changing evaluation criteria may be for the better of democracy --- has some merit, but does not warrant inaction.
+%Except to a very cold-hearted, and epistemologically narrow mind of rational choice, dwindling voter turnout (ibid.) must be alarming everyone that, if this ``snake [does not] shed its skin, [it may well] perish.'' (Antoine de Saint-Exup\'ery, The Little Prince).
+%In any case, the material deficiencies and inequalities of our world point to political systems that are not beyond improvement.}.
+
+%Explanations for voter disaffection and perceived underperformance vary, invoking amongst others ``government overload'' \citep{HuntingtonInternational-Affairs.-1968-aa}, ``post-material'' or ``emancipative'' change and dimensions of values \citep{InglehartWelzel-2005-aa}, mind-boggling ``reflexive modernization'' \citep{BeckGiddens-1994-aa} or a democratic deficit inducing ``denationalization'' {Zurn-2000-aa}.
+
+%I employ here \citeauthor{PutnamPharr-2000-aa}'s \citeyearpar{PutnamPharr-2000-aa} model to explain decreasing citizen confidence in government and political institutions.
+%As relevant ``boundary conditions'', they list increased \emph{information} about the flaws of the political process ``post-Watergate'', and heightened \emph{evaluation criteria} due to either, or both, rising and diverging expectations.
+%Citizens then assess the performance of representative democratic institutions, which is in turn a product of the \emph{capacity and competence}, the \emph{social capital} and \emph{fidelity} of the governors.
+%The capacity and competence refers to the \emph{ability} of governments to choose and to implement policies in the interest of their citizens, highlights a routinized decision-making process as such and points to a systemic level of analysis.
+%Fidelity is an individual-level determinant of government performance, focusing on the incidental misconduct.
+%Social capital affects performance as a ``civic lubricant'' as an infrastructure, or network of generalized trust between individuals. -->
+
+<!-- %\subparagraph{Capacity} By capacity, I understand the \emph{ability} of democratic rule \emph{to act} in the interest of the people, that is, in the last instance, the ability to enforce collectively binding decisions.
+%This reflects \citeauthor{Zurn-2000-aa}'s (\citeyear{Zurn-2000-aa}:
+%188) notion of congruency between the social and the political spaces, where inputs and outputs of both realms must always occur at the same level.
+%In simpler words:
+%an input incongruence occurs (for example, disenfranchised illiterates), where people are affected by a political decision (or non-decision) of their own polity, in the making of which they had no say and an output incongruence (for example, international tax competition) is given when a polity is affected by a dynamic, over which it has no jurisdiction. -->
+
+
+<!-- %\subparagraph{Competence} By competence, I understand the ability to \emph{reason} on and \emph{identify} \emph{policies} that are in the interest of the people, and, conversely, those, that are not --- and why.
+
+%The distinction between capacity and competence --- in reality as in the following discussion --- is not as clear-cut as here stipulated.
+%Where capacities are constrained, even a competent discussion is likely to anticipate which decisions are impossible to collectively enforce, and thereby retract on other ``second-best'' solutions.
+%Conversely, a capacity to organize a public good hardly makes sense abstracted from, or in the absence of a competent understanding of its very possibility.
+%The distinction therefore serves rather to structure the argument from different, albeit not entirely orthogonal angles. -->
 
 <!-- Liberal, representative democracy, rests on a pluralist theory of governance (Louw 2005:15). Pluralism, being both empirical hypothesis and normative prescription supposes that political power is, and should be widely dispersed among society’s interest groups. These interest groups, made up of ever active citizens, openly compete with one another, thereby preventing any one of them to become a dominant elite. -->
 

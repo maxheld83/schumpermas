@@ -10,6 +10,17 @@
 >
 > -- Jürgen Habermas [-@Habermas-1984]
 
+<!-- %„Die Öffentlichkeit lässt sich am ehesten als ein Netzwerk für Kommunikation von Inhalten und Stellungnahmen, also von Meinungen beschreiben“ (Habermas 1992:
+%436).
+%„vermachtete Öffentlichkeit“, in der sich etwa finanzstarke Lobbygruppen wiederfinden würden).
+this is very similar to concourse -->
+
+		<!-- %Mutz (2008) is all about how it is important to make deliberative democracy falsifiable. -->
+
+<!-- Thomson
+    %Also:
+    %``Some researchers have assumed that they can dispose of deliberative theory by showing that political discussion often does not produce the benefits that theorists are presumed to claim for it.
+    %They extract from isolated passages in various theoretical writings a simplified statement about one or more benefits of deliberative democracy, compress it into a testable hypothesis, find or (more often) artificially create a site in which people talk about politics, and conclude that deliberation does not produce the benefits the theory promised and may even \ldots'' (tbc) -->
 
 Q methodology and deliberative democracy share epistemological and normative roots in American pragmatism: that meaning is intersubjective, that communication is human action and that we can -- and should -- reach some mutual understanding on the objective and moral world, even if contingent and preliminary.
 This study illustrates and explores how this common legacy makes Q methodology and and deliberative democracy are a good fit for political psychology.
