@@ -981,6 +981,51 @@ People seem to ignore fundamental choices in tax [for example, @McCafferyHines20
 Here, too, (input) congruence of democratic rule may be violated if and to the extent that people are confused about policy choices [compare @Zurn-2000-aa 90].
 
 
+<!-- %What is wrong with pluralist democracy?
+	%veto playing violates equality (in consociational designs, Tsebelis 2002)
+	%Cooperation problems (in complex systems, for example, Hardin 1968, Scharpf 1997)
+	%Rational ignorance (Surowiecki 2008, Taleb 2008)
+	%Non-attitudes (converse 1970)
+	%Heuristics and Biases (Tversky and Kahnemann 1982)
+	%Amalgamated preferences (Condorcet 1785, Arrow 1950)
+	%Cognitive Limits (Rosenberg 2003) -->
+  <!-- %public choice is another way to say government failure, or failure of democracy \cite{Coase1964}
+  %Of course, deliberation does not so much solve this problem, as it merely defines it away
+  %But it may still be worth it to list them, for we cannot just ignore them.
+
+  %[ ] PREFERENCE STRUCTURATION is the word for the public choice fuckup.
+
+  %So I think there are two ways to go from this crisis of democracy:
+  %- follow Caplan and seek solice in more market
+  %This assumes, and strengthens the homo economicus view
+  %For starters it may not work because some problems inherently require governance at a larger level, and not a market.
+  %- follow Habermas and do DD
+  %Assume and strengthen homo reciprocans, or at least homo intersubjective. -->
+
+<!-- %collective action Manson why some issues get represented, others not. isn't that mancur olson? -->
+
+<!-- \subsubsection{Condorcet}
+			%for example, (\citealt{Mankiw-2004-aa}:485)
+
+\subsubsection{Arrow}
+			%for example, (\citealt{Mankiw-2004-aa}:485)
+
+\subsubsection{Median Voter}
+			%for example, (\citealt{Mankiw-2004-aa}:485)
+
+\subsubsection{Liberal Paradox}
+			%get into this proof by Sen http://en.wikipedia.org/wiki/Liberal-paradox -->
+
+<!-- 
+%from raes lecture on capitalism no 14 youtube
+	%concentrated interests trump dispersed ones
+	%well-financed interests trump poorly financed ones
+	%defending the status quo is far easier than promoting change
+	%agency capture is a big advantages
+	%regulation may help those regulated more than it helps their putative victims -->
+
+<!-- preference structuration: taxation should be especially vulnerable -->
+
 <!-- %Value research points to increasing disaffection of voters, not with democracy as a system of rule, but with the institutions and performance of real-existing, sustained democracies \citep{Dalton-2004-aa}
 %\footnote{
 	%Dalton (ibid.) has pointed out that voter disaffection may in fact be regarded as democratically desirable, if we hold it to be indicators of critical citizen oversight of governance.
