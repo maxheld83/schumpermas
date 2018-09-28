@@ -4953,3 +4953,954 @@ To shake off Pangloss, and see clearly the demise of the welfare state, we must 
 
     > *"In the first instance, we are interested in the welfare state because we are interested in human welfare."*\
     > --- @Haggard2009 [236]
+
+foo
+
+<!-- %note from new yorker article how jk galbraith said that the rich should erect a statue to the PIT, because it allows great income inequality.
+%Note to that that things might have changed today
+
+%Some introduction of why tax matters, what this thesis looks at.
+
+	% it is by the states capacity to reallocate market equivalent incomes that the welfare retrenchment should be all about, and that is:
+%reallocation WITHOUT debt of one form or another.
+%Important:
+%a welfare retrenchment test should be independent of how market outcomes are reallocated, be it through taxation, or whatever.
+		%Hunch:
+%welfare state is worse today. -->
+
+<!---
+> *"The spirit of a people, its cultural level, its societal structure, the deeds its policy may prepare --- all this and more is written in its fiscal history, stripped of all phrases.
+> He who knows how to listen to its message here discerns the thunder of world history more clearly than anywhere else."*\
+> --- Joseph Schumpeter (1918 \[1991\])
+
+Why it Matters: The Welfare State as Mixed Economy {#sec:why-mixed-economy-matters}
+==================================================
+
+> *"Yes we can:
+> to justice and equality.\
+> Yes we can:
+> to opportunity and prosperity."*\
+> --- Barack H. Obama, Obama For America 2008
+
+At this point, a reader may ask:
+why would all, or even any of this, matter to the welfare state?
+
+Materially possible and normatively desirable welfare states are, and must be thought of as, well-designed mixed economies, for at least three reasons:
+
+1.  *Engaging Complexity.*
+    In a welfare state, (p. ).
+    For example, a (p. ) and the (p. ).
+
+    To eradicate today, as Lord Beveridge promised 150 years ago, the five 'Giant Evils' of want, disease, ignorance, squalor and idleness, you have to anticipate this interplay of market and government and choose accordingly.
+    The mixed economy provides us with a toolset to analyze the complexity of welfare states, including the dynamics presented here.
+    For example, the mixed economy suggests we should always check the [dwl]{acronym-label="dwl" acronym-form="singular+short"} (p. ) and (p. ) of any redistribution, a welfare state may undertake.
+
+    To answer the first-order question of welfare state design, as I have here tried to do, we need the abstractions of the mixed economy to know what is *materially possible* in a scarce world, filled with (at least some) homines oeconomici.
+    For example, price controls may not be possible (without grave losses), but a well-designed, personal, almost arbitrarily progressive taxation *is* indeed possible in a closed economy.
+
+2.  *Denaturalizing Market Allocations.*
+    When we consider welfare state programs in isolation from the markets which they supplant, we easily end up naturalizing whatever markets have allocated.
+    In fact, any given market exchange which a welfare state may seek to correct, is already and always *contingent* on the institutions, dynamics and distributions under which it occured.
+
+    For example, rather than "fighting poverty" --- as if that were an objective reality --- welfare states must consider overall allocative dynamics (such as , p. ) and distributions (such as , p. ), and counteract them, as is seen fair.
+    Markets do not make some people below an arbitrarily defined threshold "poor", and leave others ok or even untouched.
+    Instead, markets allocate incomes across the *entire* spectrum contingent on a host of institutions, dynamics and initial distributions.
+    If government pursues a particular minimum standard of living for everyone, it might not only transfer income to those who fall below it, but may need to counteract those dynamics under which people slipped below the minimum standard in the first place.
+
+    Market allocations, in short, are --- and should be --- no less subject to enlightened, collective human choice than remedial welfare state programs:
+    "Increasing dependency is no law of nature but the result of socio-economic changes, which in turn react to human intervention" [@Esping-Andersen2002 x].
+
+3.  *Caring about Outcomes.*
+    @Haggard2009 ([-@Haggard2009 236]) remind us about
+
+    > *"\[...\]
+    > the importance of pushing the research on the \[Eastern European\] welfare state down the causal chain towards its social consequences.
+    > \[...\]
+    > \[A\]ny meaningful strategy of comparison of the welfare state must ultimately engage its consequences for a variety of outcomes, from poverty and inequality, to physical quality of life measures, to economic outcomes such as the efficiency of labour markets, competitiveness and even economic growth.
+    > In the first instance, we are interested in the welfare state because we are interested in human welfare."*\
+    > --- @Haggard2009 [236]
+
+    The abstractions of the mixed economy I have summarized here synthesize a lot of what we need to know about the material, and therefore social consequences of a capitalist welfare state.
+
+    When we care about social consequences, the mixed economy suggests a great deal more to consider than just nominal welfare programs.
+    For example, welfare states should not only provide social insurance, but also redress failing (p. ) and (p. ).
+
+    When we care about social consequences, the mixed economy also implies that not all welfare programs are created equal.
+    For example, welfare states interventions should (p. ) and use (p. ).
+
+    When we care about social consequences, the mixed economy suggests that governments and markets are better at different things, and it ties welfare state interventions to specific justifications.
+    For example, welfare states should nationalize or regulate utility markets if and to the extent that they are (p. ), but there is no reason to (as Germany presently does) redistribute within (p. ), who was supposed to only save the risk pool from (p. ).
+    Caring about social consequences also means to leave markets alone, if they will likely serve material human need best.
+
+    When we care about social consequences, the mixed economy reveals that efficiency and equity are not always opposed, but often go hand in hand.
+
+    1.  *Inefficient is Inequitable.*
+        @Titmuss1974 urged welfare states not to exclusively concentrate on poverty relief because such "residual services (...) often become poor services for poor people" [-@Titmuss1974 134].
+        This intuition is supported by the abstractions of the mixed economy:
+        as the rich are forced or allowed to take the inefficient --- but for them, affordable --- exit route from government provision, a retrenched welfare state will offer only inferior provision, or none at all, to those too poor to exit.
+
+        This problem is particularly acute in health or disability insurance:
+        as the rich and healthy exit the risk pool, coverage becomes ever more expensive, driving even more people out until it (p. ).
+
+        Similar distributive effects occur in a wider class of market failures, too.
+        For example, a failed (p. ) of global climate or local public safety will not only be wastefully inefficient, but it will also hit hardest the poorest regions and people, who can least afford substitutes, such as building a levee or hiring private protection.
+
+    2.  *Inequitable is Inefficient.*
+        On the other hand, the abstractions of the mixed economy also imply that sometimes, slicing the pie unequally, will also make it smaller:
+        "(...) there is a very good argument that equality of opportunities and life chances is becoming sine qua non for efficiency as well" [@Esping-Andersen2002 ix].
+
+        For example, people may not be able to align the when collateral is not widely available (p. ), and overly taxing low and middle (labor) incomes may contribute to (p. ).
+
+    To answer the first-order question of welfare state design, as I have here tried to do, we need the abstractions of the mixed economy to know what is *normatively desirable* in a scarce world, filled with (at least some) homines oeconomici.
+
+#### Higher Equilibria.
+
+The first-order conflict about the best, possible welfare state is about the trade-offs, contradictions and uncertainties of the mixed economy explained in the above.
+My aim here was not to resolve that conflict:
+we may not know for sure, let alone agree on what *the best* welfare state looks like (even though I offered some well-informed hunches).
+A mixed economy can --- in principle and for my purposes here --- make *arbitrary* trade-offs between equity and efficiency, presence and future, or any of the other dimensions of human material need.
+
+But given *any* preference set for these (sometimes!) competing goals, there are still more and less efficient institutional configurations for the mixed economy.
+More efficient, in this broadest sense, means that these configurations achieve more on *all* goals.
+These preferable mixed economies will still trade off preferred goals for less preferred goals, but the trade-off will be less harsh.
+For example, a [nit]{acronym-label="nit" acronym-form="singular+short"} may achieve the same, if not more equity than a minimum wage, but at much lower cost in growth, or unemployment.
+Of course, you still have to break eggs for the proverbial omelette, just fewer of them.
+
+\centering
+![A Production Possibilities Frontier of Equity and Efficiency in Different Tax Regimes[]{label="fig:ppf-tax-regimes"}](ppf-tax-regimes){#fig:ppf-tax-regimes width="1\linewidth"}
+
+The competing goals of human material need, in other words, are not always in a pure and immutable zero-sum relation, where, for example, one increment more in equity means one less in efficiency, one more in present consumption one less in future consumption.
+Depending on the institutional design, these conversion rates will differ:
+sometimes, for example, one increment in equity will cost only a half-increment in efficiency.
+Alternative mixed economies, more often than not, are a positive or --- equivalently --- negative sum proposition.
+
+Just entering the preferences between purposely competing goals does *not* yield a single configured mixed economy, but many different blends of command and exchange production and distribution.
+Again, we may not know or agree what the globally optimal configuration is, given our preferences, but checking and of a mixed economy, we *can* know better from worse configurations, or local optima.
+
+A better welfare state is that mixed economy which elegantly combines and components to , , , and .
+That is, a welfare state that offers one of the higher possible trade-offs of growth, individual security, equality, saving and convergence.
+It does so without effectively borrowing from the future through , or hidden, but .
+
+This view of the welfare state differs markedly from other perspectives:
+
+Full Employment or Growth.
+
+:   A popular variant on the purposive trade-off between equity and efficiency, is that between the policy goals of full employment or growth, sometimes supported by "demand-" or "supply-side" economics.
+    @Offe2003 [-@Offe2003 453] finds a similar controversy about how to best keep up the full employment "roof" over the metaphorical Keynesian welfare state house, protecting the lower floors:
+    market liberals (or supply-siders) want to deregulate so that *growth leads to more employment* and social democrats (and, sometimes, demand-siders) want to sustain welfare state protection so that *more employment stimulates growth*.
+
+    These contenders both once had a (somewhat overstated) point, but as market failures grew and monetary policy improved, they are now both increasingly wrong.
+
+    Market liberals are wrong because not all deregulation, or any amount of it, will stimulate growth, and conversely, not all redistribution or other intervention will depress growth.
+    The abstractions of the mixed economy suggest that sometimes, command production is more (p. ).
+
+    Social democrats, or more accurately, demand-siders are wrong because, of course, in the long run, *only* supply determines prosperity, and the depressed aggregate demand they *always* seem to suspect is clearly defined as a monetary phenomenon and unlikely to persist for very long.
+    If it occurs, monetary expansion and fiscal stimulus should smooth it out, but that does not make for a roof.
+    Social democrats are also wrong to believe that all redistribution and regulation is cost-free:
+    there *are* [dwls]{acronym-label="dwl" acronym-form="plural+short"}.
+
+    The indicators of *activity* that both market liberals and social democrats usually obsess about --- [gdp]{acronym-label="gdp" acronym-form="singular+short"} and full employment respectively --- are both emphatically not related to greater (p. ).
+    And so, they both sometimes fall for (p. ) and ignore (p. ).
+
+    So how can we rescue full employment?
+    By *not* fighting this last war, for at least two reasons.
+
+    1.  Pushing macroeconomic policy to full employment risks overheating the economy and building up inflationary pressure.
+
+    2.  More fundamentally, full employment no longer is (if it ever was) a necessary, let alone sufficient factor for anything we might consider socially desirable outcomes for a welfare state.
+        Full employment in itself cannot, as the house metaphor suggests, provide any shelter for depleted , lemon-market , let alone address intertemporal failures or bubbles, to name just a few.
+        More dearly to social democrats, full employment will also be increasingly unable to --- as the proponents of power resources had hoped --- level the playing field between capital and labor, simply because some of the major inequities no longer are between capital and labor, but also *within* labor incomes as (p. ).
+        Even if the "reserve army of the unemployed" is fully activated, the resulting upward pressures on low (or all) wages will be no match for the governing dynamics of inequality enveloping the postindustrial economy (such as Baumol's cost disease).
+
+    Full employment, and (properly defined) growth are still desirable --- because they are an efficient *outcome* --- but neither serves as a powerful *instrument* to reduce poverty or economic insecurity:
+    "Promoting labour market participation is no substitute for income redistribution and the fight against poverty:
+    more work does not necessarily mean less poverty" [@Esping-Andersen2002 ix].
+    @Offe2003's metaphorical house of the Keynesian welfare state, in other words, does not need a few new shingles, but an altogether new roof.
+
+    That new roof is the ability of the mixed economy to redistribute, efficiently and progressively as the democratic sovereign wishes.
+    With that ability, welfare states can subsidize any (however small) minimal labor market income to any desired minimum standard of living (for example, through a [nit]{acronym-label="nit" acronym-form="singular+short"}), and can provide any level of social protection desired without counterproductively burdening low incomes (for example, by paying social insurance out of general tax revenue).
+    Progressive redistribution could, if desired, dampen or counteract any existing income dynamic, including markets.
+    @Offe2003 may be right that the welfare state did not "have much to do with 'equality of outcomes' ", but that does not make it tenable or desirable today [-@Offe2003 450].
+    If you are serious about even just "security and protection of workers, not equality" (*ibid.*) you have to care about inequality and redistribution, at least a little.
+    Without it, you will not have the resources to guarantee even such minimal, unequal outcomes for workers.
+    I further develop this argument in my critique of the literature (p. ).
+
+Decommodification
+
+:   still serves well to distinguish different welfare states [@Esping-Andersen-1990-aa], but it, too, is no strategy for a possible and desirable mixed economy.
+    Of course, welfare states may still "decommodify" (or *subsidize*) health care, education and replace (or *insure*) the incomes of the sick, disabled, old and unemployed, but such programs may be better described in the language of the mixed economy:
+    as *specific* market interventions and redistribution.
+
+    The difference is not merely semantic, but at least three substantial misunderstandings easily follow from this choice of terminology:
+
+    1.  Decommodification suggests --- misleadingly --- that welfare states *could* take some aspects of life, and some people *off* the market.
+        But, because command and exchange modes of production and distribution always interact, that cannot be done.
+
+        For example, decommodification of disability income is easily misconstrued to mean that disability would no longer be affected by the market, and that markets would no longer be affected by disability.
+        That is not so.
+        When welfare states support the disabled, they not only exempt them --- as intended --- from earning a market income, but they may also make it cheaper, and therefore more likely for labor markets to *produce*, say, burn-out, depression or back pain.
+
+        Thinking in the abstractions of the mixed economy helps us to avoid such pitfalls.
+        In this case, we know that *insurance* of risks is prone to moral hazard, and that (Pigouvian) co-payments can save the commons of a prudent risk-pool.
+        We can, if desired, slap a Pigouvian tax on risky or strenuous employment and activities, to make sure it is more costly, and is avoided.
+
+    2.  Decommodification easily morphs from description to prescription, as for example, when income replacement becomes a measure for welfare state re- or entrenchment.
+        Caring about outcomes, there is nothing inherently desirable or essential about decommodification, for four reasons:
+
+        1.  To decommodify someone out of the market also means to exit someone out of the central institution, that aside from providing the substituted material sustenance, mediates much human cooperation, generates self-worth to many and allows people to shape the world around them, however marginally.
+            Instead, we should "enable all citizens to participate in the mainstream of social and economic life" [@Esping-Andersen2002 ix].
+
+        2.  Complete decommodification is a last resort response to hardship.
+            Mixed economies have several alternative, and less intrusive, approaches to, for example long-term unemployment.
+            Instead of generous, universal and unconditional --- and therefore decommodifying --- benefits, a mixed economy may subsidize low market wages with a continuous and regressive [nit]{acronym-label="nit" acronym-form="singular+short"}.
+
+            The availability of a *specific* tool, may not much matter to the desirability of a welfare regimes:
+            social outcomes do.
+
+        3.  Decommodification, conceptually, if not always in reality, is ignorant of potential welfare losses, as some person is provided, or some activity done under command instead of exchange --- without a respective, justifying market dysfunction.
+            Thinking instead, in the abstractions of the mixed economy, always ties a market intervention to a particular market failure or broader dysfunction, and considers the potential welfare losses.
+
+    3.  Decommodification is both radical as a prescribed tool (exit the market) *and* strictly limited in its reach (only a set of included people or activities).
+        To be sure, sometimes a complete move to (entitled) command provision and distribution may be necessary or desirable.
+        Likewise, a democratic sovereign may choose to only care *a lot* about some market outcomes --- and decommodify them ---, and not care about others *at all*.
+        But there is no reason that all welfare states should do so, let alone that we carve this specific vision of a social compact into our conceptual toolbox.
+
+#### It follows:
+
+for a better welfare state to strike any such optimal balance, even given arbitrary preferences, it needs an intact set of (p. ), (p. ) and (p. ) of a mixed economy.
+
+Of these, tax is the elephant in the room:
+it is by far the most versatile, precise and powerful tool of command production and distribution in the mixed economy.
+
+None of this is a merely abstract or academic concern.
+Much lies this balance of command and exchange:
+everything we materially value, and with that, a great deal of the life chances of us all depends on an intact mixed economy.
+
+This is also not a revolutionary project.
+It does not ask for a new man, but it accepts, and timidly merely reforms *homo economicus*, the civilized version of our selfish demons.
+It does not ask for a new institution, it carefully compromises existing ways of exchange and command.
+The mixed economy, by any historical standard, is not a radical proposition.
+
+This much, I hope, is widely agreeable.
+
+> *"Taxes are the price we pay for a civilized society."*\
+> --- Oliver Wendell Holmes, Jr. (1904), Washington, DC
+
+\centering
+![Macroeconomic Regimes and Political Priorities[]{label="fig:ganssmann-macro-regimes"}](ganssmann-macro-regimes){#fig:ganssmann-macro-regimes width="1\linewidth"}
+
+\scriptsize{\cite{Rodrik2002} as reproduced in \citet[348]{Ganssmann2010}}
+\centering
+![Forms of Rule and Welfare State Regimes[]{label="fig:ganssmann-rule-ws"}](ganssmann-rule-ws){#fig:ganssmann-rule-ws width="1\linewidth"}
+
+\scriptsize{Reproduced from \citet[334]{Ganssmann2010}}
+\centering
+![Trilemma of the Service Economy[]{label="fig:ganssmann-trilemma-service-economy"}](ganssmann-trilemma-service-economy){#fig:ganssmann-trilemma-service-economy width="1\linewidth"}
+
+\scriptsize{Reproduced from \citet[341]{Ganssmann2010}}
+\centering
+![Welfare Provision and Political Ideologies[]{label="fig:ganssmann-welfare-provision"}](ganssmann-welfare-provision){#fig:ganssmann-welfare-provision width="1\linewidth"}
+
+\scriptsize{Reproduced from \citet[334]{Ganssmann2010}}
+Tax
+---
+
+Taxation in the [eu]{acronym-label="eu" acronym-form="singular+short"}, for the most part, remains an exclusive competence for [ms]{acronym-label="ms" acronym-form="singular+short"}.
+Under the acquis, only indirect taxes (VAT) are harmonized --- at ineffective, minimal levels --- with very limited cooperation in other fields (for example, @EuropeanCommission2009, @TaxCoordinationandTaxCompetitionintheEuropeanUnion-EvaluatingtheCodeofConductonBusinessTaxation2001).
+Per its treaties, the [eu]{acronym-label="eu" acronym-form="singular+short"} can harmonise only *indirect*, always proportional taxes --- such as [vat]{acronym-label="vat" acronym-form="singular+short"} --- and only by *unanimous* decision of the Council on proposals by the Commission (Article 113, Treaty of Lisbon, 2009 / Article 93, Treaty Establishing the European Economic Community, 1957).
+Union members do not even fully cooperate in collecting existing, national taxes:
+instead of full reporting of all incomes, some incomes (for example, dividends) and some countries (for example, Luxembourg) are exempted and instead levy a proportional, much lower withholding tax.
+It is, in short, no exaggeration to say that the [eu]{acronym-label="eu" acronym-form="singular+short"} has no fiscal institutions or even coordination to speak of.
+
+In the [eu]{acronym-label="eu" acronym-form="singular+short"}, there is no match between the scope of economic activity --- the union-wide common market --- and the scope of taxation.
+
+With no union-level taxation, what does this mismatch do to
+[ms]{acronym-label="ms" acronym-form="singular+short"}-level taxes?
+As the abstractions of the mixed economy suggest, tax competition results.
+For example, [@Genschel2009] find that tax competition is different and greater within the [eu]{acronym-label="eu" acronym-form="singular+short"} than outside of it, and that it accelerates with time and enlargement.
+[eu]{acronym-label="eu" acronym-form="singular+short"} tax competition is a [pd]{acronym-label="pd" acronym-form="singular+short"}, where states (strictly) dominantly prefer low taxes over high taxes and (Nash) equilibriate in suboptimal, mutual low taxation () on ).
+
+If, and to the extent that such a race-to-the-bottom is at play in the [eu]{acronym-label="eu" acronym-form="singular+short"}, it will affect both levels and schedules of national taxation.
+
+#### Levels.
+
+Straightforwardly, [ms]{acronym-label="ms" acronym-form="singular+short"} will be strictly limited in the overall level of taxation they can sustain.
+Governments will no longer be free to set a level of taxation, or, equivalently, determine the command-exchange components of the mixed economy.
+In some cases, tax levels may even fall, as has been shown for [cit]{acronym-label="cit" acronym-form="singular+short"} rates [@Piatkowski2008].
+
+#### Base.
+
+Moreover, and more importantly, competition will also alter the base composition of taxation.
+To avoid large [dwls]{acronym-label="dwl" acronym-form="plural+short"}, as they should, governments will turn to bases that are relatively price inelastic, that is, economic transactions that cannot be altered to escape taxation.
+[eu]{acronym-label="eu" acronym-form="singular+short"} integration opens up a lot of new escape routes, especially for newly mobile capital, and, to a lesser extent, high-skilled labor:
+they can relocate their economic activity to wherever the tax burden will be lowest.
+This causes welfare-depressing distortions in the high-tax economy:
+rather than face a now voluntary tax, these pareto-optimizing exchanges will not be made at all, and instead happen elsewhere.
+For example, a rich entrepreneur otherwise willing to open a new factory in high income-tax Germany, may, faced with the new alternative of building the same facility in a low-tax location, forego his original plan.
+Germany unambiguously looses welfare, both because the investment is not made, and also because it does not even generate any fiscal revenue.
+
+Faced with these dynamics, governments will, again rightly so, shift their taxation to bases that are less prone to [dwls]{acronym-label="dwl" acronym-form="plural+short"}, or equivalently, bases that are relatively less mobile.
+Relatively less mobile bases in the [eu]{acronym-label="eu" acronym-form="singular+short"} will be consumption and labor incomes, because consumers and workers cannot easily do their shopping and working in another country.
+
+Other --- partly dysfunctional --- taxes traditionally used to raise revenue for mixed economies will be rolled back or falter altogether.
+This applies especially to --- anyway defunct --- national [cits]{acronym-label="cit" acronym-form="plural+short"} that large corporations can often evade easily, in part because nailing down the locale of any particular increment of income of a multinational firm will always be conceptually difficult.
+For example, the German holding of Deutsche Bank AG can easily reassign a particular income stream to a Luxembourg-based subsidiary, arguing that a crucial business process occurred there.
+Tax administrations will always, and necessarily, be unable to argue where any particular value was created (@Ganghof2006, @Ganghof, @Ganghof2007 [5]).
+Similarly, higher brackets of progressive [pit]{acronym-label="pit" acronym-form="singular+short"} will also cause large [dwls]{acronym-label="dwl" acronym-form="plural+short"} or, more likely and wisely, disappear, as high-income individuals change residence or citizenship, offshore their income-generation to other countries, or at least shelter it in foreign corporations no longer affected by high, backstop [cits]{acronym-label="cit" acronym-form="plural+short"}.
+For example, a rich German entrepreneur can establish a new holding in Ireland to buy up his German-based firm, and have it retain most if not all of the earnings, effectively escaping german income taxation.
+
+If and to the extent that Pigouvian taxes, or even fees fall on mobile bases, these will also either cause excessive market distortions, or, more likely, disappear.
+For example, a German steel producer may, (hypothetically!) faced with the German ecotax, relocate to Poland, avoiding the higher energy price, *without*, as the Pigouvian tax intended, raising the price of steel.
+Overall energy intensity will remain the same, steel production will simply fall below equilibrium levels in Germany.
+
+#### Schedule.
+
+Crucially, by shifting the base, [eu]{acronym-label="eu" acronym-form="singular+short"} [ms]{acronym-label="ms" acronym-form="singular+short"} will also alter the schedule of their tax regimes.
+By relying more on taxing labor incomes, schedules will become more regressive:
+most large incomes in developed capitalist economies are not labor, but capital incomes.
+By relying more on (pre-paid) consumption and other indirect taxes, schedules will become regressive or --- at best --- proportional:
+even if rich people, just as others, eventually spend all their income, they will only pay the same percentage in [vat]{acronym-label="vat" acronym-form="singular+short"} or similar taxes.
+If union member governments wish to avoid, as they should, excessive [dwls]{acronym-label="dwl" acronym-form="plural+short"} they will have to sacrifice progressivity in tax.
+The already impaired, but lone vestige of progression, the [pit]{acronym-label="pit" acronym-form="singular+short"} together with its ugly, but necessary backstop,
+[^1]
+the [cit]{acronym-label="cit" acronym-form="singular+short"} will either disappear altogether, or, largely equivalent, depress their schedules and degenerate into effective labor income taxes, with, at best, some residual but proportional taxation of capital.
+
+Dysfunctions {#sec:defunct}
+------------
+
+What kind of an economic reality results from this open, but heterogeneous [eu]{acronym-label="eu" acronym-form="singular+short"}, with unbounded trade, mis-configured currency union and rampant tax competition?
+It is, and must be, a deeply dysfunctional design, boxing the European household in unattractive policy dilemmas, wasting its communal resources, ever building new imbalances, harboring new crises, and, ultimately, fracture the social contract.
+
+### Underfunding {#sec:public-squalor}
+
+Straightforwardly, the strictly limited revenues of [eu]{acronym-label="eu" acronym-form="singular+short"} [ms]{acronym-label="ms" acronym-form="singular+short"} confine them to structural underfunding, or at least, constrain the command-exchange that mixed economies are otherwise free to make (p. ).
+By subjecting taxes to competition, any increment in more command production and distribution must be bought at an increasing price in lost economic activity, or [dwl]{acronym-label="dwl" acronym-form="singular+short"}.
+
+In this scenario, governments rebalance their Haig-Simons identities --- as they always must --- by cutting public consumption or dissaving out of their wealth.
+This can take many, but entirely equivalent forms.
+For example, governments can save on public goods, such as road maintenance, or it can reduce transfer payments, such as welfare benefits.
+It can also dig into its savings, and take on new debt, or, let infrastructure fall into disrepair.
+
+Here, too, government is faced with unattractive choices:
+to either cut public spending to suboptimal levels, to go into debt or to otherwise dissave.
+
+### Unemployment
+
+The neoliberal agenda promised that if states cut their spending, at least their economies would greater economic growth.
+Under a dysfunctional mixed economy, that is not necessarily so.
+In the [eu]{acronym-label="eu" acronym-form="singular+short"}, mixed economies cannot have the cake and eat it, they cannot even do one of the two.
+Instead, its welfare states are faced with a twin crisis that is mutually reinforcing:
+one of structural unemployment, and one of structural underfunding, as illustrated in (p. ).
+
+Structural underfunding, aside from causing (p. ), in the long run may also diminish the kind of public and common goods that drive future economic growth, such as basic research or infrastructure, and especially, education.
+Over the long haul, structurally underfunded states will ill-equip workers for a global marketplace, and leave them with comparatively poor labor productivities.
+
+In addition, structurally underfunded governments are increasingly unable to transfer low- and middle-income workers, or, at least, exempt them from taxation.
+In particular, the greater tax burden on immobile labor, and the constrained progressivity of tax under competition will make it even harder for workers to make ends meet at any given market income.
+They have to pay more --- not less --- to the state, or, misleadingly named "social insurance" and keep even less for their personal consumption.
+
+As a result, at least some workers will be relatively unproductive and face high taxes on their already low or middle market incomes.
+If and to the extent that [eu]{acronym-label="eu" acronym-form="singular+short"} welfare states maintain some minimum socially acceptable living standard, either through a minimum wage, or, equivalently, welfare transfers, these low and some middle income earners will find it increasingly difficult to earn enough on the market to meet this standard.
+Any --- already diminished --- income will be further depressed by a tax wedge driven between the gross and net disposable incomes.
+Both in a minimum wage, and a welfare transfer regime, those workers with productivities too low to make the minimum income on the market will exit the market, and collect welfare instead --- not out of laziness, but out of necessity.
+
+The ensuing structural unemployment, in turn, reinforces the structural underfunding of the mixed economy government.
+First, it creates greater needs for transfers, putting further strain on public transfers.
+Secondly, it also depresses growth, and in the long run, diverges the economy from its long-term growth path, as segments of the labor force lie needlessly idle.
+
+Alternatively, of course, governments can lower effective price floors by cutting welfare benefits, minimum wages or by raising work requirements.
+By lowering minimally acceptable social standards --- frequently euphemised as "structural realignments" or "labor market flexibility" --- states will have to abandon central welfare tenets and create and accept, once again, widespread working poverty.
+That is, [eu]{acronym-label="eu" acronym-form="singular+short"} welfare states can brake the vicious cycle of underfunding and unemployment if they cease to be welfare states, a configuration that [@StreeckMertens2010] have aptly called a "permanent austerity regime".
+
+Governments of dysfunctional mixed economies, here, as always, are faced only with equally unattractive options:
+to either save social standards at the price of structural unemployment and depressed growth, or to abandon them and risk widespread working poverty.
+
+This dual crises, and the uneasy choices it forces, will only be exacerbated in a modern and open economy.
+Modern economies already produce highly unequal returns, as winners take all and, equivalently, Baumols cost disease looms.
+A modern economy will, by its very structure tend to produce people whose productivities are much lower than the overall productivity of their host countries.
+Trade, migration and capital mobility add even more pressure.
+As countries specialize even more according to their factor endowments (think: Romanian Nokia, German Management Consulting), remaining, relatively scarce factors (think: unskilled laborer in Germany) may find their market wages fall even further below the respective socially acceptable minimum income.
+Especially rich states may then be forced to redistribute income to these individuals, but find themselves unable to raise the necessary revenues (progressively) without further reducing their competitiveness.
+
+### Inequality
+
+Lacking any union-level fiscal institutions and marred by tax competition between the [ms]{acronym-label="ms" acronym-form="singular+short"}, the [eu]{acronym-label="eu" acronym-form="singular+short"} mixed economy lacks effective tools to redistribute market outcomes.
+Both *within* and/or *between* member states, rampant inequality will remain unchecked, or even further widen.
+
+At home, the mixed economy has lost its ability to dampen (possibly accelerating) winner-take-all dynamics, and to compensate the losers from trade and economic transformation.
+[^2]
+The great U-turn back towards more inequality, in Europe as elsewhere in the [oecd]{acronym-label="oecd" acronym-form="singular+short"} is well under way [@AldersonNielsen-2002-aa].
+As tax competition both erodes the base and depresses the progressivity of taxation, market allocations, increasingly, are final.
+Moreover, structural underfunding and associated public squalor will also hit hardest the lower and middle income earners, further widening the divide in living standards.
+Rich people can afford to exit from public provision, for example by paying doctors out of pocket, by sending their children to private schools or even walling their gardens and gating their communities.
+Lower and middle income earners have no such exit option, but are stuck with decrepit public provision.
+
+Between [ms]{acronym-label="ms" acronym-form="singular+short"}, too, inequality will remain unchecked, as member and union level governments have no instruments to alter distributive dynamics of trade, that may --- or may not --- lead to fast convergence of productivities, and related, living standards.
+What is worse, the poorer mixed economies are especially constrained:
+at low productivities, they can least afford to burden mobile capital, and other mobile, high-earning factors, such as professionals with any, let alone progressive taxation.
+With open borders, but without coordinated tax or union-level transfers, these poorer [ms]{acronym-label="ms" acronym-form="singular+short"} currently can only take the hard, unmitigated route to economic convergence:
+they tax mostly (low-productivity) labor, proportionally if not regressively, and at low overall public spending levels [for example, @DaudUngl2008 267].
+By contrast, in the higher-productivity, rich [ms]{acronym-label="ms" acronym-form="singular+short"}, corporatist arrangements, strong trade unions and substantial, if increasingly dysfunctional welfare regimes can still eek out pockets with sometimes generous welfare provision:
+in always capital-intensive, often high-value add and sometimes oligopolistic --- not commodity ---production, these economies can, at least in some sectors, afford welfare.
+For example, a Bavarian specialist engine builder with high capital and relatively low labor inputs and maybe a handful competitors on the world market, may, faced with strong unions, accept above-equilibrium, possibly efficiency wages.
+Not so in Romanian manufacturing:
+Producing low-margin commodities, with little capital but hundreds of competitors and easy access, firms have to compete tooth-and-nail on labor costs.
+And so, [ms]{acronym-label="ms" acronym-form="singular+short"} may not only fail to converge as quickly, or as closely as they could, or hoped to, but the very *conditions* for economic development will diverge widely.
+The rich, high-productivity [ms]{acronym-label="ms" acronym-form="singular+short"} can still, if inefficiently and incompletely, dampen and distribute the pain of whichever economic shock hits or transformation sets in.
+In the poor, low-productivity East and South, it will be bare-bones laisséz-faire capitalisms.
+[^3]
+
+In the [eu]{acronym-label="eu" acronym-form="singular+short"}, Kuznet's and Keynes' grand hopes, that welfare would --- and should --- always follow growth, are dashed (as cited in [@Galbraith2002a 22].
+If they have any choice at all, it is a very unattractive one for the governments of the union:
+they can either stay in the common market and reap the gains from trade and abandon all or some welfare, *or* they can exit the union, stall economic integration, save their welfare regimes and retreat to autarky and recession.
+
+### Imbalances and Crises {#sec:imbalances}
+
+> [50 Ways to Leave Your Lender](http://www.npr.org/blogs/money/2012/03/01/147720368/50-ways-to-leave-your-lender)
+>
+> The problem is all inside your head, she said to me,\
+> You can't pay back 200 percent of GDP,\
+> You have to negotiate, if you want your country free,\
+> There must be 50 ways to leave your lender.
+>
+> You really don't want the IMF to intrude,\
+> Furthermore, they'll force austerity for the interest that's accrued,\
+> Imagine your middle class, subsisting on cat food,\
+> There must be 50 ways to leave your lender.\
+> Fifty ways to leave your lender.
+>
+> You just stretch out the loan, Joan,\
+> Cut the creditors' hair, Claire,\
+> Or boost GDP, Lee,\
+> Just listen to me.
+>
+> Print more money, honey.\
+> No need to pay back, Jack!\
+> Structure a default, Walt.\
+> And get yourself free.\
+> --- Planet Money / National Public Radio, 2012
+
+Democratic governments, firms and households alike will be under great strain from the underfunding, unemployment and inequality that a dysfunctional mixed economy creates.
+They may take on any possibility to temporarily relief the pressure they are under, even if it will not solve, or even exacerbate the situation in the long run:
+here, too, humans and the institutions they man, suffer from time inconsistency.
+
+In modern financial capitalism and complex societies, there are some powerful painkillers to numb the effects of a dysfunctional mixed economies.
+As painkillers go, they treat the symptoms, not the disease, and have serious side effects.
+And so it is with the macroeconomic temptations in the [eu]{acronym-label="eu" acronym-form="singular+short"}:
+as powerful drugs, they seemingly let economies transcend their material means, spread euphoria and frenzy.
+Only their cure is, ultimately, delusional, their treatment addictive.
+While under the charm of such chimerical boom and prosperity, economies keep building pressures and imbalances, that, one day, will unload in financial shocks and systemic crises, that, if sufficiently large, can disturb or bring down entire markets.
+After this kind of ecstasy always comes a day of reckoning, with a catastrophic hangover.
+
+Just when an economy is in such drug-enduced delusion, and living beyond its long-term growth path is, as always in uncertain markets, hard to tell.
+National balance of payments accounts provide as in (p. ) an intuitive, if rough-and-dirty first indication.
+Between economies, too, an identity akin to Haig-Simons and the conservation of matter, holds:
+for any good or service that leaves the country, there must ultimately be imports of equal value, or, a change in ownership of foreign assets, that is, the promise of *future* imports of goods and services.
+Conversely, any import must be matched by exports of equal value or it will be offset in *foreign* ownership of domestic assets, that is, claims against future domestic production.
+As all the most important economic abstractions, this one is simple:
+balance of payments accounts are double-entry bookkeeping, only at the economy level.
+
+The components of balance of payments accounts, as the Haig-Simons identity, break down over households, firms and governments.
+For example, in a fictions German account, households can import olive, or firms can import particle filters as semi-manufactured inputs, or governments can import commuter trains for public transportation (, p. ).
+In these accounts too, positions of one owner are offset by positions of other owners in the same economy.
+For example, German household exports of home-made cuckoo clocks can be offset by said firm imports of particle filters in a roundabout way, when clockmakers buy French-particle-equipped German cars, or following some other chain of exchanges.
+Positions also offset across the equality sign.
+For example, German household imports of olive oil may be offset by government issues of German bonds to Greek oil producers, with the government channeling the revenue to oil-consuming welfare recipients, or through a myriad of other transfers.
+
+![A (German) Balance of Payment Account with Examples[]{label="fig:bop"}](balance-of-payments){#fig:bop width="100%"}
+
+Balance of Payment accounts are easily misunderstood or oversold, for a four reasons:
+
+1.  Trade deficits and surpluses between any pair of countries are frequently reported, but meaningless and entirely unproblematic, just as shoppers need not worry about a trade deficit with the local supermarket.
+    Trade deficits --- as consumer debt --- are potentially worrying only if they are *net* of all exchanges with all trading partners.
+
+2.  Conversely, balance of payments accounts do not apply only between countries, as is easily assumed, but is, in fact a meaningful and true identity between any group of market participants and the rest of their trading partners, all the way down from nations to households.
+    For example, a trade deficit may also arise between laggard regions, impoverished demographics or even generations, and the rest of an economy, with much the same possible problems.
+
+3.  In the short term, even such trade deficits may not be problematic, but, in fact, help to stabilize economies from exogenous shocks.
+
+4.  Even in the medium and long run, persistent trade deficits may be ok if and to the extent that the resultant capital inflows can reasonably be expected to currently, or in the future, earn whichever factor income was promised.
+    For example, emerging economies may well experience persistent trade deficits for some time, while machinery is imported to equip the workforce, if and to the extent that the resulting, now capital-deepened production pays off as expected.
+
+Still, balance of payments accounts are an immensely enlightening abstraction, without which trading mixed economies cannot be well understood:
+
+1.  Trade deficits are not a sufficient, but still a necessary condition for building macroeconomic imbalances.
+    Not every trade deficit will betray an economy living beyond its means, but every economy artificially held above its long-term growth path by said financial drugs *will* leave a grave trade deficit in its wake.
+
+2.  The balance of payments identity shows, as Keynes argued forcefully, if somewhat ineffectively at the Bretton-Woods conference in 1944, that these macroeconomic imbalances know no *one* culprit.
+    The loaded language notwithstanding, both deficit *and* surplus economies are, equally, at fault.
+    One parties excessive imports are another parties dumping exports.
+    To get to equilibrium, where imports equal exports, either of the two parties, or both, must change its prices.
+    To pride oneself, as German leaders frequently do, in being an export champion --- but not an import champion --- is but a mindless return to the folly of beggar-thy-neighbor, and, before that, mercantilism.
+
+3.  Financial flows always track flows of tangible goods and services, as well as vice versa.
+
+4.  It does not much matter *who* --- households, firms or government --- in an economy creates the trade deficit.
+    Only the deficit net of all economic actors in a given region matters.
+
+How, then, do we know the acceptable trade deficits, from the unsustainable ones?
+We look at the offsetting changes in the capital account, and check whether these are intertemporally efficient, or whether they were enabled by failed markets.
+In the [eu]{acronym-label="eu" acronym-form="singular+short"}, as in any other mixed economy, we must beware of these smoke and mirrors, that only forestall and worsen the inevitable day of reckoning:
+credit bubbles, asset bubbles, inflationary pressure, and nominally invisible, but real dissavings.
+
+Credit Bubbles & Default.
+
+:   Trade deficits can precipitate in capital inflow, as new foreign-held debt.
+    To receive their extra imports, deficit economies issue different forms of IOUs, including government bonds, corporate debt and household credit, sometimes backed by physical collateral, as in a mortgage.
+
+    If the sum of these debts, is sound, so is the trade deficit.
+    If debts, sour, or were overly optimist to begin with, the trade deficits cannot stand.
+    Consider the two scenarios:
+
+    1.  The loans are performing as long as, if, and to the extent that whichever projects they financed generate sufficient earnings to pay back interest and principal.
+        For example, if the extra, imported surplus production the IOUs enabled were transformed into a competitive factory that now churns out export merchandise, the loan can be paid be back out of these exports and revenues.
+
+        In the [bop]{acronym-label="bop" acronym-form="singular+short"}, the initial trade deficit is first offset by the loaned capital inflow, which later flows out again as the loan amortizes, offset by foreign factor payments and exports of the produced merchandise.
+        In effect, the loan has, as efficient credit should, inter-temporally balanced past trade deficits with future trade surpluses and/or foreign payments.
+        It matters little whether, and in which proportion the amortization on the capital account is offset by either foreign payments or equivalent actual exports, and whether the factory's merchandise is actually for export or domestic consumption.
+        In the balance of all economic transformations and exchanges, successful factories and other projects can always honor their loans *without* curtailing the living standard of the population.
+        Interest, and maybe even collateral, are paid back out of *extra* production that would not have otherwise occurred.
+        We need not worry about this kind of trade deficit:
+        because it moves everyone closer to the long-term growth path, is an inter-temporal Pareto, or at least Kaldor-Hicks optimization.
+
+    2.  The loan goes bad as soon as, if, and to the extent that whichever projects they financed do not generate sufficient earnings to pay back interest and principal.
+        For example, if the factory is not competitive, or --- more to the european point --- no one needs or can afford the airports, malls and mansions into which the extra imports were coagulated, there are no revenues or exports to pay back the loan.
+        In the extreme, but conceptually similar and now plausible case, the extra imports were not meaningfully coagulated into capital at all, but were simply consumed away at present.
+
+        Come the day of inevitable reckoning, the deficit economies have two choices:
+
+        1.  If the loan in question carries effective recourse, the deficit economy has to return the loaned capital in other, *material* ways.
+            As when a leasing company repossesses a car on which payment the lessee has fallen behind, deficit countries must return the surplus production in some form.
+            For example, the deficit economy may ship back the foreign-financed machinery in the project, or, more likely, return the same amount of surplus production transformed into some other good or service.
+
+            This is the hard way of rebalancing the [bop]{acronym-label="bop" acronym-form="singular+short"}:
+            the inevitable, promised outflow of capital on the capital account (reflecting net changes in the ownership of, but not generation of, assets) can be balanced only with an often painful trade *surplus*, because there are no factor incomes to be otherwise offset on the current account, reflecting a nation's income.
+            Either way, a failed investment enforces a later, and often painful trade surplus to return principal and return.
+
+        2.  Alternatively, if and to the extent that debtor economies (can) forego recourse and exert sovereignty vis-a-vis creditor economies, they (partially) default on their commitments and simply refuse to return the coagulated surplus production.
+            In that case, creditors are stuck with their claim.
+            By fiat, the original loans become full, or partial *transfers* from the debtor to the creditor economies.
+            Here as always, the two sides of the [bop]{acronym-label="bop" acronym-form="singular+short"} identity cancel out:
+            the original trade deficit is matched by a later, ex-post, enforced, foreign payment in the form of debt forgiveness, haircut or default.
+
+        No matter the choice, this kind of trade deficit is never an optimization, but an unavoidable *redistribution*, either from surplus future to deficit present if and to the extent that debtors pay, or from creditors to debtors, if and to the extent that debtors default.
+
+        Crucially, it matters very little who in the deficit economy --- households, firms or government --- initially took on debt.
+        These non-performing loans will redistribute from future to present, or creditor to debtor no matter who signed them.
+        In many cases, government will be forced to act as the lender of last resort and take on, or guarantee all the bad loans, both to counteract adverse selection and, often to save an exposed banking system from systemic crash.
+        Even if and to the extent that government, or, equivalently, future taxpayers, can avoid to take on the bad loans, the redistribution is merely concentrated on whoever remains nominal debtor.
+        Domestic policy can force only *some* people --- ideally those responsible --- to repay, but, short of default --- another redistribution --- it cannot void the need to repay.
+        Here, as always, something akin to economic conservation of matter reigns:
+        when credit bubbles burst, someone will have to pay back the future, either some debtors, all taxpayers, some creditors, or any combination thereof.
+
+        In addition to these mere inter-temporal distributions, credit bubbles and associated mass defaults or austerity, of course, also waste economic welfare, because of the turmoil they harbor, not to mention the hardship they imply.
+        As the business cycle fluctuates wildly in such crises, the economy diverts from the long-term growth path, leaving resources either depressively idle, or manically scarce.
+
+        Credit bubbles are a market failure that may plague any economy --- not just the [eu]{acronym-label="eu" acronym-form="singular+short"} --- but the european, defunct mixed economy is particular prone to them, for at least three reasons:
+
+        1.  The [eu]{acronym-label="eu" acronym-form="singular+short"}, until at least 2012, exercised most macroprudential oversight and otherwise mostly regulated financial markets at the [ms]{acronym-label="ms" acronym-form="singular+short"} level.
+            Here, even the regulatory arm of the mixed economy was impaired, and regulations might have been arbitraged to suboptimal levels.
+
+        2.  Monetary policy drives bank lending.
+            The [ecb]{acronym-label="ecb" acronym-form="singular+short"}, because it can set only *one* monetary policy, was unable to react to credit bubbles in individual markets or regions, such as Spain or Greece.
+
+        3.  Equivalently, if there were in the [emu]{acronym-label="emu" acronym-form="singular+short"}, or ever hoped to meet the its nominal convergence criteria, deficit and credit-crazed [ms]{acronym-label="ms" acronym-form="singular+short"} also could not devalue their currency through monetary interventions.
+
+Asset Bubbles & Crashes.
+
+:   Broadly similar, and often concomitant to credit bubbles, asset bubbles can also fuel trade deficits.
+    As some assets in the deficit economy are persistently overvalued, foreign investors buy up these domestic assets, offsetting the trade deficit on the current account with a capital inflow on the capital account.
+    Real estate, stock or some other asset that did not previously exist, or belonged to domestic investors, changes hand to foreign investors, expecting an ex-post unreasonable return.
+    Come the day of reckoning, asset prices plunge, and much the same process sets in as when credit bubbles burst, only in asset bubbles, the default incidence is on the foreign investor, because she will usually, if not always, have taken risk-bearing equity in the asset.
+
+    Asset bubbles, too, are a redistribution from a future day of reckoning to a manic present, and, in that future, a redistribution from foreign investors to the domestic economy.
+    In addition, asset bubbles also waste welfare:
+    when they burst, they spiral downwards, often cause grave systemic risk and generally divert the economy from the long-term growth path.
+
+    Asset bubbles, too, are a universally looming market failure, but the [eu]{acronym-label="eu" acronym-form="singular+short"} is particularly vulnerable, again, because of likely regulatory arbitrage and ill-fitting monetary responses to local business cycles.
+
+Monetary Expansion & Inflation
+
+:   Overly expansive monetary policy can also enable unsustainable trade deficits.
+    In this scenario, central banks simply inject more fiat money into the economy to offset the current account deficit with a Potemkin inflow of capital.
+    Fiat money, of course, never creates capital, and if, when and to the extent that this bluff is called, inflation ensues:
+    money supply and demand equilibrate at new, higher price levels.
+
+    This problem is widespread in the [emu]{acronym-label="emu" acronym-form="singular+short"} with asynchronous business cycles, a single interest rate target and no transferred stimulus to speak of.
+    In those regions where a low interest rate pumped too much money into the economy, as now appears to have been the case in Ireland, Spain, Portugal and Greece preceding the 2008ff crisis, loose money silently credit and asset bubbles, and might have already built yet-to appear inflationary expectations.
+
+    Inflation, here, as always, wastes resources and redistributes arbitrarily.
+    The middle class and older people, with frequently nominal denominated assets (pensions), but real denominated liabilities (rents) will be particularly vulnerable to whichever level of inflation this crisis might, eventually, bring.
+
+    Inflation, too, as the other temporary diversions from the long-term growth path, redistributes from the future to the present.
+    Even inflation does not spiral to double-digits or more, *any* additional increment in medium-term inflation and expectations is costly, as disinflating to previous levels is painful and often causes prolonged unemployment.
+
+Dissaving & Depletion
+
+:   Trivially, economies can also go into unsustainable trade deficits by real dissaving.
+    Instead of, say, selling shares in domestic companies, the deficit economy can just burn more of strictly limited fossil carbon, diminishing its real, if not its nominal assets.
+
+    Because such real assets, including an economies infrastructure, demography, environment or CO2e levels as unresolved commons have no defined ownership rights, they do not nominally show up in the capital account of an economy.
+    Whatever this assets are transformed into, however, may well show up as an export in the current account.
+    For example, a deficit economy can dig into its coal and iron ore resources, transform them, and export them as steel, offsetting other imports.
+    Because the dissaving in natural resources is not usually recored, and thus triggers no change in the capital account, the steel export revenue will erroneously be attributed as a domestic *income* in full, when in truth, much of the revenue comes from dissaved domestic assets, that ought to be recorded on the capital account.
+
+    Such dissavings --- by definition --- redistribute from the future to the present.
+    As dissaving most easily and nominally invisible occurs out of vulnerable commons, it also wastes the welfare of some of our most precious, communal resources.
+    If, when and to the extent that they are depleted to sustain trade deficits, we may never or only at great cost be able to restore them.
+
+I cannot marshall evidence here to show how each of these dynamics caused the 2008ff Euro, let alone the broader sovereign debt crisis.
+Nor can anyone, in 2012, reliably predict which of imbalances may yet turn out to be unsustainable, and why.
+What I do claim here is that whatever the actual imbalances and crises of the embattled [emu]{acronym-label="emu" acronym-form="singular+short"} and [eu]{acronym-label="eu" acronym-form="singular+short"} are, or will be, they will, underneath it all, follow these scripts.
+Using some economic imagination, *these* are imbalances and resulting periodic crises we would expect to plague any such internally open, but dysfunctional mixed economy.
+
+While this european mixed economy may be of its own kind, the market failures that enable these imbalances and trigger the resulting crises are in no way *sui generis*.
+The herding and information externalities that inflate asset and credit bubbles, the systemic chain-reactions that loom on large defaults and the tragic commons depleted by real dissavings are the kind of market failures that plague all real-existing capitalism.
+As such, they must be meet the appropriate regulatory, fiscal, and --- to a lesser extent --- monetary responses.
+Similarly, loose money tempts governments of all market economies, not just --- in fact, probably, least of all --- in the [eu]{acronym-label="eu" acronym-form="singular+short"}.
+It, too, must everywhere be curtailed by policy:
+a constitutionally-enshrined monetary governance, preferably a robustly independent central bank, bound to a well-defined goal.
+Because as dangerous drugs endemic to capitalism, these problems are not European problems, they also do not require a European solution.
+
+Still, the deficient european acquis exacerbates the imbalances and crises looming everywhere, in at least three ways ([echoed by @Bordo2011 25]):
+
+1.  Without a monetary union or nominal convergence criteria thereto, trading economies can intervene in their exchange rate, or, at least, let their currencies depreciate freely.
+    As adjustment mechanisms, none is as fast as currency devaluation to get out of trade deficits.
+    In an instant, imports become more expensive and exports become cheaper, ideally, until import and exports equilibrate at the free exchange rate.
+    Alternative --- and ultimately equivalent --- domestic readjustment of (higher) prices and (lower) wages often takes longer, maybe too long to avert a [bop]{acronym-label="bop" acronym-form="singular+short"} crisis.
+
+    Discretionary exchange rate interventions are difficult to get right, and easily deteriorate into competitive devaluation, or beggar-thy-neighbor by a fancy name.
+    Freely fluctuating exchange rates, in turn, are costly as the second theory of optimal currency areas reminds us,
+    and they, too, might be the result of herding or otherwise failing global currency markets.
+
+    As drug addiction therapies goes, the methadone of devaluation is, at best, a mixed blessing.
+
+    And still, it is a prescription, the european economy has to do without, no matter the indication.
+    Within the [emu]{acronym-label="emu" acronym-form="singular+short"}, everyone in the [eu]{acronym-label="eu" acronym-form="singular+short"} who ever wants to join, currencies cannot fluctuate.
+    To readjust, member economies can only hope their wages will not be too downwardly sticky.
+
+2.  Creditors and debtors alike will anticipate the systemic risk and spillovers that the monetary union bestows on all its members.
+    They know that other members too, would suffer from defaults or, related, [emu]{acronym-label="emu" acronym-form="singular+short"}-exit, and, therefore, will likely bail them out.
+    With systemic default risk as a union-level commons, but decisions in individuals, firms and, at best, [ms]{acronym-label="ms" acronym-form="singular+short"}-hands, credit everywhere, but particularly in the high-risk economies, will be too loose.
+
+    The [eu]{acronym-label="eu" acronym-form="singular+short"}, in other, metaphorical words, is not only plagued by powerful and addictive drugs, but dealers and addicts alike can reasonably expect to be saved --- as the should --- if they overdose.
+
+3.  Lastly, and familiarly, the european mixed economy lacks the fiscal means to otherwise rebalance internal demand, that intact mixed economies use to mitigate regional imbalances, including public works, industrial policy, or even straightforward transfers.
+
+The imbalances that have built up over the last years of European integration, and the crises in which they now seem to erupt, tell of the market failures of our capitalist economy.
+But they also betray the underlying dysfunctions and unfairness of an impotent mixed economy, that built these pressures in the first place.
+To bemoan only the market failure, and to seek to redress it is as naive as it is dishonest.
+Even worse, to simply wish away the crises, and to blame someone ("the banks") --- *anyone* ("'the markets") for our misfortune, is to shoot the messenger, rather then to heed her warning.
+
+In drug policy, if you are faced with a rampant substance abuse, you have to follow [@Mills-1959-aa], and sociologically re-imagine the saddening observation of an overdosed corpse:
+you have to ask how, and why, people socially turn to harmful drugs in the first place, and then, if you can, cure this anomie, whatever it may be.
+If you only wage a war on drugs, they will always win.
+
+And so it is with the imbalances and crises facing the [eu]{acronym-label="eu" acronym-form="singular+short"} today:
+we have to use our economic imagination to explain how, and why, the european economies turned to delusional market failures in the first place, and, if we can, strengthen them to resist any siren call.
+
+Our anomie, now, should be clear enough:
+it is the underfunding, unemployment and inequality left untouched by an impaired command arm, that slowly, but steadily, unravels the social contract of the mixed economy.
+Faced with such pressures, it is little wonder that individuals, firms, states and the household-writ-large they collectively make up turn to the sirens of delusional growth.
+
+Boxed in, as it is, the dysfunctional mixed economy, and especially its poorer constituents, find ways to relieve such economic pressure *somewhere*, to postpone such austerity to *somewhen* and disguise such anomie *somehow*.
+
+To now, as many do, deplore only the failing markets,
+[^4]
+to demonize investors or politicians is an act of exorcism.
+It was *we*, who made a Faustian bargain with these devils:
+to let them reign free, if only they could numb the economic pain.
+They obliged us.
+But no one, as Doctor Faustus, should be surprised if some day, there is hell to be paid.
+
+An Old Deal
+-----------
+
+> *"We can't start another new deal."\
+> "How about fighting for the old one \[...\]?"*\
+> --- The West Wing (Season 5, Episode 5), created by Aaron Sorkin.
+
+To insist on an intact mixed economy is not so innovative.
+The mixed economy is, in fact, a very old deal, prepared by the social reforms of Chancellor Bismarck, forged by Presidents Roosevelt and Truman, institutionalized by Lord Beveridge and, with miraculous success, reactivated in war-torn Germany, by Chancellors Adenauer and Erhardt.
+If there is such a thing as a European social model, or really, *any* capitalist social model, it is the mixed economy.
+
+To insist on an intact mixed economy is also not radical.
+The mixed economy, is, at heart, a compromise of exchange and command, of market and state, of individual freedoms and duties, of efficiency and equity.
+The mixed economy hopes not for an end of history, nor harbors any overhaul of society:
+it makes amends with capitalism.
+
+Tax --- the cornerstone of the mixed economy --- in particular, is a reformist, never a revolutionary project.
+Good taxation, especially of consumption, accepts private property as given, even legitimate and desirable, and merely adjusts the sticks and carrots that people reap for their personal enjoyment.
+Minimizing their [dwl]{acronym-label="dwl" acronym-form="singular+short"}, good taxation maximizes the freedom of all market participants to do as they would *absent* the tax.
+
+Today, Europe is reneging on this old deal.
+Without union-level taxation to speak of but with full factor and goods mobility, tax schedules are compressed and levels lowered.
+Without fiscal complements, the common currency allows imbalances and lets diverging business cycle fluctuate widely.
+Even regulation is yet incomplete, such as in labor market legislation, and is arbitraged away by competition.
+
+On these institutions rides it all:
+that we can efficiently produce public good cancer research or preserve our environmental commons, that we can pool the risks of the healthy and the frail, that we can restore some fairness between market winners and losers, that our children will receive at least what we have received, and that our neighbors prosper, too.
+Tax especially, and together with regulatory and monetary institutions, *are* the social contract of modern capitalism.
+
+European regional integration does not rewrite the social contract, but sins by blithely omitting much of passages on tax, monetary and regulatory policy.
+Absent them, the european polity is no longer free to choose between
+command and exchange, but --- without explicit popular consent --- defaults to ever more market, and ever more present consumption.
+Our household-writ-large now occupies a greatly constrained coordinate space (), boxed in by chronic underfunding, looming unemployment and rampant inequality, shaken by recurring imbalances and crises.
+
+![Constrained Coordinate Space of a Dysfunctional Mixed Economy[]{label="fig:coordinate-space-constrained"}](coordinate-space-constrained){#fig:coordinate-space-constrained width="100%"}
+
+By its dysfunctional design, the european mixed economy yields ever more to markets while the other part of the mixed economy, the state, is on the retreat.
+Bereft of their old, flexible and capable social contracts, the acquis will, nay, already *has* --- however fortuitously --- remade european society in the neoliberal, consumerist image.
+"Neoliberalism" and "consumerism" are, in this case, not catch-all labels of disaffection, but I choose them with equal anger and care, and they apply precisely.
+The aquis is:
+
+Neoliberal,
+
+:   because, eviscerating the state, it morphs markets from one of several *means*, to inescapable *reality* or even ultimate *end*, neither of which it is, nor should be.
+
+Consumerist,
+
+:   because, it cannot set a positive savings rate, and leaves austere members no choice but to loot real savings, and give into the temptations of bubbles.
+    As a result, much of the resources of the communal household will be devoted to near-term consumption.
+    [^5]
+
+Just how angelic the postwar mixed economy really was, I do not know.
+[^6]
+Still, *relative* to 19th century mass poverty [@MarxEngels-1848-aa], 20th century "mob politics" [@Crouch2004 158] and the spectre of 21st century neo-laissez-faire, the mixed economy, and the welfare state it has enabled, appears as singular achievements of the modern era.
+The economic institutions of Postwar Western Europe have brought about unseen prosperity and equity, all in relative peace and freedom.
+
+That is an old deal worth fighting for.
+
+
+
+Why Tax Matters to Democracy
+============================
+
+> *"But who can say how much is endurable, or in what direction men will seek at last to escape from their misfortunes."*\
+> --- John Maynard @Keynes1936
+
+> *"
+> There are a lot of rational (tax) ideas out there, there are a lot of ways you could build something from scratch that would look roughly like the society we have now, but would work better, would be smoother and fairer and all that.
+> And of course, these things are proposed in politics \[...\] and then they cannot be done.
+> Then our system prevents them from happening or garbels them in such a way that they look supremely ugly, once they are created \[...\].
+> This is a machine for creating disillusionment with government, cynicism, Tea-Partyism, and over time, this is our county, our democracy eating itself alive.
+> \[...\]
+> And that's why I get a little discouraged sometimes."*\
+> --- Hendrik Hertzberg (2011) on The New Yorker podcast *The Political Scene*
+
+The Social Contract
+===================
+
+Crucially, we must, again, understand that economic integration must always beget more economic and political integration, that, production at great economic scale implies solidarity at the same scale.
+
+*That* is the story of economic integration and material progress.
+Living on a scarce and harsh planet, for which, alone, we are ill-equipped, we escaped the @Malthus1798ian curse of overpopulation and starvation by scaling up our production.
+That is, to this day, how we remake an arithmetically growing material world, to feed our geometrically growing hunger:
+we join forces to bend upward the production curve, and wrest from it above-linear returns.
+To reap such economies of scale, in agriculture [@Diamond1997], in the production of violence [@Tilly-1985-aa], or in europe-wide automotive engineering [@Krugman-1980-aa], we have to master the feat of cooperation in the face of atomistic incentives.
+Akin to ever-increasing entropy, the arrow of pre-historic organic life, and history of human life on earth progresses by increasing complexity, specialization, but also, always, mutual dependence.
+@Wright1994 thus describes the transformation of individual cells into higher organisms:
+they become richer, more resilient, but they must also sacrifice, and will do so only to the extent that they have successfully merged their genetic instructions [-@Wright1994 Chapters 7, 8].
+
+And so it is with european, or other regional economic integration:
+opening up commerce to one common market makes everyone richer by the magic of comparative advantage --- if not necessarily by the same amount.
+But, if this association is to remain stable, some other elements of human organization have to follow to that higher level, if they are not to perish and destabilize.
+In the [eu]{acronym-label="eu" acronym-form="singular+short"}, continent-wide commerce also requires continent-wide taxation, regulation and monetary policy, if the formerly stable and re-productive system of a mixed economy is to remain operative.
+
+The genius of the otherwise hyper-federal, and hyper-liberal US Constitution is that it foresees this functional necessity in its commerce clause.
+[^11]
+It stipulates that, precisely as commerce traverses the otherwise autonomous states, the federal polity asserts itself.
+The German constitution knows a similar norm:
+
+> *"The Federation shall have the right to legislate on matters \[...\] if and to the extent that the establishment of equivalent living conditions throughout the federal territory or the maintenance of legal or economic unity renders federal regulation necessary in the national interest."*\
+> --- Basic Law for the Federal Republic of Germany: Article 72, Paragraph 2 (Bonn, 1949)
+> [^12]
+
+It too, displays the same genial insight into the relationship between economic and political integration:
+as the commerce clause, it does not compel any particular social or other policy, but, if economic integration has occurred, endows the democratic sovereign to rule at the newly emerged, higher level of societal organization.
+
+
+> *"But who can say how much is endurable, or in what direction men will seek at last to escape from their misfortunes"*\
+> --- John Maynard @Keynes1936
+
+Optimists, not just of the Panglossian kind, are always inclined to see glasses half-full, and so many argue that any, even imperfect or negative European integration is better than none.
+That is not so much optimistic, as it is hopelessly naive.
+The metaphor is flawed.
+Societies are not just glasses half-full or half-empty, they are dynamic systems, residing within, and reproducing the walls of this glass:
+half-*built* glasses, as the [eu]{acronym-label="eu" acronym-form="singular+short"} defunct mixed economies, are not merely waiting to be filled, they can also drain of all remaining water, or topple and fall over.
+
+The democratically governed mixed economy is *the* institutional achievement of the century, and as a social compact, it is fragile.
+As @Offe2003 points out, "it is much more likely that a European-styled \[mixed economy\] capitalism transformed itself into a liberal model" than the other way around, or, appropriating Lech Walesa, "it is easier to make fish soup out of an aquarium than the other way around", because it --- like the mixed economy --- depends upon "supportive dispositions of a cognitive as well as moral kind" [-@Offe2003 446].
+A mixed economy, as the democracy that governs it, is "easily lost, but never finally won", as the first African-American federal judge William H. Hastie ominously warned.
+
+We have already lost much of the mixed economy, and we are now risking to harm or loose democracy, too:
+not just democratic rule *of* the [eu]{acronym-label="eu" acronym-form="singular+short"}, but democracy *in* Europe, too [@Scharpf1997 19].
+
+Over time, the hardship that this arrangement inflicts on people, especially in the poorer, more austere [ms]{acronym-label="ms" acronym-form="singular+short"} (Greece), and when the imbalances and crises unload (Spain, Ireland), will corrode the inputs of popular rule, too, and fray the social contract.
+@Offe2003 has already seen the grave-diggers of liberal democracy, capitalizing on the resulting popular discontent of such "permanent austerity" [@StreeckMertens2010]:
+
+> *"Also, a third voice, luckily with much less resonance, is making itself increasingly heard in European politics, a voice which claims that the social security of workers (as well as the protection of citizens from violent crime), on the one hand, and efficiency of production and competitiveness, on the other, can only be reconciled if national borders are sealed to the influx of foreign people, foreign workers, foreign goods, and those praying to 'foreign' gods.
+> Since the mid-1990s, integrating Europe has seen the sometimes sudden and spectacular rise to electoral success of figures such as Pia Kjaersgaard (Denmark), Umberto Bossi and Gianfranco Fini (Italy), Pim Fortuyn (Netherlands), with Jean Marie Le Pen (France), Jörg Haider (Austria) and Carl Hagen (Norway) being among the pioneers of this new field of populist political entrepreneurship.
+> Le Pen has described himself in the 2002 French electoral campaign as being a leftist in social affairs, a rightist in economic affairs, and a nationalist for everything else.\
+> This formula, which is designed to resolve the tension between liberal market freedom and welfare state status rights by ethno-nationalist, xenophobic, and anti-European appeals, is applied by his rightist populist colleagues as well.\"*\
+> --- Claus @Offe2003 [454]
+
+The ground of popular resentment will only grow more fertile as the Euro crises goes on.
+The crippling economic depressions of the south, and the ever-insufficient, multi-billion bail-outs from the north are political dynamite, waiting to be ignited by fringe populists.
+
+If the extreme right, or extreme left, and/or nationalists start playing with this fire, the moderate voices of social democracy, liberalism and conservativism will have little to douse the flames, because in fact, both the polities in the north and south *are* faced with thoroughly unattractive alternatives.
+
+In the now often wretched south, policy makers must either accept the conditional straightjacket imposed by the [eu]{acronym-label="eu" acronym-form="singular+short"} and its rich sponsors, or jump the cliff of secession and sovereign default, all but ensuring all-out economic collapse under autarky.
+In the still largely isolated north, policy makers must either continue to periodically support often (but not always) failing governments in the south to alleviate the gravest imbalances, or splinter the union and forego the years, maybe decades of economic growth that wide integration brought.
+
+European democracies thus are also no longer *input congruent* [@Zurn-2000-aa], in addition to the already grave, but homemade democratic deficit of a heavily intergovernmentally-biased institutional setup.
+Faced with such non-alternatives, the people of Europe are no longer subjected only to decisions in the making of which they had a say.
+For the past two years, every couple of months, German or Greece executives, legislators and voters are asked to choose between bail-out or break-up, austerity or abyss, always at gunpoint, with the entire european project held hostage (for example, *Grexit*, followed by Portugal, Spain, Italy, followed by doomsday).
+If the people of Europe merely get to choose between a rock and a hard place, popular sovereignty becomes a farce.
+
+@Offe1998's [-@Offe1998] intuition is, tragically, fully borne out:
+
+> *"\[...\] that every interim solutions between the extremes of intact national sovereignty on the hand, and complete european supranationalty of a European Federation will, inevitably, violate both the reference point of welfare state protection and that of democratic legitimacy."*\
+> --- Claus @Offe1998 [41]
+> [^15]
+
+The political fringes will prosper, as they exploit these violations, both from the extreme left and the extreme right.
+The extreme left will fan the flames of societal disintegration by pitting liberal freedoms --- especially those of property and contract! --- against welfare protection and democratic sovereignty.
+Merely a change in tone, the extreme right will push societal regress by pitting all cosmopolitan integration and solidarity against always national welfare and sovereign rule.
+This new game is rigged against liberal democracy and the moderate voices (or cross-cutting cleavages, @LipsetRokkan-1967-aa) on which it so thoroughly depends.
+
+What the glass-half-full-optimists forget is that societal, political and economic integration can reverse course, too.
+The self-reinforcing dynamics of integration operate in *both* directions:
+more integration begets more integration (as Monnet had hoped, according to [@Schmitter1999 948], but regress also begets more regress.
+As a matter of fact, the neo-functionalists are right, if one-sided (Tranholm-Mikkelsen 1991 as cited in @Bieler2003 [1])
+
+The course of economic disintegration is quite clear:
+literally the milli-second that an over-indebted [ms]{acronym-label="ms" acronym-form="singular+short"} is thought to leave the [emu]{acronym-label="emu" acronym-form="singular+short"}, anticipating massive devaluation, all holders of cash in, say, Greek institutions, will take their money out.
+[^16]
+Faced with such an economy-wide bank run, the Greek government will be forced to install capital controls, effectively leaving the common market.
+Without international finance, the remaining trade, too, will be greatly constrained.
+Just the credible rumor of *Grexit* could, thereby, almost in an instant, unravel 21 years of integration since the country joined in 1981.
+
+We tread the course of political disintegration if --- outflanked by populists --- our [ms]{acronym-label="ms" acronym-form="singular+short"} democracies increasingly re-embrace the supposed trade-off between national interest and political unification, and again entertain the nationalist politics that the union was built to overcome, in a scenario of decay similar to that painted by [@BeckGrande-2007-aa 339ff], or [@Schmitter1999 947].
+
+Writ large on society, this is the disintegration that @Offe1998 presciently feared in [-@Offe1998]:
+
+> *"\[...\] one could suspect a downward descent on the ladder that T. H. [@Marshall-1950-aa] suggested as a model for european political modernization.
+> The three rungs on this latter are the cumulative expansion of liberal, democratic and social rights.
+> The question is, whether during the course of european integration, we will pass the democratic and welfare state stages on our way down, and, as a result, european citizens will be equipped merely with the rights of a (neo-)liberal market participant."*\
+> --- Claus @Offe1998 [41]
+> [^17]
+
+[^1]: Personal income taxes on capital necessitate a corollary taxation of corporate income.
+    Without it, taxpayers could easily evade payment by incorporating capital it in a firm, withdrawing earnings only slowly.
+
+[^2]: For example, @Beckfield2006 finds for the [eu]{acronym-label="eu" acronym-form="singular+short"}-12 that nearly half of the rise in within-country inequality between 1973 and 1997 can be explained by regional integration [-@Beckfield2006 979]:
+    inequality almost everywhere in the [eu]{acronym-label="eu" acronym-form="singular+short"}, has been widening, at least in part due to regional integration [for example, @DaudUngl2008 265].
+
+[^3]: @Galbraith2002a [25] precisely describes an analogous, worldwide dynamic:
+
+    > *"In sum, it is not increasing trade *as such* that we should fear.
+    > Nor is technolocy the culprit.
+    > To focus on 'globalization' as such misstates the issue.
+    > The problem is a process of integration carried out since at least 1980 under circumstances of unsustainable finance, in which wealth has flowed upwards from the poor countries to the rich, and mainly to the upper financial strata of the richest countries.
+    > In the course of these events, progress toward tolerable levels of inequality and sustainable development virtually stopped.
+    > Neocolonial patterns of center-periphery dependence, and of debt peonage, were reestablished, but without the slightest assumption of responsibility by the rich countries for the fate of the poor.
+    > It has been, it would appear, a perfect crime.
+    > And while statistical forensics can play a small role in pointing this out, no mechanism to reverse the policy exists, still less any that might repair the damage.
+    > The developed countries have abandoned the pretense of attempting to foster development in the world at large, preferring to substitute the rhetoric of ungoverned markets for the hard work of stabilizing regulation.
+    > The prognosis is grim:
+    > a descent into apathy, despair, disease, ecological disaster, and wars of separatism and survival in many of the poorest parts of the world.
+    > Unless, of course, the wise spirits of Kuznets and Keynes can be summoned back to life, to deal more constructively with the appalling disorder of the past twenty years."*\
+    > --- John K. @Galbraith2002a [25]
+
+[^4]: For some social science that seems to physically placing "markets" in quotation marks, see, for example @Beckert2012.
+    In lieu of an economic, or social scientific explanation of failing or corrupted markets for sovereign debt, this rhetorical device works to distance the social scientist from these market messengers, as if their price signals were merely social constructs.
+    There is, however, such a thing as objectively given, materially tangible, unsustainable debt that higher interest rates might merely communicate [@Wihlborg2010 55].
+    "Punctuation", in any event, does not replace an explanation.
+
+[^5]: The [eu]{acronym-label="eu" acronym-form="singular+short"} commission is quite explicit about this:
+
+    > *"The Single Market Review put *(sic!)* citizens, consumers and [smes]{acronym-label="sme" acronym-form="plural+short"} at the centre of policy-making."*\
+    > --- @Commission2008 [3]
+
+    One wonders, at least, why, in addition to *citizens*, consumers and *some* (though not other) firms are also mentioned, when, in a functioning market, the latter two should be served only as proxies of the ultimate beneficiary, the citizen.
+
+[^6]: To mention just a few red flags, it is unclear what costs Postwar prosperity extracted from others (dependence or world systems theory), we do know whether or how Western affluence can be repeated without the same gigantuan carbon footprint and we worry whether broad-based growth in value-add is but a historical episode (cost disease).
+
+[^7]: For example, László Kovács (2004), then Commissioner for Taxation and Customs asked that tax rates must be allowed to differ 6-8% simply to make up for the remote location of some markets.
+
+[^8]: Capital inflows will be particularly effective in relatively poor economies.
+    As these economies, supposedly, still lie far below the golden rule of saving [@Solow1956], returns on capital will be much higher than in richer economies where further (near-Solowian) capital deepening faces diminishing returns (for example, @Barro1995 or *ibid.* 1992 as cited in [@Beckfield2009 3].
+
+[^9]: To remind readers that this is not, in fact, what the acquis currently stipulates:
+    The overall structural and cohesion funds for 2007--2013 amount to no more than € 347 billion, less than 3 times the budget of the city of Berlin (€ 21 billion in 2009), or about 0.005 % of the budget of Germany (€ 1,164,000 billion in 2011).
+    In addition, [eu]{acronym-label="eu" acronym-form="singular+short"} budget negotiations are still marred by *juste retoure* attitudes, with [ms]{acronym-label="ms" acronym-form="singular+short"} wanting to get paid out what they have received --- the very opposite of a redistributive regime [for example, @Begg2008a].
+
+[^10]: It too, is neither new nor revolutionary:
+    internally heterogenous mixed economies have always, with varying results, dealt with this question.
+    In the US, much of the controversy about the role of the federal government boils down to the question of how much rich Texans should dole out to poor Louisianans.
+    In Italy, the rift is between North and South [for example, @PutnamLeonardi-1993-aa]) and in Germany, initially between industrial and rural states, since 1990 between old and new *Laender*.
+
+[^11]: ...the reach of which was only recently discussed in the 2012 US Supreme Court ruling on the Affordable Care Act.
+
+[^12]: In the German original:
+
+    > *"Auf den Gebieten \[...\] hat der Bund das Gesetzgebungsrecht, wenn und soweit die Herstellung gleichwertiger Lebensverhältnisse im Bundesgebiet oder die Wahrung der Rechts- oder Wirtschaftseinheit im gesamtstaatlichen Interesse eine bundesgesetzliche Regelung erforderlich macht."*\
+    > --- Grundgesetz der Bundesrepublik Deutschland: Artikel 72, Absatz 2 (Bonn, 1949)
+
+[^13]: ...the reach of which was only recently discussed in the 2012 US Supreme Court ruling on the Affordable Care Act.
+
+[^14]: In the German original:
+
+    > *"Auf den Gebieten \[...\] hat der Bund das Gesetzgebungsrecht, wenn und soweit die Herstellung gleichwertiger Lebensverhältnisse im Bundesgebiet oder die Wahrung der Rechts- oder Wirtschaftseinheit im gesamtstaatlichen Interesse eine bundesgesetzliche Regelung erforderlich macht."*\
+    > --- Basic Law for the Federal Republic of Germany: Article 72, Paragraph 2 (Bonn, 1949)
+
+[^15]: [\[fn:Offe-regress\]]{#fn:Offe-regress label="fn:Offe-regress"}
+    In the German original:
+
+    > *"Meine These ist, dass jede Zwischenlösung, die zwischen diesen beiden Extrempolen intakter nationalstaatlicher Souveränität einerseits, einer kom-plettierten europäischen Supranationalität in der Gestalt eines föderalen eu-ropäischen Staates andererseits gefunden wird, zwangsläufig beide Be-zugswerte verletzt, den des wohlfahrtsstaatlichen Schutzes ebenso wie den der demokratischen Legitimation.
+    > Demnach könnte man im Blick auf die europäische Integration einen Abstieg auf jener Leiter vermuten, die T. H. [@Marshall-1950-aa] sich als Modell für den Prozess der europäischen politischen Modernisierung vorgestellt hat.
+    > Die drei Stufen dieser Leiter sind bekanntlich die kumulative Durchsetzung liberaler, demokratischer und sozialstaatlicher Rechte.
+    > Die Frage ist, ob im Prozess der europäischen Integration die demokratische und die sozialstaatliche Stufe in rückwärtiger Richtung passiert werden und im Ergebnis der Euro-Bürger allein mit der Rechtsausstattung eines (neo-)liberalen Marktteilnehmers dastehen wird."*\
+    > --- Claus @Offe1998 [41]
+
+[^16]: In fact, the run on Greece is already underway, with the country having lost almost a third of its domestic bank deposits by May 2012, according to [@TheEconomist2012].
+
+[^17]: For the german original, see footnote [\[fn:Offe-regress\]](#fn:Offe-regress){reference-type="ref" reference="fn:Offe-regress"}.
+-->
+
+<!-- %ganssmann is absolutely crucial for the constrained alternatives. -->
+
+<!-- %McCaffery
+	%our tax system is a disgrace, and has been so for decades.
+%The way we tax is complicated, inefficient, and unfair.
+%Yet whenever elected officials in Washington actually try to do something about tax, they tinker at best.
+%At worst, they make the system even more annoying.
+%We need fundamental, comprehensive tax reform, not ad hoc tinkering.
+%Two, there is a widening gap between the rich and the not-rich in this country.
+%It may surprise many readers to learn that there is a deep connection between these two facts.
+%Tax as it is today is a cause of the wealth gap.
+%Tax as it could be tomorrow would narrow it.
+%That'sRead more at location 50   • Delete this highlight
+	%Note:
+%this is key.
+%It's fucked up, but systematically so.
+%Edit -->
+
+
+<!-- \begin{quote}
+	\emph{``
+	%``I'm still trying to climb out from under the avalanche of horror, nightmare and disgust that all of this [the 2011 US debt ceiling crisis] dumped on me, along with, I suppose 300 million other Americans and it's a little hard to sort out your thoughts after this much awfulness comes along.
+	%[\ldots]
+	%Sorry but I actually do think that this [the 2011 US debt ceiling crisis] is one more symptom of a long, slow constitutional crisis, it goes back further than the 2000 election.
+	%This kind of thing keeps happening again and again, it's as if our system is getting hardening of the arteries, we get a stint once in a while [\ldots] but to me it's getting scarier and scarier over the long haul.
+	%[\ldots]
+	There are a lot of rational (tax) ideas out there, there are a lot of ways you could build something from scratch that would look roughly like the society we have now, but would work better, would be smoother and fairer and all that.
+	And of course, these things are proposed in politics [\ldots] and then they cannot be done.
+	Then our system prevents them from happening or garbels them in such a way that they look supremely ugly, once they are created [\ldots].
+	This is a machine for creating disillusionment with government, cynicism, Tea-Partyism, and over time, this is our county, our democracy eating itself alive.
+	[\ldots]
+	And that's why I get a little discouraged sometimes.''}
+	\\*
+	--- Hendrik Hertzberg (2011) on The New Yorker podcast \emph{The Political Scene}
+\end{quote} -->
