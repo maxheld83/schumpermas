@@ -79,6 +79,259 @@ Table: (\#tab:commented-toc) A Commented Table of Comments with Analogous Experi
 | Discussion |  |  |  |
 | Conclusion |  |  |  |
 
+<!-- \ref{part:puzzle}
+& 	\emph
+&	\nameref{part:puzzle}
+&	Proposal
+&	\emph{Explicates the research gap.}
+
+	The current crises and performance of both established democracy and welfare states can only be understood, when compared with desirable and doable hypotheticals in democratic fora and tax.
+&	\pageref{part:puzzle}
+\\
+
+\emph{}
+& 	\ref{chap:wanted}
+&	\nameref{chap:wanted}
+&	Foundations
+&	\emph{Lays out the structure, epistemology, ontology and axioms of the dissertation.}
+
+	Social scientists must ask not just what \emph{is}, but what \emph{could} be (First Order Theory) and explain why it is not (Second Order Theory).
+	Such hypotheticals must be desirable and doable.
+	Desirable and doable are defined.
+&	\pageref{chap:wanted}
+& 95
+\\
+
+
+\emph{}
+&	\ref{chap:mixed-economy}
+&	\nameref{chap:mixed-economy}
+&	Theoretical Background
+&	\emph{Explains for which ends, and by which means market and plan can coexist.}
+
+	Welfare states are properly understood as mixed economies, where government supplements market outcomes by coercive plan.
+&	\pageref{chap:mixed-economy}
+& 90
+\\
+
+\emph{}
+&	\ref{chap:3-crises}
+&	\nameref{chap:3-crises}
+&	Empirical Background
+&	\emph{References empirical and theoretical findings on the intertwined crises of democracy, the welfare state and equality.}
+
+	Established democracies are constrained, gridlocked and confused.
+	Welfare states are unsustainable and/or defunct.
+	Economic inequalities are widening.
+&	\pageref{chap:3-crises}
+& 65
+\\
+
+
+\emph{}
+&	\ref{chap:tax-matters}
+&	\nameref{chap:tax-matters}
+&	Literature Review
+&	\emph{Explains how tax matters to the mixed economy, welfare state and democracy.}
+
+	Mixed economies rely on efficient and equitable taxation.
+	Democratic government always faces trade-offs in designing welfare states.
+	Voters must understand these alternatives, and all materially possible designs must be available for voters.
+&	\pageref{chap:tax-matters}
+& 80
+\\
+
+\emph{}
+&	\ref{chap:hypotheticals-matter}
+&	\nameref{chap:hypotheticals-matter}
+&	Critique of the Literature
+&	\emph{Without appreciating doable and desirable hypotheticals, social science becomes latently affirmative.}
+
+	This is especially true for welfare state research.
+	Absent a critical comparison to a hypothetical ideal mixed economy, the second-order account of welfare fails to explain most of the current shortcomings.
+
+	%more text missing?
+&\pageref{chap:hypotheticals-matter}
+&60
+\\
+
+\emph{}
+&	\ref{chap:testing-hypotheticals}
+&	\nameref{chap:testing-hypotheticals}
+&	Research Design
+&	\emph{Describes the positive research design to make the hypotheticals empirically falsifiable.}
+
+	Under a different (deliberative) democratic process, a random sample of ordinary voters will understand the mixed economy differently and prefer a different (progressive consumption, land-value) tax.
+&	\pageref{chap:testing-hypotheticals}
+&65
+\\
+
+\midrule
+
+\ref{part:tax}
+&	\emph{}
+&	\nameref{part:tax}
+&	Theory
+&	\emph{Reviews mainstream economic thinking about desirable and doable taxation.}
+
+	The first order theory of tax asks, and answers what the most desirable, but doable tax is.
+&	\pageref{part:tax}
+&
+\\
+
+
+\emph{}
+&	\ref{chap:desirable-tax}
+&	\nameref{chap:desirable-tax}
+&	Theory (Review)
+&	\emph{Reviews mainstream economic thinking about efficiency and equity of taxation.}
+
+	A desirable tax offers one of the higher possible trade-offs between efficiency and equity.
+&	\pageref{chap:desirable-tax}
+& 80
+\\
+
+
+\emph{}
+&	\ref{chap:doable-tax}
+&	\nameref{chap:doable-tax}
+&	Theory (Analysis)
+&	\emph{Lists factual complications and contradictions of taxation.}
+
+	A doable tax is personal, falls on inelastic bases, has a well-defined incidence, least affects liquidity choices and is agnostic towards the source of income.
+&	\pageref{chap:doable-tax}
+& 85
+\\
+
+
+\emph{}
+&	\ref{chap:better-tax}
+&	\nameref{chap:better-tax}
+&	Theory (Synthesis)
+&	\emph{Evaluates real and hypothetical taxes on the aforedeveloped criteria of desirability and doability.}
+	A \glsfirst{pct} and \gls{lvt} emerge as by far the best, most desirable and doable taxes.
+	Other, existing taxes violate efficiency, equity, or both and display manifold unintended consequences and unavoidable loopholes.
+&	\pageref{chap:better-tax}
+& 85
+\\
+
+\midrule
+
+\ref{part:democracy}
+&	\emph{}
+&	\nameref{part:democracy}
+&	Theory
+&	\emph{Reviews normative, theoretical and empirical political science on democracy.}
+
+	The first order theory of democracy asks, and answers what the most desirable, but doable form of democracy is.
+&	\pageref{part:democracy}
+&
+\\
+
+\emph{}
+& 	\ref{chap:desirable-democracy}
+&	\nameref{chap:desirable-democracy}
+&	Theory (Review)
+&	\emph{Briefly reviews normative political theory on democracy.}
+
+	A desirable form of democracy provides effective participation, control of the agenda, voting equality and enlightened understanding \citep{Dahl-1989-aa}.
+	%MN COMMENT: sehr spezifische Sichtweise der Demokratie; wieso soll ausgerechnet das das beste an der Demokartie sein? Was ist mit power, interest, praxis?
+&	\pageref{chap:desirable-democracy}
+& 10
+\\
+
+\emph{}
+&	\ref{chap:doable-democracy}
+&	\nameref{chap:doable-democracy}
+&	Theory (Analysis)
+&	\emph{Briefly reviews public choice theory and political psychology.}
+
+	Some likely micro- and macropolitical dynamics divert real existing, formally democratic government from normative desiderata.
+	Doable democracies face different, sometimes unattractive, trade-offs between participation, deliberation and political equality \citep{Fishkin2009}.
+	In complex societies, the dysfunctions and trade-offs may be harsher, still.
+&	\pageref{chap:doable-democracy}
+& 10
+\\
+
+
+\emph{}
+&	\ref{chap:better-democracy}
+&	\nameref{chap:better-democracy}
+&	Theory (Synthesis)
+&	\emph{Briefly reiterates the deliberative theory of democracy, and describes prominent institutional designs.}
+
+	Deliberative democracy promises to overcome many of the trade-offs and dysfunctions of pluralist democracy, by stressing intersubjective understanding and communicative action in lieu of pre-social preferences and power in speech.
+&	\pageref{chap:better-democracy}
+&10
+\\
+
+\midrule
+
+\ref{part:tax-democracy}
+& 	\emph{}
+&	\nameref{part:tax-democracy}
+& 	Theory (Original)
+&	\emph{Develops a second order theory of democratic choice of tax.}
+
+	Deliberative democracy is a good \emph{method} to test one explanation for the absence of a better tax.
+	%MN Comment: nein, keine Methode -- das ist Fishkins Fehler
+	Deliberative democracy is also \emph{more} than a method:
+	deliberation and \gls{pct}/\gls{lvt} are conceptually related.
+
+	Tax is a good \emph{case} to test deliberative democracy.
+	%MN comment: wieso sollten wir sie testen?
+	Tax is also \emph{more} than a case:
+	it is \emph{the} social contract in capitalism.
+&	\pageref{part:tax-democracy}
+&10
+\\
+
+
+\emph{}
+&	\ref{chap:no-better-tax}
+&	\nameref{chap:no-better-tax}
+& 	Theory (Original)
+&	\emph{Reviews and develops alternative second order explanations for why we do not have a better tax.}
+
+	We may not have a better tax, because progressive taxation is plagued by a global cooperation problem, because of path dependency, because of domestic political dysfunctions or, simply, because people do not want it.
+	I try to falsify only the last explanation, and theorize how different democratic processes may alter, suppress or confuse the will of the sovereign.
+&	\pageref{chap:no-better-tax}
+&55
+\\
+
+
+\emph{}
+&	\ref{chap:tax-under-pluralism}
+&	\nameref{chap:tax-under-pluralism}
+&	Theory (Hypotheses)
+&	\emph{Hypothesizes falsifiable, popular misunderstandings of tax and the mixed economy that may divert voters away from the \gls{pct} and \gls{lvt}.}
+
+	Voters incorrectly think
+	\begin{inparaenum}
+		\item that a mixed economy cannot have an arbitrary savings rate,
+		\item that nominal variables reflect actual savings,
+		\item that a mixed economy cannot have an arbitrary state-market mix,
+		\item that non-natural persons can be taxed and
+		\item fail to aggregate different taxes, indirect taxes and ``social contributions''
+	\end{inparaenum}.%add hrefs to the above?
+&	\pageref{chap:tax-under-pluralism}
+&35
+\\
+
+
+\emph{}
+&	\ref{chap:common-grounds}
+&	\nameref{chap:common-grounds}
+& 	Theory (Outlook)
+&	\emph{Develops conceptual and theoretical linkages between the \gls{pct}, \gls{lvt} and deliberative democracy.}
+
+	The \gls{pct}/\gls{lvt}  and deliberative democracy embody and enforce a similar standard of justice as fairness \citep{Rawls-1971}.
+	The \gls{pct}/\gls{lvt} enable the kind of equality on which deliberative democracy relies.
+	The \gls{pct}/\gls{lvt} and deliberative democracy both build, and require deep cooperation.
+&	\pageref{chap:common-grounds}
+&15 -->
+
+
 We need to complicate this simple design only a little bit to bring it close the present study on deliberation and taxation, as shown in table \@ref(tab:commented-toc).
 
 First, let us assume that our M.D. to be presents good reasons to concentrate on a *particular* kind of exercise, say, hatha yoga.
