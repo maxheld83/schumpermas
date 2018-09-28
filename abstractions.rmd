@@ -22,6 +22,11 @@ Administrative complications arise where transactions become complex, or where a
 
 <!-- Finally, @Scharpf1997 even falls for the old social-democratic smoke grenade of "parity" contributions to social insurance, nominally shared by employees and employers, but whose incidence really always falls entirely on labor (all of the above [-@Scharpf1997 30-34] -->
 
+<!-- [^18]: @Offe2003 reminds us that there is no "hyper-rational" answer of a *best* balance between efficiency and equity [-@Offe2003 445]:
+    that is an essentially political question, and should be decided by democratic sovereigns.
+    There are, however, objectively *better* or worse institutional designs under which these trade-offs are made.
+    For example, experts cannot know an optimal progressivity in a tax code, but they may well show that whichever progressivity the democratic sovereign desires will cost less in efficiency under a consumption than an income tax (for example, @McCaffery2005, @Frank2005) -->
+
 ## Optimality
 
 A system is efficient if it maximizes outputs for given inputs.
