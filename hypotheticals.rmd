@@ -325,6 +325,18 @@ Table: Progressive Consumption Taxation of Thrifty Ant, Big Spender Grasshopper 
 
 #### Land Value Tax (LVT)
 
+<!-- %get quote
+
+% via wikipedia on LVT, here's a reason for why govntm evaluation is always bad: Austrian School economist Murray Rothbard later raised similar concerns, stating that no government can fairly assess value, which can only be determined by a free market.[20]
+	%Rothbard, Murray.
+%"The Single Tax: Economic and Moral Implications and A Reply to Georgist Criticisms".
+%The Mises Institute.
+%Retrieved 2009-02-13. -->
+
+<!-- notice in all of this that the flight to illiquidy and the problems that arise for the state are not, in fact, unique to the lvt.
+the pit also has that -->
+
+
 <!-- %note that the LVT may also act as an automatic stabilizer, at least of real estate, because, given the right function, it might curb real estate bubbles.
 %problem:
 %how do we KNOW the unimproved value of land?!? -->
