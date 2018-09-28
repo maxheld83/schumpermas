@@ -20,6 +20,10 @@ or maybe, it would have been, because an external stake/pressure is just realist
 
 <!-- this section also includes some suggestions for improvements -->
 
+<!-- people will see disconnect here between the desired topics, and what actually happened
+this isn't just bad planning, it was by design, because the overarching worry was that people might feel too much in school
+this turned out not to be the case, rather, the opposite -->
+
 After filling out the questionnaire, the topic of the deliberation will be introduced by two moderators, both of which are non-experts in the field.
 The moderators again introduce a simplified version of the above table, and walk participants through the combinations of base and schedule --- including presently used [pit]{acronym-label="pit" acronym-form="singular+short"}, [vat]{acronym-label="vat" acronym-form="singular+short"} and [payroll]{acronym-label="payroll" acronym-form="singular+short"} --- but abstain from causal, or normative statements about these taxes.
 The table will also be prominently displayed on premise for easy reference by participants.
