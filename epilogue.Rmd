@@ -23,6 +23,15 @@ to economize on moral disagreement -->
 > "I like to believe that history is smarter than I am." (Hemerijck, December 10, 2010)
 really?!? I think path dependency is part of the answer why history errs in this case. Before individual (let alone electronic) checking and savings accounts, only an income tax was feasible to achieve some degree of progression. Individual Haig-Simons accounts were simply not available for a large share of the population. In addition, the income tax was, at that point, a powerful tool to get at the supramarginal returns of a capital-owning class. Today, the income tax, or some defunct version of it lingers on for reasons of path dependency. A PCT, indeed, cannot easily co-exist with an income tax. -->
 
+<!-- the libertarian response:
+notice here: this gets dicy.
+maybe, and this would be worthwhile for the epilogue, the fact that we *can't* get taxation right should be taken as indication that it shouldn't.
+mmaybe this really is a pointless illusion, we can't get tax right, at least not at this scale, so we should build political institutions that do *not* in fact rely on this so much.
+these *do* exist; smaller scale, shame, etc.
+not sure I buy this argument, but it's worth pointing out.
+this is the "history really is smarter" part of the argument -->
+<!-- this is also, essentially, the second-bester argument, morphed onto democracy, for which it was not intended -->
+
 
 ## The Great Unravelling: Why we Must Now Embrace Complexity to Avoid a Return to Fascism
 
@@ -141,3 +150,36 @@ What is more, the participating citizens specifically rejected, or were indiffer
 
 To resolve it, I can own up to that inconsistency, revisit my comfortable identity as a biking, vegetarian, treehugging change my behavior and skip the next time- and CO2e-wasting, but ego-enhancing conference (which sucks).
 Al, *or* you resolve it by sufficiently *othering*, say, the people of low-lying Bangladesh, -->
+
+<!-- %Blog post
+	%Fortschritt ist, wenn wir etwas (1) gemeinsam Beschlossenes, Vernünftiges und Gutes erreichen, (2) dass uns freier und gleicher macht, (3) auch gegen Widerstände.
+%Wir müssen uns also zusammenraufen und der Sphinx sagen, welche Antwort sie für uns alle einloggen soll, damit Fortschritt passieren kann.
+%Seit 225 Jahren machen We the People das mit Abstimmungen und Freiheitsrechten.
+%In unseren pluralistischen Demokratien kämpfen Interessengruppen um die politische Macht im Staat.
+%Bürgerinnen verfolgen diesen Wettkampf in der Zeitung, schließen sich, folgend ihren gegebenen Interessen Gruppen zusammen, wählen die ihnen am nähesten stehende Partei — und das ist dann das gute Ende der Geschichte.
+%Oder?
+
+	%Auch auf dem deutschen und europäischen Marktplatz der Ideen sind Dumping-Anbieter unterwegs.
+%Unser Politik-Ramsch kreischt nicht schrill, er lullt uns ein in seiner ganzen, miefigen Mittelmäßigkeit:
+%konzeptionell, rhetorisch, visionär.
+%Wir tauschen keine Argumente aus, denn Basta, es gibt keine Alternative.
+%Wir nennen keine Gründe, denn wir nehmen ja “Augenmaß“, “machen unsere Hausaufgaben” und halten unsere “Hände ruhig“.
+%Was bedeuten diese betäubend-sinnentlehrten Phrasen?
+
+	%Amerika und uns plagt die gleiche Krankheit, in unserem gemäßigten politischen System schreitet sie nur schleichender voran.
+%Es ist eine schlimme Krankheit, bei der sich der demokratische Prozess loslöst von den tatsächlichen Abstraktionen, die unsere Welt regieren und den machbaren Alternativen, die sich unserem Gemeinwesen bieten.
+%Entscheidungen werden bestenfalls im Hinterzimmer verkuhhandelt, meistenfalls gewinnt der Status Quo und schlimmstenfalls diktieren wenige Interessierte.
+%Wir raufen uns nicht mehr zusammen, wir raufen nur noch zusammen.
+
+	%Früher war nicht alles besser, aber manches einfacher.
+%Wenn in den 50er Jahren ein Kumpel für mehr Mitbestimmung die SPD und ein Beamtin für bessere Pensionen die CDU wählten, dann lagen sie damit beide grob richtig, folgten ihren gegebenen Interessen.
+%Wenn 2013 eine Häuslebauerin gegen Eurobonds die CDU und eine Bandarbeiterin für paritätische Sozialabgaben die SPD wählt, dann ist das nicht mehr so klar (vielleicht deshalb und deshalb).
+%(Glücklicherweise) funktioniert unsere Demokratie nicht mehr als Zuschauersport, in dem wir einfach jeder alle vier Jahre das für sich bessere Team wählt.
+%Von den billigen Plätzen ist es einfach verdammt schwer geworden zu sehen, wo das Tor steht.
+%Die weiter hinten sitzen können nur hoffen, dass die Trainer es sehen, die Wahrheit sagen, und das Spiel nicht längst gekauft ist.
+
+	%Ich will nicht Politikerinnen verunglimpfen oder Wählerinnen verhöhnen.
+%Sie tun, wir alle tun das im gegebenen Rahmen Mögliche.
+%Nicht alle Politikerinnen sind schlecht oder alle Wählerinnen dumm, sondern die Institutionen der pluralistischen Demokratie überkommen.
+%Die Komplexität und Ungerechtigkeit unserer Welt passt nicht in eine SPON-Fotostrecke, nicht in 1:30 Tagesschau.
+%Unser Gemeinwesen braucht keine harte aber faire Arena, sondern die Sendung mit der Maus. -->
