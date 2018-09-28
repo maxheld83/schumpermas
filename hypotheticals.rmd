@@ -1,5 +1,7 @@
 # Well-Structured Hypotheticals {#hypotheticals}
 
+<!-- maybe just discuss all the alternative taxes here -->
+
 <!-- \subsection{Impotent Redistribution}
 
 \begin{quote}
