@@ -44,6 +44,31 @@ I guess my thinking evolved
 in a weird, roundabout way, the demands and intricacies of deliberation, much like public choice, show, essentially, that things are way more complicated, that in hayeks works we don't really know shit about designing institutions
 sso maybe, in a roundabout way, they are right -->
 
+<!-- %Dahl "on democracy''
+	% there is normative things, and actualities, or empirical things.
+%We should look at both
+	% democracy and market capitalism are in a mutually reinforcing, but also antagonistic relationship
+	% one of the four essential questions for democracy is how it will continue to co-exist with market capitalism, now that the latter is the only game in town.
+%Also, the inequalities that market capitalism brings, easily translate into political inequality.
+	% one of the possible scenarios of democracy is that it will spread wider (new countries) but become ever thinner.
+	% dahl in his time didn't know what the problem was: we know see a little clearer
+	% he also identifies internationalization as a problem, which makes sense.
+%Tax is at the intersection of the market/state mix and internationalization -->
+
+<!-- %Thought on Kaplan: he is right to note that Shapiro and other proponents for democracy who say that there are no extra-democratic proponents of democracy to compare it against are correct (this is the substantive vs procedural issue).
+%That is tautological, indeed, as Kaplan points out.
+%But Kaplan, too, is tautological, when he accepts that principal-agent problems and other dysfunctions can serve to insulate political institutions and thereby make it better, that is a weak-ass response.
+%He is emptying the bathtub with the baby in it.
+%Kaplan is also himself tautological: panglossian: if you imply that democratic government is corrupted, and therefore, we should resort to market, you are also tautological: by definition, whichever state we observe in the real world, is the best we can get.
+%My key point is: democratic governments and markets must be held to completely different standards.
+%Democratic government must remain to be the one institution that allows deliberate societal change. -->
+<!-- be very careful about this, bit in this conflation (might/right) also is some fascism -->
+
+<!-- %\begin{quote}
+%	\emph{``We've got a bad thing made by men, and by God, that's something we can change.''}\\
+%	--- Anonymous tenant in \emph{The Grapes of Wrath} \citep[38]{Steinbeck1939}
+%\end{quote} -->
+
 <!-- but the libertarian standpoint, loosely speaking, is also empty.
 it sounds very elegant, because it scales, because it alleviates us of the colossal headache that is living as men in the plural (arendt)
 but it is also empty: because it does not problematize were preferences come from, and it as implausible that they can be planned, as that they come ex-nihilo out of nowhere.
@@ -212,3 +237,51 @@ Al, *or* you resolve it by sufficiently *othering*, say, the people of low-lying
 %Nicht alle Politikerinnen sind schlecht oder alle Wählerinnen dumm, sondern die Institutionen der pluralistischen Demokratie überkommen.
 %Die Komplexität und Ungerechtigkeit unserer Welt passt nicht in eine SPON-Fotostrecke, nicht in 1:30 Tagesschau.
 %Unser Gemeinwesen braucht keine harte aber faire Arena, sondern die Sendung mit der Maus. -->
+
+## Second Best
+
+#### Second Best.
+
+Today, maybe one of the clearest Panglossian pronouncements comes under the imposing heading of a *Theory of Second Best*, originally formulated by [@Lancaster1956].
+As so many great economic ideas, this one has strayed far from its original form, and interbred with ideology to father many illegitimate --- and sometimes deformed --- offspring.
+
+In its initial, rigorous formulation, the Theory of Second Best showed formally that if --- as seems likely --- some conditions for the pareto optimality of markets cannot be meet, it might enhance efficiency to allow additional, possibly offsetting deviations from perfect competition elsewhere in the economy.
+Rather than to fight all market failures everywhere in isolation ("piecemeal welfare economics", [-@Lancaster1956 11], @Lancaster1956 suggested that from a general equilibrium view, there may be less demanding *necessary* conditions that could pareto improve the economy, in addition to the often implausible, *sufficient* conditions of perfect competition [-@Lancaster1956 17].
+[@TheEconomist2007] explains it beautifully thus:
+if your optimal cookie recipe requires chocolate chips and coconut flakes, but you cannot find the chocolate chips, your (second) best bet may be to bake gingersnap, rather than chocolate chip cookies without chocolate chips.
+This is the kind of devilish complexity that I allow myself to ignore here, but that policy makers have to consider:
+if, for example, research and development are so prohibitively expensive that we absolutely cannot profitably have more than one manufacturer of wide-body aircraft, our (second) best policy may indeed be to stray further from neoclassical doctrine, and to keep subsidizing *The Boeing Company* and *Airbus SES*, so that we can have at least have ourselves a decent, somewhat competitive, duopoly.
+There is nothing Panglossian about such hard choices because, it is, in fact, *materially* impossible to develop dozens of competing wide-body designs.
+Because for the social sciences --- as for moral philosophy --- *ought implies can*, the second-best of the subsidized Boeing/Airbus duopoly also needs no social scientific explanation.
+This *really* is collateral damage to a worthy cause.
+
+After [-@Lancaster1956], however, the Theory of Second Best as slowly morphed into a general skepticism of state intervention, it is now name-dropping "proof" of its *ipso-facto* futility and serves as welcome absolution for the demise of the mixed economy.
+@Wolf1987 [@Wolf1979], for example, argued that because governments fail, just as markets do, the second-best response to such market failures may be to just let them be.
+You can take this argument to merely logical extremes, and throw out government and democracy altogether.
+[@Leeson2009], for instance, wonders whether in some (developing economies) settings, anarchy may not be preferably to predatory statehood, whether, in other words, no state would not be second-better than an inevitably failing government.
+[@Caplan2007], in an otherwise thoughtful book, seems to suggest that because voters are so invariably rationally irrational, markets may be second-better than democracy altogether.
+
+This has very little to do with the rigorous argument presented by @Lancaster1956:
+he did, at least in [-@Lancaster1956], never consider a constrained government, let alone an incapacitated democracy to be grounds for "second-besting", but, instead even seemed to hope for a government and people powerful and wise enough to heed his call.
+
+This is Pangloss at his finest:
+if you assume, as modern-day second-besters do, that the very *means* to deliberately get to a better world --- government and democracy --- are inevitably flawed, you can show, with almost hermetic logic, that whatever world we find ourselves in, must be the best of all *possible* worlds.
+
+In that word --- possible --- lies the catch.
+Modern-day second-besters assume that, akin to markets and evolution, government and democracy are *aimless* processes that merely aggregate pre-social, more- or less rational self-interest.
+If government and democracy are aimless, it follows --- as it does, in fact, follow for markets and evolution --- that any positive results of government and democracy are beyond reproach, and beyond improvement.
+Government failures, as monopoly pricing or an appendicitis, are just *facts*.
+
+Enlightenment, the mother of modern science, did not consider democracy, a merely *positive* affair, but a normative prescription.
+[@Kant1785] asked us not to "follow your incentives", but to "act only on that maxim through which you can at the same time will that it should become a universal law" [-@Kant1785 Chapter 11](*ibid.*.
+The US Constitutional Convention in 1787, did not just decide to try out this new [fptp]{acronym-label="fptp" acronym-form="singular+short"} way to aggregate preferences, but "We the People" were to do so "in Order to form a more perfect Union".
+In a free society, social scientists need not believe in these, or any other ideas, but if they reject them all, they deserve not the air of scientific sophistication in which they cloak their utter cynicism.
+As mere accountants of the status quo, their work is anathema to Enlightenment, and they ought to be disowned of the emancipatory heritage that the social sciences were endowed with.
+
+But ignoring, for now, the enlightened humanism that comes part and parcel with the social sciences, the logic of modern-day second-besters is also simply fallacious.
+Even if government and democracy turn out to inevitably disappoint, such flaws are *not*, to the social scientist, quasi-material constraints.
+Because government and democracy *are* the subject matter for the social scientist, she must not presume, but has to *explain* them.
+If we do, as the second-besters, exclude from the first-order alternatives to be explained by second-order theory, those alternatives that the political process *may* corrupt, we have thereby conflated first and second-order theory.
+Whatever second-order theory might have to tell us about a corrupted political process, we would never learn, if we did not test for the absence of first-best solutions.
+This Frankenstein variant of the Theory of Second Best confuses, as [@Brubaker-2002-aa] succinctly criticized the literature about ethnic conflict, the "empirical data" with our "analytical toolkit":
+government failure is "what we want to explain, not what we want to explain things *with*" [-@Brubaker-2002-aa 165, emphasis in original].

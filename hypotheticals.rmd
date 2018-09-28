@@ -10,6 +10,49 @@
 	%add correct citation
 \end{quote} -->
 
+<!-- %Ingolfür Blühdorn (2007: 313) writes:
+%“Politicization is the realization that established social norms, social practices, and social relations are contingent rather than sacrosanct, that things could also be different and that citizens, individual and collectively, have political agency by means of which alternatives can be explored and implemented.
+%This recognition that things could also be different has always been the igniting spark of the emancipatory-progressive movements, and politicization has always been their key strategy.”
+%In this thesis, I want to politicize the abstractions and politics of tax.
+%This is a normative prescription, but it is also of analytical value.
+%If there is indeed another, superior fiscal configuration out there, its absence needs explaining.
+%Such an explanation can inform the welfare retrenchment debate, and, possibly, the broader condition of the (pluralist) political economy. -->
+
+
+<!-- %As any positive methods curriculum teaches: it is just as important to explain why the observed outcome has occurred as it is important to explain why an unobserved outcome has not occurred.
+%Only then, if at all, can positive social science capture the causal dynamics of our present day (for a methodological appraisal of the hypothetical, see \citealt{Fearon1991}). -->
+
+<!-- %When \emph{feasible} trumps \emph{desirable} too often and too readily, policy analysts become preference falsifiers \citep{Kuran-1995-aa}, caught up in their own \emph{Spirals of Silence} \citep{Noelle-Neumann1993}. -->
+
+<!-- %why don't we have it?
+	%Because it may not be better?
+		%requires general equilibrium modeling, utility functions
+		%depends on a number of axioms
+	%how would it be specified, implemented
+		%requires ge model, utility functions
+		%modeling grunt work
+	%there is an international cooperation problem!
+		%requires general equilibrium model, utility functions, game theory
+	%domestic, political dysfunctions prevent it!
+	%maybe: path dependency, game theory, veto playing, principal agent
+	%because people do not want it!
+		%survey research, vignette research, experimental economics -->
+
+<!-- %[ ] Tetlock/Belkin about hypothetical
+%[ ] Morgan Winship on hypothetical -->
+
+
+<!-- %\begin{quote}
+%	\emph{``It is demonstrable'' said he,``that things cannot be otherwise than they are; for as all things have been created for some end, they must necessarily be created for the best end.
+%%Observe, for instance, the nose is formed for spectacles; therefore we wear spectacles.
+%The legs are visibly designed for stockings; accordingly we wear stockings.
+%Stones were made to be hewn and to construct castles; therefore my lord has a magnificent castle; for the greatest baron in the province ought to be the best lodged.
+%Swine were intended to be eaten; therefore we eat pork all year round.
+%And they who assert that everything is right, do not express themselves correctly; they should say that everything is best.
+%	''}\\*
+%	--- Dr.~Pangloss in Voltaire's novella \emph{Candide} (\citeyear{Voltaire1759}: K125).
+%\end{quote} -->
+
 <!-- %Note that what Ganghof + Scharpf 2004:
 %37 is incorrect in their treatment of capital incomes.
 %They are actually taxed, when they are consumed, given that the tax is cash-flow based (dissavings count!).

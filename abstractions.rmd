@@ -10,7 +10,17 @@
 Economic and administrative complications beset taxation and easily effect undesirable, unintended consequences [@Merton-1968-aa].
 Economic complications arise where market participants interact with tax policies.
 Administrative complications arise where transactions become complex, or where axiomatically assumed in real life (page ). -->
+<!-- 
+\begin{quote}
+	%\emph{``Abstraktion, das Denken in Systemen wurde durch das jeweils Unmittelbare, das Pragmatische ersetzt.
+%Damit haben sich die sozialdemokratischen Parteien Zug um Zug desavouirt.''}\\
+	\emph{``Abstractions, thinking in systems has been replaced by the immediate, the pragmatic.
+	This is how the social democratic parties have disgraced themselves.''}
+	\\*
+	--- Herbert \citet[41]{Schui2009}
+\end{quote} -->
 
+<!-- Finally, @Scharpf1997 even falls for the old social-democratic smoke grenade of "parity" contributions to social insurance, nominally shared by employees and employers, but whose incidence really always falls entirely on labor (all of the above [-@Scharpf1997 30-34] -->
 
 ## Optimality
 

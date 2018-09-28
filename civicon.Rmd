@@ -26,6 +26,60 @@ I here propose to investigate a supposed difference in current, and (more) ideal
 %	\item equal consideration of all arguments, regardless of which participant offered them \cite[K1799]{Fishkin2009}.
 %\end{enumerate} -->
 
+<!-- %A Normatively Desirable, Hypothetical Political Process:
+%Deliberative Democracy
+
+%Hendriks 2005 94 writes in his cautionary note that plannung cells and consensus conferences are best suited for issues that are publicly significant and relevant to the lives of lay citizens.
+%P
+
+%And yes, already, (Warren - Pearse 15) it was gamble as to whether the people could learn enough and overcome initial variations in competence
+
+%Cite Eliasoph on why we need a big ass issue; not a small scale issue.
+%You're leading to despondence.
+%Quote early passages of Eliasoph.
+%Also argue with Eliasoph "Charles said …" that by all means trying to CHANGE things, and only discuss things you can change, has drawbacks.
+
+
+%random quotes from BOGGS against beans-n-rice democracy
+	%The focus on the immediate, tangible, can also be understood as a deliberative way of "anti-statism" that Boggs 1997 rightfully deplores, particuarly anti-statism in the public sphere: we need to understand also the big bureaucratic machine of the state and capitalism.
+%Not just the immediate.
+%Boggs explicetly cites that the anti-statism sentiment also comes from and resonated "within the new left, the counter-culture, somprogressive movements" (Boggs 1997: 751).
+%Boggs also hypothesizes that this revolt agaianst politics may have a stretegic value in a period of global interdependence and worsening social crisis (Boggs 1997: 752).
+
+	%Boggs 1997: 759 criticizes this: "Those new forms of empowerment and identity that have been carved out are mostly confined to the realm of neighborhood and locale".
+%"The pursuit of human-scale democracy, motivated by progressive designs, thus moves in a defensive and insular direction, laying bare a process of conservative retreat beneath the facile rhetorik of grassrppts activism".
+
+	%Boggs again 1997 760 agrees that manu eenclages do function to challenge the status qup, but, in Plotkin's words "With its characteristically defensive, exclusionary, and reactive character, the resulting politics is a 'geopolitics of local community' in which 'deterrence, counterforce, holding ground, securing borders, flanking maneuvers and standing fast' are 'central organizing concepts'.
+%Each enclave becomes a mini fortress.
+
+	%Compare to this the Porto Allegre praising of increased localized identity.
+
+  %There are different solutions to the problem of failing democracy and mixed economy, and they all fall short.
+  %The small-scale deliberation suggestion ends up being beans n rice democracy, no large scale projects or abstractions.
+  %Same thing for civil society or NGOs or whatever for economic production.
+  %On the democracy side, Kaplan's solutions for both problems is to make it more like markets, but for tax, that doesn't exist, as it does not for some of the other big government jobs.
+  %You can't outsource tax to markets.
+
+%Deliberative Democracy (for example, Cohen 1989) is an alternative prescription for the pluralist political process in liberal democracies.
+%It promotes egalitarian, inclusive, well-reasoned and civic-minded discussions for (possibly) consensual political decision-making.
+%Its normative theory draws heavily on Habermaas’ (1984) concept of communicative action and Rawls’ (1971) “Theory of Justice” as fairness.
+%Where pluralism encourages the representation of particular interest, deliberative democracy demands (alternative!, Cohen 1989: 18) conceptions of the common good.
+%Where pluralism aggregates given, pre-social preferences, deliberative democracy is all about forming preferences.
+%Where pluralism assumes individual voter error to balance out, when errors are random (Page and Shapiro 1993, Surowiecki 2004), deliberative democracy insists on perfecting the deliberators understandings.
+%Deliberative Democracy has been implemented mostly in local settings on policies of limited scope (Fung 2003, Hendrickson & Tucker 2005), a limitation for which it has been criticized (Fung & Wright 2001: 17).
+%Some attempts at deliberating regional issues of greater  complexity have been made, including a ‘Citizens Assembly’ on electoral reform in British Columbia, Canada  (cf.~Ratner 2008).
+%Deliberative Polling ® (recently Fishkin 2009), the ‘Gold Standard’ of deliberative fora (Mansbridge 2010: 55), combines skillfully moderated small and plenary group discussions , rigorously vetted, balanced briefings and experts with pre-treatment, post-treatment and control group opinion surveys into a quasi-experimental design.
+
+%Crouch 2004:3 ``It is an ideal model, which can almost never be fully achieved, but, like all impossible ideals, it sets a marker.
+%It is always valuable and intensely practical to consider where our conduct stands in relation to an ideal, since in that way we can try to improve.
+%It is essential to take this approach to democracy rather than the more common one, which is to scale down definitions of the ideal so that they conform to what we easily achieve.
+%That way lies complacency, self-congratulation and an absence of con- cern to identify ways in which democracy is being weakened.'' this is a good quote, works well with normative hypothetical.
+
+%Crouch 2004:3 ``A similar approach is dominating con- temporary thinking.
+%Again under US influence, democ- racy is increasingly being defined as liberaldemocracy: an historically contingent form, not a normative last word (see the critical accounts of this in Dahl 1989 and Schmit- ter 2002).
+%This is a form that stresses electoral participa- tion as thee main type of mass participation, extensive freedom for lobbying activities, which mainly means busi- ness lobbies, and a form of polity that avoids interfering with a capitalist economy.
+%It'' -->
+
 <!-- %a dysfunctional, if hegemonic, political process.
 %In their proposal for \Empowered Deliberative Democracy" Fung and
 %Wright (2001:

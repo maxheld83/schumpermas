@@ -2,6 +2,29 @@
 
 # A Tale of Three Crises {#crises}
 
+<!-- %So \emph{really}, is all ``for [\ldots] the best [\ldots] in the best of all possible, [liberal-democratic, capitalist] worlds''  (\emph{ibid.}: K428ff).
+%
+%Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism.
+%Since industrialization set on in his age, the developed economies have grown annually by initially 1.3\%, then 3.1\% in GDP per capita (\citealt{Easterlin2000}: 10f), prospering as no human society ever has \citep{DeLong1998}.
+%Since enlightenment dawned at his time, the established democracies have fostered peaceful mass participation and liberal democracy continues to proliferate \citep{Huntington-1991-aa}.
+%
+%But Candide, Voltaire's hapless title character and Pangloss' na\"{i}ve student, might still stumble into misfortune, and despair over the hardship of (some) contemporary lives.
+%In the richest of countries, he might be dismayed by growing poverty (for example, \citealt{Bundesregierung2006} for Germany, widening inequalities of wealth and income (for example, \citealt{Grabka2007a}: 138 for Germany, \citealt{Bucks2006} for the US), crumbling public services and state budgets in crisis or default.
+%In the richest of times, he might be troubled by the dark shadows of global warming (for example, \citealt{Stern-2006-aa}), aging populations (for example, \citealt{Demeny-2003-aa}: 2, \citealt{Borsch-Supan2000}) and stalled productivity %add source
+%looming over our long-term prosperity.
+%\marginpar{Include other, OECD-wide sources.} In the oldest of republics, he might be repelled by distorted debates and decision-making deadlocked %add source,
+%and in the finest of democracies, he might be frustrated by ill-informed \citep{Delli-CarpiniKeeter-1996-aa}, ignorant, %add citation
+%irrational \citep{Caplan2007} and dissatisfied voters \citep{PutnamPharr-2000-aa}.
+%
+%Candide's puzzled lament, in the novella as in the real world, does not lead anywhere.
+%He does not specify what would mark a better world, does not consider what limits may govern the real world, and suggests no path to progress.
+%Such discontent without alternative is impotent.
+%
+%But Pangloss' unwavering affirmation of the status quo does not lead us anywhere either.
+%He, the (satirized) learned scholar, does not so much``admirably prove[\ldots] that there is no effect without a cause'' (\citealt{Voltaire1759}: K36) but mindlessly naturalizes the existing state of affairs.
+%He disavows alternative or even better worlds and thereby fails to explain the cause for their non-effect and betrays the humanist calling of science.
+%Such analysis without alternative is fallacious and amoral. -->
+
 <!-- %if you'd want to hide injustice, you'd best do it in a really complex system, like tax. -->
 
 <!-- % offe:
@@ -46,6 +69,32 @@ you need some kind of a question.
 if this were in fact all completely "normal", and just the way things are, then there's no need.
 so going back to the ideal-typical formulation of these institutions, no matter how much they were ever attained in the real world, is an exercise in policisiation.
 The empirical record, is only used to cursorily *illustrate* these claims. -->
+
+<!-- %Genschel 200 deutscher Artikel
+	%Both the sceptics and apologetics of the race to the bottom are wrong.
+	%There is indeed no empirical evidence for a race to the bottom \ldots
+	%\ldots but that is not because of no competition, but because there is at the same time a need for greater state spending and the inability to tax other things (labor, consumption, indirectly) without doing great harm
+	%results are: labor and consumption don't flee the country, but you get unemployment and a shadow economy.
+	%the above is all p 268
+	%I think it is wrong to assume great unemployment to be "given", it is rather caused by the inability of the state to tax other stuff.
+	%Genschel 2000 269 points out that present tax regimes are historical artefacts, from a time of closed borders.
+	%two assumptions overall: taxation would decrease, but also: relocate to less mobile things (labor, consumptioN)
+	%Genschel finds: total tax stayed the same, but expenditures grew faster than revenue, hence public debt
+	%There is a fundamental problem with Genschel's argument. -->
+  <!-- %and also: procyclical, hits labor intensive service industry, with high price sensibility in particular (you won't go to the restaurant)
+  	%Please mention that taxing capital, in and of itself, is also problematic in welfare terms.
+  %It's not the perfect tax, because we want capital accumulation.
+  	%Mention Genschel's treatment of intelligent tax-evasion through intra-company strategies.
+  	%Genschel 1999 is hopeful about ways to resolve the prisoners' dilemma.
+  	%repeated games, shadow of the future
+  	%institutions
+  	%transparency, monitoring
+  	%but again, they say: it may not be a defection problem, but zero-sum distribution between small and large states
+  	%my bottom line: empirical pictures are always messy, complicated.
+  %But still, if you introduce a normative hypothetical, it is obvious that really, the situation is quite dramatic.
+  	%Genschel calculates how large the coalition would have to be (421)!
+  %his is awesome!
+  	%note later comparison to trade union theory and trade creation vs.\ trade diversion -->
 
 <!-- 
 why so careful, one might ask?
@@ -186,6 +235,58 @@ Whichever way governments now turn, absent better tax, they will violate the pos
 %It's fucked up, but systematically so.
 %Edit
 -->
+
+<!-- %%For an example of a deeply flawed hypothetical, take the optimist view of Duane \cite{Swank-2005-aa}.
+%Optimists cite empirical findings suggesting that in fact, neither welfare nor public sector spending (!) has generally decreased, that even small, open economies (like Sweden) have been able to maintain high levels of social protection and that rather than across-the board dismantling of welfare, huge variations between regimes prevail (note the complete absence of a hypothetical in this argument).
+%Duane \cite{Swank-2005-aa} finds that there is no significant relationship between trade and capital movement liberalization and unemployment, sickness and pension income replacement (decommodification) within the OECD world.
+%She suggests that this is so because of effective political left-right competition and hints that in cooperative varieties of capitalism \citep{HallSoskice-2001-aa}, capital (employers) may actually favor extensive welfare. -->
+
+<!-- why not concentrate on SPENDING?
+%Here's an interesting example of a missing hypothetical.
+%\cite{Kenworthy2008} as well as the autistic guy who visited BIGSSS in spring/summer 2011 said that it's all about the spending, not the taxation.
+%Kenworthy gives empirical support to this; but while there might be some truth to this, it's also evident, that we might have selected on DV: it's hard to see distribution through taxes, when taxes is exactly so broken.
+%That was the whole point.
+
+%  1.
+%in the welfare retrenchment and tax competition literature I thought, what was missing was a normative hypothetical of open, but high-tax economies.
+%Absent this hypothetical, I thought, the question of whether or not economic liberalization, denationa ization or whatever constrained and retrenched the welfare state was impossible to answer.
+
+%  2.
+%in tax, an obsession with a postpaid, cash flow based Progressive Consumption Tax (PCT, prominent formulations by Seidman, Graetz and McCaffery full references are in my thesis).
+%I wondered: could this be the The Perfect Tax?
+%And if so: why don't we have it?
+%I brought these two interests together by developing the PCT into an alternative, normatively superior fiscal configuration which is the normative, hypothetical hypothetical against which to benchmark the reality of modern (rentrenched?, denationalized?
+%welfare states). -->
+
+
+<!-- cite swwank in the context of the backstops: this is what happens when you don't think about the backstops -->
+<!-- %First, relatively straightforward methodological problems question the validity of the empirical evidence cited by the optimists, particularly by Duane Swank (2005).
+%Welfare regimes are institutions for redistribution and risk-pooling.
+%To investigate the impact of globalization on welfare regimes, it is then necessary to measure to which degree welfare states are still able to fulfill these functions, particularly redistribution.
+%Swank, however, looks at income replacement and others at spending.
+%Obviously and at minimum, public debt and deficits would have to be included in the analysis to warrant the conclusions drawn from the evidence.
+%In the short run, welfare states can – and under political pressure likely will – maintain high benefits even in the absence of sufficient revenues by postponing these costs to future generation.
+%Economic denationalization may reduce the ability of a state to tax and redistribute, not to (over)spend, at least in the short run and under sound monetary policy. -->
+
+<!-- %Note that what Ganghof + Scharpf 2004: 37 is incorrect in their treatment of capital incomes.
+%They are actually taxed, when they are consumed, given that the tax is cash-flow based (dissavings count!).
+%Consider the Haig-Simons.
+	%This is a widespread misunderstanding of the PCT, particularly with regards to its evil twins.
+	%Contact Ganghof + Scharpf about this mistake! -->
+
+<!-- %there is a war between those who say there is a war and those who say there is not.
+%Cohen. -->
+
+<!-- %Gesnchel 2005
+	%53 brilliantly right: "The effect (of globalization) is not so much to force change upon the tax state as to reduce its freedom to change"
+	%Schumpeter indeed: "the revenue of the state is the state" (53
+	%genschel 60 also points to the problem of multinationals: where to tax them and on what?!?
+	%make a bigger argument about why taxing corporations is a bad idea: they are not natural persons, they don't need to be progressive or can they.
+%The story of tax evasion and tax avoidance, frequently with firms with no people in off-shore havens goes to show the futility of this exercise: on which fundamental basis is a firm supposed to be taxed?
+%location?
+%of what?
+%As Genschel puts in the Glaxo (marketing vs.\ R+D argument) argument "It also implies that any national claim to a particular share of Glaxo's profits is hard to justify on the basis of principle." (61 genschel 2005).
+%Expand this argument to the issue of progression. -->
 
 <!-- ## Ganghof 2007
 
@@ -1800,3 +1901,145 @@ These two crises --- an ineffective and/or inefficient welfare state and a confu
 > My central contentions are that while the forms of democracy remain fully in place --- and today in some respects are actually strengthened --- politics and governments are increasingly slipping back into the control of privileged elites in the manner characteristic of pre-democratic times;
 > and that one major consequence of this process is the growing impotence of egalitarian causes.
 > --- Colin @Crouch2004 [6]
+
+
+## Critique of the Literature
+
+<!-- On that count, some of the literature falls short:
+it fails to bring the @Mills-1959-aaian sociological imagination and @Keynes1936ian economic abstraction to bear on the nitty-gritty empirical data of and other welfare reform, to even discern the offense to the post-war social contract.
+
+This blithe ignorance comes in at least four different flavors, that I here summarize as follows: -->
+
+<!-- 1.  *TINA*-flavored literature holds that the mixed economy expired unavoidably and therefore, requires no further investigation.
+    For TINAs, the mixed economy is not murdered, but dies a natural death.
+
+2.  *Pangloss*-flavored literature accepts possible alternatives to death, but assumes that, axiomatically, it was the best possible course of action, and therefore acquits any possible suspect.
+    For modern-day Panglosses, the defunct mixed economy is collateral damage to a worthy cause.
+
+3.  *Newsspeak*-flavored literature shrouds itself in impermeable and misleading language.
+    For newsspeakers, the mixed economy is not dying, but just "restructuring" into less complex organic compounds (known as "decay" in oldspeak).
+
+4.  *Bystander*-flavored literature abstains from judgment, or even conclusion.
+    For bystanders, it may or may not be murder, but it's none of their business. -->
+    <!-- ### TINA
+
+    > *"There \[...\] is no alternative."*\
+    > --- Margaret Thatcher (London, 1980)
+
+    TINA is hardly observed directly in the literature, if only because, as a political strategy, it aims to "veil the essentially political character of political decisions" [@Bluhdorn-2007-aa 314], and therefore, will not even explicate itself.
+    The purported lack of alternatives, mostly, asserts itself not by negating existing alternatives, but by ignoring them. -->
+    
+
+Welfare regimes are, as [@Esping-Andersen-1990-aa] has said, systems of stratification in themselves, and they have been, from the very beginning socialist demands in the 19th century more than epiphenomenal income replacement.
+They are tools to socialize the costs of painful, but welfare-enhancing @SchumpeterSwedberg-1942-aaian economic transformations as well as individual hardship and serve as engines to redistribute this very welfare as the legislator wishes.
+The indeed quintessential and highly political question for globalization and welfare entrenchment is then, whether the state can *still* (or ever could) socialize and redistribute as it wants, with no limitations resulting from the behavior of other states.
+Welfare state sustainability then has to be pitted not against past or current performance, but against a hypothetically desired welfare regime under global trade with global redistribution, both within and between countries.
+In game theoretic terms, to gauge how badly welfare-depressing defection is, you first have to calculate the payoff for mutual cooperation.
+In the global context, this certainly requires quite a bit of political imagination, something that political scientists, it appears, like to shy away from.
+Even leaving normative considerations aside, in this case, academic rigor alone requires such exercise.
+
+If welfare states can be well or poorly designed mixed economies, achieving different outcomes, we should also judge its prospects by comparing actual or evolving regimes to such hypothetical, but possible and desirable configurations.
+That is a very different question than testing whether welfare states en- or retrench, let alone its spurious correlates of income replacement [@Swank-2005-aa] or even spending [@Kleinman2002 24], and a question that would deeply unsettle Pangloss.
+As @Offe2003 reminds us:
+
+> "The mode in which welfare state institutions change can be explicit reform and retrenchment.
+> But it can also be inconspicuous and gradual decay.
+> For instance, people may defect from public health and pension systems, trade unions see themselves forced into single-employer concessions bargaining, workers resort to unprotected forms of pseudo self-employment in order to avoid social security dues, if not to illegal ("black") forms of employment."\
+> --- @Offe2003 [364]
+
+@Genschel2005, too, reminds us of what Pangloss would rather have us forget:
+"The effect \[of globalization\] is not so much to force change upon the tax \[and thereby, welfare\] state as to reduce its freedom to change.\" [-@Genschel2005 53].
+This is why political scientists such as [@Pierson2002; @Pierson1996] that assume institutional constraints (for example, veto points, @Tsebelis-2002-aa) to only work to *prevent* retrenchment, are wrong:
+the very same constraints that may prevent or delay nominal cuts will also make it harder for welfare states to *adapt* to, rather than just to recede in the face of changing economic and demographic circumstance.
+Nondecision does *not* "generally favor the welfare state" [@Pierson1996 174].
+While the welfare state might nominally have retrenched only "cautiously" [@Pierson1996 174], the ground underneath it has shifted, leading to a much graver de-facto change of positions:
+it can no longer expand or react, relies on unsustainable deficits or real dissavings and must make do with growing inequality, and sometimes, structural unemployment, non of which @Pierson1996 even mentions.
+
+To shake off Pangloss, and see clearly the demise of the welfare state, we must ask three new questions, that so far, much of the retrenchment literature has shirked:
+
+1.  What, *given* a hypothetical, intact mixed economy, would welfare states be capable of, if their democratic sovereigns wanted it?
+    This is a question that, absent natural experiments on the matter, cannot be subjected to straightforward positive test, because precisely such a hypothetical, intact mixed economy does not exist.
+    Still, we must compare actual to hypothetical regimes, to find out just how constrained actual welfare states may, or may not be, by whichever second-order process we subsequently propose.
+
+2.  What is the highest possible trade-off between equity and efficiency that an intact mixed economy can offer their democratic sovereigns?
+    As I have argued in the above, better-designed mixed economies face less harsh --- or even no --- trade-offs between equity and efficiency than worse-designed mixed economies.
+    The price for an additional increment of equity in efficiency (or vice versa) not only varies at the margin,
+    [^17]
+    but it also varies depending on the set-up of the mixed economy.
+    For example, a highly progressive tax on consumption may allow same or greater equity at a much lower price than a compressed tax on labor income.
+    [^18]
+    More broadly, @Ganssmann2010 has proclaimed the Scandinavian welfare state as the "winner" to achieve higher levels of *both* equity and efficiency [-@Ganssmann2010 343].
+
+    Amongst these higher trade-offs between equity and efficiency, there may, additionally, be local optima of equity-efficiency mixes, complemented by quite distinct institutional constraints and --- somewhat related --- path dependencies, ranging as wide as educational systems and industrial relations.
+
+    I have here mostly ignored these *Varieties of Capitalism* [@HallSoskice-2001-aa]
+    [^19]
+    They, too, are important detail.
+    They strongly suggest that there may not be *one* universal mixed economy design, but that quite different designs might coexist and specialize.
+    Still, also within *each* of these varieties, there are again different trade-offs between equity and efficiency.
+    Interestingly, the institutions that @HallSoskice-2001-aa identified as markers of [cmes]{acronym-label="cme" acronym-form="plural+short"} and [lmes]{acronym-label="lme" acronym-form="plural+short"} do *not* mention variants of tax, social insurance or any of the other key welfare state institutions.
+    While [cmes]{acronym-label="cme" acronym-form="plural+short"} may correlate with, and are often conflated with Bismarckian welfare states, there is nothing about [cmes]{acronym-label="cme" acronym-form="plural+short"} that would make them necessarily rely on, for example, labor income-backed social insurance.
+    Of course, the variant of capitalism will be reflected in the nitty-gritty of welfare state institutions:
+    for example, the statuses originally maintained by Bismarck are, arguably, related to the categorical groups that [cme]{acronym-label="cme" acronym-form="singular+short"} educational systems create, or [cme]{acronym-label="cme" acronym-form="singular+short"} industrial relations are organized around.
+    This institutional spill-over notwithstanding, I would hypothesize, that [cmes]{acronym-label="cme" acronym-form="plural+short"} and [lmes]{acronym-label="lme" acronym-form="plural+short"} might be able to achieve equally high trade-offs between equity and efficiency, even if the institutional implementation may vary:
+    for example, [cmes]{acronym-label="cme" acronym-form="plural+short"} might continue to sport extensive job protection, while [lmes]{acronym-label="lme" acronym-form="plural+short"} will allow quick "hire and fire", potentially complemented by generous unemployment benefits (as in "flexicurity").
+    Allocative results, either way, may be very similar, which is my point here.
+
+    Even carefully crafted positive research into changing welfare states currently looks, at best, at cross-sectional or longitudinal variation in social transfers as a percentage of output [for example, @Ravenhill2005 249].
+    This is much better scholarship than the naysayers who like to look only at absolute spending or income replacement, but still, it does not tell us how good a trade-off we are getting.
+
+    To gauge the *level* of trade-off between equity and efficiency available to democratic sovereigns, the retrenchment debate has to look at allocative *results*, not at transfer flows, that is, at inequality (for example, Gini-coefficients) and growth (preferably measures more comprehensive than [gdp]{acronym-label="gdp" acronym-form="singular+short"}).
+
+    Out of logical necessity, if nothing else, welfare state retrenchment, inequality and growth are *one question*.
+    The compartmentalization of these into different academic areas allows not, as one would hope, greater theoretical clarity but instead confuses and waters-down concepts.
+    If "welfare" is to mean anything, surely, it must be the ability of states to alter allocative *results*, and to do so at a minimum, or democratically acceptable price in efficiency.
+
+    Consider the alternative research designs, that currently predominate.
+    If income replacement stays the same [@Swank-2005-aa], but, realistically, incomes become more unequal and states more indebted, is that evidence of a non-retrenched welfare state?
+    If transfer volumes rise absolutely, or stay constant relative to output [@Ravenhill2005], but, realistically, ever more people rely on ever smaller transfers, all paid for the labor-incomes of an already squeezed middle class, is that evidence of a non-retrenched welfare state?
+    Surely, just external validity requires more extensive operationalizations.
+    The best, theory-driven operationalization of a non-retrenched, welfare state is the intact mixed economy.
+
+3.  How well does the welfare state work as an entire system of production and distribution, that is, as a mixed economy?
+    This is a very different question from those based on a traditional, more limited definition of the welfare.
+
+    @Offe2003, for instance, takes pains to remind readers that welfare states have nothing to do "with equality of outcomes', neither normatively nor positively", that "the guiding principle of principle (...) is the security and protection of workers, not equality" [-@Offe2003 450].
+    This is a historically accurate definition, but it is no longer an externally valid conceptualization of welfare states, if the term is to be more than an empty hull devoid of positive reality and economic possibility.
+    "Welfare states as worker protection" is not [mece]{acronym-label="mece" acronym-form="singular+short"} any more.
+    By this definition, an economy, or rather, sectors thereof would be classified as a "welfare state", in which poorly qualified workers are nominally protected, but either structurally unemployed because their gross wages are higher than their productivity, or live in working poverty, ever unable to participate in the riches of the wider economy.
+    To the people working in cleaning or security in Germany today, such a definition would not have a lot of face validity.
+    The labor market for poorly qualified workers in Germany is then, at the same time, evidence of a welfare state and evidence of a non-welfare state.
+    Conversely, by the traditional definition, an economy, or rather a sector thereof with no nominal protection, but generally high compensation and little economic hardship, would be classified as a non-welfare state.
+    For example, freelancers in management consulting, earning handsome but unsteady labor (!) incomes, but equipped with enough assets to weather rainy days, surely do not enjoy welfare state protection.
+    Still, at face validity, they also do not exactly suffer from Manchester style laissez-faire.
+    Under the traditional definition, they reality is neither welfare-state, nor non-welfare state.
+
+    @Offe2003 might, asked about the plight of German cleaners, point to a leak in the "Keynesian" roof of full employment, protecting the lower storeys of welfare states.
+    Today, full employment is only a necessary, but not a sufficient condition for an intact roof.
+    In fact, full employment might always have been merely necessary, and we were just lucky that in the past, all other necessary conditions were mostly met.
+    To stay in @Offe2003's elegant metaphor, the welfare state house is facing much harsher weather.
+    For example, severe crosswinds of rising income inequality (for example, winner-take-all, efficiency wages) diverging factor returns (for example, Stolper-Samuelson trade), threaten to further drive apart the different economic strata making up the house, threatening to tilt the building.
+    In addition, international tax competition, but also home-made dysfunctions are eating away at some of the load-bearing walls, putting enormous stress on the few remaining walls and the (already struggling) people making it up.
+    If all we care about in this house is whether the roof is still tight against cyclical unemployment, the structure will not stand much longer.
+    If the house of the welfare state is to survive the throes of economic transformation, it needs strong cross-beams, to re-balance the load of its stories.
+    These cross-beams are progressive redistribution, and we measure their solidity by looking at overall inequality.
+    Today, if not always, the ability of a mixed economy to efficiently curb runaway inequality is the *sine qua non* of welfare states, too.
+
+    This is not new to [@Offe2003], who also includes "monetary, fiscal, trade and economic policies" in the roof [-@Offe2003 543].
+    However, he seems to neglect that consequently, the different stories of welfare protection *cannot* be organized (financed) irrespective of overall inequality:
+    if, for example, the fiscal shingles are to remain intact, the protection schemes must charge those most who can best afford it and in a way that will least affect them.
+    [^20]
+
+    Surely, Pangloss would already despair over [@Offe2003]'s insistence on a full-employment protecting roof.
+    But with inequality, we can and should ask him an even harder question that might reveal his unreasonable optimism in starker colors.
+
+    In addition to these functional reasons, there are normative and empirical reasons to demand of welfare states worthy of the label to, at least, be able to curb inequality.
+    Normatively, it seems questionable to constrain the surely emancipative agenda that once endowed welfare states to worker protection.
+    That's quite little to ask of Pangloss.
+    Empirically, we know that people care about *relative* differences in access to resources [@Frank2005], that they suffer from *relative* inequality [@Pickett-2009-kx].
+    If we are welfare state researchers and, as humanists, care about the human outcomes of institutions, maybe more than evident at Bismarck's time, today inequality *is* that relevant outcome, even if and to the extent that absolute material security is achieved.
+    
+    To do meaningful second-order, sociological or political science work on the welfare state, you first have to do some first-order, economic work, if nothing else, because it lets us talk about welfare as if people mattered:
+
+    > *"In the first instance, we are interested in the welfare state because we are interested in human welfare."*\
+    > --- @Haggard2009 [236]
