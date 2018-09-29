@@ -1500,3 +1500,117 @@ Citizen Jury (medium n): Crosby, N., & Nethercut, D. (2005).
 	- No or only a small (50-100 EUR) honorarium is granted, but all costs (including local travel) are covered.
 		On-site child-care is offered.
 		Crosby et al suggest a “decent day’s wages” as per diem, but I may not be able to fund that \cite[loc. 1899]{CrosbyNethercut-2005-aa}. -->
+
+
+    <!-- %\cite{Johnson1998}
+    	%161:
+    %``Would-be political reformers of various persuasions urge deliberation upon us.
+    %Yet in their pleadings such theorists and reformers frequently invoke deliberation in an uncritical manner.
+    %They proceed as though the ways in which deliberation and the effects we can expect of it are not just obvious, but attractively so.''
+
+    %\cite{Azmanova2010} (also \cite{Fishkin2009}:
+    %529)
+    	%49:
+    %thoughtfulness and reflexivity (as per Fishkin) require 1) reasonably accurate information 2) substantive balance 3) diversity, 4) conscientiousness, 5) equal consideration
+
+    %\cite{Citizen-2004-aa}
+    	%11:
+    %one guy did the learning sessions
+    	%1) has a selection phase
+    	%2)  has a LEARNING phase
+    		%also develop "shared values" about the process
+    	%3) has a PUBLIC HEARING phase
+    	%4) has a DELIBERATION phase
+    	%go to church with group, maybe.
+
+    %\cite{Dienel-1999-aa}
+    	%"To make a Planning Cell project go effectively, one needs a process of more than four days.
+    %We can distinguish five phases:
+    %design, preparation, implementation, compiling the documentation, follow up.
+    %After the joint formulation of the task, two problems have to be solved in the second phase:
+    %The issue has to be translated into a program of 16 work units and the jurors have to be selected and invited.
+    %Building the program is crucial for the Planning Cell preparation.
+    %Each working unit has to have its clearly defined remit.
+    %Problems have to be reduced to comprehensible alternatives.
+    %All this is done by the programmer who is much more important than the moderator''
+
+    %\cite{Fung-2003-ac}
+    	%very good summary, get back to this
+
+    %\cite{Fishkin2009}
+    	%democracies are supposed to fulfill two values;
+    %political equality and deliberation (K84)
+    	%``a democracy in which we all had substantive information [and] [\ldots] substantive opinions would seem to take too many meetings.''
+    	%what's wrong with unenlightened opinions (all K113ff)
+    		%\begin{enumerate}
+    			%\item they may be volatile (cite other sources
+    			%\item people may be manipulated by foregrounding some information (clean coal vs.\ dirty coal, forgetting about natural gas -- compare this to tax choice)
+    			%\item misinformation (savings rate)
+    			%\item favor favorable, true arguments over others
+    			%\item manipulation may ``prime'' one aspect of policy.
+    		%\end{enumerate}
+    	%K260:
+    %``the hard choice, in other words, is between debilitated but actual opinion, on the one hand, and deliberative but counterfactual opinion, on the other.''
+    	%K369:
+    %table with raw/refined opinion, and different kinds of sampling.
+    	%K438:
+    %``The idea is that if a counterfactual situation is morally relevant, why not do a serious social science experiment -- rather than merely engage in informal inference or armchair empiricism -- to determine what the appropriate counterfactual situation might look like?
+    %and if that counterfactual is both discoverable and normatively relevent, why not then let the rest of the world know about it?
+    %Just as John Rawls's original position can be thought of having a kind of recommending force, the counterfactual representation of public opinion identified by the Deliberative Poll also recommends to the rest of the population some conclusions that they ought to take seriously.''
+    	%K390:
+    %self-selected samples will be very limited in what they can achieve.
+    	%K401:
+    %citizen juries use quota samples, consesus conferences use self-selected samples, then with some quota sampling
+    	%K550:
+    %notes that positions must not merely be balanced in terms of airtime or affect, but ``whether the considerations offered in favor of, or against, a proposal, candidate or policy are answered in a substantive way by those who advocate a different position.''
+    	%K561:
+    %three categories for such considerations
+    		%``the benefits or burdens of a policy or political choice,
+    		% the causal arguments about whether those benefits or benefits or burdens will actually result from one choice or another,
+    		%and the values by which those benefits and burdens might best be evaluated.''
+    		%K1424:
+    %``the problem is that any microcosmis deliberation taking place in a modern society will be one in which there are significant social and economic inequalities in the conduct of ordinary life in the broader society.
+    		 	%It seems difficult or impossible to `bracket' these inequalities -- for participants to behave `as if' they do not exist.
+    		 	%Indeed the problem goes deeper.
+    %The possibility of doing so is the challenge of the ``autonomy of the political'', namely, whether or not equality can hold sway in politics in a world in which inequality rules in economic and social relations.
+    		 	%The viability and legitimacy of the liberal-democratic process may turn on the answer.''
+    		 	%notes that the relation between ideal theory and actual practice is ``aspirational'' \citep[K2679]{Fishkin2009}
+
+
+    %\cite{GutmannThompson-2004-aa}
+    	%loc177:
+    %`your fellow citizens must give reasons that are comprehensible to you''
+    	%K188:
+    %they introduce first and second-order theories, too!
+    	%K919, writing about Fish:
+    %``Giving reasons is the chief way of academics to exercise power in democratic politics.
+    %All the talk about deliberation, like deliberation itself, is merely a cover for power politics.''.
+
+    %cite the sausgruber tyran stuff.
+
+    %iris marion young, especially notes that people of lower status may have a hard time getting listened to, or that others may be particularly accustomed to orderly forms of reason-giving arguments that weigh with other participants -- and this may be particulary problematic the more substantive the topic is.
+
+    %note that
+
+    %groupthink!
+
+    %tax allows only very limited choice:
+    %income, consumption or assets;
+    %a couple of schedules, plus some pigouvian taxation.
+    % the CIT, notably, is just a special way to raise the PIT.
+    %Otherwise, only natural persons.
+    %Tax demands these choices.
+    %Also, these choices \emph{are} as I explain in the below, political, so they must be made legitimately, and we may not be able to simply outsource them to elites.
+
+    %argue exactly why small sub-issues of tax do not work;
+    %they violate the real choices.
+
+    %there remain problems:
+    %you can't just go about this as if it wwere not controversial;
+    %it is controversially maongst experts, but more importantly, controversial whether experts have in fact authority and the right context.
+    %It can't just be an experiment, or a treatment intervention where ordinary citizens must necessarily become more like experts, and if they are not, then the teaching has failed.
+    %It must be possible for people to disagree with the abstractions they ar epresented with, see the criticism of it.
+
+    %tax is very technocratic, simply because the instition is like that.
+    %this will have to be qualitative
+    %\end{enumerate} -->

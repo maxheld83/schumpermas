@@ -3,6 +3,18 @@
 > *"The devil may indeed dwell in the details, but we first need to find an angel or two in the abstractions that govern \[...\]"*\
 > --- Edward J. @McCaffery2002 [K117]
 
+<!-- very important: we are here interested only in the quality of ONE of state/market interfaces, namely redistributive and general revenue tax.
+emphatically *not* in other aspects of this coexistence (say, spending).
+they matter only in so far as they illustrate that taxation is actually fairly important and a worthy candidate for deliberation
+(by contrast, monetary policy may not be)
+NOT in what the balance should be (state vs market) (though it should be possible).
+NOT in what the redistribution should be (though it should be possible)
+emphatically NOT whether the interface should exist at all, that is whether we should have an entirely different way of living together.
+this is Because
+a) keep the question manageable
+b) be pragmatic; keep most institutions constant, vary one at a time
+c) there is plenty enough here already; in fact, it's maybe the most controversial/clever if you only have an interface institution that is so badly designed that any of the other decisions don't really matter -->
+
 <!-- this works well for pragmatism:
 > "Vain is the word of a philosopher which does not heal any suffering of man. For just as there is no profit in medicine if it does not expel the diseases of the body, so there is no profit in philosophy either, if it does not expel the suffering of the mind."
 - Epicurus -->

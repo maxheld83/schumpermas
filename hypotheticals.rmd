@@ -76,6 +76,109 @@ There can be no meaningful democratic rule on taxation that does not ultimately 
 The choice among these (already high-level) alternatives cannot be abstracted away, or relegated to experts:
 it hinges on irreducible moral and causal judgments [for example, @McCaffery2005].
 
+In the preceding , I have tried to shed some light on the in much of the current [oecd]{acronym-label="oecd" acronym-form="singular+short"}-world (, p. ).
+The puzzle is now a little clearer:
+
+1.  In spite of unprecendented prosperity, late [oecd]{acronym-label="oecd" acronym-form="singular+short"} welfare states are less efficient, equitable and sustainable than they could be, because they fall short of an (, p. ).
+    Among the institutions of the mixed economy, especially, because it is by far the most effective and efficient tool for government to improve upon, or redistribute market outcomes (, p. ).
+
+2.  Equipped with a deficient mixed economy and suboptimal taxation, democracies are forced to make unnecessarily unattractive trade-offs between efficiency, equity and sustainability, eroding their *output* legitimacy.
+    At the same time, the legitimacy of democratic *inputs* may be undermined by a widening gap between the complexity of an advanced (mixed) economy and the simplifying tendencies of electoral democracy.
+    Potentially, pluralist democracy may, in part, have fallen victim to the tightly concentrated special interest that late capitalism offers, especially in the field of taxation.
+
+    Taken together, such diminished legitimacy in outputs and inputs, may help explain widely reported dissatisfaction with democratic performance (but not institutions) [for example, @Dalton-2004-aa] and contribute to the apparent mismatch between popular opinion and the governing abstractions of the mixed economy.
+
+3.  Net of such constrained welfare and confused democracy, material and political equality would suffer.
+    A deficient mixed economy and suboptimal taxation would corrode the social contract, by which democratic government should have some ability to redistribute the fruits of non-zero-sum
+    games borne by the free exchange of state-protected property rights [compare @Crouch2004].
+    Offered only unattractive choices, and thoroughly confused about the abstractions of the mixed economy, citizens would be increasingly impotent under the social contract.
+    One suspects, especially poor and poorly educated citizens would be effectively disenfranchised from the social contract.
+
+## Background
+
+These are, admittedly, conjectures.
+As first order actualities, they are puzzling only if there *are* preferable and possible first-order hypotheticals.
+<!-- %read
+	%http://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem
+	%http://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem
+	%http://en.wikipedia.org/wiki/Unrestricted_domain
+	%http://en.wikipedia.org/wiki/Non-dictatorship
+	%http://en.wikipedia.org/wiki/Revelation_principle
+	%http://en.wikipedia.org/wiki/Voting_paradox
+	%https://en.wikipedia.org/wiki/Independence_of_irrelevant_alternatives
+	%https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem -->
+food
+
+
+<!-- %My topic (tax) is also debated by experts, indeed, experts seem to have the home advantage.
+	%But my point is:
+%we need to check the work of the experts.
+	%ordinary citiznes need to "auf die Finger schauen".
+	%We'll see whether the DP or deliberative fora in general can actually do this. -->
+## Better Taxation
+
+In the following (p. ) and (p. ), I show that under liberal-pragmatic axioms and orthodox ontology (, p. ), we could have vastly and .
+
+Among doable taxes, a potentially supplemented by a , and/or appears to offer more attractive trade-offs between equity, efficiency and sustainability than the current tax mixes dominated by , and (see , p. ).
+
+![The Vector Field of Taxes with Trends[]{label="fig:tax-with-trends"}](tax-with-trends){#fig:tax-with-trends width="1\linewidth"}
+
+## Better Democracy
+
+Among doable forms of democratic rule, deliberative democracy [for example, @Cohen-1989-aa] appears both more promising and demanding than pluralism.
+
+Deliberation promotes egalitarian, inclusive, well-reasoned and civic-minded discussions for (possibly) consensual political decision-making.
+Its normative theory draws heavily on @Habermas-1984' concept of *communicative action* and @Rawls-1971' "Theory of Justice" as fairness.
+Where pluralism encourages the representation of particular interest, deliberative democracy demands *alternative* conceptions of the common good [@Cohen-1989-aa 18].
+Where pluralism aggregates given, pre-social preferences, deliberative democracy is all about forming preferences.
+Where pluralism assumes individual voter error to balance out, when errors are random [@Page1993; @Surowiecki2004], deliberative democracy insists on perfecting the deliberators understandings (see , p. ).
+
+Deliberative democracy offers more attractive trade-offs between participation, enlightened understanding and political equality [@Fishkin2009] (, p. ) and promises to alleviate some of the public choice contradictions of pluralism [for example, @Condorcet1785; @Arrow1950] (, p. ).
+It also transcends the impoverished, and dubious ontology of pluralism (homo economicus!), and opens legitimate rule to feminist or even virtue ethics.
+
+
+## Open Second-Order Questions
+
+These hypotheticals flow, for the most part, from *a priori* knowledge.
+They are grounded in reason, but not --- as hypotheticals can never be --- in *experience*.
+I have, as much as possible, supported *a posteriori* assumptions with robust empirical findings --- but I cannot provide experiential evidence for the complete hypotheticals.
+
+In welfare and tax, comprehensive *a posteriori* knowledge about hypotheticals is hard to come by.
+
+Inframarginal reforms as those I suggest here strain the limits of economic models, all of which must be grounded in only *marginally* known behavioral data.
+For example, we would need to know the price elasticity in the demand for luxury goods, or saving and agree on (as I have shown) irreduceably normative judgments of diminishing returns or an optimal savings rate.
+Natural experiments are, of course, unavailable and the external validity of any laboratory setting will be strictly limited.
+There is, in other words, not much else beside *a priori* knowledge that we might learn about welfare and tax.
+My reasoning here is hopefully as widely agreeable as any comprehensive account of welfare and tax, but it will surely not go uncontested.
+Absent empirical clarification, we must then resolve such disagreement in a democratic process.
+Taxation, in other words, probably *cannot* be reduced to a first-order question, but it, too reverts to a second-order concern on how to democratically resolve any disagreement we might have about it.
+
+In democracy, we have some, if limited *a posteriori* knowledge about the deliberative hypothetical I here suggest.
+Deliberative democracy has been successfully implemented mostly in local settings on policies of limited scope [@Fung-2003-ac; @HendricksonTucker-2005-aa].
+In their proposal for "Empowered Deliberative Democracy" @FungWright-2001-aa [17] explicitly suggest what underlies much of the current designs:
+
+> 1.  A focus on *specific, tangible* problems
+>
+> 2.  Involvement of *ordinary people* affected by these problems and officials *close* to them
+>
+> 3.  The deliberative development of solutions to *these* problems.
+>
+Few attempts at deliberating regional issues of greater complexity have been made, including a 'Citizens Assembly' on electoral reform in British Columbia, Canada [confer @Ratner-2008-aa].
+
+On the one hand, deliberative theorists as @FungWright-2001-aa [17] have criticized this limited scope of deliberative attempts, focused on the immediate, tangible and "confined to the realm of neighborhood and locale", as much out of necessity, as out of conviction [@Boggs-1997-aa 759].
+The associated anti-authoritarian, anti-bureaucratic, anti-functional-differentiation impetus may, as [@Sousa-Santos-1998-aa] hopes for participatory budgeting in Porto Allegre, Brazil contribute to a "counterhegemonic globalization" by concentrating on special issues like land rights, urban infrastructure and drinking water in urban settings, but may by the same token remain "Bean n' Rice works" [@Sousa-Santos-1998-aa 479].
+Faced, as our polities inevitably are, with macro-level abstractions, such cherishing of "human-scale democracy" above all else may, suspects @Boggs-1997-aa, move democracy "in a defensive and insular direction, laying bare a process of conservative retreat beneath a facile rhetoric of grassroots activism" [@Boggs-1997-aa 759].
+
+On the other hand, political psychologists as [@Rosenberg-2002-aa] have problematized the cognitive demands deliberation poses.
+Recent research in political psychology suggests, that --- contrary to the bounded rationality assumption --- imperfect human reasoning may not only stem from remediable cognitive scarcity, but may be developmentally determined.
+@Rosenberg-2002-aa has suggested a threefold developmental sequence and typology of *sequential*, *linear* and *systematic* reasoning.
+His empirical accounts suggest that if any, only systematic thinkers will be able to meet the cognitive demands for reasoned arguments, and egalitarian free speech of deliberative democracy.
+Moreover, this cognitive competence was found not to be domain specific, and while people may regress to lower levels of competence under high loads or appropriate cues, they are unlikely to easily, if ever, achieve higher than developed levels.
+"Structurally (more and) less developed reasoning adults" make "not only the adequacy of citizens' reasoning, but also their *equality*" a problem for deliberative democracy [@Rosenberg-2007-aa 12, emphasis added].
+
+Few empirical work has been done to address both these ontological and empirical reservations towards deliberative democracy.
+We know very little about if and how deliberative fora do in the face of macro-level abstractions and unequally limited cognitive ability of deliberators.
+
 <!-- %what about the distinction about INDIRECT taxes.
 %Indirect taxes are taxes levied on entities other than those expected to bear the eventual burden. -->
 

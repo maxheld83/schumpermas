@@ -2,6 +2,100 @@
 
 # Research Design
 
+At this intersection of ([pct]{acronym-label="pct" acronym-form="singular+short"}) taxation and (deliberative) democracy, two related research questions arise:
+
+1.  [\[itm:resolve-better-tax\]]{#itm:resolve-better-tax label="itm:resolve-better-tax"}
+    Can democratic rule resolve --- and if so, *how* --- any remaining disagreement about *a priori* desirable and doable taxation?
+
+2.  [\[itm:prove-deliberative-democracy\]]{#itm:prove-deliberative-democracy label="itm:prove-deliberative-democracy"}
+    Can deliberative democracy address --- and if so, *how* --- the vastly complex, macro-level abstractions facing our polities?
+
+This dissertation investigates the intersecting set of these two research questions.
+
+In one sense, deliberative democracy serves as the *method* to resolve *a priori* disagreement about taxation, and --- equivalently --- to test whether pluralist democracy may be partly to blame for the absence of better taxation.
+Deliberative democracy is a good *method* for research question [\[itm:resolve-better-tax\]](#itm:resolve-better-tax){reference-type="ref" reference="itm:resolve-better-tax"} on taxation, both because I *axiomatize* it to maximize democratic legitimacy, and I *hypothesize* it to reveal some of the dysfunctions of pluralist aggregation plaguing tax choice (see below).
+
+Conversely, taxation is a good *case* to test deliberative democracy in research question [\[itm:prove-deliberative-democracy\]](#itm:prove-deliberative-democracy){reference-type="ref" reference="itm:prove-deliberative-democracy"}, because it affects everyone, but is shrewd in the kind of macro-level abstractions which deliberative fora have so far avoided
+[^1]
+and which may strain the cognitive ability of deliberators.
+
+## Hypotheses
+
+Both research questions [\[itm:resolve-better-tax\]](#itm:resolve-better-tax){reference-type="ref" reference="itm:resolve-better-tax"} and [\[itm:prove-deliberative-democracy\]](#itm:prove-deliberative-democracy){reference-type="ref" reference="itm:prove-deliberative-democracy"} can be rolled up in one set of hypotheses:
+
+## Methods
+
+I test these hypotheses by subjecting people to a , pioneered by James [@Fishkin2009].
+This 'Gold Standard' of deliberative fora [@Mansbridge2010 55], combines skillfully moderated small and plenary group discussions of randomly sampled citizens, rigorously vetted, balanced briefings and experts with pre-treatment, post-treatment and control group opinion surveys into a quasi-experimental design (as in , p. ).
+
+\centering
+![Method of the Deliberative Poll[]{label="fig:deliberative-poll-method"}](deliberative-poll-method){#fig:deliberative-poll-method width="1\linewidth"}
+
+This design suits me well, because it combines the electoral part of democracy with the talking part [@ChambersKymlicka2002 308] and thereby offers the kind of quantitative data needed to test these hypotheses.
+Both as a research method and as a second-order hypothetical, it also enjoys high external validity:
+it delivers a collective choice and has been shown to work in actual policy making.
+
+## Expected Results
+
+### Hypotheses [\[itm:knowledge-gain\]](#itm:knowledge-gain){reference-type="ref" reference="itm:knowledge-gain"}.x are informed by prior research on the "Heuristics and Biases in Thinking about Tax" [@McCafferyBaron2003], supplemented by systematic misunderstandings specific to broad choices between income, consumption and asset taxation.
+My hypothesized misunderstandings flow from anecdotal experiences I have had with laypersons and political leaders.
+They also shine through in some of the welfare state research, and contrast with my synthesis of an (, p. ) and (, p. ).
+
+### Hypothesis [\[itm:attitude-change\]](#itm:attitude-change){reference-type="ref" reference="itm:attitude-change"}, if confirmed, suggests that in fact, remaining *a priori* disagreements about tax *can* be resolved, and that hypothetical taxes really are desirable.
+
+### Hypotheses
+are related to public choice and opinion research in political science, showing that popular beliefs often violate [vnm]{acronym-label="vnm" acronym-form="singular+short"}-consistence and can fall prey to aggregation dysfunctions.
+Opinions about taxation, in particular, may reveal anomalies at the individual and aggregate level, because tax is highly complex and demands highly structured choices.
+Past research has shown that deliberation can alleviate preference structuration anomalies [@Farrar2003].
+A [dp]{acronym-label="dp" acronym-form="singular+short"} on tax choice might replicate those findings and extend them to another policy area.
+
+### Hypotheses [\[itm:interaction-effects\]](#itm:interaction-effects){reference-type="ref" reference="itm:interaction-effects"}.x inform the political psychology, both of tax and of deliberation.
+If the above effects do not, in fact, interact with equity beliefs (hypothesis [\[itm:interact-equity\]](#itm:interact-equity){reference-type="ref" reference="itm:interact-equity"}, tax choice must be affected by something *other* than allocative preferences.
+In (p. ), equity preferences are moves *along* a curve, and shifts or moves of curves reflect preferences orthogonal to equity.
+If, as hypothesized, the above effects do not interact with equity preferences, deliberation may reveal (or bring about) popular understandings in line with the suggested institutional of (p. ):
+If given some thought, people agree that they can shift the trade-off curve between, say, equity and efficiency outwards, and they prefer those institutions that do.
+Hypothesis [\[itm:interact-ses\]](#itm:interact-ses){reference-type="ref" reference="itm:interact-ses"} is broadly related to the post-democracy thesis [@Crouch2004], by which late [oecd]{acronym-label="oecd" acronym-form="singular+short"} liberal capitalism and democracy not only disenfranchise the social contract, but do so at a socio-economic gradient.
+The poor (and middle classes) may be too systematically confused to effectively act on their supposed self-interest, reinforcing a mutual crises of political and economic equality.
+Lastly, hypothesis
+is informed by the political psychology of deliberation, and the empirical research on unequal cognitive ability [@Rosenberg-2002-aa].
+If, as hypothesized, people with greater cognitive ability will display greater changes along the aforementioned hypotheses, deliberations on tax, too, may have to consider such unequal abilities in their theory and practice.
+
+More broadly, a [dp]{acronym-label="dp" acronym-form="singular+short"} on tax choice can inform several fields, including research on public finance and the welfare state, public choice and political economy.
+
+
+<!-- %here used to be \ref{fig:tax-with-misunderstandings}, now only in proposal
+
+% \citep[334][]{Farrar2010}
+	%The present study examines three important hypotheses about deliberation’s effects.
+	%The first is that deliberation frequently alters policy attitudes (continuous dispositions towards policy alternatives) – not only at the individual level (‘gross change’) but in the aggregate (‘net change’).
+%The second is that deliberation tends to bring policy preferences (ordinal rankings of policy alternatives) closer to single-peakedness, a help in avoiding cyclical majorities of the sort identified by Condorcet and Arrow.
+	%The third is that both these effects tend to be stronger for less salient issues, on which less deliberation has already occurred.
+	%Since very few issues are highly salient, these hypotheses together imply an important role for deliberation in shaping majorities and making them meaningful.
+
+	%deliberation helps NOT by brining unanimity, but by changing the structure \citep[2]{List2007}
+
+	%here is something important:
+%Condorcet works for pairwise comparisons:
+%here we got a problem
+	% expanded by arrow:
+%ANY voting method must violate one of four attractive properties of pairwise majority voting -- which is why it still matters this problem.
+%(Fishkin, etal on meaningful democracy:
+%1)
+	%violations of independence of irrelevant alternatives open the door to agenda manipulation (Riker 1982), strategic voting (Gibbard 1973, Satterthwaite 1975),
+
+	%deliberation increases ``meta-agreement'' on the dimensions of policy, which, in turn decreases the probability of cycling majorities \citep[9]{List2007}
+
+	%also, say \cite[9]{List2007}:
+%these should be the REAL dimensions.
+
+	%\cite{List2007} show that you can get more Condorcet winners this way
+
+	%genschel:
+%you show that priming works.
+
+	%social choice (Arrow, Condorcet, Gibbard-Satterthwaite), both in \citep[2]{Dryzek2003} and deliberative democracy -->
+
+
 <!-- 1. Research Question [based on proposal] -->
 <!--    - Explicates *research question* at the intersection of the literature on (subjective understandings of) tax, and (empirical research on) deliberative democracy -->
 <!--    - includes literature review of tax misunderstandings/disagreements and empirical deliberative democracy -->
@@ -894,3 +988,158 @@ Table: Variable Metaconsensus in Taxation (x5)
 2. Political apathy may remain/result, especially because fundamental tax reform cannot even be done at the national level and may face other hurdles.
 	Participants will in no way have some actual decision-making power over the subject of their deliberation.
 3. The deliberation might regress into a microeconomics class, where deliberators look for “right” or “wrong”, rather than empower their own voices and intersubjective understandings. -->
+
+
+## Public Finance and Welfare State Research
+
+If the above hypotheses (especially [\[itm:attitude-change\]](#itm:attitude-change){reference-type="ref" reference="itm:attitude-change"}) are confirmed, welfare research has a lot more to explain.
+If under a legitimate democratic process, people resolve remaining *a priori* disagreements to select a *different* tax than we currently observe, welfare state research must provide a second-order theory of the observed (illegitimate) social choice of suboptimal taxation.
+I cannot provide, let alone test that second-order theory of tax choice in this dissertation, but --- if hypotheses are confirmed --- can at least suggest that the democratic forum may be important.
+Pluralism may not be the *only* reason why we have no better tax, but it might well be one of several reasons.
+
+
+## Public Choice and Political Economy
+
+Public choice has long specified how individual preferences can be aggregated, what it requires and how it can fail [for an overview, @Mueller].
+Conversely, (classical?) political economy has formulated theories of how (material?) interest and power can corrupt and alter preference aggregation [for an overview, @Robbins1976].
+Both those fields, too, can benefit from deliberating hypothetical taxes.
+
+Public choice, for once, is mostly an *a priori* and often an insular enterprise, merely chronicling --- but not explaining --- the inconsistent preferences and structuration anomalies it faces.
+For example, portfolio theory clearly differs from observed loss (not risk!) averse strategies [@Kahneman2011], but we know relatively little about how culture or institutions mediate this gap.
+Deliberation is one (possibly attractive!) institution to narrow the gap between *a priori* public choice and *a posteriori* policy preferences.
+The hypotheses tested in this [dp]{acronym-label="dp" acronym-form="singular+short"} on taxation problematize the institutional link between optimal and actual choice.
+
+Public choice is also hard to bring to bear on real-life political choices, because it deals in such high abstractions and the very consistency in preferences it demands are often subject to (second order) controversy.
+It can be difficult to argue how any particular policy may be explained by, or differ from a theory of public choice, as long as there is disagreement over possible alternatives and ontological concepts.
+This dissertation synthesizes and develops consistent preferences on taxation, and puts them to a deliberative test.
+If successful, it may provide an insightful, practically relevant case study of policy and help resolve the controversy over preferences.
+
+Conversely, (classical) political economy can gain from a [dp]{acronym-label="dp" acronym-form="singular+short"} on taxation, because it, too, facing disagreement over alternatives and material ontologies (@Keynes1936 vs @Hayek1931, as in @Wapshott2011), too often reverts to second-order theory, sometimes getting lost in an unproductive muddle of ideas *and* interests, rather than one *or* the other as independent variable.
+[^2]
+This dissertation develops a --- hopefully --- agreeable material ontology for the mixed economy (), and synthesizes a desirable and doable alternative which is then subjected to a specific, legitimate second-order process:
+deliberation.
+By comparing cognition --- or ideas (!) --- as a *function* of this second-order process, and by relating it to socio-economic outcomes and conditions of deliberators, this dissertation also tests one specific theory of the political economy.
+Based on transparent, indeed quite orthodox assumptions, I hope to show that material interest may, through whichever agency or structure, have found a clever way to corrupt democratic rule without resorting to crude power.
+If confirmed, my hypothesis suggest that --- for whatever reason --- people systematically misunderstand tax in a way that favors the rich, and more generally, the benefactors of the status quo.
+
+## Conclusion
+
+In Schumpeter's
+thundering words, taxation and democracy *are* the two sides of social contract (, p. ).
+They, above much else, balance contradicting social integration and individuality in modernity and moderate its key antagonistic institutions:
+states and markets.
+
+\centering
+![Taxation and Democracy[]{label="fig:tax-democracy"}](tax-democracy){#fig:tax-democracy width="1\linewidth"}
+
+Surely, such a broadly defined research agenda risks hubris, but it also promises to formulate and maybe, tentatively answer some important questions for the social sciences.
+I may well --- figuratively --- be biting off more than I can chew, and it sometimes shows (for example in ).
+All I can do is to tentatively mull over a mouthful at a time, and spit out again that which I cannot address.
+This --- forgive the metaphor --- *rumination* takes a lot of pages to write and read, but at least, it is a relatively transparent way of reasoning.
+Maybe, in the spirit of Umberto Eco's *anti-library* [as recounted in @Taleb2007], explicating what I do not know or cannot address in this dissertation will make for better questions.
+[^3]
+Still, to digest anything in full, I must concentrate.
+Counterintuitively, the often economic or even technical abstractions of taxation and public choice provide a great guide here.
+This mostly *a priori* knowledge, too, requires a lot of pages to write and to read, but, akin to enzymes in the digestive tract, it helps me break down complex issues to ever simpler, fewer and clearer questions (as in and ) that can be handily metabolized into a new, and hopefully original argument that I put to the test.
+
+Admittedly, too, underlying this research are normative convictions about political and economic opportunity, and even human destiny.
+Somehow, such a prescriptive impetus has become unacceptable in much of (German) social science on the welfare state.
+I must indeed avoid "politics-based evidence making" (The Economist, 2012)
+or any other conflation of what should be, with what is.
+However, even from a merely positive perspective, and even to readers who may not agree with these convictions, the hypotheticals they raise pose analytically worthy questions:
+If there is indeed another, superior fiscal configuration on which we could democratically agree --- but do not --- this absence needs explaining.
+
+If anything, finding that which needs a social explanation, must be a worthwhile attempt for the social sciences.
+
+It, too, is how social sciences can contribute to human progress, by *politicizing* the status quo.
+
+> "Politicization is the realization that established social norms, social practices, and social relations are contingent rather than sacrosanct, that things could also be different and that citizens, individual and collectively, have political agency by means of which alternatives can be explored and implemented.
+> This recognition that things could also be different has always been the igniting spark of the emancipatory-progressive movements, and politicization has always been their key strategy."\
+> --- @Bluhdorn-2007-aa [313]
+
+
+[^1]: For this insight, I am indebted to Franziska Deutsch who first noted in 2011 that tax was an interesting case because it affected everyone, but most people knew little about it.
+
+[^2]: Ideational perspectives surely are important, and rationalist epistemologies not the only way to knowledge, but, as I explain in more detail in (p. ), first-order alternatives must be clarified first.
+
+[^3]: For this comparison, I am indebted to Maike Schulz, who --- citing Eco --- reminded me in 2013 that an ever elongating reading list need not be a bad thing.
+
+<!-- %Second Order Questions of Social Change
+%The second order question of social change is simply:
+%Why don’t we have it?
+%Possible answers (hypotheses) are:
+% Progressive Taxation is subject to an international cooperation problem, akin to a Prisoner’s Dilemma.
+%Because the PCT is progressive, it is individually rational for states not to implement it, even if it were collectively rational.
+% This is a very interesting question that could potentially greatly enhance our understanding of the international political economy of taxation.
+%It however, also requires a comprehensive model of the economy, and even international trade and finance to anticipate the hypothetical payoff of the PCT.
+% Tax regimes are subject to great path dependency, they cannot be easily reformed.
+% While a historical and tentative analysis of path dependency in tax regimes is possible and probably productive, the costs of reform can ultimately only assessed when a cardinal specification and implementation has been undertaken.
+%Assessing the costs of the reform ex ante may be very hard, unreliable or impossible.
+%Both a possible international cooperation problem and path dependency in tax regime choice are ultimately endogenous to broader questions of the political economy.
+%The cooperation problem depends on the level at which the international political economy is governed.
+%Path dependency depends on the domestic and international incidence of reform costs, in turn depending on the states ability to hand out side-payments.
+
+% Ultimately, the PCT could be absent because people do not want it.
+%The second order question of social change in tax regimes is:
+%will people reject the PCT irrespective of the democratic process that governs their polity?
+%If not:
+%how do different democratic processes (pluralist, deliberative) constrain or even determine the politics and choice of tax?
+
+%likewise:
+%assumed theoretical link:
+%if you want to hide injustice, than you'd best do it in a really complex system, like tax.
+%
+%\subsubsection{Research Question b):
+%Why Hasn't it Been Implemented Yet?} Research question b) is then, based on the developed ``perfect tax'', more approximately empirical.
+%In the absence of it being implemented in any case, it asks why it has not.
+%
+%The usual suspect here is a lack of international cooperation.
+%Its plausibility will be compared to that of other explanations, namely:
+%\marginpar{\textsf{This section needs an overhaul, and \emph{a lot} more reading to make the alternative explanations MECE.}}
+%\begin{description}
+%	\item{\textbf{Ideology}} Lack of support for such a broadly and boldly redistributive scheme.
+%	\item{\textbf{Path Dependency or Historical Institutionalism}} Typological work applies here --- in how far is the tax compatible or not with the institutions and mindsets of established types, for example \cite{BeramendiRueda-2007-aa}.
+%	\item{\textbf{Deficient Political Process, Public Deliberation or Discursive Institutionalism}} Literatures on the political process, as well as, on discursive institutionalism \cite{Cerami2009a}.
+%	\item{\textbf{International Cooperation Problem}} See above.
+%\end{description}
+
+%or addition to science
+
+%First, developed welfare states, in spite of their unprecedented prosperity, appear to be increasingly constrained in their ability to raise revenue and redistribute it as their legislators see fit.
+%The pertinent literature on globalization and the welfare state (for an overview see Genschel 2004) asks whether the welfare state has retrenched, and for which reasons.
+%Frequently operationalized only as spending (Swank 2005) or decommodification (cf.~Esping-Andersen 1990), that question is incomplete.
+%Some of the latently affirmative analyses (Swank 2005) seem to be not so much optimistic about what the welfare state can do, as they seem to be minimal about what it should do:
+%income replacement.
+%To critically appraise the development of the welfare state, we must instead ask whether legislators are able to raise revenue and redistribute while maintaining growth, factor clearing, low inflation and a positive savings rate.
+%We must ask whether legislators were better able to strike this balance of “opportunity and prosperity” (Obama for America, 2007) in the past, or whether there could be a better balance, and then investigate why we do not have better policy.
+%Today, welfare states cannot have the cake and eat it.
+%They can’t even do one of the two.
+%Instead, welfare states are faced with a twin crisis that is mutually reinforcing:
+%one of structural unemployment, and one of structural underfunding.
+%Structural unemployment is caused by high effective price floors for labor, at or below the socially acceptable minimum income (transfers, minimum wage) in a society, but above the labor productivities of a segment of the workforce.
+%Price floors are further raised by an increasingly proportional (or even regressive) tax falling on labor incomes.
+%Structural underfunding is caused by a state that is increasingly unable to raise sufficient revenue necessary for the provision of risk pools, public and common goods, as well as to finance its allocative goals.
+
+%Second, my research interest emerges from a sense of utter disconnect between political debate and the abstractions and interests governing the political economy.
+%This dis-connect is evident in misleading sloganeering (‘Mehr Netto vom Brutto’, more net out of gross income), widespread superstitions (‘employers [sic!] pay half of social insurance’), bastard Keynesianism (‘consumption is good!’) or redistributive smoke grenades (‘we should tax companies’).
+%At a deeper level, I wonder whether pluralist interest and electoral re-presentation can still be reasonably assumed to yield efficient and equitable policies, in an ever more complex world marred by cooperation problems.
+
+%I don't explain the elite-based (potential) reason for the non-reform.
+%That, the second-order theory, would be someone elses job.
+%discourse theory here? -->
+
+<!-- %There is a vibrant and innovative community of scholars and activists who host and moderate deliberative fora of varying designs, particularly in the US.
+%Organizing successful deliberations is at least as much an art as a science and requires extensive experience.
+%In addition, I must prevent my analytical and normative preoccupation with a particular reform proposal (a postpaid PCT) from exerting undue influence on the deliberation.
+%The deliberative must not be set up to confirm the PCT.
+%Both hypothesis a) and b) must be falsifiable in this design.
+%A postpaid PCT must be presented as one of the (few) fundamental choices in redistributive design.
+%My prior work (Held 2010) on the postpaid PCT can serve as a survey of the trade-offs and desiderata (see summary above) in redistributive design.
+%These may serve to organize the expected transformation of previously “amalgamated” (Miller 1992:
+%4ff) preferences into distinct, single-peaked dimensions.
+% The trade-offs and desiderata are also inputs for questionnaire design and may be used to draft briefing materials.
+%This quasi-experimental design requires great methodological care and experience.
+% Ideally,  I will be able to co-host, or investigate a Deliberative Poll ® on redistributive design in Germany or the US, with help from James S.
+%Fishkin and the Stanford-based Center for Deliberative Democracy.
+% This would ensure rigorous institutional design, peer-reviewed balance and experienced implementation, but requires substantial external (to BIGSSS) funding.
+%Should I be unable to secure such funding, some scaled-down version will also be possible. -->
