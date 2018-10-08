@@ -5266,8 +5266,7 @@ foo
 > He who knows how to listen to its message here discerns the thunder of world history more clearly than anywhere else."*\
 > --- Joseph Schumpeter (1918 \[1991\])
 
-Why it Matters: The Welfare State as Mixed Economy {#sec:why-mixed-economy-matters}
-==================================================
+## Why it Matters: The Welfare State as Mixed Economy {#sec:why-mixed-economy-matters}
 
 > *"Yes we can:
 > to justice and equality.\
@@ -5966,8 +5965,7 @@ That is an old deal worth fighting for.
 
 
 
-Why Tax Matters to Democracy
-============================
+## Why Tax Matters to Democracy
 
 > *"But who can say how much is endurable, or in what direction men will seek at last to escape from their misfortunes."*\
 > --- John Maynard @Keynes1936
@@ -5981,8 +5979,8 @@ Why Tax Matters to Democracy
 > And that's why I get a little discouraged sometimes."*\
 > --- Hendrik Hertzberg (2011) on The New Yorker podcast *The Political Scene*
 
-The Social Contract
-===================
+
+## The Social Contract
 
 Crucially, we must, again, understand that economic integration must always beget more economic and political integration, that, production at great economic scale implies solidarity at the same scale.
 
