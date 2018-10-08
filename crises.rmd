@@ -4,8 +4,6 @@
 
 # A Tale of Three Crises {#crises}
 
-
-
 <!-- %So \emph{really}, is all ``for [\ldots] the best [\ldots] in the best of all possible, [liberal-democratic, capitalist] worlds''  (\emph{ibid.}: K428ff).
 %
 %Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism.
@@ -1800,8 +1798,7 @@ Progressive transfers can also dampen self-reinforcing agglomeration and counter
 By definition, a closed economy only has one currency, and thereby, one monetary policy.
 Consequently, monetary policy cannot affect the spatial dimension of economic activity *within* that closed economy.
 
-The Means of a Mixed Economy ^[\[fn:also-in-europe\]](#fn:also-in-europe){reference-type="ref" reference="fn:also-in-europe"}^ {#sec:means}
-==============================================================================================================================
+## The Means of a Mixed Economy 
 
 > *"The revenue of the state *is* the state."*\
 > --- Edmund @Burke1790 [111, emphasis added]
@@ -2235,8 +2232,7 @@ Because monetary dynamics *do not* and *should not* matter to our 'household wit
 Suffice it to remind us that government should set that quantity of money where it equilibrates with variable money demand at stable prices.
 The rest is empirical details.
 
-Trade-Offs of the Mixed Economy ^[\[fn:also-in-europe\]](#fn:also-in-europe){reference-type="ref" reference="fn:also-in-europe"}^ {#sec:trade-offs}
-=================================================================================================================================
+## Trade-Offs of the Mixed Economy 
 
 Given its conflicting (p. ) the mixed economy can arrange its (p. ) to make at least two basic trade-offs.
 
@@ -2477,8 +2473,8 @@ Trivially, the wealth of an economy is determined by its natural resources, tech
 When these capacities are fully utilized (as they are *not* in a cyclical downturn or debt-deflation crisis), no financial or monetary charlatanism can take us beyond them in the short term.
 Any short-term gain that a bubble or excessive monetary expansion will bring only defers the day of this reckoning.
 
-Real Dissavings of the Mixed Economy {#sec:real-dissavings}
-====================================
+
+## Real Dissavings of the Mixed Economy {#sec:real-dissavings}
 
 > *"Give me chastity and continence, but not yet."*\
 > --- @St.AugusteofHippo397 Confessions (VIII, 7)
