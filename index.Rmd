@@ -26,7 +26,7 @@ lang: en-US
 ---
 
 <!-- this includes the travis badge, which does not work in latex -->
-```{r, include = knitr:::is_html_output(), eval=knitr:::is_html_output(), child="README.rmd"}
+```{r, include = knitr:::is_html_output(), eval=knitr:::is_html_output(), child="README.md"}
 ```
 
 ```{r setup, cache = FALSE, include = FALSE}
