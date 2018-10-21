@@ -4,9 +4,6 @@
 [submodule "civicon.github.io"]
 	path = civicon.github.io
 	url = https://github.com/civicon/civicon.github.io.git
-[submodule "civicon.github.io.wiki"]
-	path = civicon.github.io.wiki
-	url = https://github.com/civicon/civicon.github.io.wiki.git
 [submodule "keyneson"]
 	path = keyneson
 	url = https://github.com/maxheld83/keyneson.git
