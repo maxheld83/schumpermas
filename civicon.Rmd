@@ -1330,6 +1330,47 @@ Small-group deliberations are facilitated by a trained moderator, who has no exp
 At the end of the process, participants must agree on a tax and write a report outlining their recommendation, which can be released to the public.
 If resources permit, participants will also hear a panel of expert witnesses to discuss their questions.
 
+<!---
+moderator call:
+
+The [CiviCon Citizen Conference](http://www.civicon.de) will provide moderated group discussions and other facilitation to the 15 citizen participants.
+
+At this point, we are still looking for two (2) trained moderators/facilitators.
+
+If you're interested, you should write to [`maximilian.held83@gmail.com`](mailto:maximilian.held.83@gmail.com) and suggest a date and time for a videoconference on this [Doodle](https://doodle.com/maxheld).
+
+
+## Basics
+
+- Date: 11.-17.08.2014, maybe plus 1 day each for preparation and review.
+- Location: Syke (near Bremen), Germany
+- Compensation: EUR 1000/moderator, plus travel expenses and included room/board (shared rooms)
+- Student moderators are welcome, but should have some formal education in the field and practical experience and be comfortable with interacting with various people of different ages, backgrounds and political leaning.
+- Some technical expertise/affinity (GitHub, Markdown) would be beneficial, but is not required.
+
+
+## Format
+
+- CiviCon is a participatory format, but with a utopian-Habermasian bent: it strives to live up to a ** *deliberative* standard of democracy**, where legitimacy comes from exchanging arguments, not (just) voting.
+ The CiviCon Citizen Conference on taxation is loosely modelled on scandinavian citizen conferences and especially the [BC Citizens' Assembly on Electoral Reform](http://en.wikipedia.org/wiki/Citizens'_Assembly_on_Electoral_Reform_(British_Columbia)).
+ This raises a couple of **requirements** for the facilitation:
+  - Every *argument*, or position, that participants might take has to be heard, and taken on their own merits.
+  - Not only broad participation matters, but the *kind* of speech and exchange matters, too – ideally centered around trying to find common reason.
+  - Facilitation must make sure that the premium on rational arguments does not disempower those citizens who might express themselves differently.
+- In addition, taxation as a topic introduces its own sets  of demands:
+  - The topic is fixed: taxation, but there should still be (some) room for those who might be opposed to the very institution (for various reasons).
+  - Tax offers quite well-structured (constrained) choices; citizen participants are tasked to discuss the *base* and *schedule* of an ideal tax system, and, if possible, agree on one.
+  - Because tax is a quite a complicated and demanding issue, there will be "learning phases" (as in the BC Citizens' Assembly), making up about 1/3 of the time, organised by Max Held (the investigator).
+    The substance of these learning phases must be brought to bear on the concerns and questions citizens might bring, *and vice versa*.
+- Because this is (also) a research project, formal group proceedings (but not private talk) must be taped.
+  This may initially disrupt the deliberation.
+- CiviCon has no mandate.
+- Towards the end of the conference, there will be a press conference, at which citizen participants report on their work to the media, politicans and wider public.
+
+Other than these requirements, the format is relatively open and should be adapted to the experience and tastes of the moderators.
+-->
+
+
 <!-- notice pretest at uni hamburg
 %Participants in the university class will be graded, but not based on their contributions to the deliberations, to which the author and instructor will not be a party.
 %The class will be advertised through the usual channels at the university. -->
