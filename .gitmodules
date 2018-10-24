@@ -5,5 +5,5 @@
 	path = civicon.github.io
 	url = https://github.com/civicon/civicon.github.io.git
 [submodule "keyneson"]
-	path = keyneson
+	path = schumpersorts
 	url = https://github.com/maxheld83/keyneson.git
