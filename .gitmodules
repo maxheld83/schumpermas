@@ -4,6 +4,6 @@
 [submodule "civicon.github.io"]
 	path = civicon.github.io
 	url = https://github.com/civicon/civicon.github.io.git
-[submodule "keyneson"]
+[submodule "schumpersorts"]
 	path = schumpersorts
-	url = https://github.com/maxheld83/keyneson.git
+	url = https://github.com/maxheld83/schumpersorts.git
