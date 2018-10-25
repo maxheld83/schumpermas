@@ -34,13 +34,13 @@ Running and documenting all these variations will be next to impossible without 
 
 ```{r import-q-sorts, echo = FALSE, warning = FALSE}
 q_sorts <- import.q.sorts(
-  q.sorts.dir = "keyneson/qsorts/",
+  q.sorts.dir = "schumpersorts/qsorts/",
   q.set = q_set,
   q.distribution = q_distribution,
   conditions = c("before","after"),
   manual.lookup = as.matrix(
     read.csv(
-      "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
+      "keyneson/ids.csv",
       row.names=2
     )
   ),
@@ -55,12 +55,12 @@ names(dimnames(q_sorts)) <- c("items", "people", "conditions")
 ```{r import-q-feedback, echo = FALSE}
 #TODO all this importing stuff should be done together with exporting to dataverse in a convenient way, maybe as an R object after all
 q_feedback <- import.q.feedback(
-  q.feedback.dir = "keyneson/feedback/",
+  q.feedback.dir = "schumpersorts/feedback/",
   q.sorts = q_sorts,
   q.set = q_set,
   manual.lookup = as.matrix(
     read.csv(
-      "keyneson/keyneson-sample/keyneson-concourse/ids.csv",
+      "keyneson/ids.csv",
       row.names=2
     )
   )

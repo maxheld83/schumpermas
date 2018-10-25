@@ -428,7 +428,7 @@ from the same email, clarifies quite well why I'm not getting out the same vars 
 
 ```{r q-concourse}
 q_concourse <- import.q.concourse(  # import concourse
-  q.concourse.dir = "keyneson/keyneson-sample/keyneson-concourse/",
+  q.concourse.dir = "keyneson/",
   languages = c("english", "german")
 )
 ```
@@ -470,7 +470,7 @@ What we have here is a *factorial* design of statements (not of people!) -->
 
 ```{r q-sampling-structure}
 q_sampling_structure <- read.csv(  # read in sampling structure
-  file = "keyneson/keyneson-sample/sampling-structure.csv",
+  file = "keyneson/sampling-structure.csv",
   fileEncoding = "UTF-8"  # should not be necessary, all data is ascii
 )
 ```
