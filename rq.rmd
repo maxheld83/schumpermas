@@ -63,6 +63,67 @@ If, as hypothesized, people with greater cognitive ability will display greater 
 More broadly, a [dp]{acronym-label="dp" acronym-form="singular+short"} on tax choice can inform several fields, including research on public finance and the welfare state, public choice and political economy.
 
 
+<!-- In my research, I want to test whether ordinary people, if subjected to a deliberative process (similar to the Danish Consensus Conferences or a smaller BC Citizen Assembly), change their thinking, talking and decisions on taxation. I hypothesize, that in fact, they will change their preferences and understandings, revealing "enlightened" support for greatly more progressive taxes (including a post-paid, cash-flow-based progressive consumption tax). I have tried to provisionally translate these misunderstandings into a social choice account of amalgamated preferences (similar to your 2003 BJPS piece with List), but any empirical verification will need larger samples.
+
+I have read some of your work and understand that you, too, find merely procedural standards for deliberative democracy too limited. I think that deliberation taxation, in particular, requires a more than procedural standard, both because it is highly complex and technical and because it is in those very abstractions that any more or less legitimate discourse ethic (Habermas 1984) would have to be found.
+
+I find your suggested standard of "inter-subjective rationality" (with Niemeyer 2007 SPSR) very attractive; I would like to test a similar standard in the deliberation on taxation. -->
+
+<!-- In terms of procedure vs substance in deliberative democracy - you are not so alone in seeking standards beyond procedure. Apart from Simon, I'm thinking of Gutmann and Thompson, especially their Why Deliberative Democracy? book; Joshua Cohen's essay on 'Procedure and Substance in Deliberative Democracy'; David Estlund on epistemic argument for deliberative democracy.  -->
+
+<!-- Right now, I am struggling to spell out what a standard of intersubjective rationality may mean for deliberating tax choice (my area of interest). My position so far is that, to even test this standard I need 
+a set of abstractions and remaining expert disagreement in which deliberators may -- or may well not -- find universal validity claims (borrowing Habermas 1984) (I have distilled a set of broadly consensual economic abstractions and disagreements in my chapters 4ff).
+a relatively extensive, but rigorously balanced learning phase (akin to the BC Citizen Assembly on electoral reform), which people are introduced to (expert) concepts, alternatives and arguments, whose rationality they can then intersubjectively assert -- or refute. The trick must be to have such a learning phase without degrading deliberation into a classroom exercise in which the (economics) teacher knows best. -->
+
+<!-- I continue to find the exchanges between social choice and deliberative theory very exciting; it seems like such a synthesis -- as you suggest with Christian List in the BJPS -- could reveal these disjunct strands of research to be concerned with two sides of the same, flawed coin that is pluralist democracy. If deliberation normatively implies an "epistemic conception of democracy" (Cohen 1986), social choice shows empirically and a-priori (Arrow, Condorcet, Gibbard-Satterthwaite ...), that absent some of such intersubjective rationality, unstable and dysfunctional aggregation will plague democratic rule. 
+Unfortunately I have for now stepped back from applying such an analysis to taxation, but hope to do that later. I'd expect that pre-deliberative preferences on tax fall for aggregative dysfunctions (e.g. Condorcet cycles b/c not single-peaked), precisely as a function of collapsing distinct (value, belief ...) dimensions on tax into fewer, ill-formed dimensions, along some of the false tradeoffs and systematic misunderstandings of tax that I hypothesize. (e.g. "bastard Keynesianism" between more (consumption) taxation and less spending). I have also -- very provisionally -- argued that these misunderstandings and false tradeoffs translate into violations of von Neumann-Morgenstern rationality at the individual level.
+I take the -- apparently uncommon and a little imprecise -- formulation of "amalgamated preferences" from David Miller (1992: 65, emphasis added), who defined them thus:
+"I have suggested that the major reason apart from empirical error why preference orders are likely not to be single peaked is that the issue under discussion amalgamates separate dimensions of choice to which different voters attach different weights. I am claiming that it is a virtue of deliberative democracy (unlike, say, simple opinion-polling) that it will reveal this to be the case." 
+-- Miller, D. (1992). Deliberative Democracy and Social Choice. Deliberative Democracy and Social Choice, 40, 54–67. 
+Anyway, this, for now, is pie-in-the-sky for me.  -->
+
+
+<!-- 'm currently wrestling with defining a substantive standard of argumentative quality, and justifying an appropriate deliberative format to test such a standard in deliberating taxation. Because taxation is such a complex topic, I think it requires a learning phase (akin to the BC Citizens' Assembly on electoral reform). I also think that the ontologically (ideologically?) loaded abstractions and inescapably political tradeoffs of taxation lend themselves well to a substantive standard of argumentative quality. In short, I think that a non-procedural view of deliberative democracy implies that to meaningfully deliberate taxation, some concepts and arguments should probably be considered at some point, on their own terms. I do not think that implies that people have to find these arguments compelling, let alone that they must prefer any given tax (that would collapse the exercise into a substantive dispute). I advocate in the proposal that we test robustly whether ordinary people do consider these arguments on their own terms, and, maybe, find some of them compelling (or not).
+
+Is that a convincing argument (see attachment)?
+
+Unfortunately, I came across your work on inter-subjective rationality only recently and I have not considered it in my proposal yet, though it seems applicable. I have so far rested my proposal on an -- admittedly cursory -- reading of Habermas, as well as Thompson's and Gutmann's work. However, I find your work more amenable to empirical verification, and admire the rigorous operationalizations, including Q-methodology.
+
+Here are some preliminary thoughts on how your operationalization of deliberative outcomes might play out in taxation:
+Meta-consensus
+Epistemic: Agreement on the ontological status of tax: including, for example, a provisional and domain-constrained but pragmatic assumption of homo economicus (which may not be agreed to be an adequate, much less desirable description of human nature)
+Preference: Agreement on some basic causal beliefs: including, for example, the non-trivial incidence of taxation (who ends up being burdened is often not the same person who pays the tax) and that by definition, only natural persons are moral subjects.
+Normative: Agreement on some tradeoffs, including, for example, that given the above, taxes always present -- if differing -- trade-offs between efficiency, equity and sustainability (all of which are legitimate)
+Inter-subjective rationality
+People who a) believe that income taxation hurts incentives and b) value a progressive schedule should also c) prefer a progressive consumption tax.
+..
+This application is still fairly half-baked, and I'll need to work more on that.
+
+For now, I'd appreciate your comment on my proposal, especially considering the role of learning phases and a substantive standard to which deliberation should be held.
+
+I'm curious whether you see a connection, between meta-consensus, inter-subjective rationality and learning phases. It seems to me that learning phases designed to suggest bases for meta-consensus might be well-placed in deliberation, all the while avoiding a substantive stance in the issue at stake. -->
+
+
+<!-- Your work on operationalizing meta-consensus and especially intersubjective rationality via Q methodology has grown on me, and I think it might work really well for taxation. It seems to be a more powerful approach than merely measuring attitude and knowledge change (Fishkin), mostly procedural "Deliberative Quality" (DQI Steenbergen, Bächtiger et al) or even preference structuration (Luskin et al) -- even though these may well be antecedents to (process) or functions of (structuration) intersubjective rationality. 
+
+It's always been my intuition that there are different popular preferences in tax, stemming from similar (lip-serviced, muddled) beliefs and values -- and vice versa. For example, it would seem odd that someone, say, a self-identified libertarian, who is opposed to coercive allocation of material resources and knows that a lot of wealth is generated by extracting natural resources under the coercive protection of states would not also be in favor of taxing such rent-seeking (for example, through a land value or capture tax). However, if I try to apply such an exogenous standard of consistency to observed arguments, some social scientists get uncomfortable, maybe (rightfully) fearing a confusion of deliberative process and epistemic substance, or, in short: Who am I to say that such an argument would be inconsistent?
+
+It seems a little odd that a practice founded on the hope (though not guarantee) of communicative rationality (Habermas) would shy away from critiquing the rationality of any observed argument, and it is disheartening to hear that your operationalization has not been universally welcome.
+
+It seems to be that the appeal of your operationalization, especially the application of Q methodology is that it manages to uphold a standard of intersubjective rationality without reverting to some exogenous, substantive theory (even though there should be a place for that, too).
+
+My immediate concern with my PhD project is that I face -- amongst other constraints -- a tradeoff between the size of the sample, and the length of the deliberation, especially any learning phases (akin to the BC Citizens' Assembly). I understand that Q methodology would need a pretty large sample to yield robust results, but I am not sure that with many people, but little time, much can be accomplished in terms of improving intersubjective rationality, especially on such a deeply technical issue (tax), rife with meta disagreement. 
+
+Would you agree?
+
+I am now setting out to exploring ways of adapting your research logic to a qualitative, small-n design, which seems  more appropriate for my means. If nothing else, your notions of meta-consensus and intersubjective rationality will be helpful in reformulating my hypothesis.
+
+I'll keep you posted about my progress. -->
+
+<!-- First, re the inclusion of more than one Q sort. I’ve always included value and belief statements into the same Q sort. This is partly because in practice it’s been impossible to absolutely demarcate between the two types of statements, particularly when they are drawn from real language. But even if it is possible to demarcate clearly between them, there is no reason not to do them at the same time. If you do want to conduct a separate analysis on each type of statement, you could simply reconstruct them into two separate Q sorts using their scores from the combined Q sort.  -->
+
+<!-- might do the same with preferences -->
+
 <!-- %here used to be \ref{fig:tax-with-misunderstandings}, now only in proposal
 
 % \citep[334][]{Farrar2010}

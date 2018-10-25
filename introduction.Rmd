@@ -343,7 +343,7 @@ In chapter \@ref(3-crises) I argue that taxation is a key, yet understudied prec
 Secondly, suppose that our M.D.-hopeful insists on teaching the participants not just some positions, but also other related practices such covering diet (*mitahara*), body cleansing (*shatkarma*), breathing (*pranayama*) as well as some philosophical background.
 At this point, her supervisors get a little anxious and worry where this might all lead.
 However, our medical student maintains that concentrating on exercise alone is alien to the tradition and shows how the elements of hatha yoga are neatly intertwined.
-She is the first to admit that she is not an expert in philosophy, let alone buddhist philosophy, but she is confident that she can provide at least *some* helpful background for participants do understand the broader context.
+She is the first to admit that she is not an expert in philosophy, let alone buddhism, but she is confident that she can provide at least *some* helpful background for participants do understand the broader context.
 
 Analogously, this dissertation also requires some deep background for participants and readers alike.
 In chapter \@ref(abstractions), I rehearse a few selected abstractions of taxation and microeconomics, including optimality, incidence, the Haig-Simons equivalence of income, the circular flow of the economy and implications of personal taxation.
