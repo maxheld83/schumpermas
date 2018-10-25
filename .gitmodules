@@ -7,3 +7,6 @@
 [submodule "schumpersorts"]
 	path = schumpersorts
 	url = https://github.com/maxheld83/schumpersorts
+[submodule "keyneson"]
+	path = keyneson
+	url = https://github.com/maxheld83/keyneson
