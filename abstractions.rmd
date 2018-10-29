@@ -1,6 +1,7 @@
 # First-Order Abstractions {#abstractions}
 
-> *"The devil may indeed dwell in the details, but we first need to find an angel or two in the abstractions that govern \[...\]"*\
+> The devil may indeed dwell in the details, but we first need to find an angel or two in the abstractions that govern [...].
+> 
 > --- Edward J. @McCaffery2002 [K117]
 
 <!-- very important: we are here interested only in the quality of ONE of state/market interfaces, namely redistributive and general revenue tax.

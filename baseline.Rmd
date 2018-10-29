@@ -1,5 +1,12 @@
 # Baseline {#baseline}
 
+> He who knows only his own side of the case knows little of that. 
+> His reasons may be good, and no one may have been able to refute them. 
+> But if he is equally unable to refute the reasons on the opposite side, if he does not so much as know what they are, he has no ground for preferring either opinion [...]. 
+> He must be able to hear them from persons who actually believe them [...] he must know them in their most plausible and persuasive form.
+>
+> -–- John Stuart @Mill-1959
+
 <!-- - reports correlations, factors from pre- and post-sort. -->
 <!--    - *factor interpretation* in substantive terms of tax and the economy. -->
 

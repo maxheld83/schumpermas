@@ -2,6 +2,11 @@
 
 # Research Design
 
+
+
+
+Between these two 
+
 At this intersection of ([pct]{acronym-label="pct" acronym-form="singular+short"}) taxation and (deliberative) democracy, two related research questions arise:
 
 1.  [\[itm:resolve-better-tax\]]{#itm:resolve-better-tax label="itm:resolve-better-tax"}
@@ -18,6 +23,7 @@ Deliberative democracy is a good *method* for research question [\[itm:resolve-b
 Conversely, taxation is a good *case* to test deliberative democracy in research question [\[itm:prove-deliberative-democracy\]](#itm:prove-deliberative-democracy){reference-type="ref" reference="itm:prove-deliberative-democracy"}, because it affects everyone, but is shrewd in the kind of macro-level abstractions which deliberative fora have so far avoided
 [^1]
 and which may strain the cognitive ability of deliberators.
+
 
 ## Hypotheses
 
@@ -103,6 +109,12 @@ For now, I'd appreciate your comment on my proposal, especially considering the 
 
 I'm curious whether you see a connection, between meta-consensus, inter-subjective rationality and learning phases. It seems to me that learning phases designed to suggest bases for meta-consensus might be well-placed in deliberation, all the while avoiding a substantive stance in the issue at stake. -->
 
+
+So, "who dunnit\"?
+Because this dissertation is, at bottom, positivist, I cannot show what --- let alone *who* --- prevented a better tax, or a better democracy.
+Non-events such as as land or consumption taxation and deliberative democracy are always causally underdetermined, just as history is always overdetermined.
+For a detective, that is a bit of a let-down, but there is still work to be done.
+I might not find the perpetrator, but at least, I can absolve wrongly accused democracy, and, during the hearing, spread word of the crime.
 
 <!-- Your work on operationalizing meta-consensus and especially intersubjective rationality via Q methodology has grown on me, and I think it might work really well for taxation. It seems to be a more powerful approach than merely measuring attitude and knowledge change (Fishkin), mostly procedural "Deliberative Quality" (DQI Steenbergen, Bächtiger et al) or even preference structuration (Luskin et al) -- even though these may well be antecedents to (process) or functions of (structuration) intersubjective rationality. 
 

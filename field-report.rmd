@@ -2,6 +2,10 @@
 
 # Field Report {#field}
 
+> Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.
+>
+> --- Margaret Mead
+
 <!-- "Das beste Argument gegen die Demokratie ist ein fünfminütiges Gespräch mit dem durchschnittlichen Wähler.”
 
 Wir sagen: das beste Argument für Demokratie ist ein fünftägiges Gespräch mit Bürgerinnen und Bürgern wie Sie und ich. -->

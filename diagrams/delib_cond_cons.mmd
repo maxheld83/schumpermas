@@ -1,0 +1,17 @@
+graph LR
+
+  subgraph Deliberation
+    D{?}
+  end
+
+  subgraph Preconditions
+    DQI(Discourse Quality Index) --> D
+  end
+
+  subgraph Consequences
+    D --changes--> DP[Preferences, Knowledge, Beliefs]
+    D --increases--> SC[Preference Structuration]
+    D --leads to--> RC[Rational Consensus]
+    DP --special case of--> SC
+    SC --special case of-->RC
+  end

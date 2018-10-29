@@ -2,6 +2,23 @@
 
 # Introduction {#intro}
 
+> One should always look for a possible alternative, and provide against it.
+> It is the first rule of criminal investigation.
+>
+> --- Sherlock Holmes in Conan @Doyle1904's *The Adventure of Black Peter* [-@Doyle1904 567]
+
+If world history is still written in tax, as @Schumpeter believed, the people of our democracies, too, must read and speak these codes, to live up to the emancipatory promise of modernity.
+
+If communicative action can heal the disagreement and confusion wrought as modernity differentiated System and Lifeworld, as @Habermas-1984 hopes, in our discourse on tax, too, universally acceptable validity claims instead of money and power must rule to uphold our faith in liberal democracy.
+
+I here probe into one intersection of legitimate inputs and outputs of the social contract [compare @Scharpf1997]: the discourse *on*, and economics *of* tax.
+
+I ask, how --- if at all --- people under current democratic arrangements think and speak differently about tax, from how they *would* think and speak about it, if they lived under conditions of ideal speech.
+<!-- not so much the speech with q any more ... -->
+I test, how --- if at all --- people change their thinking and speech about tax, if they participate in a democratic process that is *closer* to the Habermasian ideal?
+I hypothesize that --- as a result of *more* ideal speech --- people will prefer different taxes, including a PCT.
+<!-- %rather than more, write closer to, more could be misunderstood -->
+
 <!-- . Introduction [based on introduction] -->
 <!--    - why does any of the following matter? -->
 <!--    - because the *welfare state (or mixed economy)* is based on good taxation, and taxation is in crisis. -->
@@ -18,35 +35,23 @@
 %This dis-connect is evident in misleading sloganeering (‘Mehr Netto vom Brutto’, more net out of gross income), widespread superstitions (‘employers [sic!] pay half of social insurance’), bastard Keynesianism (‘consumption is good!’) or redistributive smoke grenades (‘we should tax companies’).
 %At a deeper level, I wonder whether pluralist interest and electoral re-presentation can still be reasonably assumed to yield efficient and equitable policies, in an ever more complex world marred by cooperation problems. -->
 
-If world history is still written in tax, as @Schumpeter believed, the people of our democracies, too, must read and speak these codes, to live up to the emancipatory promise of modernity.
-If communicative action can heal the disagreement and confusion wrought as modernity differentiated System and Lifeworld, as @Habermas-1984 hopes, in our discourse on tax, too, universally acceptable validity claims instead of money and power must rule to uphold our faith in liberal democracy.
-<!-- comment MN dependent on each theorie -->
-
-I here probe into one intersection of legitimate inputs and outputs of the social contract [compare @Scharpf1997]: the discourse *on*, and economics *of* tax.
-
-I ask, how --- if at all --- people under current democratic arrangements think and speak differently about tax, from how they *would* think and speak about it, if they lived under conditions of ideal speech.
-<!-- not so much the speech with q any more ... -->
-I test, how --- if at all --- people change their thinking and speech about tax, if they participate in a democratic process that is *closer* to the Habermasian ideal?
-I hypothesize that --- as a result of *more* ideal speech --- people will prefer different taxes, including a PCT.
-<!-- %rather than more, write closer to, more could be misunderstood -->
-
 
 ## Structure of the Dissertation {#structure}
 
-The following chapters follow a fairly conventional structure from theory to methods to results and conclusion, but the *status* of especially the first couple of chapters may unclear to readers.
+The following chapters follow a fairly conventional structure from theory to methods to results and conclusion, but the *status* of especially the first couple of chapters may be unclear to readers.
 Out of substantive necessity, the references and disciplines in these first couple of chapters can be quite wide-ranging, though these are merely introductory (for the reader) and remedial (for the participants).
 To clarify the role of these chapters, let me first situate them within the remainder of this dissertation.
 
 This project is modeled on a straightforward experimental design, as it is frequently used in clinical studies.
-However, because the study deals not with easily measurable biomarkers, but with subtleties of deliberation and the abstractions of text, the design can be hard to recognize.
+However, because the study deals not with easily measurable biomarkers, but with subtleties of deliberation and the abstractions of tax, the design needs a little more conceptual groundwork.
 
 
 ### Research Design by Analogy
 
 Consider an analogous example to let me guide you through the following chapters:
 A doctoral candidate in medicine wants to study how a daily morning exercise affects mindfulness.
-In this exercise study, the absence (or presence) of the morning routine is the *independent variable* (IV), the kind and level of mindfulness the *dependent variable*.
-Analogously, in the present study, the participation in the CiviCon citizen conference is the *IV*, and subjectivities concerning taxation are the *DV*.[^no-rct]
+In this exercise study, the absence (or presence) of the morning routine is the *independent variable* (IV), the kind and level of mindfulness the *dependent variable* (DV).
+Analogously, in the present study, the participation in the CiviCon citizen conference is the *IV*, and changes in the subjectivities and preferences concerning taxation are the *DV*.[^no-rct]
 <!-- TODO might cite some experimental design literature here -->
 
 [^no-rct]: Proper experimental designs are often double-blind *randomly controlled trials* (RCT), but these additional rigors are not possible or deemed unnecessary for the present study on deliberation and taxation.
@@ -67,8 +72,8 @@ Table: (\#tab:commented-toc) A Commented Table of Comments with Analogous Experi
 
 | Research Design Concept | Hypothetical Mindfulness Study | This Study | Chapter |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Research Topic | Effect of morning exercise on mindfulness | Effect of deliberation on subjectivities on taxation | \@ref(intro) |
-| Conceptualisation | Hatha Yoga | Why taxation matters | \@ref(3-crises) |
+| Research Topic | Exercise and mindfulness | Deliberative democracy and taxation | \@ref(intro) |
+| Background | Stress and the body | Why taxation matters | \@ref(3-crises) |
 | Theoretical Background | Diet (*mitahara*), body cleansing (*shatkarma*), breathing (*pranayama*) and some philosophical background | Optimality, Incidence, Haig-Simons Equivalence, Circular Flow, Personal Taxation as well as some axiology and ontology | \@ref(abstractions) |
 | Operationalisation | 5 selected asanas (positions), including the rare *firefly pose* | Fundamental choices in taxation: base and schedule | \@ref(base-schedule) |
 | Treatment regimen | In-Person group sessions at local gym | Weeklong deliberation with room and board and extensive learning phases | \@ref(civicon) |
@@ -348,7 +353,7 @@ She is the first to admit that she is not an expert in philosophy, let alone bud
 Analogously, this dissertation also requires some deep background for participants and readers alike.
 In chapter \@ref(abstractions), I rehearse a few selected abstractions of taxation and microeconomics, including optimality, incidence, the Haig-Simons equivalence of income, the circular flow of the economy and implications of personal taxation.
 I describe why these are necessary concepts to any reasoned debate on taxation.
-Because these concepts, along with their underlying ontological and axiological assumptions are also concentious, I also provide a working vocabulary of economic philosophy to explicate the ideological import of these concepts.
+Because these concepts, along with their underlying ontological and axiological assumptions are also contentious, I also provide a working vocabulary of economic philosophy to explicate the ideological import of these concepts.
 
 Thirdly, imagine that our medical student is also quite particular about proper postures and requires subjects to concentrate on, say, the somewhat obscure and demanding *firefly pose*, along with four other precisely defined positions, and nothing else.
 Her supervisors wonder why she could not use simpler, more mainstream positions, such as the *downward-facing dog*, or *really*, just some plain breathing exercises.
@@ -419,6 +424,7 @@ in way, what this all is, is citizen science -->
 - spending side (completely different ballgame, ends up making the whole thing wayyy to big and loosy-goosy)
 - you gotta do this, otherwise it gets too fluffy -->
 
+
 ## Theory as Explanandum
 
 <!-- You need to have a first-order theory that you need to explain -->
@@ -431,6 +437,7 @@ in way, what this all is, is citizen science -->
 %temporal, spatial, social limits-->
 
 <!-- Before specifying a format to investigate this question, I must note some of the substantive desiderata of deliberation and taxation that any operationalization will have to reflect, if it is to maintain construct validity. -->
+
 
 ## Payoff
 
@@ -494,11 +501,6 @@ liberal, but deliberative democracy may be much than the representative institut
 By comparison, the status quo of pluralism appears to be a minimal formulation of liberal democracy, as skeptical about what people *can* do, as it is restrictive about what democracy *should* do.
 Once a historical achievement, it today appears hopelessly outmatched by the vast complexity and tightly concentrated special interest of late capitalist society.
 
-So, "who dunnit\"?
-Because this dissertation is, at bottom, positivist, I cannot show what --- let alone *who* --- prevented a better tax, or a better democracy.
-Non-events such as as land or consumption taxation and deliberative democracy are always causally underdetermined, just as history is always overdetermined.
-For a detective, that is a bit of a let-down, but there is still work to be done.
-I might not find the perpetrator, but at least, I can absolve wrongly accused democracy, and, during the hearing, spread word of the crime.
 
 (p. ) investigates the link between .
 I start by rounding up for suboptimal taxation (, p. ) and proceed --- as Holmes advises --- by the method of elimination.

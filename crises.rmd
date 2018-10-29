@@ -4,6 +4,21 @@
 
 # A Tale of Three Crises {#crises}
 
+<!-- > I'm still trying to climb out from under the avalanche of horror, nightmare and disgust that all of this [the 2011 US debt ceiling crisis] dumped on me, along with, I suppose 300 million other Americans and it's a little hard to sort out your thoughts after this much awfulness comes along.
+> [..]
+> Sorry but I actually do think that this [the 2011 US debt ceiling crisis] is one more symptom of a long, slow constitutional crisis, it goes back further than the 2000 election.
+> This kind of thing keeps happening again and again, it's as if our system is getting hardening of the arteries, we get a stint once in a while [\ldots] but to me it's getting scarier and scarier over the long haul.
+> [...] -->
+> There are a lot of rational (tax) ideas out there, there are a lot of ways you could build something from scratch that would look roughly like the society we have now, but would work better, would be smoother and fairer and all that.
+> And of course, these things are proposed in politics [...] and then they cannot be done.
+> Then our system prevents them from happening or garbels them in such a way that they look supremely ugly, once they are created [...].
+> This is a machine for creating disillusionment with government, cynicism, Tea-Partyism, and over time, this is our county, our democracy eating itself alive.
+> [...]
+> And that's why I get a little discouraged sometimes.
+>
+> --- [Hendrik Hertzberg](https://www.newyorker.com/contributors/hendrik-hertzberg) on the [* Political Scene*](https://www.newyorker.com/tag/political-scene-podcast) podcast by the *New Yorker*, discussing US tax reform plans in 2011.
+
+
 <!-- %So \emph{really}, is all ``for [\ldots] the best [\ldots] in the best of all possible, [liberal-democratic, capitalist] worlds''  (\emph{ibid.}: K428ff).
 %
 %Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism.
@@ -262,7 +277,7 @@ This interface is ill-defined, as two incompatible logics collide, twice:
     In fact, government procurement of health and other services can be understood as a response to *for* these goods (p. ).
     Arguably, government procurement replaces one (horrendous) market failure with another, (milder) form of failure.
 
-![The Command-Market Interface in UK and German Healthcare[]{label="fig:interface-command-market-health"}](interface-command-market-health){#fig:interface-command-market-health width="1\textheight"}
+<!-- TODO img here The Command-Market Interface in UK and German Healthcare -->
 
 \scriptsize{
     Market supply and demand are drawn in a conventional price-quantity diagram.
@@ -392,8 +407,7 @@ Assuming, as I do, (p. ) and conditions for (p. ) markets have at least two at
     [^22]
     [^23]
 
-    \centering
-    ![Market Equilibrium of Supply and Demand[]{label="fig:supply-demand"}](supply-demand){#fig:supply-demand width="100%"}
+<!-- ![Market Equilibrium of Supply and Demand[]{label="fig:supply-demand"}](supply-demand){#fig:supply-demand width="100%"} -->
 
 2.  The *price system* (see column 1, row 4 in , p. ) makes markets into supreme "information processors" [@Hayek1931].
     [^24]
@@ -5262,17 +5276,9 @@ foo
 %welfare state is worse today. -->
 
 <!---
-> *"The spirit of a people, its cultural level, its societal structure, the deeds its policy may prepare --- all this and more is written in its fiscal history, stripped of all phrases.
-> He who knows how to listen to its message here discerns the thunder of world history more clearly than anywhere else."*\
-> --- Joseph Schumpeter (1918 \[1991\])
 
 ## Why it Matters: The Welfare State as Mixed Economy {#sec:why-mixed-economy-matters}
 
-> *"Yes we can:
-> to justice and equality.\
-> Yes we can:
-> to opportunity and prosperity."*\
-> --- Barack H. Obama, Obama For America 2008
 
 At this point, a reader may ask:
 why would all, or even any of this, matter to the welfare state?
@@ -5970,15 +5976,6 @@ That is an old deal worth fighting for.
 > *"But who can say how much is endurable, or in what direction men will seek at last to escape from their misfortunes."*\
 > --- John Maynard @Keynes1936
 
-> *"
-> There are a lot of rational (tax) ideas out there, there are a lot of ways you could build something from scratch that would look roughly like the society we have now, but would work better, would be smoother and fairer and all that.
-> And of course, these things are proposed in politics \[...\] and then they cannot be done.
-> Then our system prevents them from happening or garbels them in such a way that they look supremely ugly, once they are created \[...\].
-> This is a machine for creating disillusionment with government, cynicism, Tea-Partyism, and over time, this is our county, our democracy eating itself alive.
-> \[...\]
-> And that's why I get a little discouraged sometimes."*\
-> --- Hendrik Hertzberg (2011) on The New Yorker podcast *The Political Scene*
-
 
 ## The Social Contract
 
@@ -6010,9 +6007,6 @@ The German constitution knows a similar norm:
 It too, displays the same genial insight into the relationship between economic and political integration:
 as the commerce clause, it does not compel any particular social or other policy, but, if economic integration has occurred, endows the democratic sovereign to rule at the newly emerged, higher level of societal organization.
 
-
-> *"But who can say how much is endurable, or in what direction men will seek at last to escape from their misfortunes"*\
-> --- John Maynard @Keynes1936
 
 Optimists, not just of the Panglossian kind, are always inclined to see glasses half-full, and so many argue that any, even imperfect or negative European integration is better than none.
 That is not so much optimistic, as it is hopelessly naive.
@@ -6177,21 +6171,3 @@ Writ large on society, this is the disintegration that @Offe1998 presciently fea
 %this is key.
 %It's fucked up, but systematically so.
 %Edit -->
-
-
-<!-- \begin{quote}
-	\emph{``
-	%``I'm still trying to climb out from under the avalanche of horror, nightmare and disgust that all of this [the 2011 US debt ceiling crisis] dumped on me, along with, I suppose 300 million other Americans and it's a little hard to sort out your thoughts after this much awfulness comes along.
-	%[\ldots]
-	%Sorry but I actually do think that this [the 2011 US debt ceiling crisis] is one more symptom of a long, slow constitutional crisis, it goes back further than the 2000 election.
-	%This kind of thing keeps happening again and again, it's as if our system is getting hardening of the arteries, we get a stint once in a while [\ldots] but to me it's getting scarier and scarier over the long haul.
-	%[\ldots]
-	There are a lot of rational (tax) ideas out there, there are a lot of ways you could build something from scratch that would look roughly like the society we have now, but would work better, would be smoother and fairer and all that.
-	And of course, these things are proposed in politics [\ldots] and then they cannot be done.
-	Then our system prevents them from happening or garbels them in such a way that they look supremely ugly, once they are created [\ldots].
-	This is a machine for creating disillusionment with government, cynicism, Tea-Partyism, and over time, this is our county, our democracy eating itself alive.
-	[\ldots]
-	And that's why I get a little discouraged sometimes.''}
-	\\*
-	--- Hendrik Hertzberg (2011) on The New Yorker podcast \emph{The Political Scene}
-\end{quote} -->
