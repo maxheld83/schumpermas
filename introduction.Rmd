@@ -10,10 +10,10 @@
 There is something fishy about our current historical moment, sometimes ominously referred to as "late capitalism" [first as description @Sombartmodernekapitalismus1902; then as prophetic critique @OffeSpatkapitalismusVersuchBegriffsbestimmung1972; @MandelLateCapitalism1978; today as snarky sarcasm @LowreyWhyPhraseLate] or "post(-truth) democracy" [@Crouch2004].
 
 On the one hand, in absolute and aggregate terms, the developed world has never had it so good.
-At least for now, and albeit threatened by a barrage of geopolitical risks and global imbalances, our planetary market economy continues to produce marvels of material prosperity.
+At least for now, and albeit threatened by a barrage of geopolitical risks and global imbalances, our global market economy continues to produce marvels of material prosperity.
 10 years after the 2017ff Great Recession, many members of the Organization for Economic Cooperation and Development (OECD) report relatively healthy real gross domestic product (GDP) growth rates averaging 2.5% and harmonised unemployment rates (HURs) of around 5.3% in 2017.
 <!-- TODO add proper citations -->
-These mainstream economic indicators are highly imperfect [^bad_gdp], but they  they suggest that far from collapsing under the weight of its ostensible internal contradictions, capitalism is still humming along.
+These mainstream economic indicators are highly imperfect [^bad_gdp], but they  suggest that far from collapsing under the weight of its ostensible internal contradictions, capitalism is still humming along.
 
 [^bad_gdp]: Even if you accept a narrowly economic concept of societal prosperity, GDP is a fairly bad indicator.
 It is widely cited as a measure of economic *growth*, though it actually measures only the volume of market *activity*.
@@ -25,7 +25,7 @@ Economic growth in the developed world, while still positive, appears to be slow
 Income and wealth inequality are rising, though some of that widening gap may be driven by smaller household sizes.[^small_households]
 In the face of obscene riches, many people are still working harsh, back- or soul-breaking jobs and suffering from relative *and* absolute poverty.
 Our economies also appear to be increasingly unsustainable.
-In the medium term, macroeconomic imbalances and populist rule threaten global free trade, and renewed asset bubbles (real estate, corporate debt) and fresh systemic risks (ETFs) could burst, yet again, into an economic crises, merely forestalled by low interest rates, excessive public or private debt and asset rallies.
+In the medium term, macroeconomic imbalances and populist rule threaten global free trade, and renewed asset bubbles (real estate, corporate debt) and fresh systemic risks (index-replicating exchange-traded funds, ETFs) could burst, yet again, into economic crises, merely forestalled by low interest rates, excessive public or private debt and asset rallies.
 In the long term, the real dissavings taken out against our planetary ecosystems, including, but not limited to CO2e-emissions, may come to roost as grave environmental degradation of our livelihoods.
 At the same time, the institution traditionally tasked with reigning in the economy, the modern welfare state, appears severely constrained in its ability to redistribute market outcomes, to fund public goods and to internalise externalities.
 Marred by an increasingly regressive tax base, high debt, homegrown inefficiencies and incompetence, as well as, recently, populist and illiberal upswings, the state seems to be supremely outmatched.
@@ -51,7 +51,7 @@ Here too, the postwar social contract appears to be crumbling: liberal democracy
 How, then, are we to square these seemingly antithetical diagnoses of our current historical moment?
 
 Critical social scientists, from @Marx-1867-aa to today's gloomy pronouncers of "post-democracy" [@Crouch2004] and "late capitalism" [@mountford2011], respond by highlighting the inherent contradictions of current economic and social arrangement, and contrasting a deplorably imperfect present reality against supposedly achievable utopias past or future [also see @Streeck2013; @NachtweyAbstiegsgesellschaftUberAufbegehren2016].
-This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but has also fueled the hybris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
+This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but it has also fueled the hybris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
 <!-- TODO add meta reference to Bismarck -->
 
 By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic consequentialism [@McCloskeyBourgeoisVirtuesEthics2006], wish not to demand *more* of coercive institutions and human nature, but *less*.
@@ -65,8 +65,13 @@ We should interrogate our present situation through both these ideological lense
 However, neither of these approaches are 1) scientific pursuits in a narrow, empirical sense or 2) terribly specific about how to go on from here.
 Because conservative and libertarian analyses mostly proceed by *via negativa*, recommending what *not* to do, these limitations naturally apply more to critical and other approaches calling --- *via positiva* --- for *more*, or different collective intervention [see @taleb_antifragile:_2012].
 
-1. To make a falsifiable, empirical assertion about the imperfection of our A falsifiable, empirical assertion about our present situation would require a reliable point of comparison, typically in the recorded past, but at this past point in time, all other things were emphatically *not* equal, including the context and operationalisation of variables.
+1. To falsifiably assess our present situation, we require a reliable point of comparison.
+  Many of the above diagnoses, sometimes implicitly, but often explicitly (as longitudinal trends and the like) choose a point in the past as a reference against which to compare the present.
+  This, alas, does not make for a rigorous research design, because in the past, all other things were emphatically *not* equal, including the context and operationalisation of variables.
+  
   This limitation is easiest to illustrate for quantitative comparisons, but may extend to qualitative data by analogy.
+  
+  
   
   
   Oddly, though most critical diagnoses are not strictly quantitative, few can resist dropping in the occasional, cherry-picked statistic [but compare @Crouch2004].
