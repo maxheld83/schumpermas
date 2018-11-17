@@ -22,7 +22,7 @@ In addition, GDP measurements over time are marred by technical difficulties in 
 
 On the other hand, the material and institutional foundations of OECD welfare capitalisms appear to be crumbling beneath our feet.
 Economic growth in the developed world, while still positive, appears to be slowing in the long run, perhaps never to return to the high rates of the catch-up during the post-war era.
-Income and wealth inequality are rising, though some of that widening gap may be driven by smaller household sizes.[^small_households]
+Income and wealth inequality are rising, though some of that widening gap may be driven by smaller household sizes.
 In the face of obscene riches, many people are still working harsh, back- or soul-breaking jobs and suffering from relative *and* absolute poverty.
 Our economies also appear to be increasingly unsustainable.
 In the medium term, macroeconomic imbalances and populist rule threaten global free trade, and renewed asset bubbles (real estate, corporate debt) and fresh systemic risks (index-replicating exchange-traded funds, ETFs) could burst, yet again, into economic crises, merely forestalled by low interest rates, excessive public or private debt and asset rallies.
@@ -31,8 +31,6 @@ At the same time, the institution traditionally tasked with reigning in the econ
 Marred by an increasingly regressive tax base, high debt, homegrown inefficiencies and incompetence, as well as, recently, populist and illiberal upswings, the state seems to be supremely outmatched.
 This disturbs the balance of state command and market economy, and may well fray the postwar social contract of relatively widely shared, stable growth, under largely private ownership of the means of production.
 
-[^small_households]: Changing household sizes are often overlooked in critical accounts of income inequality, though it is unclear whether we can really take much solace in supposedly exogenous smaller, poorer households.
-Smaller households may well, in part, reflect a preference for greater autonomy over greater household incomes, but they may also be, in part, an *effect*, not a *cause*, of broader economic shifts, such as increased job mobility, the decline of relatively well-paid manufacturing jobs or overhangs in marriage markets.
 <!-- TODO add sources, VK: True for the whole paragraph, but not more details, it's just the introduction/big picture. -->
 
 A similar conundrum besets the state of self-government.
@@ -49,56 +47,150 @@ Political debate, too, seems to fray, with increased tribalism, utter disregard 
 Here too, the postwar social contract appears to be crumbling: liberal democracy, with its finely tuned balance of individual rights and collective obligations, guarded by an iron-clad rule of law is now under attack.
 
 How, then, are we to square these seemingly antithetical diagnoses of our current historical moment?
+Has there been some foul play with welfare capitalism and liberal democracy?
+Or is this just the way the world works, bursting our delusional, progressive bubbles?
 
-Critical social scientists, from @Marx-1867-aa to today's gloomy pronouncers of "post-democracy" [@Crouch2004] and "late capitalism" [@mountford2011], respond by highlighting the inherent contradictions of current economic and social arrangement, and contrasting a deplorably imperfect present reality against supposedly achievable utopias past or future [also see @Streeck2013; @NachtweyAbstiegsgesellschaftUberAufbegehren2016].
+Critical social scientists, from @Marx-1867-aa to today's gloomy pronouncers of "post-democracy" [@Crouch2004] and "late capitalism" [@mountford2011] are always prone to suspect foul play.
+They highlight ostensible contradictions of current economic and social arrangement, and contrast a deplorably imperfect present reality against preferable arrangements past or future [also see @Streeck2013; @NachtweyAbstiegsgesellschaftUberAufbegehren2016].
 This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but it has also fueled the hybris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
 <!-- TODO add meta reference to Bismarck -->
 <!-- NOTE VK: fantastic transition! -->
 
-By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic consequentialism [@McCloskeyBourgeoisVirtuesEthics2006], wish not to demand more of coercive institutions and human nature, but *less*.
-From this vantage point, whatever crises we may face --- if any ---, are perhaps the result of an overextended state and overly inclusive polity, crumbling under the weight of its unkept promises and collective action dysfunctions.
-<!-- TODO these aren't very good "zeitdiagnosen", they are actually much better than that. so it's a weird comparison. -->
-<!-- VK:  You don't need the last sentence. The reader knows what libertarians want. Go on with the next one.-->
-These viewpoints, regrettably ignored or disavowed in much of the social sciences, call for healthy skepticism of man-made societal designs and urge us to respect the wisdom contained in evolved, and therefore stable institutions.
+By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic utilitarianism [@McCloskeyBourgeoisVirtuesEthics2006] find nothing outrageous, let alone suspicious about welfare capitalism and liberal democracy in disarray.
+From this vantage point, an overextended state and overly inclusive or demanding polity is simply crumbling under the weight of its unkept promises and collective action dysfunctions, as was to be expected all along.
+Many, more moderate critics may be worried what the postwar compact might take with it, should it go down violently [see @acemoglu_why_2012].
+But fearing collateral damage to the rule of law, property rights or even liberal democracy does not imply that there would be anything wrong with a retrenchment of state intervention.
+<!-- TODO add citation for moderate critics -->
+Conservative and libertarian viewpoints easily come across as curmudgeonly or even cynical, but they are ignored and disavowed in the much of the social science at all our peril. 
+This healthy skepticism of man-made societal designs and respect for the wisdom contained in evolved, and therefore stable institutions must not be ignored.
 In the extreme, however, conservatism and libertarianism risk collapsing entirely that what *is*, and *should* be, negating all collective political action in Panglossian tautology [@Voltaire1759].
 
-We should interrogate our present situation through both these ideological lenses
+We should interrogate our present situation through both ideological lenses --- and any other viewing aids not neatly foldable into these two camps --- if only to be aware of our blindspots, and perhaps, even to expand our moral horizons.
 <!-- VK: which lenses? (repeat it)-->
---- and any other viewing aids not neatly foldable into these two camps --- if only to be aware of our blindspots, and perhaps, even to expand our moral horizons.
-However, neither of these approaches are 1) scientific pursuits in a narrow, empirical sense or 2) terribly specific about how to go on from here.
-Because conservative and libertarian analyses mostly proceed by *via negativa*, recommending what *not* to do, these limitations naturally apply more to critical and other approaches calling --- *via positiva* --- for *more*, or different collective intervention [see @taleb_antifragile:_2012].
 
-1. To falsifiably assess our present situation, we require a reliable point of comparison.
-  Many of the above diagnoses, sometimes implicitly, but often explicitly (as longitudinal trends and the like) choose a point in the past as a reference against which to compare the present.
-  This, alas, does not make for a rigorous research design, because in the past, all other things were emphatically *not* equal, including the context and operationalisation of variables.
-  
-  This limitation is easiest to illustrate for quantitative comparisons, but may extend to qualitative data by analogy.
-  
-  
-  
-  
-  Oddly, though most critical diagnoses are not strictly quantitative, few can resist dropping in the occasional, cherry-picked statistic [but compare @Crouch2004].
-  
+Still, both approaches are equally limited in their scientific rigor.
 
-critical analysis of our present situation always requires a point of comparison, typically in the recorded past ("post-democracy") or an imagined future ("late capitalism").
-  This is often 
+Critical observers always assume we have been duped out of some better world and jump right to the "whodunnit" question.
+In the extreme, historical materialism conflates entirely the questions of economic constraints and political causes, because it conveniently assumes the latter to be mere superstructure to the former [@popper_poverty_2013; compare @Marx1844].
+The modern-day heirs of post-structuralism and associated post-isms take a similar tack when they define away, or straight up ignore such at least pragmatically useful concepts such as productivity, marginal use or even rational discourse as mere language permeated by power [see @Gibson-Graham2006 and @Peters2001; broadly @Laclau2014; distantly @Foucault-1972-aa].
+Not only are concrete critiques of the supposedly corrupted intellectual apparatus undergirding, say, "neoliberalism" such as the first theorem of welfare economics [graphically by @Lerner1944; mathematically by @Lange1934; @Debreu1954] conspicuously hard to come by amidst all the intramural casuistry, but these nominally "political" theories are also surprisingly mum on policy for the here and now [see @Rorty1999].
+
+Conversely, conservative or libertarian commentators reject the mere possibility of collectively decided improvements, and therefore will never open any investigation into the causes of, or culprits for what might otherwise be recognized as shortcomings.
+<!-- TODO expand this, add references -->
+
+Either way, assessments of our present situations become unfalsifiable.
+The critical social scientist assumes *no* (relevant) exogenous constraints on collective designs, thus hermetically suspecting all limitations to be "inside jobs".
+To the conservative, evolved institutions are *already* largely determined by inviolable exogenous limits and therefore leave little way for reform or wrongdoing.
+The libertarian assumes that collective choice, however constrained, is *impossible* or undesirable to begin with, and therefore rejects any comparison of coercive institutions.
+
+In the rare case that these strands of research engage each other at all, a fruitless shouting match ensues, about the proverbial half-empty, half-full, or un-fillable glasses, respectively.
+
+This dead-end can be ameliorated by less ideologically committed, more empirically minded research, but never entirely avoided.
+Because history does not afford proper experimental designs, positive science typically relies on longitudinal comparisons against some point in the past [e.g. @Streeck2013].
+The limitations of these designs are best illustrated using quantitative variables, but may extend to qualitative observations as well.
+
+These comparisons are complicated by the fact that in the past, all other things were emphatically *not* equal.
+For example, consider seemingly widening inequality, frequently operationalised or surveyed as *household* income inequality [e.g. @Piketty2014].
+Troublingly for these accounts, household size in much of the OECD-world has decreased substantially over the past decades, potentially contributing to inequality independently from economic or tax changes.
+For instance, the otherwise increase in in income inequality in Germany from 1991 to 2007 is "strongly related" to changes in household composition [@Peichl2012: 118].
+<!-- TODO find similar paper for the US -->
+Of course, it is not clear whether we should take solace in supposedly exogeneously smaller, poorer households.
+Smaller households may well, in part, reflect a preference for greater autonomy over greater household incomes, but they may also be, in part, an *effect*, not a *cause*, of broader economic shifts, such as increased job mobility, the decline of relatively well-paid manufacturing jobs or overhangs in marriage markets, or any number of other changes in the same time period.
+Adjusting for changing household sizes is possible, but results appear to be highly sensitive to the some arbitrary choice of equivalence scales  [@Aaberge1998].
+Similar problems beset even the painstakingly careful and seminal "Capital in the 20th Century" [@PikettyGoldhammer2014, but compare @McCloskey2014] or seemingly simple matters as to how to appropriately deflate increasing computing power in national accounts [@Schreyer2002].
+
+Dig deep enough into the operationalisations, extend the time horizon long enough, accrue enough changes in context, and longitudinal studies turn increasingly on ontological and axiological choices, in the worst case reverting to an ideological Rohrschach tests.
+
+These limitations at the margin notwithstanding, careful longitudinal research continues to be valuable, especially because it --- in contrast to more ideologically committed, self-referential works --- ensures that the social sciences remain a *cumulative* enterprise of discovery.
+
+But, given our lingering disagreement, and the gravity of the crime in question, perhaps it is worthwhile to try another investigative strategy.
+That is what I offer here.
 
 
-
-
-
-
-To make a falsifiable, empirical assertion about the imperfection of our present situation would require a reliable point of comparison, typically in the recorded past ("post-democracy") or an imagined future ("late capitalism"), but at this point in time, all other things were emphatically *not* equal, including the context and operationalization of variables.
-
-This limitation is easiest to illustrate for quantitative comparisons, but may extend to qualitative data by analogy.
-Oddly, though most critical diagnoses are not strictly quantitative, few can resist dropping in the occasional, cherry-picked statistic [but compare @Crouch2004].
-
+# A Crime Story
 
 <!-- VK: questions are not necessary, you made that clear before. -->
 Why, in spite of all our technological marvels and economic wonders are we still plagued by widening inequality, poverty, instability and depleted commons?
 Why, with all the information and levers of participation at our fingertips, are we so thoroughly confused about governing our mixed economies, and so perilously disaffected with the results our democratic rule produces?
 
 
+This dissertation is fairly pedestrian.
+I tread in some of the mundane minutiae of modernity;
+initially the twists of tax, and later the details of democratic rule.
+And yet, in that small print of the social contract, I have found a veritable crime story.
+
+The story begins with (, p. ):
+why, in the richest of countries, in the most enlightened of times (current day [oecd]{acronym-label="oecd" acronym-form="singular+short"}-world) do we still find ourselves amidst (, p. ):
+
+1.  of welfare states, too constrained to elegantly improve upon the equity, efficiency and sustainability of markets,
+
+2.  of democracies, too paralyzed to meaningfully rule their economies and
+
+3.  consequently, of political equality and economic opportunity?
+
+This lament alone does not mean there was crime:
+maybe, these are no crises, but just facts of life, and a thorough investigation is unnecessary.
+Likewise, we do not call in murder police when some centenarian does not wake up one morning.
+However, at least, we task a doctor to establish a cause of death.
+So it is with these three crises:
+before any criminal investigation can start, I must establish a causal theory for constrained welfare, paralyzed democracy and rampant inequality.
+I find that causal theory in the complex interactions of markets and plans, as they coexist in a (, p. ).
+Specifically, I find that of the political institutions that make up an intact mixed economy, most to welfare, democracy and equality (, p. ).
+
+This dissertation is staunchly reformist.
+Just because a system may be in crisis, it does not require a revolutionary overhaul, nor does it warrant dialectical glee about its supposed inevitability.
+I stick to the market economy *and* the welfare state, and merely tinker with tax to make them coexist better, and to mutual advantage.
+There, I have found a scandal.
+
+Our choice of tax can only be scandalous, let alone criminal, if there is, in fact, a better tax.
+And so, in (p. ) I ask:
+what makes a (, p. ) and what makes it (, p. )?
+I evaluate all real and hypothetical taxes on these criteria, and find:
+(progressive) taxes on the (unimproved) value of land and (postpaid) consumption are much than the ones we have (, p. ).
+By comparison, our existing taxes on income and (prepaid) consumption appear staggeringly inefficient, inequitable and unsustainable.
+Because the tax foundations of our mixed economies are thus sabotaged, our democracies must needlessly trade off efficiency, equity, and sustainability.
+
+This dissertation is sociological, not just economic.
+I cannot merely posit a suboptimal choice in tax, but I must theorize and test some social process to account for the supposedly suboptimal choice in tax.
+
+is the social process that ought to rule collective choice (, p. ).
+It, too, needs specification:
+what it strive for (, p. ), and what it deliver (, p. )?
+In the balance of these questions I find:
+liberal, but deliberative democracy may be much than the representative institutions we have (, p. ).
+By comparison, the status quo of pluralism appears to be a minimal formulation of liberal democracy, as skeptical about what people *can* do, as it is restrictive about what democracy *should* do.
+Once a historical achievement, it today appears hopelessly outmatched by the vast complexity and tightly concentrated special interest of late capitalist society.
+
+
+(p. ) investigates the link between .
+I start by rounding up for suboptimal taxation (, p. ) and proceed --- as Holmes advises --- by the method of elimination.
+First up:
+democracy itself.
+Maybe, "suboptimal" tax is, in fact, the *popular* choice.
+Only if it is not, is there a failure of the political process to be puzzled over, and accounted for.
+I suggest that tax choice depends on the *kind* of democracy.
+Tax choice may suffer , because it is very complicated and offers tightly concentrated special interest (, p. ).
+More broadly, the two crimes of suboptimal taxation and limited democracy are intimately related.
+People might not just widely misunderstand taxation, but they might err systematically about the trade-offs of ruling a mixed economy.
+These systematic misunderstandings under the dysfunctions of pluralism might interact with the unattractive alternatives of a dysfunctional tax regime to dramatically constrain any popular choice of tax, and divert the polity away from the equity, efficiency and sustainability they might otherwise prefer.
+Democracy and taxation might be closely intertwined in their supposed mutual crises, but they also constitute two sides of the same coin that is the liberal-democratic, capitalist social contract.
+Democracy concerns the making of collectively binding decisions, taxation is the chief means to implement these agreed-upon plans within the market exchanges of free agents.
+Conversely, democracy legitimates tax and calls the trade-offs of the mixed economy, and taxation also shapes the material conditions under which people decide, and collects the resources to power policy.
+Not surprisingly, democracy and taxation share , and their crises and reform hinge on the same questions of equality, justice, cooperation and human nature (, p. ).
+
+This dissertation is also empirical.
+To stay clear of hermetic ideology, and self-referential critique, I must get up from the normative armchair and show that really, a better democracy and better tax *are* related and *can* be had.
+
+A good crime story cannot rely on conjecture alone, it needs supporting evidence.
+I cannot provide an instrument of crime because history does not leave material what-ifs in its wake.
+But I can try to capture these hypotheticals in an :
+if ordinary
+people, under an *alternative*, democratic process, choose an *alternative*, preferable tax, *that* would be as close to a smoking gun (, p. ) as it gets.
+If, moreover, that experimental democracy can be shown to alleviate some of the dysfunctions of pluralism, and misunderstandings of the mixed economy, and if, consequently, through that democratic fora, people prefer an alternative tax, we know for sure that *some* crime *has* happened.
+
+
+
+# A Desirable, Doable Hypothetical
 
 If world history is still written in tax, as @Schumpeter believed, us democratic citizens, too, must be fluent in fiscalese, to live up to the emancipatory promise of modernity.
 <!-- VK: "still written"? check transition to tax-->
@@ -543,81 +635,7 @@ Not only as social scientists, but as citizens, too, we must know that better ta
 Taxation, underneath it all, *is* the social contract [@SchumpeterSwedberg-1942-aa], and its vitality will determine the prospects for modern progress.
 
 
-## A Crime Story
-
-This dissertation is fairly pedestrian.
-I tread in some of the mundane minutiae of modernity;
-initially the twists of tax, and later the details of democratic rule.
-And yet, in that small print of the social contract, I have found a veritable crime story.
-
-The story begins with (, p. ):
-why, in the richest of countries, in the most enlightened of times (current day [oecd]{acronym-label="oecd" acronym-form="singular+short"}-world) do we still find ourselves amidst (, p. ):
-
-1.  of welfare states, too constrained to elegantly improve upon the equity, efficiency and sustainability of markets,
-
-2.  of democracies, too paralyzed to meaningfully rule their economies and
-
-3.  consequently, of political equality and economic opportunity?
-
-This lament alone does not mean there was crime:
-maybe, these are no crises, but just facts of life, and a thorough investigation is unnecessary.
-Likewise, we do not call in murder police when some centenarian does not wake up one morning.
-However, at least, we task a doctor to establish a cause of death.
-So it is with these three crises:
-before any criminal investigation can start, I must establish a causal theory for constrained welfare, paralyzed democracy and rampant inequality.
-I find that causal theory in the complex interactions of markets and plans, as they coexist in a (, p. ).
-Specifically, I find that of the political institutions that make up an intact mixed economy, most to welfare, democracy and equality (, p. ).
-
-This dissertation is staunchly reformist.
-Just because a system may be in crisis, it does not require a revolutionary overhaul, nor does it warrant dialectical glee about its supposed inevitability.
-I stick to the market economy *and* the welfare state, and merely tinker with tax to make them coexist better, and to mutual advantage.
-There, I have found a scandal.
-
-Our choice of tax can only be scandalous, let alone criminal, if there is, in fact, a better tax.
-And so, in (p. ) I ask:
-what makes a (, p. ) and what makes it (, p. )?
-I evaluate all real and hypothetical taxes on these criteria, and find:
-(progressive) taxes on the (unimproved) value of land and (postpaid) consumption are much than the ones we have (, p. ).
-By comparison, our existing taxes on income and (prepaid) consumption appear staggeringly inefficient, inequitable and unsustainable.
-Because the tax foundations of our mixed economies are thus sabotaged, our democracies must needlessly trade off efficiency, equity, and sustainability.
-
-This dissertation is sociological, not just economic.
-I cannot merely posit a suboptimal choice in tax, but I must theorize and test some social process to account for the supposedly suboptimal choice in tax.
-
-is the social process that ought to rule collective choice (, p. ).
-It, too, needs specification:
-what it strive for (, p. ), and what it deliver (, p. )?
-In the balance of these questions I find:
-liberal, but deliberative democracy may be much than the representative institutions we have (, p. ).
-By comparison, the status quo of pluralism appears to be a minimal formulation of liberal democracy, as skeptical about what people *can* do, as it is restrictive about what democracy *should* do.
-Once a historical achievement, it today appears hopelessly outmatched by the vast complexity and tightly concentrated special interest of late capitalist society.
-
-
-(p. ) investigates the link between .
-I start by rounding up for suboptimal taxation (, p. ) and proceed --- as Holmes advises --- by the method of elimination.
-First up:
-democracy itself.
-Maybe, "suboptimal" tax is, in fact, the *popular* choice.
-Only if it is not, is there a failure of the political process to be puzzled over, and accounted for.
-I suggest that tax choice depends on the *kind* of democracy.
-Tax choice may suffer , because it is very complicated and offers tightly concentrated special interest (, p. ).
-More broadly, the two crimes of suboptimal taxation and limited democracy are intimately related.
-People might not just widely misunderstand taxation, but they might err systematically about the trade-offs of ruling a mixed economy.
-These systematic misunderstandings under the dysfunctions of pluralism might interact with the unattractive alternatives of a dysfunctional tax regime to dramatically constrain any popular choice of tax, and divert the polity away from the equity, efficiency and sustainability they might otherwise prefer.
-Democracy and taxation might be closely intertwined in their supposed mutual crises, but they also constitute two sides of the same coin that is the liberal-democratic, capitalist social contract.
-Democracy concerns the making of collectively binding decisions, taxation is the chief means to implement these agreed-upon plans within the market exchanges of free agents.
-Conversely, democracy legitimates tax and calls the trade-offs of the mixed economy, and taxation also shapes the material conditions under which people decide, and collects the resources to power policy.
-Not surprisingly, democracy and taxation share , and their crises and reform hinge on the same questions of equality, justice, cooperation and human nature (, p. ).
-
-This dissertation is also empirical.
-To stay clear of hermetic ideology, and self-referential critique, I must get up from the normative armchair and show that really, a better democracy and better tax *are* related and *can* be had.
-
-A good crime story cannot rely on conjecture alone, it needs supporting evidence.
-I cannot provide an instrument of crime because history does not leave material what-ifs in its wake.
-But I can try to capture these hypotheticals in an :
-if ordinary
-people, under an *alternative*, democratic process, choose an *alternative*, preferable tax, *that* would be as close to a smoking gun (, p. ) as it gets.
-If, moreover, that experimental democracy can be shown to alleviate some of the dysfunctions of pluralism, and misunderstandings of the mixed economy, and if, consequently, through that democratic fora, people prefer an alternative tax, we know for sure that *some* crime *has* happened.
+## It's a Long Story
 
 This dissertation is, lastly, , despite it all (, p. ):
 the crime remains unsolved, and I can point to no single societal culprit.
