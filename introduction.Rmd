@@ -17,7 +17,7 @@ These mainstream economic indicators are highly imperfect [^bad_gdp], but they  
 
 [^bad_gdp]: Even if you accept a narrowly economic concept of societal prosperity, GDP is a fairly bad indicator.
 It is widely cited as a measure of economic *growth*, though it actually measures only the volume of market *activity*.
-Because there is no economy-wide balance sheet, *real* dissavings, be they earth quakes or environmental exploitation are not included in the GDP.
+Because there is no economy-wide balance sheet, *real* dissavings, be they earth quakes or environmental exploitation, are not included in the GDP.
 In addition, GDP measurements over time are marred by technical difficulties in appropriately pricing the supposedly increased quality of goods and services, among other problems.
 
 On the other hand, the material and institutional foundations of OECD welfare capitalisms appear to be crumbling beneath our feet.
@@ -27,25 +27,25 @@ In the face of obscene riches, many people are still working harsh, back- or sou
 Our economies also appear to be increasingly unsustainable.
 In the medium term, macroeconomic imbalances and populist rule threaten global free trade, and renewed asset bubbles (real estate, corporate debt) and fresh systemic risks (index-replicating exchange-traded funds, ETFs) could burst, yet again, into economic crises, merely forestalled by low interest rates, excessive public or private debt and asset rallies.
 In the long term, the real dissavings taken out against our planetary ecosystems, including, but not limited to CO2e-emissions, may come to roost as grave environmental degradation of our livelihoods.
-At the same time, the institution traditionally tasked with reigning in the economy, the modern welfare state, appears severely constrained in its ability to redistribute market outcomes, to fund public goods and to internalise externalities.
+At the same time, the institution traditionally tasked with reigning in the economy, the modern welfare state, appears severely constrained in its ability to redistribute market outcomes, to fund public goods and to internalize externalities.
 Marred by an increasingly regressive tax base, high debt, homegrown inefficiencies and incompetence, as well as, recently, populist and illiberal upswings, the state seems to be supremely outmatched.
 This disturbs the balance of state command and market economy, and may well fray the postwar social contract of relatively widely shared, stable growth, under largely private ownership of the means of production.
 
-[^small_households]: Changing household sizes are often overlooked in critical accounts of income inequality, though it is unclear whether we can really take much solice in supposedly exogenous smaller, poorer households.
+[^small_households]: Changing household sizes are often overlooked in critical accounts of income inequality, though it is unclear whether we can really take much solace in supposedly exogenous smaller, poorer households.
 Smaller households may well, in part, reflect a preference for greater autonomy over greater household incomes, but they may also be, in part, an *effect*, not a *cause*, of broader economic shifts, such as increased job mobility, the decline of relatively well-paid manufacturing jobs or overhangs in marriage markets.
-<!-- TODO add sources -->
+<!-- TODO add sources, VK: True for the whole paragraph, but not more details, it's just the introduction/big picture. -->
 
 A similar conundrum besets the state of self-government.
 
 On the one hand, this should be a golden age for democracy.
 Citizens today are more formally educated than at any previous time, and they have ready access to realms of information that would put to shame the greatest libraries of yesteryear.
 Formal and informal boundaries to citizen participation have fallen, and the electorate has become more demanding of its representatives and government.
-New technologies, from cheap and easy web publishing to social media to distributed software systems have made it possible for ever greater numbers of citizens to make their voices heard, to organise themselves and to challenge existing institutions and incumbents.
+New technologies, from cheap and easy web publishing to social media to distributed software systems have made it possible for ever greater numbers of citizens to make their voices heard, to organize themselves and to challenge existing institutions and incumbents.
 
 On the other hand, citizens appear to be increasingly disaffected with democratic incumbents, or perhaps --- according to recent research --- even with democratic institutions.
 Populism, illiberalism and outright xenophobia are on the rise in many OECD-countries, challenging both established parties and established democratic norms.
-Voters appear to become more polarised, at least in some countries, and at some level of government.
-Political debate, too, seems to fray, with increased tribalism, utter disregard for facts and a decline in civility. 
+Voters appear to become more polarized, at least in some countries, and at some level of government.
+Political debate, too, seems to fray, with increased tribalism, utter disregard for facts and a decline in civility.
 Here too, the postwar social contract appears to be crumbling: liberal democracy, with its finely tuned balance of individual rights and collective obligations, guarded by an iron-clad rule of law is now under attack.
 
 How, then, are we to square these seemingly antithetical diagnoses of our current historical moment?
@@ -53,15 +53,18 @@ How, then, are we to square these seemingly antithetical diagnoses of our curren
 Critical social scientists, from @Marx-1867-aa to today's gloomy pronouncers of "post-democracy" [@Crouch2004] and "late capitalism" [@mountford2011], respond by highlighting the inherent contradictions of current economic and social arrangement, and contrasting a deplorably imperfect present reality against supposedly achievable utopias past or future [also see @Streeck2013; @NachtweyAbstiegsgesellschaftUberAufbegehren2016].
 This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but it has also fueled the hybris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
 <!-- TODO add meta reference to Bismarck -->
+<!-- NOTE VK: fantastic transition! -->
 
-By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic consequentialism [@McCloskeyBourgeoisVirtuesEthics2006], wish not to demand *more* of coercive institutions and human nature, but *less*.
-From this vantage point, whatever crises we may face --- if any ---, are perhaps the result of an overextended state and overly inclusive polity, crumbling under the weight of its unkept promises and collective action dysfunctions. 
+By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic consequentialism [@McCloskeyBourgeoisVirtuesEthics2006], wish not to demand more of coercive institutions and human nature, but *less*.
+From this vantage point, whatever crises we may face --- if any ---, are perhaps the result of an overextended state and overly inclusive polity, crumbling under the weight of its unkept promises and collective action dysfunctions.
 <!-- TODO these aren't very good "zeitdiagnosen", they are actually much better than that. so it's a weird comparison. -->
+<!-- VK:  You don't need the last sentence. The reader knows what libertarians want. Go on with the next one.-->
 These viewpoints, regrettably ignored or disavowed in much of the social sciences, call for healthy skepticism of man-made societal designs and urge us to respect the wisdom contained in evolved, and therefore stable institutions.
 In the extreme, however, conservatism and libertarianism risk collapsing entirely that what *is*, and *should* be, negating all collective political action in Panglossian tautology [@Voltaire1759].
 
-We should interrogate our present situation through both these ideological lenses --- and any other viewing aids not neatly foldable into these two camps --- if only to be aware of our blindspots, and perhaps, even to expand our moral horizons.
-
+We should interrogate our present situation through both these ideological lenses
+<!-- VK: which lenses? (repeat it)-->
+--- and any other viewing aids not neatly foldable into these two camps --- if only to be aware of our blindspots, and perhaps, even to expand our moral horizons.
 However, neither of these approaches are 1) scientific pursuits in a narrow, empirical sense or 2) terribly specific about how to go on from here.
 Because conservative and libertarian analyses mostly proceed by *via negativa*, recommending what *not* to do, these limitations naturally apply more to critical and other approaches calling --- *via positiva* --- for *more*, or different collective intervention [see @taleb_antifragile:_2012].
 
@@ -85,19 +88,23 @@ critical analysis of our present situation always requires a point of comparison
 
 
 
+To make a falsifiable, empirical assertion about the imperfection of our present situation would require a reliable point of comparison, typically in the recorded past ("post-democracy") or an imagined future ("late capitalism"), but at this point in time, all other things were emphatically *not* equal, including the context and operationalization of variables.
+
+This limitation is easiest to illustrate for quantitative comparisons, but may extend to qualitative data by analogy.
+Oddly, though most critical diagnoses are not strictly quantitative, few can resist dropping in the occasional, cherry-picked statistic [but compare @Crouch2004].
 
 
-
+<!-- VK: questions are not necessary, you made that clear before. -->
 Why, in spite of all our technological marvels and economic wonders are we still plagued by widening inequality, poverty, instability and depleted commons?
 Why, with all the information and levers of participation at our fingertips, are we so thoroughly confused about governing our mixed economies, and so perilously disaffected with the results our democratic rule produces?
 
 
 
-
 If world history is still written in tax, as @Schumpeter believed, us democratic citizens, too, must be fluent in fiscalese, to live up to the emancipatory promise of modernity.
+<!-- VK: "still written"? check transition to tax-->
 If communicative action can heal the disagreement and confusion wrought as modernity differentiated System and Lifeworld, as @Habermas-1984 hopes, in our discourse on tax, too, universally acceptable validity claims instead of money and power must rule to uphold our faith in liberal democracy.
 
-I here probe into one intersection of legitimate inputs and outputs of the social contract [compare @Scharpf1997]: 
+I here probe into one intersection of legitimate inputs and outputs of the social contract [compare @Scharpf1997]:
 the discourse *on*, and economics *of* tax.
 
 I ask, how --- if at all --- people under current democratic arrangements think and speak differently about tax, from how they *would* think and speak about it, if they lived under conditions of ideal speech.
@@ -113,7 +120,7 @@ I hypothesize that --- as a result of *more* ideal speech --- people will prefer
 <!--    - because *representative/pluralist democracy* faces structural (dealignment) and inherent challenges (public choice); tax is that issue where these problems intersect. -->
 <!--    - these possible crises of democracy and taxation may have a profound effect on *social and political equality* -->
 
- 
+
 > **What if** there were alternative taxes, which afforded us more attractive tradeoffs between economic efficiency, equity and sustainability or other ends  
 > **What if** we *could* agree on such alternative taxes, but *would not*, because we lacked the necessary information or suitable fora, and because our capacity for mutual reason-giving had been diminished by alienating inequality or clouded by special interest? -->
 
@@ -484,8 +491,8 @@ Emphatically, the content of the theory chapters is also *nowhere* subject to an
 Much like our hypothetical medical student would not test whether participants could successfully do a *firefly pose*, I never test whether participants understand the deadweight-loss (DWL) of taxation, let alone whether, under which circumstances or to what extent, this abstraction is a positive phenomenon.
 All these chapters have the status of *justifying* and *explicating* the *treatment*, that is, the framing and briefing for the deliberative forum.
 
-<!-- TODO 
-add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are. 
+<!-- TODO
+add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are.
 this might be a bigraph, with the different chapters on both sides as nodes, edges with descriptions in the middle
 explain that the econ101 in chap 1-3 is *both* for readers, and for civicon participants, *and* for items
 -->
