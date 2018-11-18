@@ -59,7 +59,8 @@ By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-
 From this vantage point, an overextended state and overly inclusive or demanding polity is simply crumbling under the weight of its unkept promises and collective action dysfunctions, as was to be expected all along.
 Many, more moderate critics may be worried what the postwar compact might take with it, should it go down violently [see @acemoglu_why_2012].
 But fearing collateral damage to the rule of law, property rights or even liberal democracy does not imply that there would be anything wrong with a retrenchment of state intervention.
-<!-- TODO add citation for moderate critics, VK: change double negation -->
+<!-- TODO add citation for moderate critics -->
+<!-- TODO VK: change double negation --> -->
 Conservative and libertarian viewpoints easily come across as curmudgeonly or even cynical, but they are ignored and disavowed in the much of the social science at all our peril.
 This healthy skepticism of man-made societal designs and respect for the wisdom contained in evolved, and therefore stable institutions must not be ignored.
 In the extreme, however, conservatism and libertarianism risk collapsing entirely that what *is*, and *should* be, negating all collective political action in Panglossian tautology [@Voltaire1759].
@@ -86,9 +87,9 @@ In the rare case that these strands of research engage each other at all, a frui
 
 This dead-end can be ameliorated by less ideologically committed, more empirically minded research, but never entirely avoided.
 Because history does not afford proper experimental designs, positive science typically relies on longitudinal comparisons against some point in the past [e.g. @Streeck2013].
-The limitations of these designs are best illustrated using quantitative variables, but may extend to qualitative observations as well.
 
 These comparisons are complicated by the fact that in the past, all other things were emphatically *not* equal.
+The limitations of these designs are best illustrated using quantitative variables, but may extend to qualitative observations as well.
 For example, consider seemingly widening inequality, frequently operationalized or surveyed as *household* income inequality [e.g. @Piketty2014].
 Troublingly for these accounts, household size in much of the OECD-world has decreased substantially over the past decades, potentially contributing to inequality independently from economic or tax changes.
 For instance, the otherwise increase in income inequality in Germany from 1991 to 2007 is "strongly related" to changes in household composition [@Peichl2012: 118].
@@ -101,13 +102,42 @@ Similar problems beset even the painstakingly careful and seminal "Capital in th
 Dig deep enough into the operationalizations, extend the time horizon long enough, accrue enough changes in context, and longitudinal studies turn increasingly on ontological and axiological choices, in the worst case reverting to an ideological Rohrschach tests.
 
 These limitations at the margin notwithstanding, careful longitudinal research continues to be valuable, especially because it --- in contrast to more ideologically committed, self-referential works --- ensures that the social sciences remain a *cumulative* enterprise of discovery.
-But, given our lingering disagreement, and the gravity of the "crime" in question, perhaps it is worthwhile to try another investigative strategy.
+But, given our lingering disagreement, and the potential gravity of the situation, perhaps it is worthwhile to try another investigative strategy.
 <!-- VK: You mention the word "crime" for the first time here, that's a little surprising. Maybe start with a more neutral word like "events" ... "investigative strategy" is good later -->
 That is what I offer here.
 
 <!-- VK: THIS PARAGRAPH IS SO WELL-WRITTEN AND BESIDES SOME CITATIONS READY FOR RELEASE! :) no need to rewrite right now -->
 
-# A Crime Story
+
+## A Method of Elimination {#elimination}
+
+<!-- maybe this is too complicated, but the idea is to negate the H0, as per usual -->
+
+<!-- %So \emph{really}, is all ``for [\ldots] the best [\ldots] in the best of all possible, [liberal-democratic, capitalist] worlds''  (\emph{ibid.}: K428ff).
+%
+%Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism.
+%Since industrialization set on in his age, the developed economies have grown annually by initially 1.3\%, then 3.1\% in GDP per capita (\citealt{Easterlin2000}: 10f), prospering as no human society ever has \citep{DeLong1998}.
+%Since enlightenment dawned at his time, the established democracies have fostered peaceful mass participation and liberal democracy continues to proliferate \citep{Huntington-1991-aa}.
+%
+%But Candide, Voltaire's hapless title character and Pangloss' na\"{i}ve student, might still stumble into misfortune, and despair over the hardship of (some) contemporary lives.
+%In the richest of countries, he might be dismayed by growing poverty (for example, \citealt{Bundesregierung2006} for Germany, widening inequalities of wealth and income (for example, \citealt{Grabka2007a}: 138 for Germany, \citealt{Bucks2006} for the US), crumbling public services and state budgets in crisis or default.
+%In the richest of times, he might be troubled by the dark shadows of global warming (for example, \citealt{Stern-2006-aa}), aging populations (for example, \citealt{Demeny-2003-aa}: 2, \citealt{Borsch-Supan2000}) and stalled productivity %add source
+%looming over our long-term prosperity.
+%\marginpar{Include other, OECD-wide sources.} In the oldest of republics, he might be repelled by distorted debates and decision-making deadlocked %add source,
+%and in the finest of democracies, he might be frustrated by ill-informed \citep{Delli-CarpiniKeeter-1996-aa}, ignorant, %add citation
+%irrational \citep{Caplan2007} and dissatisfied voters \citep{PutnamPharr-2000-aa}.
+%
+%Candide's puzzled lament, in the novella as in the real world, does not lead anywhere.
+%He does not specify what would mark a better world, does not consider what limits may govern the real world, and suggests no path to progress.
+%Such discontent without alternative is impotent.
+%
+%But Pangloss' unwavering affirmation of the status quo does not lead us anywhere either.
+%He, the (satirized) learned scholar, does not so much``admirably prove[\ldots] that there is no effect without a cause'' (\citealt{Voltaire1759}: K36) but mindlessly naturalizes the existing state of affairs.
+%He disavows alternative or even better worlds and thereby fails to explain the cause for their non-effect and betrays the humanist calling of science.
+%Such analysis without alternative is fallacious and amoral. -->
+
+<!-- % offe:
+%write a 2nd order theory on the reform suggestion (such as offe 2009) -->
 
 Why, in spite of all our technological marvels and economic wonders are we still plagued by widening inequality, poverty, instability and depleted commons?
 Why, with all the information and levers of participation at our fingertips, are we so thoroughly confused about governing our mixed economies, and so perilously disaffected with the results our democratic rule produces?
@@ -162,6 +192,7 @@ Once a historical achievement, it today appears hopelessly outmatched by the vas
 
 
 (p. ) investigates the link between .
+
 I start by rounding up for suboptimal taxation (, p. ) and proceed --- as Holmes advises --- by the method of elimination.
 First up:
 democracy itself.
@@ -188,14 +219,11 @@ people, under an *alternative*, democratic process, choose an *alternative*, pre
 If, moreover, that experimental democracy can be shown to alleviate some of the dysfunctions of pluralism, and misunderstandings of the mixed economy, and if, consequently, through that democratic fora, people prefer an alternative tax, we know for sure that *some* crime *has* happened.
 
 
-
-# A Desirable, Doable Hypothetical
-
 If world history is still written in tax, as @Schumpeter believed, us democratic citizens, too, must be fluent in fiscalese, to live up to the emancipatory promise of modernity.
 <!-- VK: "still written"? check transition to tax-->
 If communicative action can heal the disagreement and confusion wrought as modernity differentiated System and Lifeworld, as @Habermas-1984 hopes, in our discourse on tax, too, universally acceptable validity claims instead of money and power must rule to uphold our faith in liberal democracy.
 
-I here probe into one intersection of legitimate inputs and outputs of the social contract [compare @Scharpf1997]:
+I here probe into one intersection of legitimate inputs and outputs of the social contract [see @Scharpf1997]:
 the discourse *on*, and economics *of* tax.
 
 I ask, how --- if at all --- people under current democratic arrangements think and speak differently about tax, from how they *would* think and speak about it, if they lived under conditions of ideal speech.
@@ -228,7 +256,6 @@ To clarify the role of these chapters, let me first situate them within the rema
 
 This project is modeled on a straightforward experimental design, as it is frequently used in clinical studies.
 However, because the study deals not with easily measurable biomarkers, but with subtleties of deliberation and the abstractions of tax, the design needs a little more conceptual groundwork.
-
 
 Consider an analogous example to let me guide you through the following chapters:
 A doctoral candidate in medicine wants to study how a daily morning exercise affects mindfulness.
@@ -569,7 +596,24 @@ Measuring *whether* a forum was deliberative, and if so, what the *substantive e
 In chapter \@(q), I review existing measurements for deliberative quality, as well as their results and, finding most of them unsatisfactory for the present needs, suggest an application of rarely used Q-Methodology.
 
 
-## Theory as Treatment
+
+
+
+### Theory as Explanandum
+
+<!-- You need to have a first-order theory that you need to explain -->
+<!-- maybe do the whole first/second oder business here -->
+
+<!-- notice where literature review happens -->
+
+<!-- %project description
+%universe, cases, variables
+%temporal, spatial, social limits-->
+
+<!-- Before specifying a format to investigate this question, I must note some of the substantive desiderata of deliberation and taxation that any operationalization will have to reflect, if it is to maintain construct validity. -->
+
+
+### Theory as Treatment
 
 <!-- TODO a research question chapter is missing in the above, and that is in fact where, well, what is tested would be listed -->
 
@@ -596,7 +640,7 @@ but this can only happen at the end, its axiomatic, and this just needs some tim
 <!-- we need to get a lot of first-order questions out of the way, it is necessary, but weird -->
 
 
-## Theory as Didactic Reduction
+### Theory as Didactic Reduction
 
 <!-- we need tax and the background, because this all needs Philosophy
 in way, what this all is, is citizen science -->
@@ -607,21 +651,7 @@ in way, what this all is, is citizen science -->
 - you gotta do this, otherwise it gets too fluffy -->
 
 
-## Theory as Explanandum
-
-<!-- You need to have a first-order theory that you need to explain -->
-<!-- maybe do the whole first/second oder business here -->
-
-<!-- notice where literature review happens -->
-
-<!-- %project description
-%universe, cases, variables
-%temporal, spatial, social limits-->
-
-<!-- Before specifying a format to investigate this question, I must note some of the substantive desiderata of deliberation and taxation that any operationalization will have to reflect, if it is to maintain construct validity. -->
-
-
-## Payoff
+## A Long Story {#long_story}
 
 This is probably an unconventional, and possibly risky project, but it has promise, too.
 
@@ -632,9 +662,6 @@ If it can show its stripes, deliberative democracy may well be our last, and als
 If, under a normatively more attractive democratic process, people were to resolve some misunderstandings about, and agree on different, but doable and desirable taxes, welfare state research and political economy would have to explain a much greater retrenchment and democratic failure.
 Not only as social scientists, but as citizens, too, we must know that better tax we could agree on, and if it exists, what is keeping us from it.
 Taxation, underneath it all, *is* the social contract [@SchumpeterSwedberg-1942-aa], and its vitality will determine the prospects for modern progress.
-
-
-## It's a Long Story
 
 This dissertation is, lastly, , despite it all (, p. ):
 the crime remains unsolved, and I can point to no single societal culprit.
@@ -664,3 +691,17 @@ From the incidence of the [cit]{acronym-label="cit" acronym-form="singular+short
 
 Some stories just cannot be told in the short form, and the story I have stumbled upon and here report may be one of those.
 Luckily, detective stories can also be fun to read, and so, I hope, is this one.
+
+<!-- TODO emergent is the adjective for libertarians -->
+
+
+<!-- %Dahl "on democracy''
+	% there is normative things, and actualities, or empirical things.
+%We should look at both
+	% democracy and market capitalism are in a mutually reinforcing, but also antagonistic relationship
+	% one of the four essential questions for democracy is how it will continue to co-exist with market capitalism, now that the latter is the only game in town.
+%Also, the inequalities that market capitalism brings, easily translate into political inequality.
+	% one of the possible scenarios of democracy is that it will spread wider (new countries) but become ever thinner.
+	% dahl in his time didn't know what the problem was: we know see a little clearer
+	% he also identifies internationalization as a problem, which makes sense.
+%Tax is at the intersection of the market/state mix and internationalization -->

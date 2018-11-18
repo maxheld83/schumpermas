@@ -5,10 +5,16 @@
 >
 > --- Václav @HavelDisturbingPeaceConversation1985
 
+<!-- Dr.~Pangloss is really giving optimism a bad name. If anyone is an optimist, it's Candide: ``Let us cultivate our garden.''. -->
+<!-- get Cervantes here: the sickest/craziest person is whoever accepts the world as it is, not as it ought to be. -->
+
 <!-- things have gotten worse in the meantime -->
 
 <!-- important point for conclusion: sadly, it's not even that there's a choice between libertarian arrangements and social democratic ones; at least those are *both* carefully thought out, and attractive, if competing visions of human flourishing.
-the danger, however is that, perhaps, either side of pragmatic compromise lie not more purer (if disagreeable, to some) arrangements, but a violence and chaos, resurrecting, if anything, the twin mob politics of right fascism and left authoritarianism. -->
+the danger, however is that, perhaps, either side of pragmatic compromise lie not more purer (if disagreeable, to some) arrangements, but a violence and chaos, resurrecting, if anything, the twin mob politics of right fascism and left authoritarianism. (this is quote from @Crouch2004) 
+%mob politics of communism and fascism
+%both arose out of a particular mismatch b/w the antagonisms of capitalism.
+-->
 <!-- Because conservative and libertarian analyses mostly proceed by *via negativa*, recommending what *not* to do, these limitations naturally apply more to critical and other approaches calling --- *via positiva* --- for *more*, or different collective intervention [see @taleb_antifragile:_2012]. -->
 
 <!-- TODO scale
@@ -48,17 +54,6 @@ this is somin
 I guess my thinking evolved
 in a weird, roundabout way, the demands and intricacies of deliberation, much like public choice, show, essentially, that things are way more complicated, that in hayeks works we don't really know shit about designing institutions
 sso maybe, in a roundabout way, they are right -->
-
-<!-- %Dahl "on democracy''
-	% there is normative things, and actualities, or empirical things.
-%We should look at both
-	% democracy and market capitalism are in a mutually reinforcing, but also antagonistic relationship
-	% one of the four essential questions for democracy is how it will continue to co-exist with market capitalism, now that the latter is the only game in town.
-%Also, the inequalities that market capitalism brings, easily translate into political inequality.
-	% one of the possible scenarios of democracy is that it will spread wider (new countries) but become ever thinner.
-	% dahl in his time didn't know what the problem was: we know see a little clearer
-	% he also identifies internationalization as a problem, which makes sense.
-%Tax is at the intersection of the market/state mix and internationalization -->
 
 <!-- %Thought on Kaplan: he is right to note that Shapiro and other proponents for democracy who say that there are no extra-democratic proponents of democracy to compare it against are correct (this is the substantive vs procedural issue).
 %That is tautological, indeed, as Kaplan points out.
@@ -160,7 +155,8 @@ This fine print makes or breaks the social contract.
 
 Over the past decades, this foundation of the social contract has fractured.
 In fact, if you were to purposely design a tax system to protect rich people and heirs while squeezing future generations, poor and middle earners, you could hardly design a more effective regime then the current income tax and value-added tax system [compare @McCaffery2005].
-The *tax system really is rigged*, though not in the ways that Donald Trump *or* Bernie Sanders might think: it simply presents the legislatures with prohibitively and needlessly unattractive tradeoffs, such as between equity and efficiency.
+The *tax system really is rigged*, though not in the ways that Donald Trump *or* Bernie Sanders might think: 
+it simply presents the legislatures with prohibitively and needlessly unattractive tradeoffs, such as between equity and efficiency.
 Predictably, faced with the choice of a rock or a hard place, democratic institutions become unresponsive, and voters feel increasingly disenfranchised.
 
 This might look like a grand conspiracy, but I don't think it is one.
@@ -173,7 +169,8 @@ The data from my exploratory (small-N) dissertation study show that ordinary cit
 Absent a deeper understanding, or at least appreciation of complexity, some of the most promising suggestions for reform will never be discussed in such an impoverished political process: a Negative Income Tax [@Friedman1962], a Progressive Consumption Tax [@Seidman1997], a Land Value Tax [@George1879ab], or even a proper Inheritance and/or Property Tax are *all* unfamiliar, complex and demand a recognition of our mutual interdependence.
 In 2008, a leading party operative for the Social Democratic Party of Germany (SPD) told me that frankly, a Progressive Consumption Tax was a nice idea, but that it would be too vulnerable to populist attacks to promote.
 
-This is the vicious cycle we find ourselves in: a dysfunctional policy makes democratic institutions unresponsive, which frustrates and impoverishes voters, who turn to increasingly populist candidates, who degrade the political discourse, and make it impossible to pass better policy.
+This is the vicious cycle we find ourselves in: 
+a dysfunctional policy makes democratic institutions unresponsive, which frustrates and impoverishes voters, who turn to increasingly populist candidates, who degrade the political discourse, and make it impossible to pass better policy.
 This is a democracy, eating itself alive.
 
 Complex policy, of course, is not a recent phenomenon, and voters decades ago were probably not any better equipped to deal with the complexity of their day.

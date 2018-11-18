@@ -1,7 +1,3 @@
-# (PART) Theory {-}
-
-<!-- maybe crises should come *after* abstractions, so we can use that chapter -->
-
 # A Tale of Three Crises {#crises}
 
 <!-- > I'm still trying to climb out from under the avalanche of horror, nightmare and disgust that all of this [the 2011 US debt ceiling crisis] dumped on me, along with, I suppose 300 million other Americans and it's a little hard to sort out your thoughts after this much awfulness comes along.
@@ -19,33 +15,7 @@
 > --- [Hendrik Hertzberg](https://www.newyorker.com/contributors/hendrik-hertzberg) on the [* Political Scene*](https://www.newyorker.com/tag/political-scene-podcast) podcast by the *New Yorker*, discussing US tax reform plans in 2011.
 
 
-<!-- %So \emph{really}, is all ``for [\ldots] the best [\ldots] in the best of all possible, [liberal-democratic, capitalist] worlds''  (\emph{ibid.}: K428ff).
-%
-%Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism.
-%Since industrialization set on in his age, the developed economies have grown annually by initially 1.3\%, then 3.1\% in GDP per capita (\citealt{Easterlin2000}: 10f), prospering as no human society ever has \citep{DeLong1998}.
-%Since enlightenment dawned at his time, the established democracies have fostered peaceful mass participation and liberal democracy continues to proliferate \citep{Huntington-1991-aa}.
-%
-%But Candide, Voltaire's hapless title character and Pangloss' na\"{i}ve student, might still stumble into misfortune, and despair over the hardship of (some) contemporary lives.
-%In the richest of countries, he might be dismayed by growing poverty (for example, \citealt{Bundesregierung2006} for Germany, widening inequalities of wealth and income (for example, \citealt{Grabka2007a}: 138 for Germany, \citealt{Bucks2006} for the US), crumbling public services and state budgets in crisis or default.
-%In the richest of times, he might be troubled by the dark shadows of global warming (for example, \citealt{Stern-2006-aa}), aging populations (for example, \citealt{Demeny-2003-aa}: 2, \citealt{Borsch-Supan2000}) and stalled productivity %add source
-%looming over our long-term prosperity.
-%\marginpar{Include other, OECD-wide sources.} In the oldest of republics, he might be repelled by distorted debates and decision-making deadlocked %add source,
-%and in the finest of democracies, he might be frustrated by ill-informed \citep{Delli-CarpiniKeeter-1996-aa}, ignorant, %add citation
-%irrational \citep{Caplan2007} and dissatisfied voters \citep{PutnamPharr-2000-aa}.
-%
-%Candide's puzzled lament, in the novella as in the real world, does not lead anywhere.
-%He does not specify what would mark a better world, does not consider what limits may govern the real world, and suggests no path to progress.
-%Such discontent without alternative is impotent.
-%
-%But Pangloss' unwavering affirmation of the status quo does not lead us anywhere either.
-%He, the (satirized) learned scholar, does not so much``admirably prove[\ldots] that there is no effect without a cause'' (\citealt{Voltaire1759}: K36) but mindlessly naturalizes the existing state of affairs.
-%He disavows alternative or even better worlds and thereby fails to explain the cause for their non-effect and betrays the humanist calling of science.
-%Such analysis without alternative is fallacious and amoral. -->
-
 <!-- %if you'd want to hide injustice, you'd best do it in a really complex system, like tax. -->
-
-<!-- % offe:
-%write a 2nd order theory on the reform suggestion (such as offe 2009) -->
 
 <!-- i don't even mention the issues of imperfect economic integration here (EU!), though much of them can be read as extensions of the malaise described here -->
 
@@ -65,8 +35,6 @@ some people criticise this as "market-compatible democracy", but that's misleadi
 neither mechanism is somehow inherently superior, or more legitimate.
 or at least there is no reason to assume this here. -->
 
-<!-- it's easy to see how accounts of material inequality (or lack thereof) become marred in ontological and axiological fights, and burrow down to last reasons -- though *these* are emphatically *not* the last reasons that are of interest here.
-to name just a few, whether you include household size, or real wages, or improvements in products, these all easily and fundamentally change the picture and any trends -->
 
 <!-- also, this kinda feels like the "good old days", as if things were much better earlier.
 that's not really the point
@@ -122,8 +90,6 @@ or it could give the sovereign a much more powerful lever to redistribute as she
 or lastly, it could be completely impossible.
 -->
 
-<!-- tax quote from the new yorker here? -->
-
 <!-- TODO we're in a bad place, but it could be better -->
 
 <!-- TODO use mixed economy in all of the below, not welfare state, explain why -->
@@ -159,10 +125,6 @@ or lastly, it could be completely impossible.
 %Moreover, revenues and costs are affected by prolonged and extensive macroeconomic disequilibria, especially structural unemployment (which of course, can also be an effect of inadequate welfare regime design).
 %Decreasing rates of productivity and output growth have heightened concerns, and de-industrialization and increasing flexibility of working arrangements have called existing setups into question, especially those featuring corporatist institutions.
 
-%Add Twin crisis picture here
-
-%The result of the two crises is an economy with runaway inequities, foregone productive capacity and a suboptimal net savings rate, in the face of greater challenges ahead (for example, aging, global warming). -->
-
 <!-- %My research interest emerges from two puzzles of the late, developed welfare state.
 
 %might want to link this to PCA and efficiency wages;
@@ -176,8 +138,6 @@ or lastly, it could be completely impossible.
 
 %Crouch
 	%Crouch 158 also notes absence of wealth distribution data.
-	%mob politics of communism and fascism
-	%both arose out of a particular mismatch b/w the antagonisms of capitalism.
 		%Bingo great argument in Crouch 3:
 %democracy is, again under US influence defined as liberal, if not electoral democracy.
 
@@ -497,7 +457,6 @@ Assuming, as I do, (p. ) and conditions for (p. ) markets have at least two at
     I hope these positions will be widely acceptable to readers on the political right, and provisionally tolerable to readers on the left.
     If I can show taxation to be wasteful, unfair and unsustainable and democracy to be outmatched, assuming even such liberal orthodoxy, sweeping reform should be all the more obvious.
 
-asd
 
 #### Market Failures.
 
@@ -516,6 +475,7 @@ This problem holds more broadly for *public goods*, *common goods* and *natural 
 [^29]
 summarized in according to @Samuelson-1954-eu's typology of goods [-@Samuelson-1954-eu].
 
+
 ##### Failure: Public Goods
 
 \phantomsection
@@ -523,6 +483,7 @@ summarized in according to @Samuelson-1954-eu's typology of goods [-@Samuelson-1
 are *underprovided* by markets, because no one can be prevented from using them (non-exclusion), and they do not get used up (non-rivalry).
 Potential buyers can always free-ride on other's purchase and are therefore unwilling to pay producers adequately.
 Defense is a public good and fireworks are canonical examples of public goods.
+
 
 ##### Failure: Common Goods
 
@@ -533,6 +494,7 @@ Potential buyers can free-ride without paying the adequate price for exploiting 
 [^30]
 [^31]
 Clean air is a common good, and so may be the enlightened understanding of the electorate [@Caplan2007].
+
 
 ##### Failure: Natural Monopolies
 
@@ -6171,3 +6133,67 @@ Writ large on society, this is the disintegration that @Offe1998 presciently fea
 %this is key.
 %It's fucked up, but systematically so.
 %Edit -->
+
+
+<!-- \section{Tax Competition}
+%maybe this should happen somewhere earlier?
+%the below section is a duplicate from the dual crisis
+%Background:
+%Taxation Trends in the European Union
+
+	%The Directorate General for Taxation and Customs Union issues an annual report on taxation in the European Union.
+%Results from the 2009 edition include:
+	%Tax ratios in the EU-27 remain relatively high (39.8% of GDP), but differ greatly between old and NMS (Romania 29.4%, Denmark 48.7%).
+	%NMS raise relatively more revenue by indirect, non-redistributive taxes in immobile bases.
+	%Almost all member states increase the (indirect) burden in (relatively immobile) consumption through VAT and excise duties.
+	%Top average (not marginal) Personal Income Tax (PIT) rates (37.8%) are in decline across almost all EU member states, but continue to vary dramatically between old and NMS (Bulgaria 10%, Denmark 59%).
+	%Corporate Income Tax (CIT) rates are in rapid decline, from 35.3% in 1995 to 23.5% now.
+%Again, NMS tend to have lower tax rates than older member states.
+	%Implicit Corporate Income Tax rates (CIT-ITR) are however, stable if diverging, possibly due to cyclical effects, base broadening or cannibalizing on the PIT.
+
+	%Is there European (Corporate Income) Tax Competition?
+
+	%In a liberalized Single Market, where capital and, to a lesser extent, labor through trade, investment and migration flow to their most profitable use, it appears reasonable to assume that these factors of production will also respond to taxes.
+%Investors and workers will, as much as they can, flock to locations where tax rates are lower than the respective costs of relocation.
+%To sustain output and growth, states would then have to compete for factors of production with low tax rates.
+
+	%Before turning to the central question of whether this would be a desirable or undesirable dynamic, first ask whether it is real, and if so, how it came about.
+
+	%Genschel, Kemmerling and Seils (2009) suggest (corporate income) tax competition is shaped by four interrelated institutional mechanisms of the EU:
+	%Market integration (↑) reduces transaction costs of cross-border arbitrage (think:\ exchange rate volatility, tariffs) and thereby facilitates tax competition.
+	%Enlargement (↑) adds new, attractive markets:
+%new members are diverse in size (!) and economic development (GDP/Capita).
+%Smaller and poorer countries have greater incentives and possibilities to lower taxes.
+	%Tax coordination (↓) makes taxation more similar, and therefore reduces the ways in which governments can compete for capital and labor.
+	%Supranational judicial review (↑) enforces the non-discriminatory liberalization (think:\ Cassis de Dijon) and limits the ability of governments to unilaterally defend against tax competition (think:\ Tobin Tax).
+
+	%Genschel et al.
+%find that tax competition is different and greater within the European Union than outside of it, and that it accelerates with time and enlargement.
+
+	%They also suggest that larger countries suffer disproportionately from tax competition as smaller countries can boost their revenues (and growth) with the low rates on the massive inflowing capital from larger neighbors.
+%Conversely, poorer countries have greater incentive and ease to compete for scarce capital.
+	%The competition is less harsh amongst (now delegitimized) preferential tax regimes (PTR) (think:\ Hong Kong).
+%When countries target only the most mobile of factors with tax breaks, the overall revenue effect tends to be smaller and more symmetric.
+
+	%(A Prisoner's Dilemma Game of Tax Competition.
+%Payoffs are tax revenues#.)
+
+	%If these empirical results are correct, EU tax competition can be modeled as a Prisoner's Dilemma game, where states (strictly) dominantly prefer low taxes over high taxes and (Nash) equilibriate in suboptimal, mutual low taxation.
+
+	%The Case against European Tax Competition:
+%It's a Race to the Bottom
+
+	%The argument against European tax competition builds on the assumed Prisoner's Dilemma dynamic, and suggests that EU states may not only be incapable to maximize public revenue under competition, but that thereby depressed tax revenue will lead to debt crises, the underprovision of public or common goods and impaired redistributive ability or a retrenchment of the Welfare State.
+%It could also be argued that a harmonized European Tax regime better equips member states to withstand shocks with countercyclical tax and spend policies.
+
+	%A related argument can be made about a presumed inability to respond to structural misalignments caused by liberalization.
+%When trade, migration and investment allow countries to specialize even more according to their factor endowments (think:\ Romanian Nokia, German Management Consulting), remaining, relatively scarce factors (think:\ unskilled laborer in Germany) may find their market wages# fall even further below the respective socially acceptable minimum income#.
+%Rich states may then be forced to redistribute income to these individuals, but find themselves unable to raise the necessary revenues (progressively) without further reducing their competitiveness.
+%Tax competition could then exacerbate vicious dynamics of structural unemployment.
+
+	%Tax competition is harshest on tax bases (capital, labor, firms) that are highly mobile (think:\ private equity).
+%EU member state tax codes may be forced to converge on certain kinds of taxes.
+%To appreciate this possibility, consider the qualities of different redistributive-/general-revenue taxes#.
+
+	%(reproduced from Genschel 2007:
+%11) (whatever this was?) -->

@@ -1,3 +1,5 @@
+# (PART) Discussion {-}
+
 # Conclusion
 
 > Democracy is not being, it is becoming.
@@ -14,10 +16,6 @@
 <!-- [ ] you won't get there entirely (fung on revolution and deliberation) -->
 
 <!-- Note somewhere that risk (for example, Beck) may be another topic for deliberation. Here, too, people have systematic misunderstandings (Kahnemann 2012), and it's about power (Paul Slovic) but there are also some truths (Sunstein), it's the same conflict between objective truth and relative truths and autonomy. -->
-
-
-<!-- Dr.~Pangloss is really giving optimism a bad name. If anyone is an optimist, it's Candide: ``Let us cultivate our garden.''. -->
-<!-- get Cervantes here: the sickest/craziest person is whoever accepts the world as it is, not as it ought to be. -->
 
 <!-- really be hard about this: this is a charge that civicon (thin leftiest supporter) also faces: does it just mullify dissent? -->
 <!-- - feminist critique: mullifying critique -->
@@ -38,6 +36,12 @@ Still, it is very interesting, and it would be crucial to have larger samples to
 
 <!-- limitation: there wer eno liberals! -->
 
+<!-- it's actually a little iffy that inequality (though materially represented!) wasn't really discussed.
+instead, people got around this by kinda blaming the state
+or maybe not, maybe they were really just polite or properly abstract, and trying to avoid making redistribution into a weird, one-off thing, discretionary -->
+
+
+
 <!-- limitation: did not really get into the whole ses-status / different cognitive ability Stufentarif
 If, even under the brand of liberal democracy most demanding of political autonomy, people of lower cognitive ability or socio-economic status were to misunderstand taxation, be unable to engage in reciprocally comprehensible argument and as a result, opt for taxes against their material interest, social inequality research would face a whole new process of perpetuating privilege.
 Not only as social scientists, but as citizens, too, we must know how no one gets left behind in our schools of democracy [@DeTocqueville1840; @Rosenberg-2002-aa].
@@ -53,6 +57,7 @@ Liberal democracy, at bottom, requires that political participation *can* be mad
 %However I do not believe that the deliberative democrats have gone far enough in their consideration of the social character of the individual, either as a subject or an agent.
 %In this regard, they have a tendency to continue to characterize cognition as an essentially psychological attribute, one that reflects a basic and universal human nature.
 %They also tend to reduce the emotional bond between people to a secondary question of private'' -->
+
 
 ## Further Research
 

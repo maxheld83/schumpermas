@@ -12,18 +12,19 @@ rmd_files: [
   "preface.rmd",
   "introduction.Rmd",
   # theory
-  "crises.rmd",
-  "abstractions.rmd",
   "hypotheticals.rmd",
+  "mixed.rmd",
+  "tax.rmd",
+  "crises.rmd",
   # methods
   "rq.rmd",
   "civicon.Rmd",
   "q.Rmd",
   # results
   "field-report.rmd",
-  "baseline.Rmd",
-  "treatment.Rmd",
-  "discussion.Rmd",
+  "subjectivity.Rmd",
+  "structuration.Rmd",
+  # discussion
   "conclusion.rmd",
   "epilogue.Rmd",
   "statement-authorship.rmd",

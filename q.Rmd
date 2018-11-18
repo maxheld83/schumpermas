@@ -66,25 +66,10 @@ Subjectivity. 1: 78-84. -->
 <!-- As a mixed method, Q methodology is better suited for the study of deliberative democracy. -->
 <!-- It offers a holistic, and operantly defined, yet quantitatively rigorous view on political subjectivity. -->
 
-<!-- Using data gathered before and after the 2014 CiviCon Citizen Conference on taxation, hosted by the author, I suggest several approaches to measure deliberative quality using Q methodology. -->
-<!-- At the week-long conference, 16 diverse, self-selected citizens were tasked to design a tax system "from scratch", choosing among possible combinations of base schedule.  -->
-<!-- They participated in learning phases, deliberated in moderated small group and plenary sessions, met with experts and held a concluding press conference. -->
-<!-- Before and after the conference, citizens sorted 79 statements on taxation and economics according to their subjective viewpoint. -->
+<!-- Dryzek and Niemeyer have shown that Q methodology can be a productive *mixed* method to study deliberative democracy: It offers a holistic, and operantly defined, yet quantitatively rigorous view on political subjectivity. -->
 
-<!-- Besides, it’s not clear that we need random sampling, maybe we need theoretical saturation, that might make more sense for Q method. -->
+<!-- however, q tradittionally provides no clear way to study the *treatment effects* of some participatory intervention -->
 
-<!-- Following traditional Q methodology, sorts were factor analyzed to extract ideal-typical viewpoints shared by participants.  -->
-<!-- Before the conference, citizens expressed resentful, radical and moderate viewpoints, including some apparent inconsistencies between beliefs, values and preferences on taxation.  -->
-<!-- After the conference, citizens shared decommodifying, pragmatic and critical viewpoints and displayed a simpler, lower-dimensional structuration of viewpoints. -->
-
-<!-- Such results are meaningful and encouraging for the use of Q in deliberation, but fall short of testing a treatment effect, because before- and after-factor models are extracted and rotated separately. -->
-<!-- To tease out the effects of deliberation, I therefore also apply a newly developed 2-dimensional Q analysis (Q-2D), based on three-mode Principal Components Analysis (nPCA) by Tucker and Kroonenberg. -->
-<!-- On the one hand, results indicate that, after considerable computation and graphical transformation, the effects of deliberation can be meaningfully interpreted using Q2D.  -->
-<!-- Participation in the Citizen Conference appears to increase substantive consistency of political viewpoints, seemingly meeting a demanding standard for deliberative democracy.  -->
-<!-- On the other hand, a unified longitudinal factor model may also unreasonably restrict the change of subjectivity during deliberation.  -->
-<!-- Analyzed separately, there is some evidence that before and after factor models are, in fact, incongruent. -->
-
-<!-- Alternative analytical approaches to Q data in empirical deliberative democracy research are discussed. -->
 
 <!-- # Habermas Ach Europa
 so clearly, we want only a notion of a plausible *possibility* of rational solutions, we don't want to look just at rational solutions (first vs second order).
@@ -131,14 +116,6 @@ Notice: my view isn't really about ideas as explaining anything; ideas *are+ the
 
 ### What is Q-Methodology?
 
->"Factor analysis (...) is concerned with a population of n individuals each of whom has been measured in m tests or other instruments.
->The (...) correlations for these m variables are subjected to (...) factor analysis.
->But this technique (...) can also be inverted.
->We may concern ourselves with a population of N different tests (or other items), each of which is measured or scaled relatively, by M individuals."
->-- Stephenson (1936a: 334)
-
-- "factor analysis with the data table turned sideways"; persons are *variables* and traits/tests/statements/abilities are the *sample* or *population*.
-- looks at 
 
 
 ### Why Q-Methodology?
@@ -157,39 +134,6 @@ Notice: my view isn't really about ideas as explaining anything; ideas *are+ the
 
 ### Analysis
 
-1. Factor analysis (Q method) of individual q-sorts to investigate metaconsensus.
-2. Correlations between factor loadings of individuals to investigate intersubjective rationality (small n problem)
-3. Secondary factor analysis of factor array, with individual factors as "cases" and items as variables.
-4. Correlations between factor loadings and other gathered data (SES, etc.) (small n problem)
-
-
-1. Good deliberation is: Metaconsensus (or well-structured ordinal preferences)
-2. Good deliberation is: Intersubjective Consensus (IC) or Intersubjective Rationality
-   People who share the same *beliefs* and hold the same *values* express the same *preferences* and vice versa.
-
-   1. As a result of deliberation, metaconsensus in *beliefs*, *values* and *preferences* will be higher. Factors will be fewer, and loadings higher.
-   2. As a result of deliberation, intersubjective consensus will be higher. People who share the same beliefs about the economy, and hold the same allocative values will express the same tax preferences and vice versa.
-
-This is *open* also to factors of fundamental disagreements about the role of rationality in democratic decisions (as compared to, say, power, practice).
-
-   <!-- - explicates the *data*; in this case, Q-Sorts -->
-   <!-- - *contextualizes* Q-methodology within existing literature, alternative formats, tradeoffs -->
-   <!-- - *documents* q-sampling (of statements), condition of instruction etc. -->
-   <!-- - *argues* how/why q-methodology is a fitting method for the (deliberative + tax) research question -->
-
-<!-- add stuff from why q here -->
-
-<!---
-1. Knowledge Gain will be expressed in greater metaconsensus (and, equivalently), the lower preferences for "misunderstood" items.
-2. "Tax misunderstandings" will appear as differences in factors and factor loadings before and after the deliberation.
-3. Universal validity will be expressed in metaconsensus.
-4. Attitude change *are not part of Q-methodology*.
-5. Meta assessment (autonomy, competence and meaningful choice) *are not part of Q-methodology*.
-6. Interaction effects (SES) *are not part of Q-methodology*.
-7. Fundamental disagreements about the role of economics, or generally, rationality in policy choice (as opposed to, say, power, practice) will show up as factors -- if the Q sample of statements is good enough.
- -->
-
-
 <!-- Onsampling Q statements from non-natural occurences, from some email from the list
 
 > I agree with Lucy Parry on both counts:  (a) Q statements are not variables, but elements in a sample, drawn from the universe of subjective communicability; and (b) statements ought to be altered as little as possible from their original form.  In a doctoral dissertation from some years ago (Newman, 2005), statements about physician-assisted suicide and euthanasia were drawn from two academic articles that claimed comprehensiveness from Kant onward, but the language was in academese and so some words were replaced with equivalents that were more accessible to members of the general public who, along with experts, would be taking the Q sort—e.g., by converting “The patient’s values should form the basis for the regimen to treatment” to “The patient’s values should form the basis for medical treatment.”
@@ -205,7 +149,6 @@ VALENCE
 (d) pro  (e) con
 
 All statements that they reported fit into one of these three categories, and to expand diversity in the Q sample, statements both for and against doctor-assisted suicide were included.  Eventually, n=6 statements from each of the (2)(3)=6 categories above were selected, for a Q sample of N=36.  The role of the above factorial design ends with the selection of statements, however, and the results are not analyzed via variance analysis, which preserves the categories; rather, by way of factor analysis, which preserves the subjectivity (Brown, 1999; Stephenson, 1993/1994).  In Q, it is rarely the case that there are hypotheses to test, in keeping with the hypothetico-deductive framework; more commonly, there are structures to be found and understood, in line with an abductory framework.e
-
 
 
 
@@ -540,20 +483,6 @@ Look at Brown 1980: 14 for the body parts analogy; putting it back together in R
 
 500: inter-subjective rationality, "when individuals who agree on preferences also concur on the relevant reasons, and vice versa for disagreement"
 507: "any pair of deliberators with similar subjective positions -- in that they agree on values and beliefs -- ought also to agree on preferences"
-
-501:
-1. Choices (preferences regarding course of action) area *function* of
-2. beliefs
-3. desires (values)
-
-- (502f) Consensus
-    + Normative consensus (on values)
-    + Epistemic consensus (on beliefs; actions and cause and effects)
-    + Preference consensus (what should be done)
-- (504f) Meta-Consensus
-    + Normative meta-consensus ("shared recognition of the legitimacy of a set of values, but no agreement")
-    + Epistemic meta-consensus ("agreement on the credibility of beliefs and their relevance to the question under deliberation")
-    + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension) -->
 
 
     <!-- ## Methode Q-Sort

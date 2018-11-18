@@ -1,4 +1,4 @@
-# Baseline {#baseline}
+# Deliberative Subjectivities {#subjectivity}
 
 > He who knows only his own side of the case knows little of that. 
 > His reasons may be good, and no one may have been able to refute them. 
@@ -6,6 +6,11 @@
 > He must be able to hear them from persons who actually believe them [...] he must know them in their most plausible and persuasive form.
 >
 > -–- John Stuart @Mill-1959
+
+<!-- 1. Factor analysis (Q method) of individual q-sorts to investigate metaconsensus.
+2. Correlations between factor loadings of individuals to investigate intersubjective rationality (small n problem)
+3. Secondary factor analysis of factor array, with individual factors as "cases" and items as variables.
+4. Correlations between factor loadings and other gathered data (SES, etc.) (small n problem) -->
 
 <!-- - reports correlations, factors from pre- and post-sort. -->
 <!--    - *factor interpretation* in substantive terms of tax and the economy. -->
@@ -24,6 +29,15 @@ they just wanted to be left alone by the abstractions of Society -->
 
 <!-- Notice that some people complained about sorting several items, but that 0 is in fact an appropriate value.
 For more on what 0 means to q, see Brown 1980 199, also note the flac I got on the correlation coefficient email on the meaning of 0. -->
+
+>"Factor analysis (...) is concerned with a population of n individuals each of whom has been measured in m tests or other instruments.
+>The (...) correlations for these m variables are subjected to (...) factor analysis.
+>But this technique (...) can also be inverted.
+>We may concern ourselves with a population of N different tests (or other items), each of which is measured or scaled relatively, by M individuals."
+>-- Stephenson (1936a: 334)
+
+- "factor analysis with the data table turned sideways"; persons are *variables* and traits/tests/statements/abilities are the *sample* or *population*.
+- looks at 
 
 ## Data Import
 
@@ -398,7 +412,7 @@ This postulated incomparability applies to this study, too, and plays out in sev
     Researchers cannot interpret shared viewpoints of common sorting patterns (the factor scores) without *some* reference to their own preconceptions in drafting or sampling items.
 
     No factor interpretation of holistic patterns of items can be undertaken without *some* reference to their own preconceptions about those items.
-    It would be impossible interpret even the relative position of `exchange-value`, rejecting any overlap or relationship to our academic understanding of that item:
+    It would be impossible to interpret even the relative position of `exchange-value`, rejecting any overlap or relationship to our academic understanding of that item:
     we would be looking at a heap of structured gibberish.
     Q researchers are, in fact, quite fond of their own judgment: "researchers might, on occasion, 'know what to look for'" [Stephenson 1953: 44, as cited in @Watts2012: K2308].
     The epistemology of *abduction* suggests to repeatedly go back and forth between hunches, interpretation and what the data will bear out.
@@ -1945,3 +1959,146 @@ We are disappointed to find that the self-taught are also self-centered, althoug
 The independent-minded philosopher-saints are so sure of themselves that they often lose the discipline of any kind of peer review, formal or amateur.
 They end up opiniated, and alone.
 -->
+
+<!-- Using data gathered before and after the 2014 CiviCon Citizen Conference on taxation, hosted by the author, I suggest several approaches to measure deliberative quality using Q methodology. -->
+<!-- At the week-long conference, 16 diverse, self-selected citizens were tasked to design a tax system "from scratch", choosing among possible combinations of base schedule.  -->
+<!-- They participated in learning phases, deliberated in moderated small group and plenary sessions, met with experts and held a concluding press conference. -->
+<!-- Before and after the conference, citizens sorted 79 statements on taxation and economics according to their subjective viewpoint. -->
+
+<!-- Besides, it’s not clear that we need random sampling, maybe we need theoretical saturation, that might make more sense for Q method. -->
+
+<!-- Following traditional Q methodology, sorts were factor analyzed to extract ideal-typical viewpoints shared by participants.  -->
+<!-- Before the conference, citizens expressed resentful, radical and moderate viewpoints, including some apparent inconsistencies between beliefs, values and preferences on taxation.  -->
+<!-- After the conference, citizens shared decommodifying, pragmatic and critical viewpoints and displayed a simpler, lower-dimensional structuration of viewpoints. -->
+
+<!-- Such results are meaningful and encouraging for the use of Q in deliberation, but fall short of testing a treatment effect, because before- and after-factor models are extracted and rotated separately. -->
+<!-- To tease out the effects of deliberation, I therefore also apply a newly developed 2-dimensional Q analysis (Q-2D), based on three-mode Principal Components Analysis (nPCA) by Tucker and Kroonenberg. -->
+<!-- On the one hand, results indicate that, after considerable computation and graphical transformation, the effects of deliberation can be meaningfully interpreted using Q2D.  -->
+<!-- Participation in the Citizen Conference appears to increase substantive consistency of political viewpoints, seemingly meeting a demanding standard for deliberative democracy.  -->
+<!-- On the other hand, a unified longitudinal factor model may also unreasonably restrict the change of subjectivity during deliberation.  -->
+<!-- Analyzed separately, there is some evidence that before and after factor models are, in fact, incongruent. -->
+
+<!-- Alternative analytical approaches to Q data in empirical deliberative democracy research are discussed. -->
+
+Using data gathered before and after the 2014 CiviCon Citizen Conference on taxation, hosted by the author, I suggest several approaches to measure deliberative quality using Q methodology.
+At the week-long conference, 16 diverse, self-selected citizens were tasked to design a tax system "from scratch", choosing among possible combinations of base schedule. 
+They participated in learning phases, deliberated in moderated small group and plenary sessions, met with experts and held a concluding press conference.
+Before and after the conference, citizens sorted 79 statements on taxation and economics according to their subjective viewpoint.
+
+Following traditional Q methodology, sorts were factor analyzed to extract ideal-typical viewpoints shared by participants. 
+Before the conference, citizens expressed resentful, radical and moderate viewpoints, including some apparent inconsistencies between beliefs, values and preferences on taxation. 
+After the conference, citizens shared decommodifying, pragmatic and critical viewpoints and displayed a simpler, lower-dimensional structuration of viewpoints.
+
+Such results are meaningful and encouraging for the use of Q in deliberation, but fall short of testing a treatment effect, because before- and after-factor models are extracted and rotated separately.
+To tease out the effects of deliberation, I therefore also apply a newly developed 2-dimensional Q analysis (Q-2D), based on three-mode Principal Components Analysis (nPCA) by Tucker and Kroonenberg.
+On the one hand, results indicate that, after considerable computation and graphical transformation, the effects of deliberation can be meaningfully interpreted using Q2D. 
+Participation in the Citizen Conference appears to increase substantive consistency of political viewpoints, seemingly meeting a demanding standard for deliberative democracy. 
+On the other hand, a unified longitudinal factor model may also unreasonably restrict the change of subjectivity during deliberation. 
+Analyzed separately, there is some evidence that before and after factor models are, in fact, incongruent.
+
+Alternative analytical approaches to Q data in empirical deliberative democracy research are discussed.
+
+Political subjectivity has been conceptualized by Dryzek and Niemeyer to involve *beliefs* and *values*, as well as *preferences*.
+These are conceptually *independent dimensions* and the very status of some assertion as either value or belief is often contested, and thereby part of political subjectivity proper.
+Here, too, Q2D can significantly improve upon conventionally analyzed, repeated Q studies by yielding *jointly extracted and rotated*, two-dimensional ideal viewpoints vis-a-vis the *same* items, readily interpretable in terms of meta-consensus and intersubjective rationality.
+
+Algorithms and visualizations in open-source R-code are presented, conceptual limitations of Q2D are discussed and compared to alternative analytical approaches to Q data in empirical deliberative democracy research.
+
+<!-- - Communality / nloads of factors seem to change (different people!)
+- Eigenvalues increase!
+- Factor of factors?
+- Factor of item movements?
+Look at factor CONGRUENCE (the angles!) -->
+
+<!-- make screeplot with before/after data in one plot, that's essentially what you're hypothesizing -->
+
+
+
+```{r diff, eval = FALSE}
+diff <- NULL
+diff$data <- q_sorts[,,"after"] - q_sorts[,,"before"]
+
+test <- q.corrplot(corr.matrix = cor(diff$data, method = "pearson")) + ggtitle("Correlation of Movements")
+
+
+diff$howmany <- q.nfactors(dataset = diff$data, cutoff = 8)
+diff$howmany$screeplot
+
+diff$howmany.r <- q.nfactors(dataset = t(diff$data))
+diff$howmany
+
+diff$results <- qmethod(dataset = diff$data, nfactors = 3, rotation = "equamax", forced = FALSE, cor.method = "pearson", threshold = "none", allow.confounded = TRUE, distribution = diff$distro)
+
+diff$distro <- c(
+  -7, 
+  -6, 
+  rep(-5, 2), 
+  rep(-4, 4),
+  rep(-3, 6),
+  rep(-2, 9),
+  rep(-1, 10),
+  rep(0, 11),
+  rep(1, 10),
+  rep(2, 9),
+  rep(3, 6),
+  rep(4, 4),
+  rep(5, 2),
+  6,
+  7
+)
+
+diff$results$f_char$characteristics
+
+q.scoreplot.ord(results = diff$results, factor = 1)
+
+q.corrplot(corr.matrix = (cor(t(diff$data))))
+```
+
+
+
+```{r threeway, eval = FALSE}
+library(ThreeWay)
+help(T3)
+dimnames(q_sorts)
+keyneson$threeway <- T3(data = q_sorts, laba = dimnames(q_sorts)[[1]], labb = dimnames(q_sorts)[[2]], labc = dimnames(q_sorts)[[3]])
+```
+
+
+<!-- is there a two-dimensional equivalent to PCA? -->
+
+
+<!-- crazy idea for two-dimensional PCA, just make the lower diag different, this is via qlist from Tim Michel:
+i J Christopher:
+
+I've been reading all the responses my query  has generated, to reflect on your response:
+
+1) I understood what you meant by fusing the Q-Sorts together.
+2) However, I agree with others on the topic that it doesn't make sense to simply fuse the sorts together and then do the calculations as if they were one large Q-Sort
+3) I reiterate that using a block diagonal correlation matrix would seem a more reasonable approach
+
+i.e.  [ M   0  ] , where M are the correlations based on the 1st Qsort and N the 2nd.
+      [ 0   N  ]
+
+4) That would get away from correlating apples and oranges so to speak
+5) This way we would get a cleaner result and the calculated factors would possibly reflect the subject positions on Qsort1 and Qsort2 without the other noise in the data.
+6) I think one would still have to make a case that the qsets are related and would have to administered in the same temporal frame.
+
+Now in my limited exposure to Q-Methodology, it seems to me that it is employed to find clusters of opinions or subjectivities on the topic outlined int the Q-sets. I would think that combining the Q-Sorts in this manner would identify clusters of opinions & subjectivities in the combined Q-Sets.
+ -->
+
+
+
+## Factor changes
+
+<!-- Q2D: A Novel Approach to Measure Deliberative Quality at a Citizen Conference on Taxation -->
+
+<!-- - reports *changes* in factor composition and loadings between pre- and post-sort. -->
+<!--    - *factor interpretation* in terms of deliberative democracy (as per Niemeyer: beliefs, values, preferences) -->
+<!--    - testing (increased) *meta-consensus and intersubjective rationality* (aka consistency) -->
+<!--    - additional *qualitative analyses* of selected, cursorily transcripted discussions from CiviCon-1 -->
+
+<!-- 1. **compare factor loadings**: look at the dimensionality, and loadings of factors befre and after; this would be the broadest kind of result, ideally that the factor space becomes lower dimensional -->
+<!-- 2. **pooling** of data (including before and after sorts in *one* dataset for analysis): may show different before/after factors, as well as the change of people -->
+<!-- 3. **2nd order analysis** (make factors out of factors): will be limited because of max. 8 cases (factors), but would be very interesting: these might be the *misunderstandings* -->
+<!-- 4. **factors of deltas** compute the delta in score for each item (say, item moves from -5 to 2 for a participant), then compute factors of these movements: this may reveal the "misunderstandings", and/or the kinds of learning processes that have happened. -->
+<!-- 5. **spiking** of data; place (some of the) "before" factor arrays into the "after" dataset as cases; then do judgmental rotation: this is not a very common method, but may reveal how things have changed from the vantage point of "before". -->

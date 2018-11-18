@@ -2,9 +2,6 @@
 
 # Research Design
 
-
-
-
 Between these two 
 
 At this intersection of ([pct]{acronym-label="pct" acronym-form="singular+short"}) taxation and (deliberative) democracy, two related research questions arise:
@@ -24,6 +21,46 @@ Conversely, taxation is a good *case* to test deliberative democracy in research
 [^1]
 and which may strain the cognitive ability of deliberators.
 
+
+1. Good deliberation is: Metaconsensus (or well-structured ordinal preferences)
+2. Good deliberation is: Intersubjective Consensus (IC) or Intersubjective Rationality
+   People who share the same *beliefs* and hold the same *values* express the same *preferences* and vice versa.
+
+   1. As a result of deliberation, metaconsensus in *beliefs*, *values* and *preferences* will be higher. Factors will be fewer, and loadings higher.
+   2. As a result of deliberation, intersubjective consensus will be higher. People who share the same beliefs about the economy, and hold the same allocative values will express the same tax preferences and vice versa.
+
+This is *open* also to factors of fundamental disagreements about the role of rationality in democratic decisions (as compared to, say, power, practice).
+
+   <!-- - explicates the *data*; in this case, Q-Sorts -->
+   <!-- - *contextualizes* Q-methodology within existing literature, alternative formats, tradeoffs -->
+   <!-- - *documents* q-sampling (of statements), condition of instruction etc. -->
+   <!-- - *argues* how/why q-methodology is a fitting method for the (deliberative + tax) research question -->
+
+<!-- add stuff from why q here -->
+
+<!---
+1. Knowledge Gain will be expressed in greater metaconsensus (and, equivalently), the lower preferences for "misunderstood" items.
+2. "Tax misunderstandings" will appear as differences in factors and factor loadings before and after the deliberation.
+3. Universal validity will be expressed in metaconsensus.
+4. Attitude change *are not part of Q-methodology*.
+5. Meta assessment (autonomy, competence and meaningful choice) *are not part of Q-methodology*.
+6. Interaction effects (SES) *are not part of Q-methodology*.
+7. Fundamental disagreements about the role of economics, or generally, rationality in policy choice (as opposed to, say, power, practice) will show up as factors -- if the Q sample of statements is good enough.
+ -->
+
+ <!-- 501:
+ 1. Choices (preferences regarding course of action) area *function* of
+ 2. beliefs
+ 3. desires (values)
+
+ - (502f) Consensus
+     + Normative consensus (on values)
+     + Epistemic consensus (on beliefs; actions and cause and effects)
+     + Preference consensus (what should be done)
+ - (504f) Meta-Consensus
+     + Normative meta-consensus ("shared recognition of the legitimacy of a set of values, but no agreement")
+     + Epistemic meta-consensus ("agreement on the credibility of beliefs and their relevance to the question under deliberation")
+     + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension) --> -->
 
 ## Hypotheses
 
@@ -219,68 +256,7 @@ why do we not have it?
 % How would a PCT be (cardinally) specified and implemented?
 
 
-\section{Tax Competition}
-%maybe this should happen somewhere earlier?
-%the below section is a duplicate from the dual crisis
-%Background:
-%Taxation Trends in the European Union
 
-	%The Directorate General for Taxation and Customs Union issues an annual report on taxation in the European Union.
-%Results from the 2009 edition include:
-	%Tax ratios in the EU-27 remain relatively high (39.8% of GDP), but differ greatly between old and NMS (Romania 29.4%, Denmark 48.7%).
-	%NMS raise relatively more revenue by indirect, non-redistributive taxes in immobile bases.
-	%Almost all member states increase the (indirect) burden in (relatively immobile) consumption through VAT and excise duties.
-	%Top average (not marginal) Personal Income Tax (PIT) rates (37.8%) are in decline across almost all EU member states, but continue to vary dramatically between old and NMS (Bulgaria 10%, Denmark 59%).
-	%Corporate Income Tax (CIT) rates are in rapid decline, from 35.3% in 1995 to 23.5% now.
-%Again, NMS tend to have lower tax rates than older member states.
-	%Implicit Corporate Income Tax rates (CIT-ITR) are however, stable if diverging, possibly due to cyclical effects, base broadening or cannibalizing on the PIT.
-
-	%Is there European (Corporate Income) Tax Competition?
-
-	%In a liberalized Single Market, where capital and, to a lesser extent, labor through trade, investment and migration flow to their most profitable use, it appears reasonable to assume that these factors of production will also respond to taxes.
-%Investors and workers will, as much as they can, flock to locations where tax rates are lower than the respective costs of relocation.
-%To sustain output and growth, states would then have to compete for factors of production with low tax rates.
-
-	%Before turning to the central question of whether this would be a desirable or undesirable dynamic, first ask whether it is real, and if so, how it came about.
-
-	%Genschel, Kemmerling and Seils (2009) suggest (corporate income) tax competition is shaped by four interrelated institutional mechanisms of the EU:
-	%Market integration (↑) reduces transaction costs of cross-border arbitrage (think:\ exchange rate volatility, tariffs) and thereby facilitates tax competition.
-	%Enlargement (↑) adds new, attractive markets:
-%new members are diverse in size (!) and economic development (GDP/Capita).
-%Smaller and poorer countries have greater incentives and possibilities to lower taxes.
-	%Tax coordination (↓) makes taxation more similar, and therefore reduces the ways in which governments can compete for capital and labor.
-	%Supranational judicial review (↑) enforces the non-discriminatory liberalization (think:\ Cassis de Dijon) and limits the ability of governments to unilaterally defend against tax competition (think:\ Tobin Tax).
-
-	%Genschel et al.
-%find that tax competition is different and greater within the European Union than outside of it, and that it accelerates with time and enlargement.
-
-	%They also suggest that larger countries suffer disproportionately from tax competition as smaller countries can boost their revenues (and growth) with the low rates on the massive inflowing capital from larger neighbors.
-%Conversely, poorer countries have greater incentive and ease to compete for scarce capital.
-	%The competition is less harsh amongst (now delegitimized) preferential tax regimes (PTR) (think:\ Hong Kong).
-%When countries target only the most mobile of factors with tax breaks, the overall revenue effect tends to be smaller and more symmetric.
-
-	%(A Prisoner's Dilemma Game of Tax Competition.
-%Payoffs are tax revenues#.)
-
-	%If these empirical results are correct, EU tax competition can be modeled as a Prisoner's Dilemma game, where states (strictly) dominantly prefer low taxes over high taxes and (Nash) equilibriate in suboptimal, mutual low taxation.
-
-	%The Case against European Tax Competition:
-%It's a Race to the Bottom
-
-	%The argument against European tax competition builds on the assumed Prisoner's Dilemma dynamic, and suggests that EU states may not only be incapable to maximize public revenue under competition, but that thereby depressed tax revenue will lead to debt crises, the underprovision of public or common goods and impaired redistributive ability or a retrenchment of the Welfare State.
-%It could also be argued that a harmonized European Tax regime better equips member states to withstand shocks with countercyclical tax and spend policies.
-
-	%A related argument can be made about a presumed inability to respond to structural misalignments caused by liberalization.
-%When trade, migration and investment allow countries to specialize even more according to their factor endowments (think:\ Romanian Nokia, German Management Consulting), remaining, relatively scarce factors (think:\ unskilled laborer in Germany) may find their market wages# fall even further below the respective socially acceptable minimum income#.
-%Rich states may then be forced to redistribute income to these individuals, but find themselves unable to raise the necessary revenues (progressively) without further reducing their competitiveness.
-%Tax competition could then exacerbate vicious dynamics of structural unemployment.
-
-	%Tax competition is harshest on tax bases (capital, labor, firms) that are highly mobile (think:\ private equity).
-%EU member state tax codes may be forced to converge on certain kinds of taxes.
-%To appreciate this possibility, consider the qualities of different redistributive-/general-revenue taxes#.
-
-	%(reproduced from Genschel 2007:
-%11) (whatever this was?)
 
 %Second Order Questions of Social Change
 %The second order question of social change is simply:

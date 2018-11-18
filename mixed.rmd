@@ -1,4 +1,4 @@
-# First-Order Abstractions {#abstractions}
+# The Mixed Economy {#mixed}
 
 > The devil may indeed dwell in the details, but we first need to find an angel or two in the abstractions that govern [...].
 > 
