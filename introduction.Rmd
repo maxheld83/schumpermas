@@ -11,7 +11,7 @@ There is something fishy about our current historical moment, sometimes ominousl
 
 On the one hand, in absolute and aggregate terms, the developed world has never had it so good.
 At least for now, and albeit threatened by a barrage of geopolitical risks and global imbalances, our global market economy continues to produce marvels of material prosperity.
-10 years after the 2017ff Great Recession, many members of the Organization for Economic Cooperation and Development (OECD) report relatively healthy real gross domestic product (GDP) growth rates averaging 2.5% and harmonised unemployment rates (HURs) of around 5.3% in 2017.
+10 years after the 2017ff Great Recession, many members of the Organization for Economic Cooperation and Development (OECD) report relatively healthy real gross domestic product (GDP) growth rates averaging 2.5% and harmonized unemployment rates (HURs) of around 5.3% in 2017.
 <!-- TODO add proper citations -->
 These mainstream economic indicators are highly imperfect [^bad_gdp], but they  suggest that far from collapsing under the weight of its ostensible internal contradictions, capitalism is still humming along.
 
@@ -52,31 +52,29 @@ Or is this just the way the world works, bursting our delusional, progressive bu
 
 Critical social scientists, from @Marx-1867-aa to today's gloomy pronouncers of "post-democracy" [@Crouch2004] and "late capitalism" [@mountford2011] are always prone to suspect foul play.
 They highlight ostensible contradictions of current economic and social arrangement, and contrast a deplorably imperfect present reality against preferable arrangements past or future [also see @Streeck2013; @NachtweyAbstiegsgesellschaftUberAufbegehren2016].
-This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but it has also fueled the hybris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
+This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but it has also fueled the hubris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
 <!-- TODO add meta reference to Bismarck -->
-<!-- NOTE VK: fantastic transition! -->
 
 By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic utilitarianism [@McCloskeyBourgeoisVirtuesEthics2006] find nothing outrageous, let alone suspicious about welfare capitalism and liberal democracy in disarray.
 From this vantage point, an overextended state and overly inclusive or demanding polity is simply crumbling under the weight of its unkept promises and collective action dysfunctions, as was to be expected all along.
 Many, more moderate critics may be worried what the postwar compact might take with it, should it go down violently [see @acemoglu_why_2012].
 But fearing collateral damage to the rule of law, property rights or even liberal democracy does not imply that there would be anything wrong with a retrenchment of state intervention.
-<!-- TODO add citation for moderate critics -->
-Conservative and libertarian viewpoints easily come across as curmudgeonly or even cynical, but they are ignored and disavowed in the much of the social science at all our peril. 
+<!-- TODO add citation for moderate critics, VK: change double negation -->
+Conservative and libertarian viewpoints easily come across as curmudgeonly or even cynical, but they are ignored and disavowed in the much of the social science at all our peril.
 This healthy skepticism of man-made societal designs and respect for the wisdom contained in evolved, and therefore stable institutions must not be ignored.
 In the extreme, however, conservatism and libertarianism risk collapsing entirely that what *is*, and *should* be, negating all collective political action in Panglossian tautology [@Voltaire1759].
 
 We should interrogate our present situation through both ideological lenses --- and any other viewing aids not neatly foldable into these two camps --- if only to be aware of our blindspots, and perhaps, even to expand our moral horizons.
-<!-- VK: which lenses? (repeat it)-->
 
 Still, both approaches are equally limited in their scientific rigor.
 
 Critical observers always assume we have been duped out of some better world and jump right to the "whodunnit" question.
 In the extreme, historical materialism conflates entirely the questions of economic constraints and political causes, because it conveniently assumes the latter to be mere superstructure to the former [@popper_poverty_2013; compare @Marx1844].
 The modern-day heirs of post-structuralism and associated post-isms take a similar tack when they define away, or straight up ignore such at least pragmatically useful concepts such as productivity, marginal use or even rational discourse as mere language permeated by power [see @Gibson-Graham2006 and @Peters2001; broadly @Laclau2014; distantly @Foucault-1972-aa].
-Not only are concrete critiques of the supposedly corrupted intellectual apparatus undergirding, say, "neoliberalism" such as the first theorem of welfare economics [graphically by @Lerner1944; mathematically by @Lange1934; @Debreu1954] conspicuously hard to come by amidst all the intramural casuistry, but these nominally "political" theories are also surprisingly mum on policy for the here and now [see @Rorty1999].
+Not only are concrete critiques of the supposedly corrupted intellectual apparatus undergirding, say, "neoliberalism" such as the first theorem of welfare economics [graphically by @Lerner1944; mathematically by @Lange1934; @Debreu1954] conspicuously hard to come by amidst all the intramural casuistry, but these nominally political theories are also surprisingly mum on policy for the here and now [see @Rorty1999].
 
 Conversely, conservative or libertarian commentators reject the mere possibility of collectively decided improvements, and therefore will never open any investigation into the causes of, or culprits for what might otherwise be recognized as shortcomings.
-<!-- TODO expand this, add references -->
+<!-- TODO expand this (VK: I think it's OK to go on quickly to your point in the introduction.), add references! (VK: yes.)-->
 
 Either way, assessments of our present situations become unfalsifiable.
 The critical social scientist assumes *no* (relevant) exogenous constraints on collective designs, thus hermetically suspecting all limitations to be "inside jobs".
@@ -84,32 +82,33 @@ To the conservative, evolved institutions are *already* largely determined by in
 The libertarian assumes that collective choice, however constrained, is *impossible* or undesirable to begin with, and therefore rejects any comparison of coercive institutions.
 
 In the rare case that these strands of research engage each other at all, a fruitless shouting match ensues, about the proverbial half-empty, half-full, or un-fillable glasses, respectively.
+<!-- NOTE VK: cool! -->
 
 This dead-end can be ameliorated by less ideologically committed, more empirically minded research, but never entirely avoided.
 Because history does not afford proper experimental designs, positive science typically relies on longitudinal comparisons against some point in the past [e.g. @Streeck2013].
 The limitations of these designs are best illustrated using quantitative variables, but may extend to qualitative observations as well.
 
 These comparisons are complicated by the fact that in the past, all other things were emphatically *not* equal.
-For example, consider seemingly widening inequality, frequently operationalised or surveyed as *household* income inequality [e.g. @Piketty2014].
+For example, consider seemingly widening inequality, frequently operationalized or surveyed as *household* income inequality [e.g. @Piketty2014].
 Troublingly for these accounts, household size in much of the OECD-world has decreased substantially over the past decades, potentially contributing to inequality independently from economic or tax changes.
-For instance, the otherwise increase in in income inequality in Germany from 1991 to 2007 is "strongly related" to changes in household composition [@Peichl2012: 118].
+For instance, the otherwise increase in income inequality in Germany from 1991 to 2007 is "strongly related" to changes in household composition [@Peichl2012: 118].
 <!-- TODO find similar paper for the US -->
-Of course, it is not clear whether we should take solace in supposedly exogeneously smaller, poorer households.
-Smaller households may well, in part, reflect a preference for greater autonomy over greater household incomes, but they may also be, in part, an *effect*, not a *cause*, of broader economic shifts, such as increased job mobility, the decline of relatively well-paid manufacturing jobs or overhangs in marriage markets, or any number of other changes in the same time period.
+Of course, it is not clear whether we should take solace in supposedly exogenously smaller, poorer households.
+Smaller households may well, in part, reflect a preference for greater autonomy over greater household incomes, but they may also be, in part, an *effect*, not a *cause*, of broader economic shifts, such as increased job mobility, the decline of relatively well-paid manufacturing jobs, overhangs in marriage markets or any number of other changes in the same time period.
 Adjusting for changing household sizes is possible, but results appear to be highly sensitive to the some arbitrary choice of equivalence scales  [@Aaberge1998].
 Similar problems beset even the painstakingly careful and seminal "Capital in the 20th Century" [@PikettyGoldhammer2014, but compare @McCloskey2014] or seemingly simple matters as to how to appropriately deflate increasing computing power in national accounts [@Schreyer2002].
 
-Dig deep enough into the operationalisations, extend the time horizon long enough, accrue enough changes in context, and longitudinal studies turn increasingly on ontological and axiological choices, in the worst case reverting to an ideological Rohrschach tests.
+Dig deep enough into the operationalizations, extend the time horizon long enough, accrue enough changes in context, and longitudinal studies turn increasingly on ontological and axiological choices, in the worst case reverting to an ideological Rohrschach tests.
 
 These limitations at the margin notwithstanding, careful longitudinal research continues to be valuable, especially because it --- in contrast to more ideologically committed, self-referential works --- ensures that the social sciences remain a *cumulative* enterprise of discovery.
-
-But, given our lingering disagreement, and the gravity of the crime in question, perhaps it is worthwhile to try another investigative strategy.
+But, given our lingering disagreement, and the gravity of the "crime" in question, perhaps it is worthwhile to try another investigative strategy.
+<!-- VK: You mention the word "crime" for the first time here, that's a little surprising. Maybe start with a more neutral word like "events" ... "investigative strategy" is good later -->
 That is what I offer here.
 
+<!-- VK: THIS PARAGRAPH IS SO WELL-WRITTEN AND BESIDES SOME CITATIONS READY FOR RELEASE! :) no need to rewrite right now -->
 
 # A Crime Story
 
-<!-- VK: questions are not necessary, you made that clear before. -->
 Why, in spite of all our technological marvels and economic wonders are we still plagued by widening inequality, poverty, instability and depleted commons?
 Why, with all the information and levers of participation at our fingertips, are we so thoroughly confused about governing our mixed economies, and so perilously disaffected with the results our democratic rule produces?
 
