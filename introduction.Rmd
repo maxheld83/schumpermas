@@ -9,7 +9,7 @@
 
 There is something fishy about our current historical moment, sometimes ominously referred to as "late capitalism" [first as description @Sombartmodernekapitalismus1902; then as prophetic critique @OffeSpatkapitalismusVersuchBegriffsbestimmung1972; @MandelLateCapitalism1978; today as snarky sarcasm @LowreyWhyPhraseLate] or "post(-truth) democracy" [@Crouch2004].
 
-On the one hand, in absolute and aggregate terms, the developed world has never had it so good.
+On the one hand, in absolute and aggregate terms, the developed world has never had it so good [@Easterlin2000: 10f; @DeLong1998].
 At least for now, and albeit threatened by a barrage of geopolitical risks and global imbalances, our global market economy continues to produce marvels of material prosperity.
 10 years after the 2017ff Great Recession, many members of the Organization for Economic Cooperation and Development (OECD) report relatively healthy real gross domestic product (GDP) growth rates averaging 2.5% and harmonized unemployment rates (HURs) of around 5.3% in 2017.
 <!-- TODO add proper citations -->
@@ -21,13 +21,14 @@ Because there is no economy-wide balance sheet, *real* dissavings, be they earth
 In addition, GDP measurements over time are marred by technical difficulties in appropriately pricing the supposedly increased quality of goods and services, among other problems.
 
 On the other hand, the material and institutional foundations of OECD welfare capitalisms appear to be crumbling beneath our feet.
-Economic growth in the developed world, while still positive, appears to be slowing in the long run, perhaps never to return to the high rates of the catch-up during the post-war era.
-Income and wealth inequality are rising, though some of that widening gap may be driven by smaller household sizes.
-In the face of obscene riches, many people are still working harsh, back- or soul-breaking jobs and suffering from relative *and* absolute poverty.
+Economic growth in the developed world, while still positive, appears to be slowing in the long run, perhaps never to return to the high  (~3%) rates of the catch-up during the post-war era [@Easterlin2000: 10f].
+Income and wealth inequality appear to be rising (for example @Grabka2007a [138] for Germany, @Bucks2006 for the US) though the magnitude and proper context are contested.
+Incontrovertably, in the face of obscene riches, many people are still working harsh, back- or soul-breaking jobs and suffering from relative *and* absolute poverty [@Bundesregierung2006; @wilkinson_spirit_2010].
 Our economies also appear to be increasingly unsustainable.
-In the medium term, macroeconomic imbalances and populist rule threaten global free trade, and renewed asset bubbles (real estate, corporate debt) and fresh systemic risks (index-replicating exchange-traded funds, ETFs) could burst, yet again, into economic crises, merely forestalled by low interest rates, excessive public or private debt and asset rallies.
-In the long term, the real dissavings taken out against our planetary ecosystems, including, but not limited to CO2e-emissions, may come to roost as grave environmental degradation of our livelihoods.
-At the same time, the institution traditionally tasked with reigning in the economy, the modern welfare state, appears severely constrained in its ability to redistribute market outcomes, to fund public goods and to internalize externalities.
+In the medium term, macroeconomic imbalances and populist rule threaten global free trade, and renewed asset bubbles (real estate, corporate debt) and fresh systemic risks (index-replicating exchange-traded funds, ETFs) could burst, yet again, into economic crises, merely forestalled by low interest rates, excessive public or private debt or asset rallies [for example, @Streeck2013].
+In the long run, the real dissavings taken out against our planetary ecosystems, including, but not limited to CO2e-emissions, may come to roost as grave environmental degradation of our livelihoods [@Stern-2006-aa].
+Add to that coming burdens of aging populations in much of the OECD [@Demeny-2003-aa: 2; @Borsch-Supan2000] and technology-driven divergences in productivity [originally @Baumol1965].
+At the same time, the institution traditionally tasked with reigning in the economy, the modern welfare state, appears severely constrained in its ability to redistribute market outcomes, to fund public goods [@Baumol1992] and to internalize externalities.
 Marred by an increasingly regressive tax base, high debt, homegrown inefficiencies and incompetence, as well as, recently, populist and illiberal upswings, the state seems to be supremely outmatched.
 This disturbs the balance of state command and market economy, and may well fray the postwar social contract of relatively widely shared, stable growth, under largely private ownership of the means of production.
 
@@ -35,15 +36,12 @@ This disturbs the balance of state command and market economy, and may well fray
 
 A similar conundrum besets the state of self-government.
 
-<!-- %Explanations for voter disaffection and perceived underperformance vary, invoking amongst others ``government overload'' \citep{HuntingtonInternational-Affairs.-1968-aa}, ``post-material'' or ``emancipative'' change and dimensions of values \citep{InglehartWelzel-2005-aa}, mind-boggling ``reflexive modernization'' \citep{BeckGiddens-1994-aa} or a democratic deficit inducing ``denationalization'' {Zurn-2000-aa}. 
-\citeauthor{PutnamPharr-2000-aa}'s \citeyearpar{PutnamPharr-2000-aa}-->
-
 On the one hand, this should be a golden age for democracy.
 Citizens today are more formally educated than at any previous time, and they have ready access to realms of information that would put to shame the greatest libraries of yesteryear.
 Formal and informal boundaries to citizen participation have fallen, and the electorate has become more demanding of its representatives and government.
 New technologies, from cheap and easy web publishing to social media to distributed software systems have made it possible for ever greater numbers of citizens to make their voices heard, to organize themselves and to challenge existing institutions and incumbents.
 
-On the other hand, citizens appear to be increasingly disaffected with democratic incumbents, or perhaps --- according to recent research --- even with democratic institutions.
+On the other hand, citizens appear to be ill-informed [@Delli-CarpiniKeeter-1996-aa], irrational [@Caplan2007] and increasingly disaffected with democratic incumbents [since @PutnamPharr-2000-aa], or perhaps --- according to recent research --- even with democratic institutions.
 Populism, illiberalism and outright xenophobia are on the rise in many OECD-countries, challenging both established parties and established democratic norms.
 Voters appear to become more polarized, at least in some countries, and at some level of government.
 Political debate, too, seems to fray, with increased tribalism, utter disregard for facts and a decline in civility.
@@ -55,22 +53,20 @@ Or is this just the way the world works, bursting our delusional, progressive bu
 
 Critical social scientists, from @Marx-1867-aa to today's gloomy pronouncers of "post-democracy" [@Crouch2004] and "late capitalism" [@mountford2011] are always prone to suspect foul play.
 They highlight ostensible contradictions of current economic and social arrangement, and contrast a deplorably imperfect present reality against preferable arrangements past or future [also see @Streeck2013; @NachtweyAbstiegsgesellschaftUberAufbegehren2016].
-This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements, such as Bismarckian social insurance or universal suffrage but it has also fueled the hubris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
+This ambition to mold evolved institutions, and sometimes human behavior itself, to birth a better world may have provided, if sometimes in a roundabout way, the emancipatory impetus for many progressive achievements [@Bluhdorn-2007-aa] [^politicisation], such as Bismarckian social insurance or universal suffrage but it has also fueled the hubris of social planners [see @SpuffordRedPlenty2011], and is associated with the evils of 20th century left authoritarianism [@Hayek1944; but compare @arendt_origins_1973].
 <!-- TODO add meta reference to Bismarck -->
-<!-- %Ingolfür Blühdorn (2007: 313) writes:
-%“Politicization is the realization that established social norms, social practices, and social relations are contingent rather than sacrosanct, that things could also be different and that citizens, individual and collectively, have political agency by means of which alternatives can be explored and implemented.
-%This recognition that things could also be different has always been the igniting spark of the emancipatory-progressive movements, and politicization has always been their key strategy.”
-%In this thesis, I want to politicize the abstractions and politics of tax.
-%This is a normative prescription, but it is also of analytical value.
-%If there is indeed another, superior fiscal configuration out there, its absence needs explaining.
-%Such an explanation can inform the welfare retrenchment debate, and, possibly, the broader condition of the (pluralist) political economy. -->
+
+[^bluedorn]: Writes @Bluhdorn-2007-aa [313]:
+    > "Politicization is the realization that established social norms, social practices, and social relations are contingent rather than sacrosanct, that things could also be different and that citizens, individual and collectively, have political agency by means of which alternatives can be explored and implemented.
+    > This recognition that things could also be different has always been the igniting spark of the emancipatory-progressive movements, and politicization has always been their key strategy."
 
 By contrast, conservative and libertarian observers, from @Burke1790 and @Hayek-1960 to modern-day critics of democratic rule [@Caplan2007], liberal multiculturalism [@haidt_righteous_2012], rentier capitalism [@zingales2014capitalism] and economic utilitarianism [@McCloskeyBourgeoisVirtuesEthics2006] find nothing outrageous, let alone suspicious about welfare capitalism and liberal democracy in disarray.
-From this vantage point, an overextended state and overly inclusive or demanding polity is simply crumbling under the weight of its unkept promises and collective action dysfunctions, as was to be expected all along.
+From this vantage point, an overextended state and overly inclusive or demanding polity [@HuntingtonInternational-Affairs.-1968-aa] is simply crumbling under the weight of its unkept promises and collective action dysfunctions, as was to be expected all along.
 Many, more moderate critics may be worried what the postwar compact might take with it, should it go down violently [see @acemoglu_why_2012].
 But fearing collateral damage to the rule of law, property rights or even liberal democracy does not imply that there would be anything wrong with a retrenchment of state intervention.
 <!-- TODO add citation for moderate critics -->
 <!-- TODO VK: change double negation -->
+<!-- TODO emergent is the adjective for libertarians -->
 Conservative and libertarian viewpoints easily come across as curmudgeonly or even cynical, but they are ignored and disavowed in the much of the social science at all our peril.
 This healthy skepticism of man-made societal designs and respect for the wisdom contained in evolved, and therefore stable institutions must not be ignored.
 In the extreme, however, conservatism and libertarianism risk collapsing entirely that what *is*, and *should* be, negating all collective political action in Panglossian tautology [@Voltaire1759].
@@ -111,6 +107,7 @@ Of course, it is not clear whether we should take solace in supposedly exogenous
 Smaller households may well, in part, reflect a preference for greater autonomy over greater household incomes, but they may also be, in part, an *effect*, not a *cause*, of broader economic shifts, such as increased job mobility, the decline of relatively well-paid manufacturing jobs, overhangs in marriage markets or any number of other changes in the same time period.
 Adjusting for changing household sizes is possible, but results appear to be highly sensitive to the some arbitrary choice of equivalence scales  [@Aaberge1998].
 Similar problems beset even the painstakingly careful and seminal "Capital in the 20th Century" [@PikettyGoldhammer2014, but compare @McCloskey2014] or seemingly simple matters as to how to appropriately deflate increasing computing power in national accounts [@Schreyer2002].
+Accounts of citizen disaffection are likewise marred in controversy: while some have long worried about increasing demands overloading government [@HuntingtonInternational-Affairs.-1968-aa], others interpret popular discontent as a good sign of greater emancipation [@InglehartWelzel-2005-aa].
 
 Dig deep enough into the operationalizations, extend the time horizon long enough, accrue enough changes in context, and longitudinal studies turn increasingly on ontological and axiological choices, in the worst case reverting to an ideological Rohrschach tests.
 
@@ -123,6 +120,13 @@ That is what I offer here.
 
 
 ## A Method of Elimination {#elimination}
+
+<!-- ho rejection -->
+
+<!-- %In this thesis, I want to politicize the abstractions and politics of tax.
+%This is a normative prescription, but it is also of analytical value.
+%If there is indeed another, superior fiscal configuration out there, its absence needs explaining.
+%Such an explanation can inform the welfare retrenchment debate, and, possibly, the broader condition of the (pluralist) political economy. -->
 
 In this crime story of the welfare state, tax and democracy, I follow Holmes' advise and attempt to rule out all possible alternatives.
 The first alternative to be ruled out is --- counter-intuitively --- that, in Margaret Thatcher's words, *there is no alternative*.
@@ -139,28 +143,19 @@ Put another way, they must demonstrate that the deceased person *might* have liv
 
 <!-- maybe this is too complicated, but the idea is to negate the H0, as per usual -->
 
+<!-- There really isn't much pangloassian optimisn around anymore.
 <!-- %So \emph{really}, is all ``for [\ldots] the best [\ldots] in the best of all possible, [liberal-democratic, capitalist] worlds''  (\emph{ibid.}: K428ff).
 %
-%Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism.
-%Since industrialization set on in his age, the developed economies have grown annually by initially 1.3\%, then 3.1\% in GDP per capita (\citealt{Easterlin2000}: 10f), prospering as no human society ever has \citep{DeLong1998}.
-%Since enlightenment dawned at his time, the established democracies have fostered peaceful mass participation and liberal democracy continues to proliferate \citep{Huntington-1991-aa}.
-%
-%But Candide, Voltaire's hapless title character and Pangloss' na\"{i}ve student, might still stumble into misfortune, and despair over the hardship of (some) contemporary lives.
-%In the richest of countries, he might be dismayed by growing poverty (for example, \citealt{Bundesregierung2006} for Germany, widening inequalities of wealth and income (for example, \citealt{Grabka2007a}: 138 for Germany, \citealt{Bucks2006} for the US), crumbling public services and state budgets in crisis or default.
-%In the richest of times, he might be troubled by the dark shadows of global warming (for example, \citealt{Stern-2006-aa}), aging populations (for example, \citealt{Demeny-2003-aa}: 2, \citealt{Borsch-Supan2000}) and stalled productivity %add source
-%looming over our long-term prosperity.
-%\marginpar{Include other, OECD-wide sources.} In the oldest of republics, he might be repelled by distorted debates and decision-making deadlocked %add source,
-%and in the finest of democracies, he might be frustrated by ill-informed \citep{Delli-CarpiniKeeter-1996-aa}, ignorant, %add citation
-%irrational \citep{Caplan2007} and dissatisfied voters \citep{PutnamPharr-2000-aa}.
-%
-%Candide's puzzled lament, in the novella as in the real world, does not lead anywhere.
+%Today, Dr.~Pangloss, the 18th century teacher, might feel vindicated in this Leibnizian \citeyearpar{Leibniz1710} optimism. -->
+
+<!-- %Candide's puzzled lament, in the novella as in the real world, does not lead anywhere.
 %He does not specify what would mark a better world, does not consider what limits may govern the real world, and suggests no path to progress.
 %Such discontent without alternative is impotent.
 %
 %But Pangloss' unwavering affirmation of the status quo does not lead us anywhere either.
 %He, the (satirized) learned scholar, does not so much``admirably prove[\ldots] that there is no effect without a cause'' (\citealt{Voltaire1759}: K36) but mindlessly naturalizes the existing state of affairs.
 %He disavows alternative or even better worlds and thereby fails to explain the cause for their non-effect and betrays the humanist calling of science.
-%Such analysis without alternative is fallacious and amoral. -->
+%Such analysis without alternative is fallacious and amoral. --> -->
 
 Why, in spite of all our technological marvels and economic wonders are we still plagued by widening inequality, poverty, instability and depleted commons?
 Why, with all the information and levers of participation at our fingertips, are we so thoroughly confused about governing our mixed economies, and so perilously disaffected with the results our democratic rule produces?
@@ -318,9 +313,40 @@ in this case, we can really move on from tax -->
 
 <!-- find higher equilibria -->
 
-The following chapters follow a fairly conventional structure from theory to methods to results and conclusion, but the *status* of especially the first couple of chapters may be unclear to readers.
+The following chapters follow a fairly conventional structure from theory to methods to results and discussion, but the *status* of especially the first couple of chapters may be unclear to readers.
 Out of substantive necessity, the references and disciplines in these first couple of chapters can be quite wide-ranging, though these are merely introductory (for the reader) and remedial (for the participants).
 To clarify the role of these chapters, let me first situate them within the remainder of this dissertation.
+
+<!-- TODO
+add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are.
+this might be a bigraph, with the different chapters on both sides as nodes, edges with descriptions in the middle
+explain that the econ101 in chap 1-3 is *both* for readers, and for civicon participants, *and* for items
+-->
+
+Chapter \@ref(hypotheticals)
+
+: outlines some pragmatic conditions for *doable* and *desirable* hypotheticals.
+    These conditions serve to preliminarily justify the economic abstractions of the mixed economy (Chapter \@ref(mixed)) and taxation (Chapter \@ref(tax)) and ground the critique of the status quo (Chapter \@ref(crises)).
+    By explicating these assumptions, I also list the irreducibly political choices underlying taxation, which cannot be resolved by experts, but require citizen deliberation (Chapter \@ref(design)).
+    These cursory ontological and axiological foundations later also inform the learning phases at the CiviCon Citizen Conference (Chapter \@ref(civicon)) and feed into the statement concourse to measure participant subjectivity (Chapter \@ref(q)), as well as its interpretation (Chapter \@ref(subjectivity)).
+
+
+Chapter \@ref(mixed)
+
+: introduces the mixed economy as the quintessential pragmatic institution by which market and plan can coexist.
+    I describe its ends and means for providing human welfare, and highlight the importance of taxation (Chapter \@ref(tax)) to maintain the social contract.
+    By properly explaining a welfare state as a well-designed mixed economy, the chapter expands the existing welfare state literature and prepares a more damning critique grounded in elementary public finance (Chapter \@ref(crises)).
+    The mixed economy also serves as a broadly acceptable frame for the CiviCon deliberations (Chapter \@ref(crises)), educates the participating citizens (Chapter \@ref(field)) and justifies the focus on taxation (Chapter \@ref(civicon)).
+
+
+Chapter \@ref(tax)
+
+:
+
+
+
+
+
 
 This project is modeled on a straightforward experimental design, as it is frequently used in clinical studies.
 However, because the study deals not with easily measurable biomarkers, but with subtleties of deliberation and the abstractions of tax, the design needs a little more conceptual groundwork.
@@ -613,12 +639,6 @@ Table: (\#tab:commented-toc) A Commented Table of Comments with Analogous Experi
 &	\pageref{chap:common-grounds}
 &15 -->
 
-<!-- TODO
-add plot here where/how these chapters feed into other objects/chapters, to really drive home how necessary they are.
-this might be a bigraph, with the different chapters on both sides as nodes, edges with descriptions in the middle
-explain that the econ101 in chap 1-3 is *both* for readers, and for civicon participants, *and* for items
--->
-
 
 We need to complicate this simple design only a little bit to bring it close the present study on deliberation and taxation, as shown in table \@ref(tab:commented-toc).
 
@@ -747,27 +767,14 @@ And yet, so far, no one has bothered to connect the dots.
 That is what I offer here.
 
 Raymond @Williams1992 has argued that the detective story appears at roughly the same time as sociology, and for the same reason:
-to penetrate the modern world, as Conan Doyle's *Sherlock Holmes* does, "by an isolated rational intelligence" [@Williams1992 88], otherwise covered by London fogs, or compartmentalized by functional differentiation [@Durkheim-1893-aa].
+to penetrate an increasingly opaque modern world, as Conan Doyle's *Sherlock Holmes* does, "by an isolated rational intelligence" [@Williams1992: 88], otherwise covered by London fogs, or compartmentalized by functional differentiation [@Durkheim-1893-aa].
 And so it is with this crime story of taxation and democracy:
 shrouded in nebulous complexity, pigeonholed into disjunct institutions and areas of expertise, it needs a lot of detective work to connect these dots.
 To hear this case, I urge the reader to consider all of the evidence reviewed in this exposition, even if some of the detail might, at first, seem trivial.
 It is not.
 As Sherlock Holmes reminds us, "there is nothing so important as trifles" [@Doyle1891 238].
-From the incidence of the [cit]{acronym-label="cit" acronym-form="singular+short"}, the liquidity effects of taxing property to the macro- and micropolitics of democracy and the sociobiology of fairness, cooperation and equality
---- these "trifles" are all important exhibits to make the case that democracy, taxation, and with it, all our modern lives, *could*, and therefore, *should* be better.
+From the incidence of the corporate income tax (CIT), to the liquidity effects of taxing property and the malaggregation of ill-structured preferences
+--- these "trifles" are all important exhibits to test the case that democracy, taxation, and with it, all our modern lives, *could*, and therefore, *should* be better.
 
 Some stories just cannot be told in the short form, and the story I have stumbled upon and here report may be one of those.
 Luckily, detective stories can also be fun to read, and so, I hope, is this one.
-
-<!-- TODO emergent is the adjective for libertarians -->
-
-<!-- %Dahl "on democracy''
-	% there is normative things, and actualities, or empirical things.
-%We should look at both
-	% democracy and market capitalism are in a mutually reinforcing, but also antagonistic relationship
-	% one of the four essential questions for democracy is how it will continue to co-exist with market capitalism, now that the latter is the only game in town.
-%Also, the inequalities that market capitalism brings, easily translate into political inequality.
-	% one of the possible scenarios of democracy is that it will spread wider (new countries) but become ever thinner.
-	% dahl in his time didn't know what the problem was: we know see a little clearer
-	% he also identifies internationalization as a problem, which makes sense.
-%Tax is at the intersection of the market/state mix and internationalization -->

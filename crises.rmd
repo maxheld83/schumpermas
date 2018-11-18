@@ -34,6 +34,17 @@ if this were in fact all completely "normal", and just the way things are, then 
 so going back to the ideal-typical formulation of these institutions, no matter how much they were ever attained in the real world, is an exercise in policisiation.
 The empirical record, is only used to cursorily *illustrate* these claims. -->
 
+<!-- %Dahl "on democracy''
+	% there is normative things, and actualities, or empirical things.
+%We should look at both
+	% democracy and market capitalism are in a mutually reinforcing, but also antagonistic relationship
+	% one of the four essential questions for democracy is how it will continue to co-exist with market capitalism, now that the latter is the only game in town.
+%Also, the inequalities that market capitalism brings, easily translate into political inequality.
+	% one of the possible scenarios of democracy is that it will spread wider (new countries) but become ever thinner.
+	% dahl in his time didn't know what the problem was: we know see a little clearer
+	% he also identifies internationalization as a problem, which makes sense.
+%Tax is at the intersection of the market/state mix and internationalization -->
+
 <!-- %Genschel 200 deutscher Artikel
 	%Both the sceptics and apologetics of the race to the bottom are wrong.
 	%There is indeed no empirical evidence for a race to the bottom \ldots

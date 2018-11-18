@@ -17,11 +17,11 @@ rmd_files: [
   "tax.rmd",
   "crises.rmd",
   # methods
-  "rq.rmd",
+  "design.rmd",
   "civicon.Rmd",
   "q.Rmd",
   # results
-  "field-report.rmd",
+  "field.rmd",
   "subjectivity.Rmd",
   "structuration.Rmd",
   # discussion
