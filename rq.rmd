@@ -62,6 +62,64 @@ This is *open* also to factors of fundamental disagreements about the role of ra
      + Epistemic meta-consensus ("agreement on the credibility of beliefs and their relevance to the question under deliberation")
      + Preference meta-consensus ("the character of choices across options" or structure of choices, ideally along a single issue dimension) --> -->
 
+
+## Open Second-Order Questions
+
+These hypotheticals flow, for the most part, from *a priori* knowledge.
+They are grounded in reason, but not --- as hypotheticals can never be --- in *experience*.
+I have, as much as possible, supported *a posteriori* assumptions with robust empirical findings --- but I cannot provide experiential evidence for the complete hypotheticals.
+
+In welfare and tax, comprehensive *a posteriori* knowledge about hypotheticals is hard to come by.
+
+Inframarginal reforms as those I suggest here strain the limits of economic models, all of which must be grounded in only *marginally* known behavioral data.
+For example, we would need to know the price elasticity in the demand for luxury goods, or saving and agree on (as I have shown) irreduceably normative judgments of diminishing returns or an optimal savings rate.
+Natural experiments are, of course, unavailable and the external validity of any laboratory setting will be strictly limited.
+There is, in other words, not much else beside *a priori* knowledge that we might learn about welfare and tax.
+My reasoning here is hopefully as widely agreeable as any comprehensive account of welfare and tax, but it will surely not go uncontested.
+Absent empirical clarification, we must then resolve such disagreement in a democratic process.
+Taxation, in other words, probably *cannot* be reduced to a first-order question, but it, too reverts to a second-order concern on how to democratically resolve any disagreement we might have about it.
+
+In democracy, we have some, if limited *a posteriori* knowledge about the deliberative hypothetical I here suggest.
+Deliberative democracy has been successfully implemented mostly in local settings on policies of limited scope [@Fung-2003-ac; @HendricksonTucker-2005-aa].
+In their proposal for "Empowered Deliberative Democracy" @FungWright-2001-aa [17] explicitly suggest what underlies much of the current designs:
+
+> 1.  A focus on *specific, tangible* problems
+>
+> 2.  Involvement of *ordinary people* affected by these problems and officials *close* to them
+>
+> 3.  The deliberative development of solutions to *these* problems.
+>
+Few attempts at deliberating regional issues of greater complexity have been made, including a 'Citizens Assembly' on electoral reform in British Columbia, Canada [confer @Ratner-2008-aa].
+
+On the one hand, deliberative theorists as @FungWright-2001-aa [17] have criticized this limited scope of deliberative attempts, focused on the immediate, tangible and "confined to the realm of neighborhood and locale", as much out of necessity, as out of conviction [@Boggs-1997-aa 759].
+The associated anti-authoritarian, anti-bureaucratic, anti-functional-differentiation impetus may, as [@Sousa-Santos-1998-aa] hopes for participatory budgeting in Porto Allegre, Brazil contribute to a "counterhegemonic globalization" by concentrating on special issues like land rights, urban infrastructure and drinking water in urban settings, but may by the same token remain "Bean n' Rice works" [@Sousa-Santos-1998-aa 479].
+Faced, as our polities inevitably are, with macro-level abstractions, such cherishing of "human-scale democracy" above all else may, suspects @Boggs-1997-aa, move democracy "in a defensive and insular direction, laying bare a process of conservative retreat beneath a facile rhetoric of grassroots activism" [@Boggs-1997-aa 759].
+
+On the other hand, political psychologists as [@Rosenberg-2002-aa] have problematized the cognitive demands deliberation poses.
+Recent research in political psychology suggests, that --- contrary to the bounded rationality assumption --- imperfect human reasoning may not only stem from remediable cognitive scarcity, but may be developmentally determined.
+@Rosenberg-2002-aa has suggested a threefold developmental sequence and typology of *sequential*, *linear* and *systematic* reasoning.
+His empirical accounts suggest that if any, only systematic thinkers will be able to meet the cognitive demands for reasoned arguments, and egalitarian free speech of deliberative democracy.
+Moreover, this cognitive competence was found not to be domain specific, and while people may regress to lower levels of competence under high loads or appropriate cues, they are unlikely to easily, if ever, achieve higher than developed levels.
+"Structurally (more and) less developed reasoning adults" make "not only the adequacy of citizens' reasoning, but also their *equality*" a problem for deliberative democracy [@Rosenberg-2007-aa 12, emphasis added].
+
+Few empirical work has been done to address both these ontological and empirical reservations towards deliberative democracy.
+We know very little about if and how deliberative fora do in the face of macro-level abstractions and unequally limited cognitive ability of deliberators.
+
+<!-- we need discrete choices for a CiviCon, otherwise we're all over the place, but it needs to be a choice that is relevantly abstract -->
+
+<!-- %if you'd want to hide injustice, you'd best do it in a really complex system, like tax. -->
+
+<!-- ### What's special about deliberating tax choice?
+
+- Tax offers/demands very structured choices: there are essentially only 4x3 broad tax types (see tax table in drafts).
+  Different from, for example, a deliberation on “racial tensions”, deliberating tax choice is more close-ended.
+- Tax expertise is easily politicized, because:
+	- Tax cannot be reduced to an empirical question, both because inframarginal data is not available, and because macroeconomics is incompletely understood.
+	- Tax cannot be reduced to a consequentialist inquiry, because people (may) care about other normative claims, too (e.g. fairness).
+- Tax cannot be easily (if at all) dumbed down to subsets of tax choice (e.g. VAT vs PIT), or subsets of abstractions (e.g. only “bastard keynesianism”) for two reasons:
+	1. Any such reduction would violate the spirit of deliberation; citizens could not set their own agenda.
+	2. Any such reduction may well fail to elucidate my hypothesized misunderstandings: ßI imagine “understanding tax” as a bucket, which, if leaky will drain to the lowest level. For example, if deliberators would discuss most aspects of taxation, but skip over the limits (!) of price controls, they may well opt for price controls in lieu of, or in addition to taxation. -->
+
 ## Hypotheses
 
 Both research questions [\[itm:resolve-better-tax\]](#itm:resolve-better-tax){reference-type="ref" reference="itm:resolve-better-tax"} and [\[itm:prove-deliberative-democracy\]](#itm:prove-deliberative-democracy){reference-type="ref" reference="itm:prove-deliberative-democracy"} can be rolled up in one set of hypotheses:
@@ -466,6 +524,20 @@ just how much revenue the PCT will raise at any given schedule, or how much posi
 An economic model of rich economies with a PCT would still serve to at least roughly quantify the drivers of welfare and distribution.
 
 Again, a behavioral experiment may be a more elegant, and powerful design to cardinally estimate the benefits of the PCT.
+
+<!-- %why don't we have it?
+	%Because it may not be better?
+		%requires general equilibrium modeling, utility functions
+		%depends on a number of axioms
+	%how would it be specified, implemented
+		%requires ge model, utility functions
+		%modeling grunt work
+	%there is an international cooperation problem!
+		%requires general equilibrium model, utility functions, game theory
+	%domestic, political dysfunctions prevent it!
+	%maybe: path dependency, game theory, veto playing, principal agent
+	%because people do not want it!
+		%survey research, vignette research, experimental economics -->
 
 #### Specifying the PCT.
 

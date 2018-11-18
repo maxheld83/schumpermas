@@ -6,6 +6,8 @@
 <!--    - *documents* structure, experts, sample, etc. of CiviCon -->
 <!--    - *reports* on the validity, reliability of the treatment in deliberative terms, including citizen and moderator feedback. -->
 
+<!-- % ``A great deal of work on deliberative theory focuses on conflicting values, religious toleration, identities and so on, and relatively little on conflicting facts.'' \cite[2]{Moore2011} -->
+
 I here propose to investigate a supposed difference in current, and (more) ideal speech thinking about tax by subjecting a group of diverse citizens to a deliberative forum on the topic, which, in one succinct summary [@Steenbergen2003 25ff], is marked by
 
 1. open *participation*, including setting the agenda and deciding on procedures (@Benhabib-1996-aa, @Chambers1995, @Cohen-1989-aa, @Habermas1992 [370ff])

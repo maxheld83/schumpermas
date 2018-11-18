@@ -1,1 +1,11 @@
 # Preference Structuration {#structuration}
+
+<!-- %read
+	%http://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem
+	%http://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem
+	%http://en.wikipedia.org/wiki/Unrestricted_domain
+	%http://en.wikipedia.org/wiki/Non-dictatorship
+	%http://en.wikipedia.org/wiki/Revelation_principle
+	%http://en.wikipedia.org/wiki/Voting_paradox
+	%https://en.wikipedia.org/wiki/Independence_of_irrelevant_alternatives
+	%https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem -->
