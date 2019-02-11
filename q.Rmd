@@ -408,7 +408,7 @@ A q sample (and concourse) will always be more of *regulative* ideal --- hence t
 
 What we have here is a *factorial* design of statements (not of people!) -->
 
-```{r q-sampling-structure, eval=FALSE}
+```{r q-sampling-structure}
 q_sampling_structure <- read.csv(  # read in sampling structure
   file = "keyneson/sampling-structure.csv",
   fileEncoding = "UTF-8"  # should not be necessary, all data is ascii
