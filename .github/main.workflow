@@ -36,7 +36,7 @@ action "Filter master" {
 
 action "Deploy" {
   needs = [
-    "Filter on master"
+    "Filter master"
   ]
   uses = "maxheld83/ghpages@v0.1.2"
   env = {
