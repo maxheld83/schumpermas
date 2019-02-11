@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/maxheld83/schumpermas.svg?token=VqJKxxUwxXFJyYyqJx7G&branch=master)](https://travis-ci.com/maxheld83/schumpermas)
+[![Actions Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/maxheld83/schumpermas)](https://github.com/maxheld83/schumpermas/actions)
 
 This is [Maximilian Held](http://www.maxheld.de)'s dissertation at [BIGSSS](http://www.bigsss-bremen.de).
 

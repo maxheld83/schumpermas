@@ -12,15 +12,3 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]
-bookdown::pdf_book:
-  includes:
-    in_header: latex/preamble.tex
-    before_body: latex/before_body.tex
-    after_body: latex/after_body.tex
-  dev: "cairo_pdf"
-  latex_engine: xelatex
-  keep_tex: yes
-  toc_depth: 2
-bookdown::epub_book:
-  dev: svglite
-  stylesheet: css/style.css
